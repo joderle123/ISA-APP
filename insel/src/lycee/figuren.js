@@ -360,7 +360,21 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   // ---------- Emotes (Emote-Rad, Auftrag 20.11. „wie bei Fortnite“): prozedurale Posen über die Hand-IK ----------
   // Rahmen aus den Schultern: r = zur rechten Schulter, f = vorn, c = Schultermitte, k = Kopf. Gewicht blendet weich ein/aus.
   let schlafZiel = 0, schlafW = 0, schlafAn = false; const kopfSchlafVor = new THREE.Quaternion();
-  const POSEN = { daumen: 2.2, klatschen: 2.6, herz: 2.8, sieger: 2.4, facepalm: 2.4, verbeugen: 2.4, roboter: 4.2, gitarre: 3.4, denken: 3, winken2: 2.6 };
+  const POSEN = { daumen: 2.2, klatschen: 2.6, herz: 2.8, sieger: 2.4, facepalm: 2.4, verbeugen: 2.4, roboter: 4.2, gitarre: 3.4, denken: 3, winken2: 2.6, handy: 4 };
+  // Handy in beiden Händen (Haltung „handy“): kleines Gerät mit leuchtendem Bildschirm, nur während der Pose sichtbar
+  let handyTeil = null; const _hl = new THREE.Vector3(), _hm1 = new THREE.Vector3(), _hm2 = new THREE.Vector3(); const HANDY_KOPF = (typeof window !== 'undefined' && window.__handyKopf) || 0.38;
+  const handyZeigen = (an, wo, blick) => {
+    if (an && !handyTeil) {
+      handyTeil = new THREE.Group(); handyTeil.name = 'handy';
+      const koerper = new THREE.Mesh(new THREE.BoxGeometry(0.072, 0.145, 0.01), new THREE.MeshLambertMaterial({ color: '#1d2230' }));
+      const schirm = new THREE.Mesh(new THREE.PlaneGeometry(0.062, 0.128), new THREE.MeshBasicMaterial({ color: '#a9d4ff' })); schirm.position.z = 0.0056;
+      handyTeil.add(koerper, schirm);
+      group.add(handyTeil); group.updateWorldMatrix(true, false); const sk = new THREE.Vector3(); group.getWorldScale(sk); handyTeil.scale.setScalar(1 / (sk.x || 1));   // im Modell: wird mit der Figur ausgeblendet
+    }
+    if (!handyTeil) return;
+    handyTeil.visible = !!an;
+    if (an && wo) { handyTeil.position.copy(group.worldToLocal(_hl.copy(wo))); if (blick) { handyTeil.updateWorldMatrix(true, false); handyTeil.lookAt(blick); handyTeil.rotateZ(Math.PI / 2); } }   // quer, Bildschirm zum Gesicht
+  };
   let poseArt = null, poseT = 0, poseD = 1, poseLehn = 0;
   const _pr = new THREE.Vector3(), _pc = new THREE.Vector3(), _pk = new THREE.Vector3(), _pz = new THREE.Vector3(), _pd = new THREE.Vector3(), _pf = new THREE.Vector3(), _pp = new THREE.Vector3(), _pq = new THREE.Quaternion();
   const setzeHand = (s, w, ziel, richtung, flaeche, pol, faust, extra) => {
@@ -369,7 +383,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
     H.flaeche = (H.flaeche || new THREE.Vector3()).copy(flaeche).normalize(); H.pol = (H.pol || new THREE.Vector3()).copy(pol);
     H.faust = faust; H.zeige = (extra && extra.zeige) || 0; H.daumenHoch = !!(extra && extra.daumenHoch); H.w = w; H.pose = true;
   };
-  const poseEnde = () => { for (const s of ['R', 'L']) if (HAND[s].pose) { HAND[s].w = 0; HAND[s].pose = false; } poseLehn = 0; poseArt = null; poseT = 0; };
+  const poseEnde = () => { for (const s of ['R', 'L']) if (HAND[s].pose) { HAND[s].w = 0; HAND[s].pose = false; } poseLehn = 0; poseArt = null; poseT = 0; if (handyTeil) handyTeil.visible = false; };
   const poseHaende = () => {
     const D = poseD, p = 1 - poseT / D, t = D - poseT, w = Math.min(1, t / 0.25, poseT / 0.3);
     huelle.getWorldQuaternion(_kq); _fw.set(0, 0, 1).applyQuaternion(_kq);
@@ -410,6 +424,13 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
         setzeHand('R', w, P(_pz, _pk, 0.0, -0.11, 0.13), R(_pd, -0.1, 1, 0.15), R(_pf, 0, 0, -1), R(_pp, 0.5, -1, 0.2), 0.8);
         setzeHand('L', w, P(_pz, _pc, 0.12, -0.32, 0.2), R(_pd, 1, 0, 0), R(_pf, 0, 1, 0), R(_pp, -0.5, -1, 0), 0.3);
         kopfDreh(f, -0.12); break;
+      case 'handy': {   // aufs Handy schauen: beide Hände vor dem Bauch, Kopf gesenkt, der Daumen tippt
+        const tipp = Math.sin(t * 9) * 0.006;
+        beide((s, sg) => setzeHand(s, w, P(_pz, _pc, sg * 0.078, -0.34 + (sg > 0 ? tipp : -tipp), 0.3), R(_pd, -sg * 0.1, 0.55, 1), R(_pf, -sg, 0, 0), R(_pp, sg * 0.8, -1, -0.3), 0.55));
+        kopfDreh(r, HANDY_KOPF);
+        // Handy zwischen die Hände, Bildschirm zum Gesicht
+        P(_hm1, _pc, 0, -0.325, 0.33);   // Mitte zwischen den Hand-Zielen (die Knochen stehen hier noch vor der IK)
+        handyZeigen(w > 0.3, _hm1, _pk); break; }
       case 'winken2':   // beide Arme hoch, winken
         beide((s, sg, o) => setzeHand(s, w, P(_pz, o, sg * (0.18 + Math.sin(t * 7 + (sg > 0 ? 0 : Math.PI)) * 0.1), 0.48, 0.08), R(_pd, sg * 0.3, 1, 0), f, R(_pp, sg, -0.2, -0.3), 0)); break;
       default: break;

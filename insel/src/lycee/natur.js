@@ -100,7 +100,7 @@ export async function baueNatur({ welt, scene, veil, windZeit, wenig = false }) 
     const cx = kamera.position.x, cz = kamera.position.z;
     for (const z of zellen) {
       const d = Math.hypot(z.x - cx, z.z - cz);
-      z.m.visible = z.klein ? d < (drinnen ? 0 : wenig ? 40 : 60) : d < (drinnen ? 45 : z.baum ? 260 : 120);
+      z.m.visible = z.klein ? d < (drinnen ? 0 : wenig ? 40 : 60) : d < (drinnen ? 45 : z.baum ? (wenig ? 180 : 260) : (wenig ? 85 : 120));
     }
   }
   return { gruppe, anzahl: plaetze.length, sicht };

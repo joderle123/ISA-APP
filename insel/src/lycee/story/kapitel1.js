@@ -29,7 +29,7 @@ export const SCHRITTE_N1 = [
   // Sehen kann man die Hand nur vom Brunnen und vom Zaun aus. Ab 4:00 sucht Chiara dich mit dem Stundenplan.
   { id: 'pause', kap: 1, tag: 'Montag', uhr: 10.0, titel: 'Große Pause', ziel: 'Fünf Minuten. Ben winkt. Am Brunnen Rafa und Lina. Noah am Zaun. Hinten wird gekorbt.', marker: 'ben',
     start: { teleport: 'eingangHof' },
-    leute: { ben: [4, 14, 0.6, 'redet'], jo: [5.2, 15.4, -2.4, 'redet'], mila: [-20, 11.6, Math.PI, 'sitzt'], noah: [-14, 12.2, 2.6], ayla: [3, 17.6, -2.5, 'redet'], chiara: [2, 18.4, 0.6, 'redet'], rafa: [-6.4, 21.6, 2.2], lina: [-10.6, 15.4, 2.59], yusuf: [27.4, 21.0, -1.2] },
+    leute: { ben: [4, 14, 0.6, 'redet'], jo: [5.2, 15.4, -2.4, 'handy'], mila: [-20, 11.6, Math.PI, 'sitzt'], noah: [-14, 12.2, 2.6], ayla: [3, 17.6, -2.5, 'redet'], chiara: [2, 18.4, 0.6, 'redet'], rafa: [-6.4, 21.6, 2.2], lina: [-10.6, 15.4, 2.59], yusuf: [27.4, 21.0, -1.2] },
     frei: { titel: 'Große Pause', dauer: 300,
       faeden: {
         ben: { gespraech: 'n1_umfrage', label: 'Ben und Jo am Handy' },
@@ -67,7 +67,7 @@ export const SCHRITTE_N1 = [
   // Gesamtkonzept K1, Szene 7: Das Foto kommt. Es zeigt dich so, wie du in der Pause warst. Die Umfrage läuft live.
   { id: 'k1_foto', kap: 1, tag: 'Montag', uhr: 13.5, titel: 'Das Foto', ziel: 'Mittagspause auf dem Hof. Überall summen die Handys.', marker: 'jo',
     start: { teleport: 'eingangHof', gespraech: 'n1_foto' },
-    leute: { jo: [3.4, 8.6, 2.8, 'redet'], ben: [4.8, 9.6, -2.3], ayla: [-2.4, 9.8, 2.2, 'redet'], chiara: [-3.8, 9.0, 0.9], lina: [-10.6, 15.4, 2.59], hoffmann: [6.6, 4.6, -1.2], yusuf: [27.4, 21.0, -1.2] },
+    leute: { jo: [3.4, 8.6, 2.8, 'handy'], ben: [4.8, 9.6, -2.3, 'handy'], ayla: [-2.4, 9.8, 2.2, 'handy'], chiara: [-3.8, 9.0, 0.9, 'handy'], lina: [-10.6, 15.4, 2.59], hoffmann: [6.6, 4.6, -1.2], yusuf: [27.4, 21.0, -1.2] },
     fertig: { nachStart: true } },
   { id: 'heimweg', kap: 1, tag: 'Montag', uhr: 15.5, titel: 'Nach Hause', ziel: 'Geh zum Bus.', marker: 'bus',
     start: { teleport: 'eingang' },

@@ -76,6 +76,7 @@ import { FR_LEKTIONEN } from './story/fachstunden.js';
 if (!(LEKTIONEN.francais || []).length) LEKTIONEN.francais = FR_LEKTIONEN;   // Französisch fürs Spiel (handgeschrieben, story/fachstunden.js)
 import { tunN2, ORTE_N2 } from './story/kapitel2.js';
 import { tunN1, RUECKBLICK_N1 } from './story/kapitel1.js';
+import { fotoSpeichern, fotosLaden, fotosLoeschen } from './fotoablage.js';
 import { tunN3, ORTE_N3 } from './story/kapitel3.js';
 import { tunN4 } from './story/kapitel4.js';
 import { tunN5 } from './story/kapitel5.js';
@@ -342,7 +343,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (p.f.schlafen) p.f.schlafen(haltung === 'schlaeft');
       p.pos.set(x, 0, z); p.yaw = yaw; p.basisYaw = yaw; p.haltung = haltung || ''; p.gegruesst = false;
       p.f.group.position.copy(p.pos); p.f.group.rotation.y = yaw;
-      p.f.spiele(haltung === 'redet' ? 'Interact' : haltung === 'winkt' ? 'Wave' : 'Idle', { tempo: haltung === 'redet' ? 0.35 : 1 });
+      p.f.spiele(haltung === 'redet' ? 'Interact' : haltung === 'winkt' ? 'Wave' : haltung === 'handy' ? 'Idle_Neutral' : 'Idle', { tempo: haltung === 'redet' ? 0.35 : 1 });
+      if (p.f.pose) { if (haltung === 'handy') p.f.pose('handy', 1e6); else if (p.f.poseAktiv === 'handy') p.f.pose(null); }   // aufs Handy schauen
     }
     feste = Object.values(leute).filter((p) => p.f.group.visible).map((p) => ({ x: p.pos.x, z: p.pos.z, r: 0.3 }));
     steuerung.hindernisse = feste.concat(statisten.map((x) => x.h));
@@ -449,7 +451,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (halt === 'sitzt') { const sp = sitzSuche(f.group.position.x, f.group.position.z); if (sp) { f.group.position.set(sp.x, 0, sp.z); f.group.rotation.y = sp.rot; d.steht = [sp.x, sp.z, sp.rot, 'sitzt']; } f.sitzen(true, sp ? sp.h || 0.47 : 0.47); f.spiele(Math.random() < 0.6 ? 'SitzenReden' : 'Idle'); }
       else if (halt === 'redet') f.spiele('Interact', { tempo: 0.35 });
       else if (halt === 'raucht') { f.spiele('Idle'); x.rauch = zigarette(f); }
-      else if (halt === 'handy') { f.spiele('Idle_Neutral'); }
+      else if (halt === 'handy') { f.spiele('Idle_Neutral'); if (f.pose) f.pose('handy', 1e6); }
       else if (d.skate) {
         f.spiele('Idle');
         if (!brett && req.geo['skate/skateboard']) brett = req.geo['skate/skateboard'];
@@ -477,12 +479,49 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Figuren außerhalb des Bildausschnitts oder weiter als 70 m: nicht zeichnen und nicht animieren (Leistung)
   const _fr = new THREE.Frustum(), _pm = new THREE.Matrix4(), _sp = new THREE.Sphere(new THREE.Vector3(), 1.4);
   function ausschnittNeu() { camera.updateMatrixWorld(); _pm.multiplyMatrices(camera.projectionMatrix, camera.matrixWorldInverse); _fr.setFromProjectionMatrix(_pm); }
+  const FIGUR_WEIT = { low: 40, medium: 56, high: 75 };   // Figuren weiter weg: nicht zeichnen (je Grafikstufe)
   function imBild(f, pos) {
     _sp.center.set(pos.x, 0.9, pos.z);
-    const v = camera.position.distanceTo(_sp.center) < 70 && _fr.intersectsSphere(_sp);
+    const v = camera.position.distanceTo(_sp.center) < (FIGUR_WEIT[rr.qualityName] || 70) && _fr.intersectsSphere(_sp);
     const innen = f.group.children[0]; if (innen && innen.visible !== v) innen.visible = v;
+    const fs = f.fussschatten || (f.fussschatten = f.group.children.find((c) => c.name === 'fussschatten') || 0); if (fs && fs.visible !== v) fs.visible = v;   // Fußschatten mit der Figur weg
     return v;
   }
+  // Weitsicht (Leistung): kleine, feste Dinge werden ab einer Entfernung nicht mehr gezeichnet – je kleiner, desto früher.
+  // Statt .visible (das andere Module selbst schalten) über Layer 1: die Kamera sieht nur Layer 0. Figuren (Skinned) sind ausgenommen,
+  // die haben ihre eigene Ausblendung (imBild). Grenze = Radius × Faktor, mindestens „min“, höchstens bis zum Nebel.
+  const WEIT = { low: { k: 30, min: 34 }, medium: { k: 46, min: 52 }, high: { k: 80, min: 90 } };
+  let weitListe = null, weitI = 0, weitAus = 0, weitStand = -1;
+  const weitBekannt = new WeakSet(), _wc = new THREE.Vector3();
+  const kugel = (o) => (o.isInstancedMesh ? (o.boundingSphere || (o.computeBoundingSphere(), o.boundingSphere)) : (o.geometry.boundingSphere || (o.geometry.computeBoundingSphere(), o.geometry.boundingSphere)));
+  function weitsichtListe() {   // neue Teile aufnehmen (Modelle laden nach und nach); bekannte behalten ihren Zustand
+    weitListe = weitListe || [];
+    for (const top of scene.children) {
+      let figur = false; top.traverse((o) => { if (o.isSkinnedMesh) figur = true; });
+      if (figur || top.name === 'clouds') continue;
+      top.traverse((o) => {
+        if (!o.isMesh || o.isSkinnedMesh || !o.geometry || weitBekannt.has(o)) return;
+        weitBekannt.add(o);
+        const bs = kugel(o); if (!bs || !isFinite(bs.radius)) return;
+        const sc = o.getWorldScale(_wc), r = bs.radius * Math.max(sc.x, sc.y, sc.z);
+        if (r > 40) return;   // Gelände, Häuser, große Flächen: immer zeichnen
+        weitListe.push({ o, r, aus: false });
+      });
+    }
+  }
+  function weitsicht(n) {
+    const jetzt = performance.now();
+    if (!weitListe || jetzt - weitStand > 4000) { weitStand = jetzt; weitsichtListe(); }   // nachgeladene Modelle alle 4 s aufnehmen
+    const g = WEIT[rr.qualityName] || WEIT.medium, cp = camera.position, max = (scene.fog && scene.fog.far) || 420;
+    for (let j = 0; j < n && weitListe.length; j++) {
+      const e = weitListe[weitI = (weitI + 1) % weitListe.length], o = e.o;
+      if (!o.parent) continue;
+      _wc.copy(kugel(o).center).applyMatrix4(o.matrixWorld);
+      const grenze = Math.min(max, Math.max(g.min, e.r * g.k)), aus = _wc.distanceTo(cp) > grenze;
+      if (aus !== e.aus) { e.aus = aus; if (aus) { o.layers.set(1); weitAus++; } else { o.layers.set(0); weitAus--; } }
+    }
+  }
+  function weitsichtAlle() { if (weitListe) weitsicht(weitListe.length); }
   // Während der Stunden ist der Hof fast leer (ein Viertel bleibt: Aufsicht, Raucherecke, Schwänzer); in Pausen sind alle draußen
   function statistenNachZeit(uhr) {
     const unterricht = (uhr >= 8.0 && uhr < 9.85) || (uhr >= 10.4 && uhr < 11.95) || (uhr >= 13.6 && uhr < 15.4);
@@ -637,7 +676,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       f.group.position.set(q.x, 0, q.z); f.group.rotation.y = q.rot; x.p.set(q.x, 0, q.z); x.h.x = q.x; x.h.z = q.z;
       x.d.steht = [q.x, q.z, q.rot, halt];
       f.sitzen(halt === 'sitzt', q.h);
-      f.spiele(halt === 'redet' ? 'Interact' : halt === 'handy' ? 'Idle_Neutral' : 'Idle', halt === 'redet' ? { tempo: 0.35 } : undefined);
+      f.spiele(halt === 'redet' ? 'Interact' : halt === 'handy' ? 'Idle_Neutral' : 'Idle', halt === 'redet' ? { tempo: 0.35 } : undefined); if (f.pose) { if (halt === 'handy') f.pose('handy', 1e6); else if (f.poseAktiv === 'handy') f.pose(null); }
     }
   }
   function statistenBewegen(dt) {
@@ -815,7 +854,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     {
       const p = steuerung.pos; x.f.group.rotation.y = Math.atan2(p.x - x.f.group.position.x, p.z - x.f.group.position.z);
       x.f.spiele('Wave'); const w = x.warte; x.warte = Math.max(x.warte || 0, 2.6);
-      setTimeout(() => { const h = x.d.steht && x.d.steht[3]; if (h === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (h === 'handy') x.f.spiele('Idle_Neutral'); else if (x.d.weg) { x.f.spiele('Walk', { tempo: x.d.tempo / 1.4 }); x.warte = w > 0 ? w : 0; if (x.d.steht) x.f.group.rotation.y = x.d.steht[2]; } else x.f.spiele('Idle'); if (x.d.steht) x.f.group.rotation.y = x.d.steht[2]; }, 2500);
+      setTimeout(() => { const h = x.d.steht && x.d.steht[3]; if (h === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (h === 'handy') { x.f.spiele('Idle_Neutral'); if (x.f.pose) x.f.pose('handy', 1e6); } else if (x.d.weg) { x.f.spiele('Walk', { tempo: x.d.tempo / 1.4 }); x.warte = w > 0 ? w : 0; if (x.d.steht) x.f.group.rotation.y = x.d.steht[2]; } else x.f.spiele('Idle'); if (x.d.steht) x.f.group.rotation.y = x.d.steht[2]; }, 2500);
     }
   }
 
@@ -912,7 +951,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       else if (antw === 'lachen' || antw === 'zucken') x.f.geste(antw);
       else if (x.f.pose) { x.f.pose(antw); if (antw === 'klatschen') for (let i = 1; i <= 4; i++) setTimeout(() => ton('klatsch'), i * 419); }
       emoteBlase(EMOTE_SY[antw] || (antw === 'lachen' ? '😂' : '🤷'), x.f.group);
-      setTimeout(() => { const h = x.d.steht && x.d.steht[3]; if (h === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (h === 'handy') x.f.spiele('Idle_Neutral'); else if (x.d.weg) { x.f.spiele('Walk', { tempo: x.d.tempo / 1.4 }); x.warte = w > 0 ? w : 0; } else x.f.spiele('Idle'); if (x.d.steht) x.f.group.rotation.y = x.d.steht[2]; }, antw === 'tanzen' ? 8500 : 2900);
+      setTimeout(() => { const h = x.d.steht && x.d.steht[3]; if (h === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (h === 'handy') { x.f.spiele('Idle_Neutral'); if (x.f.pose) x.f.pose('handy', 1e6); } else if (x.d.weg) { x.f.spiele('Walk', { tempo: x.d.tempo / 1.4 }); x.warte = w > 0 ? w : 0; } else x.f.spiele('Idle'); if (x.d.steht) x.f.group.rotation.y = x.d.steht[2]; }, antw === 'tanzen' ? 8500 : 2900);
     }, 450 + Math.random() * 600);
     if (nah.length) S.merke.emoteAntwort = (S.merke.emoteAntwort || 0) + nah.length;
     return nah.length;
@@ -1275,7 +1314,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       } else if (z.sicht) {   // Andere Sicht (Baustein 5): ein paar Sekunden durch die Augen einer anderen Figur
         await andereSicht(typeof z.sicht === 'function' ? z.sicht(S.merke, S) : z.sicht);
       } else if (z.foto) {   // Foto in der Welt aufnehmen (still), später auf einem Handy zeigen: { foto: 'id', wer, von, auf }
-        FOTOS[z.foto] = fotoAusWelt(z); try { sessionStorage.setItem('lycee.foto.' + z.foto, FOTOS[z.foto]); } catch (e) { /* voll */ }
+        fotoMerken(z.foto, fotoAusWelt(z));
       } else if (z.bemerke) {   // etwas wurde bemerkt (z. B. im Bus hingeschaut) – öffnet später Antworten mit bemerkt: 'key'
         [].concat(z.bemerke).forEach((k) => { S.bemerkt = S.bemerkt || {}; S.bemerkt[k] = true; }); sichern();
       } else if (z.szene) {
@@ -2143,10 +2182,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
   }
   const FOTOS = {};   // Fotos aus der Welt (dataURL), für später: Handy-Karte, Rückblick
+  fotosLaden(platz).then((f) => { for (const [k, v] of Object.entries(f)) if (!FOTOS[k]) FOTOS[k] = v; });   // für Lehrer-Ansicht schon vor dem Weiterspielen
   const RUECKBLICK = { 1: RUECKBLICK_N1 };   // Rückblick in Bildern je Kapitel: (merke) => [{ id, titel, text }]
   const fotoHolen = (id) => FOTOS[id] || (() => { try { return sessionStorage.getItem('lycee.foto.' + id) || ''; } catch (e) { return ''; } })();
   const bemerkt = (k) => [].concat(k).every((x) => !!(S.bemerkt || {})[x]);
-  const fotoMerken = (id, url) => { if (!url) return; FOTOS[id] = url; try { sessionStorage.setItem('lycee.foto.' + id, url); } catch (e) { /* voll */ } };
+  const fotoMerken = (id, url) => { if (!url) return; FOTOS[id] = url; try { sessionStorage.setItem('lycee.foto.' + id, url); } catch (e) { /* voll */ } fotoSpeichern(platz, id, url); };   // auch dauerhaft (IndexedDB, nur auf dem Gerät)
   // Schnappschuss (Gesamtkonzept K1): Jemand fotografiert dich – genau dort, wo du gerade bist. Von einem festen Punkt aus (z. B. der Treppe).
   // { id, von: [x, z] Kamera-Richtung, plaetze: [{ key, x, z | wer, r, sieht }], sonst, gesehen: Gespräch, wenn man es bemerkt,
   //   auch: [{ id, wer, von, auf, fov }] – weitere stille Fotos (z. B. „Das war auch“ für den Rückblick) }
@@ -2358,7 +2398,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (mitBlende) { const hh = Math.floor(st.uhr), mm = Math.round((st.uhr - hh) * 60); await ui.blende((MONAT[st.kap] ? MONAT[st.kap] + ' · ' : '') + (st.tag || '') + ' · ' + hh + ':' + String(mm).padStart(2, '0') + ' · ' + st.titel); }
     statistenNachZeit(st.uhr);
     await stelleLeute(st.leute || {});
-    if (ort && mitStart !== false) steuerung.teleport(ort.x, ort.z, ort.yaw);
+    if (ort && mitStart !== false) { steuerung.teleport(ort.x, ort.z, ort.yaw); steuerung.kamera(0.016, true); weitsichtAlle(); }
     if (mitBlende) ui.blendeAus();
     if (bus) { bus.position.x = st.id === 'ankunft' || st.fertig.ort === 'bus' ? -12 : 300; busFaehrt = 0; }
     ui.auftrag({ kapitel: kapName(st.kap), titel: st.titel, ziel: st.ziel });
@@ -3221,7 +3261,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const yaw = st[2] != null ? st[2] : ziel ? Math.atan2(ziel[0] - px, ziel[1] - pz) : 0;
       x.p.set(px, 0, pz); x.f.group.position.set(px, 0, pz); x.f.group.rotation.y = yaw; x.h.x = px; x.h.z = pz; x.d.steht = [px, pz, yaw, halt];
       x.weg = false; x.f.group.visible = true; if (x.f.group.children[0]) x.f.group.children[0].visible = true;
-      if (halt === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (halt === 'handy') x.f.spiele('Idle_Neutral'); else x.f.spiele('Idle');
+      if (halt === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (halt === 'handy') { x.f.spiele('Idle_Neutral'); if (x.f.pose) x.f.pose('handy', 1e6); } else x.f.spiele('Idle');
     }
   }
   const kmApi = {
@@ -3351,7 +3391,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         anzeige: a ? VW[a.art] + (a.art === 'akku' ? ': am wenigsten ' + a.min + ', am Ende ' + a.ende : ': höchstens ' + a.max + ', am Ende ' + a.ende) + ' (von 100)' : '',
         versuche: Object.entries((S.versuche || {})[k] || {}).map(([t, v]) => ({ t, n: typeof v === 'object' ? v.n : v, ok: typeof v === 'object' ? v.ok !== false : true })),
         gruende: (S.gruende || {})[k] || [], partner: (S.partnerLog || {})[k] || [],
-        blick: (S.blickLog || {})[k] || [], pult: (S.pultLog || {})[k] || null, frei: (S.freiLog || {})[k] || [] });
+        blick: (S.blickLog || {})[k] || [], pult: (S.pultLog || {})[k] || null, frei: (S.freiLog || {})[k] || [],
+        bilder: RUECKBLICK[k] && k <= fertigBis ? RUECKBLICK[k](S.merke, S).map((x) => ({ ...x, url: fotoHolen(x.id) })).filter((x) => x.url) : [] });
     }
     const ng = SCHRITTE.filter((x) => x.neben === 'geschichte'), gespielt = ng.filter((x) => (S.merke.neben || {})[x.id]);
     const em = S.merke.endeMit;
@@ -3675,7 +3716,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (neuBekannt) { S.merke['stk_' + st.id] = true; ui.toast('<b>⭐ Stammgast: ' + st.name + '</b><span>Immer hier. Jede Woche gibt es etwas Neues.</span>', 'ly-t-ent'); }
     } finally {
       ui.dialogZu(); if (x.f.redet) x.f.redet(false);
-      const h = x.d.steht && x.d.steht[3]; if (h === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (h === 'handy') x.f.spiele('Idle_Neutral'); else if (h !== 'sitzt') x.f.spiele('Idle');
+      const h = x.d.steht && x.d.steht[3]; if (h === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (h === 'handy') { x.f.spiele('Idle_Neutral'); if (x.f.pose) x.f.pose('handy', 1e6); } else if (h !== 'sitzt') x.f.spiele('Idle');
       if (x.d.steht && !sitzt) x.f.group.rotation.y = x.d.steht[2];
       imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; sperreBis = performance.now() + 600; sichern();
     }
@@ -4122,6 +4163,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // Menschen: Bewegungen, zum Spieler drehen, Schilder nur nah
     const p = steuerung.pos;
     ausschnittNeu();
+    weitsicht(weitListe ? Math.ceil(weitListe.length / 12) : 0);   // alle ~12 Bilder einmal ganz durch
     for (const x of Object.values(leute)) {
       if (!x.f.group.visible) continue;
       if (x.imSpiel) { x.f.update(dt); continue; }   // z. B. Ben beim H-O-R-S-E: Minispiel steuert Position und Blick
@@ -4285,8 +4327,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!S.merke['sit_' + id]) sitStart(id);
   }
   async function los(neu, figur, name, abKap, module) {
-    if (neu) { S = neuerStand(name, figur); if (abKap > 1) S.schritt = Math.max(0, kapStart(abKap)); if (module) for (const [f, n] of Object.entries(module)) if (n >= 1) fachStand(f).modul = n; sichern(); }
+    if (neu) { fotosLoeschen(platz); for (const k of Object.keys(FOTOS)) delete FOTOS[k]; S = neuerStand(name, figur); if (abKap > 1) S.schritt = Math.max(0, kapStart(abKap)); if (module) for (const [f, n] of Object.entries(module)) if (n >= 1) fachStand(f).modul = n; sichern(); }
     await spielerFigur(S.figur);
+    if (!neu) fotosLaden(platz).then((f) => { for (const k of Object.keys(FOTOS)) delete FOTOS[k]; Object.assign(FOTOS, f); });   // Fotos dieses Spielstands zurück
     laeuft = true;
     if (S.fertig) {
       await starteSchritt(letzterHaupt(), false);
@@ -4320,7 +4363,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     freiZeit: (t) => { if (freiLauf) freiLauf.rest = Math.max(0.05, freiLauf.dauer - t); },   // Test: im freien Moment vorspulen
     get freiT() { return freiLauf ? freiLauf.dauer - freiLauf.rest : null; },
     foto: (z) => fotoAusWelt(z),   // Test: ein Foto aus der Welt (dataURL)
-    teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
+    bericht: () => kmApi.geschichteBericht(),   // Test: was die Lehrer-Ansicht bekommt
+    teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); steuerung.kamera(0.016, true); weitsichtAlle(); },
+    get weitsicht() { return { teile: weitListe ? weitListe.length : 0, aus: weitAus }; },
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
     daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, dosen, haustier, spur, schneemann, laub, pfuetzen, pokale, gdPruefen: (dt = 5) => garderobePruefen(dt), jagd, jagdAnzeige, emote: (a, o) => emoteSpielen(a, o), anziehen: (id) => gleichAnziehen(id), umbau: async () => { const p = steuerung.pos.clone(), y = spieler.group.rotation.y; await spielerFigur(S.figur); spieler.group.position.copy(p); spieler.group.rotation.y = y; }, emoteFrei: () => emoteFrei().map((d) => d.wert), leuteAntworten, kicker3d, billard, garderobe: () => S && S.garderobe, get iaNah() { return iaNah && iaNah.tu; },
