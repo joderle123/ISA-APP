@@ -12,7 +12,7 @@ import { createRequire } from 'node:module'
 // „docx“ (npm) ist kein Paket der App – nur dieses Skript braucht es (npm install docx, oder global vorhanden)
 const {
   AlignmentType, BorderStyle, Document, Footer, ImageRun, LevelFormat, Packer, PageBreak, Paragraph, ShadingType,
-  Table, TableCell, TableRow, TextRun, WidthType,
+  Table, TableCell, TableRow, TextRun, WidthType, Math: WordMath, MathFraction, MathRun,
 } = createRequire(import.meta.url)('docx')
 type Paragraph = InstanceType<typeof Paragraph>
 type Table = InstanceType<typeof Table>
@@ -44,7 +44,7 @@ const SCHRIFT = 'Arial'
 const PDF_BREITE = 595.28 - SEITE.rand * 2              // Inhaltsbreite im PDF (pt)
 
 // ---- Grafiken: jede auf eine eigene PDF-Seite in ihrer Spaltenbreite, dann als PNG zugeschnitten
-const GRAFIK = new Set(['zahlenstrahl', 'kommasprung', 'flaeche', 'treppe', 'temperatur', 'diagramm', 'strichliste', 'kaestchen'])
+const GRAFIK = new Set(['zahlenstrahl', 'kommasprung', 'flaeche', 'treppe', 'temperatur', 'diagramm', 'strichliste', 'kaestchen', 'stellentafel'])
 type Grafik = { b: Baustein; breitePt: number; png?: Buffer; w?: number; h?: number }
 const grafiken: Grafik[] = []
 const grafikVon = new Map<Baustein, Grafik>()
@@ -104,8 +104,19 @@ const duenn: IBorderOptions = { style: BorderStyle.SINGLE, size: 4, color: 'B8BC
 const rahmen = { top: duenn, bottom: duenn, left: duenn, right: duenn }
 const luecke = (s: string) => s.replace(/_{3,}/g, '__________').replace(/\[\]/g, '☐').replace(/\t/g, '   ').replace(/\{([^{}]*)\}/g, '$1')   // {…} = vorgemachtes Beispiel im PDF
 const run = (text: string, o: { bold?: boolean; size?: number; color?: string; italics?: boolean } = {}) => new TextRun({ text, font: SCHRIFT, size: o.size ?? 22, bold: o.bold, italics: o.italics, color: o.color })
+// #z/n# = Bruch übereinander (wie im PDF): in Word als Formel-Bruch
+const mitBruch = (text: string, o: { bold?: boolean; size?: number; color?: string; italics?: boolean } = {}) => {
+  const teile: unknown[] = []; let last = 0
+  for (const m of text.matchAll(/#([^#/]*)\/([^#]*)#/g)) {
+    if ((m.index ?? 0) > last) teile.push(run(luecke(text.slice(last, m.index)), o))
+    teile.push(new WordMath({ children: [new MathFraction({ numerator: [new MathRun(m[1])], denominator: [new MathRun(m[2])] })] }))
+    last = (m.index ?? 0) + m[0].length
+  }
+  if (last < text.length) teile.push(run(luecke(text.slice(last)), o))
+  return teile.length ? teile : [run('', o)]
+}
 const absatz = (text: string, o: { bold?: boolean; size?: number; color?: string; italics?: boolean; nach?: number; vor?: number; keepNext?: boolean } = {}) =>
-  new Paragraph({ children: [run(luecke(text), o)], spacing: { before: o.vor ?? 0, after: o.nach ?? 80 }, keepNext: o.keepNext })
+  new Paragraph({ children: mitBruch(text, o), spacing: { before: o.vor ?? 0, after: o.nach ?? 80 }, keepNext: o.keepNext })
 const linie = () => new Paragraph({ children: [run(' ')], border: { bottom: { style: BorderStyle.SINGLE, size: 4, color: '9AA0AC', space: 1 } }, spacing: { after: 160 } })
 const BUCHST = 'abcdefghijklmnopqrstuvwxyz'
 const zelle = (kinder: (Paragraph | Table)[], breite: number, o: { schatten?: string; rand?: boolean } = {}) =>

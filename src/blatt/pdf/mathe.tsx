@@ -147,18 +147,25 @@ export function Paeckchen({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'paeck
 export function Stellentafel({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'stellentafel' }> }) {
   const n = b.stellen.length
   const k = b.komma
+  // Wie im Unterricht (Foto der Mathelehrerin): Gruppen oben, Kürzel, ausgeschriebene Namen, dicker Strich = Komma.
+  const foto = !!(b.gruppen && b.gruppen.length)
   const hatLabel = b.zeilen.some((z) => z.label)
   const langstes = Math.max(0, ...b.zeilen.map((z) => (z.label ?? '').length))
   const labelB = hatLabel ? Math.min(118, c.breite * 0.34, Math.max(58, langstes * c.m.klein * 0.56 + 14)) : 0
-  const kommaB = 11
-  const zelleB = Math.min(31, (c.breite - labelB - kommaB - 2) / n)
+  const kommaB = foto || k < 0 ? 0 : 11
+  const zelleB = Math.min(foto ? 36 : 31, (c.breite - labelB - kommaB - 2) / n)
   const H = 20
+  const DICK = '#1F2A44'
   const rahmen = { borderColor: NEUTRAL.rahmen }
+  // Gruppengrenzen (Spaltenindex, an dem eine neue Gruppe beginnt) – ohne Komma werden sie dick gezeichnet
+  const grenzen = new Set<number>()
+  if (foto) { let a = 0; for (const g of b.gruppen!) { if (a > 0) grenzen.add(a); a += g.spalten } }
+  const links = (i: number) => (foto && k >= 0 && i === k ? { borderLeftWidth: 2.6, borderLeftColor: DICK } : foto && k < 0 && grenzen.has(i) ? { borderLeftWidth: 1.6, borderLeftColor: DICK } : { borderLeftWidth: 0.7, ...rahmen })
   const ziffer = (ch: string, beispiel: boolean) => (
     <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 11.5, fontWeight: beispiel ? 600 : 400, color: beispiel ? c.p.tief : NEUTRAL.text, lineHeight: 1 }}>{ch}</Text>
   )
-  const zelle = (key: string, inhalt: ReactNode, nach: boolean, kopf = false) => (
-    <View key={key} style={{ width: zelleB, height: H, alignItems: 'center', justifyContent: 'center', borderLeftWidth: 0.7, ...rahmen, backgroundColor: kopf ? c.p.zart : nach ? '#FAFAFE' : '#FFFFFF' }}>
+  const zelle = (key: string, inhalt: ReactNode, nach: boolean, i: number, kopf = false, hoehe = H) => (
+    <View key={key} style={{ width: zelleB, height: hoehe, alignItems: 'center', justifyContent: 'center', ...links(i), backgroundColor: kopf ? c.p.zart : nach ? '#FAFAFE' : '#FFFFFF' }}>
       {inhalt}
     </View>
   )
@@ -167,37 +174,75 @@ export function Stellentafel({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'st
       {inhalt}
     </View>
   )
-  const zeile = (key: string, label: string | undefined, zahl: string | undefined, kopf: boolean) => {
+  const labelZelle = (inhalt: ReactNode, kopf: boolean, hoehe = H) =>
+    hatLabel ? (
+      <View style={{ width: labelB, height: hoehe, justifyContent: 'center', paddingHorizontal: 6, backgroundColor: kopf ? c.p.zart : '#FFFFFF' }}>{inhalt}</View>
+    ) : null
+  const zeile = (key: string, label: string | undefined, zahl: string | undefined, kopf: boolean, bis?: number) => {
     const [g, nk] = zahl ? (zahl.includes(',') ? zahl.split(',') : [zahl, '']) : ['', '']
     const zellen: ReactNode[] = []
     for (let i = 0; i < n; i++) {
-      const nach = i >= k
+      const nach = k >= 0 && i >= k
       let inhalt: ReactNode = null
       if (kopf) inhalt = <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: c.p.tief, lineHeight: 1 }}>{b.stellen[i]}</Text>
-      else if (zahl) {
+      else if (zahl && bis !== undefined) {
+        const ziffern = zahl.replace(/[^0-9]/g, ''), j = ziffern.length - 1 - (bis - i)
+        if (j >= 0 && j < ziffern.length && i <= bis) inhalt = ziffer(ziffern[j], true)
+      } else if (zahl && k >= 0) {
         const ch = nach ? nk[i - k] : g[g.length - (k - i)]
         if (ch !== undefined) inhalt = ziffer(ch, true)
       }
-      if (i === k) zellen.push(kommaZelle(key + 'k', kopf ? null : <Text style={{ fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: 12, color: zahl && nk ? c.p.tief : NEUTRAL.rahmen, lineHeight: 1 }}>,</Text>, kopf))
-      zellen.push(zelle(key + i, inhalt, nach, kopf))
+      if (i === k && kommaB) zellen.push(kommaZelle(key + 'k', kopf ? null : <Text style={{ fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: 12, color: zahl && nk ? c.p.tief : NEUTRAL.rahmen, lineHeight: 1 }}>,</Text>, kopf))
+      zellen.push(zelle(key + i, inhalt, nach, i, kopf))
     }
     return (
-      <View key={key} style={{ flexDirection: 'row', borderTopWidth: kopf ? 0 : 0.7, ...rahmen }}>
-        {hatLabel ? (
-          <View style={{ width: labelB, height: H, justifyContent: 'center', paddingHorizontal: 6, backgroundColor: kopf ? c.p.zart : '#FFFFFF' }}>
-            {label ? (
-              <Text style={{ fontFamily: c.m.schrift, fontSize: c.m.klein, color: NEUTRAL.text, lineHeight: 1.1 }}>{t(c, label)}</Text>
-            ) : null}
-          </View>
-        ) : null}
+      <View key={key} style={{ flexDirection: 'row', borderTopWidth: kopf && !foto ? 0 : 0.7, ...rahmen }}>
+        {labelZelle(label ? <Text style={{ fontFamily: c.m.schrift, fontSize: c.m.klein, color: NEUTRAL.text, lineHeight: 1.1 }}>{t(c, label)}</Text> : null, kopf)}
         {zellen}
       </View>
     )
   }
-  return (
+  // Kopfzeile mit den Gruppen (über mehreren Spalten)
+  const gruppenZeile = () => {
+    let a = 0
+    return (
+      <View style={{ flexDirection: 'row' }}>
+        {labelZelle(null, true)}
+        {b.gruppen!.map((g, gi) => {
+          const start = a; a += g.spalten
+          return (
+            <View key={'g' + gi} style={{ width: zelleB * g.spalten, height: H, alignItems: 'center', justifyContent: 'center', ...links(start), backgroundColor: c.p.zart }}>
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: Math.min(9.5, (zelleB * g.spalten - 4) / Math.max(1, g.titel.length * 0.6)), color: NEUTRAL.text, lineHeight: 1 }}>{t(c, g.titel)}</Text>
+            </View>
+          )
+        })}
+      </View>
+    )
+  }
+  // ausgeschriebene Namen unter den Kürzeln (klein, zweizeilig)
+  const namenZeile = () => (
+    <View style={{ flexDirection: 'row', borderTopWidth: 0.7, ...rahmen }}>
+      {labelZelle(null, true, 22)}
+      {b.namen!.map((nm, i) => zelle('n' + i, <Text style={{ fontFamily: c.m.schrift, fontSize: 5.6, color: NEUTRAL.leise, lineHeight: 1.05, textAlign: 'center' }}>{nm}</Text>, false, i, true, 22))}
+    </View>
+  )
+  const tafel = (
     <View wrap={false} style={{ alignSelf: 'flex-start', borderWidth: 0.9, borderColor: NEUTRAL.linie, borderRadius: 5, overflow: 'hidden' }}>
+      {foto ? gruppenZeile() : null}
       {zeile('kopf', undefined, undefined, true)}
-      {b.zeilen.map((z, i) => zeile('z' + i, z.label, z.zahl, false))}
+      {foto && b.namen?.length === n ? namenZeile() : null}
+      {b.zeilen.map((z, i) => zeile('z' + i, z.label, z.zahl, false, z.bis))}
+    </View>
+  )
+  if (!b.titel && !b.punkte?.length) return tafel
+  // mit Erklärung darüber: bleibt zusammen auf einer Seite
+  return (
+    <View wrap={false}>
+      {b.titel ? <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: c.p.tief, marginBottom: 3 }}>{t(c, b.titel)}</Text> : null}
+      {(b.punkte ?? []).map((pk, i) => (
+        <Text key={i} style={{ fontFamily: c.m.schrift, fontSize: c.m.klein, lineHeight: 1.35, color: NEUTRAL.text, marginBottom: 1.5 }}>{'•  ' + t(c, pk)}</Text>
+      ))}
+      <View style={{ marginTop: 5 }}>{tafel}</View>
     </View>
   )
 }

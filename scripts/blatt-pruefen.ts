@@ -297,11 +297,21 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
         }
         break
       case 'stellentafel': {
-        if (b.stellen.length < 2 || b.stellen.length > 8) melde('F', w, 'Stellentafel: 2–8 Stellen')
-        if (b.komma < 1 || b.komma > b.stellen.length) melde('F', w, 'Stellentafel: Komma nach Stelle 1 … Anzahl der Stellen')
+        // mit Gruppen (Stil aus dem Unterricht, auch Umwandlungstabellen: 7 Einheiten × 2) bis 14 Stellen; ohne Komma nur mit Gruppen
+        const gruppen = b.gruppen ?? []
+        const maxStellen = gruppen.length ? 14 : 8
+        if (b.stellen.length < 2 || b.stellen.length > maxStellen) melde('F', w, `Stellentafel: 2–${maxStellen} Stellen`)
+        if (gruppen.length && gruppen.reduce((a, g) => a + g.spalten, 0) !== b.stellen.length) melde('F', w, 'Stellentafel: Gruppen decken nicht alle Stellen ab')
+        if (b.namen && b.namen.length !== b.stellen.length) melde('F', w, 'Stellentafel: so viele Namen wie Stellen')
+        if (!(b.komma === -1 && gruppen.length) && (b.komma < 1 || b.komma > b.stellen.length)) melde('F', w, 'Stellentafel: Komma nach Stelle 1 … Anzahl der Stellen')
         for (const z of b.zeilen) {
           if (!z.zahl) continue
           if (!/^\d+(,\d+)?$/.test(z.zahl)) { melde('F', w, `Stellentafel: „${z.zahl}“ ist keine Zahl`); continue }
+          if (z.bis !== undefined) {   // Umwandlung: letzte Ziffer in Spalte „bis“
+            if (z.bis < 0 || z.bis >= b.stellen.length || z.zahl.replace(',', '').length > z.bis + 1) melde('F', w, `Stellentafel: „${z.zahl}“ passt nicht vor Spalte ${z.bis + 1}`)
+            continue
+          }
+          if (b.komma < 0) { melde('F', w, `Stellentafel: „${z.zahl}“ braucht ein Komma oder „bis“`); continue }
           const [g, nk = ''] = z.zahl.split(',')
           if (g.length > b.komma || nk.length > b.stellen.length - b.komma) melde('F', w, `Stellentafel: „${z.zahl}“ passt nicht in die Stellen`)
         }

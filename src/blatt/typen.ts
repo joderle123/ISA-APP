@@ -208,7 +208,11 @@ export type Baustein =
   | { art: 'paeckchen'; items: string[]; spalten?: 1 | 2 | 3 | 4; buchstaben?: boolean }
   /** Stellenwerttafel: `stellen` z. B. ['Z', 'E', 'z', 'h'], das Komma steht nach der Stelle Nr. `komma` (ab 1).
    *  Zeilen mit `zahl` sind ausgefüllt (Beispiel), ohne `zahl` leer zum Eintragen. */
-  | { art: 'stellentafel'; stellen: string[]; komma: number; zeilen: { label?: string; zahl?: string }[] }
+  /** Stellentafel. Wie im Unterricht (Foto der Mathelehrerin, 26.11.2026) mit `gruppen` (Kopfzeile über mehreren Spalten,
+   *  z. B. Millionen · Tausender · Einer · Tausendstel oder km² · ha · a · m² …), `namen` (ausgeschrieben unter den Kürzeln)
+   *  und dem dicken Strich als Komma. `komma: -1` = kein Komma (Umwandlungstabelle); dann dicke Striche zwischen den Gruppen.
+   *  Eine Zeile mit `bis` schreibt die Ziffern von `zahl` so, dass die letzte in Spalte `bis` steht (Umwandlungen). */
+  | { art: 'stellentafel'; stellen: string[]; komma: number; zeilen: { label?: string; zahl?: string; bis?: number }[]; gruppen?: { titel: string; spalten: number }[]; namen?: string[]; titel?: string; punkte?: string[] }
   /** Hunderterfelder (10 × 10 = 1 Ganzes): `gefaerbt` Kästchen sind gefärbt, spaltenweise (erst ganze Zehntel).
    *  `text` steht darunter, ohne `text` eine Schreiblinie. */
   | { art: 'hunderterfeld'; felder: { gefaerbt?: number; text?: string; label?: string }[]; spalten?: 2 | 3 | 4 }
