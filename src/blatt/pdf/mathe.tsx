@@ -284,7 +284,7 @@ export function Umwandlungstabelle({ c, b, marken }: { c: Ctx; b: Extract<Bauste
       zellen.push(
         <View key={i} style={{ width: zelleB, minHeight: H, alignItems: 'center', justifyContent: 'center', backgroundColor: FELD, ...links(i), position: 'relative' }}>
           {ch !== undefined ? <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 11.5, fontWeight: istNull ? 400 : 600, color: istNull ? NEUTRAL.leise : c.p.tief, lineHeight: 1 }}>{ch}</Text> : null}
-          {komma ? <Text style={{ position: 'absolute', left: -3.4, bottom: 0.5, fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 17, color: ROT, lineHeight: 1 }}>,</Text> : null}
+          {komma ? <Text style={{ position: 'absolute', left: -4.2, bottom: 5.5, fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 24, color: ROT, lineHeight: 1 }}>,</Text> : null}
         </View>,
       )
     }

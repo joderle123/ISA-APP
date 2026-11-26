@@ -4164,12 +4164,13 @@
             {
               "art": "info",
               "symbol": "tipp",
-              "titel": "Musterlösung: Groß nach klein",
+              "titel": "Musterlösung: Groß → klein",
               "text": "Aufgabe: Wandle um: 3 m² = ___ dm².",
               "punkte": [
-                "m² → dm² ist eine Stufe nach unten (kleinere Einheit).",
-                "Groß → klein: · 100.",
-                "3 · 100 = 300.",
+                "Umwandlungstabelle: jede Einheit hat 2 Spalten.",
+                "Trag 3 in die letzte m²-Spalte ein.",
+                "Fülle die zwei dm²-Spalten mit Nullen.",
+                "Lies bis dm² ab: 3 – 0 – 0.",
                 "Ergebnis: 3 m² = 300 dm²."
               ]
             }
@@ -4178,13 +4179,13 @@
             {
               "art": "info",
               "symbol": "merke",
-              "titel": "Musterlösung: Ar und Hektar",
-              "text": "Aufgabe: Wandle um: 5 ha = ___ a.",
+              "titel": "Musterlösung: Mit Komma",
+              "text": "Aufgabe: Wandle um: 2,5 ha = ___ m².",
               "punkte": [
-                "ha → a ist eine Stufe nach unten.",
-                "· 100.",
-                "5 · 100 = 500.",
-                "Ergebnis: 5 ha = 500 a."
+                "Trag 2 in die letzte ha-Spalte ein, die 5 kommt direkt dahinter (erste a-Spalte).",
+                "Fülle mit Nullen auf bis zur letzten m²-Spalte: 0 – 0 – 0.",
+                "Lies bis m² ab: 2 – 5 – 0 – 0 – 0.",
+                "Ergebnis: 2,5 ha = 25.000 m²."
               ]
             }
           ]
