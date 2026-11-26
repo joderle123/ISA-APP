@@ -665,6 +665,167 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     })();
   });
 
+  // ---------- Werkzeug-Karte (Gesamtkonzept: Theorie in 20 Sekunden, für die Hosentasche) ----------
+  // def: { von, titel, text, zeilen: [[symbol, name, info]], fuss } → {}
+  ui.werkzeugKarte = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz sz-werkzeug"><div class="sz-kopf"><span class="sz-wo">' + esc(def.von || 'Werkzeug') + '</span><b>🃏 ' + esc(def.titel) + '</b></div>' +
+      (def.text ? '<p class="sz-info">' + esc(ersetze(def.text)) + '</p>' : '') +
+      '<div class="sz-wz-zeilen">' + (def.zeilen || []).map(([sy, n, info]) => '<div><b>' + sy + '</b><span><strong>' + esc(n) + '</strong> ' + esc(info) + '</span></div>').join('') + '</div>' +
+      (def.fuss ? '<p class="sz-wz-fuss">' + esc(ersetze(def.fuss)) + '</p>' : '') +
+      '<div class="sz-karten"><button type="button" class="sz-weiter" data-a="w">Einstecken <kbd>E</kbd></button></div></div>');
+    const zu = () => { loesche(); ui.ebeneZu(); ok({}); };
+    k.querySelector('[data-a="w"]').onclick = zu;
+    halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
+  });
+
+  // ---------- Werkbank (Atelier, Gesamtkonzept K2): anzeichnen, sägen im Takt, schrauben. Zweimal messen, einmal sägen. ----------
+  // Wer hetzt, sägt schief. Ein falsches Maß kann man vor dem Sägen noch stoppen („Moment. Auf dem Plan steht …“).
+  // def: { wo, soll (cm laut Plan), start (angesagtes Maß), wer (wer anzeichnet: Name oder 'du'), hetzen: { wer, ab } }
+  // → { mass, massOk, korrigiert, takt (gute Züge von 10), schrauben (gute von 4), gerade }
+  ui.werkbank = (def) => new Promise((ok) => {
+    const SOLL = def.soll || 42, CM0 = 30, PX = 8.4;
+    const k = ui.ebeneAuf('szene', '<div class="sz sz-werkbank"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Werkstatt') + '</span><b>🪚 Werkbank</b></div>' +
+      '<p class="sz-info sz-wb-schritt"></p><div class="sz-wb-plan">📐 Plan: Bein <b>' + SOLL + ' cm</b></div><canvas class="sz-wb-brett" width="560" height="180"></canvas>' +
+      '<div class="sz-wb-leiste"></div><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div><div class="sz-stand"></div></div>');
+    const cv = k.querySelector('canvas'), x = cv.getContext('2d'), info = k.querySelector('.sz-wb-schritt'), leiste = k.querySelector('.sz-wb-leiste'),
+      karten = k.querySelector('.sz-karten'), stand = k.querySelector('.sz-stand'), bühne = k.querySelector('.sz-bühne');
+    let mass = def.wer === 'du' ? 36 : def.start || SOLL, korrigiert = false, schnitt = [], schrauben = [];
+    const sag = (wer, t, farbe) => { bühne.innerHTML = '<div class="sz-blase" style="--f:' + (farbe || '#4f6170') + '"><b>' + esc(wer) + '</b>' + esc(ersetze(t)) + '</div>'; };
+    const zeichne = () => {
+      x.clearRect(0, 0, 560, 180);
+      x.fillStyle = '#d9b07a'; x.fillRect(CM0, 62, 60 * PX, 66); x.strokeStyle = 'rgba(140,100,60,.45)'; x.lineWidth = 1;
+      for (let i = 0; i < 6; i++) { x.beginPath(); x.moveTo(CM0, 70 + i * 10); x.bezierCurveTo(CM0 + 160, 66 + i * 10, CM0 + 330, 76 + i * 10, CM0 + 60 * PX, 69 + i * 10); x.stroke(); }
+      x.fillStyle = '#f2d23c'; x.fillRect(CM0, 24, 60 * PX, 26); x.fillStyle = '#2b2b33'; x.font = '11px system-ui'; x.textAlign = 'center';
+      for (let c = 0; c <= 60; c++) { const px = CM0 + c * PX, lang = c % 10 === 0 ? 14 : c % 5 === 0 ? 10 : 5; x.fillRect(px - 0.5, 24, 1, lang); if (c % 10 === 0) x.fillText(String(c), px, 47); }
+      const px = CM0 + mass * PX;
+      x.strokeStyle = '#2b3a55'; x.lineWidth = 2; x.setLineDash([5, 4]); x.beginPath(); x.moveTo(px, 54); x.lineTo(px, 134); x.stroke(); x.setLineDash([]);
+      x.fillStyle = '#2b3a55'; x.font = 'bold 13px system-ui'; x.fillText((Math.round(mass * 2) / 2).toString().replace('.', ',') + ' cm', px, 152);
+      if (schnitt.length) {
+        x.strokeStyle = '#4a2c14'; x.lineWidth = 3; x.beginPath(); let dx = 0;
+        schnitt.forEach((d, i) => { dx += d; const yy = 62 + ((i + 1) / 10) * 66; if (!i) x.moveTo(px, 62); x.lineTo(px + dx, yy); }); x.stroke();
+      }
+      schrauben.forEach((g, i) => { const sx = CM0 + 6 * PX + i * 13 * PX, sy = 95; x.fillStyle = g === 'gut' ? '#3fa66b' : g === 'locker' ? '#e9a23b' : '#d6452f'; x.beginPath(); x.arc(sx, sy, 6, 0, 7); x.fill(); x.strokeStyle = '#fff'; x.lineWidth = 1.5; x.beginPath(); x.moveTo(sx - 4, sy); x.lineTo(sx + 4, sy); x.stroke(); });
+    };
+    const knopf = (html) => new Promise((fertig) => {
+      karten.innerHTML = html; let aus = false; const ende = (a) => { if (aus) return; aus = true; loesche(); karten.innerHTML = ''; fertig(a); };
+      karten.querySelectorAll('[data-a]').forEach((b) => { b.onclick = () => ende(b.dataset.a); });
+      halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); const b = karten.querySelector('[data-a]'); if (b) ende(b.dataset.a); } });
+    });
+    (async () => {
+      zeichne();
+      // 1 · Anzeichnen
+      if (def.wer === 'du') {
+        info.textContent = '1 · Anzeichnen. Schieb den Strich auf das Maß vom Plan.';
+        leiste.innerHTML = '<button type="button" class="sz-wb-fein" data-d="-0.5">−</button><input type="range" min="20" max="55" step="0.5" value="' + mass + '" aria-label="Maß in Zentimetern"><button type="button" class="sz-wb-fein" data-d="0.5">+</button>';
+        const r = leiste.querySelector('input'); r.addEventListener('keydown', (e) => e.stopPropagation());
+        r.oninput = () => { mass = +r.value; zeichne(); };
+        leiste.querySelectorAll('[data-d]').forEach((b) => { b.onclick = () => { mass = Math.max(20, Math.min(55, mass + +b.dataset.d)); r.value = mass; zeichne(); }; });
+        for (let mal = 1; ; mal++) {
+          const a = await knopf('<button type="button" class="sz-weiter" data-a="fertig">Angezeichnet <kbd>E</kbd></button>' + (mal === 1 ? '<button type="button" data-a="nochmal"><span>Noch mal messen</span></button>' : ''));
+          if (a !== 'nochmal') break;
+          stand.textContent = Math.abs(mass - SOLL) < 0.26 ? 'Gemessen: passt genau.' : 'Gemessen: ' + String(mass).replace('.', ',') + ' cm. Auf dem Plan stehen ' + SOLL + '.';
+        }
+        leiste.innerHTML = ''; stand.textContent = '';
+      } else {
+        info.textContent = '1 · Anzeichnen. ' + (def.wer || 'Jemand') + ' zeichnet an.';
+        sag(def.wer || 'Jo', mass === SOLL ? 'Zweiundvierzig. Strich. Fertig.' : String(mass) + '. Passt. Säg los.', def.farbe);
+        const a = await knopf('<button type="button" class="sz-weiter" data-a="weiter">Sägen <kbd>E</kbd></button>' + (mass !== SOLL ? '<button type="button" data-a="stopp"><span>„Moment. Auf dem Plan steht ' + SOLL + '.“</span></button>' : ''));
+        if (a === 'stopp') { korrigiert = true; mass = SOLL; zeichne(); sag(def.wer || 'Jo', '(schaut auf den Plan) … Okay. ' + SOLL + '. Dann eben ' + SOLL + '.', def.farbe); await warte(1600); }
+      }
+      bühne.innerHTML = '';
+      // 2 · Sägen im Takt
+      info.textContent = '2 · Sägen. Ein Zug, wenn der Kreis aufleuchtet. Nicht hetzen.';
+      leiste.innerHTML = '<div class="sz-wb-takt"><i></i></div><button type="button" class="sz-wb-saege">🪚 Zug <kbd>Leertaste</kbd></button>';
+      const takt = leiste.querySelector('.sz-wb-takt i'), saege = leiste.querySelector('.sz-wb-saege');
+      let gut = 0;
+      await new Promise((fertig) => {
+        const N = 10, t0 = performance.now() + 900, schlaege = []; let tb = t0, aus = false;
+        for (let i = 0; i < N; i++) { const iv = def.hetzen && i >= (def.hetzen.ab || 5) ? 540 : 820; schlaege.push(tb); tb += iv; }
+        const getroffen = new Array(N).fill(null);
+        const zug = () => {
+          if (aus) return; const t = performance.now();
+          let j = -1, best = 1e9; schlaege.forEach((s, i) => { if (getroffen[i] == null && Math.abs(t - s) < best) { best = Math.abs(t - s); j = i; } });
+          if (j < 0 || best > 420) return;
+          getroffen[j] = best < 150 ? 0 : best < 290 ? (Math.random() < 0.5 ? -2 : 2) : (Math.random() < 0.5 ? -6 : 6);
+          if (best < 150) gut++;
+          saege.classList.remove('zug'); void saege.offsetWidth; saege.classList.add('zug');
+          schnitt = getroffen.filter((v) => v != null); zeichne();
+        };
+        saege.onclick = zug;
+        halte((e) => { if (e.code === 'Space' || e.code === 'KeyE') { e.preventDefault(); e.stopPropagation(); zug(); } });
+        let gehetzt = false;
+        const tick = () => {
+          if (aus) return; const t = performance.now();
+          const nah = schlaege.some((s) => Math.abs(t - s) < 110);
+          takt.classList.toggle('an', nah);
+          if (def.hetzen && !gehetzt && t > schlaege[def.hetzen.ab || 5] - 900) { gehetzt = true; sag(def.hetzen.wer || 'Jo', 'Schneller! Die anderen sind schon beim Schrauben.', def.hetzen.farbe); }
+          if (t > schlaege[N - 1] + 450) { aus = true; loesche(); schlaege.forEach((s, i) => { if (getroffen[i] == null) getroffen[i] = Math.random() < 0.5 ? -3 : 3; }); schnitt = getroffen; zeichne(); fertig(); return; }
+          requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+      const schief = Math.abs(schnitt.reduce((a, b) => a + b, 0));
+      leiste.innerHTML = ''; bühne.innerHTML = '';
+      stand.textContent = gut >= 7 ? 'Der Schnitt ist gerade.' : gut >= 4 ? 'Der Schnitt läuft ein bisschen.' : 'Der Schnitt ist schief.';
+      await warte(1200);
+      // 3 · Schrauben: halten, im grünen Bereich loslassen
+      info.textContent = '3 · Schrauben. Halten, bis die Anzeige im grünen Feld ist. Dann loslassen.';
+      leiste.innerHTML = '<div class="sz-wb-kraft"><span class="gruen"></span><i></i></div><button type="button" class="sz-wb-saege">🔩 Halten <kbd>Leertaste</kbd></button>';
+      const kraft = leiste.querySelector('.sz-wb-kraft i'), dreh = leiste.querySelector('.sz-wb-saege');
+      for (let s = 0; s < 4; s++) {
+        stand.textContent = 'Schraube ' + (s + 1) + ' von 4';
+        const g = await new Promise((fertig) => {
+          let start = 0, an = false, aus = false, v = 0;
+          const auf = (e) => { if (e.code === 'Space' || e.code === 'KeyE') lass(); };
+          const los = () => { if (aus || an) return; an = true; start = performance.now(); requestAnimationFrame(fuell); };
+          const lass = () => { if (aus || !an) return; aus = true; loesche(); document.removeEventListener('keyup', auf, true); dreh.onpointerdown = dreh.onpointerup = dreh.onpointerleave = null; fertig(v < 62 ? 'locker' : v <= 84 ? 'gut' : 'zu'); };
+          const fuell = () => { if (aus) return; v = Math.min(100, (performance.now() - start) / 1000 * 62); kraft.style.width = v + '%'; kraft.style.background = v < 62 ? '#e9a23b' : v <= 84 ? '#3fa66b' : '#d6452f'; if (v >= 100) { lass(); return; } requestAnimationFrame(fuell); };
+          kraft.style.width = '0%';
+          dreh.onpointerdown = (e) => { e.preventDefault(); los(); }; dreh.onpointerup = lass; dreh.onpointerleave = lass;
+          halte((e) => { if (e.code === 'Space' || e.code === 'KeyE') { e.preventDefault(); e.stopPropagation(); if (e.type === 'keydown' && !e.repeat) los(); } });
+          document.addEventListener('keyup', auf, true);
+        });
+        schrauben.push(g); zeichne();
+        stand.textContent = g === 'gut' ? 'Sitzt.' : g === 'locker' ? 'Zu locker. Wackelt.' : 'Zu fest. Das Holz ist gerissen.';
+        await warte(700);
+      }
+      leiste.innerHTML = '';
+      const massOk = Math.abs(mass - SOLL) < 0.6, schraubenGut = schrauben.filter((g) => g === 'gut').length;
+      const gerade = massOk && gut >= 5 && schief <= 8 && schraubenGut >= 3;
+      info.textContent = gerade ? 'Fertig. Die Bank steht gerade.' : !massOk ? 'Fertig. Ein Bein ist ' + Math.abs(Math.round((mass - SOLL) * 10) / 10).toString().replace('.', ',') + ' cm ' + (mass > SOLL ? 'länger' : 'kürzer') + '. Die Bank wackelt.' : 'Fertig. Die Bank wackelt ein bisschen.';
+      stand.textContent = 'Saubere Züge: ' + gut + ' von 10 · Schrauben, die sitzen: ' + schraubenGut + ' von 4';
+      await knopf('<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>');
+      ui.ebeneZu(); ok({ mass, massOk, korrigiert, takt: gut, schrauben: schraubenGut, gerade });
+    })();
+  });
+
+  // ---------- Steckbrief (Deutsch, Gesamtkonzept K2): nur schreiben, was die Person gesagt hat. Drei Zeilen. ----------
+  // Sätze mit „immer“, „alle“, „nie“ werden markiert. Was einem jemand anvertraut hat, ist NICHT markiert – das merkt man selbst (oder später).
+  // def: { wo, wer: { name, farbe }, bildUrl, fakten: [{ t, gesagt: true|false, geheim }], max } → { gewaehlt: [i], geheim, gedacht, verallg }
+  ui.steckbrief = (def) => new Promise((ok) => {
+    const MAX = def.max || 3, gew = [];
+    const k = ui.ebeneAuf('szene', '<div class="sz sz-steckbrief"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Deutsch') + '</span><b>📝 Steckbrief für die Annexe News</b></div>' +
+      '<div class="sz-sb-karte"><div class="sz-sb-foto">' + (def.bildUrl ? '<img alt="Foto" src="' + def.bildUrl + '">' : '<i>' + esc(def.wer.name[0]) + '</i>') + '</div><div><b class="sz-sb-name" style="color:' + esc(def.wer.farbe) + '">' + esc(def.wer.name) + ' · 7P2</b><ol class="sz-sb-zeilen"></ol></div></div>' +
+      '<p class="sz-info">Wähl ' + MAX + ' Sätze für den Steckbrief. Er hängt danach das ganze Jahr im Saal.</p><div class="sz-sb-fakten"></div><div class="sz-karten"></div></div>');
+    const zeilen = k.querySelector('.sz-sb-zeilen'), fakten = k.querySelector('.sz-sb-fakten'), karten = k.querySelector('.sz-karten');
+    const allg = (t) => /\b(immer|alle|nie|niemand|jeder)\b/i.test(t);
+    const zeig = () => {
+      zeilen.innerHTML = [0, 1, 2].slice(0, MAX).map((i) => { const f = def.fakten[gew[i]]; return '<li class="' + (f ? '' : 'leer') + '">' + (f ? esc(ersetze(f.t)) + (allg(f.t) ? ' <em class="sz-sb-warn">„' + esc((/\b(immer|alle|nie|niemand|jeder)\b/i.exec(f.t) || [''])[0]) + '“ – stimmt das?</em>' : '') : '…') + '</li>'; }).join('');
+      fakten.innerHTML = def.fakten.map((f, i) => '<button type="button" data-i="' + i + '" class="' + (gew.includes(i) ? 'an' : '') + '"><span>' + esc(ersetze(f.t)) + '</span><small>' + (f.gesagt ? '💬 hat ' + esc(def.wer.name) + ' gesagt' : '💭 denkst du') + '</small></button>').join('');
+      fakten.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => { const i = +b.dataset.i, j = gew.indexOf(i); if (j >= 0) gew.splice(j, 1); else if (gew.length < MAX) gew.push(i); zeig(); }; });
+      karten.innerHTML = gew.length === MAX ? '<button type="button" class="sz-weiter" data-a="w">Aufhängen <kbd>E</kbd></button>' : '';
+      const w = karten.querySelector('[data-a="w"]'); if (w) w.onclick = fertig;
+    };
+    const fertig = () => {
+      if (gew.length < MAX) return;
+      loesche(); ui.ebeneZu();
+      const f = gew.map((i) => def.fakten[i]);
+      ok({ gewaehlt: gew.slice(), geheim: f.some((x) => x.geheim), gedacht: f.filter((x) => !x.gesagt).length, verallg: f.filter((x) => allg(x.t)).length });
+    };
+    zeig();
+    halte((e) => { if ((e.code === 'KeyE' || e.code === 'Enter') && gew.length === MAX) { e.preventDefault(); e.stopPropagation(); fertig(); } });
+  });
+
   // ---------- Teams wählen (Sport): du bist Kapitän:in, abwechselnd mit jemand anderem ----------
   // def: { gegner: { name, farbe }, leute: [ { id, name, farbe, info } ], gegnerWahl: [ids in Reihenfolge] } → { team: [ids], letzte: id, zuerst: id }
   ui.teamsWaehlen = (def) => new Promise((ok) => {

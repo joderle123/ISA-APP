@@ -97,11 +97,13 @@ const TEST = (m, S) => {
 };
 
 // ---------- Montag 8:55: Handys zurück. Ein Post von 8:34. ----------
-const POST_834 = {
+// Wer in Kapitel 2 die Liste zu Mme Tidderich gebracht hat: Der Account kommt härter zurück (Gesamtkonzept K2).
+const POST_834 = (m) => ({
   titel: '@annexe.cam', mitglieder: 0, dauer: 16,
   nachrichten: [
     { nach: 0.4, system: true, text: 'Neuer Beitrag · 8:34' },
     { nach: 1.2, wer: '@annexe.cam', bild: 'Euer Saal während des Tests. Von hinten links. In der Mitte: Noah, die Hände vor dem Gesicht.', text: 'prüfungsangst. lowkey süß.', lacher: { start: 9, proSek: 0.6 } },
+    ...(m.listeGemeldet ? [{ nach: 3.2, wer: '@annexe.cam', text: 'gruß an die person, die im november zu tidderich gerannt ist. der schrank hilft nicht.' }] : []),
     { nach: 4.5, wer: 'jo_7p2', text: 'WIE' },
     { nach: 6.5, wer: 'unbekannt_04', text: 'die handys waren doch in der kiste??' },
     { nach: 9, system: true, text: '96 Likes' },
@@ -110,7 +112,7 @@ const POST_834 = {
     { id: 'zoom', t: 'Foto vergrößern', symbol: '🔍', setzt: 'zoom', sys: 'Am Bildrand: ein grüner Fleck. Unscharf. Wie ein Licht.' },
     { id: 'noah', t: 'Zu Noah schauen', symbol: '👀', setzt: 'noah', sys: 'Noah steht an der Wand. Er starrt auf sein Display.', ende: true },
   ],
-};
+});
 
 // ---------- Freitag 12:05: Jos Screenshot. Sechzig Sekunden bis zur Klingel. (Entscheidung B) ----------
 // Wer am Mittwoch geatmet hat, bekommt drei Sekunden, in denen die Uhr steht. Ohne Hinweis.

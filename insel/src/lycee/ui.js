@@ -132,6 +132,55 @@ export function createUI({ root, input, speech }) {
     };
     zeichne();
   });
+  // Tank-Blick (Gesamtkonzept K2, Werkzeug „Sechs Tanks“): nach dem Hinschauen sechs Anzeigen. Welcher Tank ist bei dieser Person leer?
+  // Man tippt EINEN (oder „keiner“). Es gibt kein Richtig/Falsch auf dem Schirm – was man vermutet, öffnet danach passende oder unpassende Wege.
+  // def = { wer, name, leer } → Promise<'koerper'|…|'keiner'>
+  const TANK_LISTE = [['koerper', 'Körper', '🍎', 'Schlaf, Essen, Bewegung'], ['sicherheit', 'Sicherheit', '🛡️', 'wissen, was passiert'], ['dazu', 'Dazugehören', '🤝', 'Leute, bei denen man richtig ist'],
+    ['ernst', 'Ernst genommen', '👂', 'jemand hört wirklich zu'], ['selbst', 'Selbst entscheiden', '🧭', 'über sich bestimmen'], ['spass', 'Spaß und Neues', '🎉', 'lachen, ausprobieren']];
+  ui.TANK_LISTE = TANK_LISTE;
+  ui.tankBlick = (def) => new Promise((ok) => {
+    const k = el('div', 'ly-blick ly-tankblick hud-interactive'); root.appendChild(k); root.classList.add('ly-im-blick');
+    let tipp = null;
+    const fertig = () => { k.remove(); root.classList.remove('ly-im-blick'); document.removeEventListener('keydown', taste, true); ok(tipp); };
+    const waehle = (id) => { if (tipp) return; tipp = id; zeichne(); };
+    const taste = (e) => {
+      const m = /^Digit([1-7])$/.exec(e.code);
+      if (m && !tipp) { e.preventDefault(); e.stopPropagation(); waehle(m[1] === '7' ? 'keiner' : TANK_LISTE[+m[1] - 1][0]); }
+      else if ((e.code === 'Enter' || e.code === 'KeyE') && tipp) { e.preventDefault(); e.stopPropagation(); fertig(); }
+    };
+    document.addEventListener('keydown', taste, true);
+    const zeichne = () => {
+      const t = tipp && TANK_LISTE.find((x) => x[0] === tipp);
+      k.innerHTML = '<div class="ly-bl-kopf"><span>⛽ Tank-Blick · ' + esc(def.name) + '</span><b class="ly-bl-rest"><small>' + (tipp ? 'Deine Vermutung' : 'Welcher Tank ist gerade leer? Tipp einen.') + '</small></b></div>' +
+        '<div class="ly-tb-tanks">' + TANK_LISTE.map(([id, n, sy, info]) => '<button type="button" class="ly-tb-tank' + (tipp === id ? ' an' : tipp ? ' aus' : '') + '" data-t="' + id + '"' + (tipp ? ' disabled' : '') + '>' +
+          '<i><em></em></i><b>' + sy + '</b><span>' + esc(n) + '</span><small>' + esc(info) + '</small></button>').join('') + '</div>' +
+        '<div class="ly-bl-fuss">' + (tipp
+          ? '<p class="ly-bl-text ly-tb-satz">' + (t ? esc(def.name) + ': ' + t[2] + ' ' + esc(t[1]) + ' ist leer. Das glaubst du.' : 'Bei ' + esc(def.name) + ' ist gerade keiner leer. Das glaubst du.') + '</p><button type="button" class="ly-btn ly-primaer" data-a="w">Weiter</button>'
+          : '<button type="button" class="ly-btn" data-t="keiner">Keiner ist leer</button>') + '</div>';
+      k.querySelectorAll('[data-t]').forEach((b) => { b.onclick = () => waehle(b.dataset.t); });
+      const w = k.querySelector('[data-a="w"]'); if (w) w.onclick = fertig;
+    };
+    zeichne();
+  });
+  // Tank-Anzeige: eine Anzeige steigt oder fällt sichtbar (oben rechts). Fake-Tankstelle: schnell rauf, noch schneller runter.
+  // def = { wer: 'Ben', tank: 'spass', verlauf: [35, 95, 15], fake } → Promise (wenn die Kurve durch ist)
+  ui.tankKurve = (def) => new Promise((ok) => {
+    const t = TANK_LISTE.find((x) => x[0] === def.tank) || TANK_LISTE[0], V = def.verlauf || [20, 60];
+    const k = el('div', 'ly-tankkurve', '<div class="ly-tk-kopf">⛽ ' + esc(def.wer) + '</div><div class="ly-tk-glas"><i></i><b>' + t[2] + '</b></div><div class="ly-tk-name">' + esc(t[1]) + '</div><div class="ly-tk-pfeil"></div>');
+    root.appendChild(k); requestAnimationFrame(() => k.classList.add('an'));
+    const f = k.querySelector('i'), pfeil = k.querySelector('.ly-tk-pfeil');
+    const setze = (v, ms) => { f.style.transition = 'height ' + ms + 'ms ease-in-out, background ' + ms + 'ms'; f.style.height = Math.max(3, v) + '%'; f.style.background = v < 25 ? '#d6452f' : v < 60 ? '#e9a23b' : '#3fa66b'; };
+    setze(V[0], 0);
+    let i = 0;
+    const weiter = () => {
+      i++;
+      if (i >= V.length) { setTimeout(() => { k.classList.remove('an'); setTimeout(() => { k.remove(); ok(); }, 380); }, 1100); return; }
+      const runter = V[i] < V[i - 1], ms = def.fake ? (runter ? 450 : 900) : 1500;
+      pfeil.textContent = runter ? '↓' : '↑'; pfeil.className = 'ly-tk-pfeil ' + (runter ? 'runter' : 'rauf');
+      setze(V[i], ms); setTimeout(weiter, ms + 260);
+    };
+    setTimeout(weiter, 420);
+  });
   ui.blendeAus = (ms = 650) => new Promise((ok) => setTimeout(() => { blende.classList.remove('an'); ok(); }, ms));
   // Fotomodus (wie in großen Spielen): HUD weg, Kamera frei um die eigene Figur, Pose, Filter, Unschärfe, Bild speichern
   ui.fotoAn = () => root.classList.contains('ly-foto-an');

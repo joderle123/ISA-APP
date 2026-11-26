@@ -481,6 +481,42 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .sz-mission b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #b07a1a; }
 @media (max-width: 640px) { .sz-raster { grid-template-columns: 1fr 1fr; } .sz-rad-reihe b { width: 100%; } .sz-kreis { height: 200px; } }
 
+/* Werkzeug-Karte (Theorie in 20 Sekunden) */
+.sz-wz-zeilen { display: grid; gap: 6px; }
+.sz-wz-zeilen > div { display: flex; gap: 10px; align-items: center; background: #fff; border-radius: 12px; padding: 7px 10px; }
+.sz-wz-zeilen b { font-size: 22px; width: 30px; text-align: center; }
+.sz-wz-zeilen span { font-size: 14.5px; color: var(--ink2); }
+.sz-wz-zeilen strong { color: var(--ink); }
+.sz-wz-fuss { margin: 0; font-size: 14px; font-weight: 700; color: #b5485d; background: rgba(181,72,93,.08); border-radius: 10px; padding: 8px 10px; }
+/* Werkbank: Brett mit Meterstab, Takt, Kraft */
+.sz-wb-plan { align-self: flex-start; background: #2b3a55; color: #fff; border-radius: 999px; padding: 4px 12px; font-size: 13.5px; }
+.sz-wb-brett { width: 100%; height: auto; max-width: 560px; align-self: center; background: #f4efe6; border-radius: 12px; }
+.sz-wb-leiste { display: flex; gap: 10px; align-items: center; justify-content: center; flex-wrap: wrap; min-height: 10px; }
+.sz-wb-leiste input[type=range] { flex: 1 1 220px; min-width: 160px; accent-color: #2b3a55; height: 32px; }
+.sz-wb-fein, .sz-wb-saege { min-width: 48px; min-height: 48px; border-radius: 14px; border: 0; background: #2b3a55; color: #fff; font: inherit; font-weight: 800; font-size: 17px; padding: 0 16px; cursor: pointer; touch-action: none; user-select: none; -webkit-user-select: none; }
+.sz-wb-saege kbd { font-size: 11px; opacity: .7; margin-left: 6px; }
+.sz-wb-saege.zug { animation: szWbZug .22s ease; }
+@keyframes szWbZug { 50% { transform: translateX(10px); } }
+.sz-wb-takt { width: 46px; height: 46px; border-radius: 50%; border: 3px solid #9aa5b5; display: grid; place-items: center; }
+.sz-wb-takt i { width: 26px; height: 26px; border-radius: 50%; background: #c9d2de; transition: background .08s, transform .08s; }
+.sz-wb-takt i.an { background: #f2b134; transform: scale(1.25); }
+.sz-wb-kraft { position: relative; flex: 1 1 240px; height: 22px; border-radius: 999px; background: #e6e9ef; overflow: hidden; }
+.sz-wb-kraft .gruen { position: absolute; left: 62%; width: 22%; top: 0; bottom: 0; background: rgba(63,166,107,.3); border-left: 2px solid #3fa66b; border-right: 2px solid #3fa66b; }
+.sz-wb-kraft i { position: absolute; left: 0; top: 0; bottom: 0; width: 0; border-radius: 999px; }
+/* Steckbrief */
+.sz-sb-karte { display: flex; gap: 12px; background: #fff; border-radius: 14px; padding: 10px; border: 2px dashed #c9b98f; }
+.sz-sb-foto { width: 86px; height: 104px; flex: none; border-radius: 8px; overflow: hidden; background: #e6e9ef; display: grid; place-items: center; }
+.sz-sb-foto img { width: 100%; height: 100%; object-fit: cover; }
+.sz-sb-foto i { font-style: normal; font-size: 34px; font-weight: 800; color: #9aa5b5; }
+.sz-sb-name { font-size: 15px; }
+.sz-sb-zeilen { margin: 6px 0 0; padding-left: 20px; display: grid; gap: 4px; font-size: 14.5px; }
+.sz-sb-zeilen li.leer { color: #9aa5b5; }
+.sz-sb-warn { display: block; font-style: normal; font-size: 12.5px; color: #b5651d; font-weight: 700; }
+.sz-sb-fakten { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 8px; }
+.sz-sb-fakten button { text-align: left; border-radius: 12px; border: 2px solid rgba(43,58,85,.18); background: #fff; padding: 8px 10px; font: inherit; cursor: pointer; display: grid; gap: 2px; color: var(--ink); min-height: 44px; }
+.sz-sb-fakten button.an { border-color: #2b3a55; background: rgba(43,58,85,.07); }
+.sz-sb-fakten span { font-size: 14.5px; font-weight: 700; }
+.sz-sb-fakten small { font-size: 12px; color: var(--leise); }
 .sz-fall { border-left: 5px solid var(--f); background: #fff; border-radius: 10px; padding: 8px 12px; }
 .sz-fall b { color: var(--f); font-size: 13px; text-transform: uppercase; letter-spacing: .8px; }
 .sz-fall p { margin: 2px 0 4px; font-weight: 700; font-size: 15.5px; }
@@ -1432,6 +1468,31 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-bl-sig { background: rgba(23,128,111,.1); border: 1px solid rgba(23,128,111,.35); border-radius: 12px; padding: 6px 10px; font-size: 15px; max-width: 100%; }
 .ly-bl-sig small { display: block; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; color: #17806f; }
 .ly-im-blick .ly-auftrag { opacity: .4; }
+/* Tank-Blick: sechs Anzeigen, man tippt die leere */
+.ly-tb-tanks { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+.ly-tb-tank { display: grid; justify-items: center; gap: 2px; padding: 8px 4px 6px; border-radius: 14px; border: 2px solid rgba(23,128,111,.25); background: #fff; color: var(--ink); cursor: pointer; font: inherit; min-height: 44px; }
+.ly-tb-tank i { position: relative; width: 22px; height: 46px; border-radius: 7px; border: 2px solid #9aa5b5; overflow: hidden; background: #eef1f5; }
+.ly-tb-tank i em { position: absolute; left: 0; right: 0; bottom: 0; height: 52%; background: #c9d2de; transition: height .5s, background .5s; }
+.ly-tb-tank b { font-size: 20px; line-height: 1.1; }
+.ly-tb-tank span { font-size: 12.5px; font-weight: 800; text-align: center; line-height: 1.15; }
+.ly-tb-tank small { font-size: 10.5px; color: var(--leise); text-align: center; line-height: 1.15; }
+.ly-tb-tank:hover:not(:disabled) { border-color: #17806f; }
+.ly-tb-tank.an { border-color: #d6452f; box-shadow: 0 0 0 3px rgba(214,69,47,.18); }
+.ly-tb-tank.an i em { height: 10%; background: #d6452f; animation: lyTbBlink 1s ease-in-out infinite; }
+.ly-tb-tank.aus { opacity: .45; }
+.ly-tb-satz { flex: 1 1 260px; font-weight: 700; }
+@keyframes lyTbBlink { 50% { opacity: .35; } }
+@media (max-width: 620px) { .ly-tb-tanks { grid-template-columns: repeat(3, minmax(0, 1fr)); } .ly-tb-tank small { display: none; } }
+/* Tank-Anzeige: eine Kurve oben rechts (Fake-Tankstelle: schnell rauf, schneller runter) */
+.ly-tankkurve { position: fixed; top: max(84px, calc(env(safe-area-inset-top) + 70px)); right: 14px; z-index: 46; width: 120px; background: var(--karte); border-radius: 16px; box-shadow: var(--schatten); padding: 10px; display: grid; justify-items: center; gap: 4px; opacity: 0; transform: translateY(-8px); transition: opacity .35s, transform .35s; pointer-events: none; }
+.ly-tankkurve.an { opacity: 1; transform: none; }
+.ly-tk-kopf { font-weight: 800; font-size: 13px; color: #17806f; }
+.ly-tk-glas { position: relative; width: 38px; height: 84px; border-radius: 10px; border: 3px solid #9aa5b5; background: #eef1f5; overflow: hidden; }
+.ly-tk-glas i { position: absolute; left: 0; right: 0; bottom: 0; height: 30%; }
+.ly-tk-glas b { position: absolute; left: 0; right: 0; top: 4px; text-align: center; font-size: 16px; }
+.ly-tk-name { font-size: 12px; font-weight: 700; text-align: center; color: var(--ink2); }
+.ly-tk-pfeil { font-size: 18px; font-weight: 900; min-height: 22px; }
+.ly-tk-pfeil.rauf { color: #3fa66b; } .ly-tk-pfeil.runter { color: #d6452f; }
 .ly-h-bild.mit-bild { padding: 0; overflow: hidden; }
 .ly-h-bild.mit-bild img { display: block; width: 100%; max-width: 260px; border-radius: 10px; }
 /* Andere Sicht: Vignette, Name, Gedanken als Untertitel */

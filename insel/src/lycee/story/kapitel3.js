@@ -174,6 +174,10 @@ export const GESPRAECHE_N3 = {
     ['ben', '(leise) Das war nicht mehr witzig. Das mit Mila.'],
     ['jo', 'Ist doch nur ein Satz.'],
     ['ben', 'Ja. Ein fieser.'],
+    // Folgen aus Kapitel 2: Jo ist kühl, wenn man Noah vor allen nach dem Maß gefragt hat; die Bank wackelt oder steht
+    { wenn: (m) => !!m.joKuehl, dann: [['jo', '(zu dir, ohne hinzuschauen) Frag doch Noah. Der weiß ja alles. Auf den Zentimeter.']] },
+    { wenn: (m) => !!m.bankWackelt, dann: [['erzaehler', 'Hinter ihnen kippelt eure Bank, als sich jemand draufsetzt. Der Karton unter dem Bein ist nass vom Frost.']],
+      sonst: [{ wenn: (m) => !!m.bankGerade, dann: [['erzaehler', 'Auf eurer Bank sitzen zwei aus der 7P1. Sie steht gerade. Sie wissen nicht, wer sie gebaut hat.']] }] },
   ],
   // Dienstag 12:30 (Fable, Schlüsselszene K3): „Egal“ – und der Streifen
   n3_cdi: [

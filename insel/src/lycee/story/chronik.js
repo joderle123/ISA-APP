@@ -36,9 +36,16 @@ const KAP = {
   2: (m) => [
     eins(m, [['selbstZuhoeren', 'Dario hast du gesagt, was du kannst: zuhören.'], ['selbstMerken', 'Dario hast du gesagt, was du kannst: dir Sachen merken.'],
       ['selbstLachen', 'Dario hast du gesagt, was du kannst: Leute zum Lachen bringen.'], ['selbstOffen', 'Dario hast du gesagt: Was ich kann, weiß ich noch nicht.']]),
-    eins(m, [['listeBeiNoah', 'Als die Liste kam, bist du zu Noah gegangen.'], ['listeGelacht', 'Als die Liste kam, hast du mitgelacht.'], ['listeWeggeschaut', 'Als die Liste kam, hast du weggeschaut.']]),
+    eins(m, [['steckbriefTurm', 'In Noahs Steckbrief hast du geschrieben, was er nur dir erzählt hat. Die Liste hat es benutzt.'], ['steckbriefGedacht', 'In Noahs Steckbrief stand auch, was du über ihn denkst.'], ['steckbriefGut', 'In Noahs Steckbrief stand nur, was er gesagt hat.']]),
+    eins(m, [['chiaraSicher', 'Chiara hast du beim Verteilen geholfen. Ihre Stimme wurde langsamer.'], ['chiaraChill', 'Chiara hast du gesagt: Chill mal.']]),
+    eins(m, [['benRaus', 'Ben hast du ohne Handy an den Korb geholt.'], ['benGespielt', 'Mit Ben hast du eine Runde gespielt. Danach wollte er noch eine.']]),
+    eins(m, [['linaVertraut', 'Lina hast du gesagt: Du entscheidest, was du zeigst.'], ['linaGedraengt', 'Lina wolltest du ins Heft schauen. Sie ist gegangen.']]),
+    eins(m, [['atelierNoah', 'In der Werkstatt hast du Noah nach seinem Maß gefragt.'], ['atelierPlan', 'In der Werkstatt hast du auf den Plan gezeigt.'], ['atelierSelbst', 'In der Werkstatt hast du selbst gemessen.'], ['atelierJo', 'In der Werkstatt hast du Jo messen lassen.']]),
+    eins(m, [['bankWackelt', 'Eure Bank wackelt.'], ['bankGerade', 'Eure Bank steht gerade.']]),
+    eins(m, [['listeTankNoah', 'Als die Liste kam, hast du Noah vor allen nach seinem Maß gefragt.'], ['listeBeiNoah', 'Als die Liste kam, bist du zu Noah gegangen.'], ['listeGemeldet', 'Die Liste hast du Mme Tidderich gezeigt.'], ['listeGelacht', 'Als die Liste kam, hast du mitgelacht.'], ['listeWeggeschaut', 'Als die Liste kam, hast du weggeschaut.']]),
     eins(m, [['gegenlisteDabei', 'Bei Bens Gegenliste hast du mitgemacht.'], ['gegenlisteNein', 'Bens Gegenliste hast du gebremst.'], ['gegenlisteFragen', 'Du wolltest erst Noah fragen.'], ['gegenlisteNoahSuchen', 'Du bist Noah suchen gegangen.']]),
     eins(m, [['lucaWiderspruch', 'An der Skate-Ecke hast du Luca widersprochen.'], ['lucaMitgelacht', 'An der Skate-Ecke hast du mitgelacht.'], ['lucaStehenGelassen', 'An der Skate-Ecke hast du Luca stehen lassen.']]),
+    eins(m, [['darioErtappt', 'Dario hast du gesagt: Du hast am Montag dein Handy weggedreht.'], ['darioWarum', 'Dario hast du gefragt, warum er nach der Liste fragt.']]),
   ],
   3: (m) => [
     eins(m, [['zeichnungDarioGezeigt', 'Du hast Dario die Zeichnung gezeigt.'], ['zeichnungBehalten', 'Die Zeichnung hast du für dich behalten.']]),
@@ -106,7 +113,7 @@ export const chronik = (kap, m = {}) => ((KAP[kap] || (() => []))(m) || []).filt
 // Fragen für das Gespräch mit der Lehrperson oder in der Klasse (offen, kein richtig/falsch). Erst die Entscheidungen ansehen, dann fragen.
 export const GESPRAECH = {
   1: 'Wo warst du in der großen Pause – und was hast du deshalb nicht gesehen? Warum klicken Leute bei so einer Umfrage mit? Und im Sport: Was macht es so schwer, „Stopp“ zu sagen – oder es zu hören?',
-  2: 'Warum tut eine Liste weh, auch wenn man gar nicht draufsteht? Was kannst du gut, auch wenn es keiner sieht?',
+  2: 'Welcher Tank war bei wem leer – und was war nur eine Fake-Tankstelle? Warum tut eine Liste weh, auch wenn man gar nicht draufsteht? Was darf in einen Steckbrief, und was nicht?',
   3: 'Was war auf Milas Wand eine echte Spur – und was nur ein Gefühl?',
   4: 'Was hat dir geholfen, als die Zahl auf Rot war? Hast du gemerkt, wann sie gestiegen ist?',
   5: 'Welcher Gedanke hat sich wie eine Tatsache angefühlt? Was hat die Kamera wirklich gezeigt?',

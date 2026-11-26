@@ -74,7 +74,7 @@ import { situationen } from './situation.js';
 import { FACHLEHRER, PERSONAL } from './story/personal.js';
 import { FR_LEKTIONEN } from './story/fachstunden.js';
 if (!(LEKTIONEN.francais || []).length) LEKTIONEN.francais = FR_LEKTIONEN;   // Französisch fürs Spiel (handgeschrieben, story/fachstunden.js)
-import { tunN2, ORTE_N2 } from './story/kapitel2.js';
+import { tunN2, ORTE_N2, RUECKBLICK_N2 } from './story/kapitel2.js';
 import { tunN1, RUECKBLICK_N1 } from './story/kapitel1.js';
 import { fotoSpeichern, fotosLaden, fotosLoeschen } from './fotoablage.js';
 import { tunN3, ORTE_N3 } from './story/kapitel3.js';
@@ -346,7 +346,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       p.f.spiele(haltung === 'redet' ? 'Interact' : haltung === 'winkt' ? 'Wave' : haltung === 'handy' ? 'Idle_Neutral' : 'Idle', { tempo: haltung === 'redet' ? 0.35 : 1 });
       if (p.f.pose) { if (haltung === 'handy') p.f.pose('handy', 1e6); else if (p.f.poseAktiv === 'handy') p.f.pose(null); }   // aufs Handy schauen
     }
-    feste = Object.values(leute).filter((p) => p.f.group.visible).map((p) => ({ x: p.pos.x, z: p.pos.z, r: 0.3 }));
+    feste = Object.values(leute).filter((p) => p.f.group.visible).map((p) => ({ x: p.pos.x, z: p.pos.z, r: 0.3 })).concat(klassenBankHind());
     steuerung.hindernisse = feste.concat(statisten.map((x) => x.h));
   }
 
@@ -507,6 +507,35 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       g.name = 'sportParcours'; scene.add(g); sportGruppe = g;
     }
     sportGruppe.visible = true;
+  }
+  // Die Bank der 7P2 (K2, Atelier): steht ab dem Bau im Hof, das ganze Jahr. Falsch gemessen = schief, mit Karton unter einem Bein.
+  const BANK_KLASSE = { x: -2.0, z: 27.6 };
+  let klassenBankGruppe = null;
+  const klassenBankHind = () => (S && S.merke && S.merke.bankGebaut ? [-0.62, 0, 0.62].map((dx) => ({ x: BANK_KLASSE.x + dx, z: BANK_KLASSE.z, r: 0.34 })) : []);
+  function klassenBank() {
+    const m = S && S.merke;
+    if (!m || !m.bankGebaut) { if (klassenBankGruppe) klassenBankGruppe.visible = false; return; }
+    const wackelt = !!m.bankWackelt;
+    if (!klassenBankGruppe || klassenBankGruppe.userData.wackelt !== wackelt) {
+      if (klassenBankGruppe) { scene.remove(klassenBankGruppe); klassenBankGruppe.traverse((o) => { if (o.geometry) o.geometry.dispose(); }); }
+      const g = new THREE.Group(), holz = new THREE.MeshLambertMaterial({ color: '#c9975e' }), dunkel = new THREE.MeshLambertMaterial({ color: '#94663a' });
+      const teil = (w, h, d, x, y, z, mat = holz) => { const b = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat); b.position.set(x, y, z); b.castShadow = true; b.receiveShadow = true; g.add(b); return b; };
+      for (let i = 0; i < 3; i++) teil(1.9, 0.045, 0.12, 0, 0.44, -0.16 + i * 0.14);   // Sitz aus drei Latten
+      for (const [bx, bz] of [[-0.82, -0.17], [0.82, -0.17], [-0.82, 0.17], [0.82, 0.17]]) teil(0.07, 0.42, 0.07, bx, 0.21, bz, dunkel);
+      teil(1.9, 0.1, 0.035, 0, 0.66, 0.21); teil(1.9, 0.1, 0.035, 0, 0.84, 0.21);   // Lehne
+      for (const bx of [-0.82, 0.82]) teil(0.06, 0.52, 0.05, bx, 0.7, 0.21, dunkel);
+      const c = document.createElement('canvas'); c.width = 128; c.height = 48; const x = c.getContext('2d');
+      x.fillStyle = '#b07a44'; x.fillRect(0, 0, 128, 48); x.fillStyle = '#4a2c14'; x.font = 'bold 30px Georgia, serif'; x.textAlign = 'center'; x.fillText('7P2', 64, 35);
+      const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace;
+      const schild = new THREE.Mesh(new THREE.PlaneGeometry(0.26, 0.1), new THREE.MeshLambertMaterial({ map: t })); schild.position.set(0, 0.75, 0.19); schild.rotation.y = Math.PI; g.add(schild);
+      if (wackelt) {   // ein Bein zu lang: die Bank steht schief, jemand hat Karton druntergeklemmt
+        g.rotation.z = 0.028;
+        teil(0.16, 0.028, 0.13, -0.82, 0.014, -0.17, new THREE.MeshLambertMaterial({ color: '#c8a77a' }));
+      }
+      g.position.set(BANK_KLASSE.x, wackelt ? 0.012 : 0, BANK_KLASSE.z); g.name = 'klassenBank'; g.userData.wackelt = wackelt; scene.add(g); klassenBankGruppe = g;
+      if (welt.sitze && !welt.sitze.some((q) => q.bank7p2)) welt.sitze.push(...[-0.5, 0.5].map((dx) => ({ x: BANK_KLASSE.x + dx, z: BANK_KLASSE.z - 0.02, rot: Math.PI, h: 0.47, bank7p2: true })));   // man kann sich draufsetzen
+    }
+    klassenBankGruppe.visible = true;
   }
   let vertragMesh = null;
   function vertragPlakat() {
@@ -1354,7 +1383,19 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         S.bemerkt = S.bemerkt || {}; r.gesehen.forEach((k) => { S.bemerkt[k] = true; });
         const kap = (SCHRITTE[S.schritt] || {}).kap || 1, alle = z.blick.personen.flatMap((p) => p.signale.filter((x) => x.key).map((x) => x.key));
         const BL = S.blickLog = S.blickLog || {}; BL[kap] = (BL[kap] || []).concat([{ titel: z.blick.titel || 'Hinschauen', gesehen: r.texte.map((x) => x.t), wichtig: alle.length, bemerkt: r.gesehen.length, uebersehen: (z.blick.uebersehen || []).filter((u) => !r.gesehen.includes(u.key)).map((u) => u.t) }]);
+        // Tank-Blick (Werkzeug aus K2): wer die Karte „Sechs Tanks“ hat, tippt danach, welcher Tank leer ist. Die Vermutung öffnet Wege
+        // (bemerkt: 'tank_<wer>_<tank>'); ob sie stimmte, steht nur in der Lehrer-Ansicht.
+        const T = z.blick.tank;
+        if (T && S.merke.tankKarte) {
+          const p = leute[T.wer]; if (p) { steuerung.fokus = p.pos || p.f.group.position; steuerung.gegenSchuss = false; }
+          const tipp = (await ui.tankBlick(T)) || 'keiner';
+          S.merke['tankTipp_' + T.wer] = tipp; S.bemerkt['tank_' + T.wer + '_' + tipp] = true;
+          if (tipp === T.leer) { S.bemerkt['tankRichtig_' + T.wer] = true; S.merke['tankRichtig_' + T.wer] = true; }
+          const TL = S.tankLog = S.tankLog || {}; TL[kap] = (TL[kap] || []).filter((x) => x.wer !== T.name).concat([{ wer: T.name, tipp, leer: T.leer, richtig: tipp === T.leer }]);
+        }
         steuerung.fokus = null; sichern();
+      } else if (z.tankZeig) {   // eine Tank-Anzeige steigt/fällt sichtbar: { tankZeig: { wer, tank, verlauf: [..], fake } }
+        await ui.tankKurve(typeof z.tankZeig === 'function' ? z.tankZeig(S.merke, S) : z.tankZeig);
       } else if (z.sicht) {   // Andere Sicht (Baustein 5): ein paar Sekunden durch die Augen einer anderen Figur
         await andereSicht(typeof z.sicht === 'function' ? z.sicht(S.merke, S) : z.sicht);
       } else if (z.foto) {   // Foto in der Welt aufnehmen (still), später auf einem Handy zeigen: { foto: 'id', wer, von, auf }
@@ -1408,6 +1449,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       } else if (z.hin) {   // Figuren während eines Gesprächs umstellen: { hin: { id: [x, z, yaw, haltung] } }
         for (const [id, w] of Object.entries(z.hin)) {
           const p = leute[id]; if (!p) continue; const [x, zz, yaw = 0, h = ''] = w;
+          if (p.f.sitzen) p.f.sitzen(h === 'sitzt', 0.47);   // auch hinsetzen/aufstehen (z. B. auf die Bank im Hof)
           p.pos.set(x, 0, zz); p.yaw = p.basisYaw = yaw; p.haltung = h; p.f.group.position.copy(p.pos); p.f.group.rotation.y = yaw;
           p.f.spiele(h === 'redet' ? 'Interact' : h === 'handy' ? 'Idle_Neutral' : 'Idle'); if (p.f.pose) { if (h === 'handy') p.f.pose('handy', 1e6); else if (p.f.poseAktiv === 'handy') p.f.pose(null); }
         }
@@ -1448,7 +1490,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     vertragPlakat: () => { vertragPlakat(); },   // in der SePAS: direkt die Atem-Übung (Kreis)
     sepasBesuch: () => { S.merke.sepasBesuch = (S.merke.sepasBesuch || 0) + 1; sichern(); },
     ...tunN1({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
-    ...tunN2({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
+    ...tunN2({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus), welt: () => klassenBank(), foto: (id, z) => fotoMerken(id, fotoAusWelt(z)) }),
     ...tunN3({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
     ...tunN4({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
     ...tunN5({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
@@ -2161,7 +2203,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   // Hinschauen (Baustein 2): was man bemerkt hat, öffnet später Antworten (bemerkt: 'key')
   // Chat-Nachrichten mit bildId bekommen das echte Foto (bildUrl); ohne Foto bleibt die Beschreibung
-  const bilderEinsetzen = (def) => (def && Array.isArray(def.nachrichten) ? { ...def, nachrichten: def.nachrichten.map((n) => (n && n.bildId ? { ...n, bildUrl: fotoHolen(n.bildId) } : n)) } : def);
+  const bilderEinsetzen = (def) => { if (def && def.bildId && !def.bildUrl) def = { ...def, bildUrl: fotoHolen(def.bildId) }; return def && Array.isArray(def.nachrichten) ? { ...def, nachrichten: def.nachrichten.map((n) => (n && n.bildId ? { ...n, bildUrl: fotoHolen(n.bildId) } : n)) } : def; };
   // Andere Sicht: Kamera auf Augenhöhe der Figur, Blick auf ein Ziel, langsames Schwenken; Gedanken als Untertitel; Gruppen lachen.
   // def = { wer, auf: [dx, y, dz] oder Figur-Id, name, gedanken: ['…'], lachen: ['ben', 'jo'], schwenk: Grad }
   async function andereSicht(def) {
@@ -2238,7 +2280,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   const FOTOS = {};   // Fotos aus der Welt (dataURL), für später: Handy-Karte, Rückblick
   fotosLaden(platz).then((f) => { for (const [k, v] of Object.entries(f)) if (!FOTOS[k]) FOTOS[k] = v; });   // für Lehrer-Ansicht schon vor dem Weiterspielen
-  const RUECKBLICK = { 1: RUECKBLICK_N1 };   // Rückblick in Bildern je Kapitel: (merke) => [{ id, titel, text }]
+  const RUECKBLICK = { 1: RUECKBLICK_N1, 2: RUECKBLICK_N2 };   // Rückblick in Bildern je Kapitel: (merke) => [{ id, titel, text }]
   const fotoHolen = (id) => FOTOS[id] || (() => { try { return sessionStorage.getItem('lycee.foto.' + id) || ''; } catch (e) { return ''; } })();
   const bemerkt = (k) => [].concat(k).every((x) => !!(S.bemerkt || {})[x]);
   const fotoMerken = (id, url) => { if (!url) return; FOTOS[id] = url; try { sessionStorage.setItem('lycee.foto.' + id, url); } catch (e) { /* voll */ } fotoSpeichern(platz, id, url); };   // auch dauerhaft (IndexedDB, nur auf dem Gerät)
@@ -2285,7 +2327,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       return url;
     } catch (e) { return ''; }
   }
-  const SZ_UI = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich' };
+  const SZ_UI = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich', werkzeug: 'werkzeugKarte', werkbank: 'werkbank', steckbrief: 'steckbrief' };
   // Prüfungen gegen Durchklicken (nur Skill-Szenen). Rückgabe null = gemacht; sonst { sy, t, tipp } für „Noch mal“.
   const PRUEF = {
     atem: (r) => (r.gut < 2 ? { sy: '🫁', t: 'Das war noch kein ruhiges Atmen.', tipp: 'Halte, bis der Kreis groß ist (zwei, drei Sekunden). Dann loslassen und lange ausatmen – länger als das Einatmen. Erst dann wieder halten.' } : null),
@@ -2464,7 +2506,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     { const an = S.merke.anzeige; ui.anzeige(an && an.kap === st.kap ? an : null); }
     ui.pult(S.pult && S.pult.kap === st.kap ? S.pult : null);
     freiLauf = null; ui.freiUhr(null);
-    vertragPlakat(); sportParcours();
+    vertragPlakat(); sportParcours(); klassenBank();
     if (st.frei) freiStart(st);
     if (st.start && st.start.gespraech && mitStart !== false) {
       await gespraech(GESPRAECHE[st.start.gespraech]);
@@ -3450,7 +3492,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         anzeige: a ? VW[a.art] + (a.art === 'akku' ? ': am wenigsten ' + a.min + ', am Ende ' + a.ende : ': höchstens ' + a.max + ', am Ende ' + a.ende) + ' (von 100)' : '',
         versuche: Object.entries((S.versuche || {})[k] || {}).map(([t, v]) => ({ t, n: typeof v === 'object' ? v.n : v, ok: typeof v === 'object' ? v.ok !== false : true })),
         gruende: (S.gruende || {})[k] || [], partner: (S.partnerLog || {})[k] || [],
-        blick: (S.blickLog || {})[k] || [], pult: (S.pultLog || {})[k] || null, frei: (S.freiLog || {})[k] || [],
+        blick: (S.blickLog || {})[k] || [], tank: (S.tankLog || {})[k] || [], pult: (S.pultLog || {})[k] || null, frei: (S.freiLog || {})[k] || [],
         bilder: RUECKBLICK[k] && k <= fertigBis ? RUECKBLICK[k](S.merke, S).map((x) => ({ ...x, url: fotoHolen(x.id) })).filter((x) => x.url) : [] });
     }
     const ng = SCHRITTE.filter((x) => x.neben === 'geschichte'), gespielt = ng.filter((x) => (S.merke.neben || {})[x.id]);
