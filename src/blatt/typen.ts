@@ -212,6 +212,10 @@ export type Baustein =
    *  z. B. Millionen · Tausender · Einer · Tausendstel oder km² · ha · a · m² …), `namen` (ausgeschrieben unter den Kürzeln)
    *  und dem dicken Strich als Komma. `komma: -1` = kein Komma (Umwandlungstabelle); dann dicke Striche zwischen den Gruppen.
    *  Eine Zeile mit `bis` schreibt die Ziffern von `zahl` so, dass die letzte in Spalte `bis` steht (Umwandlungen). */
+  /** Umwandlungstabelle („abaque“, wie im Unterricht: Einheiten als Reiter oben, gestrichelte Unterspalten, rotes Komma).
+   *  `zeilen` wie Päckchen-Aufgaben: „7 m = ___ dm“ (leer zum Eintragen) oder „3 m = {30} dm“ (Beispiel, ausgefüllt).
+   *  Rechenpäckchen mit Umwandlungen werden beim Zeichnen automatisch zu dieser Tabelle (src/blatt/umwandlung.js). */
+  | { art: 'umwandlung'; tabelle?: 'laenge' | 'hohlmass' | 'masse' | 'flaeche' | 'volumen'; zeilen: string[]; buchstaben?: boolean; titel?: string; punkte?: string[] }
   | { art: 'stellentafel'; stellen: string[]; komma: number; zeilen: { label?: string; zahl?: string; bis?: number }[]; gruppen?: { titel: string; spalten: number }[]; namen?: string[]; titel?: string; punkte?: string[] }
   /** Hunderterfelder (10 × 10 = 1 Ganzes): `gefaerbt` Kästchen sind gefärbt, spaltenweise (erst ganze Zehntel).
    *  `text` steht darunter, ohne `text` eine Schreiblinie. */

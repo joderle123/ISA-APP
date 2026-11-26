@@ -212,3 +212,36 @@ export function flaechenFiguren(figs) {
     return `<div><svg viewBox="0 0 64 48" style="width:100%;max-height:32mm">${svg}</svg>${f.name ? `<div style="font-family:Lexend;font-weight:700;font-size:10.5pt">${f.name}</div>` : ''}</div>`
   }).join('')}</div>`
 }
+
+// ---- Umwandlungstabelle („abaque“, Auftrag 26.11.2026: bei JEDER Umwandlung die Tabelle benutzen) ----
+// Wie auf dem Blatt aus dem Unterricht: oben die Einheiten als Reiter, darunter je Einheit 1, 2 oder 3 Spalten (gestrichelt),
+// zwischen den Einheiten eine feste Linie. Links die Aufgabe, rechts das Ergebnis. Beispiele (zeige: true) sind ausgefüllt,
+// Übungszeilen bleiben leer – im Lösungsheft stehen Ziffern, ergänzte Nullen und das Komma (rot) drin.
+import { ABAKUS, eintragen } from '../umwandlung.mjs'
+const escH = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+export function umwandlungstabelle(art, zeilen = [], { leer = 0, ergebnis = true } = {}) {
+  const d = ABAKUS[art], n = d.einheiten.length * d.spalten
+  const breiteAufg = d.einheiten.length * d.spalten > 12 ? 24 : 28
+  const kopf = `<tr><th class="ut-aufg">Aufgabe</th>${d.einheiten.map((u, i) => `<th colspan="${d.spalten}" class="ut-einheit" title="${escH(d.namen[i])}">${u}${d.neben && d.neben[u] ? `<small>= ${d.neben[u]}</small>` : ''}</th>`).join('')}${ergebnis ? '<th class="ut-erg">Ergebnis</th>' : ''}</tr>`
+  const reihe = (z) => {
+    const auf = typeof z === 'string' ? { aufgabe: z } : z
+    const e = auf.aufgabe ? eintragen(auf.aufgabe, art) : null, zeig = !!auf.zeige
+    const zellen = Array.from({ length: n }, (_, s) => {
+      const ende = (s + 1) % d.spalten === 0
+      let inh = ''
+      if (e && e.ziffern[s] !== undefined) { const nul = e.nullen.includes(s); inh = zeig ? `<b class="${nul ? 'ut-null' : ''}">${e.ziffern[s]}</b>` : `<span class="l${nul ? ' ut-null' : ''}">${e.ziffern[s]}</span>` }
+      if (e && s === e.kommaNach) inh += `<i class="ut-k${zeig ? '' : ' l'}">,</i>`
+      return `<td class="ut-z${ende ? ' ende' : ''}">${inh}</td>`
+    }).join('')
+    const text = auf.aufgabe ? escH(String(auf.aufgabe).replace(/\\/g, '').replace(/\s*\?\s*$/, '')) : ''
+    const erg = e ? (zeig ? `<b>${escH(e.ergebnis)}</b>` : `<span class="l">${escH(e.ergebnis)}</span>`) : ''
+    return `<tr><td class="ut-aufg">${text}</td>${zellen}${ergebnis ? `<td class="ut-erg">${erg}</td>` : ''}</tr>`
+  }
+  const alle = [...zeilen, ...Array.from({ length: leer }, () => ({}))]
+  return `<table class="umw ut-${art}"><colgroup><col style="width:${breiteAufg}%">${Array.from({ length: n }, () => `<col>`).join('')}${ergebnis ? '<col style="width:15%">' : ''}</colgroup>${kopf}${alle.map(reihe).join('')}</table>`
+}
+/** So geht’s – kurze Anleitung unter der Tabelle (für die Erklärung) */
+export function umwandlungAnleitung(art) {
+  const d = ABAKUS[art], sp = d.spalten
+  return `<div class="ut-anl"><b>So benutzt du die Tabelle:</b> 1) Die letzte Ziffer vor dem Komma kommt in die ${sp > 1 ? 'letzte Spalte der ' : 'Spalte der '}Einheit. 2) Die Ziffern nach dem Komma gehen nach rechts weiter. 3) Mit Nullen auffüllen bis zur neuen Einheit. 4) Das Komma (rot) steht hinter der neuen Einheit – dort liest du ab.${sp > 1 ? ` Jede Einheit hat ${sp} Spalten, weil der Schritt zur nächsten Einheit ×${sp === 2 ? '100' : '1000'} ist.` : ''}</div>`
+}

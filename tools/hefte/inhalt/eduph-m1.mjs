@@ -60,7 +60,7 @@ export const LEKTIONEN = [
         ['Lio', 'Da spielen wir manchmal Basketball. Vielleicht fünfzehn Minuten.'],
         ['Mia', 'Fünfunddreißig. Und am Nachmittag?'],
         ['Lio', 'Ich gehe mit dem Hund von meiner Tante raus. So eine halbe Stunde. Aber das ist doch kein Sport.'],
-        ['Mia', 'Zählt aber! Wenn du schnell gehst, bist du bei über sechzig Minuten. Und dazu zweimal Sport in der Schule.'],
+        ['Mia', 'Zählt aber! Wenn du schnell gehst, bist du bei über sechzig Minuten. Und dazu dreimal Sport in der Schule.'],
         ['Lio', 'Okay, dann bin ich wohl doch ein bisschen Sportler. Aber abends zocke ich zwei Stunden.'],
         ['Mia', 'Kein Problem. Steh einfach zwischendurch mal auf und streck dich. Das tut gut.'],
       ],
@@ -79,7 +79,7 @@ export const LEKTIONEN = [
     },
     ueben: [
       { art: 'tabelle', auftrag: 'Bewegungs-Detektiv: Schreib eine Woche lang auf, wie viele Minuten du dich bewegst. (Du kannst auch eine ausgedachte Person beobachten.)', stufe: 1, kopf: ['Tag', 'Was?', 'Minuten'], breiten: [18, 60, 22], zeilen: [['Montag', '', ''], ['Dienstag', '', ''], ['Mittwoch', '', ''], ['Donnerstag', '', ''], ['Freitag', '', ''], ['Samstag', '', ''], ['Sonntag', '', '']] },
-      { art: 'rechnen', auftrag: 'Rechne.', stufe: 2, spalten: 2, items: [{ a: 'Eine Woche hat 7 Tage. Wie viele Minuten Bewegung empfiehlt die WHO pro Woche?', l: '7 × 60 = 420 Minuten' }, { a: 'Wie viele Stunden sind das?', l: '7 Stunden' }, { a: 'Zwei Sportstunden in der Schule dauern je 50 Minuten. Wie viele Minuten fehlen noch bis 420?', l: '420 − 100 = 320 Minuten' }, { a: 'Verteilt auf 7 Tage: Wie viele Minuten pro Tag ungefähr?', l: 'etwa 46 Minuten' }] },
+      { art: 'rechnen', auftrag: 'Rechne.', stufe: 2, spalten: 2, items: [{ a: 'Eine Woche hat 7 Tage. Wie viele Minuten Bewegung empfiehlt die WHO pro Woche?', l: '7 × 60 = 420 Minuten' }, { a: 'Wie viele Stunden sind das?', l: '7 Stunden' }, { a: 'Drei Sportstunden in der Schule dauern je 50 Minuten. Wie viele Minuten fehlen noch bis 420?', l: '3 × 50 = 150; 420 − 150 = 270 Minuten' }, { a: 'Verteilt auf 7 Tage: Wie viele Minuten pro Tag ungefähr?', l: 'etwa 39 Minuten' }] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Mein Sport-Tagebuch: Welche Bewegung tut dir gut? Was nimmst du dir für die nächste Woche vor?', stufe: 1,

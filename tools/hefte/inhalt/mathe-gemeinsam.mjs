@@ -7,6 +7,8 @@
 
 import { readFileSync } from 'node:fs'
 import { erzeuge } from '../mathe-gen.mjs'
+import { eintragen, passt } from '../umwandlung.mjs'
+import { umwandlungstabelle, umwandlungAnleitung } from './mathe-bilder.mjs'
 
 export const PROGRAMM = JSON.parse(readFileSync(new URL('../daten/mathe-programm.json', import.meta.url), 'utf8'))
 
@@ -180,5 +182,49 @@ export function matheLektionen(nr, extras) {
     })
   }
   mehrUebung(nr, m, L)
+  mitUmwandlungstabelle(nr, m, L)
   return L
+}
+
+// ---- Umwandlungstabelle bei JEDER Umwandlung (Auftrag 26.11.2026; Programm VP: „Connaître l’abaque des mesures …“) ----
+// Jede Rechenaufgabe, die eine Umwandlung ist (auch Sachaufgaben wie „1,5 l. Wie viele ml?“), wird in eine Tabelle gelegt:
+// im Heft leer, im Lösungsheft mit Ziffern, Nullen und dem roten Komma. In den Umwandlungs-Lektionen steht unter der
+// Erklärung eine ausgefüllte Tabelle mit Beispielen und „So benutzt du die Tabelle“.
+const GEN_ART = { laenge: 'laenge', kapazitaet: 'hohlmass', masse: 'masse', flaecheEinheit: 'flaeche', volumen: 'volumen' }
+const BEISPIELE = {
+  laenge: ['2 km = ___ m', '12 m = ___ cm', '3 m 45 cm = ___ cm', '5 cm = ___ mm'],   // Modul 1: nur in die kleinere Einheit
+  hohlmass: ['3 l = ___ cl', '1,5 l = ___ ml', '300 ml = ___ dl', '25 cl = ___ l'],
+  masse: ['4 kg = ___ g', '1,5 t = ___ kg', '2.500 g = ___ kg', '750 g = ___ kg'],
+  flaeche: ['3 m² = ___ dm²', '5 ha = ___ a', '2,5 ha = ___ m²', '450 cm² = ___ dm²'],
+  volumen: ['2 m³ = ___ dm³', '1,5 l = ___ cm³', '4.000 cm³ = ___ dm³', '3 cm³ = ___ mm³'],
+}
+// Lektionen ohne eigenen Umwandlungs-Erzeuger, in denen das Programm trotzdem Umwandlungen verlangt
+// (M2: Längen mit Komma in beide Richtungen – Programm VP Mathematik, Modul 2)
+const BEISPIELE_EXTRA = { '2-10': { art: 'laenge', aufgaben: ['5,6 cm = ___ mm', '125 mm = ___ cm', '2,35 m = ___ cm', '850 m = ___ km'] } }
+function tabellenBloecke(liste) {
+  if (!Array.isArray(liste)) return liste
+  const neu = []
+  for (const a of liste) {
+    if (!a || a.art !== 'rechnen' || !Array.isArray(a.items)) { neu.push(a); continue }
+    const rest = [], gruppen = {}
+    for (const it of a.items) { const e = eintragen(it.a); if (e && (!it.l || passt(e, it.l))) (gruppen[e.art] = gruppen[e.art] || []).push(it.a); else rest.push(it) }
+    if (!Object.keys(gruppen).length) { neu.push(a); continue }
+    if (rest.length) neu.push({ ...a, items: rest })
+    Object.entries(gruppen).forEach(([art, aufg], i) => neu.push({ art: 'frei', stufe: a.stufe,
+      auftrag: (rest.length || i ? '**Mit der Umwandlungstabelle** – ' : String(a.auftrag || '').replace(/\s*$/, '').replace(/([^.!?:])$/, '$1.') + ' **Mit der Umwandlungstabelle:** ') + 'Trag jede Zahl ein, ergänze Nullen und lies in der neuen Einheit ab.',
+      html: umwandlungstabelle(art, aufg) }))
+  }
+  return neu
+}
+function mitUmwandlungstabelle(nr, m, L) {
+  let j = 0
+  for (const t of m.themen) for (const l of t.lektionen) {
+    const lek = L[j++], art = GEN_ART[(genVon(nr, l) || {}).type]
+    if (art) lek.lesen.bild = umwandlungstabelle(art, BEISPIELE[art].map((a) => ({ aufgabe: a, zeige: true }))) + umwandlungAnleitung(art)
+    const extra = BEISPIELE_EXTRA[`${nr}-${l.nr}`]
+    if (extra && lek.lesen) lek.lesen.bild = (lek.lesen.bild || '') + umwandlungstabelle(extra.art, extra.aufgaben.map((a) => ({ aufgabe: a, zeige: true }))) + umwandlungAnleitung(extra.art)
+    if (lek.start) lek.start.aufgaben = tabellenBloecke(lek.start.aufgaben)
+    lek.fit = tabellenBloecke(lek.fit); lek.ueben = tabellenBloecke(lek.ueben); lek.wiederholung = tabellenBloecke(lek.wiederholung)
+    if (lek.lesen) lek.lesen.aufgaben = tabellenBloecke(lek.lesen.aufgaben)
+  }
 }

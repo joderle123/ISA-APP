@@ -1,6 +1,6 @@
 // Deutsch · Modul 7 „Medien und Werbung“ (Voie de préparation, B1) – multimodales Heft.
-// Themen und Grammatik nach den öffentlichen „Kompetenzorientierten Bildungsstandards Deutsch für den Modularunterricht“
-// (MENFP 2009), Modul 7: Medien, Neue Medien, Medienkonsum der Jugendlichen, Werbung; Verpackungen (Haltbarkeit,
+// Themen und Grammatik nach dem Programm ALLUX 7P/6P/5P (CNES, 20/03/2019; Kann-Beschreibungen als Mindeststandards),
+// Modul 7: Medien, Neue Medien, Medienkonsum der Jugendlichen, Werbung; Verpackungen (Haltbarkeit,
 // Zubereitung, Anwendung), Nachrichten über Unglücksfälle, Verkehrsmeldungen, Wetter, Radiointerviews, Durchsagen,
 // Reisetagebuch, Internetrecherche und Poster, Netiquette, Werbesprache, Konzertkritik, Pro und Kontra;
 // Relativsätze, indirekte Fragesätze, Indefinitpronomen, Adjektivableitungen, Abkürzungsverzeichnis.

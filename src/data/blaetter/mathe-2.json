@@ -4079,8 +4079,8 @@
               "teilbar": true,
               "items": [
                 {
-                  "titel": "Die Leiter der Einheiten",
-                  "text": "Von klein nach groß: mm² – cm² – dm² – m² – a – ha – km².  Beispiel: 1 a (Ar) = 100 m², 1 ha (Hektar) = 100 a."
+                  "titel": "Die Umwandlungstabelle",
+                  "text": "km² – ha – a – m² – dm² – cm² – mm². Weil der Schritt mal 100 ist, hat jede Einheit zwei Spalten. Die letzte Ziffer vor dem Komma kommt in die letzte Spalte ihrer Einheit.  Beispiel: 3 m² in dm²: 3 in die letzte m²-Spalte, zwei Nullen bei dm² → 300 dm²."
                 },
                 {
                   "titel": "Warum · 100 und nicht · 10?",
@@ -4126,10 +4126,9 @@
               "symbol": "merke",
               "titel": "Merksatz",
               "punkte": [
-                "Benachbarte Flächeneinheiten unterscheiden sich um den Faktor 100.",
-                "Groß → klein: · 100.",
-                "Klein → groß: : 100.",
-                "1 a = 100 m², 1 ha = 100 a."
+                "Benachbarte Flächeneinheiten unterscheiden sich um den Faktor 100 – darum hat jede Einheit zwei Spalten.",
+                "1 a = 100 m², 1 ha = 100 a.",
+                "Beim Umwandeln benutzt du immer die Umwandlungstabelle."
               ]
             }
           ],
@@ -4139,9 +4138,10 @@
               "symbol": "wissen",
               "titel": "So gehst du vor",
               "punkte": [
-                "1. Schreibe die Einheiten-Leiter auf (mm² … km²).",
-                "2. Bestimme, ob du zu einer kleineren (·) oder größeren (:) Einheit gehst.",
-                "3. Pro Stufe: groß → klein · 100, klein → groß : 100."
+                "1. Zeichne die Umwandlungstabelle: km², ha, a, m², dm², cm², mm². Jede Einheit hat 2 Spalten.",
+                "2. Trag die Zahl ein: Die letzte Ziffer vor dem Komma kommt in die letzte Spalte ihrer Einheit. Ziffern nach dem Komma gehen nach rechts weiter.",
+                "3. Fülle mit Nullen auf – bis zur neuen Einheit.",
+                "4. Setz das Komma hinter die neue Einheit und lies ab. Nullen ganz vorne und ganz hinten nach dem Komma fallen weg."
               ]
             },
             {
@@ -4203,81 +4203,20 @@
           ]
         },
         {
-          "art": "stellentafel",
-          "stellen": [
-            "Z",
-            "E",
-            "Z",
-            "E",
-            "Z",
-            "E",
-            "Z",
-            "E",
-            "Z",
-            "E",
-            "Z",
-            "E",
-            "Z",
-            "E"
-          ],
-          "komma": -1,
-          "gruppen": [
-            {
-              "titel": "km²",
-              "spalten": 2
-            },
-            {
-              "titel": "ha",
-              "spalten": 2
-            },
-            {
-              "titel": "a",
-              "spalten": 2
-            },
-            {
-              "titel": "m²",
-              "spalten": 2
-            },
-            {
-              "titel": "dm²",
-              "spalten": 2
-            },
-            {
-              "titel": "cm²",
-              "spalten": 2
-            },
-            {
-              "titel": "mm²",
-              "spalten": 2
-            }
-          ],
+          "art": "umwandlung",
+          "tabelle": "flaeche",
           "zeilen": [
-            {
-              "label": "3 m² = 300 dm²",
-              "zahl": "300",
-              "bis": 9
-            },
-            {
-              "label": "400 cm² = 4 dm²",
-              "zahl": "400",
-              "bis": 11
-            },
-            {
-              "label": "5 ha = 500 a",
-              "zahl": "500",
-              "bis": 5
-            },
-            {
-              "label": "2 a = 200 m²",
-              "zahl": "200",
-              "bis": 7
-            }
+            "3 m² = {300} dm²",
+            "400 cm² = {4} dm²",
+            "5 ha = {500} a",
+            "2,5 ha = {25.000} m²",
+            "350 a = {3,5} ha"
           ],
           "titel": "Die Umwandlungstabelle",
           "punkte": [
-            "Jede Einheit hat zwei Spalten: Zehner und Einer.",
-            "Schreib die Zahl so, dass die letzte Ziffer in der Einer-Spalte ihrer Einheit steht.",
-            "Dann liest du in der neuen Einheit ab. Leere Spalten bis dahin: 0."
+            "Jede Einheit hat zwei Spalten, weil der Schritt zur nächsten Einheit × 100 ist.",
+            "Die letzte Ziffer vor dem Komma kommt in die letzte Spalte ihrer Einheit; Ziffern nach dem Komma gehen nach rechts weiter.",
+            "Mit Nullen auffüllen bis zur neuen Einheit. Das rote Komma steht hinter der neuen Einheit – dort liest du ab."
           ]
         },
         {
@@ -4347,9 +4286,9 @@
             "4 m² = ___ dm²?",
             "300 cm² = ___ dm²?",
             "7 a = ___ m²?",
-            "6 a = ___ m²",
-            "6 dm² = ___ cm²",
-            "9 cm² = ___ mm²"
+            "5,8 ha = ___ a",
+            "780 dm² = ___ m²",
+            "720 a = ___ ha"
           ],
           "buchstaben": true
         },
@@ -4531,82 +4470,21 @@
         {
           "art": "aufgabe",
           "stufe": 1,
-          "text": "Trag in die Umwandlungstabelle ein und rechne um. Die letzte Ziffer kommt in die Einer-Spalte der Einheit."
+          "text": "Trag in die Umwandlungstabelle ein und rechne um. Die letzte Ziffer vor dem Komma kommt in die letzte Spalte ihrer Einheit."
         },
         {
-          "art": "stellentafel",
-          "stellen": [
-            "Z",
-            "E",
-            "Z",
-            "E",
-            "Z",
-            "E",
-            "Z",
-            "E",
-            "Z",
-            "E",
-            "Z",
-            "E",
-            "Z",
-            "E"
-          ],
-          "komma": -1,
-          "gruppen": [
-            {
-              "titel": "km²",
-              "spalten": 2
-            },
-            {
-              "titel": "ha",
-              "spalten": 2
-            },
-            {
-              "titel": "a",
-              "spalten": 2
-            },
-            {
-              "titel": "m²",
-              "spalten": 2
-            },
-            {
-              "titel": "dm²",
-              "spalten": 2
-            },
-            {
-              "titel": "cm²",
-              "spalten": 2
-            },
-            {
-              "titel": "mm²",
-              "spalten": 2
-            }
-          ],
+          "art": "umwandlung",
+          "tabelle": "flaeche",
+          "buchstaben": true,
           "zeilen": [
-            {
-              "label": "a) 7 m² = ___ dm²"
-            },
-            {
-              "label": "b) 2 dm² = ___ cm²"
-            },
-            {
-              "label": "c) 600 cm² = ___ dm²"
-            },
-            {
-              "label": "d) 9 a = ___ m²"
-            },
-            {
-              "label": "e) 4 ha = ___ a"
-            },
-            {
-              "label": "f) 800 dm² = ___ m²"
-            },
-            {
-              "label": "g) 3 km² = ___ ha"
-            },
-            {
-              "label": "h) 500 mm² = ___ cm²"
-            }
+            "7 m² = ___ dm²",
+            "2 dm² = ___ cm²",
+            "600 cm² = ___ dm²",
+            "9 a = ___ m²",
+            "4 ha = ___ a",
+            "800 dm² = ___ m²",
+            "3 km² = ___ ha",
+            "500 mm² = ___ cm²"
           ]
         },
         {
@@ -4710,12 +4588,12 @@
             "4 cm² = ___ mm²",
             "5 ha = ___ a",
             "2 km² = ___ ha",
-            "6 m² = ___ dm²",
-            "5 cm² = ___ mm²",
-            "9 a = ___ m²",
-            "4 km² = ___ ha",
-            "9 km² = ___ ha",
-            "7 ha = ___ a"
+            "800 a = ___ ha",
+            "520 cm² = ___ dm²",
+            "600 mm² = ___ cm²",
+            "5,5 a = ___ m²",
+            "4,4 cm² = ___ mm²",
+            "7,8 cm² = ___ mm²"
           ],
           "buchstaben": true
         },
@@ -4788,13 +4666,13 @@
           "spalten": 2,
           "items": [
             "12 cm × 6 cm:  A = ___ cm²",
-            "3 km² = ___ ha",
+            "7,2 cm² = ___ mm²",
             "28 cm × 4 cm:  A = ___ cm²",
-            "3 ha = ___ a",
+            "700 a = ___ ha",
             "12 cm × 4 cm:  A = ___ cm²",
-            "7 m² = ___ dm²",
+            "6,6 a = ___ m²",
             "3 cm × 2 cm:  A = ___ cm²",
-            "5 cm² = ___ mm²"
+            "9,5 km² = ___ ha"
           ],
           "buchstaben": true
         }
@@ -4827,7 +4705,7 @@
           "1) a) 100 cm² · b) 2 dm² · c) 300 dm² · d) 900 dm²",
           "2) a) 300 ha · b) 600 ha · c) 900 a · d) 600 mm² · e) 100 cm² · f) 400 cm² · g) 200 mm² · h) 300 m²",
           "3) a) 100 dm² · b) 200 cm² · c) 100 a · d) 700 m² · e) 700 dm² · f) 500 cm²",
-          "4) a) 400 dm² · b) 3 dm² · c) 700 m² · d) 600 m² · e) 600 cm² · f) 900 mm²",
+          "4) a) 400 dm² · b) 3 dm² · c) 700 m² · d) 580 a · e) 7,8 m² · f) 7,2 ha",
           "5) 10 Kästchen · 10 Reihen · 1 dm² = 100 cm² · 1 m² = 100 dm² · 1 cm² = 100 mm²",
           "6) 100 dm² · 200 cm² · 400 dm² · 600 mm² · 100 a · 700 m²",
           "7) 3 dm² · 5 m² · 8 cm² · 12 dm² · 9 a · 4 ha",
@@ -4838,11 +4716,11 @@
           "12) 100",
           "13) a) 20.000 · b) 300 · c) 25 / 1 a",
           "14) mündlich – eigene Lösungen",
-          "15) a) 200 a · b) 700 ha · c) 300 cm² · d) 400 mm² · e) 500 a · f) 200 ha · g) 600 dm² · h) 500 mm² · i) 900 m² · j) 400 ha · k) 900 ha · l) 700 a",
+          "15) a) 200 a · b) 700 ha · c) 300 cm² · d) 400 mm² · e) 500 a · f) 200 ha · g) 8 ha · h) 5,2 dm² · i) 6 cm² · j) 550 m² · k) 440 mm² · l) 780 mm²",
           "16) a) 1 ha = 100 a = 10.000 m² · b) 300 a",
           "17) 200 dm²",
           "18) eigene Erklärung – auf Fachwörter und ein Beispiel achten",
-          "19) a) 72 cm² · b) 300 ha · c) 112 cm² · d) 300 a · e) 48 cm² · f) 700 dm² · g) 6 cm² · h) 500 mm²"
+          "19) a) 72 cm² · b) 720 mm² · c) 112 cm² · d) 7 ha · e) 48 cm² · f) 660 m² · g) 6 cm² · h) 950 ha"
         ]
       }
     },

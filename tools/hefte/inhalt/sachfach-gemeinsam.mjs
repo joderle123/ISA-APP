@@ -1,9 +1,13 @@
 // Gemeinsame Bausteine für die Sachfächer der Voie de préparation:
 // Culture générale (CULGE, 9 Module) und Vie et société (VIESO).
-// Grundlage CULGE: MENJE, Leitfaden „La voie de préparation de l’enseignement secondaire général“ (Module 1/4/7:
-// Geschichte, Bürgerkunde, Berufsorientierung · 2/5/8: Biologie, Gesundheit, nachhaltige Entwicklung ·
-// 3/6/9: Geografie, Physik/Chemie, neue Technologien, Medienbildung).
+// Grundlage CULGE: Programme CULGE, Voie de préparation (CNES, Stand 30/06/2026): neun Module = drei Domänen × drei Niveaus –
+// D1 „Mein Leben, mein Körper, mein Wohlbefinden“ (M1/M4/M7), D2 „Erde, Natur und Umwelt“ (M2/M5/M8),
+// D3 „Leben in der Gesellschaft früher und heute“ (M3/M6/M9). Unterricht auf Deutsch, Französisch oder Luxemburgisch.
 // Grundlage VIESO: MENJE, Rahmenlehrplan „Leben und Gesellschaft“ (Lernfelder und Themen der 7., 8. und 9. Klasse).
+// Grundlage Atelier: Programme GROPA – Groupe options et ateliers, Voie de préparation (CNES, 13/06/2022): neun Module im
+// gleichen Raster Attitudes / Savoirs / Habiletés mit steigenden Anforderungen; ein Modul ist nicht an ein Schuljahr gebunden.
+// Grundlage EDUPH: Programme EDUPH, Voie de préparation (CNES, Stand 03/03/2026), Kap. VI: neun Module nach drei
+// Bewertungsbereichen – Agir (M1/M4/M7), Interagir et coopérer (M2/M5/M8), Attitude (M3/M6/M9); Skala A–F.
 import { KARTEN_QUELLE } from './karten.mjs'
 
 export const mische = (hex, ziel, anteil) => '#' + [0, 2, 4].map((i) => Math.round(parseInt(hex.slice(1 + i, 3 + i), 16) * (1 - anteil) + ziel * anteil).toString(16).padStart(2, '0')).join('')
@@ -35,7 +39,8 @@ const ANLEITUNG = {
     'Jede Lektion hat diese Teile: **Los geht’s**, **Lesen und verstehen**, **Szene**, **Merken**, **Üben** und **Schreiben**. Am Ende steht ein **Kurz-Check**.',
     'In der **Szene** sprechen Menschen über das Thema: ein Gespräch, eine Führung oder ein Interview. Ihr könnt sie auch mit verteilten Rollen lesen.',
     'In diesem Fach arbeitest du mit **Karten**, **Zeitleisten**, **Schaubildern** und **Versuchen**. Lies die Legende und schau genau hin.',
-    'Die Punkte zeigen die Stufe: ●○○ Basis · ●●○ Kern · ●●● Plus. Die wichtigsten Fachwörter stehen auch auf Französisch.',
+    'Die Punkte zeigen die Schwierigkeit der Aufgabe: ●○○ leicht · ●●○ mittel · ●●● schwer. Die wichtigsten Fachwörter stehen auch auf Französisch.',
+    'Du darfst auf **Deutsch, Französisch oder Luxemburgisch** antworten – mündlich und schriftlich.',
   ],
   atelier: [
     'Jede Lektion hat diese Teile: **Los geht’s**, **Lesen**, **Szene**, **Gut zu wissen**, **Ausprobieren**, **Besprechen** und **Mein Werkstatt-Bericht**.',
@@ -70,6 +75,8 @@ const MEDIEN = {
   vieso: [['book', 'var(--lesen)', 'Lesen', 'Geschichten und Fragen'], ['message-dots', 'var(--hoeren)', 'Szenen', 'Gespräche zum Nachdenken'], ['cards', 'var(--regel)', 'Karten', 'zum Reden und Ausschneiden'], ['messages', 'var(--schreiben)', 'Reden', 'zuhören und begründen']],
 }
 const JAHR = ['7P', '7P', '7P', '6P', '6P', '6P', '5P', '5P', '5P']
+// Sport: Schwerpunkt des Moduls (Programm EDUPH VP, Kap. VI)
+export const EDUPH_SCHWERPUNKT = ['Agir', 'Interagir et coopérer', 'Attitude']
 
 /** Modul-Kopf für Culture générale ('culge'), Vie et société ('vieso'), Atelier ('atelier') und Sport ('eduph'). */
 export function sachModul(fach, nr, o) {
@@ -77,12 +84,12 @@ export function sachModul(fach, nr, o) {
   const F = {
     culge: ['cg', 'Culture-generale', 'Culture générale', 'Culture générale'],
     vieso: ['vs', 'Vie-et-societe', 'Vie et société', 'Vie et société'],
-    atelier: ['at', 'Atelier', 'Atelier', 'Enseignement pratique à l’atelier'],
+    atelier: ['at', 'Atelier', 'Atelier (GROPA)', 'Groupe options et ateliers (GROPA)'],
     eduph: ['sp', 'Sport', 'Sport', 'Éducation physique et sportive'],
   }[fach]
   return {
     id: `${fach}-m${nr}`, kuerzel: `${F[0]}${nr}`, nr, sprache: 'de', klasse: 'Voie de préparation',
-    niveau: `${o.jahr || JAHR[nr - 1]} · Modul ${nr} von 9`,
+    niveau: (fach === 'atelier' && !o.jahr ? '' : `${o.jahr || JAHR[nr - 1]} · `) + `Modul ${nr} von 9` + (fach === 'eduph' ? ` · Schwerpunkt ${EDUPH_SCHWERPUNKT[(nr - 1) % 3]}` : fach === 'culge' ? ` · Domaine ${((nr - 1) % 3) + 1} · Niveau ${((nr - 1) % 3) + 1}.${Math.floor((nr - 1) / 3) + 1}` : ''),
     dateiname: `${F[1]}_Modul-${nr}`,
     fach: { de: F[2], fr: F[3] },
     titel: { de: o.titel, fr: o.titelFr || '' },

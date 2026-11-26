@@ -1,6 +1,6 @@
 // Français · Module 6 « Nature et avenir » (Régime / Voie de préparation, A2.1 – A2.2) – cahier multimodal.
-// D’après le « Référentiel de compétences – français, régime préparatoire » (MENFP), Module 6 « La vie en société, la
-// nature et l’environnement » (socle pour la 9e) : ville et campagne, espaces naturels, protection de la nature,
+// D’après le « Programme FRANC 7P–5P » (CNES, 20/03/2019), Module 6 « La vie en société, la
+// nature et l’environnement » (socle pour l’accès à la 5e AD) : ville et campagne, espaces naturels, protection de la nature,
 // animaux de compagnie et animaux sauvages, avenir de la planète, épanouissement personnel ; futur simple, temps du
 // passé (révision), adverbes en -ment, être en train de, connecteurs du récit, si + présent → futur, cause (parce
 // que, car), indicateurs de temps, degrés de certitude, registre familier / standard, journal de bord.
@@ -11,7 +11,7 @@ export const MODUL = {
   dateiname: 'Francais_Module-6',
   fach: { de: 'Französisch', fr: 'Français' },
   titel: { de: 'Natur und Zukunft', fr: 'Nature et avenir' },
-  untertitel: { fr: 'Choisir entre ville et campagne, raconter une aventure, adopter et soigner un animal, découvrir la nature, agir pour la planète, imaginer l’avenir et parler de ses rêves – en huit leçons.', de: 'Zwischen Stadt und Land wählen, ein Abenteuer erzählen, ein Tier adoptieren und pflegen, die Natur entdecken, etwas für den Planeten tun, die Zukunft ausmalen und über Träume sprechen – in acht Lektionen.' },
+  untertitel: { fr: 'Choisir entre ville et campagne, raconter une aventure, adopter et soigner un animal, découvrir la nature, agir pour la planète, imaginer l’avenir et parler de ses rêves – en huit unités.', de: 'Zwischen Stadt und Land wählen, ein Abenteuer erzählen, ein Tier adoptieren und pflegen, die Natur entdecken, etwas für den Planeten tun, die Zukunft ausmalen und über Träume sprechen – in acht Einheiten.' },
   farben: { tief: '#2f7d32', mittel: '#a5d6a7', zart: '#eef7ee', dunkel: '#1b4d1e' },
   deckbild: ['amira:froh:stehen-zeigen', 'finn:froh:laessig', 'nele:froh:stehen'],
   blasen: [{ t: 'Ville ou campagne ?', x: 8, y: 108 }, { t: 'En 2050…', x: 128, y: 98 }, { t: 'Si je veux, je peux !', x: 140, y: 150 }],
@@ -24,7 +24,7 @@ export const MODUL = {
     'Chaque leçon a cinq parties : **Lire**, **Écouter**, **La règle**, **S’entraîner** et **Écrire**. À la fin, il y a un **mini-bilan**.',
     'À côté de chaque texte, il y a un **code QR**. Scanne-le avec ton portable : tu entends le texte. Écoute plusieurs fois pour trouver les informations importantes.',
     'Les points montrent le niveau : ●○○ base · ●●○ moyen · ●●● plus. Commence par la base.',
-    'Ce module prépare la **5P**. Les personnes du cahier sont imaginaires. Tu parles de toi seulement si tu veux : tu peux toujours inventer.',
+    'Le module 6 est le socle pour accéder à une classe de **5e AD**. Les personnes du cahier sont imaginaires. Tu parles de toi seulement si tu veux : tu peux toujours inventer.',
   ],
   // seulement pour la voix (Regex Python)
   aussprache: {

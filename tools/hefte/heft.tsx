@@ -644,6 +644,49 @@ function aktionBegleitung(m: any): string {
   return h + '</section>'
 }
 
+// ---------------------------------------------------------------- Programm: Überblick und Modul-Bilan
+// Die VP-Programme (ALLUX, FRANC, EDUPH …) verlangen: zu Beginn jedes Moduls bekommen Schülerin/Schüler und Eltern eine
+// kurze Übersicht der Kompetenzen; bewertet wird in allen Bereichen, angekündigt und vorher festgelegt (Auftrag 26.11.2026).
+// m.apercu = { intro, bereiche: [{ kurz, name, punkte: [...] }], bewertung: [...], unterschrift }
+// m.bilan  = { intro, situationen: [{ kurz, name, aufgabe, punkte }], regel }
+function apercu(m: any, sp: string): string {
+  const a = m.apercu; if (!a) return ''
+  const de = sp === 'de'
+  let h = `<section class="apercu lektion"><div class="seitenkopf"><span class="marke">${de ? 'Modul' : 'Module'} ${m.nr}</span><span>${esc(m.fach[sp])} · ${esc(m.titel[sp])}</span></div>`
+  h += `<h2>${esc(a.titel || (de ? 'Das lerne ich in diesem Modul' : 'Aperçu des compétences'))}</h2>`
+  if (a.intro) h += `<p class="ap-intro">${inl(a.intro)}</p>`
+  h += `<div class="ap-bereiche">${a.bereiche.map((b: any) => `<div class="ap-bereich"><div class="ap-kopf"><b>${esc(b.kurz || '')}</b><span>${esc(b.name)}</span></div><div class="ap-z ap-zk"><div></div><div>${de ? 'Start' : 'Début'}</div><div>${de ? 'Ende' : 'Fin'}</div></div>${b.punkte.map((p: string) => `<div class="ap-z"><div>${inl(p)}</div><div class="ap-k"></div><div class="ap-k"></div></div>`).join('')}</div>`).join('')}</div>`
+  h += `<p class="klein ap-leg">${de ? 'Kreuze am Anfang und am Ende des Moduls an: ✓ kann ich · ~ geht so · ✗ noch nicht.' : 'Coche au début et à la fin du module : ✓ je sais faire · ~ à peu près · ✗ pas encore.'}</p>`
+  if (a.bewertung?.length) h += `<div class="ap-bewertung"><b>${de ? 'So wird bewertet' : 'Comment je suis évalué(e)'}</b><ul>${a.bewertung.map((x: string) => `<li>${inl(x)}</li>`).join('')}</ul></div>`
+  if (a.unterschrift) h += `<div class="ap-unterschrift">${(de ? ['Schülerin / Schüler', 'Eltern', 'Lehrperson'] : ['Élève', 'Parents', 'Enseignant(e)']).map((x) => `<div><span></span>${x}</div>`).join('')}</div>`
+  return h + '</section>'
+}
+// ALLUX: Luxemburgisch ist nicht modular – mindestens zwei Texte pro Trimester lesen, erklären, besprechen (Programm ALLUX, S. 29).
+// Keine Texte aus dem Lehrwerk abdrucken: nur das Lese-Protokoll und Gesprächsanlässe.
+function lbSeite(m: any): string {
+  if (!m.lb) return ''
+  const zeilen = [1, 1, 2, 2, 3, 3].map((t, i) => `<tr><td>${t}</td><td>${i + 1}</td><td></td><td></td><td></td><td class="lb-g"><i>☺</i><i>😐</i><i>☹</i></td></tr>`).join('')
+  return `<section class="apercu lektion"><div class="seitenkopf"><span class="marke">Modul ${m.nr}</span><span>${esc(m.fach.de)} · Lëtzebuergesch</span></div>
+<h2>Lëtzebuergesch – mein Leseheft</h2>
+<p class="ap-intro">In jedem Trimester lest ihr <b>mindestens zwei Texte auf Luxemburgisch</b>. Ihr erklärt sie und sprecht darüber. Hören, Sprechen und Lesen zählen für die mündliche Note – Schreiben wird nicht benotet. Notiere hier kurz (auch auf Deutsch).</p>
+<table class="lb-tab"><colgroup><col style="width:9%"><col style="width:7%"><col style="width:24%"><col style="width:26%"><col style="width:20%"><col style="width:14%"></colgroup>
+<tr><th>Trim.</th><th>Nr.</th><th>Titel des Textes</th><th>Worum geht es? (1 Satz)</th><th>Neue Wörter</th><th>Mir gefällt</th></tr>${zeilen}</table>
+<div class="ap-bewertung"><b>Darüber sprechen – Satzanfänge</b><ul><li>Der Text heißt … Es geht um …</li><li>Die wichtigste Person ist … Sie / Er …</li><li>Das Wort „…“ heißt auf Deutsch …</li><li>Mir hat gefallen, dass … / Ich fand komisch, dass …</li><li>Kennt ihr das auch? Was hättet ihr gemacht?</li></ul></div></section>`
+}
+function bilan(m: any, sp: string): string {
+  const b = m.bilan; if (!b) return ''
+  const de = sp === 'de'
+  let h = `<section class="bilan lektion"><div class="seitenkopf"><span class="marke">${de ? 'Modul' : 'Module'} ${m.nr}</span><span>${esc(m.fach[sp])} · ${esc(m.titel[sp])}</span></div>`
+  h += `<h2>${esc(b.titel || (de ? 'Modul-Bilan' : 'Bilan du module'))}</h2>`
+  if (b.intro) h += `<p class="ap-intro">${inl(b.intro)}</p>`
+  const summe = b.situationen.reduce((x: number, s: any) => x + (s.punkte || 0), 0)
+  h += `<div class="bi-liste">${b.situationen.map((s: any, i: number) => `<div class="bi-sit"><div class="bi-nr">${esc(s.kurz || String(i + 1))}</div><div class="bi-txt"><b>${esc(s.name)}</b><div>${inl(s.aufgabe)}</div>${s.material ? `<div class="klein">${inl(s.material)}</div>` : ''}</div><div class="bi-pkt">${s.punkte ? `…… / ${s.punkte}` : s.skala ? `<span class="bi-skala">${s.skala.map((x: string) => `<i>${esc(x)}</i>`).join('')}</span>` : ''}</div></div>`).join('')}</div>`
+  if (summe) h += `<div class="bi-summe"><span>${de ? 'Gesamt' : 'Total'}</span><b>…… / ${summe}</b></div>`
+  h += `<div class="bi-ergebnis"><div><i></i>${de ? 'Modul erreicht' : 'Module acquis'}</div><div><i></i>${de ? 'Noch nicht erreicht – ich arbeite im Modul weiter (Zwischennote)' : 'En voie d’acquisition – je continue le module (note intermédiaire)'}</div></div>`
+  if (b.regel) h += `<p class="klein bi-regel">${inl(b.regel)}</p>`
+  return h + '</section>'
+}
+
 // ---------------------------------------------------------------- Bauen
 function html(m: any, L: any[], loesungen: boolean, seiten: Record<string, number>, spuren: any[]): string {
   const sp = m.sprache
@@ -652,9 +695,10 @@ function html(m: any, L: any[], loesungen: boolean, seiten: Record<string, numbe
   const f = m.farben
   const fuss = m.fuss || `${m.fach[sp]} · ${sp === 'de' ? 'Modul' : 'Module'} ${m.nr} · ${m.titel[sp]}${loesungen ? (sp === 'de' ? ' · Lösungen' : ' · Solutions') : ''}`
   const seitenCss = `@page { @bottom-left { content: "${fuss.replace(/"/g, '')}"; font-family: Lexend, Atkinson, sans-serif; font-size: 8pt; color: #8a93a3; } @bottom-right { content: counter(page); font-family: Lexend; font-weight: 700; font-size: 9.5pt; color: ${f.tief}; } }`
-  let body = deckblatt(m, sp, loesungen, L) + (m.kompakt ? '' : inhalt(m, sp, L, seiten))
+  let body = deckblatt(m, sp, loesungen, L) + (m.kompakt ? '' : inhalt(m, sp, L, seiten)) + (m.apercu && !loesungen ? apercu(m, sp) : '')
   if (m.aktionen) body += m.aktionen.map((a: any, i: number) => aktionSeite(m, a, String(i + 1), `Aktion ${i + 1} von ${m.aktionen.length}`)).join('') + aktionSeite(m, m.woche, '+', 'Für die Woche') + aktionBegleitung(m)
   L.forEach((l, i) => { body += lektion(l, { modul: m, sp, nr: i + 1, zaehler: 0, spuren }) })
+  if (m.bilan) body += bilan(m, sp) + lbSeite(m)
   if (!m.aktionen) body += m.kompakt ? (m.begleitung ? begleitung(m) : '') : anhang(m, sp, L) + (m.aideMemoire ? aideMemoire(m, sp, L) : '')
   // französische Typografie: geschütztes Leerzeichen vor ! ? ; : » und nach «, damit nichts allein umbricht
   if (sp === 'fr') body = body.replace(/>([^<]+)</g, (_: string, t: string) => '>' + t.replace(/ ([!?;:»])/g, '\u00a0$1').replace(/« /g, '«\u00a0') + '<')

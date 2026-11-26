@@ -1,6 +1,6 @@
 // Deutsch · Modul 4 „Kaufen, Mode und Taschengeld“ (Voie de préparation, ≈ A2.1–A2.2) – multimodales Heft.
-// Themen und Grammatik nach den öffentlichen „Kompetenzorientierten Bildungsstandards Deutsch für den Modularunterricht“
-// (MENFP 2009), Modul 4: Kaufen, Konsumartikel und Modetrends früher und heute, Taschengeld; Begründungen mit weil
+// Themen und Grammatik nach dem Programm ALLUX 7P/6P/5P (CNES, 20/03/2019; Kann-Beschreibungen als Mindeststandards),
+// Modul 4: Kaufen, Konsumartikel und Modetrends früher und heute, Taschengeld; Begründungen mit weil
 // und denn, Possessivpronomen, Präteritum regelmäßiger Verben, Steigerung (Wiederholung), direkte Rede markieren,
 // Artikel (bestimmt: ein Ding / allgemein: alle Dinge), Anleitungen für Automaten, Kleinanzeigen, Werbung.
 // Lektion 5 (Mobbing wegen Marken): behutsam, ohne Bloßstellen; Hilfe: Kanner- a Jugendtelefon 116 111.
@@ -8,11 +8,11 @@
 // Alle Texte selbst geschrieben, alle Personen und Marken ausgedacht.
 
 export const MODUL = {
-  id: 'deutsch-m4', kuerzel: 'de4', nr: 4, sprache: 'de', niveau: 'A2.1', klasse: 'Voie de préparation',
+  id: 'deutsch-m4', kuerzel: 'de4', nr: 4, sprache: 'de', niveau: 'A2.1 – A2.2', klasse: 'Voie de préparation',
   dateiname: 'Deutsch_Modul-4',
   fach: { de: 'Deutsch', fr: 'Allemand' },
   titel: { de: 'Kaufen, Mode und Taschengeld', fr: 'Acheter, mode et argent de poche' },
-  untertitel: { de: 'Taschengeld, Automaten, Kleinanzeigen, Mode früher und heute und Werbetricks: lesen, hören, sprechen und schreiben – in acht Lektionen.', fr: 'Argent de poche, distributeurs, petites annonces, la mode d’hier et d’aujourd’hui et les astuces de la pub : lire, écouter, parler et écrire – en huit leçons.' },
+  untertitel: { de: 'Taschengeld, Automaten, Kleinanzeigen, Mode früher und heute und Werbetricks: lesen, hören, sprechen und schreiben – in acht Einheiten.', fr: 'Argent de poche, distributeurs, petites annonces, la mode d’hier et d’aujourd’hui et les astuces de la pub : lire, écouter, parler et écrire – en huit unités.' },
   farben: { tief: '#b4432e', mittel: '#eaa38f', zart: '#fbefe9', dunkel: '#7e2b1c' },
   deckbild: ['sami:froh:handy', 'chloe:froh:laessig', 'ben:froh:stehen-zeigen'],
   blasen: [{ t: 'Was kostet das?', x: 12, y: 110 }, { t: 'Zu verkaufen!', x: 140, y: 102 }, { t: '€', x: 168, y: 150 }],

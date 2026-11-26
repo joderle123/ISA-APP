@@ -1,6 +1,6 @@
 // Deutsch · Modul 8 „Konsum, Umwelt und Klima“ (Voie de préparation, B1) – multimodales Heft.
-// Themen und Grammatik nach den öffentlichen „Kompetenzorientierten Bildungsstandards Deutsch für den Modularunterricht“
-// (MENFP 2009), Modul 8: Konsumverhalten, Umweltschutz im Alltag, Klimaveränderungen, Energieressourcen;
+// Themen und Grammatik nach dem Programm ALLUX 7P/6P/5P (CNES, 20/03/2019; Kann-Beschreibungen als Mindeststandards),
+// Modul 8: Konsumverhalten, Umweltschutz im Alltag, Klimaveränderungen, Energieressourcen;
 // Internetforum, Reklamation (Reparatur statt Neukauf), Mülltrennung, Ankündigung, spontanes Interview, Vor- und
 // Nachteile (ein Grad weniger, Wäschetrockner), Kurzreferat zum Energieverbrauch, Kurvendiagramm, Radio-Info-Beitrag,
 // Einweihung eines Windparks, Gruppenentscheidung (Schule und Umwelt), Trends, Marktforschung, auf Anzeigen reagieren;

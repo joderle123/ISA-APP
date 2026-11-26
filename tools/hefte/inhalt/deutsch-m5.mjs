@@ -1,6 +1,6 @@
 // Deutsch · Modul 5 „Luxemburg entdecken“ (Voie de préparation, ≈ A2.2) – multimodales Heft.
-// Themen und Grammatik nach den öffentlichen „Kompetenzorientierten Bildungsstandards Deutsch für den Modularunterricht“
-// (MENFP 2009), Modul 5: Festigung der Module 1–4; Kultur, Geschichte und Persönlichkeiten einer Stadt (Luxemburg);
+// Themen und Grammatik nach dem Programm ALLUX 7P/6P/5P (CNES, 20/03/2019; Kann-Beschreibungen als Mindeststandards),
+// Modul 5: Festigung der Module 1–4; Kultur, Geschichte und Persönlichkeiten einer Stadt (Luxemburg);
 // Informationsmaterial, Wettervorhersage, Durchsagen am Bahnhof, Stadtführung, Nacherzählung (Rattenfänger von Hameln),
 // Meinung und Vorurteile, Lieder und Bücher, fiktive Biografie; dass-Sätze, Relativsätze, unregelmäßige Verben im
 // Präteritum, Perfekt (mündlich) und Präteritum (schriftlich), Personalpronomen im Dativ und Akkusativ, Akkusativobjekt,
@@ -8,11 +8,11 @@
 // Alle Texte selbst geschrieben; Jugendliche ausgedacht.
 
 export const MODUL = {
-  id: 'deutsch-m5', kuerzel: 'de5', nr: 5, sprache: 'de', niveau: 'A2.2', klasse: 'Voie de préparation',
+  id: 'deutsch-m5', kuerzel: 'de5', nr: 5, sprache: 'de', niveau: 'A2.2 / A2+', klasse: 'Voie de préparation',
   dateiname: 'Deutsch_Modul-5',
   fach: { de: 'Deutsch', fr: 'Allemand' },
   titel: { de: 'Luxemburg entdecken', fr: 'Découvrir le Luxembourg' },
-  untertitel: { de: 'Stadt, Geschichte und Persönlichkeiten, Bus und Bahn, Wetter, Sagen, Meinungen und Bücher: lesen, hören, sprechen und schreiben – in acht Lektionen.', fr: 'Ville, histoire et personnalités, bus et train, météo, légendes, opinions et livres : lire, écouter, parler et écrire – en huit leçons.' },
+  untertitel: { de: 'Stadt, Geschichte und Persönlichkeiten, Bus und Bahn, Wetter, Sagen, Meinungen und Bücher: lesen, hören, sprechen und schreiben – in acht Einheiten.', fr: 'Ville, histoire et personnalités, bus et train, météo, légendes, opinions et livres : lire, écouter, parler et écrire – en huit unités.' },
   farben: { tief: '#b4432e', mittel: '#eaa38f', zart: '#fbefe9', dunkel: '#7e2b1c' },
   deckbild: ['lina:froh:stehen-zeigen', 'opa:froh:stehen', 'lio:froh:laessig'],
   blasen: [{ t: 'Moien!', x: 16, y: 112 }, { t: 'Ich finde, dass …', x: 126, y: 100 }, { t: 'Wow!', x: 160, y: 150 }],

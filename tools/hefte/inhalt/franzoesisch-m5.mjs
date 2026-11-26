@@ -1,5 +1,5 @@
 // Français · Module 5 « Hier et aujourd’hui » (Régime / Voie de préparation, A2.1 – A2.2) – cahier multimodal.
-// D’après le « Référentiel de compétences – français, régime préparatoire » (MENFP), Module 5 « Se situer dans le
+// D’après le « Programme FRANC 7P–5P » (CNES, 20/03/2019), Module 5 « Se situer dans le
 // temps et dans son époque » : évolution d’une mode, vocabulaire historique simple (une civilisation passée), sa propre
 // évolution (avant / maintenant), publicité, formes, matières et couleurs d’un objet, interdictions ; imparfait
 // (comprendre), impératif des slogans et infinitif, passé composé, COD / COI (première approche), connecteurs
@@ -11,7 +11,7 @@ export const MODUL = {
   dateiname: 'Francais_Module-5',
   fach: { de: 'Französisch', fr: 'Français' },
   titel: { de: 'Gestern und heute', fr: 'Hier et aujourd’hui' },
-  untertitel: { fr: 'Comparer avant et maintenant, découvrir l’histoire d’une mode et les Romains, analyser des publicités, décrire des objets, comprendre des règles, raconter une légende et inviter – en huit leçons.', de: 'Früher und heute vergleichen, die Geschichte einer Mode und die Römer entdecken, Werbung untersuchen, Gegenstände beschreiben, Regeln verstehen, eine Sage erzählen und einladen – in acht Lektionen.' },
+  untertitel: { fr: 'Comparer avant et maintenant, découvrir l’histoire d’une mode et les Romains, analyser des publicités, décrire des objets, comprendre des règles, raconter une légende et inviter – en huit unités.', de: 'Früher und heute vergleichen, die Geschichte einer Mode und die Römer entdecken, Werbung untersuchen, Gegenstände beschreiben, Regeln verstehen, eine Sage erzählen und einladen – in acht Einheiten.' },
   farben: { tief: '#8c5d0b', mittel: '#e9c77f', zart: '#fbf4e4', dunkel: '#5a3b05' },
   deckbild: ['oma:froh:erklaeren', 'noah:froh:stehen', 'chloe:froh:tanzen'],
   blasen: [{ t: 'Avant…', x: 18, y: 110 }, { t: 'C’est interdit !', x: 116, y: 100 }, { t: 'Il était une fois…', x: 150, y: 150 }],

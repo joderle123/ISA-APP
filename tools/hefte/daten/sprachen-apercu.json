@@ -1,0 +1,456 @@
+{
+  "deutsch": {
+    "1": {
+      "hoeren": [
+        "Ich kann einer kurzen Präsentation mit Bildern folgen, wenn deutlich gesprochen wird.",
+        "Ich kann hören, wie es jemandem geht: fröhlich, müde, wütend oder krank.",
+        "Ich kann das Wichtigste aus kurzen, klaren Durchsagen verstehen.",
+        "Ich kann häufige Wörter in kurzen Gesprächen verstehen, zum Beispiel beim Einkaufen."
+      ],
+      "lesen": [
+        "Ich kann die wichtigsten Punkte von kurzen Meldungen zu meinen Themen verstehen.",
+        "Ich kann einfache Anleitungen befolgen, besonders wenn Bilder die Schritte zeigen.",
+        "Ich kann in einer kurzen Geschichte verstehen, wer mitspielt und was passiert.",
+        "Ich kann einfache Texte mit sehr bekannten Wörtern lesen und verstehen."
+      ],
+      "sprechen": [
+        "Ich kann höflich nach der Uhrzeit oder nach dem Weg fragen.",
+        "Ich kann sagen, dass ich etwas nicht verstehe, und nach einem Wort fragen.",
+        "Ich kann kurz erzählen, wie mein Tag abläuft.",
+        "Ich kann in einem kurzen, vorbereiteten Vortrag eine Person oder eine Sache vorstellen."
+      ],
+      "schreiben": [
+        "Ich kann eine kurze Glückwunschkarte oder Dankeskarte schreiben.",
+        "Ich kann eine Einladung schreiben und auf eine Einladung antworten.",
+        "Ich kann eine Liste schreiben, was ich mag oder mir wünsche.",
+        "Ich kann in einfachen Sätzen über meinen Alltag schreiben."
+      ]
+    },
+    "2": {
+      "hoeren": [
+        "Ich kann aus kurzen, deutlich gesprochenen Hörtexten über den Alltag wichtige Informationen heraushören.",
+        "Ich kann einer einfachen Geschichte folgen, wenn langsam und deutlich gesprochen wird.",
+        "Ich kann kurzen, einfachen Wegerklärungen folgen.",
+        "Ich kann die wichtigsten Fakten einer einfachen Präsentation mit Bildern oder Gesten verstehen."
+      ],
+      "lesen": [
+        "Ich kann in kurzen, einfachen Texten zu bekannten Themen verstehen, worum es hauptsächlich geht.",
+        "Ich kann in einem einfachen Porträt die meisten Informationen über eine Person verstehen.",
+        "Ich kann in kurzen Artikeln aus Jugendzeitschriften die Hauptpunkte verstehen.",
+        "Ich kann eine einfache schriftliche Wegbeschreibung verstehen."
+      ],
+      "sprechen": [
+        "Ich kann einfache Fragen stellen und beantworten, wenn es um bekannte Dinge geht.",
+        "Ich kann nach dem Weg fragen und ihn mir mit einer Karte erklären lassen.",
+        "Ich kann kurz erzählen, was ich am Wochenende oder in den Ferien erlebt habe.",
+        "Ich kann mit einfachen Worten beschreiben, wie eine Person aussieht."
+      ],
+      "schreiben": [
+        "Ich kann mit einer Skizze aufschreiben, wo ich wohne und wie man hinkommt.",
+        "Ich kann mit dem Wörterbuch einen Anfang oder eine Fortsetzung für eine Geschichte schreiben.",
+        "Ich kann kurze Notizen und Mitteilungen für den Alltag schreiben.",
+        "Ich kann in einfachen Sätzen über meine Aktivitäten schreiben."
+      ]
+    },
+    "3": {
+      "hoeren": [
+        "Ich kann einfache Erklärungen zu einem Ablauf verstehen, wenn Gesten oder Skizzen helfen.",
+        "Ich kann Berichte über bekannte Themen verstehen, wenn langsam und deutlich gesprochen wird.",
+        "Ich kann die Hauptpunkte von Radionachrichten verstehen, wenn ich das Thema schon kenne.",
+        "Ich kann in einem Radiointerview verstehen, was Jugendliche gern machen und was nicht."
+      ],
+      "lesen": [
+        "Ich kann einen einfachen persönlichen Brief oder eine E-Mail verstehen.",
+        "Ich kann in Briefen, Prospekten und Werbung wichtige Informationen finden.",
+        "Ich kann in einer Reportage aus einer Jugendzeitschrift wichtige Informationen verstehen.",
+        "Ich kann in kurzen Regeltexten, zum Beispiel einer Hausordnung, das Wichtige verstehen."
+      ],
+      "sprechen": [
+        "Ich kann fragen, was jemand in der Schule oder in der Freizeit macht, und antworten.",
+        "Ich kann im Unterricht sagen, wie weit ich bin und wo ich Schwierigkeiten habe.",
+        "Ich kann erzählen, wie ein wichtiges Fest bei uns gefeiert wird.",
+        "Ich kann sagen, wo es mir am besten gefällt, und kurz begründen, warum."
+      ],
+      "schreiben": [
+        "Ich kann Freunden per E-Mail, Kurznachricht oder kurzem Brief einfache Informationen schreiben.",
+        "Ich kann einen bekannten Gegenstand oder Ort mit kurzen, einfachen Sätzen beschreiben.",
+        "Ich kann Freunden ganz kurz mitteilen, dass ich später komme oder krank bin."
+      ]
+    },
+    "4": {
+      "hoeren": [
+        "Ich kann bei Gesprächen im Geschäft oder auf dem Markt verstehen, worum es geht.",
+        "Ich kann wichtige Informationen aus Hinweisen auf Konzerte, Ausstellungen oder Sportfeste verstehen.",
+        "Ich kann in Filmszenen verstehen, worüber gesprochen wird."
+      ],
+      "lesen": [
+        "Ich kann in einem Interview in einer Zeitschrift den Fragen und Antworten folgen.",
+        "Ich kann in kurzen, einfachen Texten zu bekannten Themen das Wichtigste verstehen.",
+        "Ich kann einfache Anleitungen für Geräte aus dem Alltag befolgen, zum Beispiel für einen Automaten."
+      ],
+      "sprechen": [
+        "Ich kann jemanden bitten, mir etwas zu leihen, und auf solche Bitten antworten.",
+        "Ich kann kurz und einfach von einem Erlebnis aus dem Schulalltag erzählen.",
+        "Ich kann Preise und andere Zahlen flüssig sagen.",
+        "Ich kann Dinge beschreiben, die mir gehören."
+      ],
+      "schreiben": [
+        "Ich kann eine kurze Notiz schreiben, die sagt, was jemand wissen oder tun soll.",
+        "Ich kann ein Ereignis beschreiben: Wann? Wo? Was? Warum?",
+        "Ich kann eine kleine Anzeige schreiben und auf eine Anzeige antworten.",
+        "Ich kann einfache Texte schreiben und Sätze mit „und“, „weil“ und „danach“ verbinden."
+      ]
+    },
+    "5": {
+      "hoeren": [
+        "Ich kann verstehen, wie ich zu Fuß oder mit Bus und Zug ans Ziel komme.",
+        "Ich kann bei längeren Hörtexten über bekannte Themen verstehen, worum es geht.",
+        "Ich kann wichtige Informationen aus einfachen Durchsagen verstehen, zum Beispiel am Bahnhof.",
+        "Ich kann die Handlung in einem Filmausschnitt verstehen, wenn die Bilder viel zeigen."
+      ],
+      "lesen": [
+        "Ich kann in einfachen Zeitungsartikeln mit Zahlen, Namen und Bildern das Wichtigste finden.",
+        "Ich kann kurze Schritt-für-Schritt-Anleitungen mit Bildern verstehen.",
+        "Ich kann in Alltagstexten, zum Beispiel im Wetterbericht, bestimmte Informationen finden."
+      ],
+      "sprechen": [
+        "Ich kann jemandem ohne Karte erklären, wie er zu Fuß an einen Ort kommt.",
+        "Ich kann sagen, ob ich einverstanden bin oder eine andere Meinung habe.",
+        "Ich kann eine kurze Geschichte Schritt für Schritt erzählen.",
+        "Ich kann kurz sagen, was mir an einem Lied oder einem Buch gefällt."
+      ],
+      "schreiben": [
+        "Ich kann wichtige Erlebnisse ganz kurz und einfach beschreiben.",
+        "Ich kann eine einfache Geschichte über etwas Echtes oder Erfundenes schreiben.",
+        "Ich kann eine einfache Lebensgeschichte über eine erfundene Person schreiben."
+      ]
+    },
+    "6": {
+      "hoeren": [
+        "Ich kann ein Alltagsgespräch verstehen und muss nur manchmal um Wiederholung bitten.",
+        "Ich kann verstehen, wenn in normalem Tempo über bekannte Themen gesprochen wird.",
+        "Ich kann in längeren Geschichten die Hauptpunkte und wichtige Einzelheiten verstehen.",
+        "Ich kann in einer Diskussion über Alltagsthemen die wichtigsten Punkte verstehen."
+      ],
+      "lesen": [
+        "Ich kann kurze und längere Texte mit bekannten Wörtern aus Alltag und Hobbys verstehen.",
+        "Ich kann persönliche Briefe verstehen, in denen jemand ausführlich von Erlebnissen erzählt.",
+        "Ich kann in einfachen Anzeigen, zum Beispiel für Praktikumsstellen, das Wichtige finden.",
+        "Ich kann kurze Sicherheitshinweise verstehen, zum Beispiel an Geräten oder in Bus und Zug."
+      ],
+      "sprechen": [
+        "Ich kann mit einem vorbereiteten Fragebogen ein Interview führen und spontan nachfragen.",
+        "Ich kann in einer Diskussion, zum Beispiel über einen Ausflug, meine vorbereiteten Argumente sagen.",
+        "Ich kann in einigen Sätzen erzählen, welchen Beruf ich lernen möchte und warum.",
+        "Ich kann meine Meinung und meine Pläne kurz erklären und begründen."
+      ],
+      "schreiben": [
+        "Ich kann in verbundenen Sätzen über meinen Alltag schreiben.",
+        "Ich kann einen einfachen Bericht für eine Schülerzeitung schreiben.",
+        "Ich kann in zusammenhängenden Sätzen über ein Ereignis berichten.",
+        "Ich kann in einem Lerntagebuch festhalten, was ich gelernt habe, und mir Ziele setzen."
+      ]
+    },
+    "7": {
+      "hoeren": [
+        "Ich kann die wichtigsten Informationen aus Fernsehnachrichten verstehen, wenn die Bilder helfen.",
+        "Ich kann die Hauptaussagen von Fernsehsendungen verstehen, wenn klar gesprochen wird.",
+        "Ich kann ein Radiointerview über bekannte Themen verstehen, wenn ich es mehrmals hören kann.",
+        "Ich kann kurze Durchsagen und Wetterberichte verstehen, wenn deutlich gesprochen wird."
+      ],
+      "lesen": [
+        "Ich kann auf Verpackungen von Lebensmitteln und Medikamenten wichtige Informationen finden.",
+        "Ich kann einfache Sachtexte und Berichte über Themen verstehen, die ich gut kenne.",
+        "Ich kann Einträge in einem Reisetagebuch ohne große Mühe verstehen.",
+        "Ich kann Werbebriefe und Prospekte zu Themen verstehen, die mich interessieren."
+      ],
+      "sprechen": [
+        "Ich kann mit anderen über Musik oder Filme sprechen, sie vergleichen und bewerten.",
+        "Ich kann meine Meinung sagen und andere nach ihrer Meinung fragen.",
+        "Ich kann die Handlung eines Films oder Buches erzählen und sagen, wie ich sie fand.",
+        "Ich kann anderen Verhaltensregeln erklären, zum Beispiel für das Internet."
+      ],
+      "schreiben": [
+        "Ich kann einen einfachen Text zusammenfassen und meine Meinung dazu schreiben.",
+        "Ich kann auf einem Poster mit Bildern und kurzen Texten ein Reiseziel vorstellen.",
+        "Ich kann ohne Hilfe kurze Texte über Erlebtes oder Gelesenes schreiben.",
+        "Ich kann zu einem Thema Argumente dafür und dagegen auflisten."
+      ]
+    },
+    "8": {
+      "hoeren": [
+        "Ich kann die Hauptpunkte kurzer Radiobeiträge verstehen, wenn klar und einfach gesprochen wird.",
+        "Ich kann aus kurzen Radiobeiträgen auch wichtige Einzelheiten heraushören.",
+        "Ich kann die Informationen in Aufnahmen und Sendungen zu Themen verstehen, die mich interessieren."
+      ],
+      "lesen": [
+        "Ich kann einfache Sachtexte zu meinen Interessen und zu Schulfächern gut verstehen.",
+        "Ich kann kurze Texte verstehen, in denen Menschen ihre Meinung sagen, zum Beispiel Leserbriefe.",
+        "Ich kann Artikel zu aktuellen Fragen lesen und erkennen, welche Meinung die Schreibenden vertreten."
+      ],
+      "sprechen": [
+        "Ich kann mich beschweren, wenn etwas schlecht oder kaputt ist.",
+        "Ich kann in der Gruppe meine Meinung sagen und Vorschläge machen, um gemeinsam zu entscheiden.",
+        "Ich kann vor Publikum kurz etwas ankündigen und alle wichtigen Informationen nennen.",
+        "Ich kann Vorteile und Nachteile nennen und meine Meinung einfach begründen."
+      ],
+      "schreiben": [
+        "Ich kann Dinge beschreiben, die mich interessieren, und ihre Vorteile und Nachteile zeigen.",
+        "Ich kann auf eine Anzeige antworten und nach genaueren Informationen fragen.",
+        "Ich kann einen Text über ein aktuelles Thema schreiben und zeigen, was mir wichtig ist."
+      ]
+    },
+    "9": {
+      "hoeren": [
+        "Ich kann einer klar aufgebauten Präsentation zu einem bekannten Thema folgen.",
+        "Ich kann genaue Anweisungen verstehen, zum Beispiel was ich nach einer Sportverletzung beachten muss.",
+        "Ich kann genau verstehen, wie ich bei einem Wettbewerb mitmachen muss."
+      ],
+      "lesen": [
+        "Ich kann klare schriftliche Anleitungen befolgen.",
+        "Ich kann einen einfachen Informationstext überfliegen und sagen, worum es geht.",
+        "Ich kann entscheiden, ob ein Text mir als Informationsquelle weiterhilft."
+      ],
+      "sprechen": [
+        "Ich kann in einer Diskussion kurz sagen, was ich von den Meinungen anderer halte.",
+        "Ich kann ein Gespräch beginnen, es in Gang halten und meine Meinung vertreten.",
+        "Ich kann verständlich erklären, wie man ein Gerät bedient.",
+        "Ich kann anderen genau erklären, wie man etwas macht, das ich gut kann."
+      ],
+      "schreiben": [
+        "Ich kann Notizen machen, wenn jemand nach Informationen fragt oder ein Problem erklärt.",
+        "Ich kann in einfachen Sätzen aufschreiben, was ich über ein aktuelles Streitthema denke.",
+        "Ich kann einen Lebenslauf in Tabellenform schreiben."
+      ]
+    }
+  },
+  "franzoesisch": {
+    "1": {
+      "CO": [
+        "Je peux comprendre des questions simples sur moi, par exemple sur mon nom.",
+        "Je peux comprendre le nom, l’âge et le pays d’une personne qui se présente.",
+        "Je peux comprendre les consignes en classe, comme « Assieds-toi » ou « Ouvrez votre livre ».",
+        "Je peux comprendre des noms, des nombres et des heures dans un enregistrement lent."
+      ],
+      "CE": [
+        "Je peux trouver le nom, l’âge et le pays d’une personne dans un texte court.",
+        "Je peux comprendre un formulaire simple et savoir où écrire mes informations.",
+        "Je peux trouver des informations importantes sur une affiche : l’heure, la date, le lieu.",
+        "Je peux deviner de quoi parle un texte simple grâce aux images."
+      ],
+      "PO": [
+        "Je peux dire bonjour et au revoir avec des mots simples.",
+        "Je peux poser des questions à quelqu’un sur son nom, son âge et son adresse.",
+        "Je peux me présenter en quelques phrases simples : mon nom, mon âge, mon pays.",
+        "Je peux présenter mon école, mes matières et mon emploi du temps."
+      ],
+      "PE": [
+        "Je peux écrire des phrases courtes sur moi : mon nom, ma nationalité, où j’habite.",
+        "Je peux remplir une fiche ou répondre à un questionnaire avec des mots-clés.",
+        "Je peux écrire mon emploi du temps avec des phrases courtes.",
+        "Je peux écrire un court message à un ami pour l’informer ou lui poser une question."
+      ]
+    },
+    "2": {
+      "CO": [
+        "Je peux comprendre quand on parle lentement et simplement de personnes ou d’une famille.",
+        "Je peux comprendre les prix, les chiffres et les heures dans un message.",
+        "Je peux comprendre combien coûte une chose quand le vendeur parle clairement.",
+        "Je peux comprendre des calculs simples avec « plus », « moins » et « multiplié par »."
+      ],
+      "CE": [
+        "Je peux comprendre la description physique d’une personne dans un petit texte.",
+        "Je peux trouver sur une affiche ce qu’on propose, le prix, la date et le lieu.",
+        "Je peux comprendre un court message qui propose un rendez-vous.",
+        "Je peux comprendre en gros une courte histoire en images."
+      ],
+      "PO": [
+        "Je peux demander à quelqu’un comment il va et répondre à cette question.",
+        "Je peux commander à boire et à manger, par exemple dans un café.",
+        "Je peux me décrire : ma taille, mes cheveux, mes vêtements.",
+        "Je peux dire avec des mots simples ce que j’adore et ce que je déteste."
+      ],
+      "PE": [
+        "Je peux écrire quelques informations sur moi pour une liste ou un autoportrait.",
+        "Je peux décrire avec des phrases simples des personnes et des choses de tous les jours.",
+        "Je peux écrire ce que je préfère ou ce que j’aimerais avoir.",
+        "Je peux écrire une carte de vœux ou une carte de remerciement simple."
+      ]
+    },
+    "3": {
+      "CO": [
+        "Je peux comprendre des questions simples sur mes loisirs ou sur les parties du corps.",
+        "Je peux comprendre les mots des loisirs, du sport et de la santé.",
+        "Je peux comprendre le sujet d’une histoire courte ou d’un dialogue simple.",
+        "Je peux reconnaître si on parle du présent ou du passé."
+      ],
+      "CE": [
+        "Je peux comprendre en gros un texte simple dont le sujet est facile à deviner.",
+        "Je peux comprendre ce qu’une personne écrit sur ses loisirs, ses habitudes et sa santé.",
+        "Je peux trouver une information précise dans un message court.",
+        "Je peux reconnaître si un texte parle du présent ou du passé."
+      ],
+      "PO": [
+        "Je peux demander à quelqu’un comment il va et dire comment je vais.",
+        "Je peux expliquer à quelqu’un ce que je vais faire, par exemple pendant les vacances.",
+        "Je peux parler simplement de mes loisirs, de mes habitudes et de mon bien-être.",
+        "Je peux donner mon avis sur un film en phrases courtes."
+      ],
+      "PE": [
+        "Je peux répondre par écrit à des questions simples sur mes loisirs.",
+        "Je peux écrire des informations sur moi et poser des questions par écrit à d’autres.",
+        "Je peux écrire ce que je fais, ce que j’ai fait et mes projets.",
+        "Je peux écrire des notes simples pour ne pas oublier une date."
+      ]
+    },
+    "4": {
+      "CO": [
+        "Je peux comprendre les projets de quelqu’un s’il parle en phrases simples.",
+        "Je peux entendre si une personne est d’accord ou pas avec quelque chose.",
+        "Je peux comprendre le sujet principal d’un court reportage si on parle lentement.",
+        "Je peux comprendre l’essentiel d’une nouvelle à la télévision grâce aux images."
+      ],
+      "CE": [
+        "Je peux comprendre les points principaux de courtes nouvelles sur des sujets pour les jeunes.",
+        "Je peux comprendre une petite annonce, par exemple quelles qualités doit avoir la personne recherchée.",
+        "Je peux comprendre la plupart des informations dans le court portrait d’une star.",
+        "Je peux comprendre l’opinion de jeunes dans un texte court sur l’actualité."
+      ],
+      "PO": [
+        "Je peux utiliser les formules de politesse quand je parle avec un inconnu.",
+        "Je peux poser des questions sur le travail, les loisirs ou l’école, et répondre.",
+        "Je peux présenter une star ou une série dans un court exposé préparé.",
+        "Je peux raconter simplement un événement du passé."
+      ],
+      "PE": [
+        "Je peux résumer un texte très simple et donner mon opinion.",
+        "Je peux décrire un événement : ce qui s’est passé, où et quand.",
+        "Je peux écrire mon programme de la semaine avec les jours, les heures et les activités.",
+        "Je peux donner mon avis par écrit sur un film, une émission ou un match."
+      ]
+    },
+    "5": {
+      "CO": [
+        "Je peux comprendre l’essentiel d’une histoire courte si on parle lentement.",
+        "Je peux comprendre la météo ou les résultats sportifs dans une courte émission de radio.",
+        "Je peux comprendre les informations principales d’une courte publicité à la radio.",
+        "Je peux reconnaître si une histoire se passe au présent ou au passé."
+      ],
+      "CE": [
+        "Je peux comprendre les points principaux de courts articles de magazines pour jeunes.",
+        "Je peux reconnaître le sujet d’un texte simple et y trouver une information précise.",
+        "Je peux comprendre les informations essentielles d’une publicité dans un magazine ou sur internet.",
+        "Je peux comprendre les panneaux d’interdiction, de sécurité et de danger."
+      ],
+      "PO": [
+        "Je peux poser des questions sur une fête et répondre : où, quand, qui, comment ?",
+        "Je peux recommander quelque chose à quelqu’un et expliquer ce que j’aime.",
+        "Je peux raconter brièvement mon week-end ou mes vacances.",
+        "Je peux présenter un sujet préparé dans un court exposé, sans lire mon texte."
+      ],
+      "PE": [
+        "Je peux raconter par écrit un événement : ce qui s’est passé, où et quand.",
+        "Je peux décrire un objet ou un lieu familier en phrases courtes.",
+        "Je peux décrire un objet et expliquer à quoi il sert.",
+        "Je peux écrire un court message pour inviter, accepter, annuler ou changer un rendez-vous."
+      ]
+    },
+    "6": {
+      "CO": [
+        "Je peux comprendre l’essentiel d’histoires et de récits courts si on parle lentement.",
+        "Je peux reconnaître si une histoire parle de faits présents ou passés.",
+        "Je peux comprendre le sens général d’une longue conversation sur un sujet connu."
+      ],
+      "CE": [
+        "Je peux comprendre une courte histoire : les personnages principaux et ce qui se passe.",
+        "Je peux comprendre une lettre personnelle simple qui raconte des événements en détail.",
+        "Je peux comprendre des articles simples de magazines pour jeunes sur des sujets connus."
+      ],
+      "PO": [
+        "Je peux avoir une courte conversation et choisir « tu » ou « vous » selon la personne.",
+        "Je peux donner mon avis sur un sujet connu si l’autre m’aide un peu.",
+        "Je peux raconter simplement quelque chose que j’ai vécu.",
+        "Je peux décrire un lieu connu et dire si je préfère la ville ou le village."
+      ],
+      "PE": [
+        "Je peux écrire un e-mail ou une courte lettre pour échanger des informations utiles.",
+        "Je peux décrire mon avenir et mes rêves en phrases courtes.",
+        "Je peux raconter un événement en phrases courtes : ce qui s’est passé, où et quand.",
+        "Je peux noter dans un journal de bord ce que j’ai appris et mes prochains objectifs."
+      ]
+    },
+    "7": {
+      "CO": [
+        "Je peux comprendre comment aller quelque part à pied, en bus ou en train.",
+        "Je peux comprendre l’essentiel d’une courte publicité à la radio, par exemple pour un voyage.",
+        "Je peux comprendre l’essentiel d’histoires courtes sur des sujets un peu connus."
+      ],
+      "CE": [
+        "Je peux comprendre l’essentiel d’un court article grâce aux chiffres, noms, images et titres.",
+        "Je peux comprendre un compte rendu simple sur un sujet connu.",
+        "Je peux comprendre une courte critique d’un livre ou d’une émission de télévision."
+      ],
+      "PO": [
+        "Je peux demander un service à quelqu’un et réagir quand on me demande un service.",
+        "Je peux demander des renseignements simples, par exemple dans un office de tourisme.",
+        "Je peux dire simplement ce que je ressens : la joie, la colère, la déception.",
+        "Je peux présenter un pays ou un groupe de musique dans un court exposé préparé."
+      ],
+      "PE": [
+        "Je peux présenter une destination de voyage sur un poster avec photos et petits textes.",
+        "Je peux échanger des informations utiles avec des amis par message, e-mail ou petite lettre.",
+        "Je peux raconter une histoire simple, par exemple mes plus belles vacances."
+      ]
+    },
+    "8": {
+      "CO": [
+        "Je peux comprendre en gros un débat ou une scène de théâtre sur un sujet connu.",
+        "Je peux reconnaître le sujet d’une conversation près de moi si les gens parlent lentement.",
+        "Je peux deviner l’histoire d’un film en regardant un extrait."
+      ],
+      "CE": [
+        "Je peux comprendre ce qui se passe entre les personnages d’un roman-photo et leur caractère.",
+        "Je peux lire et comprendre de courtes scènes de théâtre.",
+        "Je peux comprendre l’opinion de jeunes dans des textes courts sur l’actualité.",
+        "Je peux trouver et comprendre les informations essentielles dans des textes de tous les jours."
+      ],
+      "PO": [
+        "Je peux dire si je suis d’accord ou pas d’accord avec quelqu’un.",
+        "Je peux me débrouiller au quotidien, par exemple pour manger ou faire des achats.",
+        "Je peux raconter l’histoire d’un film ou d’un livre et dire ce que j’en pense.",
+        "Je peux présenter un sujet que je connais bien dans un court exposé préparé."
+      ],
+      "PE": [
+        "Je peux raconter un événement avec des phrases courtes qui vont bien ensemble.",
+        "Je peux résumer un texte simple sur un sujet connu et donner mon opinion."
+      ],
+      "unklar": [
+        "Production écrite : Im PDF-Auszug sind Bereichstitel, Deskriptor- und Beispielspalte vermischt (der Titel „Production écrite A2.2“ steht erst nach den Zeilen). Sicher als Deskriptoren erkennbar sind nur „Relater un événement …“ und „Initiation : Résumer des textes simples … (à approfondir au module 9)“. Die Zeilen „Réagir à un article de journal en envoyant un message à l’auteur“ und „Noter des idées pour reconstituer un petit dialogue …“ sind wahrscheinlich Beispielaktivitäten; bitte im Original-PDF prüfen und ggf. als dritte Aussage ergänzen."
+      ]
+    },
+    "9": {
+      "CO": [
+        "Je peux comprendre les points principaux des informations à la radio ou à la télévision.",
+        "Je peux comprendre un exposé simple et bien organisé sur un sujet un peu connu.",
+        "Je peux comprendre l’essentiel d’une longue discussion si on ne parle pas trop vite."
+      ],
+      "CE": [
+        "Je peux comprendre l’essentiel de textes courts, comme le courrier des lecteurs ou un forum.",
+        "Je peux trouver dans un reportage les problèmes, leurs causes et leurs conséquences.",
+        "Je peux comprendre en gros les questions et les réponses d’une interview dans un journal.",
+        "Je peux trouver les informations importantes dans des annonces de journaux ou de magazines."
+      ],
+      "PO": [
+        "Je peux dire mon opinion sur la musique ou la télévision et demander l’avis des autres.",
+        "Je peux conseiller un ami pour des choses simples, par exemple pour acheter des vêtements.",
+        "Je peux faire un petit exposé préparé sur un sujet que je connais bien.",
+        "Je peux dire brièvement ce qui me plaît dans une chanson ou un livre."
+      ],
+      "PE": [
+        "Je peux écrire un court rapport sur un événement ou une expérience personnelle.",
+        "Je peux écrire les avantages et les inconvénients d’une chose et donner mon opinion.",
+        "Je peux décrire clairement des choses qui m’intéressent et montrer leurs avantages et inconvénients."
+      ]
+    }
+  }
+}

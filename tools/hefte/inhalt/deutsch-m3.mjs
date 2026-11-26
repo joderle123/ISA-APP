@@ -1,6 +1,6 @@
 // Deutsch · Modul 3 „Andere Länder, andere Sitten“ (Voie de préparation, ≈ A2.1) – multimodales Heft.
-// Themen und Grammatik nach den öffentlichen „Kompetenzorientierten Bildungsstandards Deutsch für den Modularunterricht“
-// (MENFP 2009), Modul 3: andere Länder, Essen und Trinken, Kleidung, Familie und Schule früher und heute;
+// Themen und Grammatik nach dem Programm ALLUX 7P/6P/5P (CNES, 20/03/2019; Kann-Beschreibungen als Mindeststandards),
+// Modul 3: andere Länder, Essen und Trinken, Kleidung, Familie und Schule früher und heute;
 // persönlicher Brief, Höflichkeit in der Anrede, bestimmter/unbestimmter Artikel, Adjektive und Steigerung,
 // eingewanderte Wörter, Modalverben (Bedeutung, Verneinung von müssen/dürfen, Präteritum), Zeitangaben (vor, nach,
 // in, seit; gestern, damals …), Erweiterung des Perfekts, Rezepte und Hausordnungen verstehen.
@@ -11,7 +11,7 @@ export const MODUL = {
   dateiname: 'Deutsch_Modul-3',
   fach: { de: 'Deutsch', fr: 'Allemand' },
   titel: { de: 'Andere Länder, andere Sitten', fr: 'Autres pays, autres mœurs' },
-  untertitel: { de: 'Briefe aus dem Ausland, Kleidung und Schnäppchen, Rezepte, Regeln und Schule früher: lesen, hören, sprechen und schreiben – in acht Lektionen.', fr: 'Lettres de l’étranger, vêtements et bonnes affaires, recettes, règles et l’école autrefois : lire, écouter, parler et écrire – en huit leçons.' },
+  untertitel: { de: 'Briefe aus dem Ausland, Kleidung und Schnäppchen, Rezepte, Regeln und Schule früher: lesen, hören, sprechen und schreiben – in acht Einheiten.', fr: 'Lettres de l’étranger, vêtements et bonnes affaires, recettes, règles et l’école autrefois : lire, écouter, parler et écrire – en huit unités.' },
   farben: { tief: '#b4432e', mittel: '#eaa38f', zart: '#fbefe9', dunkel: '#7e2b1c' },
   deckbild: ['opa:froh:stehen', 'mia:froh:laessig', 'yusuf:froh:stehen-zeigen'],
   blasen: [{ t: 'Olá!', x: 18, y: 112 }, { t: 'Früher …', x: 144, y: 100 }, { t: 'Lecker!', x: 120, y: 150 }],

@@ -1,6 +1,6 @@
 // Deutsch · Modul 6 „Arbeit, Beruf und Jugendsprache“ (Voie de préparation, B1) – multimodales Heft.
-// Themen und Grammatik nach den öffentlichen „Kompetenzorientierten Bildungsstandards Deutsch für den Modularunterricht“
-// (MENFP 2009), Modul 6: Arbeit und Beruf, Lebenslauf, Sprache von Jugendlichen; Berufsprofile, Praktikumsangebote,
+// Themen und Grammatik nach dem Programm ALLUX 7P/6P/5P (CNES, 20/03/2019; Kann-Beschreibungen als Mindeststandards),
+// Modul 6: Arbeit und Beruf, Lebenslauf, Sprache von Jugendlichen; Berufsprofile, Praktikumsangebote,
 // Sicherheitshinweise, Anweisungen, Betrieb vorstellen, Erfahrungsberichte, Brieffreundschaft, Praktikumsbericht,
 // Interview mit Fragebogen, Betriebsbesichtigung organisieren, Lernjournal; Passiv mit werden und man, weil- und
 // da-Sätze, deshalb/daher, wenn–dann; Definitionen, Ober- und Unterbegriffe, Organigramm.

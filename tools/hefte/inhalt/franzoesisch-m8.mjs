@@ -1,5 +1,5 @@
 // Français · Module 8 « Famille et santé » (Régime / Voie de préparation, A2.2 – B1.1) – cahier multimodal.
-// D’après le « Référentiel de compétences – français, régime préparatoire » (MENFP), Module 8 « La vie de famille –
+// D’après le « Programme FRANC 7P–5P » (CNES, 20/03/2019), Module 8 « La vie de famille –
 // La santé » : vie en famille, sentiments (colère, désaccord), mouvements et positions du corps, vêtements, caractère
 // et humeur, théâtre, alimentation, sport, santé, poids et mesures ; roman-photo, scène de théâtre, recette, programme
 // de spectacles ; périphrases verbales, gérondif, sans + infinitif, adverbes en -ment, à / de / en (vêtements),
@@ -30,7 +30,7 @@ export const MODUL = {
   dateiname: 'Francais_Module-8',
   fach: { de: 'Französisch', fr: 'Français' },
   titel: { de: 'Familie und Gesundheit', fr: 'Famille et santé' },
-  untertitel: { fr: 'Lire un roman-photo, jouer une scène de théâtre, demander un service, manger équilibré, suivre une recette, s’échauffer, acheter malin et choisir un spectacle – en huit leçons.', de: 'Einen Fotoroman lesen, eine Theaterszene spielen, um einen Gefallen bitten, ausgewogen essen, einem Rezept folgen, sich aufwärmen, klug einkaufen und eine Vorstellung auswählen – in acht Lektionen.' },
+  untertitel: { fr: 'Lire un roman-photo, jouer une scène de théâtre, demander un service, manger équilibré, suivre une recette, s’échauffer, acheter malin et choisir un spectacle – en huit unités.', de: 'Einen Fotoroman lesen, eine Theaterszene spielen, um einen Gefallen bitten, ausgewogen essen, einem Rezept folgen, sich aufwärmen, klug einkaufen und eine Vorstellung auswählen – in acht Einheiten.' },
   farben: { tief: '#b8392f', mittel: '#f1aaa2', zart: '#fdefed', dunkel: '#74211a' },
   deckbild: ['oma:froh:tasse', 'chloe:froh:tanzen', 'sami:froh:laessig'],
   blasen: [{ t: 'À table !', x: 16, y: 110 }, { t: 'Tu peux m’aider ?', x: 112, y: 98 }, { t: 'En forme !', x: 160, y: 150 }],

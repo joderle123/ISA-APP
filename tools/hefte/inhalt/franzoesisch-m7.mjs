@@ -1,5 +1,5 @@
 // Français · Module 7 « Voyages et émotions » (Régime / Voie de préparation, A2.2) – cahier multimodal.
-// D’après le « Référentiel de compétences – français, régime préparatoire » (MENFP), Module 7 « Les voyages – Les
+// D’après le « Programme FRANC 7P–5P » (CNES, 20/03/2019), Module 7 « Les voyages – Les
 // problèmes des jeunes » : voyages (lieux, transports, bagages, objets), personnalité et caractère, sentiments,
 // donner son avis et le justifier ; place et accord des adjectifs, souhaits et conseils (j’aimerais, il vaut mieux,
 // je te conseille de), durée (de … à, pendant, ça fait, il y a, depuis), transports, c’est / il est, qui / que / où,
@@ -36,7 +36,7 @@ export const MODUL = {
   dateiname: 'Francais_Module-7',
   fach: { de: 'Französisch', fr: 'Français' },
   titel: { de: 'Reisen und Gefühle', fr: 'Voyages et émotions' },
-  untertitel: { fr: 'Choisir une destination, faire sa valise, s’orienter à Vianden, choisir un correspondant, parler de ses émotions, demander et donner des conseils, rêver et rapporter des paroles – en huit leçons.', de: 'Ein Reiseziel wählen, den Koffer packen, sich in Vianden orientieren, einen Brieffreund wählen, über Gefühle sprechen, um Rat fragen und Rat geben, träumen und Gesagtes wiedergeben – in acht Lektionen.' },
+  untertitel: { fr: 'Choisir une destination, faire sa valise, s’orienter à Vianden, choisir un correspondant, parler de ses émotions, demander et donner des conseils, rêver et rapporter des paroles – en huit unités.', de: 'Ein Reiseziel wählen, den Koffer packen, sich in Vianden orientieren, einen Brieffreund wählen, über Gefühle sprechen, um Rat fragen und Rat geben, träumen und Gesagtes wiedergeben – in acht Einheiten.' },
   farben: { tief: '#6a2d7a', mittel: '#cfa8da', zart: '#f6eef8', dunkel: '#431b4e' },
   deckbild: ['lea:froh:stehen-zeigen', 'tom:froh:laessig', 'amira:froh:handy'],
   blasen: [{ t: 'On part !', x: 16, y: 110 }, { t: 'Pourriez-vous… ?', x: 116, y: 98 }, { t: 'Si j’avais…', x: 160, y: 150 }],

@@ -1,6 +1,6 @@
 // Deutsch · Modul 2 „Stadt, Sport und große Ideen“ (Voie de préparation, A1+/A2.1) – multimodales Heft.
-// Themen und Grammatik nach den öffentlichen „Kompetenzorientierten Bildungsstandards Deutsch für den Modularunterricht“
-// (MENFP 2009), Modul 2: Besuch in einer fremden Stadt, Erfindungen und Entdeckungen, kurze Biografien, Sport;
+// Themen und Grammatik nach dem Programm ALLUX 7P/6P/5P (CNES, 20/03/2019; Kann-Beschreibungen als Mindeststandards),
+// Modul 2: Besuch in einer fremden Stadt, Erfindungen und Entdeckungen, kurze Biografien, Sport;
 // Stadtplan (Symbole, Planquadrat, Straßenverzeichnis), Imperativ in Wegbeschreibungen, zusammengesetzte Nomen,
 // Satzmelodie und Satzzeichen, Perfekt (regelmäßig, einige unregelmäßige Verben), Lebenslauf, Personalpronomen
 // (Dativ/Akkusativ erkennen), Aussehen beschreiben, eine Geschichte fortsetzen.
@@ -41,11 +41,11 @@ const TRIER = {
 const TRIER_RALLYE = { ...TRIER, weg: [[7.4, 1.5], [7.4, 5.4], [10.2, 4.6], [10.7, 6.3], [11.4, 7.6], [12.3, 8.6]] }
 
 export const MODUL = {
-  id: 'deutsch-m2', kuerzel: 'de2', nr: 2, sprache: 'de', niveau: 'A1+', klasse: 'Voie de préparation',
+  id: 'deutsch-m2', kuerzel: 'de2', nr: 2, sprache: 'de', niveau: 'A1 – A2.1', klasse: 'Voie de préparation',
   dateiname: 'Deutsch_Modul-2',
   fach: { de: 'Deutsch', fr: 'Allemand' },
   titel: { de: 'Stadt, Sport und große Ideen', fr: 'Ville, sport et grandes idées' },
-  untertitel: { de: 'Eine Klassenfahrt nach Trier, Wege in der Stadt, Erfinderinnen und Sportler: lesen, hören, sprechen und schreiben – in acht Lektionen.', fr: 'Un voyage de classe à Trèves, s’orienter en ville, des inventrices et des sportifs : lire, écouter, parler et écrire – en huit leçons.' },
+  untertitel: { de: 'Eine Klassenfahrt nach Trier, Wege in der Stadt, Erfinderinnen und Sportler: lesen, hören, sprechen und schreiben – in acht Einheiten.', fr: 'Un voyage de classe à Trèves, s’orienter en ville, des inventrices et des sportifs : lire, écouter, parler et écrire – en huit unités.' },
   farben: { tief: '#b4432e', mittel: '#eaa38f', zart: '#fbefe9', dunkel: '#7e2b1c' },
   deckbild: ['amira:froh:stehen-zeigen', 'ben:froh:laessig', 'nele:froh:rollstuhl'],
   blasen: [{ t: 'Wo ist das?', x: 16, y: 112 }, { t: 'Geh geradeaus!', x: 138, y: 104 }, { t: 'Toll!', x: 150, y: 150 }],

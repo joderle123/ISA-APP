@@ -82,7 +82,7 @@ function ModulKarte({ m, fach }: { m: Modul; fach: Fach }) {
       <div className="min-w-0 flex-1 p-4">
         <p className="text-[12px] font-bold tracking-wide text-muted uppercase">
           {fach.name}
-          {m.niveau ? ` · ${m.niveau}` : ''} · {m.lektionen} {fr ? 'leçons' : 'Lektionen'}
+          {m.niveau ? ` · ${m.niveau}` : ''} · {m.lektionen} {fr ? 'unités' : 'Einheiten'}
         </p>
         <h3 className="disp mt-0.5 text-[19px] leading-snug text-ink">{m.titel}</h3>
         {m.titelDe && m.titelDe !== m.titel ? <p className="text-[13px] text-muted italic">{m.titelDe}</p> : null}

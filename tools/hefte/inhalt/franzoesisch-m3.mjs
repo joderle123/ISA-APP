@@ -1,5 +1,5 @@
 // Français · Module 3 « Bien-être et vacances » (Régime / Voie de préparation, A1.2 – A2.1) – cahier multimodal.
-// D’après le « Référentiel de compétences – français, régime préparatoire » (MENFP), Module 3 « Le bien-être – Vive les
+// D’après le « Programme FRANC 7P–5P » (CNES, 20/03/2019), Module 3 « Le bien-être – Vive les
 // vacances ! » : loisirs, émissions de télévision, corps et santé (parties du corps, habitudes, douleurs), vacances ;
 // avant de / après, questions (quel, où, est-ce que), aller, venir, lire, verbes pronominaux, futur proche, devoir et
 // il faut, repères temporels, expressions idiomatiques, adverbes de quantité, passé composé (avoir et être),
@@ -11,7 +11,7 @@ export const MODUL = {
   dateiname: 'Francais_Module-3',
   fach: { de: 'Französisch', fr: 'Français' },
   titel: { de: 'Wohlfühlen und Ferien', fr: 'Bien-être et vacances' },
-  untertitel: { fr: 'Parler de ses loisirs et de la télé, dire où on a mal, prendre soin de soi, raconter sa routine, préparer les vacances et raconter au passé – en huit leçons.', de: 'Über Freizeit und Fernsehen sprechen, sagen, wo es weh tut, auf sich achten, den Tagesablauf erzählen, Ferien planen und in der Vergangenheit erzählen – in acht Lektionen.' },
+  untertitel: { fr: 'Parler de ses loisirs et de la télé, dire où on a mal, prendre soin de soi, raconter sa routine, préparer les vacances et raconter au passé – en huit unités.', de: 'Über Freizeit und Fernsehen sprechen, sagen, wo es weh tut, auf sich achten, den Tagesablauf erzählen, Ferien planen und in der Vergangenheit erzählen – in acht Einheiten.' },
   farben: { tief: '#c2571a', mittel: '#f3b48a', zart: '#fdf1e8', dunkel: '#7a3510' },
   deckbild: ['nele:froh:stehen-zeigen', 'finn:froh:laessig', 'amira:froh:stehen'],
   blasen: [{ t: 'Vive les vacances !', x: 10, y: 108 }, { t: 'J’ai mal…', x: 128, y: 98 }, { t: 'Debout !', x: 162, y: 150 }],

@@ -8,6 +8,8 @@
 // Les textes sont nouveaux et imaginaires ; erreurs notées {faux>juste}.
 // heft.tsx lädt diese Datei für jedes Modul franzoesisch-mN (anwenden).
 
+import { franzoesischProgramm, mitSprechen } from './sprachen-programm.mjs'
+
 const X = {
   // ================================================================ Module 1 · Moi et mon école (A1.1)
   1: [
@@ -260,13 +262,14 @@ const ANLEITUNG_EXTRA = [
   'À la fin du cahier, il y a ton **aide-mémoire** : toutes les règles du module. Détache-le et garde-le dans ton classeur.',
 ]
 
-export function anwenden(MODUL, LEKTIONEN) {
+export function anwenden(MODUL0, LEKTIONEN0) {
+  const { MODUL, LEKTIONEN } = mitSprechen(MODUL0, LEKTIONEN0)
   const nr = MODUL.nr, extra = X[nr] || []
   const anleitung = []
   for (const z of MODUL.anleitung || []) anleitung.push(/^Les points montrent le niveau/.test(z) ? ANLEITUNG_NIVEAU : z)
   if (!anleitung.includes(ANLEITUNG_NIVEAU)) anleitung.push(ANLEITUNG_NIVEAU)
   anleitung.push(...ANLEITUNG_EXTRA)
-  const M = { ...MODUL, anleitung, parcours: true, punkte: true, aideMemoire: true }
+  const M = franzoesischProgramm({ ...MODUL, anleitung, parcours: true, punkte: true, aideMemoire: true })
   const L = LEKTIONEN.map((l, i) => {
     const x = extra[i]
     if (!x) return l

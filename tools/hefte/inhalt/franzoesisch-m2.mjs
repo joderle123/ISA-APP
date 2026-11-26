@@ -1,5 +1,5 @@
 // Français · Module 2 « Moi et les autres » (Régime / Voie de préparation, A1.2) – cahier multimodal.
-// D’après le « Référentiel de compétences – français, régime préparatoire » (MENFP), Module 2 « Communiquer sur sa
+// D’après le « Programme FRANC 7P–5P » (CNES, 20/03/2019), Module 2 « Communiquer sur sa
 // personne » : description physique, vêtements et couleurs, magasins et produits, nourriture et repas, salutations selon
 // la personne (main, bise, tu/vous), mois, fêtes et saisons, météo, famille (aussi recomposée), nombres et prix ;
 // adjectifs (masculin, féminin, pluriel), un peu / assez / très / trop, quantités, articles et partitifs, apprendre,
@@ -12,7 +12,7 @@ export const MODUL = {
   dateiname: 'Francais_Module-2',
   fach: { de: 'Französisch', fr: 'Français' },
   titel: { de: 'Ich und die anderen', fr: 'Moi et les autres' },
-  untertitel: { fr: 'Décrire une personne, parler de vêtements, saluer, faire les courses, commander au café, parler de la météo, des fêtes et d’une famille – en huit leçons.', de: 'Personen beschreiben, über Kleidung sprechen, begrüßen, einkaufen, im Café bestellen, über Wetter, Feste und eine Familie sprechen – in acht Lektionen.' },
+  untertitel: { fr: 'Décrire une personne, parler de vêtements, saluer, faire les courses, commander au café, parler de la météo, des fêtes et d’une famille – en huit unités.', de: 'Personen beschreiben, über Kleidung sprechen, begrüßen, einkaufen, im Café bestellen, über Wetter, Feste und eine Familie sprechen – in acht Einheiten.' },
   farben: { tief: '#127c74', mittel: '#8fd1c9', zart: '#ecf8f6', dunkel: '#0b4f4a' },
   deckbild: ['chloe:froh:stehen-zeigen', 'yusuf:froh:stehen', 'mia:froh:tasse'],
   blasen: [{ t: 'Ça va ?', x: 16, y: 112 }, { t: 'Bon appétit !', x: 118, y: 100 }, { t: 'Il fait beau !', x: 160, y: 150 }],

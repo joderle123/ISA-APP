@@ -10,6 +10,7 @@ import type { Baustein, Bruchbild, FlaecheFeld, GeoElement, GeoFeld, GeoPunkt, T
 import { NEUTRAL } from '../zeichnung'
 import { Fliess, type Ctx } from './bausteine'
 import { SCHRIFT, typo } from './stil'
+import { ABAKUS, eintragen, type UmwArt } from '../umwandlung.js'
 
 const t = (c: Ctx, s: string | undefined) => (s ? typo(s, c.sprache) : '')
 
@@ -100,7 +101,7 @@ export function Zeile({ c, s, klein }: { c: Ctx; s: string; klein?: boolean }) {
 
 const BUCHSTABEN = 'abcdefghijklmnopqrstuvwxyz'
 
-export function Paeckchen({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'paeckchen' }> }) {
+export function Paeckchen({ c, b, marken }: { c: Ctx; b: Extract<Baustein, { art: 'paeckchen' }>; marken?: string[] }) {
   const sp = b.spalten ?? 2
   const reihen: string[][] = []
   b.items.forEach((x, i) => {
@@ -116,7 +117,7 @@ export function Paeckchen({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'paeck
             return (
               <View key={i} style={{ flex: 1, flexDirection: 'row', alignItems: 'flex-start', paddingRight: 10 }}>
                 {reihe[i] !== undefined && b.buchstaben ? (
-                  <Text style={{ fontFamily: c.m.schrift, fontSize: c.m.klein, lineHeight: c.m.lh * (c.m.basis / c.m.klein), color: NEUTRAL.leise, width: 14 }}>{BUCHSTABEN[nr]})</Text>
+                  <Text style={{ fontFamily: c.m.schrift, fontSize: c.m.klein, lineHeight: c.m.lh * (c.m.basis / c.m.klein), color: NEUTRAL.leise, width: 14 }}>{marken?.[nr] ?? BUCHSTABEN[nr]})</Text>
                 ) : null}
                 {reihe[i] !== undefined ? (
                   reihe[i].includes('\t') ? (
@@ -243,6 +244,76 @@ export function Stellentafel({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'st
         <Text key={i} style={{ fontFamily: c.m.schrift, fontSize: c.m.klein, lineHeight: 1.35, color: NEUTRAL.text, marginBottom: 1.5 }}>{'•  ' + t(c, pk)}</Text>
       ))}
       <View style={{ marginTop: 5 }}>{tafel}</View>
+    </View>
+  )
+}
+
+// --- Umwandlungstabelle ------------------------------------------------------------
+// Wie die Tabelle im Unterricht (Foto, oli.education.lu „Unités“): oben die Einheiten als graue Reiter, darunter je Einheit
+// 1, 2 oder 3 gestrichelte Unterspalten (Schritt ×10, ×100, ×1000), durchgezogene Linie zwischen den Einheiten.
+// Beispielzeilen zeigen die Ziffern, die ergänzten Nullen (grau) und das rote Komma hinter der neuen Einheit.
+
+export function Umwandlungstabelle({ c, b, marken }: { c: Ctx; b: Extract<Baustein, { art: 'umwandlung' }>; marken?: string[] }) {
+  const zeilen = b.zeilen.map((s) => ({ s, e: eintragen(String(s).replace(/\{[^}]*\}/, '___'), b.tabelle), beispiel: /\{[^}]*\}/.test(s) }))
+  const art: UmwArt = (b.tabelle ?? zeilen.find((z) => z.e)?.e?.art ?? 'laenge') as UmwArt
+  const d = ABAKUS[art]
+  const sp = d.spalten, n = d.einheiten.length * sp
+  const labelB = Math.min(150, c.breite * 0.34)
+  const zelleB = Math.min(sp === 1 ? 34 : 24, (c.breite - labelB - 2) / n)
+  const H = 21
+  const DICK = '#1F2A44', GESTRICHELT = '#9AA3B5', FELD = '#FFFBEA', REITER = '#E6E9EF', ROT = '#D62828'
+  const links = (i: number) => (i === 0 ? { borderLeftWidth: 1.3, borderLeftColor: DICK } : i % sp === 0 ? { borderLeftWidth: 1.3, borderLeftColor: DICK } : { borderLeftWidth: 0.6, borderLeftColor: GESTRICHELT, borderLeftStyle: 'dashed' as const })
+  const kopf = (
+    <View style={{ flexDirection: 'row' }}>
+      <View style={{ width: labelB, height: H + 4 }} />
+      {d.einheiten.map((u, k) => (
+        <View key={u} style={{ width: zelleB * sp, height: H + 4, alignItems: 'center', justifyContent: 'center', backgroundColor: REITER, borderTopLeftRadius: 4, borderTopRightRadius: 4, borderLeftWidth: 1.3, borderLeftColor: k ? '#FFFFFF' : REITER }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.5, color: DICK, lineHeight: 1 }}>{u}</Text>
+          {d.neben?.[u] ? <Text style={{ fontFamily: c.m.schrift, fontSize: 6.4, color: NEUTRAL.leise, lineHeight: 1.1 }}>{'= ' + d.neben[u]}</Text> : null}
+        </View>
+      ))}
+    </View>
+  )
+  const zeile = (z: (typeof zeilen)[number], zi: number) => {
+    const marke = marken?.[zi] ?? (b.buchstaben ? 'abcdefghijklmnopqrstuvwxyz'[zi] : undefined)
+    const zellen: ReactNode[] = []
+    for (let i = 0; i < n; i++) {
+      const ch = z.beispiel && z.e ? z.e.ziffern[i] : undefined
+      const istNull = !!(z.e && z.e.nullen.includes(i))
+      const komma = z.beispiel && z.e && z.e.kommaNach === i - 1 && i > 0 && Object.keys(z.e.ziffern).some((x) => +x >= i)
+      zellen.push(
+        <View key={i} style={{ width: zelleB, minHeight: H, alignItems: 'center', justifyContent: 'center', backgroundColor: FELD, ...links(i), position: 'relative' }}>
+          {ch !== undefined ? <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 11.5, fontWeight: istNull ? 400 : 600, color: istNull ? NEUTRAL.leise : c.p.tief, lineHeight: 1 }}>{ch}</Text> : null}
+          {komma ? <Text style={{ position: 'absolute', left: -3.4, bottom: 0.5, fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 17, color: ROT, lineHeight: 1 }}>,</Text> : null}
+        </View>,
+      )
+    }
+    return (
+      <View key={zi} wrap={false} style={{ flexDirection: 'row', borderTopWidth: 0.7, borderTopColor: NEUTRAL.rahmen }}>
+        <View style={{ width: labelB, minHeight: H, flexDirection: 'row', alignItems: 'center', paddingHorizontal: 5, backgroundColor: '#FFFFFF' }}>
+          {marke ? <Text style={{ fontFamily: c.m.schrift, fontSize: c.m.klein, color: NEUTRAL.leise, width: 13 }}>{marke})</Text> : null}
+          <View style={{ flex: 1 }}><Zeile c={c} s={z.s.replace(/\s*\?\s*$/, '').replace(/\}\s+/, '}\u00a0')} klein /></View>
+        </View>
+        {zellen}
+        <View style={{ width: 0, borderLeftWidth: 1.3, borderLeftColor: DICK }} />
+      </View>
+    )
+  }
+  const tafel = (
+    <View style={{ alignSelf: 'flex-start' }}>
+      {kopf}
+      <View style={{ borderBottomWidth: 0.9, borderBottomColor: DICK }}>{zeilen.map(zeile)}</View>
+    </View>
+  )
+  const hilfe = 'Letzte Ziffer vor dem Komma in die ' + (sp > 1 ? 'letzte Spalte' : 'Spalte') + ' ihrer Einheit · mit Nullen auffüllen · Komma hinter die neue Einheit · ablesen.'
+  return (
+    <View wrap={zeilen.length > 10}>
+      {b.titel ? <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: c.p.tief, marginBottom: 3 }}>{t(c, b.titel)}</Text> : null}
+      {(b.punkte ?? []).map((pk, i) => (
+        <Text key={i} style={{ fontFamily: c.m.schrift, fontSize: c.m.klein, lineHeight: 1.35, color: NEUTRAL.text, marginBottom: 1.5 }}>{'•  ' + t(c, pk)}</Text>
+      ))}
+      {!b.punkte?.length ? <Text style={{ fontFamily: c.m.schrift, fontSize: 7.4, lineHeight: 1.3, color: NEUTRAL.leise, marginBottom: 3 }}>{'Umwandlungstabelle (' + d.titel + '): ' + hilfe}</Text> : null}
+      {tafel}
     </View>
   )
 }

@@ -13,7 +13,8 @@ import { gefuehlWort, gesichtZeichnung } from '../gesichter'
 import { motivZeichnung, VULKAN, HAND, fingerSpitze, EISBERG } from '../motive'
 import { Zeichnen, ZeichnungFlaeche, ZeichnungG } from './Zeichnen'
 import { ForscherblattBlock } from './Forscherblatt'
-import { Bruchbilder, Diagramm, Flaeche, Geo, Hunderterfeld, Kommasprung, Paeckchen, Stellentafel, Strichliste, Temperatur, Treppe, Zahlenstrahl, Zeile } from './mathe'
+import { Bruchbilder, Diagramm, Flaeche, Geo, Hunderterfeld, Kommasprung, Paeckchen, Stellentafel, Strichliste, Temperatur, Treppe, Umwandlungstabelle, Zahlenstrahl, Zeile } from './mathe'
+import { zerlegePaeckchen } from '../umwandlung.js'
 import { SCHRIFT, TEXTE, typo, type Masse } from './stil'
 import { FARBEN, farbTeile, type FarbTeil } from '../spielschule'
 import { Anziehpuppe, Bastelbogen, Faedelkarte, Klappbild, Labyrinth, Laufweg, Memory, Minibuch, PunkteVerbinden, SchneidenKleben, Suchbild } from './spielschule'
@@ -2900,8 +2901,24 @@ function EinBaustein({ c, b, grow }: { c: Ctx; b: Baustein; grow?: boolean }) {
       return <KaestchenFeld c={c} b={b} grow={grow} />
     case 'bon':
       return <Bon c={c} b={b} />
-    case 'paeckchen':
-      return <Paeckchen c={c} b={b} />
+    case 'paeckchen': {
+      // Jede Umwandlung („7 m = ___ dm“) kommt in die Umwandlungstabelle (Auftrag 26.11.2026); der Rest bleibt Päckchen.
+      const z = zerlegePaeckchen(b.items)
+      if (!z.gruppen.length) return <Paeckchen c={c} b={b} />
+      const BU = 'abcdefghijklmnopqrstuvwxyz'
+      return (
+        <View>
+          {z.rest.length ? <Paeckchen c={c} b={{ ...b, items: z.rest.map((r) => r.text) }} marken={b.buchstaben ? z.rest.map((r) => BU[r.nr]) : undefined} /> : null}
+          {z.gruppen.map((g, gi) => (
+            <View key={g.art} style={{ marginTop: z.rest.length || gi ? 8 : 0 }}>
+              <Umwandlungstabelle c={c} b={{ art: 'umwandlung', tabelle: g.art, zeilen: g.zeilen.map((x) => x.text) }} marken={b.buchstaben ? g.zeilen.map((x) => BU[x.nr]) : undefined} />
+            </View>
+          ))}
+        </View>
+      )
+    }
+    case 'umwandlung':
+      return <Umwandlungstabelle c={c} b={b} />
     case 'stellentafel':
       return <Stellentafel c={c} b={b} />
     case 'hunderterfeld':
@@ -2987,7 +3004,7 @@ const FEST = new Set<Baustein['art']>([
   'info', 'geschichte', 'bild', 'frage', 'feld', 'vertrag', 'wortspeicher', 'skala', 'zuordnen', 'ampel', 'thermometer',
   'vulkan', 'eisberg', 'koerper', 'batterie', 'waage', 'leiter', 'zielscheibe', 'hand', 'mindmap', 'plan', 'atmen', 'notfall', 'linien',
   'gefuehlsrad', 'netz', 'kurve', 'tageskreis', 'farbkalender', 'rechnungen', 'bon',
-  'stellentafel', 'hunderterfeld', 'zahlenstrahl', 'bruchbilder', 'treppe', 'kommasprung', 'geo',
+  'stellentafel', 'umwandlung', 'hunderterfeld', 'zahlenstrahl', 'bruchbilder', 'treppe', 'kommasprung', 'geo',
   'flaeche', 'temperatur',
   'diagramm', 'strichliste',
   'schneiden_kleben', 'memory', 'labyrinth', 'laufweg', 'minibuch', 'punkte_verbinden', 'klappbild', 'faedelkarte',

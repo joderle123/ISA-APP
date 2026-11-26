@@ -2,6 +2,7 @@
 //   npx tsx --tsconfig tsconfig.scripts.json scripts/modulheft-word.tsx <ausgabeordner> --nur=mathe-m3
 // Texte, Aufgaben, Päckchen, Tabellen und Kästen werden als bearbeitbare Word-Elemente geschrieben. Grafiken (Zahlenstrahl,
 // Thermometer, Diagramm, Strichliste, Fläche, Kästchen …) rendert derselbe Baukasten wie das PDF und setzt sie als Bild ein.
+import { zerlegePaeckchen } from '../src/blatt/umwandlung.js'
 import { renderToBuffer, Document as PdfDocument, Page } from '@react-pdf/renderer'
 import { mkdirSync, readFileSync, readdirSync, writeFileSync, rmSync } from 'node:fs'
 import { join, dirname } from 'node:path'
@@ -44,7 +45,9 @@ const SCHRIFT = 'Arial'
 const PDF_BREITE = 595.28 - SEITE.rand * 2              // Inhaltsbreite im PDF (pt)
 
 // ---- Grafiken: jede auf eine eigene PDF-Seite in ihrer Spaltenbreite, dann als PNG zugeschnitten
-const GRAFIK = new Set(['zahlenstrahl', 'kommasprung', 'flaeche', 'treppe', 'temperatur', 'diagramm', 'strichliste', 'kaestchen', 'stellentafel'])
+const GRAFIK = new Set(['zahlenstrahl', 'kommasprung', 'flaeche', 'treppe', 'temperatur', 'diagramm', 'strichliste', 'kaestchen', 'stellentafel', 'umwandlung'])
+// Päckchen mit Umwandlungen werden im PDF zur Umwandlungstabelle – im Word als Bild übernehmen
+const istGrafik = (b: Baustein) => GRAFIK.has(b.art) || (b.art === 'paeckchen' && zerlegePaeckchen(b.items).gruppen.length > 0)
 type Grafik = { b: Baustein; breitePt: number; png?: Buffer; w?: number; h?: number }
 const grafiken: Grafik[] = []
 const grafikVon = new Map<Baustein, Grafik>()
@@ -55,7 +58,7 @@ function sammle(liste: Baustein[], breitePt: number) {
       const bl = ((breitePt - 16) * l) / (l + r)
       sammle(b.links, bl)
       sammle(b.rechts, breitePt - 16 - bl)
-    } else if (GRAFIK.has(b.art) && !grafikVon.has(b)) {
+    } else if (istGrafik(b) && !grafikVon.has(b)) {
       const g = { b, breitePt }
       grafiken.push(g)
       grafikVon.set(b, g)

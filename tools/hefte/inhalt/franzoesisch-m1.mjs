@@ -1,5 +1,5 @@
 // Français · Module 1 « Moi et mon école » (Régime / Voie de préparation, A1.1) – cahier multimodal.
-// Thèmes, lexique et grammaire d’après le « Référentiel de compétences – français, régime préparatoire » (MENFP),
+// Thèmes, lexique et grammaire d’après le « Programme FRANC 7P–5P » (CNES, 20/03/2019),
 // Module 1 : se présenter, parler de soi, de son entourage et de sa vie à l’école ; formules de politesse, nombres,
 // nationalités, pays, identité, matières et matériel scolaires, moments de la journée, jours, heure et emploi du
 // temps, fréquence, tutoiement et vouvoiement ; être, avoir, aller, verbes en -er, négation, articles, pronoms
@@ -7,11 +7,11 @@
 // articles indéfinis et possessifs, majuscules. Tous les textes sont originaux ; personnes, écoles et clubs imaginaires.
 
 export const MODUL = {
-  id: 'franzoesisch-m1', kuerzel: 'fr1', nr: 1, sprache: 'fr', niveau: 'A1.1', klasse: 'Voie de préparation',
+  id: 'franzoesisch-m1', kuerzel: 'fr1', nr: 1, sprache: 'fr', niveau: 'A1.1 – A1.2', klasse: 'Voie de préparation',
   dateiname: 'Francais_Module-1',
   fach: { de: 'Französisch', fr: 'Français' },
   titel: { de: 'Ich und meine Schule', fr: 'Moi et mon école' },
-  untertitel: { fr: 'Se présenter, dire d’où on vient, compter, parler de son sac, de son école, de son emploi du temps et de sa journée – en huit leçons.', de: 'Sich vorstellen, sagen, woher man kommt, zählen, über Schultasche, Schule, Stundenplan und Tag sprechen – in acht Lektionen.' },
+  untertitel: { fr: 'Se présenter, dire d’où on vient, compter, parler de son sac, de son école, de son emploi du temps et de sa journée – en huit unités.', de: 'Sich vorstellen, sagen, woher man kommt, zählen, über Schultasche, Schule, Stundenplan und Tag sprechen – in acht Einheiten.' },
   farben: { tief: '#2457a6', mittel: '#9db8e6', zart: '#eef3fb', dunkel: '#173a70' },
   deckbild: ['lea:froh:stehen-zeigen', 'sami:froh:stehen', 'amira:froh:laessig'],
   blasen: [{ t: 'Salut !', x: 16, y: 112 }, { t: 'Je m’appelle…', x: 122, y: 100 }, { t: 'Bonjour !', x: 160, y: 150 }],

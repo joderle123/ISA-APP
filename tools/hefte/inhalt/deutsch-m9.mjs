@@ -1,6 +1,6 @@
 // Deutsch · Modul 9 „Arbeitswelt und Jugendschutz“ (Voie de préparation, B1) – multimodales Heft.
-// Themen und Grammatik nach den öffentlichen „Kompetenzorientierten Bildungsstandards Deutsch für den Modularunterricht“
-// (MENFP 2009), Modul 9: Festigung der Module 6–8; Arbeitswelt, Sicherheitshinweise, Arbeits- und Jugendschutz;
+// Themen und Grammatik nach dem Programm ALLUX 7P/6P/5P (CNES, 20/03/2019; Kann-Beschreibungen als Mindeststandards),
+// Modul 9: Festigung der Module 6–8; Arbeitswelt, Sicherheitshinweise, Arbeits- und Jugendschutz;
 // Texte überfliegen, Präsentation eines Arbeitsplatzes, Vorstellungsgespräch mit Notizen, Anleitungen (Kopierer, Webcam),
 // Gefahren im Verkehr und Sicherheitsansage, Anweisungen der Ärztin nach einer Sportverletzung, Unfallbericht,
 // Alkoholverkauf an Jugendliche in verschiedenen Ländern, Rechte im Ferienjob, Radio-Wettbewerb, Präsentationen;
@@ -8,7 +8,7 @@
 // Rechtliche Angaben bewusst vereinfacht und mit Hinweis auf die zuständigen Stellen; Personen und Betriebe ausgedacht.
 
 export const MODUL = {
-  id: 'deutsch-m9', kuerzel: 'de9', nr: 9, sprache: 'de', niveau: 'B1', klasse: 'Voie de préparation',
+  id: 'deutsch-m9', kuerzel: 'de9', nr: 9, sprache: 'de', niveau: 'B1+', klasse: 'Voie de préparation',
   dateiname: 'Deutsch_Modul-9',
   fach: { de: 'Deutsch', fr: 'Allemand' },
   titel: { de: 'Arbeitswelt und Jugendschutz', fr: 'Monde du travail et protection de la jeunesse' },

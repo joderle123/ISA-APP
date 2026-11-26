@@ -1,5 +1,5 @@
 // Français · Module 9 « La vie culturelle » (Régime / Voie de préparation, B1.1) – cahier multimodal.
-// D’après le « Référentiel de compétences – français, régime préparatoire » (MENFP), Module 9 « Participer à la vie
+// D’après le « Programme FRANC 7P–5P » (CNES, 20/03/2019), Module 9 « Participer à la vie
 // culturelle » : sociétés différentes, la chanson, la poésie, exprimer son opinion et ses émotions, des goûts et des
 // couleurs ; projet d’enquête (questions, interview, résultats, exposé) ; collectifs (la plupart, beaucoup de, les gens,
 // on), obligation (devoir, falloir + infinitif), quantité (la majorité des, un grand nombre de, une minorité de),
@@ -20,7 +20,7 @@ export const MODUL = {
   dateiname: 'Francais_Module-9',
   fach: { de: 'Französisch', fr: 'Français' },
   titel: { de: 'Kultur erleben', fr: 'La vie culturelle' },
-  untertitel: { fr: 'Parler de ses goûts, comprendre une chanson et un slam, découvrir d’autres pays, mener une enquête, présenter des résultats et protéger ses oreilles – en huit leçons.', de: 'Über Vorlieben sprechen, ein Lied und einen Slam verstehen, andere Länder entdecken, eine Umfrage machen, Ergebnisse vorstellen und die Ohren schützen – in acht Lektionen.' },
+  untertitel: { fr: 'Parler de ses goûts, comprendre une chanson et un slam, découvrir d’autres pays, mener une enquête, présenter des résultats et protéger ses oreilles – en huit unités.', de: 'Über Vorlieben sprechen, ein Lied und einen Slam verstehen, andere Länder entdecken, eine Umfrage machen, Ergebnisse vorstellen und die Ohren schützen – in acht Einheiten.' },
   farben: { tief: '#4a3fb0', mittel: '#b8b0ec', zart: '#f0eefb', dunkel: '#2d2575' },
   deckbild: ['amira:froh:tanzen', 'yusuf:froh:erklaeren', 'mia:froh:handy'],
   blasen: [{ t: 'À mon avis…', x: 14, y: 110 }, { t: 'Selon l’enquête…', x: 114, y: 98 }, { t: 'Bravo !', x: 166, y: 150 }],

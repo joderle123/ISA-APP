@@ -351,7 +351,7 @@ export const LEKTIONEN = [
     },
     ueben: [
       { art: 'tabelle', auftrag: 'Mein Bewegungsplan für eine Woche: Plane Bewegung in deinen Alltag. Kleine Schritte zählen!', stufe: 2, kopf: ['Tag', 'Was?', 'Wie lange?', 'mit wem?'], breiten: [16, 40, 20, 24], zeilen: [['Montag', '', '', ''], ['Dienstag', '', '', ''], ['Mittwoch', '', '', ''], ['Donnerstag', '', '', ''], ['Freitag', '', '', ''], ['Wochenende', '', '', '']] },
-      { art: 'tabelle', auftrag: 'Rückblick: Was hat dir im Sport in den letzten drei Jahren am meisten gebracht? Kreuze an.', stufe: 1, kopf: ['Modul', 'viel', 'etwas', 'wenig'], breiten: [52, 16, 16, 16], zeilen: [['Fit in Bewegung', '', '', ''], ['Ballspiele', '', '', ''], ['Turnen und Balance', '', '', ''], ['Kraft und Fitness', '', '', ''], ['Rückschlagspiele', '', '', ''], ['Tanz und Rhythmus', '', '', ''], ['Mannschaftssport', '', '', ''], ['Leichtathletik', '', '', ''], ['Sport fürs Leben', '', '', '']] },
+      { art: 'tabelle', auftrag: 'Rückblick: Was hat dir im Sport am meisten gebracht? Kreuze nur die Module an, die du schon gemacht hast.', stufe: 1, kopf: ['Modul', 'viel', 'etwas', 'wenig'], breiten: [52, 16, 16, 16], zeilen: [['Fit in Bewegung', '', '', ''], ['Ballspiele', '', '', ''], ['Turnen und Balance', '', '', ''], ['Kraft und Fitness', '', '', ''], ['Rückschlagspiele', '', '', ''], ['Tanz und Rhythmus', '', '', ''], ['Leichtathletik', '', '', ''], ['Mannschaftssport', '', '', ''], ['Sport fürs Leben', '', '', '']] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Mein Sport-Tagebuch: Wie soll Bewegung in fünf Jahren in deinem Leben aussehen? Schreib einen Brief an dich selbst.', stufe: 2,

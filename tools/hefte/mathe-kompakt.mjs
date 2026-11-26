@@ -52,10 +52,7 @@ const lsg = (liste) => liste.map(([, l], i) => 'abcdefghijklmnop'[i] + ') ' + l)
 const DEZ_TAFEL = (zeilen) => ({ art: 'stellentafel', stellen: ['HT', 'ZT', 'T', 'H', 'Z', 'E', 'z', 'h', 't'], komma: 6,
   gruppen: [{ titel: 'Tausender', spalten: 3 }, { titel: 'Einer', spalten: 3 }, { titel: 'Tausendstel', spalten: 3 }],
   namen: ['Hundert-\ntausender', 'Zehn-\ntausender', 'Tausender', 'Hunderter', 'Zehner', 'Einer', 'Zehntel', 'Hundertstel', 'Tausendstel'], zeilen })
-// Umwandlungstabelle für Flächen: jede Einheit zwei Spalten (Zehner, Einer), dicke Striche zwischen den Einheiten
-const FL = ['km²', 'ha', 'a', 'm²', 'dm²', 'cm²', 'mm²']
-const FL_TAFEL = (zeilen) => ({ art: 'stellentafel', stellen: FL.flatMap(() => ['Z', 'E']), komma: -1, gruppen: FL.map((t) => ({ titel: t, spalten: 2 })), zeilen })
-const eSp = (e) => FL.indexOf(e) * 2 + 1   // Einer-Spalte einer Einheit
+// Umwandlungen: art 'umwandlung' (src/blatt/umwandlung.js) – Einheiten oben, gestrichelte Unterspalten, rotes Komma (Auftrag 26.11.)
 
 // ---------------- Wünsche der Lehrerin je Lektion (Index im Modul, ab 0) ----------------
 const EXTRA = {
@@ -79,13 +76,12 @@ const EXTRA = {
   },
   5: {
     // Flächeneinheiten: Umwandlungstabelle wie die Stellentafel aus dem Unterricht (Rückmeldung 26.11.)
-    nachRegel: [{ ...FL_TAFEL([{ label: '3 m² = 300 dm²', zahl: '300', bis: eSp('dm²') }, { label: '400 cm² = 4 dm²', zahl: '400', bis: eSp('cm²') }, { label: '5 ha = 500 a', zahl: '500', bis: eSp('a') }, { label: '2 a = 200 m²', zahl: '200', bis: eSp('m²') }]),
-      titel: 'Die Umwandlungstabelle', punkte: ['Jede Einheit hat zwei Spalten: Zehner und Einer.', 'Schreib die Zahl so, dass die letzte Ziffer in der Einer-Spalte ihrer Einheit steht.', 'Dann liest du in der neuen Einheit ab. Leere Spalten bis dahin: 0.'] }],
+    nachRegel: [{ art: 'umwandlung', tabelle: 'flaeche', zeilen: ['3 m² = {300} dm²', '400 cm² = {4} dm²', '5 ha = {500} a', '2,5 ha = {25.000} m²', '350 a = {3,5} ha'],
+      titel: 'Die Umwandlungstabelle', punkte: ['Jede Einheit hat zwei Spalten, weil der Schritt zur nächsten Einheit × 100 ist.', 'Die letzte Ziffer vor dem Komma kommt in die letzte Spalte ihrer Einheit; Ziffern nach dem Komma gehen nach rechts weiter.', 'Mit Nullen auffüllen bis zur neuen Einheit. Das rote Komma steht hinter der neuen Einheit – dort liest du ab.'] }],
     hinten: [{
       bausteine: [
-        { art: 'aufgabe', stufe: 1, text: 'Trag in die Umwandlungstabelle ein und rechne um. Die letzte Ziffer kommt in die Einer-Spalte der Einheit.' },
-        FL_TAFEL([{ label: 'a) 7 m² = ___ dm²' }, { label: 'b) 2 dm² = ___ cm²' }, { label: 'c) 600 cm² = ___ dm²' }, { label: 'd) 9 a = ___ m²' },
-          { label: 'e) 4 ha = ___ a' }, { label: 'f) 800 dm² = ___ m²' }, { label: 'g) 3 km² = ___ ha' }, { label: 'h) 500 mm² = ___ cm²' }]),
+        { art: 'aufgabe', stufe: 1, text: 'Trag in die Umwandlungstabelle ein und rechne um. Die letzte Ziffer vor dem Komma kommt in die letzte Spalte ihrer Einheit.' },
+        { art: 'umwandlung', tabelle: 'flaeche', buchstaben: true, zeilen: ['7 m² = ___ dm²', '2 dm² = ___ cm²', '600 cm² = ___ dm²', '9 a = ___ m²', '4 ha = ___ a', '800 dm² = ___ m²', '3 km² = ___ ha', '500 mm² = ___ cm²'] },
       ],
       loes: ['Umwandlungstabelle: a) 700 dm² · b) 200 cm² · c) 6 dm² · d) 900 m² · e) 400 a · f) 8 m² · g) 300 ha · h) 5 cm²'],
     }],

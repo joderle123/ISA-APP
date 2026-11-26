@@ -7,6 +7,7 @@
 // Luxemburgisch wird je Einheit aufgelistet (○, zählt nicht) – Prüfliste: scripts/lb-liste.ts.
 // Experiment der Woche: Einheiten ohne `experiment` zählen nur in der Zusammenfassung (○); ein vorhandenes Experiment
 // wird streng geprüft (Längen, damit die Seite „Forschen“ nie überläuft, Sicherheit, verbotene Stoffe).
+import { eintragen } from '../src/blatt/umwandlung.js'
 import { readFileSync, readdirSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import { join, dirname, basename } from 'node:path'
@@ -84,7 +85,7 @@ const ARTEN = new Set([
   'wennDann', 'dialog', 'vertrag', 'ankreuzen', 'bilder', 'wortspeicher', 'skala', 'einschaetzung', 'zuordnen', 'gefuehle', 'ampel', 'thermometer',
   'vulkan', 'eisberg', 'koerper', 'batterie', 'waage', 'leiter', 'zielscheibe', 'hand', 'mindmap', 'schritte', 'plan', 'tagesplan', 'atmen', 'comic',
   'karten', 'rueckblick', 'notfall', 'gefuehlsrad', 'glaeser', 'netz', 'kurve', 'tageskreis', 'farbkalender', 'formfelder', 'regler', 'jahr', 'personen', 'rechnungen', 'kaestchen', 'bon',
-  'paeckchen', 'stellentafel', 'hunderterfeld', 'zahlenstrahl', 'bruchbilder', 'treppe', 'kommasprung', 'geo',
+  'paeckchen', 'stellentafel', 'umwandlung', 'hunderterfeld', 'zahlenstrahl', 'bruchbilder', 'treppe', 'kommasprung', 'geo',
   'flaeche', 'temperatur',
   'diagramm', 'strichliste',
   ...SPIEL_ARTEN,
@@ -296,6 +297,17 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
           stuecke(x)
         }
         break
+      case 'umwandlung': {
+        // Umwandlungstabelle: jede Zeile muss sich eintragen lassen; ein Beispiel {x} muss stimmen
+        if (!b.zeilen?.length || b.zeilen.length > 12) melde('F', w, 'Umwandlungstabelle: 1–12 Zeilen')
+        for (const x of b.zeilen ?? []) {
+          const e = eintragen(x.replace(/\{[^}]*\}/, '___'), b.tabelle), wert = /\{([^}]*)\}/.exec(x)?.[1]
+          if (!e) melde('F', w, `Umwandlungstabelle: „${x}“ lässt sich nicht eintragen`)
+          else if (b.tabelle && e.art !== b.tabelle) melde('F', w, `Umwandlungstabelle: „${x}“ gehört nicht zur Tabelle ${b.tabelle}`)
+          else if (wert !== undefined && e.ergebnis.split(' ')[0].replace(/\./g, '') !== wert.replace(/\./g, '')) melde('F', w, `Umwandlungstabelle: „${x}“ – richtig wäre ${e.ergebnis}`)
+        }
+        break
+      }
       case 'stellentafel': {
         // mit Gruppen (Stil aus dem Unterricht, auch Umwandlungstabellen: 7 Einheiten × 2) bis 14 Stellen; ohne Komma nur mit Gruppen
         const gruppen = b.gruppen ?? []

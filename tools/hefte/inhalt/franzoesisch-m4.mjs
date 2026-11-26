@@ -1,5 +1,5 @@
 // Français · Module 4 « Médias et stars » (Régime / Voie de préparation, A2.1) – cahier multimodal.
-// D’après le « Référentiel de compétences – français, régime préparatoire » (MENFP), Module 4 « Le monde des médias,
+// D’après le « Programme FRANC 7P–5P » (CNES, 20/03/2019), Module 4 « Le monde des médias,
 // le monde des stars » : genres de films, séries, journal télévisé, presse écrite et audiovisuelle, professions,
 // vacances, transports, météo, camping ; présent et passé composé, interrogatifs, il y a / il manque / aucun,
 // ce que / ce qui, avoir envie de / je voudrais / je veux / je vais, comparatif et superlatif (meilleur, mieux),
@@ -12,7 +12,7 @@ export const MODUL = {
   dateiname: 'Francais_Module-4',
   fach: { de: 'Französisch', fr: 'Français' },
   titel: { de: 'Medien und Stars', fr: 'Médias et stars' },
-  untertitel: { fr: 'Lire et écouter les infos, donner son avis, faire des projets, découvrir une star, parler des métiers, comparer des films et écrire un reportage – en huit leçons.', de: 'Nachrichten lesen und hören, seine Meinung sagen, Pläne machen, einen Star kennenlernen, über Berufe sprechen, Filme vergleichen und eine Reportage schreiben – in acht Lektionen.' },
+  untertitel: { fr: 'Lire et écouter les infos, donner son avis, faire des projets, découvrir une star, parler des métiers, comparer des films et écrire un reportage – en huit unités.', de: 'Nachrichten lesen und hören, seine Meinung sagen, Pläne machen, einen Star kennenlernen, über Berufe sprechen, Filme vergleichen und eine Reportage schreiben – in acht Einheiten.' },
   farben: { tief: '#b0285f', mittel: '#f0a6c3', zart: '#fcedf3', dunkel: '#6e1638' },
   deckbild: ['jana:froh:tanzen', 'sami:froh:laptop', 'chloe:froh:handy'],
   blasen: [{ t: 'Flash info !', x: 14, y: 110 }, { t: 'C’est le meilleur !', x: 112, y: 98 }, { t: 'J’y vais !', x: 162, y: 150 }],

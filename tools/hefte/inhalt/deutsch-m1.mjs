@@ -1,6 +1,6 @@
 // Deutsch · Modul 1 „Ich und die anderen“ (Voie de préparation, A1) – multimodales Heft (Lesen, Hören, Regel, Üben, Schreiben).
-// Themen und Grammatik nach den öffentlichen „Kompetenzorientierten Bildungsstandards Deutsch für den Modularunterricht“
-// (MENFP 2009), Modul 1: Familie, Hobbys, Schule, Freundschaft; Präsens, W-Fragen, Verneinung mit „nicht“, Modalverb +
+// Themen und Grammatik nach dem Programm ALLUX 7P/6P/5P (CNES, 20/03/2019; Kann-Beschreibungen als Mindeststandards),
+// Modul 1: Familie, Hobbys, Schule, Freundschaft; Präsens, W-Fragen, Verneinung mit „nicht“, Modalverb +
 // Infinitiv, links/rechts/geradeaus, Groß- und Kleinschreibung (Nomen), Verb – Nomen – Adjektiv – Artikel.
 // Alle Texte, Dialoge und Aufgaben sind selbst geschrieben; alle Personen sind ausgedacht.
 // Persönliches nur freiwillig: Wer möchte, stellt eine ausgedachte Person vor. Keine Fragen zur eigenen Familie.
@@ -13,7 +13,7 @@ export const MODUL = {
   dateiname: 'Deutsch_Modul-1',
   fach: { de: 'Deutsch', fr: 'Allemand' },
   titel: { de: 'Ich und die anderen', fr: 'Moi et les autres' },
-  untertitel: { de: 'Sich vorstellen, Hobbys, Freundschaft, Schule: lesen, hören, sprechen und schreiben – in acht Lektionen.', fr: 'Se présenter, loisirs, amitié, école : lire, écouter, parler et écrire – en huit leçons.' },
+  untertitel: { de: 'Sich vorstellen, Hobbys, Freundschaft, Schule: lesen, hören, sprechen und schreiben – in acht Einheiten.', fr: 'Se présenter, loisirs, amitié, école : lire, écouter, parler et écrire – en huit unités.' },
   farben: { tief: '#b4432e', mittel: '#eaa38f', zart: '#fbefe9', dunkel: '#7e2b1c' },
   deckbild: ['sami:froh:stehen', 'lina:froh:laessig', 'noah:froh:stehen-zeigen'],
   blasen: [{ t: 'Moien!', x: 22, y: 118 }, { t: 'Hallo!', x: 150, y: 106 }, { t: 'Salut!', x: 128, y: 150 }],
