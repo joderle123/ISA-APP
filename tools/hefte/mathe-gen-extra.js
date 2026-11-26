@@ -163,3 +163,143 @@
     T.flaecheEinheit = function (sp, lvl) { return umwandeln([['km²', 6], ['ha', 4], ['a', 2], ['m²', 0], ['dm²', -2], ['cm²', -4], ['mm²', -6]], lvl, flRoh, sp); };
     // Volumen (Modul 7): m³, dm³ = l, cm³ = ml, mm³ – Schritt ×1000
     T.volumen = function (sp, lvl) { return umwandeln([['m³', 9], ['dm³', 6], ['cm³', 3], ['mm³', 0]], lvl === 'basis' ? 'kern' : lvl, function () { var n = ri(1, 9), p = pick([['m³', 'dm³'], ['dm³', 'cm³'], ['cm³', 'mm³']]); return { a: n + ' ' + p[0] + ' = ___ ' + p[1], l: grp(n * 1000) + ' ' + p[1] }; }, sp); };
+
+    // ---- Module 7–9 (Programm VP Mathematik, 26.11.2026): Gleichungen, Bank und Zinsen, Volumen, Teiler, Potenzen,
+    // Wurzeln, Brüche, rationale Zahlen, Polynome, Pythagoras. Zahlen so gewählt, dass die Lösungen „schön“ sind.
+    function sg(n) { return n < 0 ? '− ' + Math.abs(n) : '+ ' + n; }   // „+ 3“ / „− 3“ im Term
+    function mz(n) { return n < 0 ? '−' + Math.abs(n) : String(n); }
+    // M7 L1–L3 Gleichungen mit einer Unbekannten
+    T.gleichung = function (sp, lvl) {
+      var x = ri(lvl === 'basis' ? 1 : -6, lvl === 'basis' ? 12 : 12); if (x === 0) x = 4;
+      if (lvl === 'basis') { var b = ri(2, 15), op = pick(['+', '−', '·']);
+        if (op === '+') return { a: 'x + ' + b + ' = ' + (x + b), l: 'x = ' + x };
+        if (op === '−') return { a: 'x − ' + b + ' = ' + mz(x - b), l: 'x = ' + x };
+        var k = ri(2, 9); return { a: k + 'x = ' + (k * x), l: 'x = ' + x }; }
+      var a = ri(2, 9), c = (R() < 0.5 ? -1 : 1) * ri(1, 15);
+      if (lvl === 'kern' || R() < 0.4) return { a: a + 'x ' + sg(c) + ' = ' + mz(a * x + c), l: 'x = ' + mz(x) };
+      var d = ri(1, a - 1 || 1), e = (a - d) * x + c;   // ax + c = dx + e
+      return { a: a + 'x ' + sg(c) + ' = ' + (d === 1 ? '' : d) + 'x ' + sg(e), l: 'x = ' + mz(x) };
+    };
+    T.gleichungSach = function (sp, lvl) {
+      var t = pick(['alter', 'kauf', 'zahl', 'taxi']);
+      if (t === 'alter') { var x = ri(9, 16), d = ri(20, 32); return { a: 'Lou ist x Jahre alt, ihre Mutter ist ' + d + ' Jahre älter. Zusammen sind sie ' + (2 * x + d) + ' Jahre alt. Gleichung und x?', l: 'x + x + ' + d + ' = ' + (2 * x + d) + ' → x = ' + x }; }
+      if (t === 'kauf') { var n = ri(3, 8), p = ri(2, 9), f = ri(3, 12); return { a: n + ' Hefte zu je x € und eine Mappe zu ' + f + ' € kosten zusammen ' + (n * p + f) + ' €. Wie teuer ist ein Heft?', l: n + 'x + ' + f + ' = ' + (n * p + f) + ' → x = ' + p + ' €' }; }
+      if (t === 'zahl') { var z = ri(2, 20), k = ri(2, 5), s = ri(1, 15); return { a: 'Ich denke mir eine Zahl, nehme sie mal ' + k + ' und addiere ' + s + '. Ich erhalte ' + (k * z + s) + '. Welche Zahl?', l: k + 'x + ' + s + ' = ' + (k * z + s) + ' → x = ' + z }; }
+      var g = ri(3, 5), km = ri(4, 18), pr = ri(1, 3); return { a: 'Ein Taxi kostet ' + g + ' € Grundpreis und ' + pr + ' € pro km. Die Fahrt kostet ' + (g + pr * km) + ' €. Wie viele km?', l: g + ' + ' + pr + 'x = ' + (g + pr * km) + ' → x = ' + km + ' km' };
+    };
+    // M7 L4 Bankkonto: Haben (+) und Soll (−)
+    T.bankkonto = function (sp, lvl) {
+      var start = (lvl === 'basis' ? 1 : pick([-1, 1])) * ri(2, 40) * 10, n = lvl === 'basis' ? 2 : 3, k = start, txt = [];
+      for (var i = 0; i < n; i++) { var b = (R() < 0.5 ? -1 : 1) * ri(1, 30) * 5; k += b; txt.push(b > 0 ? 'Eingang ' + b + ' €' : 'Ausgabe ' + (-b) + ' €'); }
+      return { a: 'Kontostand ' + mz(start) + ' €. ' + txt.join(', ') + '. Neuer Kontostand?', l: mz(k) + ' €' + (k < 0 ? ' (im Soll / débit)' : '') };
+    };
+    // M7 L5 Zinsen: Jahreszins, auch für Monate
+    T.zinsen = function (sp, lvl) {
+      var K = pick([200, 400, 500, 800, 1000, 1200, 1500, 2000, 2500, 5000]), p = pick(lvl === 'basis' ? [1, 2, 5, 10] : [1, 1.5, 2, 2.5, 3, 4]);
+      var z = K * p / 100;
+      if (lvl === 'basis') return { a: K + ' € auf dem Sparbuch, ' + de(p) + ' % Zinsen im Jahr. Wie viele Zinsen nach 1 Jahr?', l: de(z) + ' €' };
+      if (lvl === 'kern' || R() < 0.5) { var j = ri(2, 3); return { a: K + ' € zu ' + de(p) + ' % im Jahr (Zinsen werden nicht mitverzinst). Zinsen nach ' + j + ' Jahren? Kontostand?', l: de(z * j) + ' € Zinsen; ' + de(K + z * j) + ' €' }; }
+      var m = pick([3, 6, 9]); return { a: K + ' € zu ' + de(p) + ' % im Jahr. Wie viele Zinsen in ' + m + ' Monaten?', l: de(z) + ' € · ' + m + '/12 = ' + de(z * m / 12) + ' €' };
+    };
+    // M7 L7/L8 Volumen von Körpern
+    T.quader = function (sp, lvl) {
+      if (lvl === 'basis' || R() < 0.3) { var s = ri(2, 10); if (R() < 0.5) return { a: 'Würfel mit Kante ' + s + ' cm. Volumen?', l: s + ' · ' + s + ' · ' + s + ' = ' + (s * s * s) + ' cm³' }; }
+      var a = ri(2, 12), b = ri(2, 10), c = ri(2, 9);
+      if (lvl === 'plus' && R() < 0.5) { return { a: 'Ein Aquarium ist ' + (a * 10) + ' cm lang, ' + (b * 5) + ' cm breit und ' + (c * 5) + ' cm hoch. Wie viele Liter passen hinein?', l: grp(a * 10 * b * 5 * c * 5) + ' cm³ = ' + de(a * 10 * b * 5 * c * 5 / 1000) + ' l' }; }
+      return { a: 'Quader: ' + a + ' cm × ' + b + ' cm × ' + c + ' cm. Volumen?', l: a + ' · ' + b + ' · ' + c + ' = ' + (a * b * c) + ' cm³' };
+    };
+    T.prismaZylinder = function (sp, lvl) {
+      if (R() < 0.5) { var g = ri(2, 10) * 2, h = ri(2, 9), H = ri(3, 15); return { a: 'Prisma mit dreieckiger Grundfläche: g = ' + g + ' cm, h = ' + h + ' cm, Höhe des Prismas ' + H + ' cm. Volumen?', l: 'G = ' + g + ' · ' + h + ' : 2 = ' + (g * h / 2) + ' cm²; V = ' + (g * h / 2) + ' · ' + H + ' = ' + (g * h / 2 * H) + ' cm³' }; }
+      var r = ri(1, lvl === 'basis' ? 5 : 10), H2 = ri(2, 20), V = Math.PI * r * r * H2;
+      return { a: 'Zylinder: r = ' + r + ' cm, h = ' + H2 + ' cm. Volumen (π ≈ 3,14)?', l: '3,14 · ' + r + ' · ' + r + ' · ' + H2 + ' ≈ ' + de(Math.round(3.14 * r * r * H2 * 100) / 100) + ' cm³' };
+    };
+    // M8 L1 Vielfache und Teiler
+    T.teilerVielfache = function (sp, lvl) {
+      if (R() < 0.5) { var n = pick(lvl === 'basis' ? [6, 8, 10, 12, 15] : [18, 20, 24, 28, 30, 36, 40, 42, 48]), t = [];
+        for (var i = 1; i <= n; i++) if (n % i === 0) t.push(i); return { a: 'Alle Teiler von ' + n + '?', l: 'T(' + n + ') = {' + t.join('; ') + '}' }; }
+      var m = ri(3, lvl === 'basis' ? 9 : 15), k = 5, v = []; for (var j = 1; j <= k; j++) v.push(m * j);
+      return { a: 'Die ersten ' + k + ' Vielfachen von ' + m + '?', l: 'V(' + m + ') = {' + v.join('; ') + '; …}' };
+    };
+    // M8 L2 kgV und ggT von zwei (plus: drei) Zahlen
+    T.kgvGgt = function (sp, lvl) {
+      var g = pick([2, 3, 4, 5, 6]), a = g * ri(2, 6), b = g * ri(2, 7); if (a === b) b += g;
+      var zahlen = [a, b]; if (lvl === 'plus') zahlen.push(g * ri(2, 5));
+      var G = zahlen.reduce(function (x, y) { return gcd(x, y); }), K = zahlen.reduce(function (x, y) { return x * y / gcd(x, y); });
+      return pick([0, 1]) ? { a: 'ggT (pgcd) von ' + zahlen.join(', ') + '?', l: String(G) } : { a: 'kgV (ppcm) von ' + zahlen.join(', ') + '?', l: String(K) };
+    };
+    // M8 L3 Potenzen
+    T.potenz = function (sp, lvl) {
+      var t = pick(lvl === 'basis' ? ['q', 'q', 'k'] : ['q', 'k', 'z', 'z']);
+      if (t === 'q') { var a = ri(2, lvl === 'basis' ? 10 : 15); return { a: a + '² = ?', l: a + ' · ' + a + ' = ' + (a * a) }; }
+      if (t === 'k') { var b = ri(2, 6); return { a: b + '³ = ?', l: b + ' · ' + b + ' · ' + b + ' = ' + (b * b * b) }; }
+      var e = ri(2, 6); return R() < 0.5 ? { a: '10^' + e + ' als Zahl?', l: grp(Math.pow(10, e)) } : { a: grp(Math.pow(10, e)) + ' als Zehnerpotenz?', l: '10^' + e };
+    };
+    // M8 L4 / M9 Quadratwurzel
+    T.wurzel = function (sp, lvl) {
+      if (lvl === 'basis' || R() < 0.5) { var a = ri(2, lvl === 'basis' ? 10 : 20); return { a: '√' + (a * a) + ' = ?', l: String(a) + ' (weil ' + a + '² = ' + (a * a) + ')' }; }
+      if (R() < 0.5) { var s = ri(3, 15); return { a: 'Ein Quadrat hat ' + (s * s) + ' m² Fläche. Wie lang ist eine Seite?', l: '√' + (s * s) + ' = ' + s + ' m' }; }
+      var n = pick([2, 3, 5, 7, 10, 20, 50]); return { a: '√' + n + ' mit dem Taschenrechner, auf 2 Stellen gerundet?', l: '≈ ' + de(Math.round(Math.sqrt(n) * 100) / 100) };
+    };
+    // M8 L5 Brüche mit verschiedenen Nennern (Nenner höchstens 100)
+    T.bruchUngleich = function (sp, lvl) {
+      var paare = lvl === 'basis' ? [[2, 4], [3, 6], [4, 8], [5, 10], [2, 6], [3, 9]] : [[2, 3], [3, 4], [4, 6], [5, 6], [6, 8], [4, 10], [3, 5], [8, 12]];
+      var p = pick(paare), n1 = p[0], n2 = p[1], z1 = ri(1, n1 - 1), z2 = ri(1, n2 - 1), K = n1 * n2 / gcd(n1, n2);
+      var plus = R() < 0.6 || z1 * (K / n1) <= z2 * (K / n2) ? R() < 0.6 : false;
+      var Z = plus ? z1 * (K / n1) + z2 * (K / n2) : z1 * (K / n1) - z2 * (K / n2);
+      if (!plus && Z <= 0) { plus = true; Z = z1 * (K / n1) + z2 * (K / n2); }
+      var r = red(Z, K);
+      return { a: fr(z1, n1) + (plus ? ' + ' : ' − ') + fr(z2, n2) + ' = ?', l: fr(z1 * (K / n1), K) + (plus ? ' + ' : ' − ') + fr(z2 * (K / n2), K) + ' = ' + fr(Z, K) + (r[1] !== K ? ' = ' + fr(r[0], r[1]) : '') };
+    };
+    // M8 L6 Bruchteil einer Zahl; gleichnamige Brüche mal und geteilt
+    T.bruchteilZahl = function (sp, lvl) {
+      if (lvl === 'plus' && R() < 0.5) { var n = pick([4, 5, 6, 8, 10]), a = ri(1, n - 1), b = ri(1, n - 1); return R() < 0.5 ? { a: fr(a, n) + ' · ' + fr(b, n) + ' = ?', l: fr(a * b, n * n) + (gcd(a * b, n * n) > 1 ? ' = ' + fr(red(a * b, n * n)[0], red(a * b, n * n)[1]) : '') } : { a: fr(a, n) + ' : ' + fr(b, n) + ' = ?', l: fr(a, b) + ' (gleiche Nenner: Zähler teilen)' }; }
+      var d = pick([2, 3, 4, 5, 6, 8, 10]), z = ri(1, d - 1), x = d * ri(2, lvl === 'basis' ? 10 : 30);
+      return { a: fr(z, d) + ' von ' + x + ' = ?', l: x + ' : ' + d + ' · ' + z + ' = ' + (x / d * z) };
+    };
+    // M8 L7 Bruch ↔ Dezimalzahl ↔ Prozent
+    var BDP = [[1, 2, '0,5', '50 %'], [1, 4, '0,25', '25 %'], [3, 4, '0,75', '75 %'], [1, 5, '0,2', '20 %'], [2, 5, '0,4', '40 %'], [3, 5, '0,6', '60 %'], [1, 10, '0,1', '10 %'], [3, 10, '0,3', '30 %'], [7, 10, '0,7', '70 %'], [1, 20, '0,05', '5 %'], [1, 8, '0,125', '12,5 %'], [3, 20, '0,15', '15 %'], [9, 25, '0,36', '36 %']];
+    T.bruchDezProz = function (sp, lvl) {
+      var e = pick(lvl === 'basis' ? BDP.slice(0, 9) : BDP), w = pick([0, 1, 2]);
+      if (w === 0) return { a: fr(e[0], e[1]) + ' als Dezimalzahl und in Prozent?', l: e[2] + ' = ' + e[3] };
+      if (w === 1) return { a: e[3] + ' als Bruch (gekürzt) und als Dezimalzahl?', l: fr(e[0], e[1]) + ' = ' + e[2] };
+      return { a: e[2] + ' als Bruch (gekürzt) und in Prozent?', l: fr(e[0], e[1]) + ' = ' + e[3] };
+    };
+    // M9 L1 Rationale Zahlen vergleichen und ordnen
+    T.rational = function (sp, lvl) {
+      var w = [], n = lvl === 'basis' ? 3 : 4;
+      while (w.length < n) { var v = (R() < 0.5 ? -1 : 1) * ri(1, 40) / (pick([1, 2, 4, 10])); if (w.indexOf(v) < 0) w.push(v); }
+      var s = w.slice().sort(function (a, b) { return a - b; });
+      var txt = function (v) { return v < 0 ? '−' + de(-v) : de(v); };
+      return { a: 'Ordne von klein nach groß: ' + w.map(txt).join('; '), l: s.map(txt).join(' < ') };
+    };
+    // M9 L3 Monome und Polynome addieren/subtrahieren
+    T.polynomAdd = function (sp, lvl) {
+      var a = (R() < 0.5 ? -1 : 1) * ri(1, 9), b = (R() < 0.5 ? -1 : 1) * ri(1, 9), c = (R() < 0.5 ? -1 : 1) * ri(1, 9), d = (R() < 0.5 ? -1 : 1) * ri(1, 9);
+      if (lvl === 'basis') return { a: 'Fasse zusammen: ' + termStr([{ coef: a, sym: 'x' }, { coef: b, sym: 'x' }]), l: termStr([{ coef: a + b, sym: 'x' }]) };
+      var e = (R() < 0.5 ? -1 : 1) * ri(1, 5), f = (R() < 0.5 ? -1 : 1) * ri(1, 5), minus = R() < 0.5;
+      var p1 = '(' + termStr([{ coef: e, sym: 'x²' }, { coef: a, sym: 'x' }, { coef: b, sym: '' }]) + ')', p2 = '(' + termStr([{ coef: f, sym: 'x²' }, { coef: c, sym: 'x' }, { coef: d, sym: '' }]) + ')';
+      var s = minus ? -1 : 1;
+      return { a: p1 + (minus ? ' − ' : ' + ') + p2, l: termStr([{ coef: e + s * f, sym: 'x²' }, { coef: a + s * c, sym: 'x' }, { coef: b + s * d, sym: '' }]) };
+    };
+    // M9 L4 Ausmultiplizieren (développer)
+    T.ausmultiplizieren = function (sp, lvl) {
+      var k = ri(2, 6), b = (R() < 0.5 ? -1 : 1) * ri(1, 9), c = ri(1, 5);
+      if (lvl === 'basis') return { a: k + ' · (x ' + sg(b) + ')', l: termStr([{ coef: k, sym: 'x' }, { coef: k * b, sym: '' }]) };
+      if (lvl === 'kern' || R() < 0.5) return { a: k + 'x · (' + c + 'x ' + sg(b) + ')', l: termStr([{ coef: k * c, sym: 'x²' }, { coef: k * b, sym: 'x' }]) };
+      var m = ri(2, 5); return { a: k + 'x² · ' + m + 'x', l: (k * m) + 'x³' };
+    };
+    // M9 L5 Ausklammern (factoriser)
+    T.ausklammern = function (sp, lvl) {
+      var g = ri(2, 6), a = ri(1, 7), b = (R() < 0.5 ? -1 : 1) * ri(1, 7); if (gcd(a, b) !== 1) b = b > 0 ? b + 1 : b - 1; if (gcd(a, b) !== 1) { a = 1; }
+      if (lvl === 'basis') return { a: 'Klammere aus: ' + termStr([{ coef: g * a, sym: 'x' }, { coef: g * b, sym: '' }]), l: g + '(' + termStr([{ coef: a, sym: 'x' }, { coef: b, sym: '' }]) + ')' };
+      return { a: 'Klammere aus: ' + termStr([{ coef: g * a, sym: 'x²' }, { coef: g * b, sym: 'x' }]), l: g + 'x(' + termStr([{ coef: a, sym: 'x' }, { coef: b, sym: '' }]) + ')' };
+    };
+    // M9 L7/L8 Pythagoras (pythagoreische Tripel, damit die Ergebnisse ganz sind)
+    var TRIPEL = [[3, 4, 5], [6, 8, 10], [5, 12, 13], [9, 12, 15], [8, 15, 17], [12, 16, 20], [7, 24, 25], [15, 20, 25], [20, 21, 29]];
+    T.pythagoras = function (sp, lvl) {
+      var t = pick(lvl === 'basis' ? TRIPEL.slice(0, 4) : TRIPEL), w = lvl === 'basis' ? 'c' : pick(['c', 'a', 'pruef', 'sach']);
+      if (w === 'c') return { a: 'Rechtwinkliges Dreieck: a = ' + t[0] + ' cm, b = ' + t[1] + ' cm. Wie lang ist die Hypotenuse c?', l: 'c² = ' + (t[0] * t[0]) + ' + ' + (t[1] * t[1]) + ' = ' + (t[2] * t[2]) + ' → c = ' + t[2] + ' cm' };
+      if (w === 'a') return { a: 'Hypotenuse c = ' + t[2] + ' cm, Kathete b = ' + t[1] + ' cm. Wie lang ist a?', l: 'a² = ' + (t[2] * t[2]) + ' − ' + (t[1] * t[1]) + ' = ' + (t[0] * t[0]) + ' → a = ' + t[0] + ' cm' };
+      if (w === 'pruef') { var ok = R() < 0.5, c2 = ok ? t[2] : t[2] + 1; return { a: 'Ist ein Dreieck mit ' + t[0] + ' cm, ' + t[1] + ' cm und ' + c2 + ' cm rechtwinklig?', l: (t[0] * t[0]) + ' + ' + (t[1] * t[1]) + ' = ' + (t[2] * t[2]) + (ok ? ' = ' : ' ≠ ') + (c2 * c2) + ' → ' + (ok ? 'ja' : 'nein') }; }
+      return { a: 'Eine Leiter lehnt an der Wand. Ihr Fuß steht ' + t[0] + ' dm von der Wand, oben berührt sie die Wand in ' + t[1] + ' dm Höhe. Wie lang ist die Leiter?', l: '√(' + (t[0] * t[0]) + ' + ' + (t[1] * t[1]) + ') = ' + t[2] + ' dm' };
+    };

@@ -128,7 +128,7 @@ const BUCHST = 'abcdefghijklmnopqrstuvwxyz'
 const h2 = (text: string) => new Paragraph({ heading: HeadingLevel.HEADING_2, children: [run(text)] })
 const zelle = (kinder: (Paragraph | Table)[], breite: number, o: { schatten?: string; rand?: boolean } = {}) =>
   new TableCell({ children: kinder.length ? kinder : [new Paragraph('')], width: { size: breite, type: WidthType.DXA }, borders: o.rand ? rahmen : ohneRaum, shading: o.schatten ? { type: ShadingType.CLEAR, color: 'auto', fill: o.schatten } : undefined, margins: { top: 60, bottom: 60, left: 100, right: 100 } })
-const tabelle = (zeilen: TableCell[][], breiten: number[]) => new Table({ width: { size: breiten.reduce((a, b) => a + b, 0), type: WidthType.DXA }, columnWidths: breiten, rows: zeilen.map((z) => new TableRow({ children: z, cantSplit: true })) })
+const tabelle = (zeilen: TableCell[][], breiten: number[]) => new Table({ width: { size: breiten.reduce((a, b) => a + b, 0), type: WidthType.DXA }, columnWidths: breiten, rows: zeilen.map((z) => new TableRow({ children: z })) })
 
 let FARBE = '2E9E5B', ZART = 'EEF7F2'
 let aufgabeNr = 0, lektionNr = 0
@@ -174,8 +174,8 @@ function umwandlungsTabelle(art: string, zeilen: { text: string; marke?: string 
     return zellen
   })
   return [
-    new Paragraph({ keepNext: true, spacing: { after: 40 }, children: [run('Umwandlungstabelle (' + d.titel + '): ', { bold: true, size: 18, color: FARBE }), run('Letzte Ziffer vor dem Komma in die ' + (sp > 1 ? 'letzte Spalte' : 'Spalte') + ' ihrer Einheit · mit Nullen auffüllen · Komma hinter die neue Einheit · ablesen.', { size: 18, color: '5A6170' })] }),
-    new Table({ width: { size: breite, type: WidthType.DXA }, columnWidths: breiten, rows: [kopf, ...reihen].map((z, i) => new TableRow({ children: z, cantSplit: true, tableHeader: i === 0 })) }),
+    new Paragraph({ spacing: { after: 40 }, children: [run('Umwandlungstabelle (' + d.titel + '): ', { bold: true, size: 18, color: FARBE }), run('Letzte Ziffer vor dem Komma in die ' + (sp > 1 ? 'letzte Spalte' : 'Spalte') + ' ihrer Einheit · mit Nullen auffüllen · Komma hinter die neue Einheit · ablesen.', { size: 18, color: '5A6170' })] }),
+    new Table({ width: { size: breite, type: WidthType.DXA }, columnWidths: breiten, rows: [kopf, ...reihen].map((z, i) => new TableRow({ children: z, tableHeader: false })) }),
     absatz('', { nach: 60 }),
   ]
 }
@@ -202,9 +202,9 @@ function stellenTafel(b: Extract<Baustein, { art: 'stellentafel' }>, breite: num
     })])
   }
   const out: (Paragraph | Table)[] = []
-  if (b.titel) out.push(kasten({ keepNext: true, children: [run(b.titel, { bold: true, color: FARBE })] }))
-  for (const pk of b.punkte ?? []) out.push(kasten({ keepNext: true, numbering: { reference: 'punkte', level: 0 }, children: mitBruch(pk) }))
-  out.push(new Table({ width: { size: breiten.reduce((a, c) => a + c, 0), type: WidthType.DXA }, columnWidths: breiten, rows: reihen.map((z) => new TableRow({ children: z, cantSplit: true })) }), absatz('', { nach: 60 }))
+  if (b.titel) out.push(kasten({ children: [run(b.titel, { bold: true, color: FARBE })] }))
+  for (const pk of b.punkte ?? []) out.push(kasten({ numbering: { reference: 'punkte', level: 0 }, children: mitBruch(pk) }))
+  out.push(new Table({ width: { size: breiten.reduce((a, c) => a + c, 0), type: WidthType.DXA }, columnWidths: breiten, rows: reihen.map((z) => new TableRow({ children: z })) }), absatz('', { nach: 60 }))
   return out
 }
 
@@ -219,7 +219,9 @@ function einBaustein(b: Baustein, breite: number): (Paragraph | Table)[] {
   if (g?.png) {
     const maxPx = PX(breite) - 8
     const natPx = (g.w! / 200) * 96   // bei 200 dpi gerendert
-    const w = Math.min(maxPx, natPx), h = (g.h! / g.w!) * w
+    let w = Math.min(maxPx, natPx), h = (g.h! / g.w!) * w
+    const maxH = 340   // ≈ 9 cm
+    if (h > maxH) { w = w * (maxH / h); h = maxH }
     return [new Paragraph({ children: [new ImageRun({ type: 'png', data: g.png, transformation: { width: Math.round(w), height: Math.round(h) } })], spacing: { after: 100 } })]
   }
   switch (b.art) {
@@ -227,21 +229,21 @@ function einBaustein(b: Baustein, breite: number): (Paragraph | Table)[] {
       aufgabeNr++
       const punkte = '●'.repeat(b.stufe ?? 1) + '○'.repeat(3 - (b.stufe ?? 1))
       const p = [new Paragraph({ heading: HeadingLevel.HEADING_3, numbering: { reference: 'aufgaben', level: 0, instance: lektionNr }, children: [run(punkte + '  ', { color: FARBE, size: 18 }), ...mitBruch(b.text)] })]
-      if (b.hinweis) p.push(absatz(b.hinweis, { italics: true, size: 20, color: '5A6170', keepNext: true }))
+      if (b.hinweis) p.push(absatz(b.hinweis, { italics: true, size: 20, color: '5A6170' }))
       return p
     }
     case 'text':
-      return [absatz(b.text, { size: b.klein ? 18 : undefined, color: b.klein ? '5A6170' : undefined, keepNext: /:\s*$/.test(b.text) })]
+      return [absatz(b.text, { size: b.klein ? 18 : undefined, color: b.klein ? '5A6170' : undefined })]
     case 'info': {
       const inhalt: Paragraph[] = []
-      if (b.titel) inhalt.push(kasten({ keepNext: true, spacing: { before: 120, after: 40 }, children: [run(b.titel, { bold: true, color: FARBE })] }))
-      if (b.text) inhalt.push(kasten({ keepNext: !!b.punkte?.length, spacing: { after: 40 }, children: mitBruch(b.text) }))
+      if (b.titel) inhalt.push(kasten({ spacing: { before: 120, after: 40 }, children: [run(b.titel, { bold: true, color: FARBE })] }))
+      if (b.text) inhalt.push(kasten({ spacing: { after: 40 }, children: mitBruch(b.text) }))
       for (const pkt of b.punkte ?? []) inhalt.push(kasten({ numbering: { reference: 'punkte', level: 0 }, spacing: { after: 30 }, children: mitBruch(pkt) }))
       return [...inhalt, absatz('', { nach: 60 })]
     }
     case 'schritte':
       return b.items.flatMap((s, i) => [
-        new Paragraph({ keepNext: true, spacing: { before: 60, after: 20 }, children: [run(`${i + 1}  `, { bold: true, color: FARBE }), run(s.titel, { bold: true })] }),
+        new Paragraph({ spacing: { before: 60, after: 20 }, children: [run(`${i + 1}  `, { bold: true, color: FARBE }), run(s.titel, { bold: true })] }),
         ...(s.text ? [absatz(s.text, { size: 20, color: '3A404C' })] : []),
       ])
     case 'paeckchen': {
@@ -306,12 +308,12 @@ function einBaustein(b: Baustein, breite: number): (Paragraph | Table)[] {
       // Rechenkästchen als Tabelle mit 0,5-cm-Zellen – man kann hineinschreiben oder Zeilen ergänzen
       const zb = 284, n = Math.floor(breite / zb), gitter = rand(BorderStyle.SINGLE, 2, 'C9D3E0')
       const out: (Paragraph | Table)[] = []
-      if (b.label) out.push(absatz(b.label, { size: 20, color: '5A6170', keepNext: true }))
+      if (b.label) out.push(absatz(b.label, { size: 20, color: '5A6170' }))
       out.push(new Table({ width: { size: zb * n, type: WidthType.DXA }, columnWidths: Array(n).fill(zb), rows: Array(Math.max(1, b.zeilen)).fill(0).map(() => new TableRow({ height: { value: zb, rule: 'exact' }, children: Array(n).fill(0).map(() => new TableCell({ children: [new Paragraph('')], width: { size: zb, type: WidthType.DXA }, borders: { top: gitter, bottom: gitter, left: gitter, right: gitter } })) })) }), absatz('', { nach: 60 }))
       return out
     }
     case 'seitenumbruch':
-      return [new Paragraph({ children: [new PageBreak()] })]
+      return []   // im PDF gesetzt, damit eine Seite voll wird – im Word fließt der Text, ein fester Umbruch gäbe fast leere Seiten
     default:
       return [absatz(`[${b.art}]`, { italics: true, color: '9AA0AC' })]
   }
@@ -339,7 +341,7 @@ const seite = { page: { size: { width: 11906, height: 16838 }, margin: { top: 90
 function lektionKopf(modul: Modul, l: { id: string; nr: number; thema: number }, b: Blatt, zusatz = ''): Paragraph[] {
   lektionNr++
   return [
-    absatz(`LEKTION ${l.nr}${zusatz}   ·   Mathe · Modul ${modul.nr} · ${modul.themen[l.thema].titel.de}`, { size: 16, bold: true, color: FARBE, nach: 60, keepNext: true }),
+    new Paragraph({ pageBreakBefore: true, keepNext: true, spacing: { after: 60 }, children: [run(`LEKTION ${l.nr}${zusatz}   ·   Mathe · Modul ${modul.nr} · ${modul.themen[l.thema].titel.de}`, { size: 16, bold: true, color: FARBE })] }),
     new Paragraph({ heading: HeadingLevel.HEADING_1, children: [run(b.de.titel)] }),
     ...(modul.lernziele[l.id]?.de ? [new Paragraph({ spacing: { after: 160 }, children: [run('Mein Ziel: ', { bold: true, color: FARBE }), run(modul.lernziele[l.id].de)] })] : []),
   ]
@@ -367,10 +369,10 @@ async function heft(modul: Modul) {
   for (const l of lektionen) {
     const b = blaetter.get(l.id)!
     aufgabeNr = 0
-    kinder.push(new Paragraph({ children: [new PageBreak()] }), ...lektionKopf(modul, l, b), ...wandle(b.de.bausteine, BREITE))
+    kinder.push(...lektionKopf(modul, l, b), ...wandle(b.de.bausteine, BREITE))
   }
   // Anhang: Wortschatz
-  kinder.push(new Paragraph({ children: [new PageBreak()] }), new Paragraph({ heading: HeadingLevel.HEADING_1, children: [run('Wortschatz · Vocabulaire')] }))
+  kinder.push(new Paragraph({ heading: HeadingLevel.HEADING_1, pageBreakBefore: true, children: [run('Wortschatz · Vocabulaire')] }))
   const wb = Math.floor(BREITE / 2)
   modul.themen.forEach((th, ti) => {
     const w = modul.wortschatz.filter((x) => x.thema === ti)
@@ -386,7 +388,7 @@ async function heft(modul: Modul) {
   const lk: (Paragraph | Table)[] = [new Paragraph({ spacing: { after: 160 }, children: [run(`${titel} – Lösungen und Hinweise`, { bold: true, size: 40 })] })]
   for (const l of lektionen) {
     const b = blaetter.get(l.id)!, L = b.de.lehrer
-    lk.push(new Paragraph({ children: [new PageBreak()] }), ...lektionKopf(modul, l, b, ' · FÜR DIE LEHRPERSON'))
+    lk.push(...lektionKopf(modul, l, b, ' · FÜR DIE LEHRPERSON'))
     if (L.ziel) lk.push(h2('Ziel'), absatz(L.ziel))
     if (L.ablauf?.length) lk.push(h2('Ablauf'), ...L.ablauf.map((a) => new Paragraph({ numbering: { reference: 'zahlen', level: 0 }, children: [run(a)], spacing: { after: 40 } })))
     if (L.loesungen?.length) lk.push(h2('Lösungen'), ...L.loesungen.map((s) => absatz(s, { size: 20, nach: 40 })))
