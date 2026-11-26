@@ -1,4 +1,4 @@
-// Mathe-Modulhefte (Voie de préparation, Module 1–6) – gemeinsamer Baukasten.
+// Mathe-Modulhefte (Voie de préparation, Module 1–9) – gemeinsamer Baukasten.
 // Grundlage: das Mathe-Programm des Klassenbuchs (daten/mathe-programm.json, nach dem CNES-Referenzrahmen
 // „Mathématiques – voie préparatoire“). Jede Lektion wird zu: Los geht’s (gemeinsam rechnen) · Verstehen (Erklärung
 // zum Mitlesen) · Rechnen im Alltag (Szene zum Lesen) · Merken (Merksatz, Vorgehen, Musterlösungen, weitere Beispiele) ·
@@ -52,7 +52,7 @@ export function matheModul(nr, extra) {
   const m = PROGRAMM.module[nr - 1]
   const tief = extra.farbe || m.farbe
   return {
-    id: `mathe-m${nr}`, kuerzel: `ma${nr}`, nr, sprache: 'de', niveau: `Modul ${nr} von 6`, klasse: 'Voie de préparation',
+    id: `mathe-m${nr}`, kuerzel: `ma${nr}`, nr, sprache: 'de', niveau: `Modul ${nr} von ${PROGRAMM.module.length}`, klasse: 'Voie de préparation',
     dateiname: `Mathe_Modul-${nr}`,
     fach: { de: 'Mathematik', fr: 'Mathématiques' },
     titel: { de: m.titel.replace(/ & /g, ' und '), fr: extra.titelFr },
