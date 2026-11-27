@@ -4193,7 +4193,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (sky.sun && sky.sun.isLight) sky.sun.intensity *= 1 - 0.5 * regenJetzt;
     sky.hemi.intensity *= 1 - 0.15 * regenJetzt; fuellLicht.intensity *= 1 - 0.6 * regenJetzt;
   }
-  const loop = createLoop({ render: () => { if (ui.ebeneArt && ['spiel', 'szene', 'journal', 'handy', 'raus', 'ende', 'laden', 'skills', 'karte'].includes(ui.ebeneArt()) && (ruheN++ % 20)) return; rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light }); } });
+  const loop = createLoop({ render: () => { if (ui.taktRuhe) { if (ui.ebeneArt && ui.ebeneArt() === 'szene') return; ui.taktRuhe = false; } if (ui.ebeneArt && ['spiel', 'szene', 'journal', 'handy', 'raus', 'ende', 'laden', 'skills', 'karte'].includes(ui.ebeneArt()) && (ruheN++ % 20)) return; rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light }); } });
   loop.add(() => input.beginFrame(), { order: -100, always: true });
   loop.add((dt) => {
     // Titelbild: langsame Kamerafahrt um die Schule (AAA: lebendiges Menü statt Standbild); bei „Weniger Bewegung“ fest

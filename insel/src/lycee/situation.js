@@ -742,8 +742,9 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
         const N = 10, t0 = performance.now() + 900, schlaege = []; let tb = t0, aus = false;
         for (let i = 0; i < N; i++) { const iv = def.hetzen && i >= (def.hetzen.ab || 5) ? 540 : 820; schlaege.push(tb); tb += iv; }
         const getroffen = new Array(N).fill(null);
-        const zug = () => {
-          if (aus) return; const t = performance.now();
+        // Gewertet wird der Moment des Tippens (Zeitstempel des Ereignisses), nicht wann das iPad dazu kommt, es zu verarbeiten
+        const zug = (e) => {
+          if (aus) return; const jetzt = performance.now(), t = e && e.timeStamp > 0 && jetzt - e.timeStamp >= 0 && jetzt - e.timeStamp < 500 ? e.timeStamp : jetzt;
           let j = -1, best = 1e9; schlaege.forEach((s, i) => { if (getroffen[i] == null && Math.abs(t - s) < best) { best = Math.abs(t - s); j = i; } });
           if (j < 0 || best > 420) return;
           getroffen[j] = best < 150 ? 0 : best < 290 ? (j % 2 ? -2 : 2) : (j % 2 ? -6 : 6);
@@ -751,15 +752,19 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
           saege.classList.remove('zug'); void saege.offsetWidth; saege.classList.add('zug');
           schnitt = getroffen.filter((v) => v != null); zeichne();
         };
-        saege.onclick = zug;
-        halte((e) => { if (e.code === 'Space' || e.code === 'KeyE') { e.preventDefault(); e.stopPropagation(); zug(); } });
+        // Touch: schon beim Aufsetzen des Fingers (ein Klick kommt erst beim Loslassen, also zu spät für den Takt)
+        let perFinger = 0;
+        saege.onpointerdown = (e) => { if (e.pointerType === 'mouse' && e.button) return; e.preventDefault(); perFinger = performance.now(); zug(e); };
+        saege.onclick = (e) => { if (performance.now() - perFinger < 600) return; zug(e); };
+        halte((e) => { if (e.code === 'Space' || e.code === 'KeyE') { e.preventDefault(); e.stopPropagation(); if (!e.repeat) zug(e); } });
+        ui.taktRuhe = true;   // die 3D-Welt hinter dem Fenster ruht, solange im Takt gesägt wird (gleichmäßige Bilder auf dem iPad)
         let gehetzt = false;
         const tick = () => {
           if (aus) return; const t = performance.now();
           const nah = schlaege.some((s) => Math.abs(t - s) < 110);
           takt.classList.toggle('an', nah);
           if (def.hetzen && !gehetzt && t > schlaege[def.hetzen.ab || 5] - 900) { gehetzt = true; sag(def.hetzen.wer || 'Jo', 'Schneller! Die anderen sind schon beim Schrauben.', def.hetzen.farbe); }
-          if (t > schlaege[N - 1] + 450) { aus = true; loesche(); schlaege.forEach((s, i) => { if (getroffen[i] == null) getroffen[i] = i % 2 ? -3 : 3; });
+          if (t > schlaege[N - 1] + 450) { aus = true; ui.taktRuhe = false; loesche(); schlaege.forEach((s, i) => { if (getroffen[i] == null) getroffen[i] = i % 2 ? -3 : 3; });
             // Bild passend zur Wertung: gerade = kleine Zacken, die sich ausgleichen; sonst läuft der Schnitt zu einer Seite weg
             schnitt = gut >= 6 ? getroffen.map((v, i) => (v ? (i % 2 ? -1 : 1) * Math.min(Math.abs(v), 2) : 0)) : getroffen.map((v) => Math.abs(v)); zeichne(); fertig(); return; }
           requestAnimationFrame(tick);
@@ -775,24 +780,27 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       info.textContent = '3 · Schrauben. Halten, bis die Anzeige im grünen Feld ist. Dann loslassen.';
       leiste.innerHTML = '<div class="sz-wb-kraft"><span class="gruen"></span><i></i></div><button type="button" class="sz-wb-saege">🔩 Halten <kbd>Leertaste</kbd></button>';
       const kraft = leiste.querySelector('.sz-wb-kraft i'), dreh = leiste.querySelector('.sz-wb-saege');
+      ui.taktRuhe = true;   // auch beim Schrauben ruht die 3D-Welt dahinter
       for (let s = 0; s < 4; s++) {
         stand.textContent = 'Schraube ' + (s + 1) + ' von 4';
         const g = await new Promise((fertig) => {
           let start = 0, an = false, aus = false, v = 0;
-          const auf = (e) => { if (e.code === 'Space' || e.code === 'KeyE') lass(); };
-          const los = () => { if (aus || an) return; an = true; start = performance.now(); requestAnimationFrame(fuell); };
-          const lass = () => { if (aus || !an) return; aus = true; loesche(); document.removeEventListener('keyup', auf, true); dreh.onpointerdown = dreh.onpointerup = dreh.onpointerleave = null; fertig(v < 62 ? 'locker' : v <= 84 ? 'gut' : 'zu'); };
+          // Zeit des Ereignisses (Finger auf / Finger weg), nicht des nächsten Bildes – fair auch auf einem langsamen iPad
+          const zeit = (e) => { const j = performance.now(); return e && e.timeStamp > 0 && j - e.timeStamp >= 0 && j - e.timeStamp < 500 ? e.timeStamp : j; };
+          const auf = (e) => { if (e.code === 'Space' || e.code === 'KeyE') lass(e); };
+          const los = (e) => { if (aus || an) return; an = true; start = zeit(e); requestAnimationFrame(fuell); };
+          const lass = (e) => { if (aus || !an) return; aus = true; if (e) { v = Math.min(100, Math.max(0, (zeit(e) - start) / 1000 * 62)); kraft.style.width = v + '%'; } loesche(); document.removeEventListener('keyup', auf, true); dreh.onpointerdown = dreh.onpointerup = dreh.onpointerleave = null; fertig(v < 62 ? 'locker' : v <= 84 ? 'gut' : 'zu'); };
           const fuell = () => { if (aus) return; v = Math.min(100, (performance.now() - start) / 1000 * 62); kraft.style.width = v + '%'; kraft.style.background = v < 62 ? '#e9a23b' : v <= 84 ? '#3fa66b' : '#d6452f'; if (v >= 100) { lass(); return; } requestAnimationFrame(fuell); };
           kraft.style.width = '0%';
-          dreh.onpointerdown = (e) => { e.preventDefault(); los(); }; dreh.onpointerup = lass; dreh.onpointerleave = lass;
-          halte((e) => { if (e.code === 'Space' || e.code === 'KeyE') { e.preventDefault(); e.stopPropagation(); if (e.type === 'keydown' && !e.repeat) los(); } });
+          dreh.onpointerdown = (e) => { e.preventDefault(); los(e); }; dreh.onpointerup = lass; dreh.onpointerleave = lass;
+          halte((e) => { if (e.code === 'Space' || e.code === 'KeyE') { e.preventDefault(); e.stopPropagation(); if (e.type === 'keydown' && !e.repeat) los(e); } });
           document.addEventListener('keyup', auf, true);
         });
         schrauben.push(g); zeichne();
         stand.textContent = g === 'gut' ? 'Sitzt.' : g === 'locker' ? 'Zu locker. Wackelt.' : 'Zu fest. Das Holz ist gerissen.';
         await warte(700);
       }
-      leiste.innerHTML = '';
+      leiste.innerHTML = ''; ui.taktRuhe = false;
       const massOk = Math.abs(mass - SOLL) < 0.6, schraubenGut = schrauben.filter((g) => g === 'gut').length;
       const gerade = massOk && schnittGerade && schraubenGut >= 3;
       info.textContent = gerade ? 'Fertig. Die Bank steht gerade.' : !massOk ? 'Fertig. Ein Bein ist ' + Math.abs(Math.round((mass - SOLL) * 10) / 10).toString().replace('.', ',') + ' cm ' + (mass > SOLL ? 'länger' : 'kürzer') + '. Die Bank wackelt.' : 'Fertig. Die Bank wackelt ein bisschen.';
