@@ -2395,7 +2395,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         if (x.f) for (const k of x.f.group.children) if (k.userData && k.userData.namensschild && k.visible) { vorher.push([k, true]); k.visible = false; }   // Namensschilder gehören nicht ins Foto
         const innen = x.f && x.f.group.visible && x.f.group.children[0]; if (!innen) continue;
         vorher.push([innen, innen.visible]);
-        if (imBild(x.f, x.f.group.position) && !vorher[vorher.length - 1][1] && x.f.update) try { x.f.update(0.05); } catch (e) { /* Haltung später */ }   // nicht animierte Figuren: einmal in ihre Haltung
+        if (imBild(x.f, x.f.group.position) && (!vorher[vorher.length - 1][1] || !x.f.__fotoBereit) && x.f.update) try { x.f.update(vorher[vorher.length - 1][1] ? 0.001 : 0.05); x.f.__fotoBereit = true; } catch (e) { /* Haltung später */ }   // gerade erst erschienen: noch nie bewegt → sonst T-Pose im Foto   // nicht animierte Figuren: einmal in ihre Haltung
         const gl = x.f.group.getObjectByName('handyGlanz'); if (gl && !gl.visible) { vorher.push([gl, false]); gl.visible = true; }   // Handy-Bildschirme leuchten im Foto
       }
       rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light });

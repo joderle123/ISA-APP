@@ -20,7 +20,7 @@ const HALLE = { sommer: [45.2, -12.6, Math.PI], ben: [42, -16, 0.4], yusuf: [43.
 // Gang vor der Halle (Tür bei z −6): Yusuf mit dem Rücken zur Wand, die anderen im Halbkreis
 const GANG = { yusuf: [45.6, -3.4, 0.2, 'redet'], jo: [48.2, -2.2, -1.9], ayla: [49.0, -1.0, -2.2], chiara: [43.0, -1.2, 2.0], mila: [42.6, -2.6, 1.6], lina: [41.8, -0.6, 2.4], manon: [50.0, -2.8, -1.6], sommer: [46.0, -9.0, 0] };
 // Große Pause im Hof (Montag 9:50): fünf Inseln
-const PAUSE_HOF = { kaya: [0.7, 5.6, Math.PI], yusuf: [28.6, 20.4, -1.2, 'handy'], manon: [-6.4, 9.2, 0.6], mila: [-10.6, 15.0, 2.4, 'redet'], lina: [-9.6, 16.0, -2.6, 'redet'], ben: [-2.6, 27.6, Math.PI, 'sitzt'], jo: [6.0, 15.2, -2.4, 'redet'], ayla: [7.6, 16.4, -2.0, 'redet'] };
+const PAUSE_HOF = { kaya: [0.7, 5.6, Math.PI], kenan: [-35.0, 10.4, 0.6], dario: [-32.6, 12.9, 1.2, 'handy'], yusuf: [28.6, 20.4, -1.2, 'handy'], manon: [-6.4, 9.2, 0.6], mila: [-10.6, 15.0, 2.4, 'redet'], lina: [-9.6, 16.0, -2.6, 'redet'], ben: [-2.6, 27.6, Math.PI, 'sitzt'], jo: [6.0, 15.2, -2.4, 'redet'], ayla: [7.6, 16.4, -2.0, 'redet'] };
 // Wer den letzten Pass nicht fängt: der Müdeste, den du aufgestellt hast (Ben nach einer Nacht am Handy, sonst Noah …)
 const UNSICHER = ['ben', 'noah', 'lina', 'mila', 'manon', 'chiara', 'ayla', 'jo'];
 export const letzterFaenger = (team, m) => UNSICHER.filter((id) => !(id === 'ben' && m.benWach)).find((id) => team.includes(id)) || team[team.length - 1];
@@ -40,8 +40,8 @@ export const SCHRITTE_N3 = [
     start: { teleport: 'eingangHof', gespraech: 'n3_checkin' },
     leute: { kaya: [-14.50, -65.40, 0.00], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n3_pantomime' } },
-  // 3 · Montag 9:50: Pause = ein Ort (Umbau). Kreide-Wörter, Yusuf am Korb, Manon, Ben. Störung: Yusuf schlägt gegen den Korbständer.
-  { id: 'k3_pause', kap: 3, tag: 'Montag', uhr: 9.83, titel: 'Wörter mit Kreide', ziel: 'Große Pause. Wo bist du?', marker: null,
+  // 3 · Montag 9:50: Pause = ein Ort (Umbau). Skate-Ecke (7P1, Darios Handy), Yusuf am Korb, Manon, Ben.
+  { id: 'k3_pause', kap: 3, tag: 'Montag', uhr: 9.83, titel: 'Große Pause', ziel: 'Große Pause. Wo bist du?', marker: null,
     start: { teleport: 'eingangHof', gespraech: 'n3_pause' },
     leute: PAUSE_HOF,
     fertig: { nachStart: true } },
@@ -190,53 +190,49 @@ export const GESPRAECHE_N3 = {
       mission: 'Merk dir einmal: Wo spürst du Wut?' }, folgen: {} },
   ],
 
-  // ---------- 3 · Montag 9:50: Freier Moment – Werkzeug „Mischpult“, Wörter-Jagd ----------
+  // ---------- 3 · Montag 9:50: Pause = ein Ort. Skate-Ecke: die 7P1 lästert über Yusuf, du hältst Darios Handy ----------
   n3_pause: [
     { foto: 'k3ManonPause', wer: 'manon', von: [2.2, 1.5, 1.8], auf: [0, 1.0, 0], fov: 42 },
     { szene: 'orte', id: 'pauseOrt3', pruefe: false,
-      def: { titel: 'Große Pause · 9:50', info: 'Überall im Hof stehen Wörter mit Kreide. Du kannst nur an einem Ort sein.',
+      def: { titel: 'Große Pause · 9:50', info: 'Mittwoch ist Turnier gegen die 7P1. Du kannst nur an einem Ort sein.',
         orte: [
-          { id: 'kaya', sy: '🖍', name: 'Wörter-Jagd', wer: 'Herr Kuedes und die Kreide-Wörter.', bild: { wer: 'kaya', von: [1.8, 1.7, -2.2], auf: [0, 1.2, 0], fov: 46 } },
+          { id: 'skate', sy: '🛹', name: 'Skate-Ecke', wer: 'Die 7P1. Sie reden übers Turnier.', bild: { wer: 'kenan', von: [4.2, 1.7, -0.8], auf: [1.2, 1.1, 1.2], fov: 50 } },
           { id: 'yusuf', sy: '🏀', name: 'Korb', wer: 'Yusuf wirft allein. Sehr hart.', bild: { wer: 'yusuf', von: [-3.6, 2.1, -3.2], auf: [0, 1.5, 0], fov: 50 } },
           { id: 'manon', sy: '📖', name: 'Manon', wer: 'Mit dem Wörterbuch am Rand.', bild: 'k3ManonPause' },
           { id: 'ben', sy: '🪑', name: 'Eure Bank', wer: 'Ben. Die Augen halb zu.', bild: { wer: 'ben', von: [0.5, 1.4, -2.0], auf: [0, 0.9, 0], fov: 44 } },
         ] },
       ausgang: (r) => r.ort,
       folgen: {
-        kaya: { merke: 'pause3Woerter', dann: [{ hin: { du: [1.2, 7.4, Math.PI] } }, ['kaya', 'Wütend kennt jeder. Aber genervt, gekränkt, beschämt – das sind andere Wörter.'], { tu: 'n3_wortJagd' }] },
+        skate: { merke: 'pause3Skate', dann: [{ hin: { du: [-32.0, 10.0, -1.5] } }, { tu: 'n3_zuSkate' }] },
         yusuf: { merke: 'pause3Yusuf', dann: [{ tu: 'n3_zuYusuf' }] },
         manon: { merke: 'pause3Manon', dann: [{ hin: { du: [-5.4, 10.4, -2.4] } }, { tu: 'n3_zuManon' }] },
         ben: { merke: 'pause3Ben', dann: [{ hin: { du: [-3.4, 26.4, 0.4] } }, { tu: 'n3_zuBen' }] },
       } },
     { tu: 'n3_waehrenddessen' },
-    ['erzaehler', 'Es klingelt. Die Wörter bleiben im Hof stehen. Bis es regnet.'],
+    ['erzaehler', 'Es klingelt. Noch zwei Tage bis zum Turnier.'],
   ],
-  n3_woerter: [
-    ['kaya', 'Vier Wörter. Vier Leute im Hof. Wer fühlt was?'],
-    ['kaya', 'Yusuf am Korb. Er wirft und schaut dauernd aufs Handy.'],
+  // Skate-Ecke: Kenan lästert über Yusuf („der Bissige“ – dasselbe Wort steht am Freitag unter dem Foto).
+  // Du filmst Kenans Trick mit Darios Handy: unten links im Bild ein heller Streifen. Dario nimmt das Handy schnell zurück.
+  n3_skate: [
+    ['kenan', '(stoppt das Brett mit dem Fuß) 7P2! Mittwoch spielt ihr gegen uns.'],
+    ['kenan', 'Wer ist euer Bester? Der Bissige?'],
+    { beweis: 'k3Bissig', t: 'Kenan (7P1) nennt Yusuf „den Bissigen“.' },
+    ['erzaehler', 'Zwei aus der 7P1 lachen. Dario nicht. Er schaut auf sein Handy.'],
     { wahl: [
-      { t: 'gelangweilt', dann: [['kaya', 'Gelangweilt wirft man nicht so hart.']] },
-      { t: 'angespannt', merke: 'wortAngespannt', dann: [['kaya', 'Angespannt. Wie eine Feder. Gutes Wort.'], { tu: 'n3_wort' }] },
-      { t: 'fröhlich', dann: [['kaya', 'Schau noch mal auf sein Gesicht.']] },
+      { t: '„Lass Yusuf da raus.“', staerke: 'klar', merke: 'k3SkateYusuf', dann: [['kenan', 'Uh. Ein Beschützer.'], ['dario', '(schaut kurz hoch. Zu dir.)']] },
+      { t: '(Mitlachen.)', merke: 'k3SkateGelacht', dann: [['kenan', 'Siehst du. Mit dir kann man reden.']] },
+      { t: '(Nichts sagen.)', dann: [['kenan', '(zuckt mit den Schultern) War nur Spaß.']] },
     ] },
-    ['kaya', 'Manon, am Rand, mit dem Wörterbuch.'],
-    { wahl: [
-      { t: 'wütend', dann: [['kaya', 'Wut ist heiß. Sie sieht eher klein aus. Eng.']] },
-      { t: 'stolz', dann: [['kaya', 'Stolz steht man anders. Mitten im Hof.']] },
-      { t: 'verloren', merke: 'wortVerloren', dann: [['kaya', 'Verloren. Auf Französisch: perdue.'], { tu: 'n3_wort' }] },
-    ] },
-    ['kaya', 'Ben auf eurer Bank. Die Augen halb zu.'],
-    { wahl: [
-      { t: 'erschöpft', merke: 'wortErschoepft', dann: [['kaya', 'Erschöpft. Nicht faul. Das ist ein Unterschied.'], { tu: 'n3_wort' }] },
-      { t: 'eifersüchtig', dann: [['kaya', 'Auf wen? Er schläft fast.']] },
-      { t: 'neugierig', dann: [['kaya', 'Neugierig macht wach. Er ist das Gegenteil.']] },
-    ] },
-    ['kaya', 'Lina und Mila. Lina hält ihr Heft zu, Mila will reinschauen.'],
-    { wahl: [
-      { t: 'Beide: wütend.', dann: [['kaya', 'Dann würden sie nicht so nah beieinander stehen.']] },
-      { t: 'Lina: verlegen. Mila: neugierig.', merke: 'wortVerlegen', dann: [['kaya', 'Zwei Leute, zwei Gefühle. Und beide gleichzeitig. Genau so.'], { tu: 'n3_wort' }, { tu: 'n3_wort' }] },
-    ] },
-    { tu: 'n3_woerterStand' },
+    ['kenan', 'Egal. Film meinen Trick! Dario, gib dein Handy.'],
+    ['dario', '(zögert) … Nur kurz.'],
+    { handy: { wer: 'Darios Handy · Kamera', wann: 'jetzt', foto: { wer: 'kenan', von: [0.9, 0.6, 1.5], auf: [0, 1.2, 0], fov: 52 }, streifen: true,
+      alt: 'Kenan auf dem Brett, von unten gefilmt. Unten links ein heller Streifen.', text: '● REC 0:04' } },
+    ['kenan', '(landet halb) Nochmal! Und nimm den Finger weg. Da ist was im Bild.'],
+    ['du', 'Das ist nicht mein Finger.'],
+    ['dario', '(nimmt dir das Handy schnell ab) Die Hülle. Gesprungen. Gib her.'],
+    { handy: null },
+    { beweis: 'k3Huelle', t: 'Darios Handy: Hülle unten links gesprungen. Im Bild ein heller Streifen.' },
+    ['erzaehler', 'Dario steckt das Handy ein. Den Rest filmt keiner mehr.'],
   ],
   n3_pauseYusuf: [
     ['erzaehler', 'Yusuf wirft allein. Nach jedem Wurf schaut er aufs Handy. Auf die Uhrzeit.'],
@@ -353,6 +349,17 @@ export const GESPRAECHE_N3 = {
       { t: '„Von oben. Aus einem Fenster.“', merke: 'k3KameraFalsch', dann: [['mila', 'Dann sähe man seinen Kopf von oben. Man sieht aber sein Kinn.']] },
       { t: '„Egal. Ich lösch es.“', merke: 'k3FotoGeloescht', dann: [['erzaehler', 'Gelöscht. Bei dir. Bei den anderen nicht.']] },
     ] },
+    // Wer in der Pause an der Skate-Ecke war, hat etwas in der Hand. Aber nur eins davon ist eine Spur.
+    { wenn: (m, S) => !!((S.galerie || {}).k3Huelle || (S.galerie || {}).k3Bissig), dann: [
+      ['mila', 'Hast du diese Woche was gesehen? Irgendwas?'],
+      { wahl: [
+        { t: '📎 Darios Hülle. Gesprungen.', beweis: 'k3Huelle', staerke: 'lesen', merke: 'k3HuelleErkannt',
+          dann: [['mila', '(leise) Unten links? Genau da, wo der Streifen ist?'], ['mila', 'Kaputte Hüllen gibt es viele. Aber ich schreib es auf.'], { tu: 'n3_huelle' }] },
+        { t: '📎 Kenan sagt „der Bissige“.', beweis: 'k3Bissig', merke: 'k3BissigGesagt',
+          dann: [['mila', 'Das Wort kann jeder nachmachen. Einen Streifen nicht.'], { verdacht: 'kenan', spur: 'Nennt Yusuf „den Bissigen“. Wie im Post.' }] },
+        { t: '(Nichts sagen.)', dann: [['mila', 'Okay. Wenn dir noch was einfällt …']] },
+      ] },
+    ] },
     { warum: true, wahl: [
       { t: 'In den Chat: „Löscht das.“', staerke: 'mut', herz: { yusuf: 1, jo: -1 }, merke: 'k3ChatStopp',
         dann: [['erzaehler', 'Drei Minuten passiert nichts. Dann schreibt Chiara: „Stimmt.“ Dann Noah: „👍“.'], ['yusuf', '(eine Stunde später, im Chat) Foto ist weg. Danke.']] },
@@ -423,7 +430,7 @@ export const tunN3 = (c) => ({
     return [];
   },
   // Pause = ein Ort: die Gespräche der Orte (stehen in GESPRAECHE_N3)
-  n3_wortJagd: () => GESPRAECHE_N3.n3_woerter,
+  n3_zuSkate: () => GESPRAECHE_N3.n3_skate,
   n3_zuFreiYusuf: () => GESPRAECHE_N3.n3_freiYusuf,
   n3_zuFreiManon: () => GESPRAECHE_N3.n3_freiManon,
   n3_zuFreiBen: () => GESPRAECHE_N3.n3_freiBen,
@@ -444,11 +451,6 @@ export const tunN3 = (c) => ({
     return [];
   },
   n3_wort: () => { const m = c.S.merke; m.woerter = (m.woerter || 0) + 1; return []; },
-  n3_woerterStand: () => {
-    const n = c.S.merke.woerter || 0;
-    c.ui.toast('<b>🖍 Wörter-Jagd</b><span>' + n + (n === 1 ? ' Gefühlswort' : ' Gefühlswörter') + ' gefunden.</span>', 'ly-t-ent');
-    return n >= 5 ? [['kaya', 'Fünf Wörter in einer Pause. Die meisten Erwachsenen haben drei. Für alles.']] : [];
-  },
   // Aufstellung: wer zuerst, wer übrig bleibt, wer am Ende den Pass nicht fängt
   n3_aufstellung: () => {
     const S = c.S, m = S.merke, r = (S.sz && S.sz.k3Aufstellung) || { team: [], uebrig: [] };
@@ -485,6 +487,11 @@ export const tunN3 = (c) => ({
     return [];
   },
   // Spur: der helle Streifen unten links – auf diesem Foto wie auf denen vom Account
+  n3_huelle: () => {
+    const m = c.S.merke; m.spurStreifen = true; m.spurHuelle = true;
+    c.ui.toast('<b>🔎 Spur</b><span>Darios Hülle ist unten links gesprungen. Genau da sitzt der Streifen.</span>', 'ly-t-ent');
+    return [{ verdacht: 'dario', spur: 'Hülle unten links gesprungen. Der helle Streifen sitzt genau da.' }];
+  },
   n3_streifen: () => { c.S.merke.spurStreifen = true; c.ui.toast('<b>🔎 Spur</b><span>Ein heller Streifen unten links. Auf dem Foto von Yusuf – und auf den Fotos vom Account.</span>', 'ly-t-ent'); return []; },
   n3_manonFreitag: () => {
     const n = c.S.merke.manonAngekommen || 0;
