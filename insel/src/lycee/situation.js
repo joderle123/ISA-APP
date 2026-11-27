@@ -746,7 +746,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
           if (aus) return; const t = performance.now();
           let j = -1, best = 1e9; schlaege.forEach((s, i) => { if (getroffen[i] == null && Math.abs(t - s) < best) { best = Math.abs(t - s); j = i; } });
           if (j < 0 || best > 420) return;
-          getroffen[j] = best < 150 ? 0 : best < 290 ? (Math.random() < 0.5 ? -2 : 2) : (Math.random() < 0.5 ? -6 : 6);
+          getroffen[j] = best < 150 ? 0 : best < 290 ? (j % 2 ? -2 : 2) : (j % 2 ? -6 : 6);
           if (best < 150) gut++;
           saege.classList.remove('zug'); void saege.offsetWidth; saege.classList.add('zug');
           schnitt = getroffen.filter((v) => v != null); zeichne();
@@ -759,14 +759,17 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
           const nah = schlaege.some((s) => Math.abs(t - s) < 110);
           takt.classList.toggle('an', nah);
           if (def.hetzen && !gehetzt && t > schlaege[def.hetzen.ab || 5] - 900) { gehetzt = true; sag(def.hetzen.wer || 'Jo', 'Schneller! Die anderen sind schon beim Schrauben.', def.hetzen.farbe); }
-          if (t > schlaege[N - 1] + 450) { aus = true; loesche(); schlaege.forEach((s, i) => { if (getroffen[i] == null) getroffen[i] = Math.random() < 0.5 ? -3 : 3; }); schnitt = getroffen; zeichne(); fertig(); return; }
+          if (t > schlaege[N - 1] + 450) { aus = true; loesche(); schlaege.forEach((s, i) => { if (getroffen[i] == null) getroffen[i] = i % 2 ? -3 : 3; });
+            // Bild passend zur Wertung: gerade = kleine Zacken, die sich ausgleichen; sonst läuft der Schnitt zu einer Seite weg
+            schnitt = gut >= 6 ? getroffen.map((v, i) => (v ? (i % 2 ? -1 : 1) * Math.min(Math.abs(v), 2) : 0)) : getroffen.map((v) => Math.abs(v)); zeichne(); fertig(); return; }
           requestAnimationFrame(tick);
         };
         requestAnimationFrame(tick);
       });
-      const schief = Math.abs(schnitt.reduce((a, b) => a + b, 0));
       leiste.innerHTML = ''; bühne.innerHTML = '';
-      stand.textContent = gut >= 7 ? 'Der Schnitt ist gerade.' : gut >= 4 ? 'Der Schnitt läuft ein bisschen.' : 'Der Schnitt ist schief.';
+      // Fair (Test 26.11.): Ob der Schnitt gerade ist, hängt nur an den sauberen Zügen – nicht am Zufall der Abweichungen
+      const schnittGerade = gut >= 6;
+      stand.textContent = schnittGerade ? 'Der Schnitt ist gerade.' : gut >= 3 ? 'Der Schnitt läuft ein bisschen.' : 'Der Schnitt ist schief.';
       await warte(1200);
       // 3 · Schrauben: halten, im grünen Bereich loslassen
       info.textContent = '3 · Schrauben. Halten, bis die Anzeige im grünen Feld ist. Dann loslassen.';
@@ -791,7 +794,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       }
       leiste.innerHTML = '';
       const massOk = Math.abs(mass - SOLL) < 0.6, schraubenGut = schrauben.filter((g) => g === 'gut').length;
-      const gerade = massOk && gut >= 5 && schief <= 8 && schraubenGut >= 3;
+      const gerade = massOk && schnittGerade && schraubenGut >= 3;
       info.textContent = gerade ? 'Fertig. Die Bank steht gerade.' : !massOk ? 'Fertig. Ein Bein ist ' + Math.abs(Math.round((mass - SOLL) * 10) / 10).toString().replace('.', ',') + ' cm ' + (mass > SOLL ? 'länger' : 'kürzer') + '. Die Bank wackelt.' : 'Fertig. Die Bank wackelt ein bisschen.';
       stand.textContent = 'Saubere Züge: ' + gut + ' von 10 · Schrauben, die sitzen: ' + schraubenGut + ' von 4';
       await knopf('<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>');
