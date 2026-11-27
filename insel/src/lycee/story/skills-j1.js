@@ -281,7 +281,7 @@ export const S4_REGULIEREN = {
   kap: 4, titel: 'Runterkommen: Welcher Skill hilft wann?', lehrer: KUEDES,
   anlass: 'Wéi geet et? Noah hat mir erlaubt, das zu erzählen: Beim letzten Test war in seinem Kopf plötzlich alles weiß. Wie ein Bildschirm ohne Strom. Er hatte gelernt. Warum war trotzdem alles weg? Und was hilft dann? Darum geht es heute.',
   karten: [
-    { sy: '🌡️', titel: 'Anspannung von 0 bis 100', text: 'Anspannung ist wie Temperatur. Sie kann steigen und wieder sinken. Wir teilen sie in drei Zonen:',
+    { sy: '🌡️', titel: 'Druck von 0 bis 100', text: 'Druck ist wie Temperatur. Sie kann steigen und wieder sinken. Wir teilen sie in drei Zonen:',
       punkte: [['🟢 0–29 Grün:', 'ruhig, klar. Ich kann denken, reden, planen.'], ['🟡 30–69 Gelb:', 'angespannt, unruhig. Denken geht noch, aber schwerer.'], ['🔴 70–100 Rot:', 'Alarm. Herz rast, Kopf leer oder laut. Denken geht kaum.']],
       gegen: 'Dieselbe Situation ist für jeden anders. Ein Test kann für dich 20 sein und für Noah 85.' },
     { sy: '✊', titel: 'Das Gehirn in der Hand', text: 'Mach eine Faust mit dem Daumen innen. Der Daumen ist die Alarmanlage im Gehirn. Sie meldet Gefahr – blitzschnell. Die Finger darüber sind das Denkhirn: Es plant, überlegt und bremst den Alarm.',
@@ -315,7 +315,7 @@ export const S4_REGULIEREN = {
             { t: 'Sich sagen: „Konzentrier dich endlich!“', warum: 'Bei Rot macht Druck den Alarm lauter. Erst runter, dann denken.' }, { t: 'Schnell weiterschreiben, egal was.', warum: 'Das hilft selten. Der Alarm bleibt an. Lieber eine Minute für den Körper.' }] },
         { text: 'Lina soll gleich vorlesen. Sie ist unruhig, der Bauch ist eng. Sie kann aber noch klar denken.', wert: 55, warum: 'Gelb. Angespannt, aber Denken geht noch.',
           skills: [{ t: 'Füße fest auf den Boden drücken und fünf Dinge im Raum anschauen.', gut: true, warum: 'Sinne holen sie ins Jetzt. Bei Gelb ist das genau richtig.' },
-            { t: 'Rausrennen.', warum: 'Flucht senkt die Zahl kurz – aber beim nächsten Mal wird die Angst größer.' }, { t: 'Sich einreden, dass es egal ist.', warum: 'Es ist ihr nicht egal. Der Satz stimmt nicht. Darum hilft er nicht.' }] },
+            { t: 'Einfach aus dem Raum rennen.', warum: 'Bei Gelb geht noch mehr. Ohne Absprache rausrennen heißt: Vorlesen fällt aus – und nächstes Mal ist die Angst größer. Die Notbremse (Hand hoch, eine Minute raus) ist für Rot.' }, { t: 'Sich einreden, dass es egal ist.', warum: 'Es ist ihr nicht egal. Der Satz stimmt nicht. Darum hilft er nicht.' }] },
         { text: 'Jo wird in der Pause ausgelacht. Er ist knallrot im Gesicht, ballt die Fäuste und will zuschlagen.', wert: 85, warum: 'Rot. Wut am oberen Ende – Zorn. Jetzt droht etwas, das er später bereut.',
           skills: [{ t: 'Weggehen. Treppe hoch und runter. Fäuste fest machen und loslassen.', gut: true, warum: 'Weggehen ist hier kein Feigling-Sein, sondern Bremsen. Bewegung baut die Wut-Energie ab.' },
             { t: 'Ruhig erklären, warum das gemein war.', warum: 'Das ist ein guter Plan – für später, bei Grün. Bei 85 wird es eher ein Schreien.' }, { t: 'Zurück beleidigen.', warum: 'Die Zahl steigt weiter. Und morgen gibt es Ärger.' }] },
@@ -627,7 +627,7 @@ export const S10_RUECKBLICK = {
   anlass: 'Wéi geet et? Ein ganzes Jahr Skills. Bevor ihr eure Briefe schreibt, schauen wir, was hängen geblieben ist. Ein Quiz – ohne Noten, ohne Punkte für mich. Nur für dich: Was weißt du schon, was schaust du noch mal im Skills-Heft nach?',
   karten: [
     { sy: '🗺️', titel: 'Dein Weg durch das Jahr', text: 'Neun Kapitel, ein roter Faden: erst sich selbst verstehen, dann mit Gefühlen umgehen, dann mit anderen.',
-      punkte: [['Ankommen und Ich:', 'Check-in, Regeln, sechs Tanks, Stärken'], ['Gefühle:', 'sechs Grundgefühle, die Angst-Familie, Körperkarte'], ['Runterkommen:', 'Zonen 0–100, erst Körper dann Kopf, STOPP'], ['Gedanken:', 'Gedanke ist nicht Tatsache, Denkfallen, neuer Satz'],
+      punkte: [['Ankommen und Ich:', 'Check-in, Regeln, sechs Tanks, Stärken'], ['Gefühle:', 'sechs Grundgefühle, die Angst-Familie, Körperkarte'], ['Druck:', 'Zonen 0–100, erst Körper dann Kopf, Ampelplan'], ['Gedanken:', 'Gedanke ist nicht Tatsache, Denkfallen, neuer Satz'],
         ['Miteinander:', 'Ich-Botschaft, Zuhören, Grenzen in Stufen, Streit-Treppe, Nein unter Druck'], ['Online und gesund:', 'KI-Fragen, Akku, schwere Geheimnisse, Bodyscan']],
       gegen: 'Alle Merkkarten findest du im Journal unter „📒 Skills-Heft“.' },
   ],

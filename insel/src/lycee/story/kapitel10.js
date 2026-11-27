@@ -56,7 +56,7 @@ const KURVE = (m) => ({
     { sy: '📋', t: 'Die Liste. Platz sechs.', dein: m.listeBeiNoah ? 'Du bist zu Noah gegangen.' : m.listeGelacht ? 'Du hast mitgelacht. Kurz.' : 'Du hast weggeschaut.' },
     { sy: '🏀', t: 'Das Turnier. Yusuf im Gang.', dein: m.k3Uhr ? 'Du hast gesagt, was du gesehen hast: die Uhr.' : m.k3Zurueck ? 'Du hast zurückgeschrien.' : m.k3Sommer ? 'Du hast Frau Sommer geholt.' : m.k3Dazwischen ? 'Du hast dich dazwischengestellt.' : 'Du bist weggegangen.' },
     { sy: '⭕', t: '8:34. Ein Kreis um deinen Kopf.', dein: m.k4FotoGezeigt ? 'Du hast gezeigt: Das Foto ist von draußen.' : m.k4LenningGeholt ? 'Du bist zu Mme Lenning gegangen.' : m.k4Ruhig ? 'Du bist stehen geblieben und hast geatmet.' : m.k4Explodiert ? 'Du bist explodiert.' : m.k4Brunnen || m.k4Gerannt ? 'Du bist weg, um runterzukommen.' : m.k4Wut ? 'Du hast zurückgeschlagen.' : 'Es hat geklingelt.' },
-    { sy: '🖼️', t: 'Der Screenshot. „Hinten links“.', dein: m.k4Ruhig ? 'Du hast einen ruhigen Satz geschrieben.' : m.k4Wut ? 'Du hast in Großbuchstaben geschrieben.' : 'Du hast nichts geschrieben.' },
+    { sy: '🖼️', t: 'Der Screenshot. „Hinten links“.', dein: m.k4Ruhig ? 'Du hast einen ruhigen Satz geschrieben.' : m.k4Wut || m.k4WutSpaet ? 'Du hast in Großbuchstaben geschrieben.' : 'Du hast nichts geschrieben.' },
     { sy: '✋', t: 'Luca filmt Mila.', dein: m.k6Eingegriffen ? 'Du hast etwas getan.' : 'Du hast weggeschaut.' },
     { sy: '🗳️', t: 'Die Abstimmung.', dein: 'Danach war dein Handy still.' },
     { sy: '🧩', t: 'Die Tüte in der Kantine.', dein: m.k7Gesetzt ? 'Du hast dich zu Noah gesetzt.' : m.k7Gefilmt ? 'Du hast gefilmt.' : 'Du bist sitzen geblieben.' },

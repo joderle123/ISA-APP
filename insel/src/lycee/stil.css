@@ -1543,7 +1543,7 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .sz-notbremse:disabled { opacity: 0.45; }
 
 /* Kapitel 4: Schneeballschlacht */
-.sz-schnee canvas { width: 100%; max-width: 520px; display: block; margin: 0 auto; border-radius: 14px; touch-action: none; }
+.sz-schnee canvas, .sz-rutsche canvas { width: 100%; max-width: 520px; display: block; margin: 0 auto; border-radius: 14px; touch-action: none; }
 .sz-ducken { width: 100%; padding: 12px; border-radius: 14px; border: 0; background: #2b3a55; color: #fff; font-weight: 800; font-size: 17px; }
 
 /* Rot-Modus (ersetzt das Steuerpult mit Zahl): pulsierender Rand, leichtes Wackeln, verschwommene ruhige Antworten */

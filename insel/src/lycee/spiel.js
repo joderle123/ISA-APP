@@ -298,7 +298,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   let passSpaeter = 0;
   const imG = () => { try { return imGespraech; } catch (e) { return false; } };   // imGespraech steht weiter unten (let)
   const passPruefen = () => { if (imG()) { if (!passSpaeter) passSpaeter = setInterval(() => { if (!imG()) { clearInterval(passSpaeter); passSpaeter = 0; passPruefen(); } }, 1500); return; }
-    const neu = neuePassAbzeichen(S); neu.slice(0, 3).forEach((x, n) => setTimeout(() => { ui.toast('<b>🏅 ' + x.sy + ' ' + x.t + '</b><span>Neues Abzeichen im Schul-Pass.</span>', 'ly-t-ent'); audio.play('unlock'); }, n * 900)); };
+    const neu = neuePassAbzeichen(S); neu.slice(0, 3).forEach((x) => ui.toastLeise('<b>🏅 ' + x.sy + ' ' + x.t + '</b><span>Neues Abzeichen im Schul-Pass.</span>', 'ly-t-ent')); };
   // Speichern sichtbar machen (AAA: „gespeichert“-Zeichen), aber gedrosselt – höchstens alle 20 s ein kleines Häkchen
   let gespeichertZeig = 0, fehlerGezeigt = false;
   speicherFehler = () => { if (fehlerGezeigt) return; fehlerGezeigt = true; ui.toast('<b>⚠️ Speichern klappt gerade nicht</b><span>Der Speicher im Browser ist voll oder gesperrt (privates Fenster?). Tipp: ⚙ Einstellungen → Sicherungscode kopieren.</span>', 'ly-t-kalt'); };
@@ -622,7 +622,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     nachrichtenRein();
     // Nach einem schweren Ausgang: einmal ein leiser Hinweis, dass man noch schreiben kann
     if (S && risikoAn()) { const o = sitAntwortenOffen(S.merke).find((x) => !S.merke['antwortTipp_' + x.id]);
-      if (o) { S.merke['antwortTipp_' + o.id] = true; setTimeout(() => ui.toast('<b>📱 Du kannst ' + o.an + ' noch schreiben.</b><span>Handy: Taste N</span>'), 9000); sichern(); } }
+      if (o) { S.merke['antwortTipp_' + o.id] = true; setTimeout(() => ui.toastLeise('<b>📱 Du kannst ' + o.an + ' noch schreiben.</b><span>' + (TOUCH ? 'Tipp auf 📱' : 'Handy: Taste N') + '</span>'), 9000); sichern(); } }
   }
   function tagLabel() { const st = SCHRITTE[S.schritt] || {}; return 'Kapitel ' + (st.kap || 1) + (st.tag ? ' · ' + st.tag : ''); }
   function nachrichtenRein() {
@@ -630,7 +630,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!nq || !nq.length) return;
     S.merke.nachrichten = []; S.merke.handyLog = (S.merke.handyLog || []).concat(nq.map(([von, t]) => [von, t, tagLabel()])).slice(-40);
     S.merke.handyNeu = (S.merke.handyNeu || 0) + nq.length; ui.handyNeu && ui.handyNeu(S.merke.handyNeu);
-    nq.forEach(([von, t], i) => setTimeout(() => ui.toast('<b>📱 ' + von + '</b><span>' + t + '</span>'), 3500 + i * 2600)); sichern();
+    nq.forEach(([von, t], i) => setTimeout(() => ui.toastLeise('<b>📱 ' + von + '</b><span>' + t + '</span>'), 3500 + i * 2600)); sichern();
   }
   // Situationen: wer ist gerade da (Kapitel, Schalter „Schwierige Situationen“, was schon passiert ist)
   const risikoAn = () => !ui.einstellungen || ui.einstellungen().risiko !== false;
@@ -1106,7 +1106,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     fortschrittMelden(G);
     if (!neu.length) return;
     G.gesehen.push(...neu); G.neu.push(...neu); sichern();
-    if (neu.length > 2) { ui.toast('<b>🎁 ' + neu.length + ' neue Teile in deiner Garderobe</b><span>Taste G (oder ☰ → Garderobe) zum Anziehen</span>', 'ly-t-ent'); return; }
+    if (neu.length > 2) { ui.toastLeise('<b>🎁 ' + neu.length + ' neue Teile in deiner Garderobe</b><span>' + (TOUCH ? '☰ → Garderobe' : 'Taste G (oder ☰ → Garderobe)') + ' zum Anziehen</span>', 'ly-t-ent'); return; }
     neu.forEach((id, i) => { const d = gdDing(id); setTimeout(() => ui.belohnung({ sy: d.sy, name: d.name, art: (GD_ARTEN.find((a) => a[0] === d.art) || [])[1] || '', ...(d.art === 'emote' ? { knopf: 'Gleich zeigen (X)', onKnopf: () => emoteSpielen(d.wert) } : { onKnopf: () => gleichAnziehen(id) }) }), verz + 600 + i * 7400); });
     ton('melodie2');
   }
@@ -1127,7 +1127,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!best || !alt || performance.now() - fortZuletzt < 25000) return;
     fortZuletzt = performance.now();
     const [ist, soll] = best.f, gross = soll > 10;
-    ui.toast('<b>' + best.d.sy + ' ' + best.d.name + ' · ' + (gross ? Math.round((ist / soll) * 100) + ' %' : ist + '/' + soll) + '</b><span>' + best.d.hinweis + '</span><i class="ly-t-balken"><i style="width:' + Math.round((ist / soll) * 100) + '%"></i></i>', 'ly-t-fort');
+    ui.toastLeise('<b>' + best.d.sy + ' ' + best.d.name + ' · ' + (gross ? Math.round((ist / soll) * 100) + ' %' : ist + '/' + soll) + '</b><span>' + best.d.hinweis + '</span><i class="ly-t-balken"><i style="width:' + Math.round((ist / soll) * 100) + '%"></i></i>', 'ly-t-fort');
   }
   // Herausforderungen von Freund:innen (herausforderungen.js): je Abschnitt höchstens eine neue Nachricht; geschafft = Antwort, Herz, Jetons
   let hfUhr = 3;
@@ -1149,7 +1149,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       for (const x of liste) start[x.id] = AUFGABEN.find((q) => q.id === x.id).zahl(S);   // ab jetzt zählen
       Object.assign(wa, { kap, liste, start, belohnt: [] });
       const t = aufgabenStand(S, wa).map((a) => a.sy + ' ' + a.text).join(' · ');
-      setTimeout(() => ui.toast('<b>📅 Neue Wochenaufgaben</b><span>' + t + ' – Fortschritt in der Garderobe (G)</span>'), 4000);
+      setTimeout(() => ui.toastLeise('<b>📅 Neue Wochenaufgaben</b><span>' + t + ' – Fortschritt in der Garderobe' + (TOUCH ? ' (☰)' : ' (G)') + '</span>'), 4000);
     }
     return wa;
   }
@@ -1159,7 +1159,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const wa = wochenaufgaben(), stand = aufgabenStand(S, wa);
     for (const a of stand) if (a.fertig && !wa.belohnt.includes(a.id)) {
       wa.belohnt.push(a.id); S.merke.wochenGesamt = (S.merke.wochenGesamt || 0) + 1; if (wa.belohnt.length === 3) S.merke.wochenVoll = (S.merke.wochenVoll || 0) + 1; sichern();
-      ui.toast('<b>✅ Wochenaufgabe: ' + a.sy + ' ' + a.text + '</b><span>' + wa.belohnt.length + ' von 3 geschafft</span>', 'ly-t-ent');
+      ui.toastLeise('<b>✅ Wochenaufgabe: ' + a.sy + ' ' + a.text + '</b><span>' + wa.belohnt.length + ' von 3 geschafft</span>', 'ly-t-ent');
       setTimeout(() => jetons(wa.belohnt.length === 3 ? 4 : 2, wa.belohnt.length === 3 ? 'Alle Wochenaufgaben' : 'Wochenaufgabe'), 2600);
     }
   }
@@ -1280,7 +1280,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Gespräche ----------
   let imGespraech = false, sperreBis = 0, danach = null;   // nach einem Gespräch kurz kein neues (Echtzeit, auch auf langsamen Geräten)
   const gesperrt = () => performance.now() < sperreBis;
-  const ersetze = (t) => String(t).replace(/\{name\}/g, S ? S.name : 'Sam');
+  const TOUCH = (() => { try { return matchMedia('(pointer: coarse)').matches; } catch (e) { return false; } })();   // iPad: keine Tasten-Tipps
+  const ersetze = (t) => { const nm = S ? S.name : 'Sam', hl = S && S.merke && S.merke.nameStattLinks; return String(t).replace(/\{hl\}/g, hl ? nm : 'hinten links').replace(/\{Hl\}/g, hl ? nm : 'Hinten links').replace(/\{name\}/g, nm); };
   function sprecher(wer) {
     if (SPRECHER[wer]) return { wer: wer === 'du' ? S.name : SPRECHER[wer].name, farbe: SPRECHER[wer].farbe };
     const d = LEUTE[wer]; return { wer: d ? d.name : wer, farbe: d ? d.farbe : '#2b3a55' };
@@ -1306,14 +1307,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     S.freund[id] = neu;
     const g = (S.freundGrund[id] = S.freundGrund[id] || {}); g[grund] = (g[grund] || 0) + 1;
     // Stufe gestiegen: sofort zeigen – außer bei Entscheidungen (die zeigt erst der Tagesrückblick, sonst verrät es die „richtige“ Antwort)
-    if (grund !== 'wahl' && neu > alt && stufe(neu) !== stufe(alt)) ui.toast('<b>' + LEUTE[id].name + ': ' + stufe(neu) + '</b><span>Hat dich jetzt auf dem Schirm.' + (HANDSCHLAEGE[id] && alt < 20 && neu >= 20 ? ' Neu: euer eigener Handschlag (🤝 oder Taste G).' : '') + '</span>', 'ly-t-herz');
+    if (grund !== 'wahl' && neu > alt && stufe(neu) !== stufe(alt)) ui.toastLeise('<b>' + LEUTE[id].name + ': ' + stufe(neu) + '</b><span>Hat dich jetzt auf dem Schirm.' + (HANDSCHLAEGE[id] && alt < 20 && neu >= 20 ? ' Neu: euer eigener Handschlag (🤝 oder Taste G).' : '') + '</span>', 'ly-t-herz');
   }
   const besteFreunde = () => { if (!S) return []; sicherFreund(); return Object.entries(S.freund).filter(([id, p]) => CHARAKTER[id] && p >= 20).sort((a, b) => b[1] - a[1]).map(([id]) => id); }
   // Jetons fürs Lernen: werden nie weniger, außer man löst sie bei einer Figur ein (das Ding bleibt dann für immer)
   function jetons(n, warum) {
     if (!n) return;
     S.jetons = (S.jetons || 0) + n; S.jetonsGesamt = (S.jetonsGesamt || 0) + n; sichern();
-    ui.toast('<b>+' + n + ' Jeton' + (n > 1 ? 's' : '') + '</b><span>' + warum + ' · Du hast ' + S.jetons + '.</span>', 'ly-t-ent');
+    ui.toastLeise('<b>+' + n + ' Jeton' + (n > 1 ? 's' : '') + '</b><span>' + warum + ' · Du hast ' + S.jetons + '.</span>', 'ly-t-ent');
   }
   function staerke(k) {
     if (!STAERKEN[k]) return;
@@ -1363,7 +1364,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
           const rot = pultRot(), gesperrt = {}, tags = {};
           ord.forEach((k, pos) => { if (rot && opt[k].ruhig) gesperrt[pos] = 'Zu aufgewühlt. Erst atmen.'; else if (opt[k].beweis) tags[pos] = '📎 ' + (opt[k].weil || beweisText(opt[k].beweis) || 'Beweis'); else if (opt[k].bemerkt) tags[pos] = opt[k].weil || 'Weil du hingeschaut hast.'; });
           const extra = Object.keys(gesperrt).length ? PULT_HILFEN.filter((h) => !versucht[h.id]) : [];
-          if (extra.length && !S.merke.rotErklaert) { S.merke.rotErklaert = true; sichern(); ui.toast('<b>🔴 Rot</b><span>' + ((S.pult && S.pult.g && S.pult.g !== 'Ruhe') ? S.pult.g + ' am Steuer. ' : '') + 'Erst atmen (🫁).</span>', 'ly-t-ent'); }
+          if (extra.length && !S.merke.rotErklaert) { S.merke.rotErklaert = true; sichern(); ui.toast('<b>🔴 Rot</b><span>' + ((S.pult && S.pult.g && S.pult.g !== 'Ruhe' && ((SCHRITTE[S.schritt] || {}).kap || 1) >= 3) ? S.pult.g + ' am Steuer. ' : 'Zu viel. ') + 'Erst atmen (🫁).</span>', 'ly-t-ent'); }
           const r = partnerAn() && z.warum && !extra.length ? await partnerWahl(opt, ord) : await ui.waehle(ord.map((k) => ersetze(opt[k].t)), '', { fest: !!z.fest, gesperrt, tags, extra });
           if (r && typeof r === 'object' && r.extra) { versucht[r.extra] = true; await pultHilfe(r.extra); continue; }
           i = r; break;
@@ -1375,8 +1376,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         if (w.merke) [].concat(w.merke).forEach((m) => { S.merke[m] = true; });
         sichern();
         merktSich(w);
-        if (z.warum) await warumFrage(w);
         if (w.dann && w.dann.length) await spiele(w.dann);
+        // „Warum?“ erst nach der Szene (nicht zwischen Wahl und Reaktion). Eine Figur fragt, wenn die Szene es sagt.
+        if (z.warum) { const wz = typeof z.warum === 'function' ? z.warum(S.merke) : z.warum; await warumFrage(w, Array.isArray(wz) || (wz && wz.wer) ? wz : null); }
+        else if (w.warum) { const wq = typeof w.warum === 'function' ? w.warum(S.merke) : w.warum; if (wq) await warumFrage(w, wq); }
       } else if ('pult' in z) {   // Steuerpult: { pult: { g, w } } setzen, { pult: { plus } } ändern, { pult: null } aus
         pultSetzen(z.pult);
       } else if ('handy' in z) {   // Handy, das jemand hinhält: { handy: { wer, foto: { von, auf, wer }, text, umfrage } } – { handy: null } weg
@@ -1473,8 +1476,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         const mehr = await TUN[z.tu]?.(...(z.mit && LEUTE[z.mit] ? [{ id: z.mit, name: LEUTE[z.mit].name }] : []));   // { tu, mit: 'ayla' }: Mitspieler
         if (Array.isArray(mehr) && mehr.length) await spiele(mehr);
       } else if (z.hin) {   // Figuren während eines Gesprächs umstellen: { hin: { id: [x, z, yaw, haltung] } }
-        for (const [id, w] of Object.entries(z.hin)) {
+        for (const [id, w0] of Object.entries(z.hin)) {
+          let w = w0;
           if (id === 'du') { steuerung.teleport(w[0], w[1], w[2] || 0); steuerung.kamera(0.016, true); continue; }   // dich an einen Ort stellen (z. B. Pause = ein Ort)
+          if (w === 'du') {   // jemand kommt zu dir: 1,4 m vor dich, schaut dich an
+            const sp = steuerung.pos, yw = spieler ? spieler.group.rotation.y : 0, x = sp.x + Math.sin(yw) * 1.4, zz = sp.z + Math.cos(yw) * 1.4;
+            w = [x, zz, Math.atan2(sp.x - x, sp.z - zz)];
+          }
           const p = leute[id]; if (!p) continue; const [x, zz, yaw = 0, h = ''] = w;
           if (p.f.sitzen) p.f.sitzen(h === 'sitzt' || h === 'schlaeft', 0.47);   // auch hinsetzen/aufstehen (z. B. auf die Bank im Hof)
           if (p.f.schlafen) p.f.schlafen(h === 'schlaeft');
@@ -1500,7 +1508,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   async function gespraech(zeilen) {
     if (imGespraech) { dbgG('G-übersprungen ' + JSON.stringify((zeilen || [])[0] || '').slice(0, 50)); return; }
     dbgG('G ' + JSON.stringify((zeilen || [])[0] || '').slice(0, 50));
-    imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
+    imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); ui.leiseWeg && ui.leiseWeg();
     try { await spiele(zeilen); } finally {
       ui.dialogZu(); ui.handyBild(null); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; steuerung.gegenSchuss = false; gegenueber = null; if (sprichtJetzt && leute[sprichtJetzt] && leute[sprichtJetzt].f.redet) leute[sprichtJetzt].f.redet(false); sprichtJetzt = null; if (spieler && spieler.redet) spieler.redet(false); sperreBis = performance.now() + 350; sichern();
       if (danach) { const d = danach; danach = null; await d(); }
@@ -1547,11 +1555,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     ...tunN8({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
     ...tunN9({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
     ...tunN10({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
-    stundenplanTipp: () => { ui.toast('<b>Tipp</b><span>Mit Tab oder ☰ öffnest du dein Journal.</span>'); },
+    stundenplanTipp: () => { ui.toast('<b>Tipp</b><span>' + (TOUCH ? 'Tipp auf ☰: Da ist dein Journal.' : 'Mit Tab oder ☰ öffnest du dein Journal.') + '</span>'); },
     weberTelefon: () => { const w = leute.weber; if (w) w.f.spiele('Interact', { tempo: 0.5 }); },
     stundenplan: () => { S.stundenplan = true; ui.toast('📄 Stundenplan bekommen – steht im Journal.'); },
     // Freischaltung in den ersten fünf Minuten: der eigene Spind (Code steht auf dem Stundenplan)
-    spindFrei: () => { S.frei = { ...(S.frei || {}), spind: true }; setTimeout(() => ui.toast('<b>Neu: Spind 117</b><span>Im Gang. Der Code steht auf deinem Plan.</span>', 'ly-t-ent'), 2600); },
+    spindFrei: () => { S.frei = { ...(S.frei || {}), spind: true }; setTimeout(() => ui.toastLeise('<b>Neu: Spind 117</b><span>Im Gang. Der Code steht auf deinem Plan.</span>', 'ly-t-ent'), 2600); },
     // Running Gag: Ben leiht sich Geld. Der Zähler steht im Journal und wird nie kleiner.
     benSchuld: () => { S.benSchuld = (S.benSchuld || 0) + 2; ui.toast('<b>Ben schuldet dir ' + S.benSchuld + ' €</b><span>Steht im Journal. Für immer, vermutlich.</span>'); },
     benZahlt: () => { S.benZurueck = (S.benZurueck || 0) + 2; ui.toast('<b>Ben hat 2 € zurückgezahlt</b><span>Ein historischer Moment. Steht im Journal.</span>', 'ly-t-ent'); },
@@ -1573,12 +1581,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         : [['ben', t + ' von 5. Der Korb ist schief.'], ['yusuf', 'Ist er nicht.']];
     },
     n1_kunstLina: () => (S.merke.linaTisch ? [['lina', '(leise) Du warst gestern an meinem Tisch.'], ['erzaehler', 'Sie rutscht ein Stück zur Seite. Bei Lina ist das viel.']] : []),
-    tablett: () => { ui.toast('🍽 Tablett in der Hand. Jetzt der schwerste Teil: ein Platz.'); },
+    tablett: () => {},
     gegessen: async () => {   // Spielfigur setzt sich mit an den Tisch (gegenüber)
-      const sitz = S.merke.tisch === 'mila' ? [19.55, -4.9, Math.PI / 2] : S.merke.tisch === 'lina' ? [16.65, -5.9, -Math.PI / 2] : S.merke.tisch === 'ben' ? [18.15, -10.1, -Math.PI / 2] : [12.25, -10.1, -Math.PI / 2];
+      const sitz = S.merke.tisch === 'p1' ? [19.55, -10.6, Math.PI / 2] : S.merke.tisch === 'mila' ? [19.55, -4.9, Math.PI / 2] : S.merke.tisch === 'lina' ? [16.65, -5.9, -Math.PI / 2] : S.merke.tisch === 'ben' ? [18.15, -10.1, -Math.PI / 2] : [12.25, -10.1, -Math.PI / 2];
       steuerung.setzen(sitz[0] - Math.sin(sitz[2]) * 0.1, sitz[1] - Math.cos(sitz[2]) * 0.1, sitz[2]);
       await new Promise((r) => setTimeout(r, 1400));
-      await ui.bild('Mittagspause', S.merke.tisch === 'mila' ? 'Mila zeigt dir, wie der Würfel geht. Du schaffst eine Seite. Sie sagt: „Für den Anfang okay.“' : S.merke.tisch === 'ben' ? 'Ben erzählt von seinem Hund. Jo schaut die ganze Zeit aufs Handy. Einmal lachen alle drei. Du weißt nicht genau, worüber.' : S.merke.tisch === 'noah' ? 'Noah rechnet, wie viele Steine die Turmuhr braucht. Zweimal verrechnet er sich. Beim dritten Mal sagt er: „Zwölf. Wusste ich.“' : S.merke.tisch === 'lina' ? 'Lina zeichnet weiter. Am Ende schiebt sie dir die Serviette rüber. Die Kantine, von oben. Du bist auch drauf.' : 'Ayla trommelt einen Takt auf das Tablett. Noah versucht mitzuhalten und verschüttet sein Wasser. Alle lachen, Noah auch.', 3);
+      await ui.bild('Mittagspause', S.merke.tisch === 'p1' ? 'Kenan redet die ganze Zeit über Gerd. Dario sagt kein einziges Wort.' : S.merke.tisch === 'mila' ? 'Mila gibt dir einen Hörer. Ihr hört Regen. Keiner redet. Es ist gut so.' : S.merke.tisch === 'ben' ? 'Ben erzählt von seinem Hund. Jo schaut die ganze Zeit aufs Handy. Einmal lachen alle drei. Du weißt nicht genau, worüber.' : S.merke.tisch === 'noah' ? 'Noah rechnet, wie viele Steine die Turmuhr braucht. Zweimal verrechnet er sich. Beim dritten Mal sagt er: „Zwölf. Wusste ich.“' : S.merke.tisch === 'lina' ? 'Lina zeichnet weiter. Am Ende schiebt sie dir die Serviette rüber. Die Kantine, von oben. Du bist auch drauf.' : 'Ayla trommelt einen Takt auf das Tablett. Noah versucht mitzuhalten und verschüttet sein Wasser. Alle lachen, Noah auch.', 3);
     },
     plakat: async () => {
       const m = S.merke;
@@ -2221,6 +2229,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Schritte ----------
   let busFaehrt = 0;   // 0 steht, 1 fährt los (weg), −1 fährt am Ende ab
   let startet = false;   // solange ein Schritt startet (Tagesrückblick, Teleport), lösen Orte nichts aus
+  ui.beschaeftigt = () => imGespraech || startet || !!ui.ebeneArt();   // Nebenbei-Meldungen warten so lange (ui.toastLeise)
   // ---------- Neues Spielsystem (25.11.2026): Steuerpult, Hinschauen, echtes Foto aus der Welt ----------
   // Steuerpult (Baustein 3): S.pult = { g, w (0–10), kap }. Ab 7 ist Rot – ruhige Antworten sind zu.
   const pultRot = () => !!(S.pult && S.pult.kap === ((SCHRITTE[S.schritt] || {}).kap || 1) && S.pult.w >= 7);
@@ -2308,7 +2317,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     fuehren();
     for (const id of def.lachen || []) { const q = leute[id]; if (q && q.f.geste) { q.f.geste('lachen'); setTimeout(() => q.f.geste && q.f.geste('lachen'), 1800); } }
     const txt = el.querySelector('.ly-sicht-text');
-    for (const g of def.gedanken || []) { txt.textContent = g; if (ui.autoVorlesen) ui.vorlesen(g); await new Promise((r) => setTimeout(r, Math.max(2600, g.split(/\s+/).length * 420))); }
+    for (const g0 of def.gedanken || []) { const g = ersetze(g0); txt.textContent = g; if (ui.autoVorlesen) ui.vorlesen(g); await new Promise((r) => setTimeout(r, Math.max(2600, g.split(/\s+/).length * 420))); }
     an = false; el.classList.remove('an'); setTimeout(() => el.remove(), 500);
     p.f.group.visible = sichtbar; steuerung.kameraAus = false; steuerung.frei = altFrei; input.setEnabled(true); steuerung.kamera(0.016, true);
   }
@@ -2417,7 +2426,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       return url;
     } catch (e) { return ''; }
   }
-  const SZ_UI = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich', werkzeug: 'werkzeugKarte', werkbank: 'werkbank', steckbrief: 'steckbrief', weg: 'wegweiser', aufstellung: 'aufstellung', pass: 'passSpiel', schneeball: 'schneeball', voraus: 'vorausblende', suchbild: 'suchbild', orte: 'ortWahl', stoerung: 'stoerung', schnitt: 'schnitt', verdacht: 'verdachtWand' };
+  const SZ_UI = { rutsche: 'rutsche', hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich', werkzeug: 'werkzeugKarte', werkbank: 'werkbank', steckbrief: 'steckbrief', weg: 'wegweiser', aufstellung: 'aufstellung', pass: 'passSpiel', schneeball: 'schneeball', voraus: 'vorausblende', suchbild: 'suchbild', orte: 'ortWahl', stoerung: 'stoerung', schnitt: 'schnitt', verdacht: 'verdachtWand' };
   // Prüfungen gegen Durchklicken (nur Skill-Szenen). Rückgabe null = gemacht; sonst { sy, t, tipp } für „Noch mal“.
   const PRUEF = {
     atem: (r) => (r.gut < 2 ? { sy: '🫁', t: 'Das war noch kein ruhiges Atmen.', tipp: 'Halte, bis der Kreis groß ist (zwei, drei Sekunden). Dann loslassen und lange ausatmen – länger als das Einatmen. Erst dann wieder halten.' } : null),
@@ -2507,8 +2516,18 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const ECHO = (() => { const e = new Set(); const p = new Proxy({}, { get: (t, k) => { if (typeof k === 'string') e.add(k); return undefined; } }); for (let k = 1; k <= 10; k++) { try { chronik(k, p); } catch (x) { /* egal */ } } return e; })();
   // „Warum hast du das gemacht?“ – einmal je Kapitel, bei der wichtigsten Entscheidung. Über die eigenen Gründe nachdenken ist
   // der Kern von sozial-emotionalem Lernen. Kein richtig/falsch; die Lehrperson sieht es in der Lehrer-Ansicht.
-  const WARUM = ['Wollte niemanden verletzen.', 'Angst, selbst dran zu sein.', 'Wollte dazugehören.', 'Hab nicht nachgedacht.'];   // höchstens vier (Formregel)
-  async function warumFrage(w) {
+  // Eine Szene darf eigene Gründe mitgeben (warum: [..]) – die passen besser als allgemeine. Höchstens vier (Formregel).
+  const WARUM_STD = ['Wollte helfen.', 'Angst, selbst dran zu sein.', 'Wollte dazugehören.', 'Hab nicht nachgedacht.'];
+  async function warumFrage(w, eigene) {
+    if (eigene && eigene.wer) {   // jemand neben dir fragt – kein Fenster vom System
+      await spiele([[eigene.wer, eigene.frage || '(leise) Warum?']]);
+      const g = eigene.gruende[await ui.waehle(eigene.gruende, '', { fest: true })];
+      const kap = (SCHRITTE[S.schritt] || {}).kap || 1;
+      S.gruende = S.gruende || {}; S.gruende[kap] = [...(S.gruende[kap] || []).filter((x) => x.t !== ersetze(w.t)), { t: ersetze(w.t), grund: g }]; sichern();
+      if (eigene.antwort) await spiele([[eigene.wer, eigene.antwort]]);
+      return;
+    }
+    const WARUM = (eigene && eigene.length) ? eigene.slice(0, 4) : WARUM_STD;
     let grund;
     if (partnerAn()) {   // zu zweit: jede Person sagt ihren eigenen Grund
       const P = S.partner, gA = WARUM[await ui.waehle(WARUM, P.a + ': Warum? Sei ehrlich.', { fest: true })], gB = WARUM[await ui.waehle(WARUM, P.b + ': Und du? Warum?', { fest: true })];
@@ -2575,12 +2594,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     S.schritt = i; S.schrittId = SCHRITTE[i] && SCHRITTE[i].id; S.fertig = false; sichern();
     const st = SCHRITTE[i];
     if (mitStart !== false && vorher && (vorher.tag !== st.tag || vorher.kap !== st.kap) && i > 0) {
-      const eintraege = Object.entries(tagHerz).filter(([id, n]) => n && LEUTE[id]).map(([id, n]) => ({ name: LEUTE[id].name, farbe: LEUTE[id].farbe, n })).sort((a, b) => b.n - a.n);
+      // Keine Beziehungs-Liste mehr am Tagesanfang (Jugend-Kritik: „Dating-Spiel“) – Beziehungen sieht man in der Welt, man zählt sie nicht
+      const eintraege = [];
       tagHerz = {};
       await ui.rueckblick(st.tag, st.kap !== vorher.kap ? kapName(st.kap) : 'Ein neuer Tag in der Annexe Junglinster.', eintraege);
       if (st.kap !== vorher.kap) await vorspann(st);
       const b = besteFreunde()[0];
-      if (b && st.kap !== vorher.kap) setTimeout(() => ui.toast('<b>' + LEUTE[b].name + ' (' + stufe(S.freund[b]) + ')</b><span>„' + (FREUND_GRUSS[b] || 'Da bist du ja.') + '“</span>', 'ly-t-herz'), 2500);
+      if (b && st.kap !== vorher.kap) setTimeout(() => ui.toastLeise('<b>' + LEUTE[b].name + ' (' + stufe(S.freund[b]) + ')</b><span>„' + (FREUND_GRUSS[b] || 'Da bist du ja.') + '“</span>', 'ly-t-herz'), 2500);
       if (st.kap !== vorher.kap && INHALT[st.kap]) ui.toast('<b>ℹ️ In diesem Kapitel</b><span>' + INHALT[st.kap] + ' Wenn es zu viel wird: ☰ → Kurz raus.</span>');
     }
     sky.time.setTimeOfDay(st.uhr); ui.uhr(st.uhr, st.tag); uhrenStellen(st.uhr, st.kap);
@@ -2651,7 +2671,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
             S.erinnerungen = [...(S.erinnerungen || []), { wer: (LEUTE[id] || {}).name || id, farbe: (LEUTE[id] || {}).farbe || '#2b3a55', text: erste ? ersetze(erste[1]) : '', kap: kapB }];
             sichern();
           }
-          ui.toast('<b>' + ((LEUTE[id] || {}).name || id) + ': „' + teil.titel + '“</b><span>Freundschaft · Teil ' + (n + 1) + ' von ' + bg.length + '</span>');
+          ui.toastLeise('<b>' + ((LEUTE[id] || {}).name || id) + ': „' + teil.titel + '“</b><span>Freundschaft · Teil ' + (n + 1) + ' von ' + bg.length + '</span>');
           return;
         }
       }
@@ -2667,7 +2687,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (fa && !(fa.nichtKap && !S.fertig && fa.nichtKap.includes(kapJetzt)) && ((S.herz[id] == null ? 1 : S.herz[id]) >= fa.herz || (S.freund[id] || 0) >= fa.herz * 15) && S.merke['fd_' + id] !== abschnitt) {
         S.merke['fd_' + id] = abschnitt; S.faeden[id] = n + 1; freund(id, 8, 'tief'); sichern();
         await gespraech(fa.g);
-        ui.toast('<b>' + ((LEUTE[id] || {}).name || id) + ': „' + fa.titel + '“</b><span>Gesprächsfaden ' + (n + 1) + ' von ' + fd.length + '</span>');
+        ui.toastLeise('<b>' + ((LEUTE[id] || {}).name || id) + ': „' + fa.titel + '“</b><span>Gesprächsfaden ' + (n + 1) + ' von ' + fd.length + '</span>');
         return;
       }
     }
@@ -2688,7 +2708,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
           if (d.art === 'anhaenger') { S.anhaenger = d.wert; anhaengerDran(); }
           sichern(); freund(id, 2, 'gespraech');
           await gespraech([[id, d.satz]]);
-          ui.toast('<b>' + esc(d.name) + '</b><span>Liegt jetzt in deinem Spind 117.</span>', 'ly-t-ent');
+          ui.toastLeise('<b>' + esc(d.name) + '</b><span>Liegt jetzt in deinem Spind 117.</span>', 'ly-t-ent');
         } else await gespraech([[id, 'Okay. Das Angebot bleibt.']]);
         return;
       }
@@ -2786,7 +2806,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (!S || imGespraech || ui.ruhig || !steuerung.frei || document.hidden || Math.random() < 0.5) return;
       const pool = DURCHSAGEN.concat((S.merke && (S.merke.kabel || []).length < 5) ? ['Herr Mesenberg sucht sein Ladekabel. Schon wieder. Finderlohn: Dankbarkeit.'] : []);
       durchsage += 1 + Math.floor(Math.random() * 3);
-      ui.toast('<b>📢 Durchsage</b><span>' + pool[durchsage % pool.length] + '</span>'); audio.play('chime');
+      ui.toastLeise('<b>📢 Durchsage</b><span>' + pool[durchsage % pool.length] + '</span>'); audio.play('chime');
     }, 140000);
   }
   ui.onEinstellungen = (e) => {
@@ -3128,7 +3148,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
           const ok = await ueben(hilfe ? 'Mit Spickzettel: drück die Teile nacheinander (1–9)' : 'Jetzt du! Aus dem Kopf – in der richtigen Reihenfolge (1–9)', { zeit: (hilfe ? 3 : 2.2) * (ui.leicht ? 1.6 : 1), hilfe });
           if (ok) {
             st.gelernt = true; st.mal = 1; await sag(id, H.klappt); ui.dialogZu();
-            freund(id, 6, 'handschlag'); ui.toast('<b>🤝 Handschlag mit ' + name + '</b><span>Gelernt! Ab jetzt: Taste G oder 🤝, wenn ihr euch trefft.</span>', 'ly-t-ent'); break;
+            freund(id, 6, 'handschlag'); ui.toast('<b>🤝 Handschlag mit ' + name + '</b><span>Gelernt! Ab jetzt: ' + (TOUCH ? '🤝' : 'Taste G oder 🤝') + ', wenn ihr euch trefft.</span>', 'ly-t-ent'); break;
           }
           await sag(id, H.daneben);
           const w = await ui.waehle(['Nochmal versuchen', 'Zeig ihn mir nochmal', versuch >= 2 ? 'Mit Spickzettel' : 'Später']);
@@ -3691,7 +3711,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!S || !S.merke) return;
     const neu = pokale.aktualisiere(S);
     if (!pokaleBereit) { pokaleBereit = true; return; }   // beim ersten Mal nur aufbauen, keine Meldungen für Altes
-    for (const p of neu) ui.toast('<b>🏆 Neuer Pokal: ' + p.name + '</b><span>Er steht jetzt im Jugendhaus im Regal.</span>', 'ly-t-ent');
+    for (const p of neu) ui.toastLeise('<b>🏆 Neuer Pokal: ' + p.name + '</b><span>Er steht jetzt im Jugendhaus im Regal.</span>', 'ly-t-ent');
   }
   const rekordTafel = (() => {
     const cv = document.createElement('canvas'); cv.width = 512; cv.height = 384; const g = cv.getContext('2d');
@@ -3871,7 +3891,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         if (!S.merke['sit_' + id]) S.merke['sit_' + id] = 'erlebt';
         S.merke.situationen = (S.merke.situationen || 0) + 1;
         const [ic, ti, tx] = SZENEN[id].titel;
-        ui.toast('<b>' + ic + ' Erlebt: ' + ti + '</b><span>' + tx + '</span>', 'ly-t-ent');
+        ui.toastLeise('<b>' + ic + ' Erlebt: ' + ti + '</b><span>' + tx + '</span>', 'ly-t-ent');
       });
     } finally { sitLaeuft = false; ui.pauseImDialog = false; }
   }
@@ -3921,7 +3941,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       };
       await spiel(sz.zeilen);
       if (sz.neu) { S.merke[sz.key] = true; S.merke.stammBesuche = (S.merke.stammBesuche || 0) + 1; }
-      if (neuBekannt) { S.merke['stk_' + st.id] = true; ui.toast('<b>⭐ Stammgast: ' + st.name + '</b><span>Immer hier. Jede Woche gibt es etwas Neues.</span>', 'ly-t-ent'); }
+      if (neuBekannt) { S.merke['stk_' + st.id] = true; ui.toastLeise('<b>⭐ Stammgast: ' + st.name + '</b><span>Immer hier. Jede Woche gibt es etwas Neues.</span>', 'ly-t-ent'); }
     } finally {
       ui.dialogZu(); if (x.f.redet) x.f.redet(false);
       const h = x.d.steht && x.d.steht[3]; if (h === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (h === 'handy') { x.f.spiele('Idle_Neutral'); if (x.f.pose) x.f.pose('handy', 1e6); } else if (h !== 'sitzt') x.f.spiele('Idle');
@@ -3954,7 +3974,6 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Schleife ----------
   let laufZeit = 0, spielerBlickV = null, hsPartner = null;
   // Steuerung lernen beim Tun (AAA: Hinweise genau dann, wenn sie passen – jeder nur einmal, dann gemerkt)
-  const TOUCH = matchMedia('(pointer: coarse)').matches;
   let freiZeit = 0, stillZeit = 0, zielSchrittAlt = -1, zielZeit = 0, spielZeit = 0, pauseErinnert = false;
   const tipp = (id, html) => { if (!S || !S.merke || S.merke['tipp_' + id]) return; S.merke['tipp_' + id] = true; ui.toast('<b>💡 Tipp</b><span>' + html + '</span>'); };
   function tippTick(dt) {
@@ -4016,7 +4035,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
     if (j.fertig || imGespraech) return;
     j.zeit = (j.zeit || 0) + dt;
-    if (!j.tipp && j.zeit > TIPP_NACH && !ui.ebeneArt()) { j.tipp = true; ui.toast('<b>📱 ' + lina + '</b><span>Tipp: bei ' + JAGD[j.i].ort + '. Schau auf die Karte (M).</span>'); sichern(); jagdAnzeige(); }
+    if (!j.tipp && j.zeit > TIPP_NACH && !ui.ebeneArt()) { j.tipp = true; ui.toastLeise('<b>📱 ' + lina + '</b><span>Tipp: bei ' + JAGD[j.i].ort + '. Schau auf die Karte (M).</span>'); sichern(); jagdAnzeige(); }
     const p = steuerung.pos, r = jagdFund(j, p.x, p.z);
     if (!r) return;
     ton('pling'); vib(20);
@@ -4557,7 +4576,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       geheimT = 0.3;
       for (const g of GEHEIMNISSE) if (!S.entdeckt.includes(g.id) && Math.hypot(g.x - p.x, g.z - p.z) < g.r) {
         S.entdeckt.push(g.id); sichern();
-        ui.toast('<b>Entdeckt: ' + g.titel + '</b><span>' + g.text + '</span>', 'ly-t-ent'); try { audio.play('pickup'); } catch (e) { /* egal */ }
+        ui.toastLeise('<b>Entdeckt: ' + g.titel + '</b><span>' + g.text + '</span>', 'ly-t-ent'); try { audio.play('pickup'); } catch (e) { /* egal */ }
       }
     }
     ui.update();

@@ -434,3 +434,44 @@ Je Kapitel drei schwache Szenen gestrichen und neu gebaut, Wahlen ohne Folgen be
 - Motor: Start-Gespräche werden nicht mehr übersprungen; Warum-Frage 4 Antworten, einmal je Kapitel; Abzeichen nie mitten in einer
   Szene; „X wird sich das merken“ → nur 🔖; Ort-Karten passen auf kleine Bildschirme; Handy-Karte mit Chat-Zeilen und Zähler.
 - Skills-Strang an die Hefte angeglichen (4 ein – 8 aus, Kopf ab Gelb, Ampelplan statt STOPP, „Weiter“ statt „Passe“).
+
+## 27.11.2026 – Serie 2 · Runde 2 (Jugend-Panel K3/K4)
+- Motor: Nebenbei-Meldungen (Handy, Aufgaben, Abzeichen, Entdeckt, Durchsage, Schnitzeljagd) warten, bis Gespräch/Szene vorbei
+  ist (+4 s Ruhe). Warum-Frage mit Gründen, die zur Szene passen (`warum: [...]`). Test-Ereignisse hängen auch an der Aufgabe
+  (schnelle Spieler verpassen nichts, die Uhr springt). Ab zwei Blicken ermahnt Mme Lenning. Schneeball schwerer.
+- K3: Streifen-Standbild + Milas Frage → „Darios Handy rutscht“ (Störung, der Zähler läuft weiter) · Uhr-Standbild im Gang
+  gestrichen (📎 Uhr schon am Montag am Korb) · Freitag-Orte → „Yusuf kommt zu dir“ (erster Satz je nach Weg; Manon ruft
+  dazwischen – wer hingeht, verpasst Yusuf) · „Übrig“: wer hingeht, gibt den Platz ab und sitzt die erste Hälfte selbst auf der
+  Bank · gebrochenes Pause-Versprechen: Manon „J’ai attendu.“
+- K4: Haltestelle → Darios Handy fällt aufs Eis (nicht hinschauen / 📎 fragen / „Alles okay?“); wer fragt, kann im Test Noah
+  „Bleib.“ zuflüstern (kostet Zeit und eine Ermahnung, schützt Noah) · Testrückgabe → Störung „Jos Blatt“ (Folge im
+  Schneeball) · Mila am kalten Geländer: Zettel ändern oder lassen · Foto startet beim Stand aus dem Test.
+- K1 (Panel K1/K2, Runde 2): „Rafa in der Schlange“ → „Der vierte Tisch“ (7P1: Kenans Galerie, 10:05 fehlt → 📎) · Warum-Karte
+  → „Die Frage von nebenan“ (nur nach Mitlachen / Handy weg fragt die Person vom Mittagstisch leise „Warum?“) · „Ben privat“ →
+  „Wer dir schreibt“ (der Abend-Chat kommt vom Mittagstisch: Noah, Mila, Ben oder Dario) · „{name} reicht.“ wirkt: Ben, Noah,
+  Luca sagen dann deinen Namen · „Weiter.“ kommt um 13:31 zurück (Jo zu Ben: „Ben. Weiter.“) · Noahs Sicht je Rafa-Antwort ·
+  keine Tasten-Tipps auf dem iPad · „Chill“ raus.
+- K2: „Ben am Bus“ gestrichen (Yusufs Nachricht jetzt im Pause-Ort Ben) · Gegenliste kurz: „Du postest. Ich trau mich nicht.“ –
+  8 s: Posten / Noah fragen / Löschen · Skate-Ecke → „Lucas Trick“ (Noah läuft durchs Bild: wegschwenken oder draufhalten; Folge
+  am Freitag) · „Jo. Gib her.“ mit zweitem Schritt · Folgen aus K1 am Montag als Szene · Liste ohne Warum-Karte (Mila fragt nur
+  die, die bei den Lachenden bleiben) · Reporter-Moralsatz gestrichen.
+
+## 27.11.2026 – Serie 2 · Runde 3 (Jugend-Panel K3/K4)
+- Motor: „Warum?“ kommt erst nach der Szene und wird von einer Figur gefragt (K3: wer den Ball verloren hat / Jo; K4: Mila).
+  Höchstens zwei gleiche Gedanken gleichzeitig im Test; die Test-Uhr springt sofort mit. Schneeball: Wer neben dir am Wall steht,
+  fängt einen Ball ab; dreimal erwischt = 10 s Bank; man kann verlieren.
+- K3: „Darios Handy rutscht“ → „Yusuf steht auf“ (hinterher: „Wer war das? Du standst direkt davor.“ – 📎 Dario nennen hat in
+  K4 eine Folge; der Chat ist danach bei 41, „Löscht das.“ zieht keiner mehr mit) · Manons Zwischenruf am Freitag → „Der Bus
+  kommt“ (einsteigen oder bleiben; wer bleibt, geht mit zur Grundschule) · „Musst du weg?“ ohne 📎, nur Rot sperrt · Weitergehen
+  am Tor hat eine Folge · Pause-Angebot zählt nur mit Hingehen.
+- K4: Dario hält dir das Handy hin („Meine Finger sind zu kalt.“), Wand-Eintrag nur, wenn du nicht wegschaust · Testrückgabe →
+  „Nach vorne“ (Mme Lenning im Hof; „Das Foto. Ich war’s nicht.“ = Parkschein abholen) · „Zwei Plätze am Wall“ (Jo wählen oder
+  nicht) · Freitag „Später ist jetzt“ (Chiara erinnert an „später“; Linas Foto an Herrn Kuedes oder behalten) · Ayla/Jo-Zeilen
+  logisch · Gesprächsfrage: „Wie hoch warst du um 8:34, von 0 bis 100 – und was hat dich runtergebracht?“
+- K1/K2 (Panel Runde 3): „Die Frage von nebenan“ gestrichen → das Mitlachen kommt abends im Klassenchat zurück („sogar {name} hat
+  gelacht 😂 also ist es ok“ – antworten: „War nicht okay.“ / „Ja. Nur Spaß.“); um 13:31 nur eine stumme Reaktion der Person vom
+  Mittagstisch · „Wem zeigst du’s?“ hat sofort eine Folge am Dienstag 7:40 · Kenan zeigt nach „Schöne Taube.“ die Lücke um 10:05 ·
+  Dario ohne Handy um 13:31 = 📎 · Chat: nach Blockieren/Posten keine weiteren Nachrichten und Knöpfe · keine Beziehungs-Liste mehr
+  am Tagesanfang · K2: Steckbrief → „Ein Satz für die Zeitung“ (die Liste verdreht genau deinen Satz) · Gegenliste: „Noah suchen“
+  hat eine eigene Folge · Dario „War nicht lustig.“ → @annexe.cam antwortet eine Minute später · Reinschauen = 📎 · Jo fragt am
+  Freitag nach der „langen Geschichte“.

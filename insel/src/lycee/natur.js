@@ -107,8 +107,9 @@ export async function baueNatur({ welt, scene, veil, windZeit, wenig = false }) 
   // Jahreszeit: 'herbst' (warme Blätter), 'winter' (Frost: blasser, heller, Nadelbäume bleiben grün), sonst wie gemalt
   function saison(art) {
     for (const x of laubMats) {
-      x.m.color.copy(x.farbe);
+      x.m.color.copy(x.farbe); x.m.visible = true;
       if (x.m.emissive) x.m.emissive.setRGB(0, 0, 0);
+      if (art === 'winter' && x.baum && !x.nadel) { x.m.visible = false; x.m.needsUpdate = true; continue; }   // Dezember: Laubbäume kahl (Jugend-Kritik: „Laub im Schnee“)
       if (art === 'herbst' && !x.nadel) x.m.color.multiply(new THREE.Color(x.baum ? 0xffb066 : 0xf2d49a));
       if (art === 'winter') {
         if (x.nadel) { if (x.m.emissive) x.m.emissive.setRGB(0.09, 0.1, 0.12); }

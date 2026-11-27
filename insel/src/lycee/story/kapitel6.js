@@ -136,7 +136,7 @@ const stimmen = (m) => {
     lina: !!(m.wahlLina || m.linaNachgegangen),
     yusuf: !!(m.wahlYusuf || m.k3YusufGeschickt || m.k3Uhr),
   };
-  let anon = 2 + (m.k4Ruhig ? 1 : 0) + (m.k5ChiaraGefragt ? 1 : 0) - (m.k4Wut ? 1 : 0) - (m.k5Laut ? 1 : 0);
+  let anon = 2 + (m.k4Ruhig ? 1 : 0) + (m.k5ChiaraGefragt ? 1 : 0) - (m.k4Wut || m.k4WutSpaet ? 1 : 0) - (m.k5Laut ? 1 : 0);
   anon = Math.max(0, anon);
   const s = Math.max(4, Math.min(9, Object.values(wer).filter(Boolean).length + anon + (m.k6Plus || 0)));
   return { wer, s, gegen: s >= 9 ? 9 : 19 - s };
