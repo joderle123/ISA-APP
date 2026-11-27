@@ -35,7 +35,7 @@ const EXTRAS = [
       vor: [{ art: 'mc', auftrag: 'x + 200 = 700. Was ist x? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['500', '900', '3,5'], r: 0 }] }],
       beim: [{ art: 'luecken', auftrag: 'Lies mit und ergänze.', stufe: 1, saetze: ['x + 200 = 700 | − [200] → x = [500]', '4x = 2000 | : [4] → x = [500]', 'Probe: 500 + 200 = [700] ✓'] }],
       nach: [{ art: 'sprechen', auftrag: 'Waage-Rätsel: Eine Person zeichnet eine Waage mit Päckchen (x) und Gewichten. Die andere stellt die Gleichung auf, löst sie und sagt die Probe laut.', stufe: 2, karten: [
-        { titel: 'Gegenteil', text: ['+ ↔ −', '· ↔ :', 'Immer auf beiden Seiten!'] }] }],
+        { titel: 'Das Gegenteil', text: ['aus + wird −, aus − wird +', 'aus · wird :, aus : wird ·', 'Immer auf beiden Seiten!'] }] }],
     },
     erklaeren: { auftrag: 'Erkläre mit der Waage, wie du x + 9 = 15 löst. Was machst du auf beiden Seiten – und warum?', anfaenge: ['Auf der Waage liegen …', 'Ich nehme auf beiden Seiten …', 'Die Probe: …'] },
   },
@@ -194,7 +194,7 @@ const EXTRAS = [
       bild: ['finn:froh:stehen', 'chloe:froh:erklaeren'], sprecher: { Finn: 'm3', Chloe: 'w2' },
       text: [
         ['Finn', 'Auf der Dose steht 500 Milliliter. Die sieht aber viel kleiner aus.'],
-        ['Chloe', 'Lass uns messen. Der Durchmesser ist 6,6 Zentimeter, die Höhe 16,8 Zentimeter.'],
+        ['Chloe', 'Komm, wir messen nach. Der Durchmesser ist 6,6 Zentimeter, die Höhe 16,8 Zentimeter.'],
         ['Finn', 'Und wie rechnet man das bei einem Kreis?'],
         ['Chloe', 'Erst die Grundfläche: Radius ist die Hälfte, 3,3. Dann 3,14 mal 3,3 mal 3,3 – ungefähr 34,2 Quadratzentimeter.'],
         ['Finn', 'Und dann mal die Höhe: 34,2 mal 16,8 … ungefähr 575 Kubikzentimeter.'],

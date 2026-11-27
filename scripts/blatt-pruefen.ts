@@ -126,10 +126,12 @@ const EMOJI = /\p{Extended_Pictographic}/u
  *  (weiches Trennzeichen U+00AD wird vor dem Setzen entfernt). */
 const fontkit = createRequire(import.meta.url)('fontkit') as { openSync(pfad: string): { characterSet: number[] } }
 const SCHRIFTEN = join(ROOT, 'src/assets/fonts/pdf')
+// Hauptschriften: Schnittmenge; dazu die Zeichen-Schrift, die in den PDFs pro Zeichen einspringt (stil.ts: SCHRIFT_ZEICHEN)
 const ZEICHEN = readdirSync(SCHRIFTEN)
-  .filter((d) => d.endsWith('.ttf'))
+  .filter((d) => d.endsWith('.ttf') && !d.startsWith('Zeichen-'))
   .map((d) => new Set(fontkit.openSync(join(SCHRIFTEN, d)).characterSet))
   .reduce((a, b) => new Set([...a].filter((c) => b.has(c))))
+for (const c of fontkit.openSync(join(SCHRIFTEN, 'Zeichen-Regular.ttf')).characterSet) ZEICHEN.add(c)
 ZEICHEN.add(0xad)
 function fremdeZeichen(x: string): string {
   // \n Zeilenumbruch, \t Tabulator im Päckchen (rechter Teil bündig) – beide werden nicht als Zeichen gesetzt
@@ -1208,7 +1210,9 @@ for (const datei of liste) {
     if (!Array.isArray(b.stufen) || !b.stufen.length || b.stufen.some((s) => !STUFEN_REIHE.includes(s))) melde('F', wo, 'stufen ungültig')
     const werkzeug = b.bereich === 'werkzeuge'
     if (!werkzeug && b.stufen?.includes('C1') && b.stufen.some((s) => s !== 'C1' && s !== 'C2')) melde('F', wo, 'Spielschul-Blätter nur für C1 (höchstens C1–C2)')
-    if (!werkzeug && b.bereich !== 'skills' && b.stufen?.includes('ES') && !b.fr) melde('F', wo, 'Sekundarschul-Blatt braucht eine französische Fassung (fr)')
+    // Mathe-Modulhefte der Voie de préparation: Unterricht auf Deutsch, französische Fachwörter stehen im Heft (Programm VP Mathematik)
+    const matheModulDe = b.bereich === 'mathe' && /^mathe-m\d+-/.test(b.id)
+    if (!werkzeug && b.bereich !== 'skills' && b.stufen?.includes('ES') && !b.fr) melde(matheModulDe ? 'H' : 'F', wo, matheModulDe ? 'Mathe-Modulheft nur Deutsch (Fachwörter FR im Heft)' : 'Sekundarschul-Blatt braucht eine französische Fassung (fr)')
     if (b.bereich === 'spielschule') {
       if (!b.fr) melde('F', wo, 'Spielschule: französische Fassung (fr) fehlt')
       if (b.stufen?.length !== 1 || b.stufen[0] !== 'C1') melde('F', wo, 'Spielschule: stufen ["C1"]')

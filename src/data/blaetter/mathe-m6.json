@@ -1,0 +1,5240 @@
+[
+  {
+    "id": "mathe-m6-negative-zahlen-addieren",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Rechnen mit Vorzeichen",
+      "addieren",
+      "subtrahieren",
+      "Vorzeichen",
+      "Modul 6"
+    ],
+    "bild": "icon:math-symbols",
+    "de": {
+      "titel": "Negative Zahlen addieren und subtrahieren",
+      "untertitel": "Modul 6, Lektion 1",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Denke an Geld: +5 ist Guthaben, −3 sind Schulden. 5 € Guthaben und 3 € Schulden → es bleiben 2 €. So rechnet man mit Vorzeichen: als Bewegung auf dem Zahlenstrahl."
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Fit für das Kapitel „Rechnen mit Vorzeichen“ – Wiederholung aus Modul 5: negative Zahlen vergleichen und Temperaturänderung. Rechne allein, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Setze < oder >:  5  ___  −7",
+            "Setze < oder >:  14  ___  −10",
+            "Setze < oder >:  7  ___  −15",
+            "Morgens −2 °C, mittags −6 °C. Änderung?   ___",
+            "Morgens −4 °C, mittags 6 °C. Änderung?   ___",
+            "Morgens −10 °C, mittags −7 °C. Änderung?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Addieren und Subtrahieren mit Vorzeichen",
+          "text": "Auf dem Zahlenstrahl geht + nach rechts, − nach links. Zwei Minuszeichen nebeneinander werden zu Plus: 5 − (−3) = 5 + 3. Guthaben/Schulden hilft beim Vorstellen."
+        },
+        {
+          "art": "schritte",
+          "stil": "liste",
+          "linien": 0,
+          "teilbar": true,
+          "items": [
+            {
+              "titel": "Plus = nach rechts, Minus = nach links",
+              "text": "Auf dem Zahlenstrahl: + geht nach rechts (hoch), − geht nach links (runter).  Beispiel: −3 + 5: starte bei −3, gehe 5 nach rechts → +2."
+            },
+            {
+              "titel": "Minus und Minus",
+              "text": "−4 − 3: von −4 noch 3 nach links → −7. Zwei Schritte in dieselbe Richtung (runter).  Beispiel: −4 − 3 = −7."
+            },
+            {
+              "titel": "Zwei Minus nebeneinander",
+              "text": "„− (−3)“ bedeutet „das Gegenteil von −3“, also + 3.  Beispiel: 5 − (−3) = 5 + 3 = 8. Merke: minus mal minus wird plus."
+            }
+          ]
+        },
+        {
+          "art": "zahlenstrahl",
+          "von": "-6",
+          "bis": "6",
+          "schritt": "1",
+          "punkte": [
+            {
+              "wert": "-2",
+              "name": "Start −2"
+            },
+            {
+              "wert": "3",
+              "name": "+5 → 3"
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "+ geht nach rechts, − nach links.",
+                "Zwei Minuszeichen nebeneinander werden zu Plus: − (−3) = +3.",
+                "Guthaben/Schulden hilft beim Vorstellen."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Starte bei der ersten Zahl auf dem Zahlenstrahl.",
+                "2. + → nach rechts, − → nach links.",
+                "3. „− (−…)“ wird zu „+ …“."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "addieren – additionner",
+                "subtrahieren – soustraire",
+                "Vorzeichen – signe"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: Rechne 7 − (−2).",
+              "punkte": [
+                "Zwei Minuszeichen nebeneinander werden zu Plus.",
+                "7 − (−2) = 7 + 2.",
+                "7 + 2 = 9.",
+                "Ergebnis: 7 − (−2) = 9."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Zwei Minus",
+              "text": "Aufgabe: Rechne −3 − (−8).",
+              "punkte": [
+                "− (−8) wird zu + 8.",
+                "−3 + 8 = 5.",
+                "Ergebnis: −3 − (−8) = 5."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "Rechne  −6 + 6  = 0",
+            "Rechne  −2 + 9  = 7",
+            "Rechne  −3 + 1  = −2",
+            "Rechne  3 − 12  = −9",
+            "Rechne  −3 − 5  = −8",
+            "Rechne  −1 − 12  = −13"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "−2 + 6 = ___",
+            "3 − 7 = ___",
+            "Rechne  −7 + 10  = ___",
+            "Rechne  −1 − 10  = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "Rechne  4 − 7  = ___",
+            "Rechne  −6 − 8  = ___",
+            "Rechne  −1 − 4  = ___",
+            "Rechne  1 − 10  = ___",
+            "Rechne  6 − 7  = ___",
+            "Rechne  −11 + 6  = ___",
+            "Rechne  7 − 11  = ___",
+            "Rechne  4 − 10  = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "Zahlenstrahl benutzen: + rechts, − links."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "−3 + 5 = ___",
+            "2 − 5 = ___",
+            "−4 − 2 = ___",
+            "Rechne  −12 + 7  = ___",
+            "Rechne  9 − 10  = ___",
+            "Rechne  −5 + 7  = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "−6 + 10 = ___",
+            "−5 − 4 = ___",
+            "7 − (−2) = ___",
+            "Rechne  −2 + 10  = ___",
+            "Rechne  −11 + 11  = ___",
+            "Rechne  −7 + 9  = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne mit dem Zahlenstrahl: plus = nach rechts, minus = nach links."
+        },
+        {
+          "art": "zahlenstrahl",
+          "von": "-10",
+          "bis": "10",
+          "schritt": "1"
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "−4 + 7 = ___",
+            "3 − 8 = ___",
+            "−2 − 5 = ___",
+            "−9 + 4 = ___",
+            "6 − 10 = ___",
+            "−3 + 3 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: Fünf Meter nach oben",
+          "text": "Am Stausee · Tauchkurs. Finn macht einen Tauchkurs am Stausee. Der Tauchlehrer erklärt, wie tief sie tauchen."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Tauchlehrer",
+              "text": "Die Wasseroberfläche ist null. Wir tauchen zuerst auf minus 4 Meter."
+            },
+            {
+              "wer": "Finn",
+              "text": "Und dann noch 3 Meter tiefer?"
+            },
+            {
+              "wer": "Tauchlehrer",
+              "text": "Genau: minus 4 minus 3. Wo sind wir dann?"
+            },
+            {
+              "wer": "Finn",
+              "text": "Bei minus 7 Metern."
+            },
+            {
+              "wer": "Tauchlehrer",
+              "text": "Richtig. Dann steigen wir 5 Meter nach oben: minus 7 plus 5."
+            },
+            {
+              "wer": "Finn",
+              "text": "Dann sind wir bei minus 2 Metern. Fast wieder oben!"
+            },
+            {
+              "wer": "Tauchlehrer",
+              "text": "Und zum Schluss die letzten 2 Meter: minus 2 plus 2 gleich null. Wir sind an der Oberfläche."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "−4 − 3 = ? Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "−7  []       −1  []       +7  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Lies und rechne mit."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Erst tauchen: 0 − 4 = ___ m",
+            "Tiefer: −4 − 3 = ___ m",
+            "Nach oben: −7 + 5 = ___ m",
+            "Zur Oberfläche: −2 + 2 = ___ m"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "In der Gruppe: Aufzug-Spiel: Startet im Erdgeschoss (0). Eine Person sagt „3 runter“, „5 hoch“ … Die anderen sagen die Etage."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Regel",
+          "punkte": [
+            "plus = nach oben / rechts",
+            "minus = nach unten / links",
+            "minus (−) eine negative Zahl = plus"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "Rechne  −3 + 6  = ___",
+            "Rechne  11 − 12  = ___",
+            "Rechne  −9 + 6  = ___",
+            "Rechne  −6 − 3  = ___",
+            "Rechne  −1 − 5  = ___",
+            "Rechne  −7 + 3  = ___",
+            "Rechne  −8 − 5  = ___",
+            "Rechne  5 − 6  = ___",
+            "Rechne  −9 − 5  = ___",
+            "Rechne  1 − 12  = ___",
+            "Rechne  −5 + 5  = ___",
+            "Rechne  −1 + 3  = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "−3 − (−8) = ___",
+            "Ein Konto: −20 €, dann +35 €, dann −10 €. Endstand?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "−4 + 6 = ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Erkläre am Zahlenstrahl, wie du −3 + 5 rechnest."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich starte bei …",
+            "Dann gehe ich …",
+            "Ich lande bei …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich addiere und subtrahiere positive und negative Zahlen sicher.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich addiere und subtrahiere positive und negative Zahlen sicher.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Schulden und Guthaben“ – Denke an Geld: +5 ist Guthaben, −3 sind Schulden. 5 € Guthaben und 3 € Schulden → es bleiben 2 €. So rechnet man mit Vorzeichen: als Bewegung auf dem Zahlenstrahl.",
+          "Fit für das Kapitel (10 Min.): Aufgabe 1 – Wiederholung aus früheren Kapiteln und Modulen, allein und ohne Hilfe. Kurz vergleichen.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): −2 + 6 = ? · 3 − 7 = ? Im Heft: Aufgabe 2.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 3 bis 9 nach Stufe; Übungspäckchen (Aufgabe 10) und Plus (Aufgabe 11) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 12): −4 + 6 = ? Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 13) als Hausaufgabe."
+        ],
+        "hintergrund": "Addieren und Subtrahieren mit Vorzeichen: Auf dem Zahlenstrahl geht + nach rechts, − nach links. Zwei Minuszeichen nebeneinander werden zu Plus: 5 − (−3) = 5 + 3. Guthaben/Schulden hilft beim Vorstellen. + geht nach rechts, − nach links. Zwei Minuszeichen nebeneinander werden zu Plus: − (−3) = +3. Guthaben/Schulden hilft beim Vorstellen. Im Unterricht: Guthaben/Schulden oder Thermometer immer mitdenken lassen. Die Regel „minus minus = plus“ nur an konkreten Beispielen (5 − (−3)) üben, nicht auswendig ohne Sinn.",
+        "differenzierung": {
+          "leichter": "Basis: Zahlenstrahl benutzen: + rechts, − links. Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Guthaben/Schulden oder Thermometer immer mitdenken lassen. Die Regel „minus minus = plus“ nur an konkreten Beispielen (5 − (−3)) üben, nicht auswendig ohne Sinn.",
+          "Spiel: „Konto-Spiel“: Karten +/− ziehen, Kontostand laufend anpassen – wer zuerst über +20 ist, gewinnt."
+        ],
+        "material": "Zahlenstrahl −20 bis +20",
+        "loesungen": [
+          "1) a) > · b) > · c) > · d) −4 °C · e) +10 °C · f) +3 °C",
+          "2) a) Start −2, 6 nach rechts → +4 · b) Start 3, 7 nach links → −4 · c) 3 · d) −11",
+          "3) a) −3 · b) −14 · c) −5 · d) −9 · e) −1 · f) −5 · g) −4 · h) −6",
+          "4) a) +2 · b) −3 · c) −6 · d) −5 · e) −1 · f) 2",
+          "5) a) +4 · b) −9 · c) 7 + 2 = 9 · d) 8 · e) 0 · f) 2",
+          "6) a) 3 · b) −5 · c) −7 · d) −5 · e) −4 · f) 0",
+          "7) −7",
+          "8) a) −4 · b) −7 · c) −2 · d) 0",
+          "9) mündlich – eigene Lösungen",
+          "10) a) 3 · b) −1 · c) −3 · d) −9 · e) −6 · f) −4 · g) −13 · h) −1 · i) −14 · j) −11 · k) 0 · l) 2",
+          "11) a) −3 + 8 = 5 · b) −20 + 35 − 10 = +5 €",
+          "12) Lösung: +2",
+          "13) eigene Erklärung – auf Fachwörter und ein Beispiel achten"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m6-negative-zahlen-multiplizieren",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Rechnen mit Vorzeichen",
+      "multiplizieren",
+      "Produkt",
+      "Faktor",
+      "Modul 6"
+    ],
+    "bild": "icon:math-symbols",
+    "de": {
+      "titel": "Negative Zahlen multiplizieren – die Vorzeichenregel",
+      "untertitel": "Modul 6, Lektion 2",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Bei der Multiplikation entscheidet nur eine einfache Regel über das Vorzeichen: Gleiche Vorzeichen → plus. Verschiedene Vorzeichen → minus. Den Zahlenwert rechnest du ganz normal."
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Vorzeichenregel bei der Multiplikation",
+              "text": "Gleiche Vorzeichen ergeben Plus, verschiedene Vorzeichen ergeben Minus. Merke: minus · minus = plus. Zuerst das Vorzeichen bestimmen, dann die Zahlen malnehmen."
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Die Vorzeichenregel",
+                  "text": "plus·plus = plus, minus·minus = plus, plus·minus = minus, minus·plus = minus.  Beispiel: (+3)·(+4) = +12. (−3)·(−4) = +12. (+3)·(−4) = −12. (−3)·(+4) = −12."
+                },
+                {
+                  "titel": "Kurz gemerkt",
+                  "text": "Gleiche Vorzeichen → Ergebnis positiv. Verschiedene Vorzeichen → Ergebnis negativ.  Beispiel: −5 · −2 = +10 (gleich). −5 · 2 = −10 (verschieden)."
+                },
+                {
+                  "titel": "Erst Vorzeichen, dann Zahl",
+                  "text": "Bestimme zuerst das Vorzeichen, dann rechne die Zahlen mal.  Beispiel: (−6)·(+3): verschieden → minus; 6·3 = 18 → −18."
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "tabelle",
+              "spalten": [
+                "·",
+                "plus",
+                "minus"
+              ],
+              "zeilen": 0,
+              "werte": [
+                [
+                  "plus",
+                  "plus",
+                  "minus"
+                ],
+                [
+                  "minus",
+                  "minus",
+                  "plus"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "Gleiche Vorzeichen → PLUS.",
+                "Verschiedene Vorzeichen → MINUS.",
+                "Merke: „−·− = +“.",
+                "Erst das Vorzeichen bestimmen, dann die Zahlen multiplizieren."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Prüfe die Vorzeichen: gleich oder verschieden?",
+                "2. Gleich → Ergebnis +, verschieden → Ergebnis −.",
+                "3. Multipliziere die Zahlenwerte."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "multiplizieren – multiplier",
+                "Produkt – produit",
+                "Faktor – facteur"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: Rechne (−5) · (+6).",
+              "punkte": [
+                "Vorzeichen prüfen: minus und plus sind verschieden → Ergebnis negativ.",
+                "Zahlen malnehmen: 5 · 6 = 30.",
+                "Minus davor: −30.",
+                "Ergebnis: (−5) · (+6) = −30."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Gleiche Vorzeichen",
+              "text": "Aufgabe: Rechne (−7) · (−3).",
+              "punkte": [
+                "Beide negativ → gleich → Ergebnis +.",
+                "7 · 3 = 21.",
+                "Ergebnis: (−7) · (−3) = +21."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "(2) · (4) = 8",
+            "(2) · (−6) = −12",
+            "(4) · (3) = 12",
+            "(5) · (6) = 30",
+            "(−4) · (−6) = 24",
+            "(1) · (−2) = −2"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "(−4)·(−2) = ___",
+            "(+5)·(−3) = ___",
+            "(6) · (5) = ___",
+            "(6) · (−6) = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "(3) · (3) = ___",
+            "(4) · (−5) = ___",
+            "(−2) · (−3) = ___",
+            "(−4) · (−2) = ___",
+            "(−1) · (−1) = ___",
+            "(2) · (−4) = ___",
+            "(−3) · (−6) = ___",
+            "(−2) · (6) = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "Erst Vorzeichen (gleich/verschieden), dann Zahl."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "(+3)·(+2) = ___",
+            "(−3)·(+2) = ___",
+            "(−4)·(−2) = ___",
+            "(−2) · (−1) = ___",
+            "(−1) · (2) = ___",
+            "(−6) · (−6) = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "(−5)·(+6) = ___",
+            "(−7)·(−3) = ___",
+            "(+8)·(−4) = ___",
+            "(5) · (6) = ___",
+            "(7) · (−2) = ___",
+            "(2) · (7) = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Setz das Muster fort. Was fällt dir auf, wenn du mit einer negativen Zahl malnimmst?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "·",
+            "3",
+            "2",
+            "1",
+            "0",
+            "−1",
+            "−2",
+            "−3"
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "2",
+              "6",
+              "4",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "−2",
+              "−6",
+              "−4",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "linien",
+          "anzahl": 2
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: Jede Stunde 2 Grad kälter",
+          "text": "Am Frühstückstisch · Winter. Lea und ihr Opa schauen auf das Thermometer. In der Nacht ist es immer kälter geworden."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Opa",
+              "text": "Um Mitternacht waren es 0 Grad. Dann ist die Temperatur jede Stunde um 2 Grad gefallen."
+            },
+            {
+              "wer": "Lea",
+              "text": "Nach 3 Stunden also: 3 mal minus 2 … das sind minus 6 Grad."
+            },
+            {
+              "wer": "Opa",
+              "text": "Genau. Plus mal minus gibt minus."
+            },
+            {
+              "wer": "Lea",
+              "text": "Und was war 3 Stunden vor Mitternacht?"
+            },
+            {
+              "wer": "Opa",
+              "text": "Da war es 6 Grad wärmer. Minus 3 Stunden mal minus 2 Grad …"
+            },
+            {
+              "wer": "Lea",
+              "text": "… gibt plus 6 Grad! Minus mal minus gibt plus. Das passt: Am Abend war es wärmer."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "(−3) · (−4) = ? Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "+12  []       −12  []       −7  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Lies und ergänze."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "3 Stunden später: 3 · (−2) = ___ Grad",
+            "3 Stunden vorher: (−3) · (−2) = ___ Grad",
+            "plus mal minus = ___ · minus mal minus = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Vorzeichen-Blitz: Eine Person sagt eine Aufgabe wie „minus 4 mal minus 5“. Die anderen sagen zuerst nur das Vorzeichen, dann das Ergebnis."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Regel",
+          "punkte": [
+            "gleiche Vorzeichen → plus",
+            "verschiedene Vorzeichen → minus"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "(−6) · (4) = ___",
+            "(1) · (−6) = ___",
+            "(2) · (−1) = ___",
+            "(6) · (−1) = ___",
+            "(4) · (−2) = ___",
+            "(2) · (1) = ___",
+            "(7) · (−6) = ___",
+            "(−2) · (−7) = ___",
+            "(3) · (−1) = ___",
+            "(−6) · (6) = ___",
+            "(8) · (8) = ___",
+            "(−7) · (−1) = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "(−2)·(−3)·(−1) = ___",
+            "Welches Vorzeichen hat (−1)·(−1)·(−1)·(−1)? (viermal)   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "(−6)·(−2) = ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Erkläre die Vorzeichenregel mit eigenen Worten und je einem Beispiel."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Wenn beide Vorzeichen gleich sind, …",
+            "Wenn sie verschieden sind, …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich multipliziere relative Zahlen mit der Vorzeichenregel.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich multipliziere relative Zahlen mit der Vorzeichenregel.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Plus oder minus?“ – Bei der Multiplikation entscheidet nur eine einfache Regel über das Vorzeichen: Gleiche Vorzeichen → plus. Verschiedene Vorzeichen → minus. Den Zahlenwert rechnest du ganz normal.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): (−4)·(−2) = ? · (+5)·(−3) = ? Im Heft: Aufgabe 1.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 2 bis 8 nach Stufe; Übungspäckchen (Aufgabe 9) und Plus (Aufgabe 10) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 11): (−6)·(−2) = ? Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 12) als Hausaufgabe."
+        ],
+        "hintergrund": "Vorzeichenregel bei der Multiplikation: Gleiche Vorzeichen ergeben Plus, verschiedene Vorzeichen ergeben Minus. Merke: minus · minus = plus. Zuerst das Vorzeichen bestimmen, dann die Zahlen malnehmen. Gleiche Vorzeichen → PLUS. Verschiedene Vorzeichen → MINUS. Merke: „−·− = +“. Erst das Vorzeichen bestimmen, dann die Zahlen multiplizieren. Im Unterricht: Die 4 Fälle als kleine Tabelle laminieren (++, −−, +−, −+). Trennen: erst das Vorzeichen entscheiden (Farbe!), dann getrennt die Zahlen malnehmen. Nicht beides gleichzeitig.",
+        "differenzierung": {
+          "leichter": "Basis: Erst Vorzeichen (gleich/verschieden), dann Zahl. Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Die 4 Fälle als kleine Tabelle laminieren (++, −−, +−, −+). Trennen: erst das Vorzeichen entscheiden (Farbe!), dann getrennt die Zahlen malnehmen. Nicht beides gleichzeitig.",
+          "Spiel: „Vorzeichen-Duell“: Zwei Karten (mit Vorzeichen) aufdecken, wer zuerst das richtige Ergebnis-Vorzeichen ruft, punktet."
+        ],
+        "material": "Vorzeichen-Tabelle",
+        "loesungen": [
+          "1) a) Gleich → +; 4·2 = 8 → +8 · b) Verschieden → −; 5·3 = 15 → −15 · c) 30 · d) −36",
+          "2) a) 9 · b) −20 · c) 6 · d) 8 · e) 1 · f) −8 · g) 18 · h) −12",
+          "3) a) +6 · b) −6 · c) +8 · d) 2 · e) −2 · f) 36",
+          "4) a) −30 · b) +21 · c) −32 · d) 30 · e) −14 · f) 14",
+          "5) 2: 6, 4, 2, 0, −2, −4, −6 – −2: −6, −4, −2, 0, 2, 4, 6 – bei −2 wird es jedes Mal 2 mehr – darum ist minus mal minus plus",
+          "6) +12",
+          "7) a) −6 · b) +6 · c) minus / plus",
+          "8) mündlich – eigene Lösungen",
+          "9) a) −24 · b) −6 · c) −2 · d) −6 · e) −8 · f) 2 · g) −42 · h) 14 · i) −3 · j) −36 · k) 64 · l) 7",
+          "10) a) (−2)·(−3) = +6; +6·(−1) = −6 · b) Vier Minus → paarweise plus → Ergebnis +1",
+          "11) Gleich → +12",
+          "12) eigene Erklärung – auf Fachwörter und ein Beispiel achten"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m6-punkt-vor-strich",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Rechnen mit Vorzeichen",
+      "Punkt vor Strich",
+      "Klammer",
+      "Modul 6"
+    ],
+    "bild": "icon:math-symbols",
+    "de": {
+      "titel": "Punkt vor Strich – die Rechenregeln",
+      "untertitel": "Modul 6, Lektion 3",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Was ist 2 + 3 · 4? Nicht 20! Zuerst wird mal gerechnet (Punkt), dann plus (Strich): 3·4 = 12, dann 2 + 12 = 14. Es gibt eine feste Reihenfolge."
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Rechenregeln (Priorität)",
+              "text": "Reihenfolge beim Rechnen: 1. Klammern zuerst, 2. Punkt vor Strich (· und : vor + und −), 3. sonst von links nach rechts."
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Regel 1: Klammern zuerst",
+                  "text": "Was in Klammern steht, wird immer zuerst gerechnet.  Beispiel: (2 + 3) · 4 = 5 · 4 = 20."
+                },
+                {
+                  "titel": "Regel 2: Punkt vor Strich",
+                  "text": "Mal (·) und geteilt (:) kommen vor Plus (+) und Minus (−).  Beispiel: 2 + 3 · 4 = 2 + 12 = 14."
+                },
+                {
+                  "titel": "Regel 3: von links nach rechts",
+                  "text": "Bei gleichrangigen Rechnungen von links nach rechts.  Beispiel: 10 − 4 + 2 = 6 + 2 = 8."
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bon",
+              "titel": "Kino",
+              "posten": [
+                {
+                  "text": "3 Tickets à 8 €",
+                  "preis": "24,00 €"
+                },
+                {
+                  "text": "1 Popcorn",
+                  "preis": "5,00 €"
+                }
+              ],
+              "summe": "29,00 €",
+              "fuss": "Term: 3 · 8 + 5 = 29"
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "1) Klammern zuerst.",
+                "2) Punkt (·, :) vor Strich (+, −).",
+                "3) Sonst von links nach rechts.",
+                "„Klammer – Punkt – Strich.“"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Rechne zuerst, was in Klammern steht.",
+                "2. Dann alle Punkt-Rechnungen (·, :).",
+                "3. Zuletzt die Strich-Rechnungen (+, −) von links nach rechts."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "Punkt vor Strich – priorités",
+                "Klammer – parenthèse"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: Rechne 2 + 3 · 4.",
+              "punkte": [
+                "Punkt vor Strich: zuerst 3 · 4.",
+                "3 · 4 = 12.",
+                "Dann plus: 2 + 12 = 14.",
+                "Ergebnis: 2 + 3 · 4 = 14."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Mit Klammer",
+              "text": "Aufgabe: Rechne (8 − 3) · 2 + 4.",
+              "punkte": [
+                "Klammer: 8 − 3 = 5.",
+                "Punkt: 5 · 2 = 10.",
+                "Strich: 10 + 4 = 14.",
+                "Ergebnis: (8 − 3) · 2 + 4 = 14."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "Rechne: 46 − 9 · 5 = 1",
+            "Rechne: (2 + 3) · 5 = 25",
+            "Rechne: (2 + 9) · 7 = 77",
+            "Rechne: 6 · 2 + 4 = 16",
+            "Rechne: 87 − 9 · 9 = 6",
+            "Rechne: 66 − 9 · 7 = 3"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "5 + 2 · 3 = ___",
+            "(5 + 2) · 3 = ___",
+            "Rechne: 9 + 9 · 9 = ___",
+            "Rechne: (9 + 7) · 7 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Rechne: (5 + 2) · 2 = ___",
+            "Rechne: 9 · 4 + 7 = ___",
+            "Rechne: 36 − 6 · 5 = ___",
+            "Rechne: 3 + 9 · 4 = ___",
+            "Rechne: 2 · 4 + 8 = ___",
+            "Rechne: 4 · 9 + 7 = ___",
+            "Rechne: 8 + 4 · 2 = ___",
+            "Rechne: 25 − 5 · 4 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "Erst Punkt (·:), dann Strich (+−)."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "3 + 4 · 2 = ___",
+            "10 − 2 · 3 = ___",
+            "(2 + 3) · 2 = ___",
+            "Rechne: (7 + 6) · 9 = ___",
+            "Rechne: 2 + 6 · 9 = ___",
+            "Rechne: (7 + 9) · 2 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "6 + 12 : 3 = ___",
+            "20 − 3 · 4 + 2 = ___",
+            "2 · (7 − 3) = ___",
+            "Rechne: 17 − 7 · 2 = ___",
+            "Rechne: 4 · 2 + 9 = ___",
+            "Rechne: (8 + 7) · 6 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Schreib für jeden Einkauf einen Term. Rechne Punkt vor Strich."
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "tabelle",
+              "spalten": [
+                "Pizza-Abend",
+                "Anzahl",
+                "Preis"
+              ],
+              "zeilen": 0,
+              "werte": [
+                [
+                  "Pizza",
+                  "2",
+                  "9,50 €"
+                ],
+                [
+                  "Getränk",
+                  "4",
+                  "2,50 €"
+                ]
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "tabelle",
+              "spalten": [
+                "Ausflug",
+                "Anzahl",
+                "Preis"
+              ],
+              "zeilen": 0,
+              "werte": [
+                [
+                  "Busticket",
+                  "5",
+                  "2,00 €"
+                ],
+                [
+                  "Eintritt",
+                  "1",
+                  "15,00 €"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Pizza-Abend: ___ = ___ €",
+            "Ausflug: ___ = ___ €"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: 29 oder 64 Euro?",
+          "text": "Kino · Samstagabend. Sami kauft 3 Kinokarten zu je 8 Euro und ein Popcorn für 5 Euro. Er rechnet falsch."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Sami",
+              "text": "Drei Karten zu 8 Euro und ein Popcorn zu 5 Euro. Ich rechne 5 plus 3 mal 8 … von links: 8 mal 8 sind 64 Euro?!"
+            },
+            {
+              "wer": "Kassiererin",
+              "text": "Nein, nein! Punkt vor Strich: Zuerst mal, dann plus."
+            },
+            {
+              "wer": "Sami",
+              "text": "Ah: 3 mal 8 sind 24, plus 5 sind 29 Euro."
+            },
+            {
+              "wer": "Kassiererin",
+              "text": "Genau, 29 Euro. Und wenn du noch zwei Popcorn und zwei Getränke dazunimmst, schreib Klammern."
+            },
+            {
+              "wer": "Sami",
+              "text": "Ein Popcorn kostet 5 Euro und ein Getränk 3 Euro. Also 2 mal, Klammer auf, 5 plus 3, Klammer zu. Erst die Klammer: 8, dann mal 2: 16 Euro."
+            },
+            {
+              "wer": "Kassiererin",
+              "text": "Perfekt. Zusammen 45 Euro."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "2 + 3 · 4 = ? Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "20  []       14  []       24  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Lies und rechne richtig."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Karten und Popcorn: 5 + 3 · 8 = ___",
+            "Snacks: 2 · (5 + 3) = ___",
+            "zusammen: 29 + 16 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Fehlersuche: Schreibt drei Rechnungen mit einem Fehler bei der Reihenfolge an die Tafel. Die anderen finden und erklären den Fehler."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Reihenfolge",
+          "punkte": [
+            "1. Klammern",
+            "2. Punkt (· und :)",
+            "3. Strich (+ und −)",
+            "4. Sonst von links nach rechts"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Rechne: (5 + 3) · 8 = ___",
+            "Rechne: 8 · 6 + 2 = ___",
+            "Rechne: (6 + 2) · 5 = ___",
+            "Rechne: 16 − 2 · 6 = ___",
+            "Rechne: 28 − 4 · 6 = ___",
+            "Rechne: 2 · 7 + 8 = ___",
+            "Rechne: 6 · 9 + 6 = ___",
+            "Rechne: 37 − 7 · 5 = ___",
+            "Rechne: (6 + 7) · 6 = ___",
+            "Rechne: (6 + 6) · 6 = ___",
+            "Rechne: 3 + 2 · 8 = ___",
+            "Rechne: (5 + 7) · 8 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "3 · 4 − 2 · 5 = ___",
+            "(8 − 3) · 2 + 4 : 2 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "2 + 3 · 4 = ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Sami hat zuerst 64 € gerechnet. Erkläre seinen Fehler."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Sami hat von links …",
+            "Richtig ist: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich rechne mehrere Rechenarten in der richtigen Reihenfolge (Punkt vor Strich, Klammern zuerst).",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Wiederholung zum Kapitel „Rechnen mit Vorzeichen“ – gemischt aus allen Lektionen. Was kannst du schon sicher?"
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Rechne  −1 − 2  = ___",
+            "(2) · (8) = ___",
+            "Rechne: (2 + 3) · 7 = ___",
+            "Rechne  9 − 12  = ___",
+            "(−5) · (4) = ___",
+            "Rechne: 7 − 2 · 3 = ___",
+            "Rechne  −4 − 8  = ___",
+            "(−5) · (10) = ___",
+            "Rechne: 3 · 9 + 3 = ___"
+          ],
+          "buchstaben": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich rechne mehrere Rechenarten in der richtigen Reihenfolge (Punkt vor Strich, Klammern zuerst).",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wer zuerst?“ – Was ist 2 + 3 · 4? Nicht 20! Zuerst wird mal gerechnet (Punkt), dann plus (Strich): 3·4 = 12, dann 2 + 12 = 14. Es gibt eine feste Reihenfolge.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): 5 + 2 · 3 = ? · (5 + 2) · 3 = ? Im Heft: Aufgabe 1.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 2 bis 8 nach Stufe; Übungspäckchen (Aufgabe 9) und Plus (Aufgabe 10) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 11): 2 + 3 · 4 = ? Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 12) als Hausaufgabe.",
+          "Wiederholung zum Kapitel (Aufgabe 13): gemischte Aufgaben aus dem ganzen Kapitel – vor der Klassenarbeit oder als Hausaufgabe."
+        ],
+        "hintergrund": "Rechenregeln (Priorität): Reihenfolge beim Rechnen: 1. Klammern zuerst, 2. Punkt vor Strich (· und : vor + und −), 3. sonst von links nach rechts. 1) Klammern zuerst. 2) Punkt (·, :) vor Strich (+, −). 3) Sonst von links nach rechts. „Klammer – Punkt – Strich.“ Im Unterricht: Rechenzeichen farbig markieren: Punkt-Rechnungen rot einkreisen und zuerst rechnen. Regel-Poster „Klammer – Punkt – Strich“ gut sichtbar aufhängen und bei jeder Aufgabe darauf zeigen.",
+        "differenzierung": {
+          "leichter": "Basis: Erst Punkt (·:), dann Strich (+−). Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Rechenzeichen farbig markieren: Punkt-Rechnungen rot einkreisen und zuerst rechnen. Regel-Poster „Klammer – Punkt – Strich“ gut sichtbar aufhängen und bei jeder Aufgabe darauf zeigen.",
+          "Spiel: „Klammer-Jagd“: Aufgabe an die Tafel, Schüler markieren zuerst, was zuerst gerechnet wird, bevor gerechnet wird."
+        ],
+        "material": "Regel-Poster",
+        "loesungen": [
+          "1) a) 2·3 = 6, dann 5 + 6 = 11 · b) 7 · 3 = 21 · c) 90 · d) 112",
+          "2) a) 14 · b) 43 · c) 6 · d) 39 · e) 16 · f) 43 · g) 16 · h) 5",
+          "3) a) 4·2 = 8, +3 = 11 · b) 6 abziehen → 10 − 6 = 4 · c) 5·2 = 10 · d) 117 · e) 56 · f) 32",
+          "4) a) 12:3 = 4, +6 = 10 · b) 3·4 = 12; 20 − 12 + 2 = 10 · c) Klammer 4, ·2 = 8 · d) 3 · e) 17 · f) 90",
+          "5) Pizza: 2 · 9,50 + 4 · 2,50 = 19 + 10 = 29 € – Ausflug: 5 · 2 + 15 = 25 €",
+          "6) 14",
+          "7) a) 5 + 24 = 29 € · b) 2 · 8 = 16 € · c) 45 €",
+          "8) mündlich – eigene Lösungen",
+          "9) a) 64 · b) 50 · c) 40 · d) 4 · e) 4 · f) 22 · g) 60 · h) 2 · i) 78 · j) 72 · k) 19 · l) 96",
+          "10) a) 12 − 10 = 2 · b) 5·2 = 10; 4:2 = 2; 10 + 2 = 12",
+          "11) Lösung: 14",
+          "12) eigene Erklärung – auf Fachwörter und ein Beispiel achten",
+          "13) a) −3 · b) 16 · c) 35 · d) −3 · e) −20 · f) 1 · g) −12 · h) −50 · i) 30"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m6-variable",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Buchstabenrechnen (Terme)",
+      "Variable",
+      "Term / Ausdruck",
+      "Modul 6"
+    ],
+    "bild": "icon:math",
+    "de": {
+      "titel": "Die Variable – ein Buchstabe für eine Zahl",
+      "untertitel": "Modul 6, Lektion 4",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "In einer Schachtel sind unbekannt viele Bonbons – wir nennen die Anzahl x. Habe ich 3 solche Schachteln, sind das 3·x = 3x Bonbons. Der Buchstabe steht für eine Zahl, die wir (noch) nicht kennen."
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Fit für das Kapitel „Buchstabenrechnen (Terme)“ – Wiederholung aus Modul 6: Punkt vor Strich. Rechne allein, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Rechne: 42 − 9 · 4 = ___",
+            "Rechne: 9 · 3 + 9 = ___",
+            "Rechne: 2 + 4 · 2 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Fit für das Kapitel „Buchstabenrechnen (Terme)“ – Wiederholung aus Modul 6: Plus und Minus mit negativen Zahlen. Rechne allein, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "Rechne  6 − 9  = ___",
+            "Rechne  −4 + 1  = ___",
+            "Rechne  −5 + 4  = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Variable",
+              "text": "Eine Variable ist ein Buchstabe (oft x), der für eine Zahl steht. Zwischen Zahl und Buchstabe steht ein unsichtbares Malzeichen: 4x bedeutet 4 · x. Ein einzelnes x bedeutet 1 · x."
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Was ist eine Variable?",
+                  "text": "Eine Variable ist ein Buchstabe (oft x), der für eine Zahl steht.  Beispiel: x kann 1, 2, 100 … sein. „x ist eine negative Zahl größer als −5“ heißt: x ∈ {−4, −3, −2, −1}."
+                },
+                {
+                  "titel": "4x bedeutet 4·x",
+                  "text": "Zwischen Zahl und Buchstabe steht ein unsichtbares Malzeichen.  Beispiel: 4x = 4·x. Und x = 1·x (ein einzelnes x ist ein Mal x)."
+                },
+                {
+                  "titel": "Ein Term ist eine Rechnung mit Buchstaben",
+                  "text": "Ein Ausdruck wie 4x + 2b − 2 ist ein Term.  Beispiel: 4x + 2b − 2 – eine Rechnung, die Buchstaben benutzt."
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "geo",
+              "felder": [
+                {
+                  "b": 84,
+                  "h": 22,
+                  "elemente": [
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          4,
+                          6
+                        ],
+                        [
+                          14,
+                          6
+                        ],
+                        [
+                          14,
+                          16
+                        ],
+                        [
+                          4,
+                          16
+                        ]
+                      ]
+                    },
+                    {
+                      "t": "text",
+                      "x": 9,
+                      "y": 21,
+                      "text": "4",
+                      "mitte": true,
+                      "klein": true
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          22,
+                          6
+                        ],
+                        [
+                          32,
+                          6
+                        ],
+                        [
+                          32,
+                          16
+                        ],
+                        [
+                          22,
+                          16
+                        ]
+                      ]
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          32,
+                          6
+                        ],
+                        [
+                          42,
+                          6
+                        ],
+                        [
+                          42,
+                          16
+                        ],
+                        [
+                          32,
+                          16
+                        ]
+                      ]
+                    },
+                    {
+                      "t": "text",
+                      "x": 32,
+                      "y": 21,
+                      "text": "7",
+                      "mitte": true,
+                      "klein": true
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          50,
+                          6
+                        ],
+                        [
+                          60,
+                          6
+                        ],
+                        [
+                          60,
+                          16
+                        ],
+                        [
+                          50,
+                          16
+                        ]
+                      ]
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          60,
+                          6
+                        ],
+                        [
+                          70,
+                          6
+                        ],
+                        [
+                          70,
+                          16
+                        ],
+                        [
+                          60,
+                          16
+                        ]
+                      ]
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          70,
+                          6
+                        ],
+                        [
+                          80,
+                          6
+                        ],
+                        [
+                          80,
+                          16
+                        ],
+                        [
+                          70,
+                          16
+                        ]
+                      ]
+                    },
+                    {
+                      "t": "text",
+                      "x": 65,
+                      "y": 21,
+                      "text": "10",
+                      "mitte": true,
+                      "klein": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Hölzchen-Quadrate: Jedes neue Quadrat braucht 3 Hölzchen mehr. Für n Quadrate: 3 · n + 1."
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "Eine Variable ist ein Buchstabe für eine Zahl.",
+                "4x bedeutet 4·x.",
+                "Ein einzelnes x bedeutet 1·x.",
+                "Ein Term ist eine Rechnung mit Buchstaben."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Lies 4x als 4 · x.",
+                "2. Setze für x eine Zahl ein, wenn du den Wert brauchst."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "Variable – variable",
+                "Term / Ausdruck – expression littérale"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: Was bedeutet der Term 3x, und wie viel ist er für x = 4?",
+              "punkte": [
+                "3x bedeutet 3 · x (unsichtbares Malzeichen).",
+                "Für x = 4: 3 · 4.",
+                "3 · 4 = 12.",
+                "Ergebnis: 3x = 3 · x; für x = 4 ist 3x = 12."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Bedeutung",
+              "text": "Aufgabe: Was bedeutet 3x, und wie viel ist es für x = 4?",
+              "punkte": [
+                "3x = 3 · x.",
+                "Für x = 4: 3 · 4 = 12.",
+                "Ergebnis: 3x = 3 · x; für x = 4 ist es 12."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "A(x) = 6x + 3.  Berechne A(0).   A(0) = 3",
+            "A(x) = 4x + 5.  Berechne A(8).   A(8) = 37",
+            "A(x) = 4x − 6.  Berechne A(2).   A(2) = 2",
+            "A(x) = 3x + 2.  Berechne A(0).   A(0) = 2",
+            "A(x) = 2x − 2.  Berechne A(5).   A(5) = 8",
+            "A(x) = 3x + 7.  Berechne A(1).   A(1) = 10"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Was bedeutet 5x?   ___",
+            "Wie viel ist 1·x?   ___",
+            "A(x) = 5x + 4.  Berechne A(5).   ___",
+            "A(x) = 6x − 4.  Berechne A(3).   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "A(x) = 2x + 4.  Berechne A(8).   ___",
+            "A(x) = 6x − 5.  Berechne A(2).   ___",
+            "A(x) = 4x − 5.  Berechne A(8).   ___",
+            "A(x) = 5x − 3.  Berechne A(6).   ___",
+            "A(x) = 4x + 2.  Berechne A(5).   ___",
+            "A(x) = 4x + 5.  Berechne A(6).   ___",
+            "A(x) = 4x − 4.  Berechne A(0).   ___",
+            "A(x) = 3x + 7.  Berechne A(6).   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "Zahl neben Buchstabe = mal."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Schreibe 3·x kürzer.   ___",
+            "Was bedeutet 7x?   ___",
+            "Wie schreibt man 1·x kurz?   ___",
+            "A(x) = 2x + 5.  Berechne A(5).   ___",
+            "A(x) = 3x + 1.  Berechne A(8).   ___",
+            "A(x) = 4x + 2.  Berechne A(0).   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Nenne drei Zahlen, die x sein kann, wenn „x ist eine gerade Zahl zwischen 1 und 9“.   ___",
+            "Ist 2a + 3 ein Term? Was ist die Variable?   ___",
+            "Schreibe „viermal a“ als Term.   ___",
+            "A(x) = 3x + 8.  Berechne A(8).   ___",
+            "A(x) = 6x − 6.  Berechne A(0).   ___",
+            "A(x) = 5x + 5.  Berechne A(0).   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Wie viele Hölzchen brauchst du? Ergänze die Tabelle. Schreib am Ende den Term mit n."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quadrate n",
+            "1",
+            "2",
+            "3",
+            "4",
+            "10",
+            "n"
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "Hölzchen",
+              "4",
+              "7",
+              "10",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: Ich kenne deine Zahl!",
+          "text": "Pause · Mathe-Zauberei. Yusuf macht einen Zahlentrick mit Mia. Mach mit! Die Zahl am Anfang nennen wir x."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Yusuf",
+              "text": "Denk dir eine Zahl. Sag sie nicht!"
+            },
+            {
+              "wer": "Mia",
+              "text": "Okay, ich habe eine."
+            },
+            {
+              "wer": "Yusuf",
+              "text": "Verdopple sie. Dann addiere 6. Dann teile durch 2. Und jetzt ziehe deine Zahl ab."
+            },
+            {
+              "wer": "Mia",
+              "text": "Fertig."
+            },
+            {
+              "wer": "Yusuf",
+              "text": "Dein Ergebnis ist 3!"
+            },
+            {
+              "wer": "Mia",
+              "text": "Wie machst du das?"
+            },
+            {
+              "wer": "Yusuf",
+              "text": "Ich nenne deine Zahl x. Verdoppeln: 2x. Plus 6: 2x plus 6. Geteilt durch 2: x plus 3. Minus x: Es bleibt immer 3!"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "4x bedeutet … Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "4 · x  []       4 + x  []       4 und dann x  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Lies. Schreibe jeden Schritt mit x."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Schritt",
+            "mit Buchstaben"
+          ],
+          "breiten": [
+            5,
+            5
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "Denk dir eine Zahl.",
+              ""
+            ],
+            [
+              "Verdopple sie.",
+              ""
+            ],
+            [
+              "Addiere 6.",
+              ""
+            ],
+            [
+              "Teile durch 2.",
+              ""
+            ],
+            [
+              "Ziehe deine Zahl ab.",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "In der Gruppe: Probiert den Trick mit drei verschiedenen Zahlen aus. Kommt immer 3 heraus? Erfindet einen eigenen Trick."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tipp",
+          "punkte": [
+            "Am Ende muss das x wieder verschwinden.",
+            "Zum Beispiel: verdreifachen, + 9, : 3, − x → immer 3"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "A(x) = 5x − 5.  Berechne A(8).   ___",
+            "A(x) = 3x + 4.  Berechne A(4).   ___",
+            "A(x) = 3x + 5.  Berechne A(1).   ___",
+            "A(x) = 4x + 0.  Berechne A(2).   ___",
+            "A(x) = 2x + 8.  Berechne A(2).   ___",
+            "A(x) = 2x + 2.  Berechne A(5).   ___",
+            "A(x) = 3x − 6.  Berechne A(6).   ___",
+            "A(x) = 5x + 2.  Berechne A(5).   ___",
+            "A(x) = 2x − 3.  Berechne A(0).   ___",
+            "A(x) = 3x − 5.  Berechne A(7).   ___",
+            "A(x) = 4x − 2.  Berechne A(8).   ___",
+            "A(x) = 4x − 2.  Berechne A(4).   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Was bedeutet der Term 2x + 5 in Worten, wenn x „Anzahl der Freunde“ ist?   ___",
+            "„x ist eine negative ganze Zahl größer als −4.“ Welche Werte sind möglich?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Was bedeutet 4x?   ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Erkläre, warum beim Zaubertrick immer 3 herauskommt – egal, welche Zahl man denkt."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich nenne die Zahl x.",
+            "Nach allen Schritten bleibt …",
+            "Das x …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich verstehe, dass ein Buchstabe für eine Zahl stehen kann, und weiß, dass 4x = 4·x.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich verstehe, dass ein Buchstabe für eine Zahl stehen kann, und weiß, dass 4x = 4·x.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Die geheimnisvolle Zahl“ – In einer Schachtel sind unbekannt viele Bonbons – wir nennen die Anzahl x. Habe ich 3 solche Schachteln, sind das 3·x = 3x Bonbons. Der Buchstabe steht für eine Zahl, die wir (noch) nicht kennen.",
+          "Fit für das Kapitel (10 Min.): Aufgaben 1 und 2 – Wiederholung aus früheren Kapiteln und Modulen, allein und ohne Hilfe. Kurz vergleichen.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): Was bedeutet 5x? · Wie viel ist 1·x? Im Heft: Aufgabe 3.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 4 bis 10 nach Stufe; Übungspäckchen (Aufgabe 11) und Plus (Aufgabe 12) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 13): Was bedeutet 4x? Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 14) als Hausaufgabe."
+        ],
+        "hintergrund": "Variable: Eine Variable ist ein Buchstabe (oft x), der für eine Zahl steht. Zwischen Zahl und Buchstabe steht ein unsichtbares Malzeichen: 4x bedeutet 4 · x. Ein einzelnes x bedeutet 1 · x. Eine Variable ist ein Buchstabe für eine Zahl. 4x bedeutet 4·x. Ein einzelnes x bedeutet 1·x. Ein Term ist eine Rechnung mit Buchstaben. Im Unterricht: Die Schachtel-mit-Bonbons-Idee immer wieder aufgreifen: x = „so viele, wie in der Schachtel sind“. Das unsichtbare Malzeichen bei 4x explizit dazuschreiben lassen (4·x), bis es sitzt.",
+        "differenzierung": {
+          "leichter": "Basis: Zahl neben Buchstabe = mal. Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Die Schachtel-mit-Bonbons-Idee immer wieder aufgreifen: x = „so viele, wie in der Schachtel sind“. Das unsichtbare Malzeichen bei 4x explizit dazuschreiben lassen (4·x), bis es sitzt.",
+          "Spiel: „Was steckt in der Box?“: Eine Box mit x Gegenständen, drei Boxen = 3x – erst mit unbekanntem x, dann x verraten und ausrechnen."
+        ],
+        "material": "Kärtchen mit x",
+        "loesungen": [
+          "1) a) 6 · b) 36 · c) 10",
+          "2) a) −3 · b) −3 · c) −1",
+          "3) a) 5·x (fünfmal x) · b) x · c) A(5) = 29 · d) A(3) = 14",
+          "4) a) A(8) = 20 · b) A(2) = 7 · c) A(8) = 27 · d) A(6) = 27 · e) A(5) = 22 · f) A(6) = 29 · g) A(0) = −4 · h) A(6) = 25",
+          "5) a) 3x · b) 7·x · c) x · d) A(5) = 15 · e) A(8) = 25 · f) A(0) = 2",
+          "6) a) 2, 4, 6 (oder 8) · b) Ja, ein Term; die Variable ist a · c) 4a · d) A(8) = 32 · e) A(0) = −6 · f) A(0) = 5",
+          "7) 4 Quadrate: 13 · 10 Quadrate: 31 · n Quadrate: 3 · n + 1",
+          "8) 4 · x",
+          "9) Denk dir eine Zahl. x · Verdopple sie. 2x · Addiere 6. 2x + 6 · Teile durch 2. x + 3 · Ziehe deine Zahl ab. 3",
+          "10) mündlich – eigene Lösungen",
+          "11) a) A(8) = 35 · b) A(4) = 16 · c) A(1) = 8 · d) A(2) = 8 · e) A(2) = 12 · f) A(5) = 12 · g) A(6) = 12 · h) A(5) = 27 · i) A(0) = −3 · j) A(7) = 16 · k) A(8) = 30 · l) A(4) = 14",
+          "12) a) Zweimal die Anzahl der Freunde, plus 5 · b) −3, −2, −1",
+          "13) 4·x, also viermal x",
+          "14) eigene Erklärung – auf Fachwörter und ein Beispiel achten"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m6-terme-aufstellen",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Buchstabenrechnen (Terme)",
+      "Summe",
+      "Differenz",
+      "Produkt",
+      "Quotient",
+      "Modul 6"
+    ],
+    "bild": "icon:math",
+    "de": {
+      "titel": "Terme aufstellen – vom Satz zum Term",
+      "untertitel": "Modul 6, Lektion 5",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "„Die Summe von x und 4“ heißt x + 4. „Die Differenz von 2 und d“ heißt 2 − d. Wir übersetzen normale Sätze in die kurze Mathe-Sprache."
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Term aufstellen",
+              "text": "Ein Term ist eine Rechnung mit Buchstaben. Signalwörter: Summe → +, Differenz → −, Produkt → ·, Quotient → :. Auf die Reihenfolge achten: „Differenz von 2 und d“ = 2 − d."
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Die vier Signalwörter",
+                  "text": "Summe = plus (+), Differenz = minus (−), Produkt = mal (·), Quotient = geteilt (:).  Beispiel: Summe von x und 4 → x + 4. Produkt von 3 und a → 3a."
+                },
+                {
+                  "titel": "Auf die Reihenfolge achten",
+                  "text": "Bei „Differenz von 2 und d“ kommt die 2 zuerst: 2 − d (nicht d − 2).  Beispiel: Differenz von a und 5 → a − 5."
+                },
+                {
+                  "titel": "Mehrere Schritte",
+                  "text": "Sätze können mehrere Rechnungen enthalten.  Beispiel: „Das Doppelte von x, plus 3“ → 2x + 3."
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "geo",
+              "felder": [
+                {
+                  "b": 70,
+                  "h": 32,
+                  "elemente": [
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          10,
+                          6
+                        ],
+                        [
+                          60,
+                          6
+                        ],
+                        [
+                          60,
+                          26
+                        ],
+                        [
+                          10,
+                          26
+                        ]
+                      ],
+                      "seiten": [
+                        "x",
+                        "3 cm",
+                        "x",
+                        "3 cm"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Umfang: x + 3 + x + 3 = 2 · x + 6"
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "Summe → + · Differenz → − · Produkt → · · Quotient → :.",
+                "Reihenfolge beachten: „Differenz von 2 und d“ = 2 − d."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Erkenne das Signalwort (Summe, Differenz, Produkt …).",
+                "2. Übersetze in das passende Rechenzeichen.",
+                "3. Achte auf die Reihenfolge der Zahlen/Buchstaben."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "Summe – somme",
+                "Differenz – différence",
+                "Produkt – produit",
+                "Quotient – quotient"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: Schreibe „das Doppelte von x, plus 5“ als Term.",
+              "punkte": [
+                "Das Doppelte von x = 2 · x = 2x.",
+                "„plus 5“ bedeutet + 5.",
+                "Zusammensetzen.",
+                "Ergebnis: Der Term ist 2x + 5."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Aus einem Satz",
+              "text": "Aufgabe: Schreibe „das Doppelte von x, plus 5“ als Term.",
+              "punkte": [
+                "Das Doppelte von x = 2x.",
+                "„plus 5“ → + 5.",
+                "Ergebnis: 2x + 5."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "Schreibe als Term: um 5 mehr als a   a + 5",
+            "Schreibe als Term: die Differenz von y und 4   y − 4",
+            "Schreibe als Term: die Differenz von x und 5   x − 5",
+            "Schreibe als Term: um 7 mehr als x   x + 7",
+            "Schreibe als Term: die Differenz von a und 3   a − 3",
+            "Schreibe als Term: die Summe von a und 6   a + 6"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Summe von x und 7?   ___",
+            "Produkt von 5 und y?   ___",
+            "Schreibe als Term: das Doppelte von x   ___",
+            "Schreibe als Term: die Differenz von a und 2   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Schreibe als Term: die Summe von x und 7   ___",
+            "Schreibe als Term: das Produkt von 2 und x   ___",
+            "Schreibe als Term: um 3 mehr als y   ___",
+            "Schreibe als Term: das Doppelte von a   ___",
+            "Schreibe als Term: das Produkt von 7 und y   ___",
+            "Schreibe als Term: das Produkt von 4 und x   ___",
+            "Schreibe als Term: das Doppelte von n   ___",
+            "Schreibe als Term: um 4 mehr als y   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "Signalwort erkennen: Summe/Differenz/Produkt."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Summe von a und 3   ___",
+            "Differenz von x und 2   ___",
+            "Produkt von 4 und x   ___",
+            "Schreibe als Term: die Summe von a und 4   ___",
+            "Schreibe als Term: das Produkt von 3 und y   ___",
+            "Schreibe als Term: um 7 mehr als y   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Das Doppelte von x, plus 5   ___",
+            "Die Differenz von 10 und b   ___",
+            "Um 3 mehr als das Fünffache von y   ___",
+            "Schreibe als Term: die Summe von n und 3   ___",
+            "Schreibe als Term: das Produkt von 5 und n   ___",
+            "Schreibe als Term: ein Heft kostet y €. Was kosten 6 Hefte?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Schreib einen Term für den Umfang jeder Figur."
+        },
+        {
+          "art": "geo",
+          "felder": [
+            {
+              "b": 36,
+              "h": 36,
+              "label": "a)",
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      8,
+                      6
+                    ],
+                    [
+                      32,
+                      6
+                    ],
+                    [
+                      32,
+                      30
+                    ],
+                    [
+                      8,
+                      30
+                    ]
+                  ],
+                  "seiten": [
+                    "a",
+                    "a",
+                    "a",
+                    "a"
+                  ]
+                }
+              ]
+            },
+            {
+              "b": 52,
+              "h": 36,
+              "label": "b)",
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      6,
+                      8
+                    ],
+                    [
+                      46,
+                      8
+                    ],
+                    [
+                      46,
+                      28
+                    ],
+                    [
+                      6,
+                      28
+                    ]
+                  ],
+                  "seiten": [
+                    "x",
+                    "5",
+                    "x",
+                    "5"
+                  ]
+                }
+              ]
+            },
+            {
+              "b": 44,
+              "h": 36,
+              "label": "c)",
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      4,
+                      30
+                    ],
+                    [
+                      40,
+                      30
+                    ],
+                    [
+                      22,
+                      4
+                    ]
+                  ],
+                  "seiten": [
+                    "4",
+                    "x",
+                    "x"
+                  ]
+                }
+              ]
+            }
+          ],
+          "spalten": 3
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: 300 plus 25 mal x",
+          "text": "Klassenrat · Kosten der Fahrt. Amira und Ben planen eine Klassenfahrt. Sie wissen noch nicht, wie viele Schüler mitfahren."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Amira",
+              "text": "Der Bus kostet 300 Euro, egal wie viele mitfahren."
+            },
+            {
+              "wer": "Ben",
+              "text": "Und die Jugendherberge kostet 25 Euro pro Person."
+            },
+            {
+              "wer": "Amira",
+              "text": "Wir wissen nicht, wie viele mitkommen. Nennen wir die Zahl der Schüler x."
+            },
+            {
+              "wer": "Ben",
+              "text": "Dann kostet die Herberge 25 mal x, also 25x."
+            },
+            {
+              "wer": "Amira",
+              "text": "Und alles zusammen: 300 plus 25x. Das ist unser Term."
+            },
+            {
+              "wer": "Ben",
+              "text": "Und das Eis am letzten Tag? 2 Euro pro Person."
+            },
+            {
+              "wer": "Amira",
+              "text": "Dann kommt noch 2x dazu: 300 plus 25x plus 2x. Das sind 300 plus 27x."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "„Das Produkt von 25 und x“ schreibt man … Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "25x  []       25 + x  []       x − 25  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Lies und schreibe die Terme."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Jugendherberge für x Schüler: ___ €",
+            "Bus und Herberge: ___ €",
+            "mit Eis: 300 + 25x + ___ = ___ €"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übersetzt Sätze in Terme: „das Doppelte von x“, „x vermindert um 7“, „die Summe von a und b“ … Eine Person sagt den Satz, die andere schreibt den Term."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Signalwörter",
+          "punkte": [
+            "Summe → +",
+            "Differenz → −",
+            "Produkt → ·",
+            "Quotient → :",
+            "das Doppelte → 2 ·"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Schreibe als Term: die Summe von y und 5   ___",
+            "Schreibe als Term: die Summe von y und 3   ___",
+            "Schreibe als Term: das Produkt von 9 und y   ___",
+            "Schreibe als Term: die Summe von n und 6   ___",
+            "Schreibe als Term: das Produkt von 5 und a   ___",
+            "Schreibe als Term: um 6 mehr als n   ___",
+            "Schreibe als Term: um 8 mehr als x   ___",
+            "Schreibe als Term: du hast y € und bekommst 5 € dazu   ___",
+            "Schreibe als Term: das Dreifache von n, plus 6   ___",
+            "Schreibe als Term: das Doppelte von a, plus 5   ___",
+            "Schreibe als Term: ein Heft kostet y €. Was kosten 3 Hefte?   ___",
+            "Schreibe als Term: das Produkt von 4 und y   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Ich denke mir eine Zahl x, verdopple sie und ziehe 4 ab. Term?   ___",
+            "Ein Handy kostet p €. Schreibe den Preis für 3 Handys und dazu ein Ladekabel für 15 €.   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Schreibe „die Summe von x und 4“ als Term.   ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Schreibe einen eigenen Satz aus dem Alltag und den passenden Term dazu (zum Beispiel Kino: Eintritt pro Person)."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Satz: …",
+            "x bedeutet: …",
+            "Der Term: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich übersetze einen Satz in einen Term (Summe, Differenz, Produkt).",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich übersetze einen Satz in einen Term (Summe, Differenz, Produkt).",
+        "ablauf": [
+          "Einstieg (5 Min.): „Mathe-Sprache übersetzen“ – „Die Summe von x und 4“ heißt x + 4. „Die Differenz von 2 und d“ heißt 2 − d. Wir übersetzen normale Sätze in die kurze Mathe-Sprache.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): Summe von x und 7? · Produkt von 5 und y? Im Heft: Aufgabe 1.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 2 bis 8 nach Stufe; Übungspäckchen (Aufgabe 9) und Plus (Aufgabe 10) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 11): Schreibe „die Summe von x und 4“ als Term. Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 12) als Hausaufgabe."
+        ],
+        "hintergrund": "Term aufstellen: Ein Term ist eine Rechnung mit Buchstaben. Signalwörter: Summe → +, Differenz → −, Produkt → ·, Quotient → :. Auf die Reihenfolge achten: „Differenz von 2 und d“ = 2 − d. Summe → + · Differenz → − · Produkt → · · Quotient → :. Reihenfolge beachten: „Differenz von 2 und d“ = 2 − d. Im Unterricht: Die vier Signalwörter als Poster mit Rechenzeichen. Bei „Differenz“ auf die Reihenfolge achten – gemeinsam markieren, welche Zahl zuerst genannt wird. Sätze in kleinen Teilen übersetzen.",
+        "differenzierung": {
+          "leichter": "Basis: Signalwort erkennen: Summe/Differenz/Produkt. Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Die vier Signalwörter als Poster mit Rechenzeichen. Bei „Differenz“ auf die Reihenfolge achten – gemeinsam markieren, welche Zahl zuerst genannt wird. Sätze in kleinen Teilen übersetzen.",
+          "Spiel: „Übersetzer-Kette“: Einer sagt einen Satz, der Nächste schreibt den Term an – dann tauschen."
+        ],
+        "material": "Wortkarten (Summe, Differenz …)",
+        "loesungen": [
+          "1) a) x + 7 · b) 5y · c) 2x · d) a − 2",
+          "2) a) x + 7 · b) 2x · c) y + 3 · d) 2a · e) 7y · f) 4x · g) 2n · h) y + 4",
+          "3) a) a + 3 · b) x − 2 · c) 4x · d) a + 4 · e) 3y · f) y + 7",
+          "4) a) 2x + 5 · b) 10 − b · c) 5y + 3 · d) n + 3 · e) 5n · f) 6y €",
+          "5) a) 4 · a · b) 2 · x + 10 · c) 2 · x + 4",
+          "6) 25x",
+          "7) a) 25x · b) 300 + 25x · c) 2x / 300 + 27x",
+          "8) mündlich – eigene Lösungen",
+          "9) a) y + 5 · b) y + 3 · c) 9y · d) n + 6 · e) 5a · f) n + 6 · g) x + 8 · h) y + 5 € · i) 3n + 6 · j) 2a + 5 · k) 3y € · l) 4y",
+          "10) a) 2x − 4 · b) 3p + 15",
+          "11) x + 4",
+          "12) eigene Erklärung – auf Fachwörter und ein Beispiel achten"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m6-terme-berechnen",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Buchstabenrechnen (Terme)",
+      "einsetzen",
+      "Wert",
+      "Modul 6"
+    ],
+    "bild": "icon:math",
+    "de": {
+      "titel": "Terme berechnen – Einsetzen (A(x))",
+      "untertitel": "Modul 6, Lektion 6",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Der Term A(x) = 4x + 2 ist wie eine Maschine: Du gibst eine Zahl für x hinein, sie rechnet und gibt ein Ergebnis aus. Für x = 5: A(5) = 4·5 + 2 = 22."
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Einen Term berechnen A(x)",
+              "text": "Einen Term berechnen heißt: jedes x durch eine Zahl ersetzen (am besten in Klammern) und dann mit „Punkt vor Strich“ ausrechnen."
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Einsetzen",
+                  "text": "Ersetze jedes x durch die gegebene Zahl (am besten in Klammern).  Beispiel: A(x) = 4x + 2, für x = 5: A(5) = 4·(5) + 2."
+                },
+                {
+                  "titel": "Ausrechnen mit Punkt vor Strich",
+                  "text": "Erst mal, dann plus/minus.  Beispiel: A(5) = 4·5 + 2 = 20 + 2 = 22."
+                },
+                {
+                  "titel": "Auch mit negativen Zahlen",
+                  "text": "Klammern helfen, das Vorzeichen richtig zu behandeln.  Beispiel: A(−5) = 4·(−5) + 2 = −20 + 2 = −18."
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "tabelle",
+              "spalten": [
+                "x",
+                "1",
+                "2",
+                "3"
+              ],
+              "zeilen": 0,
+              "werte": [
+                [
+                  "3 · x + 2",
+                  "5",
+                  "8",
+                  "11"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "Einsetzen = jedes x durch die Zahl ersetzen (in Klammern!).",
+                "Dann Punkt vor Strich rechnen.",
+                "Bei negativen Zahlen die Klammer nicht vergessen."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Ersetze jedes x durch die gegebene Zahl (in Klammern).",
+                "2. Rechne Punkt vor Strich.",
+                "3. Schreibe das Ergebnis auf."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "einsetzen – remplacer",
+                "Wert – valeur"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: Berechne A(x) = 4x + 2 für x = 5 und für x = −5.",
+              "punkte": [
+                "Für x = 5: A(5) = 4 · (5) + 2 = 20 + 2 = 22.",
+                "Für x = −5: A(−5) = 4 · (−5) + 2.",
+                "4 · (−5) = −20; −20 + 2 = −18.",
+                "Ergebnis: A(5) = 22 und A(−5) = −18."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Mit negativer Zahl",
+              "text": "Aufgabe: A(x) = 4x + 2. Berechne A(−5).",
+              "punkte": [
+                "A(−5) = 4 · (−5) + 2.",
+                "4 · (−5) = −20; −20 + 2 = −18.",
+                "Ergebnis: A(−5) = −18."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "A(x) = 6x + 8.  Berechne A(8).   A(8) = 56",
+            "A(x) = 2x − 4.  Berechne A(5).   A(5) = 6",
+            "A(x) = 2x + 5.  Berechne A(6).   A(6) = 17",
+            "A(x) = 6x + 6.  Berechne A(1).   A(1) = 12",
+            "A(x) = 2x − 5.  Berechne A(6).   A(6) = 7",
+            "A(x) = 4x − 4.  Berechne A(0).   A(0) = −4"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "A(x) = 3x + 1. Berechne A(2).   ___",
+            "A(x) = 2x − 5. Berechne A(4).   ___",
+            "A(x) = 6x − 5.  Berechne A(0).   ___",
+            "A(x) = 5x − 6.  Berechne A(3).   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "A(x) = 5x − 2.  Berechne A(7).   ___",
+            "A(x) = 2x − 6.  Berechne A(1).   ___",
+            "A(x) = 4x + 6.  Berechne A(4).   ___",
+            "A(x) = 6x + 7.  Berechne A(0).   ___",
+            "A(x) = 6x − 6.  Berechne A(3).   ___",
+            "A(x) = 2x + 1.  Berechne A(7).   ___",
+            "A(x) = 6x + 2.  Berechne A(2).   ___",
+            "A(x) = 4x + 1.  Berechne A(5).   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "x durch die Zahl ersetzen, dann rechnen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "A(x) = x + 3. A(5) = ___",
+            "A(x) = 2x. A(4) = ___",
+            "A(x) = 3x + 2. A(1) = ___",
+            "A(x) = 5x − 5.  Berechne A(2).   ___",
+            "A(x) = 3x + 8.  Berechne A(7).   ___",
+            "A(x) = 3x − 5.  Berechne A(7).   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "A(x) = 4x + 2. Berechne A(5) und A(0).   ___",
+            "A(x) = 5x − 3. Berechne A(2).   ___",
+            "B(x) = 2x + 6. Berechne B(10).   ___",
+            "A(x) = 4x − 2.  Berechne A(6).   ___",
+            "A(x) = 3x − 3.  Berechne A(1).   ___",
+            "A(x) = 2x + 8.  Berechne A(2).   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Setze ein und rechne. Fülle die Tabelle."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "x",
+            "0",
+            "1",
+            "2",
+            "5",
+            "10"
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "2 · x + 1",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "x · x",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "10 − x",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: Jetzt setzen wir ein!",
+          "text": "Klassenrat · eine Woche später. Jetzt ist klar, wie viele Schüler mitfahren. Amira setzt die Zahl in den Term ein."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Frau Kremer",
+              "text": "Unser Term für die Kosten war: 300 plus 27x. Es fahren 20 Schüler mit."
+            },
+            {
+              "wer": "Amira",
+              "text": "Dann setze ich für x die 20 ein: 300 plus 27 mal 20."
+            },
+            {
+              "wer": "Frau Kremer",
+              "text": "Und denk an Punkt vor Strich!"
+            },
+            {
+              "wer": "Amira",
+              "text": "Zuerst 27 mal 20, das sind 540. Plus 300 … das sind 840 Euro."
+            },
+            {
+              "wer": "Frau Kremer",
+              "text": "Richtig. Und wenn nur 15 mitfahren?"
+            },
+            {
+              "wer": "Amira",
+              "text": "27 mal 15 sind 405, plus 300 sind 705 Euro."
+            },
+            {
+              "wer": "Frau Kremer",
+              "text": "Gut. Pro Person ist es aber teurer, wenn weniger mitfahren – der Bus kostet ja immer 300 Euro."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "A(x) = 2x + 1. A(3) = ? Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "7  []       24  []       6  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Lies. Setze ein und rechne."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Schüler (x)",
+            "Rechnung",
+            "Kosten"
+          ],
+          "breiten": [
+            2.4,
+            4.6,
+            3
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "20",
+              "",
+              ""
+            ],
+            [
+              "15",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "In der Gruppe: Rechnet: Wie viel kostet die Fahrt pro Person bei 15 und bei 20 Schülern? Was fällt auf? Diskutiert."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Hilfe",
+          "punkte": [
+            "840 € : 20 = …",
+            "705 € : 15 = …",
+            "Je mehr mitfahren, desto …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "A(x) = 5x − 1.  Berechne A(8).   ___",
+            "A(x) = 5x + 7.  Berechne A(0).   ___",
+            "A(x) = 6x + 5.  Berechne A(1).   ___",
+            "A(x) = 6x + 5.  Berechne A(7).   ___",
+            "A(x) = 5x + 5.  Berechne A(4).   ___",
+            "A(x) = 6x + 5.  Berechne A(3).   ___",
+            "A(x) = 5x − 4.  Berechne A(0).   ___",
+            "A(x) = 4x − 3.  Berechne A(0).   ___",
+            "A(x) = 4x + 2.  Berechne A(2).   ___",
+            "A(x) = 2x − 5.  Berechne A(2).   ___",
+            "A(x) = 3x + 8.  Berechne A(2).   ___",
+            "A(x) = 6x + 0.  Berechne A(8).   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "A(x) = 4x + 2. Berechne A(−5).   ___",
+            "A(x) = 3x − 4. Für welches x ist A(x) = 5? (Probiere.)   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "A(x) = 4x + 2. Berechne A(5).   ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Erkläre, wie du A(x) = 4x + 2 für x = −5 berechnest. Achte auf die Klammer."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich setze −5 ein: …",
+            "Zuerst rechne ich …",
+            "Ergebnis: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich berechne den Wert eines Terms, indem ich eine Zahl für x einsetze.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich berechne den Wert eines Terms, indem ich eine Zahl für x einsetze.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Setze die Zahl ein“ – Der Term A(x) = 4x + 2 ist wie eine Maschine: Du gibst eine Zahl für x hinein, sie rechnet und gibt ein Ergebnis aus. Für x = 5: A(5) = 4·5 + 2 = 22.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): A(x) = 3x + 1. Berechne A(2). · A(x) = 2x − 5. Berechne A(4). Im Heft: Aufgabe 1.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 2 bis 8 nach Stufe; Übungspäckchen (Aufgabe 9) und Plus (Aufgabe 10) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 11): A(x) = 4x + 2. Berechne A(5). Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 12) als Hausaufgabe."
+        ],
+        "hintergrund": "Einen Term berechnen A(x): Einen Term berechnen heißt: jedes x durch eine Zahl ersetzen (am besten in Klammern) und dann mit „Punkt vor Strich“ ausrechnen. Einsetzen = jedes x durch die Zahl ersetzen (in Klammern!). Dann Punkt vor Strich rechnen. Bei negativen Zahlen die Klammer nicht vergessen. Im Unterricht: x konsequent in Klammern einsetzen lassen – das verhindert Vorzeichenfehler bei negativen Zahlen. Eine Wertetabelle (x | A(x)) führen macht das „Maschinen“-Bild greifbar.",
+        "differenzierung": {
+          "leichter": "Basis: x durch die Zahl ersetzen, dann rechnen. Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "x konsequent in Klammern einsetzen lassen – das verhindert Vorzeichenfehler bei negativen Zahlen. Eine Wertetabelle (x | A(x)) führen macht das „Maschinen“-Bild greifbar.",
+          "Spiel: „Zahlen-Maschine“: Ein Schüler ist die Maschine A(x) = 2x + 1, die anderen rufen x-Werte, die Maschine gibt das Ergebnis aus."
+        ],
+        "material": "Taschenrechner erlaubt",
+        "loesungen": [
+          "1) a) 3·2 + 1 = 7 · b) 2·4 − 5 = 3 · c) A(0) = −5 · d) A(3) = 9",
+          "2) a) A(7) = 33 · b) A(1) = −4 · c) A(4) = 22 · d) A(0) = 7 · e) A(3) = 12 · f) A(7) = 15 · g) A(2) = 14 · h) A(5) = 21",
+          "3) a) 5 + 3 = 8 · b) 2·4 = 8 · c) 3·1 + 2 = 5 · d) A(2) = 5 · e) A(7) = 29 · f) A(7) = 16",
+          "4) a) A(5) = 22; A(0) = 2 · b) 5·2 − 3 = 7 · c) 2·10 + 6 = 26 · d) A(6) = 22 · e) A(1) = 0 · f) A(2) = 12",
+          "5) 2x + 1: 1, 3, 5, 11, 21 – x · x: 0, 1, 4, 25, 100 – 10 − x: 10, 9, 8, 5, 0",
+          "6) 7",
+          "7) 20 300 + 27 · 20 = 300 + 540 840 € · 15 300 + 27 · 15 = 300 + 405 705 €",
+          "8) mündlich – eigene Lösungen",
+          "9) a) A(8) = 39 · b) A(0) = 7 · c) A(1) = 11 · d) A(7) = 47 · e) A(4) = 25 · f) A(3) = 23 · g) A(0) = −4 · h) A(0) = −3 · i) A(2) = 10 · j) A(2) = −1 · k) A(2) = 14 · l) A(8) = 48",
+          "10) a) 4·(−5) + 2 = −20 + 2 = −18 · b) x = 3, denn 3·3 − 4 = 5",
+          "11) Lösung: 22",
+          "12) eigene Erklärung – auf Fachwörter und ein Beispiel achten"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m6-terme-zusammenfassen-reduzieren",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Buchstabenrechnen (Terme)",
+      "zusammenfassen / reduzieren",
+      "gleichartige Glieder",
+      "Modul 6"
+    ],
+    "bild": "icon:math",
+    "de": {
+      "titel": "Terme zusammenfassen (reduzieren)",
+      "untertitel": "Modul 6, Lektion 7",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "3 Äpfel und 2 Äpfel sind 5 Äpfel. Genauso: 3x + 2x = 5x. Aber Äpfel und Birnen kann man nicht zusammenzählen: 3x und 4 bleiben getrennt. Das nennt man Zusammenfassen."
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Terme zusammenfassen (reduzieren)",
+              "text": "Zusammenfassen heißt, gleichartige Glieder zu vereinen: x-Glieder mit x-Gliedern, Zahlen mit Zahlen. Jedes Glied nimmt sein Vorzeichen mit. „Äpfel zu Äpfeln, Birnen zu Birnen.“"
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Gleichartige Glieder",
+                  "text": "Nur Glieder mit demselben Buchstaben kann man zusammenfassen. Zahlen (ohne Buchstabe) gehören zusammen.  Beispiel: x-Glieder mit x-Gliedern, Zahlen mit Zahlen."
+                },
+                {
+                  "titel": "Vorzeichen mitnehmen",
+                  "text": "Jedes Glied behält sein Vorzeichen (das davor).  Beispiel: x + 4 − 5x + 6: x-Glieder x − 5x = −4x; Zahlen 4 + 6 = 10 → −4x + 10."
+                },
+                {
+                  "titel": "Ordnen hilft",
+                  "text": "Sortiere erst die x-Glieder, dann die Zahlen.  Beispiel: 2a + 3 + 5a − 1 = (2a + 5a) + (3 − 1) = 7a + 2."
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "geo",
+              "felder": [
+                {
+                  "b": 84,
+                  "h": 26,
+                  "elemente": [
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          4,
+                          4
+                        ],
+                        [
+                          10,
+                          4
+                        ],
+                        [
+                          10,
+                          20
+                        ],
+                        [
+                          4,
+                          20
+                        ]
+                      ]
+                    },
+                    {
+                      "t": "text",
+                      "x": 7,
+                      "y": 13.5,
+                      "text": "x",
+                      "mitte": true
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          13,
+                          4
+                        ],
+                        [
+                          19,
+                          4
+                        ],
+                        [
+                          19,
+                          20
+                        ],
+                        [
+                          13,
+                          20
+                        ]
+                      ]
+                    },
+                    {
+                      "t": "text",
+                      "x": 16,
+                      "y": 13.5,
+                      "text": "x",
+                      "mitte": true
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          22,
+                          14
+                        ],
+                        [
+                          28,
+                          14
+                        ],
+                        [
+                          28,
+                          20
+                        ],
+                        [
+                          22,
+                          20
+                        ]
+                      ]
+                    },
+                    {
+                      "t": "text",
+                      "x": 25,
+                      "y": 18.5,
+                      "text": "1",
+                      "mitte": true,
+                      "klein": true
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          31,
+                          14
+                        ],
+                        [
+                          37,
+                          14
+                        ],
+                        [
+                          37,
+                          20
+                        ],
+                        [
+                          31,
+                          20
+                        ]
+                      ]
+                    },
+                    {
+                      "t": "text",
+                      "x": 34,
+                      "y": 18.5,
+                      "text": "1",
+                      "mitte": true,
+                      "klein": true
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          40,
+                          14
+                        ],
+                        [
+                          46,
+                          14
+                        ],
+                        [
+                          46,
+                          20
+                        ],
+                        [
+                          40,
+                          20
+                        ]
+                      ]
+                    },
+                    {
+                      "t": "text",
+                      "x": 43,
+                      "y": 18.5,
+                      "text": "1",
+                      "mitte": true,
+                      "klein": true
+                    },
+                    {
+                      "t": "text",
+                      "x": 52,
+                      "y": 14,
+                      "text": "+",
+                      "mitte": true,
+                      "fett": true
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          57,
+                          4
+                        ],
+                        [
+                          63,
+                          4
+                        ],
+                        [
+                          63,
+                          20
+                        ],
+                        [
+                          57,
+                          20
+                        ]
+                      ]
+                    },
+                    {
+                      "t": "text",
+                      "x": 60,
+                      "y": 13.5,
+                      "text": "x",
+                      "mitte": true
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          66,
+                          14
+                        ],
+                        [
+                          72,
+                          14
+                        ],
+                        [
+                          72,
+                          20
+                        ],
+                        [
+                          66,
+                          20
+                        ]
+                      ]
+                    },
+                    {
+                      "t": "text",
+                      "x": 69,
+                      "y": 18.5,
+                      "text": "1",
+                      "mitte": true,
+                      "klein": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "art": "text",
+              "text": "2x + 3 + x + 1 = 3x + 4 – Streifen (x) zu Streifen, Kästchen (1) zu Kästchen."
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "Nur Gleichartiges zusammenfassen: x zu x, Zahlen zu Zahlen.",
+                "Jedes Glied nimmt sein Vorzeichen mit.",
+                "„Äpfel zu Äpfeln, Birnen zu Birnen.“"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Sammle alle x-Glieder (mit Vorzeichen).",
+                "2. Sammle alle reinen Zahlen (mit Vorzeichen).",
+                "3. Fasse jede Gruppe zusammen."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "zusammenfassen / reduzieren – réduire",
+                "gleichartige Glieder – termes semblables"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: Fasse zusammen: x + 4 − 5x + 6.",
+              "punkte": [
+                "x-Glieder sammeln: x − 5x = −4x.",
+                "Zahlen sammeln: 4 + 6 = 10.",
+                "Zusammenschreiben.",
+                "Ergebnis: x + 4 − 5x + 6 = −4x + 10."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Sortieren",
+              "text": "Aufgabe: Fasse zusammen: 3a + 5 + 2a − 1.",
+              "punkte": [
+                "a-Glieder: 3a + 2a = 5a.",
+                "Zahlen: 5 − 1 = 4.",
+                "Ergebnis: 3a + 5 + 2a − 1 = 5a + 4."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "Fasse zusammen:  −3x + 5x   2x",
+            "Fasse zusammen:  x + 2 + x − 1   2x + 1",
+            "Fasse zusammen:  x − 9 − 2x + 3   −x − 6",
+            "Fasse zusammen:  5x + 2x + 9   7x + 9",
+            "Fasse zusammen:  3x + 3 − x − 7   2x − 4",
+            "Fasse zusammen:  3x − 8 + 5x + 6   8x − 2"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "3x + 2x = ___",
+            "4a − a = ___",
+            "Fasse zusammen:  x − 1 + 6x   ___",
+            "Fasse zusammen:  2x − 3 − 4x − 1   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Fasse zusammen:  −x + 6 − 6x − 5   ___",
+            "Fasse zusammen:  −x + 2 − 3x + 6   ___",
+            "Fasse zusammen:  2x + 3 + 6x − 8   ___",
+            "Fasse zusammen:  −4x − 2 + 6x − 7   ___",
+            "Fasse zusammen:  x + 5 − x + 6   ___",
+            "Fasse zusammen:  4x − 9 − 4x − 5   ___",
+            "Fasse zusammen:  −3x + 3 + 4x − 9   ___",
+            "Fasse zusammen:  −6x + 8 + 3x − 8   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "x-Glieder und Zahlen getrennt sammeln."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "2x + 3x = ___",
+            "5a − 2a = ___",
+            "x + x + x = ___",
+            "Fasse zusammen:  −3x + 2 + x + 2   ___",
+            "Fasse zusammen:  −4x + 2 + 3x − 3   ___",
+            "Fasse zusammen:  4x + x + 1   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "x + 4 − 5x + 6 = ___",
+            "3a + 5 + 2a − 1 = ___",
+            "7x − 3 − 2x = ___",
+            "Fasse zusammen:  −x + 2 + 2x + 8   ___",
+            "Fasse zusammen:  x − 3 − 2x + 4   ___",
+            "Fasse zusammen:  −2x − 7 + 3x − 4   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Schreib jedes Bild als Term und fasse zusammen."
+        },
+        {
+          "art": "geo",
+          "felder": [
+            {
+              "label": "a)",
+              "h": 26,
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      4,
+                      4
+                    ],
+                    [
+                      10,
+                      4
+                    ],
+                    [
+                      10,
+                      20
+                    ],
+                    [
+                      4,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 7,
+                  "y": 13.5,
+                  "text": "x",
+                  "mitte": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      13,
+                      4
+                    ],
+                    [
+                      19,
+                      4
+                    ],
+                    [
+                      19,
+                      20
+                    ],
+                    [
+                      13,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 16,
+                  "y": 13.5,
+                  "text": "x",
+                  "mitte": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      22,
+                      4
+                    ],
+                    [
+                      28,
+                      4
+                    ],
+                    [
+                      28,
+                      20
+                    ],
+                    [
+                      22,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 25,
+                  "y": 13.5,
+                  "text": "x",
+                  "mitte": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      31,
+                      14
+                    ],
+                    [
+                      37,
+                      14
+                    ],
+                    [
+                      37,
+                      20
+                    ],
+                    [
+                      31,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 34,
+                  "y": 18.5,
+                  "text": "1",
+                  "mitte": true,
+                  "klein": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      40,
+                      14
+                    ],
+                    [
+                      46,
+                      14
+                    ],
+                    [
+                      46,
+                      20
+                    ],
+                    [
+                      40,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 43,
+                  "y": 18.5,
+                  "text": "1",
+                  "mitte": true,
+                  "klein": true
+                },
+                {
+                  "t": "text",
+                  "x": 65,
+                  "y": 14,
+                  "text": "+",
+                  "mitte": true,
+                  "fett": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      70,
+                      4
+                    ],
+                    [
+                      76,
+                      4
+                    ],
+                    [
+                      76,
+                      20
+                    ],
+                    [
+                      70,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 73,
+                  "y": 13.5,
+                  "text": "x",
+                  "mitte": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      79,
+                      4
+                    ],
+                    [
+                      85,
+                      4
+                    ],
+                    [
+                      85,
+                      20
+                    ],
+                    [
+                      79,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 82,
+                  "y": 13.5,
+                  "text": "x",
+                  "mitte": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      88,
+                      14
+                    ],
+                    [
+                      94,
+                      14
+                    ],
+                    [
+                      94,
+                      20
+                    ],
+                    [
+                      88,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 91,
+                  "y": 18.5,
+                  "text": "1",
+                  "mitte": true,
+                  "klein": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      97,
+                      14
+                    ],
+                    [
+                      103,
+                      14
+                    ],
+                    [
+                      103,
+                      20
+                    ],
+                    [
+                      97,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 100,
+                  "y": 18.5,
+                  "text": "1",
+                  "mitte": true,
+                  "klein": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      106,
+                      14
+                    ],
+                    [
+                      112,
+                      14
+                    ],
+                    [
+                      112,
+                      20
+                    ],
+                    [
+                      106,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 109,
+                  "y": 18.5,
+                  "text": "1",
+                  "mitte": true,
+                  "klein": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      115,
+                      14
+                    ],
+                    [
+                      121,
+                      14
+                    ],
+                    [
+                      121,
+                      20
+                    ],
+                    [
+                      115,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 118,
+                  "y": 18.5,
+                  "text": "1",
+                  "mitte": true,
+                  "klein": true
+                }
+              ]
+            },
+            {
+              "label": "b)",
+              "h": 26,
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      4,
+                      4
+                    ],
+                    [
+                      10,
+                      4
+                    ],
+                    [
+                      10,
+                      20
+                    ],
+                    [
+                      4,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 7,
+                  "y": 13.5,
+                  "text": "x",
+                  "mitte": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      13,
+                      14
+                    ],
+                    [
+                      19,
+                      14
+                    ],
+                    [
+                      19,
+                      20
+                    ],
+                    [
+                      13,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 16,
+                  "y": 18.5,
+                  "text": "1",
+                  "mitte": true,
+                  "klein": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      22,
+                      14
+                    ],
+                    [
+                      28,
+                      14
+                    ],
+                    [
+                      28,
+                      20
+                    ],
+                    [
+                      22,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 25,
+                  "y": 18.5,
+                  "text": "1",
+                  "mitte": true,
+                  "klein": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      31,
+                      14
+                    ],
+                    [
+                      37,
+                      14
+                    ],
+                    [
+                      37,
+                      20
+                    ],
+                    [
+                      31,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 34,
+                  "y": 18.5,
+                  "text": "1",
+                  "mitte": true,
+                  "klein": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      40,
+                      14
+                    ],
+                    [
+                      46,
+                      14
+                    ],
+                    [
+                      46,
+                      20
+                    ],
+                    [
+                      40,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 43,
+                  "y": 18.5,
+                  "text": "1",
+                  "mitte": true,
+                  "klein": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      49,
+                      14
+                    ],
+                    [
+                      55,
+                      14
+                    ],
+                    [
+                      55,
+                      20
+                    ],
+                    [
+                      49,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 52,
+                  "y": 18.5,
+                  "text": "1",
+                  "mitte": true,
+                  "klein": true
+                },
+                {
+                  "t": "text",
+                  "x": 65,
+                  "y": 14,
+                  "text": "+",
+                  "mitte": true,
+                  "fett": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      70,
+                      4
+                    ],
+                    [
+                      76,
+                      4
+                    ],
+                    [
+                      76,
+                      20
+                    ],
+                    [
+                      70,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 73,
+                  "y": 13.5,
+                  "text": "x",
+                  "mitte": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      79,
+                      4
+                    ],
+                    [
+                      85,
+                      4
+                    ],
+                    [
+                      85,
+                      20
+                    ],
+                    [
+                      79,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 82,
+                  "y": 13.5,
+                  "text": "x",
+                  "mitte": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      88,
+                      4
+                    ],
+                    [
+                      94,
+                      4
+                    ],
+                    [
+                      94,
+                      20
+                    ],
+                    [
+                      88,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 91,
+                  "y": 13.5,
+                  "text": "x",
+                  "mitte": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      97,
+                      4
+                    ],
+                    [
+                      103,
+                      4
+                    ],
+                    [
+                      103,
+                      20
+                    ],
+                    [
+                      97,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "t": "text",
+                  "x": 100,
+                  "y": 13.5,
+                  "text": "x",
+                  "mitte": true
+                }
+              ]
+            }
+          ],
+          "spalten": 1
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: Äpfel zu Äpfeln",
+          "text": "Vor dem Schulfest · Einkaufsliste. Lou und Finn schreiben eine Einkaufsliste mit Buchstaben: a steht für eine Kiste Äpfel, b für eine Packung Becher."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Lou",
+              "text": "Herr Becker will 2 Kisten Äpfel, also 2a. Frau Sommer will 5 Kisten: 5a."
+            },
+            {
+              "wer": "Finn",
+              "text": "Und Becher: Herr Becker will 3 Packungen, also 3b."
+            },
+            {
+              "wer": "Lou",
+              "text": "Auf der Liste steht jetzt: 2a plus 3b plus 5a."
+            },
+            {
+              "wer": "Finn",
+              "text": "Das kann man zusammenfassen: Äpfel zu Äpfeln. 2a plus 5a sind 7a."
+            },
+            {
+              "wer": "Lou",
+              "text": "Und die Becher bleiben 3b. Man kann a und b nicht zusammenzählen!"
+            },
+            {
+              "wer": "Finn",
+              "text": "Und die Mensa hat noch eine Kiste Äpfel übrig. Wir kaufen eine Kiste weniger, also minus a. Dann haben wir 6a plus 3b."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "2a + 5a = ? Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "7a  []       7a²  []       10a  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Lies und fasse zusammen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "2a + 3b + 5a = ___",
+            "7a + 3b − a = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Sortier-Spiel: Schreibt Glieder auf Karten (3x, −2, 5x, 4, −x …). Sortiert sie in zwei Gruppen und fasst zusammen."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Regel",
+          "punkte": [
+            "x zu x, Zahlen zu Zahlen",
+            "Vorzeichen mitnehmen!",
+            "x und Zahlen nicht mischen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Fasse zusammen:  3x − 2 + x + 7   ___",
+            "Fasse zusammen:  −x + x − 2   ___",
+            "Fasse zusammen:  6x − 9 − 5x − 6   ___",
+            "Fasse zusammen:  6x − 8 + 5x − 5   ___",
+            "Fasse zusammen:  x + 1 − 4x − 9   ___",
+            "Fasse zusammen:  −3x + 3 + 4x − 8   ___",
+            "Fasse zusammen:  5x − 1 + 3x + 5   ___",
+            "Fasse zusammen:  x − x − 9   ___",
+            "Fasse zusammen:  −6x + 5 + 5x − 8   ___",
+            "Fasse zusammen:  4x − 9 − 4x − 4   ___",
+            "Fasse zusammen:  −4x + 5 + x − 7   ___",
+            "Fasse zusammen:  x − 4 − x + 5   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "4x + 2y − x + 3y = ___",
+            "6a − 4 − 6a + 4 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "x + 4 − 5x + 6 = ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Warum kann man 3a + 2b nicht weiter zusammenfassen? Erkläre mit einem Beispiel."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "a und b sind …",
+            "Zum Beispiel: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich fasse gleichartige Glieder eines Terms zusammen.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich fasse gleichartige Glieder eines Terms zusammen.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Äpfel zu Äpfeln“ – 3 Äpfel und 2 Äpfel sind 5 Äpfel. Genauso: 3x + 2x = 5x. Aber Äpfel und Birnen kann man nicht zusammenzählen: 3x und 4 bleiben getrennt. Das nennt man Zusammenfassen.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): 3x + 2x = ? · 4a − a = ? Im Heft: Aufgabe 1.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 2 bis 8 nach Stufe; Übungspäckchen (Aufgabe 9) und Plus (Aufgabe 10) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 11): x + 4 − 5x + 6 = ? Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 12) als Hausaufgabe."
+        ],
+        "hintergrund": "Terme zusammenfassen (reduzieren): Zusammenfassen heißt, gleichartige Glieder zu vereinen: x-Glieder mit x-Gliedern, Zahlen mit Zahlen. Jedes Glied nimmt sein Vorzeichen mit. „Äpfel zu Äpfeln, Birnen zu Birnen.“ Nur Gleichartiges zusammenfassen: x zu x, Zahlen zu Zahlen. Jedes Glied nimmt sein Vorzeichen mit. „Äpfel zu Äpfeln, Birnen zu Birnen.“ Im Unterricht: x-Glieder in einer Farbe, reine Zahlen in einer anderen unterstreichen lassen – dann getrennt zusammenfassen. Das Vorzeichen VOR dem Glied gehört immer dazu; das gemeinsam markieren.",
+        "differenzierung": {
+          "leichter": "Basis: x-Glieder und Zahlen getrennt sammeln. Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "x-Glieder in einer Farbe, reine Zahlen in einer anderen unterstreichen lassen – dann getrennt zusammenfassen. Das Vorzeichen VOR dem Glied gehört immer dazu; das gemeinsam markieren.",
+          "Spiel: „Sortier-Rennen“: Kärtchen mit 3x, −2, 5x, +4 … in zwei Körbe (x-Glieder / Zahlen) sortieren und je Korb addieren."
+        ],
+        "material": "farbige Kärtchen (x und Zahlen)",
+        "loesungen": [
+          "1) a) 5x · b) 3a (weil a = 1a) · c) 7x − 1 · d) −2x − 4",
+          "2) a) −7x + 1 · b) −4x + 8 · c) 8x − 5 · d) 2x − 9 · e) 11 · f) −14 · g) x − 6 · h) −3x",
+          "3) a) 5x · b) 3a · c) 3x · d) −2x + 4 · e) −x − 1 · f) 5x + 1",
+          "4) a) −4x + 10 · b) 5a + 4 · c) 5x − 3 · d) x + 10 · e) −x + 1 · f) x − 11",
+          "5) a) 3x + 2 + 2x + 4 = 5x + 6 – b) x + 5 + 4x = 5x + 5",
+          "6) 7a",
+          "7) a) 7a + 3b · b) 6a + 3b",
+          "8) mündlich – eigene Lösungen",
+          "9) a) 4x + 5 · b) −2 · c) x − 15 · d) 11x − 13 · e) −3x − 8 · f) x − 5 · g) 8x + 4 · h) −9 · i) −x − 3 · j) −13 · k) −3x − 2 · l) 1",
+          "10) a) 3x + 5y · b) 0 (alles hebt sich auf)",
+          "11) Lösung: −4x + 10",
+          "12) eigene Erklärung – auf Fachwörter und ein Beispiel achten"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m6-klammern-aufloesen",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Buchstabenrechnen (Terme)",
+      "Klammer auflösen",
+      "Vorzeichen ändern",
+      "Modul 6"
+    ],
+    "bild": "icon:math",
+    "de": {
+      "titel": "Klammern auflösen",
+      "untertitel": "Modul 6, Lektion 8",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "2x + (−3x + 5) − 2: Steht ein Plus vor der Klammer, darf man sie einfach weglassen. Steht ein Minus davor, muss man drinnen ALLE Vorzeichen umdrehen. Danach fasst man zusammen."
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Klammern auflösen",
+              "text": "Steht ein „+“ vor der Klammer, darf man sie einfach weglassen. Steht ein „−“ vor der Klammer, muss man beim Weglassen ALLE Vorzeichen in der Klammer umdrehen. Danach zusammenfassen."
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Plus vor der Klammer",
+                  "text": "Ein „+“ vor der Klammer: Klammer einfach weglassen, alles bleibt gleich.  Beispiel: 2x + (−3x + 5) − 2 = 2x − 3x + 5 − 2 = −x + 3."
+                },
+                {
+                  "titel": "Minus vor der Klammer",
+                  "text": "Ein „−“ vor der Klammer: Klammer weglassen und drinnen JEDES Vorzeichen umdrehen.  Beispiel: 2x − (−3x + 5) − 2 = 2x + 3x − 5 − 2 = 5x − 7."
+                },
+                {
+                  "titel": "Danach zusammenfassen",
+                  "text": "Nach dem Auflösen die gleichartigen Glieder zusammenfassen.  Beispiel: Immer als letzten Schritt reduzieren (Lektion 7)."
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "geo",
+              "felder": [
+                {
+                  "b": 84,
+                  "h": 36,
+                  "elemente": [
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          14,
+                          10
+                        ],
+                        [
+                          54,
+                          10
+                        ],
+                        [
+                          54,
+                          32
+                        ],
+                        [
+                          14,
+                          32
+                        ]
+                      ],
+                      "fuellung": true
+                    },
+                    {
+                      "t": "text",
+                      "x": 34,
+                      "y": 7.5,
+                      "text": "x",
+                      "mitte": true,
+                      "fett": true
+                    },
+                    {
+                      "t": "text",
+                      "x": 34,
+                      "y": 22.5,
+                      "text": "3 · x",
+                      "mitte": true
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          54,
+                          10
+                        ],
+                        [
+                          78,
+                          10
+                        ],
+                        [
+                          78,
+                          32
+                        ],
+                        [
+                          54,
+                          32
+                        ]
+                      ],
+                      "fuellung": false
+                    },
+                    {
+                      "t": "text",
+                      "x": 66,
+                      "y": 7.5,
+                      "text": "4",
+                      "mitte": true,
+                      "fett": true
+                    },
+                    {
+                      "t": "text",
+                      "x": 66,
+                      "y": 22.5,
+                      "text": "3 · 4",
+                      "mitte": true
+                    },
+                    {
+                      "t": "text",
+                      "x": 8,
+                      "y": 22.5,
+                      "text": "3",
+                      "mitte": true,
+                      "fett": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "art": "text",
+              "text": "3 · (x + 4) = 3 · x + 3 · 4 = 3x + 12 – jedes Stück wird mit 3 malgenommen."
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "+ vor Klammer → Klammer einfach weglassen.",
+                "− vor Klammer → alle Vorzeichen drinnen umdrehen.",
+                "Danach zusammenfassen."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Schau das Zeichen vor der Klammer an.",
+                "2. „+“ → Klammer weglassen. „−“ → alle Vorzeichen drinnen umdrehen.",
+                "3. Fasse anschließend zusammen."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "Klammer auflösen – supprimer la parenthèse",
+                "Vorzeichen ändern – changer les signes"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: Löse die Klammer auf: 2x − (−3x + 5) − 2.",
+              "punkte": [
+                "Vor der Klammer steht ein Minus → alle Vorzeichen drinnen umdrehen: −(−3x + 5) = +3x − 5.",
+                "So wird es: 2x + 3x − 5 − 2.",
+                "x-Glieder: 2x + 3x = 5x. Zahlen: −5 − 2 = −7.",
+                "Ergebnis: 2x − (−3x + 5) − 2 = 5x − 7."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Plus vor der Klammer",
+              "text": "Aufgabe: Löse auf und fasse zusammen: 2x + (−3x + 5) − 2.",
+              "punkte": [
+                "Plus vor der Klammer → einfach weglassen: 2x − 3x + 5 − 2.",
+                "x-Glieder: 2x − 3x = −x. Zahlen: 5 − 2 = 3.",
+                "Ergebnis: −x + 3."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "Löse die Klammer auf:  1x − (−6x − 2)   7x + 2",
+            "Löse die Klammer auf:  4x − (−4x − 6)   8x + 6",
+            "Löse die Klammer auf:  5x − (−3x + 3)   8x − 3",
+            "Löse die Klammer auf:  4x − (6x + 2)   −2x − 2",
+            "Löse die Klammer auf:  2x − (−3x − 3)   5x + 3",
+            "Löse die Klammer auf:  6x − (−x + 4)   7x − 4"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "x + (2x − 3) = ___",
+            "x − (2x − 3) = ___",
+            "Löse die Klammer auf:  2x + (6x + 8)   ___",
+            "Löse die Klammer auf:  1x + (−5x − 7)   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Löse die Klammer auf:  4x + (3x + 9)   ___",
+            "Löse die Klammer auf:  2x − (−5x − 3)   ___",
+            "Löse die Klammer auf:  2x + (5x − 6)   ___",
+            "Löse die Klammer auf:  5x + (−5x + 3)   ___",
+            "Löse die Klammer auf:  3x − (−5x + 1)   ___",
+            "Löse die Klammer auf:  1x + (−x + 9)   ___",
+            "Löse die Klammer auf:  3x + (x + 2)   ___",
+            "Löse die Klammer auf:  2x − (x − 6)   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "+ Klammer: weglassen. − Klammer: Vorzeichen drehen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "3 + (x + 2) = ___",
+            "5 − (x + 1) = ___",
+            "a + (a − 2) = ___",
+            "Löse die Klammer auf:  3x + (−x + 3)   ___",
+            "Löse die Klammer auf:  2x + (−6x − 1)   ___",
+            "Löse die Klammer auf:  3x − (−6x − 9)   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "2x + (−3x + 5) − 2 = ___",
+            "2x − (−3x + 5) − 2 = ___",
+            "4a − (2a − 3) = ___",
+            "Löse die Klammer auf:  1x + (−4x + 6)   ___",
+            "Löse die Klammer auf:  6x + (4x + 2)   ___",
+            "Löse die Klammer auf:  5x − (−4x − 7)   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Schreib die Fläche zweimal: als Produkt mit Klammer und aufgelöst."
+        },
+        {
+          "art": "geo",
+          "felder": [
+            {
+              "label": "a)",
+              "h": 36,
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      14,
+                      10
+                    ],
+                    [
+                      54,
+                      10
+                    ],
+                    [
+                      54,
+                      32
+                    ],
+                    [
+                      14,
+                      32
+                    ]
+                  ],
+                  "fuellung": true
+                },
+                {
+                  "t": "text",
+                  "x": 34,
+                  "y": 7.5,
+                  "text": "x",
+                  "mitte": true,
+                  "fett": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      54,
+                      10
+                    ],
+                    [
+                      70,
+                      10
+                    ],
+                    [
+                      70,
+                      32
+                    ],
+                    [
+                      54,
+                      32
+                    ]
+                  ],
+                  "fuellung": false
+                },
+                {
+                  "t": "text",
+                  "x": 62,
+                  "y": 7.5,
+                  "text": "2",
+                  "mitte": true,
+                  "fett": true
+                },
+                {
+                  "t": "text",
+                  "x": 8,
+                  "y": 22.5,
+                  "text": "5",
+                  "mitte": true,
+                  "fett": true
+                }
+              ]
+            },
+            {
+              "label": "b)",
+              "h": 36,
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      14,
+                      10
+                    ],
+                    [
+                      58,
+                      10
+                    ],
+                    [
+                      58,
+                      32
+                    ],
+                    [
+                      14,
+                      32
+                    ]
+                  ],
+                  "fuellung": true
+                },
+                {
+                  "t": "text",
+                  "x": 36,
+                  "y": 7.5,
+                  "text": "2x",
+                  "mitte": true,
+                  "fett": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      58,
+                      10
+                    ],
+                    [
+                      78,
+                      10
+                    ],
+                    [
+                      78,
+                      32
+                    ],
+                    [
+                      58,
+                      32
+                    ]
+                  ],
+                  "fuellung": false
+                },
+                {
+                  "t": "text",
+                  "x": 68,
+                  "y": 7.5,
+                  "text": "3",
+                  "mitte": true,
+                  "fett": true
+                },
+                {
+                  "t": "text",
+                  "x": 8,
+                  "y": 22.5,
+                  "text": "4",
+                  "mitte": true,
+                  "fett": true
+                }
+              ]
+            }
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: Minus vor der Klammer",
+          "text": "Nach der Schule · im Bus. Ben stellt Lina ein Rätsel mit Klammern. Achtung beim Minus vor der Klammer!"
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Ben",
+              "text": "Stell dir vor, eine Person hat 20 Euro. Sie bezahlt eine Rechnung: 8 Euro, aber sie bekommt 3 Euro Rabatt."
+            },
+            {
+              "wer": "Lina",
+              "text": "Also 20 minus, Klammer auf, 8 minus 3, Klammer zu."
+            },
+            {
+              "wer": "Ben",
+              "text": "Genau. Und wenn du die Klammer auflöst?"
+            },
+            {
+              "wer": "Lina",
+              "text": "Minus vor der Klammer dreht alle Vorzeichen um: 20 minus 8 plus 3."
+            },
+            {
+              "wer": "Ben",
+              "text": "Und das sind?"
+            },
+            {
+              "wer": "Lina",
+              "text": "15 Euro. Mit der Klammer: 8 minus 3 sind 5, und 20 minus 5 sind auch 15. Es stimmt!"
+            },
+            {
+              "wer": "Ben",
+              "text": "Und bei Plus vor der Klammer bleibt alles gleich: 20 plus, Klammer auf, 8 minus 3, Klammer zu, sind 20 plus 8 minus 3."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "10 − (4 − 1) = ? Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "7  []       5  []       13  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Lies und löse die Klammern auf."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "20 − (8 − 3) = 20 ___ = ___",
+            "20 + (8 − 3) = 20 ___ = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Klammer-Detektive: Jede Person schreibt eine Aufgabe mit Minus vor der Klammer. Die anderen lösen sie auf zwei Wegen und vergleichen."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Regel",
+          "punkte": [
+            "+ ( … ) → Vorzeichen bleiben",
+            "− ( … ) → alle Vorzeichen drehen",
+            "Danach zusammenfassen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Löse die Klammer auf:  3x + (−4x + 7)   ___",
+            "Löse die Klammer auf:  6x + (4x − 9)   ___",
+            "Löse die Klammer auf:  1x + (3x − 3)   ___",
+            "Löse die Klammer auf:  6x − (−5x − 9)   ___",
+            "Löse die Klammer auf:  6x + (−6x − 7)   ___",
+            "Löse die Klammer auf:  1x − (−5x − 9)   ___",
+            "Löse die Klammer auf:  6x + (3x − 8)   ___",
+            "Löse die Klammer auf:  4x − (−3x − 5)   ___",
+            "Löse die Klammer auf:  6x + (x − 2)   ___",
+            "Löse die Klammer auf:  4x + (2x + 9)   ___",
+            "Löse die Klammer auf:  1x − (−4x − 1)   ___",
+            "Löse die Klammer auf:  3x − (−4x − 2)   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "(3x − 2) − (x − 5) = ___",
+            "10 − (2x + 4) − (−x + 1) = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "2x − (−3x + 5) − 2 = ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Erkläre an einem Beispiel mit Zahlen, warum sich bei „Minus vor der Klammer“ die Vorzeichen umdrehen."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Beispiel: …",
+            "Mit Klammer: …",
+            "Ohne Klammer: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich löse Klammern auf, die ein Plus- oder Minuszeichen davor haben.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Wiederholung zum Kapitel „Buchstabenrechnen (Terme)“ – gemischt aus allen Lektionen. Was kannst du schon sicher?"
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "A(x) = 6x − 1.  Berechne A(8).   ___",
+            "Schreibe als Term: du hast a € und bekommst 5 € dazu   ___",
+            "A(x) = 3x + 8.  Berechne A(7).   ___",
+            "Fasse zusammen:  −5x + 6 + 4x + 3   ___",
+            "Löse die Klammer auf:  5x + (3x − 8)   ___",
+            "A(x) = 2x − 4.  Berechne A(7).   ___",
+            "Schreibe als Term: das Doppelte von n   ___",
+            "A(x) = 3x + 3.  Berechne A(7).   ___",
+            "Fasse zusammen:  −x + 4 + 3x + 8   ___",
+            "Löse die Klammer auf:  3x + (2x − 3)   ___"
+          ],
+          "buchstaben": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich löse Klammern auf, die ein Plus- oder Minuszeichen davor haben.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Die Klammer öffnen“ – 2x + (−3x + 5) − 2: Steht ein Plus vor der Klammer, darf man sie einfach weglassen. Steht ein Minus davor, muss man drinnen ALLE Vorzeichen umdrehen. Danach fasst man zusammen.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): x + (2x − 3) = ? · x − (2x − 3) = ? Im Heft: Aufgabe 1.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 2 bis 8 nach Stufe; Übungspäckchen (Aufgabe 9) und Plus (Aufgabe 10) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 11): 2x − (−3x + 5) − 2 = ? Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 12) als Hausaufgabe.",
+          "Wiederholung zum Kapitel (Aufgabe 13): gemischte Aufgaben aus dem ganzen Kapitel – vor der Klassenarbeit oder als Hausaufgabe."
+        ],
+        "hintergrund": "Klammern auflösen: Steht ein „+“ vor der Klammer, darf man sie einfach weglassen. Steht ein „−“ vor der Klammer, muss man beim Weglassen ALLE Vorzeichen in der Klammer umdrehen. Danach zusammenfassen. + vor Klammer → Klammer einfach weglassen. − vor Klammer → alle Vorzeichen drinnen umdrehen. Danach zusammenfassen. Im Unterricht: Bei „−“ vor der Klammer über jedes Vorzeichen einen kleinen Pfeil setzen (dreht sich um). Erst NUR die Klammer auflösen, in einem zweiten Schritt zusammenfassen – nie beides gleichzeitig.",
+        "differenzierung": {
+          "leichter": "Basis: + Klammer: weglassen. − Klammer: Vorzeichen drehen. Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Bei „−“ vor der Klammer über jedes Vorzeichen einen kleinen Pfeil setzen (dreht sich um). Erst NUR die Klammer auflösen, in einem zweiten Schritt zusammenfassen – nie beides gleichzeitig.",
+          "Spiel: „Vorzeichen-Flip“: Karten in der Klammer umdrehen (rot/grün) bei Minus davor – haptisch das „Umdrehen“ erleben."
+        ],
+        "material": "Regel-Karte + / −",
+        "loesungen": [
+          "1) a) x + 2x − 3 = 3x − 3 · b) x − 2x + 3 = −x + 3 · c) 8x + 8 · d) −4x − 7",
+          "2) a) 7x + 9 · b) 7x + 3 · c) 7x − 6 · d) 3 · e) 8x − 1 · f) 9 · g) 4x + 2 · h) x + 6",
+          "3) a) 3 + x + 2 = x + 5 · b) 5 − x − 1 = 4 − x · c) 2a − 2 · d) 2x + 3 · e) −4x − 1 · f) 9x + 9",
+          "4) a) 2x − 3x + 5 − 2 = −x + 3 · b) 2x + 3x − 5 − 2 = 5x − 7 · c) 4a − 2a + 3 = 2a + 3 · d) −3x + 6 · e) 10x + 2 · f) 9x + 7",
+          "5) a) 5 · (x + 2) = 5x + 10 – b) 4 · (2x + 3) = 8x + 12",
+          "6) 7",
+          "7) a) − 8 + 3 / 15 · b) + 8 − 3 / 25",
+          "8) mündlich – eigene Lösungen",
+          "9) a) −x + 7 · b) 10x − 9 · c) 4x − 3 · d) 11x + 9 · e) −7 · f) 6x + 9 · g) 9x − 8 · h) 7x + 5 · i) 7x − 2 · j) 6x + 9 · k) 5x + 1 · l) 7x + 2",
+          "10) a) 3x − 2 − x + 5 = 2x + 3 · b) 10 − 2x − 4 + x − 1 = −x + 5",
+          "11) Lösung: 5x − 7",
+          "12) eigene Erklärung – auf Fachwörter und ein Beispiel achten",
+          "13) a) A(8) = 47 · b) a + 5 € · c) A(7) = 29 · d) −x + 9 · e) 8x − 8 · f) A(7) = 10 · g) 2n · h) A(7) = 24 · i) 2x + 12 · j) 5x − 3"
+        ]
+      }
+    }
+  }
+]

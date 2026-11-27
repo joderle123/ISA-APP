@@ -18,3 +18,9 @@ Lizenztext: https://openfontlicense.org
 
 Piktogramme: Tabler Icons – MIT License – Copyright (c) 2020-2024 Paweł Kuna
 (https://tabler.io/icons), Auswahl in src/blatt/bilder/icons.json.
+
+Zeichen-Regular.ttf, Zeichen-Bold.ttf: Auszug aus DejaVu Sans (nur Mathe-Zeichen wie √ α β γ ⊥ ∥ ∟ ℤ ℚ ≥ und
+Hochzahlen ⁰–⁹) – springt in den PDF-Blättern für Zeichen ein, die die Hauptschriften nicht haben.
+DejaVu-Änderungen: gemeinfrei; Bitstream-Vera-Grundlage: Copyright (c) 2003 by Bitstream, Inc. – Bitstream Vera
+Fonts License (Verändern und Weitergeben erlaubt, solange der Name weder „Bitstream“ noch „Vera“ enthält).
+https://dejavu-fonts.github.io/License.html

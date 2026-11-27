@@ -10,24 +10,30 @@
 //   · kein „Los geht’s“
 // Lektions-Wünsche (Notizen der Lehrerin) stehen unten in EXTRA.
 // Aufruf: node tools/hefte/mathe-kompakt.mjs 3   → schreibt die Blätter in src/data/blaetter/mathe-2.json (nur Deutsch; Französisch bleibt)
-import { readFileSync, writeFileSync } from 'node:fs'
+// Rückmeldung 26.11.2026: ALLE Mathe-Module wie Modul 3. Modul 2 nimmt seine alten Toolbox-Blätter (daten/mathe-m2-alt.json),
+// Module ohne alte Blätter (1, 4–9) bekommen ein schlankes Grundblatt aus dem Programm (Kurz-Check, Lehrer-Ablauf) – Bilder-Übungen
+// kommen dort über EXTRA_WEITERE dazu. Ziel: src/data/blaetter/mathe-mN.json, Modul-Angaben in src/blatt/module-mathe.json.
+import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { erzeuge } from './mathe-gen.mjs'
+import { genVon } from './inhalt/mathe-gemeinsam.mjs'
+import { EXTRA_WEITERE, FIT_WEITERE, THEMEN_FR } from './mathe-kompakt-extra.mjs'
 
 const ROOT = new URL('../../', import.meta.url)
 const nr = +(process.argv[2] || 3)
 const P = JSON.parse(readFileSync(new URL('tools/hefte/daten/mathe-programm.json', ROOT), 'utf8'))
-const ALT = JSON.parse(readFileSync(new URL(`tools/hefte/daten/mathe-m${nr}-alt.json`, ROOT), 'utf8'))
-const ZIEL = new URL('src/data/blaetter/mathe-2.json', ROOT)
+const ALT_DATEI = new URL(`tools/hefte/daten/mathe-m${nr}-alt.json`, ROOT)
+let ALT = existsSync(ALT_DATEI) ? JSON.parse(readFileSync(ALT_DATEI, 'utf8')) : null   // sonst Grundblätter (unten)
+const ZIELDATEI = { 2: 'mathe.json', 3: 'mathe-2.json' }[nr] || `mathe-m${nr}.json`
+const ZIEL = new URL(`src/data/blaetter/${ZIELDATEI}`, ROOT)
 
 // Programm-Lektionen des Moduls in Reihenfolge → passen der Reihe nach zu den alten Blättern
 const M = P.module[nr - 1]
 const PL = M.themen.flatMap((t) => t.lektionen)
-if (PL.length !== ALT.length) throw new Error(`Modul ${nr}: ${PL.length} Lektionen im Programm, ${ALT.length} alte Blätter`)
 
 const minus = (s) => String(s ?? '').replace(/(^|[\s(;=:→])-(?=\d)/g, '$1−')
 const kurz = (l) => minus(String(l).replace(/\s*\([^)]*\)\s*$/, '').replace(/^≈\s*/, '').trim())
 const BR = (s) => String(s).replace(/\[\[([^\]/]+)\/([^\]/]+)\]\]/g, '$1/$2').replace(/÷/g, ':')   // geteilt wie im Unterricht: „:“
-  .replace(/\s*✓/g, ' – passt').replace(/\|{4}\u0336/g, '4 Striche + 1 Querstrich')   // Zeichen, die die Heft-Schriften nicht haben
+  .replace(/⌐/g, '∟').replace(/✅/g, '✓').replace(/❌/g, '✗').replace(/\s*↔\s*/g, ' – ').replace(/\s*✓/g, ' – passt').replace(/\|{4}\u0336/g, '4 Striche + 1 Querstrich')   // Zeichen, die die Heft-Schriften nicht haben
 // Aufgabe aus dem Erzeuger → [Päckchen-Zeile mit ___, kurze Lösung]
 const FORM = {
   rundenEinheit: (x) => [`${/Runde ([\d,]+)/.exec(x.a)[1]} ≈ ___`, kurz(x.l)],
@@ -42,7 +48,7 @@ const FORM = {
 // Rückmeldung 26.11.: Brüche nicht „2/3“, sondern übereinander – #z/n# setzt der Päckchen-Renderer als Bruch
 const stapel = (s) => String(s).replace(/(?<![\d,.\/#])(\d+)\/(\d+)(?![\d,.\/#])/g, '#$1/$2#')
 const allgemein = (x) => { const a = stapel(BR(minus(x.a)).replace('÷', ':').replace('▢', '___')); return [/___/.test(a) ? a : /=\s*\??\s*$/.test(a) ? a.replace(/=\s*\??\s*$/, '= ___') : a + '   ___', kurz(BR(x.l))] }
-const zeile = (gen, x) => (FORM[gen.type] || allgemein)(x)
+const zeile = (gen, x) => ((!Array.isArray(gen) && FORM[gen.type]) || allgemein)(x)
 const wuerfle = (gen, n, niveau, seed) => erzeuge(gen, n, niveau, seed).map((x) => zeile(gen, x))
 // Beispiel mit Lösung: steht die Einheit schon hinter der Lücke („A = ___ cm²“), nicht noch einmal einsetzen
 const gefuellt = ([a, l]) => { const e = /___\s*([^\s:;,]+)/.exec(a)?.[1]; const w = e && String(l).endsWith(' ' + e) ? String(l).slice(0, -e.length - 1) : l; return a.replace('___', '{' + w + '}') }
@@ -55,7 +61,7 @@ const DEZ_TAFEL = (zeilen) => ({ art: 'stellentafel', stellen: ['HT', 'ZT', 'T',
 // Umwandlungen: art 'umwandlung' (src/blatt/umwandlung.js) – Einheiten oben, gestrichelte Unterspalten, rotes Komma (Auftrag 26.11.)
 
 // ---------------- Wünsche der Lehrerin je Lektion (Index im Modul, ab 0) ----------------
-const EXTRA = {
+const EXTRA_M3 = {
   1: {
     // gerundete Ergebnisse mit ≈ (die Schritte erklären das Zeichen); „4 → ab“ bleibt ein Pfeil
     zeichen: (t) => t.replace(/(\d+,\d+|___) → (\d+|___)/g, '$1 ≈ $2')
@@ -150,6 +156,8 @@ const EXTRA = {
   },
 }
 
+const EXTRA = nr === 3 ? EXTRA_M3 : EXTRA_WEITERE[nr] || {}
+
 // ---------------- Aufbau einer Lektion ----------------
 // Rückmeldung 2 (25.11.): „die Anzahl der Übungen wie im großen Dossier behalten“, „die Erklärungen so gut wie im großen
 // Dossier“, „Fit bleiben = Wiederholung aus den Modulen davor, vor jedem Kapitel“. Darum kommt jede Lektion jetzt aus
@@ -157,7 +165,7 @@ const EXTRA = {
 // Beispiele, Gemeinsam, Jetzt du, Basis, Kern, Übungspäckchen, Plus, Exit-Ticket, Rechnen im Alltag, Erklären, Wiederholung
 // nach dem Kapitel – mit denselben Zufallszahlen, also dieselben Aufgaben), (2) das alte Toolbox-Blatt (Grafik zur Regel,
 // Übungen mit Bildern, Kurz-Check, Lehrer-Hinweise), (3) „Fit für das Kapitel“ aus Modul 1 und 2 (FIT unten).
-const { LEKTIONEN: BIG } = await import(new URL(`tools/hefte/inhalt/mathe-m${nr}.mjs`, ROOT))
+const { LEKTIONEN: BIG, MODUL: GROSS } = await import(new URL(`tools/hefte/inhalt/mathe-m${nr}.mjs`, ROOT))
 const zitat = (s) => s.replace(/„([^"“”]*)"/g, '„$1“').replace(/"([^"]*)"/g, '„$1“')   // gerade Anführungszeichen → „…“
 const T = (s) => zitat(BR(minus(String(s ?? '').replace(/\*\*/g, '').replace(/\{\{(\d+)\/(\d+)\}\}/g, '$1/$2').replace(/\bNele\b/g, 'Lou'))))
 const lies = (s) => T(s).replace(/Hör gut zu und/g, 'Lies und').replace(/Hör zu und/g, 'Lies und').replace(/Hör zu\./g, 'Lies.').replace(/Hör zu/g, 'Lies')
@@ -165,7 +173,9 @@ const ohnePunkt = (s) => T(s).replace(/\.\s*$/, '')
 // feste Aufgabe {a, l} → Päckchen-Zeile mit Lücke
 const posten = (x) => { let a = stapel(T(x.a).trim()); if (/___/.test(a)) {} else if (/=\s*\?\s*$/.test(a)) a = a.replace(/=\s*\?\s*$/, '= ___'); else if (/=\s*$/.test(a)) a = a + ' ___'; else a = a + '   ___'; return [a, ohnePunkt(x.l)] }
 const spaltenFuer = (it) => { const m = Math.max(...it.map(([a]) => a.length)); return m <= 22 ? 3 : m <= 46 ? 2 : 1 }
-const block = (stufe, text, items, extra = {}) => ({ bausteine: [{ art: 'aufgabe', stufe, text, ...(extra.hinweis ? { hinweis: extra.hinweis } : {}) }, { art: 'paeckchen', spalten: extra.spalten || spaltenFuer(items), items: items.map(([a]) => a), buchstaben: items.length > 1 }, ...(extra.danach || [])], loes: [items.length > 1 ? lsg(items) : items[0][1]] })
+// gleiche Aufgabe nur einmal je Block (Programm-Aufgaben und Erzeuger können sich treffen, z. B. zweimal √81)
+const ohneDoppelte = (items) => items.filter((x, i) => items.findIndex((y) => y[0].replace(/\s+/g, ' ').trim() === x[0].replace(/\s+/g, ' ').trim()) === i)
+const block = (stufe, text, alle, extra = {}) => { const items = ohneDoppelte(alle); return (!items.length ? (console.warn(`  · leer: ${text.slice(0, 60)}`), null) : { bausteine: [{ art: 'aufgabe', stufe, text, ...(extra.hinweis ? { hinweis: extra.hinweis } : {}) }, { art: 'paeckchen', spalten: extra.spalten || spaltenFuer(items), items: items.map(([a]) => a), buchstaben: items.length > 1 }, ...(extra.danach || [])], loes: [items.length > 1 ? lsg(items) : items[0][1]] }) }
 const satzWeise = (t) => T(t).split(/(?<=[.!])\s+(?=[A-ZÄÖÜ0-9„−])/).filter(Boolean)
 
 // Zufall mit festem Startwert (Diagramme für Lektion 7)
@@ -209,7 +219,7 @@ function strichAufgaben(items) {
 }
 
 // „Fit für das Kapitel“: vor jedem Kapitel (Thema) Aufgaben aus Modul 1 und 2, die man dafür braucht
-const FIT = {
+const FIT_M3 = {
   'Dezimalzahlen weiterrechnen': [
     { text: 'aus Modul 2: Dezimalzahlen – Stellenwert, plus und minus', gens: [['dezimalStellenwert', 3], ['dezimalAddSub', 3]] },
     { text: 'aus Modul 1: Runden und Einmaleins', gens: [['runden', 3], ['einmaleins', 3]] },
@@ -227,6 +237,7 @@ const FIT = {
     { text: 'aus Modul 2: Bruchteil einer Menge', gens: [['bruchteil', 6]] },
   ],
 }
+const FIT = nr === 3 ? FIT_M3 : FIT_WEITERE[nr] || {}
 const THEMA_VON = M.themen.flatMap((t) => t.lektionen.map(() => t.titel.replace(/ & /g, ' und ')))
 function fitFuerKapitel(k) {
   const thema = THEMA_VON[k]
@@ -234,16 +245,16 @@ function fitFuerKapitel(k) {
   return (FIT[thema] || []).map((teil, j) => {
     const items = teil.gens.flatMap(([type, n], g) => erzeuge({ type }, n, 'basis', nr * 1000 + k * 53 + j * 7 + g).map((x) => allgemein(x)))
     return block(1, `Fit für das Kapitel „${thema}“ – Wiederholung ${teil.text}. Rechne allein, ohne Hilfe.`, items)
-  })
+  }).filter(Boolean)
 }
 
 const zahlAufgaben = (b) => (b.art === 'aufgabe' ? 1 : b.art === 'spalten' ? [...(b.links || []), ...(b.rechts || [])].filter((x) => x.art === 'aufgabe').length : 0)
 function baue(alt, k) {
   const pl = PL[k], gr = BIG[k], x = EXTRA[k + 1] || {}
-  const gen = pl.gen && (FORM[pl.gen.type] ? pl.gen : null)
+  const gen = pl.gen || (x.diagramme || x.striche ? null : genVon(nr, pl)) || null
   const B = alt.de.bausteine.filter((b) => b.art !== 'seitenumbruch'), L0 = alt.de.lehrer.loesungen
-  const ersteAufgabe = B.findIndex((b) => zahlAufgaben(b) > 0)
   const schlussAb = B.length - 2   // „Kurz-Check: Wie sicher bist du?“ + Einschätzung
+  const e0 = B.findIndex((b) => zahlAufgaben(b) > 0), ersteAufgabe = e0 < 0 ? schlussAb : e0
   const kopf = B.slice(0, ersteAufgabe)
   const schluss = B[schlussAb]?.art === 'text' && B[schlussAb + 1]?.art === 'einschaetzung' ? [{ ...B[schlussAb + 1], titel: B[schlussAb].text }] : B.slice(schlussAb)
   const gruppen = []; let li = 0
@@ -256,8 +267,9 @@ function baue(alt, k) {
   // --- Erklärung wie im großen Dossier: Begriff, Schritte (mit Grafik des alten Moduls), Merksatz, Vorgehen, Wörter,
   //     zwei Musterlösungen, noch mehr Beispiele
   const regelSp = kopf.find((b) => b.art === 'spalten' && b.links.some((y) => y.art === 'info'))
-  const grafik = regelSp ? [...regelSp.links.filter((y) => y.art !== 'info'), ...regelSp.rechts] : []
-  const verh = grafik.some((g) => ['strichliste', 'tabelle', 'flaeche'].includes(g.art) || (g.art === 'diagramm' && g.kategorien.some((c) => c.length > 5))) ? '1:1' : '2:1'
+  // Bild zur Regel: aus dem alten Blatt (Module 2, 3) oder neu gezeichnet (mathe-kompakt-bilder.mjs)
+  const grafik = regelSp ? [...regelSp.links.filter((y) => y.art !== 'info'), ...regelSp.rechts] : x.grafik || []
+  const verh = x.grafikVerh || grafik.some((g) => ['strichliste', 'tabelle', 'flaeche', 'geo'].includes(g.art) || (g.art === 'diagramm' && g.kategorien.some((c) => c.length > 5))) ? '1:1' : '2:1'
   const def = { art: 'info', symbol: 'wissen', titel: T(pl.def.begriff), text: T(pl.def.text) }
   const schritte = { art: 'schritte', stil: 'liste', linien: 0, teilbar: true, items: pl.erklaerung.map((s) => ({ titel: T(s.titel), text: T(s.text) + (s.beispiel ? '  Beispiel: ' + T(s.beispiel) : '') })) }
   const mu = (m, j) => ({ art: 'info', symbol: j ? 'merke' : 'tipp', titel: 'Musterlösung' + (m.titel ? ': ' + T(m.titel) : ''), text: 'Aufgabe: ' + T(m.a), punkte: [...m.schritte.map(T), 'Ergebnis: ' + T(m.erg)] })
@@ -275,6 +287,7 @@ function baue(alt, k) {
     { art: 'text', text: 'Die Regel – Schritt für Schritt:' },
     grafik.length ? { art: 'spalten', zusammen: true, verhaeltnis: verh, links: [def, schritte], rechts: grafik } : def,
     ...(grafik.length ? [] : [schritte]),
+    ...(x.grafikUnten || []),
     { art: 'spalten', zusammen: true, verhaeltnis: '1:1',
       links: [{ art: 'info', symbol: 'merke', titel: 'Merksatz', punkte: satzWeise(pl.merksatz) }],
       rechts: [{ art: 'info', symbol: 'wissen', titel: 'So gehst du vor', punkte: pl.vorgehen.map((v, i) => `${i + 1}. ${T(v).replace(/^\d+\.\s*/, '')}`) },
@@ -286,7 +299,7 @@ function baue(alt, k) {
 
   // --- Üben wie im großen Dossier (dieselben Aufgaben)
   const thermo = (inhalt) => (x.thermometer ? [{ art: 'spalten', zusammen: true, verhaeltnis: '2:1', links: inhalt, rechts: [{ art: 'temperatur', von: -10, bis: 10, items: [{}] }] }] : inhalt)
-  const mitThermo = (bl) => (x.thermometer ? { ...bl, bausteine: [bl.bausteine[0], ...thermo(bl.bausteine.slice(1))] } : bl)
+  const mitThermo = (bl) => (bl && x.thermometer ? { ...bl, bausteine: [bl.bausteine[0], ...thermo(bl.bausteine.slice(1))] } : bl)
   const gemeinsam = block(1, 'Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet.', [...pl.gemeinsam.map(posten), ...(gen ? fz(basisG.slice(17, 19)) : [])])
   let jetztDu = null, paeckchen = null
   if (gen) {
@@ -305,7 +318,7 @@ function baue(alt, k) {
     jetztDu = { bausteine: [{ art: 'aufgabe', stufe: 1, text: 'Jetzt du – wie groß ist die Häufigkeit? Oder zeichne die Striche.' }, ...j.bausteine, ...(j.text.length ? [{ art: 'paeckchen', spalten: 1, items: j.text.map(([a]) => a), buchstaben: false }] : [])], loes: [j.loes + (j.text.length ? ' · ' + j.text.map(([, l]) => l).join(' · ') : '')] }
     paeckchen = { bausteine: [{ art: 'aufgabe', stufe: 2, text: 'Übungspäckchen – Häufigkeit bestimmen, Striche zeichnen, zusammenzählen.' }, ...p.bausteine, ...(p.text.length ? [{ art: 'paeckchen', spalten: 1, items: p.text.map(([a]) => a), buchstaben: false }] : [])], loes: [p.loes + (p.text.length ? ' – Würfeln: ' + p.text.map(([, l]) => l).join(' · ') : '')] }
   }
-  const mitBild = (bl, bild) => (bild ? { ...bl, bausteine: [bl.bausteine[0], { art: 'spalten', zusammen: true, verhaeltnis: '1:1', links: [bild], rechts: bl.bausteine.slice(1).map((b) => (b.art === 'paeckchen' ? { ...b, spalten: 1 } : b)) }] } : bl)
+  const mitBild = (bl, bild) => (bl && bild ? { ...bl, bausteine: [bl.bausteine[0], { art: 'spalten', zusammen: true, verhaeltnis: '1:1', links: [bild], rechts: bl.bausteine.slice(1).map((b) => (b.art === 'paeckchen' ? { ...b, spalten: 1 } : b)) }] } : bl)
   const A = pl.aufgaben
   const basis = x.ohneBasis ? null : mitBild(block(1, 'Basis – Schritt für Schritt.', [...A.basis.items.map(posten), ...(gen ? fz(basisG.slice(8, 11)) : [])], { hinweis: A.basis.hinweis && T(A.basis.hinweis) }), x.bilder?.basis)
   const kern = mitBild(block(2, 'Kern – das Niveau des Moduls.', [...A.kern.items.map(posten), ...(gen ? fz(kernG.slice(0, 3)) : [])]), x.bilder?.kern)
@@ -355,7 +368,7 @@ function baue(alt, k) {
   const letzteImThema = k === PL.length - 1 || THEMA_VON[k + 1] !== THEMA_VON[k]
   if (letzteImThema) {
     const imThema = PL.map((l, i) => ({ l, i })).filter((y) => THEMA_VON[y.i] === THEMA_VON[k])
-    const mitGen = imThema.filter((y) => y.l.gen && FORM[y.l.gen.type])
+    const mitGen = imThema.filter((y) => y.l.gen || (!(EXTRA[y.i + 1] || {}).diagramme && !(EXTRA[y.i + 1] || {}).striche && genVon(nr, y.l))).map((y) => ({ ...y, l: { ...y.l, gen: y.l.gen || genVon(nr, y.l) } }))
     const je = Math.max(2, Math.ceil(8 / Math.max(1, imThema.length)))
     const listen = mitGen.map((y) => fz2(y.l.gen, erzeuge(y.l.gen, je, 'kern', nr * 1000 + y.l.nr * 10 + 9)))
     const gemischt = []
@@ -398,14 +411,14 @@ function baue(alt, k) {
   }
   const lehrer = { ...alt.de.lehrer }
   lehrer.ablauf = (lehrer.ablauf || []).map(umschreiben)
-  if (fit.length) lehrer.ablauf.splice(1, 0, `Fit für das Kapitel (10 Min.): Aufgaben 1 und 2 – Wiederholung aus Modul 1 und 2, allein und ohne Hilfe. Kurz vergleichen.`)
+  if (fit.length) lehrer.ablauf.splice(1, 0, `Fit für das Kapitel (10 Min.): Aufgabe${fit.length > 1 ? 'n 1 und 2' : ' 1'} – Wiederholung aus ${nr === 3 ? 'Modul 1 und 2' : 'früheren Kapiteln und Modulen'}, allein und ohne Hilfe. Kurz vergleichen.`)
   else if (x.vorne) lehrer.ablauf.splice(1, 0, 'Wiederholung (5 Min.): Aufgabe 1 gemeinsam beginnen, dann allein.')
   if (wNr) lehrer.ablauf.push(`Wiederholung zum Kapitel (Aufgabe ${wNr}): gemischte Aufgaben aus dem ganzen Kapitel – vor der Klassenarbeit oder als Hausaufgabe.`)
   if (lehrer.differenzierung) lehrer.differenzierung = Object.fromEntries(Object.entries(lehrer.differenzierung).map(([kk, v]) => [kk, umschreiben(v)]))
   for (const kk of ['tipps', 'material', 'impulse']) if (Array.isArray(lehrer[kk])) lehrer[kk] = lehrer[kk].map(umschreiben); else if (typeof lehrer[kk] === 'string') lehrer[kk] = umschreiben(lehrer[kk])
   lehrer.loesungen = loes
   // Rückmeldung 26.11.: Die Überschrift der Lektion = der Titel aus dem Inhaltsverzeichnis (nicht „Ungefähr wie viel?“)
-  const titelInhalt = String(alt.de.untertitel || '').split(' – ')[0].trim() || alt.de.titel
+  const titelInhalt = String(alt.de.untertitel || '').replace(/\s+–\s+Modul \d+, Lektion \d+\s*$/, '').trim() || alt.de.titel
   let blatt = { ...alt, de: { ...alt.de, titel: titelInhalt, untertitel: `Modul ${nr}, Lektion ${k + 1}`, bausteine, lehrer } }
   blatt = JSON.parse(JSON.stringify(blatt, (kk, v) => (typeof v === 'string' ? v.replace(/Ø/g, 'moy') : v)))
   if (x.zeichen) blatt = JSON.parse(JSON.stringify(blatt, (kk, v) => (typeof v === 'string' ? x.zeichen(v) : v)))
@@ -413,9 +426,94 @@ function baue(alt, k) {
 }
 const fz2 = (gen, xs) => xs.map((y) => zeile(gen, y))
 
+// ---------------- Grundblatt für Module ohne alte Toolbox-Blätter (1, 4–9) ----------------
+// Liefert, was baue() vom alten Blatt braucht: Kopfdaten, Kurz-Check (Einschätzung) und den Lehrer-Ablauf im Wortlaut der alten
+// Blätter („Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind.“), damit die Aufgabennummern umgeschrieben werden.
+const slug = (t) => String(t).toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+  .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+const FUELL = new Set(['und', 'die', 'der', 'das', 'den', 'dem', 'von', 'mit', 'im', 'in', 'ein', 'eine', 'einer', 'zum', 'zur', 'auf', 'am', 'an'])
+const kurzSlug = (t) => slug(String(t).split(/\s+[–:]\s+|:\s+/)[0]).split('-').filter((w) => w && !FUELL.has(w)).slice(0, 3).join('-')
+const ICONS = new Set(Object.keys(JSON.parse(readFileSync(new URL('src/blatt/bilder/icons.json', ROOT), 'utf8'))))
+const ICON_ERSATZ = { 'building-bank': 'pig-money', box: 'cube', divide: 'math-symbols', percentage: 'math-symbols', superscript: 'math', variable: 'math', 'plus-minus': 'math-symbols',
+  numbers: 'math', 'temperature-minus': 'temperature-snow', 'chart-dots': 'chart-bar', 'math-equal-greater': 'math-greater', 'math-x-plus-y': 'math', 'vector-triangle': 'triangle' }
+const piktogramm = (n) => (ICONS.has(n) ? n : ICONS.has(ICON_ERSATZ[n]) ? ICON_ERSATZ[n] : 'math')
+// Themen der Toolbox (src/blatt/katalog.ts): dezimalzahlen, brueche, groessen, geometrie, daten, rechnen
+const toolboxThema = (t) => (/Dezimal/.test(t) ? 'dezimalzahlen' : /Bruch|Brüche|Prozent/.test(t) ? 'brueche' : /Daten|Statistik/.test(t) ? 'daten'
+  : /Figur|Dreieck|Winkel|Gerade|Strecke|Umfang|Fläche|Koordinaten|Pythagoras|Symmetrie/.test(t) ? 'geometrie' : /Größen|Volumen|Kapazität|Masse|Temperatur/.test(t) ? 'groessen' : 'rechnen')
+function grundblaetter() {
+  const vergeben = new Set()
+  let ti = -1, letztesThema = null
+  return PL.map((pl, k) => {
+    if (THEMA_VON[k] !== letztesThema) { ti++; letztesThema = THEMA_VON[k] }
+    let id = `mathe-m${nr}-${kurzSlug(pl.titel)}`
+    if (vergeben.has(id)) id += '-' + (k + 1)
+    vergeben.add(id)
+    const ex = /^(.*?)\s*\(([^()]*)\)\s*$/.exec(T(pl.exit)) || [null, T(pl.exit), '']
+    const icon = piktogramm((GROSS.themen[ti] || {}).icon || 'math')
+    return {
+      id, bereich: 'mathe', thema: toolboxThema(THEMA_VON[k]), stufen: ['ES'], sozialform: ['einzeln', 'klasse'], dauer: '45–60 Min.', eldib: [],
+      schlagworte: [THEMA_VON[k], ...(pl.wortschatz || []).slice(0, 4).map((w) => T(w.de)), `Modul ${nr}`],
+      bild: 'icon:' + icon,
+      de: {
+        titel: T(pl.einstieg.titel), untertitel: `${T(pl.titel)} – Modul ${nr}, Lektion ${k + 1}`,
+        bausteine: [
+          { art: 'text', text: 'Kurz-Check: Wie sicher bist du?', klein: true },
+          { art: 'einschaetzung', items: [T(pl.lernziel), 'Ich kann einer anderen Person erklären, wie ich rechne.', 'Ich löse das Exit-Ticket allein.'], optionen: ['sicher', 'geht so', 'noch nicht'] },
+        ],
+        lehrer: {
+          ziel: 'Lernziel: ' + T(pl.lernziel),
+          ablauf: [
+            `Einstieg (5 Min.): „${T(pl.einstieg.titel)}“ – ${T(pl.einstieg.text)}`,
+            'Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.',
+            `Gemeinsam an der Tafel (5 Min.): ${pl.gemeinsam.map((g) => T(g.a)).join(' · ')}`,
+            'Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.',
+            `Abschluss (5 Min.): Exit-Ticket: ${ex[1]} Danach den Kurz-Check ausfüllen lassen.`,
+          ],
+          hintergrund: `${T(pl.def.begriff)}: ${T(pl.def.text)} ${T(pl.merksatz)} Im Unterricht: ${T(pl.foerdertipp)}`,
+          differenzierung: { leichter: pl.aufgaben.basis.hinweis ? `Basis: ${T(pl.aufgaben.basis.hinweis)} Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.` : 'Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.', schwerer: 'Übungspäckchen, Plus-Aufgaben und „Erklären“.' },
+          tipps: [T(pl.foerdertipp), ...(pl.spiel ? ['Spiel: ' + T(pl.spiel)] : [])],
+          material: (pl.material || []).map(T).join(', '),
+          loesungen: [],
+        },
+      },
+    }
+  })
+}
+
+// ---------------- Modul-Angaben fürs Heft (Deckblatt, Inhalt, Wörterliste) – Module 1, 4–9 ----------------
+function modulAngaben(blaetter) {
+  let i = 0
+  const themen = M.themen.map((t, ti) => ({
+    titel: { de: T(t.titel).replace(/ & /g, ' und '), fr: (THEMEN_FR[nr] || [])[ti] || '' },
+    bild: 'icon:' + piktogramm((GROSS.themen[ti] || {}).icon || 'math'),
+    lektionen: t.lektionen.map(() => blaetter[i++].id),
+  }))
+  const lernziele = Object.fromEntries(blaetter.map((b, k) => [b.id, { de: T(PL[k].lernziel), fr: (BIG[k].ziel || {}).fr || '' }]))
+  const wortschatz = [], schon = new Set()
+  M.themen.forEach((t, ti) => t.lektionen.forEach((l) => (l.wortschatz || []).forEach((w) => { const k = ti + '|' + w.de; if (!schon.has(k)) { schon.add(k); wortschatz.push({ thema: ti, de: T(w.de), fr: T(w.fr) }) } })))
+  return {
+    id: `mathe-m${nr}`, nr, bereich: 'mathe', fach: { de: 'Mathe', fr: 'Mathématiques' }, klasse: 'VP',
+    titel: { de: GROSS.titel.de, fr: GROSS.titel.fr },
+    untertitel: { de: `${PL.length} Lektionen mit Regel, Beispielen und Übungen in drei Stufen – ${T(M.unter)}`, fr: `${PL.length} leçons avec règle, exemples et exercices sur trois niveaux – ${GROSS.untertitel.fr}` },
+    themen, lernziele, wortschatz,
+  }
+}
+
+if (!ALT) ALT = grundblaetter()
+if (PL.length !== ALT.length) throw new Error(`Modul ${nr}: ${PL.length} Lektionen im Programm, ${ALT.length} alte Blätter`)
 const neu = ALT.map(baue)
-const alle = JSON.parse(readFileSync(ZIEL, 'utf8'))
+const alle = existsSync(ZIEL) ? JSON.parse(readFileSync(ZIEL, 'utf8')) : []
 const ids = new Set(neu.map((b) => b.id))
-const raus = alle.map((b) => (ids.has(b.id) ? neu.find((n) => n.id === b.id) : b))
+// Blätter dieses Moduls ersetzen; alte Blätter des Moduls, die es nicht mehr gibt, fallen weg
+const raus = [...alle.filter((b) => ids.has(b.id) || !b.id.startsWith(`mathe-m${nr}-`)).map((b) => (ids.has(b.id) ? neu.find((n) => n.id === b.id) : b)),
+  ...neu.filter((n) => !alle.some((b) => b.id === n.id))]
 writeFileSync(ZIEL, JSON.stringify(raus, null, 2) + '\n')
 for (const b of neu) console.log('✓', b.id, '·', b.de.bausteine.length, 'Bausteine ·', b.de.lehrer.loesungen.length, 'Lösungen')
+if (nr !== 2 && nr !== 3) {
+  const MD = new URL('src/blatt/module-mathe.json', ROOT)
+  const liste = existsSync(MD) ? JSON.parse(readFileSync(MD, 'utf8')) : []
+  const m = modulAngaben(neu)
+  const nachher = [...liste.filter((x) => x.id !== m.id), m].sort((a, b) => a.nr - b.nr)
+  writeFileSync(MD, JSON.stringify(nachher, null, 2) + '\n')
+  console.log('✓ src/blatt/module-mathe.json:', m.id, '·', m.themen.length, 'Kapitel')
+}

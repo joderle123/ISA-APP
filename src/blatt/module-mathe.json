@@ -1,0 +1,2080 @@
+[
+  {
+    "id": "mathe-m1",
+    "nr": 1,
+    "bereich": "mathe",
+    "fach": {
+      "de": "Mathe",
+      "fr": "Mathématiques"
+    },
+    "klasse": "VP",
+    "titel": {
+      "de": "Zahlen, Rechnen, Größen und Figuren",
+      "fr": "Nombres, calcul, grandeurs et figures"
+    },
+    "untertitel": {
+      "de": "14 Lektionen mit Regel, Beispielen und Übungen in drei Stufen – Der sichere Sockel: große Zahlen, die vier Grundrechenarten, Größen und einfache Figuren.",
+      "fr": "14 leçons avec règle, exemples et exercices sur trois niveaux – Le socle : les grands nombres, les quatre opérations, les grandeurs et les figures simples."
+    },
+    "themen": [
+      {
+        "titel": {
+          "de": "Zahlen bis 1.000.000",
+          "fr": "Nombres jusqu’à 1 000 000"
+        },
+        "bild": "icon:math",
+        "lektionen": [
+          "mathe-m1-stellenwerttafel",
+          "mathe-m1-zahlen-vergleichen-ordnen",
+          "mathe-m1-zahlen-runden",
+          "mathe-m1-vorgaenger-nachfolger-zahlenfolgen"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Rechnen",
+          "fr": "Calculer"
+        },
+        "bild": "icon:calculator",
+        "lektionen": [
+          "mathe-m1-kopfrechnen",
+          "mathe-m1-schriftlich-addieren-subtrahieren",
+          "mathe-m1-mal-geteilt-durch",
+          "mathe-m1-kleine-einmaleins"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Größen: Länge, Geld, Zeit",
+          "fr": "Grandeurs : longueur, argent, temps"
+        },
+        "bild": "icon:ruler-measure",
+        "lektionen": [
+          "mathe-m1-laengen",
+          "mathe-m1-rechnen-geld",
+          "mathe-m1-uhr-zeit"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Einfache Figuren",
+          "fr": "Figures simples"
+        },
+        "bild": "icon:shape",
+        "lektionen": [
+          "mathe-m1-figuren-erkennen-benennen",
+          "mathe-m1-kreis",
+          "mathe-m1-symmetrie"
+        ]
+      }
+    ],
+    "lernziele": {
+      "mathe-m1-stellenwerttafel": {
+        "de": "Ich lese und schreibe Zahlen bis 1.000.000 und kenne den Wert jeder Ziffer.",
+        "fr": "Je lis et j’écris les nombres jusqu’à 1 000 000 et je connais la valeur de chaque chiffre."
+      },
+      "mathe-m1-zahlen-vergleichen-ordnen": {
+        "de": "Ich vergleiche und ordne Zahlen bis 1.000.000.",
+        "fr": "Je compare et je range les nombres jusqu’à 1 000 000."
+      },
+      "mathe-m1-zahlen-runden": {
+        "de": "Ich runde Zahlen auf Zehner, Hunderter und Tausender.",
+        "fr": "J’arrondis les nombres à la dizaine, à la centaine et au millier."
+      },
+      "mathe-m1-vorgaenger-nachfolger-zahlenfolgen": {
+        "de": "Ich finde Vorgänger und Nachfolger und setze einfache Zahlenfolgen fort.",
+        "fr": "Je trouve le prédécesseur et le successeur et je continue des suites de nombres."
+      },
+      "mathe-m1-kopfrechnen": {
+        "de": "Ich addiere und subtrahiere im Kopf bis 1000.",
+        "fr": "J’additionne et je soustrais de tête jusqu’à 1 000."
+      },
+      "mathe-m1-schriftlich-addieren-subtrahieren": {
+        "de": "Ich addiere und subtrahiere schriftlich bis 1.000.000.",
+        "fr": "J’additionne et je soustrais en colonnes jusqu’à 1 000 000."
+      },
+      "mathe-m1-mal-geteilt-durch": {
+        "de": "Ich multipliziere und dividiere im Kopf mit 10, 100 und 1000.",
+        "fr": "Je multiplie et je divise de tête par 10, 100 et 1 000."
+      },
+      "mathe-m1-kleine-einmaleins": {
+        "de": "Ich beherrsche das kleine Einmaleins sicher.",
+        "fr": "Je connais bien les tables de multiplication."
+      },
+      "mathe-m1-laengen": {
+        "de": "Ich kenne die Längeneinheiten und wandle sie um.",
+        "fr": "Je connais les unités de longueur et je les convertis."
+      },
+      "mathe-m1-rechnen-geld": {
+        "de": "Ich rechne mit Euro-Beträgen: Summen, Rückgeld und Preise.",
+        "fr": "Je calcule avec des euros : sommes, monnaie rendue et prix."
+      },
+      "mathe-m1-uhr-zeit": {
+        "de": "Ich lese die Uhr und rechne mit Zeitspannen.",
+        "fr": "Je lis l’heure et je calcule des durées."
+      },
+      "mathe-m1-figuren-erkennen-benennen": {
+        "de": "Ich erkenne und benenne Quadrat, Rechteck, Dreieck und Kreis.",
+        "fr": "Je reconnais et je nomme le carré, le rectangle, le triangle et le cercle."
+      },
+      "mathe-m1-kreis": {
+        "de": "Ich kenne die Teile des Kreises und zeichne einen Kreis mit dem Zirkel.",
+        "fr": "Je connais les parties du cercle et je trace un cercle au compas."
+      },
+      "mathe-m1-symmetrie": {
+        "de": "Ich erkenne symmetrische Figuren und finde Spiegelachsen.",
+        "fr": "Je reconnais des figures symétriques et je trouve les axes de symétrie."
+      }
+    },
+    "wortschatz": [
+      {
+        "thema": 0,
+        "de": "Ziffer",
+        "fr": "chiffre"
+      },
+      {
+        "thema": 0,
+        "de": "Zahl",
+        "fr": "nombre"
+      },
+      {
+        "thema": 0,
+        "de": "Einer / Zehner / Hunderter",
+        "fr": "unité / dizaine / centaine"
+      },
+      {
+        "thema": 0,
+        "de": "Tausender",
+        "fr": "mille"
+      },
+      {
+        "thema": 0,
+        "de": "Stellenwert",
+        "fr": "valeur de position"
+      },
+      {
+        "thema": 0,
+        "de": "größer als (>)",
+        "fr": "plus grand que"
+      },
+      {
+        "thema": 0,
+        "de": "kleiner als (<)",
+        "fr": "plus petit que"
+      },
+      {
+        "thema": 0,
+        "de": "ordnen",
+        "fr": "ordonner"
+      },
+      {
+        "thema": 0,
+        "de": "runden",
+        "fr": "arrondir"
+      },
+      {
+        "thema": 0,
+        "de": "aufrunden / abrunden",
+        "fr": "arrondir vers le haut / vers le bas"
+      },
+      {
+        "thema": 0,
+        "de": "Rundungsstelle",
+        "fr": "chiffre des …"
+      },
+      {
+        "thema": 0,
+        "de": "Vorgänger / Nachfolger",
+        "fr": "précédent / suivant"
+      },
+      {
+        "thema": 0,
+        "de": "Zahlenfolge",
+        "fr": "suite logique"
+      },
+      {
+        "thema": 0,
+        "de": "Schrittweite",
+        "fr": "pas"
+      },
+      {
+        "thema": 1,
+        "de": "addieren / Summe",
+        "fr": "additionner / somme"
+      },
+      {
+        "thema": 1,
+        "de": "subtrahieren / Differenz",
+        "fr": "soustraire / différence"
+      },
+      {
+        "thema": 1,
+        "de": "ergänzen",
+        "fr": "compléter"
+      },
+      {
+        "thema": 1,
+        "de": "Übertrag",
+        "fr": "retenue"
+      },
+      {
+        "thema": 1,
+        "de": "stellengerecht",
+        "fr": "aligner les chiffres"
+      },
+      {
+        "thema": 1,
+        "de": "borgen / entbündeln",
+        "fr": "emprunter"
+      },
+      {
+        "thema": 1,
+        "de": "multiplizieren",
+        "fr": "multiplier"
+      },
+      {
+        "thema": 1,
+        "de": "dividieren",
+        "fr": "diviser"
+      },
+      {
+        "thema": 1,
+        "de": "Reihe",
+        "fr": "table de multiplication"
+      },
+      {
+        "thema": 1,
+        "de": "Produkt",
+        "fr": "produit"
+      },
+      {
+        "thema": 1,
+        "de": "Faktor",
+        "fr": "facteur"
+      },
+      {
+        "thema": 2,
+        "de": "Länge",
+        "fr": "longueur"
+      },
+      {
+        "thema": 2,
+        "de": "Kilometer / Hektometer / Dekameter",
+        "fr": "kilomètre / hectomètre / décamètre"
+      },
+      {
+        "thema": 2,
+        "de": "Meter / Dezimeter",
+        "fr": "mètre / décimètre"
+      },
+      {
+        "thema": 2,
+        "de": "Zentimeter / Millimeter",
+        "fr": "centimètre / millimètre"
+      },
+      {
+        "thema": 2,
+        "de": "Umwandlungstabelle",
+        "fr": "abaque des mesures de longueur"
+      },
+      {
+        "thema": 2,
+        "de": "umwandeln",
+        "fr": "convertir"
+      },
+      {
+        "thema": 2,
+        "de": "Euro / Cent",
+        "fr": "euro / centime"
+      },
+      {
+        "thema": 2,
+        "de": "Rückgeld",
+        "fr": "monnaie"
+      },
+      {
+        "thema": 2,
+        "de": "Preis",
+        "fr": "prix"
+      },
+      {
+        "thema": 2,
+        "de": "Stunde / Minute",
+        "fr": "heure / minute"
+      },
+      {
+        "thema": 2,
+        "de": "Uhrzeit",
+        "fr": "heure"
+      },
+      {
+        "thema": 2,
+        "de": "Zeitspanne",
+        "fr": "durée"
+      },
+      {
+        "thema": 3,
+        "de": "Quadrat / Rechteck",
+        "fr": "carré / rectangle"
+      },
+      {
+        "thema": 3,
+        "de": "Dreieck / Kreis",
+        "fr": "triangle / cercle"
+      },
+      {
+        "thema": 3,
+        "de": "Seite / Ecke",
+        "fr": "côté / sommet"
+      },
+      {
+        "thema": 3,
+        "de": "rechter Winkel",
+        "fr": "angle droit"
+      },
+      {
+        "thema": 3,
+        "de": "Mittelpunkt",
+        "fr": "centre"
+      },
+      {
+        "thema": 3,
+        "de": "Radius",
+        "fr": "rayon"
+      },
+      {
+        "thema": 3,
+        "de": "Durchmesser",
+        "fr": "diamètre"
+      },
+      {
+        "thema": 3,
+        "de": "Scheibe",
+        "fr": "disque"
+      },
+      {
+        "thema": 3,
+        "de": "Symmetrie",
+        "fr": "symétrie"
+      },
+      {
+        "thema": 3,
+        "de": "Spiegelachse",
+        "fr": "axe de symétrie"
+      }
+    ]
+  },
+  {
+    "id": "mathe-m4",
+    "nr": 4,
+    "bereich": "mathe",
+    "fach": {
+      "de": "Mathe",
+      "fr": "Mathématiques"
+    },
+    "klasse": "VP",
+    "titel": {
+      "de": "Teilbarkeit, Brüche, Prozente und Dreiecke",
+      "fr": "Divisibilité, fractions, pourcentages et triangles"
+    },
+    "untertitel": {
+      "de": "16 Lektionen mit Regel, Beispielen und Übungen in drei Stufen – Von Teilern über Brüche und % bis zu Dreiecken – der Kern des 5ᵉ-Jahres.",
+      "fr": "16 leçons avec règle, exemples et exercices sur trois niveaux – Des diviseurs aux fractions et aux pourcentages, jusqu’aux triangles – le cœur de l’année."
+    },
+    "themen": [
+      {
+        "titel": {
+          "de": "Teilbarkeit",
+          "fr": "Divisibilité"
+        },
+        "bild": "icon:math-symbols",
+        "lektionen": [
+          "mathe-m4-teilbar-durch-2",
+          "mathe-m4-teilbar-durch-3",
+          "mathe-m4-teilbar-durch-4"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Brüche verstehen",
+          "fr": "Comprendre les fractions"
+        },
+        "bild": "icon:chart-pie",
+        "lektionen": [
+          "mathe-m4-was-ist-bruch",
+          "mathe-m4-brueche-zahlenstrahl",
+          "mathe-m4-erweitern-kuerzen",
+          "mathe-m4-gleichnamige-brueche-addieren",
+          "mathe-m4-brueche-dezimalzahlen"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Prozente im Alltag",
+          "fr": "Les pourcentages au quotidien"
+        },
+        "bild": "icon:math-symbols",
+        "lektionen": [
+          "mathe-m4-was-ist-prozent",
+          "mathe-m4-prozentwert-berechnen",
+          "mathe-m4-preis-nach-rabatt",
+          "mathe-m4-preis-nach-erhoehung"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Dreiecke und Winkel",
+          "fr": "Triangles et angles"
+        },
+        "bild": "icon:triangle",
+        "lektionen": [
+          "mathe-m4-dreiecke-erkennen-benennen",
+          "mathe-m4-winkel-messen-zeichnen",
+          "mathe-m4-hoehe-dreieck",
+          "mathe-m4-flaecheninhalt-eines-dreiecks"
+        ]
+      }
+    ],
+    "lernziele": {
+      "mathe-m4-teilbar-durch-2": {
+        "de": "Ich sehe an der letzten Ziffer, ob eine Zahl durch 2, 5 oder 10 teilbar ist.",
+        "fr": "Je vois au dernier chiffre si un nombre est divisible par 2, 5 ou 10."
+      },
+      "mathe-m4-teilbar-durch-3": {
+        "de": "Ich bilde die Quersumme und prüfe damit Teilbarkeit durch 3 und 9.",
+        "fr": "Je calcule la somme des chiffres pour vérifier la divisibilité par 3 et par 9."
+      },
+      "mathe-m4-teilbar-durch-4": {
+        "de": "Ich wende alle Teilbarkeitsregeln sicher an und kombiniere sie.",
+        "fr": "J’applique toutes les règles de divisibilité et je les combine."
+      },
+      "mathe-m4-was-ist-bruch": {
+        "de": "Ich lese und schreibe Brüche und erkenne den Bruchteil einer Menge.",
+        "fr": "Je lis et j’écris des fractions et je reconnais la fraction d’une quantité."
+      },
+      "mathe-m4-brueche-zahlenstrahl": {
+        "de": "Ich ordne gleichnamige Brüche der Größe nach und finde sie auf dem Zahlenstrahl.",
+        "fr": "Je range des fractions de même dénominateur et je les place sur une droite graduée."
+      },
+      "mathe-m4-erweitern-kuerzen": {
+        "de": "Ich erweitere und kürze Brüche und erkenne gleichwertige Brüche.",
+        "fr": "J’amplifie et je simplifie des fractions et je reconnais des fractions égales."
+      },
+      "mathe-m4-gleichnamige-brueche-addieren": {
+        "de": "Ich addiere und subtrahiere Brüche mit gleichem Nenner.",
+        "fr": "J’additionne et je soustrais des fractions de même dénominateur."
+      },
+      "mathe-m4-brueche-dezimalzahlen": {
+        "de": "Ich wandle wichtige Brüche in Dezimalzahlen um und zurück.",
+        "fr": "Je transforme des fractions importantes en nombres décimaux et inversement."
+      },
+      "mathe-m4-was-ist-prozent": {
+        "de": "Ich verstehe % als Bruch mit Nenner 100 und lese Prozentangaben.",
+        "fr": "Je comprends % comme une fraction de dénominateur 100 et je lis des pourcentages."
+      },
+      "mathe-m4-prozentwert-berechnen": {
+        "de": "Ich berechne, wie viel x % von einer Menge sind.",
+        "fr": "Je calcule combien représentent x % d’une quantité."
+      },
+      "mathe-m4-preis-nach-rabatt": {
+        "de": "Ich berechne den neuen Preis nach einem Rabatt von x %.",
+        "fr": "Je calcule le nouveau prix après une réduction de x %."
+      },
+      "mathe-m4-preis-nach-erhoehung": {
+        "de": "Ich berechne den neuen Preis nach einer Erhöhung von x %.",
+        "fr": "Je calcule le nouveau prix après une augmentation de x %."
+      },
+      "mathe-m4-dreiecke-erkennen-benennen": {
+        "de": "Ich benenne Dreiecke nach ihren Winkeln und nach ihren Seiten.",
+        "fr": "Je nomme les triangles selon leurs angles et selon leurs côtés."
+      },
+      "mathe-m4-winkel-messen-zeichnen": {
+        "de": "Ich messe Winkel mit dem Geodreieck und zeichne Winkel mit gegebener Größe.",
+        "fr": "Je mesure des angles avec l’équerre et je trace des angles de mesure donnée."
+      },
+      "mathe-m4-hoehe-dreieck": {
+        "de": "Ich konstruiere die Höhe eines Dreiecks zu einer Grundseite.",
+        "fr": "Je construis la hauteur d’un triangle relative à une base."
+      },
+      "mathe-m4-flaecheninhalt-eines-dreiecks": {
+        "de": "Ich berechne die Fläche eines Dreiecks mit der Formel (Grundseite · Höhe) : 2.",
+        "fr": "Je calcule l’aire d’un triangle avec la formule (base · hauteur) ÷ 2."
+      }
+    },
+    "wortschatz": [
+      {
+        "thema": 0,
+        "de": "teilbar",
+        "fr": "divisible"
+      },
+      {
+        "thema": 0,
+        "de": "Teiler",
+        "fr": "diviseur"
+      },
+      {
+        "thema": 0,
+        "de": "Rest",
+        "fr": "reste"
+      },
+      {
+        "thema": 0,
+        "de": "gerade / ungerade",
+        "fr": "pair / impair"
+      },
+      {
+        "thema": 0,
+        "de": "Quersumme",
+        "fr": "somme des chiffres"
+      },
+      {
+        "thema": 0,
+        "de": "Ziffer",
+        "fr": "chiffre"
+      },
+      {
+        "thema": 0,
+        "de": "die letzten beiden Ziffern",
+        "fr": "les deux derniers chiffres"
+      },
+      {
+        "thema": 1,
+        "de": "Bruch",
+        "fr": "fraction"
+      },
+      {
+        "thema": 1,
+        "de": "Zähler",
+        "fr": "numérateur"
+      },
+      {
+        "thema": 1,
+        "de": "Nenner",
+        "fr": "dénominateur"
+      },
+      {
+        "thema": 1,
+        "de": "Bruchstrich",
+        "fr": "barre de fraction"
+      },
+      {
+        "thema": 1,
+        "de": "gleichnamig",
+        "fr": "fractions semblables"
+      },
+      {
+        "thema": 1,
+        "de": "Zahlenstrahl",
+        "fr": "droite graduée"
+      },
+      {
+        "thema": 1,
+        "de": "größer / kleiner",
+        "fr": "plus grand / plus petit"
+      },
+      {
+        "thema": 1,
+        "de": "erweitern",
+        "fr": "amplifier"
+      },
+      {
+        "thema": 1,
+        "de": "kürzen",
+        "fr": "simplifier"
+      },
+      {
+        "thema": 1,
+        "de": "gleichwertig",
+        "fr": "équivalent"
+      },
+      {
+        "thema": 1,
+        "de": "addieren",
+        "fr": "additionner"
+      },
+      {
+        "thema": 1,
+        "de": "subtrahieren",
+        "fr": "soustraire"
+      },
+      {
+        "thema": 1,
+        "de": "Dezimalzahl",
+        "fr": "nombre décimal"
+      },
+      {
+        "thema": 1,
+        "de": "Zehntel / Hundertstel",
+        "fr": "dixième / centième"
+      },
+      {
+        "thema": 1,
+        "de": "Komma",
+        "fr": "virgule"
+      },
+      {
+        "thema": 2,
+        "de": "Prozent",
+        "fr": "pour cent"
+      },
+      {
+        "thema": 2,
+        "de": "von Hundert",
+        "fr": "pour cent"
+      },
+      {
+        "thema": 2,
+        "de": "Anteil",
+        "fr": "proportion"
+      },
+      {
+        "thema": 2,
+        "de": "Prozentwert",
+        "fr": "valeur réelle du pourcentage"
+      },
+      {
+        "thema": 2,
+        "de": "Grundwert",
+        "fr": "valeur de départ"
+      },
+      {
+        "thema": 2,
+        "de": "Rabatt / Reduktion",
+        "fr": "réduction"
+      },
+      {
+        "thema": 2,
+        "de": "Ausverkauf",
+        "fr": "soldes"
+      },
+      {
+        "thema": 2,
+        "de": "neuer Preis",
+        "fr": "prix réduit"
+      },
+      {
+        "thema": 2,
+        "de": "Erhöhung / Aufschlag",
+        "fr": "augmentation"
+      },
+      {
+        "thema": 2,
+        "de": "Mehrwertsteuer (MwSt)",
+        "fr": "TVA"
+      },
+      {
+        "thema": 3,
+        "de": "spitzwinklig",
+        "fr": "acutangle"
+      },
+      {
+        "thema": 3,
+        "de": "rechtwinklig",
+        "fr": "rectangle"
+      },
+      {
+        "thema": 3,
+        "de": "stumpfwinklig",
+        "fr": "obtusangle"
+      },
+      {
+        "thema": 3,
+        "de": "gleichseitig",
+        "fr": "équilatéral"
+      },
+      {
+        "thema": 3,
+        "de": "gleichschenklig",
+        "fr": "isocèle"
+      },
+      {
+        "thema": 3,
+        "de": "ungleichseitig",
+        "fr": "scalène"
+      },
+      {
+        "thema": 3,
+        "de": "Winkel",
+        "fr": "angle"
+      },
+      {
+        "thema": 3,
+        "de": "Grad",
+        "fr": "degré"
+      },
+      {
+        "thema": 3,
+        "de": "Scheitelpunkt",
+        "fr": "sommet"
+      },
+      {
+        "thema": 3,
+        "de": "Schenkel",
+        "fr": "côté de l’angle"
+      },
+      {
+        "thema": 3,
+        "de": "Höhe",
+        "fr": "hauteur"
+      },
+      {
+        "thema": 3,
+        "de": "Grundseite",
+        "fr": "base"
+      },
+      {
+        "thema": 3,
+        "de": "senkrecht / rechtwinklig",
+        "fr": "perpendiculaire"
+      },
+      {
+        "thema": 3,
+        "de": "Flächeninhalt",
+        "fr": "aire"
+      }
+    ]
+  },
+  {
+    "id": "mathe-m5",
+    "nr": 5,
+    "bereich": "mathe",
+    "fach": {
+      "de": "Mathe",
+      "fr": "Mathématiques"
+    },
+    "klasse": "VP",
+    "titel": {
+      "de": "Negative Zahlen, Dreisatz und Flächen",
+      "fr": "Nombres négatifs, règle de trois et aires"
+    },
+    "untertitel": {
+      "de": "13 Lektionen mit Regel, Beispielen und Übungen in drei Stufen – Zahlen unter null, proportionales Denken, das Koordinatensystem und neue Flächen.",
+      "fr": "13 leçons avec règle, exemples et exercices sur trois niveaux – Les nombres au-dessous de zéro, la proportionnalité et la règle de trois, le repère et de nouvelles aires."
+    },
+    "themen": [
+      {
+        "titel": {
+          "de": "Negative Zahlen (ℤ)",
+          "fr": "Nombres négatifs (ℤ)"
+        },
+        "bild": "icon:temperature-snow",
+        "lektionen": [
+          "mathe-m5-zahlen-unter-null",
+          "mathe-m5-negative-zahlen-vergleichen",
+          "mathe-m5-temperaturaenderungen-rechnen-zahlenstrahl"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Proportionalität und Dreisatz",
+          "fr": "Proportionnalité et règle de trois"
+        },
+        "bild": "icon:math",
+        "lektionen": [
+          "mathe-m5-proportional-oder-nicht",
+          "mathe-m5-proportionalitaet-graph",
+          "mathe-m5-dreisatz-r-gle",
+          "mathe-m5-dreisatz-sachaufgaben-aus"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Das Koordinatensystem",
+          "fr": "Le repère"
+        },
+        "bild": "icon:chart-bar",
+        "lektionen": [
+          "mathe-m5-punkte-koordinatensystem",
+          "mathe-m5-geraden"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Umfang und Fläche",
+          "fr": "Périmètre et aire"
+        },
+        "bild": "icon:circle",
+        "lektionen": [
+          "mathe-m5-parallelogramm",
+          "mathe-m5-trapez",
+          "mathe-m5-kreis-kreisscheibe",
+          "mathe-m5-zusammengesetzte-figuren"
+        ]
+      }
+    ],
+    "lernziele": {
+      "mathe-m5-zahlen-unter-null": {
+        "de": "Ich erkenne negative Zahlen im Alltag und weiß, was das Minuszeichen bedeutet.",
+        "fr": "Je reconnais les nombres négatifs dans la vie quotidienne et je sais ce que signifie le signe moins."
+      },
+      "mathe-m5-negative-zahlen-vergleichen": {
+        "de": "Ich vergleiche und ordne positive und negative Zahlen auf dem Zahlenstrahl.",
+        "fr": "Je compare et je range des nombres positifs et négatifs sur la droite graduée."
+      },
+      "mathe-m5-temperaturaenderungen-rechnen-zahlenstrahl": {
+        "de": "Ich berechne Änderungen (Sprünge) auf dem Zahlenstrahl, z. B. bei Temperaturen.",
+        "fr": "Je calcule des variations (des sauts) sur la droite graduée, par exemple pour des températures."
+      },
+      "mathe-m5-proportional-oder-nicht": {
+        "de": "Ich erkenne an einer Tabelle, ob zwei Größen proportional sind.",
+        "fr": "Je reconnais dans un tableau si deux grandeurs sont proportionnelles."
+      },
+      "mathe-m5-proportionalitaet-graph": {
+        "de": "Ich erkenne Proportionalität an einem Graph (Punkte auf einer Geraden durch den Nullpunkt).",
+        "fr": "Je reconnais la proportionnalité sur un graphique (points sur une droite passant par l’origine)."
+      },
+      "mathe-m5-dreisatz-r-gle": {
+        "de": "Ich löse proportionale Aufgaben mit dem Dreisatz über den Wert für 1.",
+        "fr": "Je résous des problèmes de proportionnalité avec la règle de trois en passant par l’unité."
+      },
+      "mathe-m5-dreisatz-sachaufgaben-aus": {
+        "de": "Ich löse Sachaufgaben, indem ich sie in den Dreisatz übersetze.",
+        "fr": "Je résous des problèmes en les traduisant en règle de trois."
+      },
+      "mathe-m5-punkte-koordinatensystem": {
+        "de": "Ich setze Punkte mit Koordinaten (x;y) und lese Koordinaten ab.",
+        "fr": "Je place des points avec leurs coordonnées (x ; y) et je lis des coordonnées."
+      },
+      "mathe-m5-geraden": {
+        "de": "Ich zeichne Geraden durch zwei Punkte und erkenne parallele, senkrechte und schneidende Geraden.",
+        "fr": "Je trace des droites passant par deux points et je reconnais des droites parallèles, perpendiculaires et sécantes."
+      },
+      "mathe-m5-parallelogramm": {
+        "de": "Ich berechne Umfang und Fläche eines Parallelogramms.",
+        "fr": "Je calcule le périmètre et l’aire d’un parallélogramme."
+      },
+      "mathe-m5-trapez": {
+        "de": "Ich berechne Umfang und Fläche eines Trapezes.",
+        "fr": "Je calcule le périmètre et l’aire d’un trapèze."
+      },
+      "mathe-m5-kreis-kreisscheibe": {
+        "de": "Ich berechne Umfang und Fläche eines Kreises mit π ≈ 3,14.",
+        "fr": "Je calcule le périmètre et l’aire d’un cercle avec π ≈ 3,14."
+      },
+      "mathe-m5-zusammengesetzte-figuren": {
+        "de": "Ich berechne Flächen von Figuren, die aus mehreren Formen bestehen.",
+        "fr": "Je calcule l’aire de figures composées de plusieurs formes."
+      }
+    },
+    "wortschatz": [
+      {
+        "thema": 0,
+        "de": "negative Zahl",
+        "fr": "nombre négatif"
+      },
+      {
+        "thema": 0,
+        "de": "positive Zahl",
+        "fr": "nombre positif"
+      },
+      {
+        "thema": 0,
+        "de": "null",
+        "fr": "zéro"
+      },
+      {
+        "thema": 0,
+        "de": "ganze Zahlen (ℤ)",
+        "fr": "nombres relatifs"
+      },
+      {
+        "thema": 0,
+        "de": "größer / kleiner",
+        "fr": "plus grand / plus petit"
+      },
+      {
+        "thema": 0,
+        "de": "ordnen",
+        "fr": "ordonner"
+      },
+      {
+        "thema": 0,
+        "de": "Änderung / Sprung",
+        "fr": "changement"
+      },
+      {
+        "thema": 0,
+        "de": "steigen / fallen",
+        "fr": "monter / descendre"
+      },
+      {
+        "thema": 1,
+        "de": "proportional",
+        "fr": "proportionnel"
+      },
+      {
+        "thema": 1,
+        "de": "Tabelle",
+        "fr": "tableau"
+      },
+      {
+        "thema": 1,
+        "de": "mal / geteilt",
+        "fr": "multiplier / diviser"
+      },
+      {
+        "thema": 1,
+        "de": "Graph",
+        "fr": "graphique"
+      },
+      {
+        "thema": 1,
+        "de": "Gerade",
+        "fr": "droite"
+      },
+      {
+        "thema": 1,
+        "de": "Nullpunkt / Ursprung",
+        "fr": "origine"
+      },
+      {
+        "thema": 1,
+        "de": "Dreisatz",
+        "fr": "règle de trois"
+      },
+      {
+        "thema": 1,
+        "de": "Einheit / für 1",
+        "fr": "l’unité"
+      },
+      {
+        "thema": 1,
+        "de": "Sachaufgabe",
+        "fr": "problème"
+      },
+      {
+        "thema": 1,
+        "de": "Geschwindigkeit",
+        "fr": "vitesse"
+      },
+      {
+        "thema": 2,
+        "de": "Koordinatensystem",
+        "fr": "repère"
+      },
+      {
+        "thema": 2,
+        "de": "x-Achse (waagerecht)",
+        "fr": "axe des abscisses"
+      },
+      {
+        "thema": 2,
+        "de": "y-Achse (senkrecht)",
+        "fr": "axe des ordonnées"
+      },
+      {
+        "thema": 2,
+        "de": "Koordinaten",
+        "fr": "coordonnées"
+      },
+      {
+        "thema": 2,
+        "de": "parallel",
+        "fr": "parallèles"
+      },
+      {
+        "thema": 2,
+        "de": "senkrecht",
+        "fr": "perpendiculaires"
+      },
+      {
+        "thema": 2,
+        "de": "schneidend",
+        "fr": "sécantes"
+      },
+      {
+        "thema": 2,
+        "de": "Schnittpunkt",
+        "fr": "point d’intersection"
+      },
+      {
+        "thema": 3,
+        "de": "Parallelogramm",
+        "fr": "parallélogramme"
+      },
+      {
+        "thema": 3,
+        "de": "Umfang",
+        "fr": "périmètre"
+      },
+      {
+        "thema": 3,
+        "de": "Fläche",
+        "fr": "aire"
+      },
+      {
+        "thema": 3,
+        "de": "Höhe",
+        "fr": "hauteur"
+      },
+      {
+        "thema": 3,
+        "de": "Trapez",
+        "fr": "trapèze"
+      },
+      {
+        "thema": 3,
+        "de": "parallele Seiten",
+        "fr": "côtés parallèles"
+      },
+      {
+        "thema": 3,
+        "de": "Kreis",
+        "fr": "cercle"
+      },
+      {
+        "thema": 3,
+        "de": "Radius",
+        "fr": "rayon"
+      },
+      {
+        "thema": 3,
+        "de": "Durchmesser",
+        "fr": "diamètre"
+      },
+      {
+        "thema": 3,
+        "de": "Kreiszahl π",
+        "fr": "nombre pi"
+      },
+      {
+        "thema": 3,
+        "de": "zusammengesetzt",
+        "fr": "figure composée"
+      },
+      {
+        "thema": 3,
+        "de": "zerlegen",
+        "fr": "décomposer"
+      }
+    ]
+  },
+  {
+    "id": "mathe-m6",
+    "nr": 6,
+    "bereich": "mathe",
+    "fach": {
+      "de": "Mathe",
+      "fr": "Mathématiques"
+    },
+    "klasse": "VP",
+    "titel": {
+      "de": "Rechnen mit Vorzeichen und Buchstaben",
+      "fr": "Calculer avec des signes et des lettres"
+    },
+    "untertitel": {
+      "de": "8 Lektionen mit Regel, Beispielen und Übungen in drei Stufen – Plus und Minus mit negativen Zahlen, Punkt vor Strich und der Einstieg in die Algebra.",
+      "fr": "8 leçons avec règle, exemples et exercices sur trois niveaux – Plus et moins avec les nombres négatifs, la priorité des opérations et l’entrée dans l’algèbre."
+    },
+    "themen": [
+      {
+        "titel": {
+          "de": "Rechnen mit Vorzeichen",
+          "fr": "Calculer avec des signes"
+        },
+        "bild": "icon:math-symbols",
+        "lektionen": [
+          "mathe-m6-negative-zahlen-addieren",
+          "mathe-m6-negative-zahlen-multiplizieren",
+          "mathe-m6-punkt-vor-strich"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Buchstabenrechnen (Terme)",
+          "fr": "Calcul littéral (expressions)"
+        },
+        "bild": "icon:math",
+        "lektionen": [
+          "mathe-m6-variable",
+          "mathe-m6-terme-aufstellen",
+          "mathe-m6-terme-berechnen",
+          "mathe-m6-terme-zusammenfassen-reduzieren",
+          "mathe-m6-klammern-aufloesen"
+        ]
+      }
+    ],
+    "lernziele": {
+      "mathe-m6-negative-zahlen-addieren": {
+        "de": "Ich addiere und subtrahiere positive und negative Zahlen sicher.",
+        "fr": "J’additionne et je soustrais des nombres positifs et négatifs."
+      },
+      "mathe-m6-negative-zahlen-multiplizieren": {
+        "de": "Ich multipliziere relative Zahlen mit der Vorzeichenregel.",
+        "fr": "Je multiplie des nombres relatifs avec la règle des signes."
+      },
+      "mathe-m6-punkt-vor-strich": {
+        "de": "Ich rechne mehrere Rechenarten in der richtigen Reihenfolge (Punkt vor Strich, Klammern zuerst).",
+        "fr": "Je calcule plusieurs opérations dans le bon ordre (priorités, parenthèses d’abord)."
+      },
+      "mathe-m6-variable": {
+        "de": "Ich verstehe, dass ein Buchstabe für eine Zahl stehen kann, und weiß, dass 4x = 4·x.",
+        "fr": "Je comprends qu’une lettre peut représenter un nombre et que 4x = 4·x."
+      },
+      "mathe-m6-terme-aufstellen": {
+        "de": "Ich übersetze einen Satz in einen Term (Summe, Differenz, Produkt).",
+        "fr": "Je traduis une phrase en expression littérale (somme, différence, produit)."
+      },
+      "mathe-m6-terme-berechnen": {
+        "de": "Ich berechne den Wert eines Terms, indem ich eine Zahl für x einsetze.",
+        "fr": "Je calcule la valeur d’une expression en remplaçant x par un nombre."
+      },
+      "mathe-m6-terme-zusammenfassen-reduzieren": {
+        "de": "Ich fasse gleichartige Glieder eines Terms zusammen.",
+        "fr": "Je réduis une expression en regroupant les termes semblables."
+      },
+      "mathe-m6-klammern-aufloesen": {
+        "de": "Ich löse Klammern auf, die ein Plus- oder Minuszeichen davor haben.",
+        "fr": "Je supprime des parenthèses précédées d’un signe plus ou moins."
+      }
+    },
+    "wortschatz": [
+      {
+        "thema": 0,
+        "de": "addieren",
+        "fr": "additionner"
+      },
+      {
+        "thema": 0,
+        "de": "subtrahieren",
+        "fr": "soustraire"
+      },
+      {
+        "thema": 0,
+        "de": "Vorzeichen",
+        "fr": "signe"
+      },
+      {
+        "thema": 0,
+        "de": "multiplizieren",
+        "fr": "multiplier"
+      },
+      {
+        "thema": 0,
+        "de": "Produkt",
+        "fr": "produit"
+      },
+      {
+        "thema": 0,
+        "de": "Faktor",
+        "fr": "facteur"
+      },
+      {
+        "thema": 0,
+        "de": "Punkt vor Strich",
+        "fr": "priorités"
+      },
+      {
+        "thema": 0,
+        "de": "Klammer",
+        "fr": "parenthèse"
+      },
+      {
+        "thema": 1,
+        "de": "Variable",
+        "fr": "variable"
+      },
+      {
+        "thema": 1,
+        "de": "Term / Ausdruck",
+        "fr": "expression littérale"
+      },
+      {
+        "thema": 1,
+        "de": "Summe",
+        "fr": "somme"
+      },
+      {
+        "thema": 1,
+        "de": "Differenz",
+        "fr": "différence"
+      },
+      {
+        "thema": 1,
+        "de": "Produkt",
+        "fr": "produit"
+      },
+      {
+        "thema": 1,
+        "de": "Quotient",
+        "fr": "quotient"
+      },
+      {
+        "thema": 1,
+        "de": "einsetzen",
+        "fr": "remplacer"
+      },
+      {
+        "thema": 1,
+        "de": "Wert",
+        "fr": "valeur"
+      },
+      {
+        "thema": 1,
+        "de": "zusammenfassen / reduzieren",
+        "fr": "réduire"
+      },
+      {
+        "thema": 1,
+        "de": "gleichartige Glieder",
+        "fr": "termes semblables"
+      },
+      {
+        "thema": 1,
+        "de": "Klammer auflösen",
+        "fr": "supprimer la parenthèse"
+      },
+      {
+        "thema": 1,
+        "de": "Vorzeichen ändern",
+        "fr": "changer les signes"
+      }
+    ]
+  },
+  {
+    "id": "mathe-m7",
+    "nr": 7,
+    "bereich": "mathe",
+    "fach": {
+      "de": "Mathe",
+      "fr": "Mathématiques"
+    },
+    "klasse": "VP",
+    "titel": {
+      "de": "Gleichungen, Geld und Volumen",
+      "fr": "Équations, argent et volumes"
+    },
+    "untertitel": {
+      "de": "8 Lektionen mit Regel, Beispielen und Übungen in drei Stufen – Gleichungen lösen wie mit einer Waage, Konto und Zinsen verstehen, das Volumen von Körpern berechnen.",
+      "fr": "8 leçons avec règle, exemples et exercices sur trois niveaux – Résoudre des équations comme avec une balance, comprendre le compte bancaire et les intérêts, calculer le volume des solides."
+    },
+    "themen": [
+      {
+        "titel": {
+          "de": "Gleichungen",
+          "fr": "Équations"
+        },
+        "bild": "icon:scale",
+        "lektionen": [
+          "mathe-m7-gleichungen",
+          "mathe-m7-gleichungen-zwei-schritten",
+          "mathe-m7-sachaufgaben-gleichungen"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Geld: Konto und Zinsen",
+          "fr": "Argent : compte et intérêts"
+        },
+        "bild": "icon:pig-money",
+        "lektionen": [
+          "mathe-m7-bankkonto",
+          "mathe-m7-zinsen"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Volumen",
+          "fr": "Volumes"
+        },
+        "bild": "icon:cube",
+        "lektionen": [
+          "mathe-m7-volumeneinheiten-umwandlungstabelle",
+          "mathe-m7-volumen-quader-wuerfel",
+          "mathe-m7-volumen-prisma-zylinder"
+        ]
+      }
+    ],
+    "lernziele": {
+      "mathe-m7-gleichungen": {
+        "de": "Ich verstehe eine Gleichung als Waage und löse einfache Gleichungen wie x + 7 = 15 oder 4x = 20. Ich mache die Probe.",
+        "fr": "Je comprends une équation comme une balance et je résous des équations simples (x + 7 = 15, 4x = 20). Je vérifie ma solution."
+      },
+      "mathe-m7-gleichungen-zwei-schritten": {
+        "de": "Ich löse Gleichungen wie 3x + 5 = 20 in zwei Schritten – auch mit negativen Lösungen – und mache die Probe.",
+        "fr": "Je résous des équations en deux étapes (3x + 5 = 20), aussi avec des solutions négatives, et je vérifie."
+      },
+      "mathe-m7-sachaufgaben-gleichungen": {
+        "de": "Ich übersetze eine Sachaufgabe in eine Gleichung, löse sie und schreibe einen Antwortsatz.",
+        "fr": "Je traduis un problème en équation, je la résous et j’écris une phrase-réponse."
+      },
+      "mathe-m7-bankkonto": {
+        "de": "Ich lese einen Kontoauszug, unterscheide Einnahmen (Haben) und Ausgaben (Soll) und berechne den neuen Kontostand – auch unter null.",
+        "fr": "Je lis un relevé de compte, je distingue crédit et débit et je calcule le nouveau solde, aussi en dessous de zéro."
+      },
+      "mathe-m7-zinsen": {
+        "de": "Ich berechne Zinsen für ein Jahr, für mehrere Jahre und für einige Monate. Ich weiß: Beim Sparen bekomme ich Zinsen, beim Kredit zahle ich sie.",
+        "fr": "Je calcule des intérêts pour un an, plusieurs années ou quelques mois. Je sais : en épargnant, je reçois des intérêts ; avec un crédit, j’en paie."
+      },
+      "mathe-m7-volumeneinheiten-umwandlungstabelle": {
+        "de": "Ich kenne m³, dm³, cm³ und mm³. Ich weiß: 1 dm³ = 1 l und 1 cm³ = 1 ml. Ich wandle mit der Umwandlungstabelle um.",
+        "fr": "Je connais m³, dm³, cm³ et mm³. Je sais que 1 dm³ = 1 l et 1 cm³ = 1 ml. Je convertis avec l’abaque."
+      },
+      "mathe-m7-volumen-quader-wuerfel": {
+        "de": "Ich berechne das Volumen von Quader und Würfel mit V = Länge · Breite · Höhe und rechne in Liter um.",
+        "fr": "Je calcule le volume du pavé droit et du cube (V = L · l · h) et je convertis en litres."
+      },
+      "mathe-m7-volumen-prisma-zylinder": {
+        "de": "Ich berechne das Volumen von Dreiecksprisma und Zylinder mit V = Grundfläche · Höhe.",
+        "fr": "Je calcule le volume du prisme droit à base triangulaire et du cylindre (V = aire de la base · hauteur)."
+      }
+    },
+    "wortschatz": [
+      {
+        "thema": 0,
+        "de": "Gleichung",
+        "fr": "équation"
+      },
+      {
+        "thema": 0,
+        "de": "Unbekannte",
+        "fr": "inconnue"
+      },
+      {
+        "thema": 0,
+        "de": "Lösung",
+        "fr": "solution"
+      },
+      {
+        "thema": 0,
+        "de": "Probe",
+        "fr": "vérification"
+      },
+      {
+        "thema": 0,
+        "de": "Umkehroperation",
+        "fr": "opération inverse"
+      },
+      {
+        "thema": 0,
+        "de": "Schritt",
+        "fr": "étape"
+      },
+      {
+        "thema": 0,
+        "de": "x allein stellen",
+        "fr": "isoler l’inconnue"
+      },
+      {
+        "thema": 0,
+        "de": "Klammer",
+        "fr": "parenthèse"
+      },
+      {
+        "thema": 0,
+        "de": "Sachaufgabe",
+        "fr": "problème"
+      },
+      {
+        "thema": 0,
+        "de": "eine Gleichung aufstellen",
+        "fr": "mettre en équation"
+      },
+      {
+        "thema": 0,
+        "de": "Antwortsatz",
+        "fr": "phrase-réponse"
+      },
+      {
+        "thema": 1,
+        "de": "Konto",
+        "fr": "compte bancaire"
+      },
+      {
+        "thema": 1,
+        "de": "Kontostand",
+        "fr": "solde"
+      },
+      {
+        "thema": 1,
+        "de": "Einnahme, Gutschrift (Haben)",
+        "fr": "crédit"
+      },
+      {
+        "thema": 1,
+        "de": "Ausgabe, Lastschrift (Soll)",
+        "fr": "débit"
+      },
+      {
+        "thema": 1,
+        "de": "Kontoauszug",
+        "fr": "relevé de compte"
+      },
+      {
+        "thema": 1,
+        "de": "überzogen",
+        "fr": "à découvert"
+      },
+      {
+        "thema": 1,
+        "de": "Zinsen",
+        "fr": "intérêts"
+      },
+      {
+        "thema": 1,
+        "de": "Zinssatz",
+        "fr": "taux d’intérêt"
+      },
+      {
+        "thema": 1,
+        "de": "Kapital",
+        "fr": "capital"
+      },
+      {
+        "thema": 1,
+        "de": "Sparbuch",
+        "fr": "livret d’épargne"
+      },
+      {
+        "thema": 1,
+        "de": "Kredit",
+        "fr": "prêt, crédit"
+      },
+      {
+        "thema": 2,
+        "de": "Volumen (Rauminhalt)",
+        "fr": "volume"
+      },
+      {
+        "thema": 2,
+        "de": "Kubikmeter",
+        "fr": "mètre cube"
+      },
+      {
+        "thema": 2,
+        "de": "Kubikdezimeter",
+        "fr": "décimètre cube"
+      },
+      {
+        "thema": 2,
+        "de": "Kubikzentimeter",
+        "fr": "centimètre cube"
+      },
+      {
+        "thema": 2,
+        "de": "Umwandlungs­tabelle",
+        "fr": "abaque, tableau de conversion"
+      },
+      {
+        "thema": 2,
+        "de": "Quader",
+        "fr": "pavé droit"
+      },
+      {
+        "thema": 2,
+        "de": "Würfel",
+        "fr": "cube"
+      },
+      {
+        "thema": 2,
+        "de": "Kante",
+        "fr": "arête"
+      },
+      {
+        "thema": 2,
+        "de": "Länge, Breite, Höhe",
+        "fr": "longueur, largeur, hauteur"
+      },
+      {
+        "thema": 2,
+        "de": "Prisma",
+        "fr": "prisme droit"
+      },
+      {
+        "thema": 2,
+        "de": "Zylinder",
+        "fr": "cylindre"
+      },
+      {
+        "thema": 2,
+        "de": "Grundfläche",
+        "fr": "aire de la base"
+      },
+      {
+        "thema": 2,
+        "de": "Radius",
+        "fr": "rayon"
+      },
+      {
+        "thema": 2,
+        "de": "Durchmesser",
+        "fr": "diamètre"
+      }
+    ]
+  },
+  {
+    "id": "mathe-m8",
+    "nr": 8,
+    "bereich": "mathe",
+    "fach": {
+      "de": "Mathe",
+      "fr": "Mathématiques"
+    },
+    "klasse": "VP",
+    "titel": {
+      "de": "Teiler, Potenzen, Brüche und Dreiecke",
+      "fr": "Diviseurs, puissances, fractions et triangles"
+    },
+    "untertitel": {
+      "de": "9 Lektionen mit Regel, Beispielen und Übungen in drei Stufen – Teiler und Vielfache, Potenzen und Wurzeln, Brüche mit verschiedenen Nennern und Dreiecke genau konstruieren.",
+      "fr": "9 leçons avec règle, exemples et exercices sur trois niveaux – Multiples et diviseurs, puissances et racines carrées, fractions de dénominateurs différents et construction de triangles."
+    },
+    "themen": [
+      {
+        "titel": {
+          "de": "Teiler und Vielfache",
+          "fr": "Multiples et diviseurs"
+        },
+        "bild": "icon:math-symbols",
+        "lektionen": [
+          "mathe-m8-vielfache-teiler",
+          "mathe-m8-kgv-ggt"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Potenzen und Wurzeln",
+          "fr": "Puissances et racines"
+        },
+        "bild": "icon:math",
+        "lektionen": [
+          "mathe-m8-potenzen",
+          "mathe-m8-quadratwurzel"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Brüche",
+          "fr": "Fractions"
+        },
+        "bild": "icon:chart-pie",
+        "lektionen": [
+          "mathe-m8-brueche-verschiedenen-nennern",
+          "mathe-m8-bruchteile-zahlen",
+          "mathe-m8-bruch-dezimalzahl-prozent"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Dreiecke konstruieren",
+          "fr": "Construire des triangles"
+        },
+        "bild": "icon:triangle",
+        "lektionen": [
+          "mathe-m8-dreiecke-konstruieren",
+          "mathe-m8-hoehen-mittelsenkrechte-winkelhalbierende"
+        ]
+      }
+    ],
+    "lernziele": {
+      "mathe-m8-vielfache-teiler": {
+        "de": "Ich finde die Vielfachen und alle Teiler einer Zahl. Ich weiß, was eine Primzahl ist.",
+        "fr": "Je trouve les multiples et tous les diviseurs d’un nombre. Je sais ce qu’est un nombre premier."
+      },
+      "mathe-m8-kgv-ggt": {
+        "de": "Ich bestimme das kleinste gemeinsame Vielfache (kgV) und den größten gemeinsamen Teiler (ggT) von zwei oder drei Zahlen und nutze sie bei Sachaufgaben.",
+        "fr": "Je détermine le ppcm et le pgcd de deux ou trois nombres et je les utilise dans des problèmes."
+      },
+      "mathe-m8-potenzen": {
+        "de": "Ich schreibe Produkte aus gleichen Zahlen als Potenz, berechne Quadrat- und Kubikzahlen und rechne mit Zehnerpotenzen.",
+        "fr": "J’écris des produits de facteurs égaux sous forme de puissance, je calcule des carrés et des cubes et j’utilise les puissances de 10."
+      },
+      "mathe-m8-quadratwurzel": {
+        "de": "Ich ziehe die Quadratwurzel aus Quadratzahlen im Kopf, schätze andere Wurzeln und rechne sie mit dem Taschenrechner aus.",
+        "fr": "Je calcule la racine carrée des carrés parfaits de tête, j’estime les autres racines et je les calcule avec la calculatrice."
+      },
+      "mathe-m8-brueche-verschiedenen-nennern": {
+        "de": "Ich mache Brüche gleichnamig (mit dem kgV als Nenner), addiere oder subtrahiere sie und kürze das Ergebnis.",
+        "fr": "J’additionne et je soustrais des fractions de dénominateurs différents (dénominateur commun = ppcm) et je simplifie."
+      },
+      "mathe-m8-bruchteile-zahlen": {
+        "de": "Ich berechne Bruchteile von Zahlen und Größen. Ich multipliziere und dividiere Brüche mit gleichem Nenner.",
+        "fr": "Je calcule une fraction d’un nombre ou d’une grandeur. Je multiplie et je divise des fractions de même dénominateur."
+      },
+      "mathe-m8-bruch-dezimalzahl-prozent": {
+        "de": "Ich wandle Brüche in Dezimalzahlen und Prozente um und umgekehrt.",
+        "fr": "Je convertis des fractions en nombres décimaux et en pourcentages, et inversement."
+      },
+      "mathe-m8-dreiecke-konstruieren": {
+        "de": "Ich konstruiere Dreiecke mit Lineal, Geodreieck und Zirkel aus drei Seiten (SSS), aus zwei Seiten und dem Winkel dazwischen (SWS) und aus einer Seite und zwei Winkeln (WSW). Ich prüfe, ob ein Dreieck überhaupt möglich ist.",
+        "fr": "Je construis des triangles avec la règle, l’équerre et le compas (trois côtés, deux côtés et l’angle compris, un côté et deux angles). Je vérifie si un triangle est possible."
+      },
+      "mathe-m8-hoehen-mittelsenkrechte-winkelhalbierende": {
+        "de": "Ich zeichne die Höhen eines Dreiecks – auch im stumpfwinkligen Dreieck –, die Mittelsenkrechte einer Strecke und die Winkelhalbierende eines Winkels.",
+        "fr": "Je trace les hauteurs d’un triangle (aussi dans un triangle obtusangle), la médiatrice d’un segment et la bissectrice d’un angle."
+      }
+    },
+    "wortschatz": [
+      {
+        "thema": 0,
+        "de": "Vielfaches",
+        "fr": "multiple"
+      },
+      {
+        "thema": 0,
+        "de": "Teiler",
+        "fr": "diviseur"
+      },
+      {
+        "thema": 0,
+        "de": "teilbar",
+        "fr": "divisible"
+      },
+      {
+        "thema": 0,
+        "de": "Primzahl",
+        "fr": "nombre premier"
+      },
+      {
+        "thema": 0,
+        "de": "kgV – kleinstes gemeinsames Vielfaches",
+        "fr": "ppcm – plus petit commun multiple"
+      },
+      {
+        "thema": 0,
+        "de": "ggT – größter gemeinsamer Teiler",
+        "fr": "pgcd – plus grand commun diviseur"
+      },
+      {
+        "thema": 0,
+        "de": "gemeinsam",
+        "fr": "commun"
+      },
+      {
+        "thema": 1,
+        "de": "Potenz",
+        "fr": "puissance"
+      },
+      {
+        "thema": 1,
+        "de": "Basis",
+        "fr": "base"
+      },
+      {
+        "thema": 1,
+        "de": "Hochzahl (Exponent)",
+        "fr": "exposant"
+      },
+      {
+        "thema": 1,
+        "de": "Quadratzahl",
+        "fr": "carré"
+      },
+      {
+        "thema": 1,
+        "de": "Kubikzahl",
+        "fr": "cube"
+      },
+      {
+        "thema": 1,
+        "de": "Quadratwurzel",
+        "fr": "racine carrée"
+      },
+      {
+        "thema": 1,
+        "de": "Wurzelzeichen",
+        "fr": "radical (√)"
+      },
+      {
+        "thema": 1,
+        "de": "runden",
+        "fr": "arrondir"
+      },
+      {
+        "thema": 2,
+        "de": "gleichnamig",
+        "fr": "de même dénominateur"
+      },
+      {
+        "thema": 2,
+        "de": "gemeinsamer Nenner",
+        "fr": "dénominateur commun"
+      },
+      {
+        "thema": 2,
+        "de": "erweitern",
+        "fr": "amplifier"
+      },
+      {
+        "thema": 2,
+        "de": "kürzen",
+        "fr": "simplifier"
+      },
+      {
+        "thema": 2,
+        "de": "Bruchteil",
+        "fr": "fraction d’une quantité"
+      },
+      {
+        "thema": 2,
+        "de": "multiplizieren",
+        "fr": "multiplier"
+      },
+      {
+        "thema": 2,
+        "de": "dividieren",
+        "fr": "diviser"
+      },
+      {
+        "thema": 2,
+        "de": "Dezimalzahl",
+        "fr": "nombre décimal"
+      },
+      {
+        "thema": 2,
+        "de": "Prozent",
+        "fr": "pour cent"
+      },
+      {
+        "thema": 2,
+        "de": "Hundertstel",
+        "fr": "centième"
+      },
+      {
+        "thema": 2,
+        "de": "umwandeln",
+        "fr": "convertir"
+      },
+      {
+        "thema": 3,
+        "de": "konstruieren",
+        "fr": "construire"
+      },
+      {
+        "thema": 3,
+        "de": "Zirkel",
+        "fr": "compas"
+      },
+      {
+        "thema": 3,
+        "de": "Geodreieck",
+        "fr": "équerre-rapporteur"
+      },
+      {
+        "thema": 3,
+        "de": "Planfigur (Skizze)",
+        "fr": "figure à main levée"
+      },
+      {
+        "thema": 3,
+        "de": "Kreisbogen",
+        "fr": "arc de cercle"
+      },
+      {
+        "thema": 3,
+        "de": "Höhe",
+        "fr": "hauteur"
+      },
+      {
+        "thema": 3,
+        "de": "Mittelsenkrechte",
+        "fr": "médiatrice"
+      },
+      {
+        "thema": 3,
+        "de": "Winkelhalbierende",
+        "fr": "bissectrice"
+      },
+      {
+        "thema": 3,
+        "de": "stumpfwinklig",
+        "fr": "obtusangle"
+      },
+      {
+        "thema": 3,
+        "de": "senkrecht",
+        "fr": "perpendiculaire"
+      }
+    ]
+  },
+  {
+    "id": "mathe-m9",
+    "nr": 9,
+    "bereich": "mathe",
+    "fach": {
+      "de": "Mathe",
+      "fr": "Mathématiques"
+    },
+    "klasse": "VP",
+    "titel": {
+      "de": "Rationale Zahlen, Polynome und Pythagoras",
+      "fr": "Nombres rationnels, polynômes et Pythagore"
+    },
+    "untertitel": {
+      "de": "9 Lektionen mit Regel, Beispielen und Übungen in drei Stufen – Rationale Zahlen ordnen, mit Monomen und Polynomen rechnen, den Satz des Pythagoras anwenden und genau zeichnen.",
+      "fr": "9 leçons avec règle, exemples et exercices sur trois niveaux – Comparer des nombres rationnels, calculer avec des monômes et des polynômes, appliquer le théorème de Pythagore et construire avec précision."
+    },
+    "themen": [
+      {
+        "titel": {
+          "de": "Rationale Zahlen und Rechenregeln",
+          "fr": "Nombres rationnels et priorités"
+        },
+        "bild": "icon:math-greater",
+        "lektionen": [
+          "mathe-m9-rationale-zahlen-vergleichen",
+          "mathe-m9-wiederholung"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Monome und Polynome",
+          "fr": "Monômes et polynômes"
+        },
+        "bild": "icon:math",
+        "lektionen": [
+          "mathe-m9-monome-polynome-addieren",
+          "mathe-m9-ausmultiplizieren-d-velopper",
+          "mathe-m9-ausklammern-factoriser"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Pythagoras",
+          "fr": "Pythagore"
+        },
+        "bild": "icon:triangle",
+        "lektionen": [
+          "mathe-m9-quadrat-quadratwurzel",
+          "mathe-m9-satz-des-pythagoras",
+          "mathe-m9-pythagoras-alltag-koerpern"
+        ]
+      },
+      {
+        "titel": {
+          "de": "Geraden und Symmetrie",
+          "fr": "Droites et symétrie"
+        },
+        "bild": "icon:line",
+        "lektionen": [
+          "mathe-m9-parallele-senkrechte-spiegelbilder"
+        ]
+      }
+    ],
+    "lernziele": {
+      "mathe-m9-rationale-zahlen-vergleichen": {
+        "de": "Ich vergleiche und ordne rationale Zahlen – positive und negative Dezimalzahlen und Brüche – am Zahlenstrahl und mit < und >.",
+        "fr": "Je compare et je range des nombres rationnels (décimaux et fractions, positifs et négatifs) sur la droite graduée et avec < et >."
+      },
+      "mathe-m9-wiederholung": {
+        "de": "Ich rechne Ausdrücke mit Klammern, Potenzen, Punkt vor Strich und negativen Zahlen in der richtigen Reihenfolge.",
+        "fr": "Je calcule des expressions avec parenthèses, puissances et nombres négatifs en respectant les priorités."
+      },
+      "mathe-m9-monome-polynome-addieren": {
+        "de": "Ich erkenne Monome und Polynome, fasse gleichartige Glieder zusammen und addiere und subtrahiere Polynome.",
+        "fr": "Je reconnais monômes et polynômes, je réduis les termes semblables et j’additionne et je soustrais des polynômes."
+      },
+      "mathe-m9-ausmultiplizieren-d-velopper": {
+        "de": "Ich multipliziere Monome miteinander und multipliziere ein Monom mit einem Polynom aus.",
+        "fr": "Je multiplie des monômes entre eux et je développe le produit d’un monôme par un polynôme."
+      },
+      "mathe-m9-ausklammern-factoriser": {
+        "de": "Ich klammere den größten gemeinsamen Faktor aus und kenne die Wörter développer und factoriser.",
+        "fr": "Je factorise par le plus grand facteur commun et je connais les mots développer et factoriser."
+      },
+      "mathe-m9-quadrat-quadratwurzel": {
+        "de": "Ich rechne sicher mit Quadratzahlen und Quadratwurzeln – auch mit Dezimalzahlen und dem Taschenrechner – und runde sinnvoll.",
+        "fr": "Je calcule des carrés et des racines carrées, aussi avec des nombres décimaux et la calculatrice, et j’arrondis de façon sensée."
+      },
+      "mathe-m9-satz-des-pythagoras": {
+        "de": "Ich kenne den Satz des Pythagoras, berechne die fehlende Seite in einem rechtwinkligen Dreieck und prüfe mit der Umkehrung, ob ein Dreieck rechtwinklig ist.",
+        "fr": "Je connais le théorème de Pythagore, je calcule le côté manquant d’un triangle rectangle et j’utilise la réciproque."
+      },
+      "mathe-m9-pythagoras-alltag-koerpern": {
+        "de": "Ich finde rechtwinklige Dreiecke in Alltagssituationen und in Körpern und berechne damit Längen (Leiter, Diagonale, Raumdiagonale).",
+        "fr": "Je repère des triangles rectangles dans la vie quotidienne et dans les solides et je calcule des longueurs (échelle, diagonale, diagonale de l’espace)."
+      },
+      "mathe-m9-parallele-senkrechte-spiegelbilder": {
+        "de": "Ich zeichne mit dem Geodreieck die Parallele und die Senkrechte zu einer Geraden durch einen Punkt und zeichne Figuren achsensymmetrisch.",
+        "fr": "Je trace avec l’équerre la parallèle et la perpendiculaire à une droite passant par un point, et je construis des figures symétriques."
+      }
+    },
+    "wortschatz": [
+      {
+        "thema": 0,
+        "de": "rationale Zahl",
+        "fr": "nombre rationnel (ℚ)"
+      },
+      {
+        "thema": 0,
+        "de": "Zahlenstrahl",
+        "fr": "droite graduée"
+      },
+      {
+        "thema": 0,
+        "de": "kleiner als",
+        "fr": "inférieur à"
+      },
+      {
+        "thema": 0,
+        "de": "größer als",
+        "fr": "supérieur à"
+      },
+      {
+        "thema": 0,
+        "de": "Gegenzahl",
+        "fr": "opposé"
+      },
+      {
+        "thema": 0,
+        "de": "Klammer",
+        "fr": "parenthèse, crochet"
+      },
+      {
+        "thema": 0,
+        "de": "Vorrang",
+        "fr": "priorité"
+      },
+      {
+        "thema": 0,
+        "de": "Ausdruck",
+        "fr": "expression"
+      },
+      {
+        "thema": 0,
+        "de": "Punkt vor Strich",
+        "fr": "× et : avant + et −"
+      },
+      {
+        "thema": 1,
+        "de": "Monom",
+        "fr": "monôme"
+      },
+      {
+        "thema": 1,
+        "de": "Polynom",
+        "fr": "polynôme"
+      },
+      {
+        "thema": 1,
+        "de": "gleichartige Glieder",
+        "fr": "termes semblables"
+      },
+      {
+        "thema": 1,
+        "de": "Koeffizient",
+        "fr": "coefficient"
+      },
+      {
+        "thema": 1,
+        "de": "zusammenfassen",
+        "fr": "réduire"
+      },
+      {
+        "thema": 1,
+        "de": "ausmultiplizieren",
+        "fr": "développer"
+      },
+      {
+        "thema": 1,
+        "de": "Produkt",
+        "fr": "produit"
+      },
+      {
+        "thema": 1,
+        "de": "Distributivgesetz",
+        "fr": "distributivité"
+      },
+      {
+        "thema": 1,
+        "de": "ausklammern",
+        "fr": "factoriser"
+      },
+      {
+        "thema": 1,
+        "de": "gemeinsamer Faktor",
+        "fr": "facteur commun"
+      },
+      {
+        "thema": 2,
+        "de": "quadrieren",
+        "fr": "élever au carré"
+      },
+      {
+        "thema": 2,
+        "de": "Quadratwurzel",
+        "fr": "racine carrée"
+      },
+      {
+        "thema": 2,
+        "de": "runden",
+        "fr": "arrondir"
+      },
+      {
+        "thema": 2,
+        "de": "schätzen",
+        "fr": "estimer"
+      },
+      {
+        "thema": 2,
+        "de": "Hypotenuse",
+        "fr": "hypoténuse"
+      },
+      {
+        "thema": 2,
+        "de": "Kathete",
+        "fr": "côté de l’angle droit"
+      },
+      {
+        "thema": 2,
+        "de": "rechtwinklig",
+        "fr": "rectangle"
+      },
+      {
+        "thema": 2,
+        "de": "Satz des Pythagoras",
+        "fr": "théorème de Pythagore"
+      },
+      {
+        "thema": 2,
+        "de": "Umkehrung",
+        "fr": "réciproque"
+      },
+      {
+        "thema": 2,
+        "de": "Diagonale",
+        "fr": "diagonale"
+      },
+      {
+        "thema": 2,
+        "de": "Raumdiagonale",
+        "fr": "diagonale de l’espace"
+      },
+      {
+        "thema": 2,
+        "de": "Skizze",
+        "fr": "croquis"
+      },
+      {
+        "thema": 2,
+        "de": "waagerecht",
+        "fr": "horizontal"
+      },
+      {
+        "thema": 3,
+        "de": "parallel",
+        "fr": "parallèle"
+      },
+      {
+        "thema": 3,
+        "de": "senkrecht",
+        "fr": "perpendiculaire"
+      },
+      {
+        "thema": 3,
+        "de": "Spiegelachse",
+        "fr": "axe de symétrie"
+      },
+      {
+        "thema": 3,
+        "de": "achsensymmetrisch",
+        "fr": "symétrique par rapport à un axe"
+      },
+      {
+        "thema": 3,
+        "de": "Bildpunkt",
+        "fr": "image d’un point"
+      }
+    ]
+  }
+]

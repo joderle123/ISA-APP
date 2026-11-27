@@ -22,6 +22,8 @@ import atkinsonRegular from '../assets/fonts/pdf/Atkinson-Regular.ttf?url'
 import atkinsonBold from '../assets/fonts/pdf/Atkinson-Bold.ttf?url'
 import lexendSemiBold from '../assets/fonts/pdf/Lexend-SemiBold.ttf?url'
 import lexendBold from '../assets/fonts/pdf/Lexend-Bold.ttf?url'
+import zeichenRegular from '../assets/fonts/pdf/Zeichen-Regular.ttf?url'
+import zeichenBold from '../assets/fonts/pdf/Zeichen-Bold.ttf?url'
 
 /** Render a material to a PDF Blob entirely in the browser (no server, no API). */
 export async function materialToBlob(material: Material): Promise<Blob> {
@@ -70,6 +72,8 @@ const SCHRIFT_DATEIEN: Record<string, string> = {
   'Atkinson-Bold.ttf': atkinsonBold,
   'Lexend-SemiBold.ttf': lexendSemiBold,
   'Lexend-Bold.ttf': lexendBold,
+  'Zeichen-Regular.ttf': zeichenRegular,
+  'Zeichen-Bold.ttf': zeichenBold,
 }
 
 function schriften() {

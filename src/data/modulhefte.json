@@ -292,7 +292,7 @@
     {
      "id": "mathe-m1",
      "nr": 1,
-     "niveau": "Modul 1 von 6",
+     "niveau": "Modul 1 von 9",
      "titel": "Zahlen, Rechnen, Größen und Figuren",
      "untertitel": "Der sichere Sockel: große Zahlen, die vier Grundrechenarten, Größen und einfache Figuren.",
      "farbe": "#0E9AA7",
@@ -300,13 +300,13 @@
      "lektionen": 14,
      "heft": "Mathe_Modul-1_Heft",
      "loesungen": "Mathe_Modul-1_Loesungen",
-     "mb": 3.4,
-     "mbLoesungen": 3.5
+     "mb": 0.6,
+     "mbLoesungen": 0.2
     },
     {
      "id": "mathe-m2",
      "nr": 2,
-     "niveau": "Modul 2 von 6",
+     "niveau": "Modul 2 von 9",
      "titel": "Dezimalzahlen, Größen und Geometrie",
      "untertitel": "Zahlen mit Komma, erste Brüche, Kapazität und Masse sowie Punkt, Gerade, Strecke, Winkel und Umfang.",
      "farbe": "#C77D0A",
@@ -314,13 +314,13 @@
      "lektionen": 12,
      "heft": "Mathe_Modul-2_Heft",
      "loesungen": "Mathe_Modul-2_Loesungen",
-     "mb": 3,
-     "mbLoesungen": 3.1
+     "mb": 0.7,
+     "mbLoesungen": 0.2
     },
     {
      "id": "mathe-m3",
      "nr": 3,
-     "niveau": "Modul 3 von 6",
+     "niveau": "Modul 3 von 9",
      "titel": "Dezimalzahlen, Fläche, Temperatur und Statistik",
      "untertitel": "Dezimalzahlen runden, mal- und geteiltnehmen, Flächeninhalte berechnen, Temperaturen ablesen und Daten in Diagrammen auswerten.",
      "farbe": "#2E9E5B",
@@ -334,7 +334,7 @@
     {
      "id": "mathe-m4",
      "nr": 4,
-     "niveau": "Modul 4 von 6",
+     "niveau": "Modul 4 von 9",
      "titel": "Teilbarkeit, Brüche, Prozente und Dreiecke",
      "untertitel": "Von Teilern über Brüche und % bis zu Dreiecken – der Kern des 5ᵉ-Jahres.",
      "farbe": "#6C4CE0",
@@ -342,13 +342,13 @@
      "lektionen": 16,
      "heft": "Mathe_Modul-4_Heft",
      "loesungen": "Mathe_Modul-4_Loesungen",
-     "mb": 4.7,
-     "mbLoesungen": 4.8
+     "mb": 0.6,
+     "mbLoesungen": 0.2
     },
     {
      "id": "mathe-m5",
      "nr": 5,
-     "niveau": "Modul 5 von 6",
+     "niveau": "Modul 5 von 9",
      "titel": "Negative Zahlen, Dreisatz und Flächen",
      "untertitel": "Zahlen unter null, proportionales Denken, das Koordinatensystem und neue Flächen.",
      "farbe": "#1668C4",
@@ -356,13 +356,13 @@
      "lektionen": 13,
      "heft": "Mathe_Modul-5_Heft",
      "loesungen": "Mathe_Modul-5_Loesungen",
-     "mb": 3.4,
-     "mbLoesungen": 3.4
+     "mb": 0.5,
+     "mbLoesungen": 0.2
     },
     {
      "id": "mathe-m6",
      "nr": 6,
-     "niveau": "Modul 6 von 6",
+     "niveau": "Modul 6 von 9",
      "titel": "Rechnen mit Vorzeichen und Buchstaben",
      "untertitel": "Plus und Minus mit negativen Zahlen, Punkt vor Strich und der Einstieg in die Algebra.",
      "farbe": "#B4308A",
@@ -370,8 +370,50 @@
      "lektionen": 8,
      "heft": "Mathe_Modul-6_Heft",
      "loesungen": "Mathe_Modul-6_Loesungen",
-     "mb": 2,
-     "mbLoesungen": 2
+     "mb": 0.3,
+     "mbLoesungen": 0.1
+    },
+    {
+     "id": "mathe-m7",
+     "nr": 7,
+     "niveau": "Modul 7 von 9",
+     "titel": "Gleichungen, Geld und Volumen",
+     "untertitel": "Gleichungen lösen wie mit einer Waage, Konto und Zinsen verstehen, das Volumen von Körpern berechnen.",
+     "farbe": "#0E7C66",
+     "zart": "#ecf5f3",
+     "lektionen": 8,
+     "heft": "Mathe_Modul-7_Heft",
+     "loesungen": "Mathe_Modul-7_Loesungen",
+     "mb": 0.4,
+     "mbLoesungen": 0.1
+    },
+    {
+     "id": "mathe-m8",
+     "nr": 8,
+     "niveau": "Modul 8 von 9",
+     "titel": "Teiler, Potenzen, Brüche und Dreiecke",
+     "untertitel": "Teiler und Vielfache, Potenzen und Wurzeln, Brüche mit verschiedenen Nennern und Dreiecke genau konstruieren.",
+     "farbe": "#6D3FC0",
+     "zart": "#f3f0fa",
+     "lektionen": 9,
+     "heft": "Mathe_Modul-8_Heft",
+     "loesungen": "Mathe_Modul-8_Loesungen",
+     "mb": 0.4,
+     "mbLoesungen": 0.1
+    },
+    {
+     "id": "mathe-m9",
+     "nr": 9,
+     "niveau": "Modul 9 von 9",
+     "titel": "Rationale Zahlen, Polynome und Pythagoras",
+     "untertitel": "Rationale Zahlen ordnen, mit Monomen und Polynomen rechnen, den Satz des Pythagoras anwenden und genau zeichnen.",
+     "farbe": "#B23A48",
+     "zart": "#f9eff0",
+     "lektionen": 9,
+     "heft": "Mathe_Modul-9_Heft",
+     "loesungen": "Mathe_Modul-9_Loesungen",
+     "mb": 0.4,
+     "mbLoesungen": 0.1
     }
    ]
   },

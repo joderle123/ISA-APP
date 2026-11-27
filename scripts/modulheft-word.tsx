@@ -49,7 +49,8 @@ const SCHRIFT = 'Arial'
 const PDF_BREITE = 595.28 - SEITE.rand * 2              // Inhaltsbreite im PDF (pt)
 
 // ---- Grafiken: jede auf eine eigene PDF-Seite in ihrer Spaltenbreite, dann als PNG zugeschnitten
-const GRAFIK = new Set(['zahlenstrahl', 'kommasprung', 'flaeche', 'treppe', 'temperatur', 'diagramm', 'strichliste'])
+// (dazu die Bilder der neuen Mathe-Hefte: Geometrie in Originalgröße, Bruchbilder, Hunderterfelder, Waage, Kassenbon, schriftliche Rechnungen)
+const GRAFIK = new Set(['zahlenstrahl', 'kommasprung', 'flaeche', 'treppe', 'temperatur', 'diagramm', 'strichliste', 'geo', 'bruchbilder', 'hunderterfeld', 'waage', 'bon', 'rechnungen'])
 const istGrafik = (b: Baustein) => GRAFIK.has(b.art)
 type Grafik = { b: Baustein; breitePt: number; png?: Buffer; w?: number; h?: number }
 const grafiken: Grafik[] = []

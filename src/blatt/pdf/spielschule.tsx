@@ -102,7 +102,7 @@ function SchereG({ c, x, y, g = 14, drehung = 0 }: { c: Ctx; x: number; y: numbe
 }
 
 /** Text im Svg, mittig. */
-function TextG({ x, y, text, groesse = 12, fett, farbe, schrift }: { x: number; y: number; text: string; groesse?: number; fett?: boolean; farbe?: string; schrift?: string }) {
+function TextG({ x, y, text, groesse = 12, fett, farbe, schrift }: { x: number; y: number; text: string; groesse?: number; fett?: boolean; farbe?: string; schrift?: string[] }) {
   return (
     <SText x={x} y={y} textAnchor="middle" fill={farbe ?? NEUTRAL.text} style={{ fontFamily: schrift ?? SCHRIFT.kind, fontSize: groesse, fontWeight: fett ? 700 : 400 }}>
       {text}

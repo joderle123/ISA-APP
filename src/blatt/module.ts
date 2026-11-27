@@ -1,5 +1,5 @@
 // ---------------------------------------------------------------------------
-// Module als Heft: Mathe-Modul 2 (5e, MA-01 bis MA-12) und Modul 3 (5e, MA-13 bis MA-21).
+// Module als Heft: Mathe-Modul 2 (5e, MA-01 bis MA-12) und Modul 3 (5e, MA-13 bis MA-21); Mathe 1 und 4–9 aus module-mathe.json.
 // Themen und Reihenfolge, Lernziele („Mein Ziel“) und der Wortschatz
 // Deutsch – Französisch für Deckblatt, Inhalt und Anhang des Modulhefts.
 // ---------------------------------------------------------------------------
@@ -171,8 +171,11 @@ export const MATHE_MODUL_3: Modul = {
 
 // Deutsch und Französisch (Voie de préparation, Modul 1–9): erzeugt von tools/sprachen/baue.mjs
 import SPRACH_MODULE from './module-sprachen.json'
+// Mathe Module 1 und 4–9 im kompakten Format wie Modul 3: erzeugt von tools/hefte/mathe-kompakt.mjs
+import MATHE_MODULE from './module-mathe.json'
 
-export const MODULE: Modul[] = [MATHE_MODUL_2, MATHE_MODUL_3, ...(SPRACH_MODULE as unknown as Modul[])]
+const MATHE_ALLE = [MATHE_MODUL_2, MATHE_MODUL_3, ...(MATHE_MODULE as unknown as Modul[])].sort((a, b) => a.nr - b.nr)
+export const MODULE: Modul[] = [...MATHE_ALLE, ...(SPRACH_MODULE as unknown as Modul[])]
 
 /** Anzahl der Lektionen (Blätter) eines Moduls */
 export function lektionenZahl(modul: Modul): number {

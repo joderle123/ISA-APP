@@ -11,6 +11,8 @@ import atkinsonRegular from '../../assets/fonts/pdf/Atkinson-Regular.ttf?url'
 import atkinsonBold from '../../assets/fonts/pdf/Atkinson-Bold.ttf?url'
 import lexendSemiBold from '../../assets/fonts/pdf/Lexend-SemiBold.ttf?url'
 import lexendBold from '../../assets/fonts/pdf/Lexend-Bold.ttf?url'
+import zeichenRegular from '../../assets/fonts/pdf/Zeichen-Regular.ttf?url'
+import zeichenBold from '../../assets/fonts/pdf/Zeichen-Bold.ttf?url'
 import type { DruckFolge, DruckSitzung } from '../kern/druck'
 import type { DruckNachweis } from '../kern/rahmenplan'
 import { FolgeDokument, NachweisDokument, SitzungDokument, teilPositionen, type TeilPosition } from './PlanDokument'
@@ -26,6 +28,8 @@ const SCHRIFTEN: Record<string, string> = {
   'Atkinson-Bold.ttf': atkinsonBold,
   'Lexend-SemiBold.ttf': lexendSemiBold,
   'Lexend-Bold.ttf': lexendBold,
+  'Zeichen-Regular.ttf': zeichenRegular,
+  'Zeichen-Bold.ttf': zeichenBold,
 }
 
 export interface PassgenauDruck {

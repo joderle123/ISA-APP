@@ -96,7 +96,7 @@ const GEN_EXTRA = {
   '4-15': { type: 'hoeheDreieck' }, '5-4': { type: 'propTabelle' }, '5-5': { type: 'propGraph' }, '5-8': { type: 'koordinaten' },
   '5-9': { type: 'geraden' }, '5-13': { type: 'zusammengesetzt' }, '6-5': { type: 'termAufstellen' },
 }
-const genVon = (nr, l) => l.gen || GEN_EXTRA[`${nr}-${l.nr}`]
+export const genVon = (nr, l) => l.gen || GEN_EXTRA[`${nr}-${l.nr}`]
 // alle Lektionen aller Module der Reihe nach – für „Fit bleiben“ auch über die Modulgrenze hinweg
 const ALLE = PROGRAMM.module.flatMap((m, i) => m.themen.flatMap((t) => t.lektionen.map((l) => ({ nr: i + 1, l, gen: genVon(i + 1, l) }))))
 const minusZeichen = (s) => String(s ?? '').replace(/(^|[\s(;=:])-(?=\d)/g, '$1−')

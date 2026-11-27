@@ -5,15 +5,22 @@ import { trennung } from '../../lib/trennung'
 
 Font.registerHyphenationCallback(trennung)
 
+/** Namen der angemeldeten Schriften (Font.register) */
+const NAME = { kind: 'CDSE Kinderschrift', jugend: 'CDSE Inter', titel: 'CDSE Manrope', lesen: 'CDSE Atkinson', kopf: 'CDSE Lexend' }
+/** Mathe-Zeichen, die die Hauptschriften nicht haben (√ α β γ ⊥ ∥ ∟ ℤ ℚ ≥, Hochzahlen ⁰–⁹): ein kleiner Auszug aus DejaVu Sans
+ *  springt pro Zeichen ein (react-pdf: fontFamily als Liste). Darum ist jede Schrift unten eine Liste [Hauptschrift, Zeichen]. */
+export const SCHRIFT_ZEICHEN = 'CDSE Zeichen'
+const mitZeichen = (name: string): string[] => [name, SCHRIFT_ZEICHEN]
+
 export const SCHRIFT = {
-  kind: 'CDSE Kinderschrift',
-  jugend: 'CDSE Inter',
-  titel: 'CDSE Manrope',
+  kind: mitZeichen(NAME.kind),
+  jugend: mitZeichen(NAME.jugend),
+  titel: mitZeichen(NAME.titel),
   /** Fließtext der Jugend-Blätter (C4–ES): Atkinson Hyperlegible – für schwache Leser und Leserinnen gemacht (I/l/1, b/d klar
    *  unterscheidbar), dieselbe Schrift wie in den Modulheften. Lehrerseiten und Skills-Kurs bleiben in Inter. */
-  lesen: 'CDSE Atkinson',
+  lesen: mitZeichen(NAME.lesen),
   /** Blatt-Titel (alle Stufen): Lexend, wie die Überschriften der Modulhefte. */
-  kopf: 'CDSE Lexend',
+  kopf: mitZeichen(NAME.kopf),
 }
 
 let registriert = false
@@ -27,14 +34,14 @@ export function registriereSchriften(quelle: (datei: string) => string): void {
   if (registriert) return
   registriert = true
   Font.register({
-    family: SCHRIFT.kind,
+    family: NAME.kind,
     fonts: [
       { src: quelle('Kinderschrift-Regular.ttf'), fontWeight: 400 },
       { src: quelle('Kinderschrift-Bold.ttf'), fontWeight: 700 },
     ],
   })
   Font.register({
-    family: SCHRIFT.jugend,
+    family: NAME.jugend,
     fonts: [
       { src: quelle('Inter-Regular.ttf'), fontWeight: 400 },
       { src: quelle('Inter-SemiBold.ttf'), fontWeight: 600 },
@@ -42,7 +49,7 @@ export function registriereSchriften(quelle: (datei: string) => string): void {
     ],
   })
   Font.register({
-    family: SCHRIFT.lesen,
+    family: NAME.lesen,
     fonts: [
       { src: quelle('Atkinson-Regular.ttf'), fontWeight: 400 },
       { src: quelle('Atkinson-Bold.ttf'), fontWeight: 600 },
@@ -50,7 +57,7 @@ export function registriereSchriften(quelle: (datei: string) => string): void {
     ],
   })
   Font.register({
-    family: SCHRIFT.kopf,
+    family: NAME.kopf,
     fonts: [
       { src: quelle('Lexend-SemiBold.ttf'), fontWeight: 600 },
       { src: quelle('Lexend-Bold.ttf'), fontWeight: 700 },
@@ -58,7 +65,16 @@ export function registriereSchriften(quelle: (datei: string) => string): void {
     ],
   })
   Font.register({
-    family: SCHRIFT.titel,
+    family: SCHRIFT_ZEICHEN,
+    fonts: [
+      { src: quelle('Zeichen-Regular.ttf'), fontWeight: 400 },
+      { src: quelle('Zeichen-Bold.ttf'), fontWeight: 600 },
+      { src: quelle('Zeichen-Bold.ttf'), fontWeight: 700 },
+      { src: quelle('Zeichen-Bold.ttf'), fontWeight: 800 },
+    ],
+  })
+  Font.register({
+    family: NAME.titel,
     fonts: [
       { src: quelle('Manrope-Bold.ttf'), fontWeight: 700 },
       { src: quelle('Manrope-ExtraBold.ttf'), fontWeight: 800 },
@@ -68,7 +84,7 @@ export function registriereSchriften(quelle: (datei: string) => string): void {
 
 export interface Masse {
   layout: Layout
-  schrift: string
+  schrift: string[]
   fett: 600 | 700
   basis: number
   klein: number

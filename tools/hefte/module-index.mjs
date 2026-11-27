@@ -15,9 +15,10 @@ const nurPruefen = process.argv.includes('--pruefen')
 
 // Reihenfolge der Fächer auf der Seite
 const FAECHER = ['deutsch', 'franzoesisch', 'mathe', 'culge', 'vieso', 'atelier', 'eduph']
-// Module im kompakten Format (alte Toolbox-Hefte + neue Erklärungen): node tools/hefte/mathe-kompakt.mjs <nr>, dann
-// npx tsx --tsconfig tsconfig.scripts.json scripts/modulheft.tsx offline/module --nur=mathe-m<nr>
-const KOMPAKT = new Set(['mathe-m3'])
+// Module im kompakten Format (wie Modul 3: Erklärung, Übungen mit Bildern, Lösungsheft – Rückmeldung 26.11.2026: alle
+// Mathe-Module so): node tools/hefte/mathe-kompakt.mjs <nr>, dann
+// npx tsx --tsconfig tsconfig.scripts.json scripts/modulheft.tsx offline/module --nur=mathe-m<nr> (und modulheft-word.tsx)
+const KOMPAKT = new Set(Array.from({ length: 9 }, (_, i) => `mathe-m${i + 1}`))
 const mb = (datei) => Math.round((statSync(datei).size / 1048576) * 10) / 10
 
 const ids = readdirSync(INHALT)

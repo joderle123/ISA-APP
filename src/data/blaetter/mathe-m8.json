@@ -1,0 +1,5087 @@
+[
+  {
+    "id": "mathe-m8-vielfache-teiler",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Teiler und Vielfache",
+      "Vielfaches",
+      "Teiler",
+      "teilbar",
+      "Primzahl",
+      "Modul 8"
+    ],
+    "bild": "icon:math-symbols",
+    "de": {
+      "titel": "Vielfache und Teiler",
+      "untertitel": "Modul 8, Lektion 1",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "24 Jugendliche sollen in gleich große Gruppen aufgeteilt werden – niemand soll übrig bleiben. Geht es mit Gruppen zu 2? Zu 5? Zu 6? Die möglichen Gruppengrößen sind die Teiler von 24: 1, 2, 3, 4, 6, 8, 12 und 24. Mit 5 geht es nicht."
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Fit für das Kapitel „Teiler und Vielfache“ – Wiederholung aus Modul 4: Teilbarkeit und Quersumme. Rechne allein, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Ist 168 durch 10 teilbar?   ___",
+            "Ist 112 durch 2 teilbar?   ___",
+            "Ist 671 durch 10 teilbar?   ___",
+            "Quersumme von 631 = ? Ist 631 durch 9 teilbar?   ___",
+            "Quersumme von 960 = ? Ist 960 durch 3 teilbar?   ___",
+            "Quersumme von 118 = ? Ist 118 durch 9 teilbar?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Teiler und Vielfache",
+              "text": "Ein Teiler teilt eine Zahl ohne Rest. Die Vielfachen einer Zahl sind ihre Einmaleins-Reihe. Ist 6 ein Teiler von 24, dann ist 24 ein Vielfaches von 6."
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Vielfache – die Einmaleins-Reihe",
+                  "text": "Die Vielfachen einer Zahl bekommst du, wenn du sie mal 1, mal 2, mal 3 … rechnest. Es gibt unendlich viele.  Beispiel: V(6) = {6; 12; 18; 24; 30; …}"
+                },
+                {
+                  "titel": "Teiler – es geht ohne Rest",
+                  "text": "Ein Teiler teilt eine Zahl ohne Rest. Teiler findest du in Paaren: 1 · 24, 2 · 12, 3 · 8, 4 · 6.  Beispiel: T(24) = {1; 2; 3; 4; 6; 8; 12; 24}"
+                },
+                {
+                  "titel": "Beides hängt zusammen",
+                  "text": "Ist 6 ein Teiler von 24, dann ist 24 ein Vielfaches von 6. Jede Zahl hat 1 und sich selbst als Teiler. Eine Zahl mit genau zwei Teilern heißt Primzahl.  Beispiel: 24 : 6 = 4 → 6 teilt 24, und 24 ist ein Vielfaches von 6. Die 7 hat nur die Teiler 1 und 7: eine Primzahl."
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "geo",
+              "felder": [
+                {
+                  "b": 84,
+                  "h": 40,
+                  "raster": "karo",
+                  "elemente": [
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          5,
+                          5
+                        ],
+                        [
+                          65,
+                          5
+                        ],
+                        [
+                          65,
+                          10
+                        ],
+                        [
+                          5,
+                          10
+                        ]
+                      ],
+                      "fuellung": true
+                    },
+                    {
+                      "t": "text",
+                      "x": 70,
+                      "y": 9,
+                      "text": "1 · 12",
+                      "klein": true
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          5,
+                          15
+                        ],
+                        [
+                          35,
+                          15
+                        ],
+                        [
+                          35,
+                          25
+                        ],
+                        [
+                          5,
+                          25
+                        ]
+                      ],
+                      "fuellung": true
+                    },
+                    {
+                      "t": "text",
+                      "x": 40,
+                      "y": 22,
+                      "text": "2 · 6",
+                      "klein": true
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          50,
+                          15
+                        ],
+                        [
+                          70,
+                          15
+                        ],
+                        [
+                          70,
+                          30
+                        ],
+                        [
+                          50,
+                          30
+                        ]
+                      ],
+                      "fuellung": true
+                    },
+                    {
+                      "t": "text",
+                      "x": 72,
+                      "y": 34,
+                      "text": "3 · 4",
+                      "klein": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "art": "text",
+              "text": "12 Kästchen als Rechteck: 1 · 12, 2 · 6, 3 · 4. Die Teiler von 12: 1, 2, 3, 4, 6, 12."
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "Vielfache: die Zahl mal 1, 2, 3 … (unendlich viele).",
+                "Teiler: Zahlen, die ohne Rest teilen (nur wenige).",
+                "Teiler findest du in Paaren.",
+                "1 und die Zahl selbst sind immer Teiler.",
+                "Eine Primzahl hat genau zwei Teiler."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Vielfache: die Einmaleins-Reihe aufschreiben.",
+                "2. Teiler: mit 1 beginnen und Paare suchen (1 · 24, 2 · 12 …).",
+                "3. Aufhören, wenn sich die Paare treffen.",
+                "4. Die Teiler der Größe nach in eine Menge schreiben."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "Vielfaches – multiple",
+                "Teiler – diviseur",
+                "teilbar – divisible",
+                "Primzahl – nombre premier"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: Alle Teiler von 36?",
+              "punkte": [
+                "1 · 36",
+                "2 · 18",
+                "3 · 12",
+                "4 · 9",
+                "5 geht nicht; 6 · 6 – die Paare treffen sich.",
+                "Ergebnis: T(36) = {1; 2; 3; 4; 6; 9; 12; 18; 36}"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Vielfache",
+              "text": "Aufgabe: Welche Vielfachen von 7 liegen zwischen 30 und 60?",
+              "punkte": [
+                "7er-Reihe: 7, 14, 21, 28, 35, 42, 49, 56, 63",
+                "Zwischen 30 und 60: 35, 42, 49, 56",
+                "Ergebnis: 35; 42; 49; 56"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Die ersten 4 Vielfachen von 9?   ___",
+            "Alle Teiler von 12?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Alle Teiler von 15?   ___",
+            "Die ersten 5 Vielfachen von 7?   ___",
+            "Die ersten 5 Vielfachen von 8?   ___",
+            "Die ersten 5 Vielfachen von 4?   ___",
+            "Alle Teiler von 10?   ___",
+            "Alle Teiler von 8?   ___",
+            "Die ersten 5 Vielfachen von 9?   ___",
+            "Die ersten 5 Vielfachen von 5?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "Teiler kommen in Paaren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Die ersten 5 Vielfachen von 4?   ___",
+            "Alle Teiler von 10?   ___",
+            "Ist 5 ein Teiler von 35?   ___",
+            "Die ersten 5 Vielfachen von 3?   ___",
+            "Alle Teiler von 12?   ___",
+            "Die ersten 5 Vielfachen von 6?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Alle Teiler von 30?   ___",
+            "Ist 84 ein Vielfaches von 7?   ___",
+            "Welche Zahlen zwischen 10 und 20 sind Primzahlen?   ___",
+            "Die ersten 5 Vielfachen von 13?   ___",
+            "Ist 45 ein Vielfaches von 5?   ___",
+            "Ist 27 ein Vielfaches von 9?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Zeichne alle Rechtecke aus 18 Kästchen. Schreib dann alle Teiler von 18 auf."
+        },
+        {
+          "art": "geo",
+          "felder": [
+            {
+              "h": 45,
+              "raster": "karo",
+              "elemente": []
+            }
+          ]
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Teiler von 18: ___",
+            "Die ersten 5 Vielfachen von 18: ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: Niemand bleibt draußen",
+          "text": "Turnhalle · Teams einteilen. In der Sportstunde sollen gleich große Teams gebildet werden. Noah hilft dem Sportlehrer beim Einteilen."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Sportlehrer",
+              "text": "Wir sind heute 24. Ich will gleich große Teams, und niemand soll draußen bleiben."
+            },
+            {
+              "wer": "Noah",
+              "text": "Teams zu 4 – das sind 6 Teams. Teams zu 6 gehen auch: dann sind es 4 Teams."
+            },
+            {
+              "wer": "Sportlehrer",
+              "text": "Und Teams zu 5?"
+            },
+            {
+              "wer": "Noah",
+              "text": "24 durch 5 geht nicht auf. Vier Leute blieben übrig."
+            },
+            {
+              "wer": "Sportlehrer",
+              "text": "Welche Teamgrößen gehen also?"
+            },
+            {
+              "wer": "Noah",
+              "text": "Alle Teiler von 24: 1, 2, 3, 4, 6, 8, 12 und 24. Teams zu 1 oder zu 24 sind aber langweilig."
+            },
+            {
+              "wer": "Sportlehrer",
+              "text": "Morgen sind wir nur 23."
+            },
+            {
+              "wer": "Noah",
+              "text": "23 hat nur die Teiler 1 und 23. Das ist eine Primzahl. Da müssen Sie mitspielen!"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Welche Zahl ist ein Teiler von 24? Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "6  []       5  []       7  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Lies mit und ergänze."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Teams zu 4 → ___ Teams",
+            "Teams zu 6 → ___ Teams",
+            "T(24) = {1; 2; 3; 4; ___; ___; 12; 24}",
+            "23 hat nur die Teiler 1 und ___ → eine Primzahl"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Wie viele seid ihr in der Klasse? Welche Teamgrößen gehen ohne Rest? Was macht ihr, wenn die Zahl eine Primzahl ist?"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Teiler finden",
+          "punkte": [
+            "in Paaren suchen",
+            "1 · 24, 2 · 12, 3 · 8, 4 · 6",
+            "Primzahl: nur 1 und sich selbst"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Alle Teiler von 6?   ___",
+            "Alle Teiler von 48?   ___",
+            "Die ersten 5 Vielfachen von 15?   ___",
+            "Die ersten 5 Vielfachen von 12?   ___",
+            "Ist 56 ein Vielfaches von 7?   ___",
+            "Die ersten 5 Vielfachen von 11?   ___",
+            "Ist 21 ein Vielfaches von 5?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "48 Stühle sollen in gleich langen Reihen stehen, mit mindestens 4 und höchstens 12 Stühlen pro Reihe. Welche Möglichkeiten gibt es?   ___",
+            "Welche ist die kleinste Zahl mit genau 6 Teilern?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Alle Teiler von 20?   ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Erkläre den Unterschied zwischen einem Teiler und einem Vielfachen mit einem eigenen Beispiel."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ein Teiler von … ist …",
+            "Ein Vielfaches von … ist …",
+            "Zum Beispiel …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich finde die Vielfachen und alle Teiler einer Zahl. Ich weiß, was eine Primzahl ist.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich finde die Vielfachen und alle Teiler einer Zahl. Ich weiß, was eine Primzahl ist.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Gruppen für den Ausflug“ – 24 Jugendliche sollen in gleich große Gruppen aufgeteilt werden – niemand soll übrig bleiben. Geht es mit Gruppen zu 2? Zu 5? Zu 6? Die möglichen Gruppengrößen sind die Teiler von 24: 1, 2, 3, 4, 6, 8, 12 und 24. Mit 5 geht es nicht.",
+          "Fit für das Kapitel (10 Min.): Aufgabe 1 – Wiederholung aus früheren Kapiteln und Modulen, allein und ohne Hilfe. Kurz vergleichen.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): Die ersten 4 Vielfachen von 9? · Alle Teiler von 12? Im Heft: Aufgabe 2.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 3 bis 9 nach Stufe; Übungspäckchen (Aufgabe 10) und Plus (Aufgabe 11) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 12): Alle Teiler von 20? Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 13) als Hausaufgabe."
+        ],
+        "hintergrund": "Teiler und Vielfache: Ein Teiler teilt eine Zahl ohne Rest. Die Vielfachen einer Zahl sind ihre Einmaleins-Reihe. Ist 6 ein Teiler von 24, dann ist 24 ein Vielfaches von 6. Vielfache: die Zahl mal 1, 2, 3 … (unendlich viele). Teiler: Zahlen, die ohne Rest teilen (nur wenige). Teiler findest du in Paaren. 1 und die Zahl selbst sind immer Teiler. Eine Primzahl hat genau zwei Teiler. Im Unterricht: Teiler mit Plättchen legen: 24 Plättchen als Rechteck – jede Rechteckform zeigt ein Teilerpaar. Die Teilbarkeitsregeln aus Modul 4 (2, 3, 5, 9, 10) helfen beim Suchen.",
+        "differenzierung": {
+          "leichter": "Basis: Teiler kommen in Paaren. Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Teiler mit Plättchen legen: 24 Plättchen als Rechteck – jede Rechteckform zeigt ein Teilerpaar. Die Teilbarkeitsregeln aus Modul 4 (2, 3, 5, 9, 10) helfen beim Suchen.",
+          "Spiel: Teiler-Bingo: Die Lehrperson nennt eine Zahl (z. B. 36). Wer auf der eigenen Karte einen Teiler davon hat, darf ihn ankreuzen."
+        ],
+        "material": "Hunderterfeld, 24 Plättchen",
+        "loesungen": [
+          "1) a) Nein ✗ · b) Ja – passt · c) Nein ✗ · d) QS 10 → nicht durch 9 ✗ · e) QS 15 → durch 3 – passt · f) QS 10 → nicht durch 9 ✗",
+          "2) a) 9; 18; 27; 36 · b) 1; 2; 3; 4; 6; 12",
+          "3) a) T(15) = {1; 3; 5; 15} · b) V(7) = {7; 14; 21; 28; 35; …} · c) V(8) = {8; 16; 24; 32; 40; …} · d) V(4) = {4; 8; 12; 16; 20; …} · e) T(10) = {1; 2; 5; 10} · f) T(8) = {1; 2; 4; 8} · g) V(9) = {9; 18; 27; 36; 45; …} · h) V(5) = {5; 10; 15; 20; 25; …}",
+          "4) a) 4; 8; 12; 16; 20 · b) 1; 2; 5; 10 · c) Ja, 35 : 5 = 7 · d) V(3) = {3; 6; 9; 12; 15; …} · e) T(12) = {1; 2; 3; 4; 6; 12} · f) V(6) = {6; 12; 18; 24; 30; …}",
+          "5) a) 1; 2; 3; 5; 6; 10; 15; 30 · b) Ja, 7 · 12 = 84 · c) 11; 13; 17; 19 · d) V(13) = {13; 26; 39; 52; 65; …} · e) Ja: 5 · 9 = 45 · f) Ja: 9 · 3 = 27",
+          "6) Rechtecke: 1 · 18, 2 · 9, 3 · 6 → Teiler 1, 2, 3, 6, 9, 18 – Vielfache: 18, 36, 54, 72, 90",
+          "7) 6",
+          "8) a) 6 · b) 4 · c) 6 / 8 · d) 23",
+          "9) mündlich – eigene Lösungen",
+          "10) a) T(6) = {1; 2; 3; 6} · b) T(48) = {1; 2; 3; 4; 6; 8; 12; 16; 24; 48} · c) V(15) = {15; 30; 45; 60; 75; …} · d) V(12) = {12; 24; 36; 48; 60; …} · e) Ja: 7 · 8 = 56 · f) V(11) = {11; 22; 33; 44; 55; …} · g) Nein: 21 : 5 geht nicht auf",
+          "11) a) 12 Reihen zu 4, 8 zu 6, 6 zu 8 oder 4 zu 12 Stühlen · b) 12 (1; 2; 3; 4; 6; 12)",
+          "12) 1; 2; 4; 5; 10; 20",
+          "13) eigene Erklärung – auf Fachwörter und ein Beispiel achten"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m8-kgv-ggt",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Teiler und Vielfache",
+      "kgV – kleinstes gemeinsames Vielfaches",
+      "ggT – größter gemeinsamer Teiler",
+      "gemeinsam",
+      "Modul 8"
+    ],
+    "bild": "icon:math-symbols",
+    "de": {
+      "titel": "kgV und ggT – was haben Zahlen gemeinsam?",
+      "untertitel": "Modul 8, Lektion 2",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Bus 12 fährt alle 12 Minuten, Bus 18 alle 18 Minuten. Um 7:00 Uhr fahren beide gleichzeitig ab. Wann fahren sie wieder zusammen? Bus 12: 12, 24, 36 … Minuten. Bus 18: 18, 36 … Minuten. Die erste gemeinsame Zahl ist 36 → um 7:36 Uhr."
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "kgV und ggT",
+          "text": "Das kgV (ppcm) ist die kleinste Zahl, die ein Vielfaches aller Zahlen ist. Der ggT (pgcd) ist die größte Zahl, die alle Zahlen ohne Rest teilt."
+        },
+        {
+          "art": "schritte",
+          "stil": "liste",
+          "linien": 0,
+          "teilbar": true,
+          "items": [
+            {
+              "titel": "Das kgV",
+              "text": "Schreib die Vielfachen beider Zahlen auf. Die kleinste Zahl, die in beiden Listen steht, ist das kgV.  Beispiel: V(4): 4, 8, 12, 16 … V(6): 6, 12, 18 … → kgV(4; 6) = 12"
+            },
+            {
+              "titel": "Der ggT",
+              "text": "Schreib alle Teiler beider Zahlen auf. Die größte Zahl, die in beiden Listen steht, ist der ggT.  Beispiel: T(18): 1, 2, 3, 6, 9, 18 · T(24): 1, 2, 3, 4, 6, 8, 12, 24 → ggT(18; 24) = 6"
+            },
+            {
+              "titel": "Wozu brauche ich das?",
+              "text": "kgV: Wann treffen sich Dinge wieder? (Busse, Takte) – und der gemeinsame Nenner bei Brüchen. ggT: In wie große gleiche Teile kann ich aufteilen? – und Brüche kürzen.  Beispiel: 18 Äpfel und 24 Birnen gleich auf Körbe verteilen, ohne Rest: höchstens ggT = 6 Körbe (je 3 Äpfel und 4 Birnen)."
+            }
+          ]
+        },
+        {
+          "art": "zahlenstrahl",
+          "von": "0",
+          "bis": "36",
+          "schritt": "4",
+          "punkte": [
+            {
+              "wert": "12",
+              "name": "12"
+            },
+            {
+              "wert": "24",
+              "name": "24"
+            },
+            {
+              "wert": "36",
+              "name": "36"
+            }
+          ]
+        },
+        {
+          "art": "zahlenstrahl",
+          "von": "0",
+          "bis": "36",
+          "schritt": "6",
+          "punkte": [
+            {
+              "wert": "12",
+              "name": "12"
+            },
+            {
+              "wert": "24",
+              "name": "24"
+            },
+            {
+              "wert": "36",
+              "name": "36"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Oben die Vielfachen von 4, unten die von 6. Wo sich beide treffen: 12, 24, 36. Das kleinste gemeinsame Vielfache: kgV(4; 6) = 12."
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "kgV (ppcm): die kleinste Zahl, die in beiden Vielfachen-Listen steht – „Wann wieder zusammen?“. ggT (pgcd): die größte Zahl, die in beiden Teiler-Listen steht – „Wie groß sind die gleichen Teile?“.",
+                "Bei drei Zahlen suchst du in allen drei Listen."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. kgV oder ggT? Frag: „Wann wieder?“ (kgV) oder „Wie aufteilen?“ (ggT).",
+                "2. Listen aufschreiben (Vielfache oder Teiler).",
+                "3. Gemeinsame Zahlen einkreisen.",
+                "4. Die kleinste (kgV) oder die größte (ggT) nehmen."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "kgV – kleinstes gemeinsames Vielfaches – ppcm – plus petit commun multiple",
+                "ggT – größter gemeinsamer Teiler – pgcd – plus grand commun diviseur",
+                "gemeinsam – commun"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: kgV von 8 und 12?",
+              "punkte": [
+                "V(8): 8, 16, 24, 32 …",
+                "V(12): 12, 24, 36 …",
+                "Die erste gemeinsame Zahl: 24",
+                "Ergebnis: kgV(8; 12) = 24"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: ggT im Alltag",
+              "text": "Aufgabe: Mia hat 30 rote und 45 blaue Perlen. Sie will möglichst viele gleiche Ketten machen, ohne dass Perlen übrig bleiben. Wie viele Ketten?",
+              "punkte": [
+                "T(30): 1, 2, 3, 5, 6, 10, 15, 30",
+                "T(45): 1, 3, 5, 9, 15, 45",
+                "ggT = 15",
+                "Ergebnis: 15 Ketten mit je 2 roten und 3 blauen Perlen."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "kgV (ppcm) von 6, 4?   12",
+            "kgV (ppcm) von 20, 10?   20",
+            "kgV (ppcm) von 12, 20?   60",
+            "kgV (ppcm) von 6, 8?   24",
+            "kgV (ppcm) von 25, 15?   75"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "kgV von 3 und 4?   ___",
+            "ggT von 12 und 16?   ___",
+            "ggT (pgcd) von 8, 10?   ___",
+            "kgV (ppcm) von 16, 20?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "ggT (pgcd) von 10, 6?   ___",
+            "kgV (ppcm) von 20, 15?   ___",
+            "kgV (ppcm) von 4, 8?   ___",
+            "kgV (ppcm) von 15, 10?   ___",
+            "kgV (ppcm) von 12, 8?   ___",
+            "ggT (pgcd) von 8, 20?   ___",
+            "ggT (pgcd) von 4, 6?   ___",
+            "kgV (ppcm) von 8, 12?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "Erst die Listen, dann einkreisen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "kgV von 2 und 5?   ___",
+            "kgV von 6 und 9?   ___",
+            "ggT von 10 und 15?   ___",
+            "ggT (pgcd) von 4, 10?   ___",
+            "kgV (ppcm) von 15, 25?   ___",
+            "kgV (ppcm) von 8, 10?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "ggT von 24 und 36?   ___",
+            "kgV von 10 und 15?   ___",
+            "kgV von 4, 6 und 8?   ___",
+            "ggT (pgcd) von 9, 18?   ___",
+            "kgV (ppcm) von 18, 9?   ___",
+            "ggT (pgcd) von 10, 14?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Bus A fährt alle 10 Minuten, Bus B alle 15 Minuten. Beide fahren um 8:00 ab. Markiere oben Bus A und unten Bus B."
+        },
+        {
+          "art": "zahlenstrahl",
+          "von": "0",
+          "bis": "60",
+          "schritt": "10",
+          "fein": "5"
+        },
+        {
+          "art": "zahlenstrahl",
+          "von": "0",
+          "bis": "60",
+          "schritt": "15",
+          "fein": "5"
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Beide fahren wieder zusammen nach ___ Minuten, also um ___ Uhr.",
+            "kgV(10; 15) = ___",
+            "Wie oft fahren beide zusammen bis 9:00? ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: Kein Würstchen ohne Brötchen",
+          "text": "Supermarkt · Grillfest der Klasse. Jana und Tom kaufen für das Grillfest der Klasse ein. Es soll nichts übrig bleiben."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Jana",
+              "text": "Würstchen gibt es nur in Packungen zu 8. Brötchen in Tüten zu 6."
+            },
+            {
+              "wer": "Tom",
+              "text": "Und es soll kein Würstchen ohne Brötchen übrig bleiben."
+            },
+            {
+              "wer": "Jana",
+              "text": "Dann brauchen wir eine Zahl, die in der 8er-Reihe und in der 6er-Reihe steht. 8, 16, 24 … und 6, 12, 18, 24. Die kleinste ist 24."
+            },
+            {
+              "wer": "Tom",
+              "text": "Also 3 Packungen Würstchen und 4 Tüten Brötchen. Das ist das kgV."
+            },
+            {
+              "wer": "Jana",
+              "text": "Und die 36 Muffins und 48 Apfelstücke? Ich will möglichst viele gleiche Teller."
+            },
+            {
+              "wer": "Tom",
+              "text": "Da suchen wir den größten gemeinsamen Teiler von 36 und 48: 12."
+            },
+            {
+              "wer": "Jana",
+              "text": "Also 12 Teller mit je 3 Muffins und 4 Apfelstücken. Perfekt."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "kgV von 8 und 6? Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "24  []       48  []       2  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Lies mit und ergänze."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "V(8): 8, 16, ___ … · V(6): 6, 12, 18, ___ …",
+            "kgV(8; 6) = ___ → ___ Packungen Würstchen, ___ Tüten Brötchen",
+            "ggT(36; 48) = ___ → je ___ Muffins und ___ Apfelstücke"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Erfindet eine eigene Party-Aufgabe mit kgV („Wann geht es auf?“) und eine mit ggT („Wie verteilen wir gleich?“). Tauscht mit einer anderen Gruppe und löst."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Welche Frage?",
+          "punkte": [
+            "Wann wieder zusammen? → kgV",
+            "Wie gleich aufteilen? → ggT"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "ggT (pgcd) von 10, 25?   ___",
+            "ggT (pgcd) von 10, 4?   ___",
+            "ggT (pgcd) von 20, 12?   ___",
+            "kgV (ppcm) von 8, 6?   ___",
+            "kgV (ppcm) von 10, 15?   ___",
+            "kgV (ppcm) von 20, 16?   ___",
+            "ggT (pgcd) von 30, 24?   ___",
+            "kgV (ppcm) von 28, 16?   ___",
+            "kgV (ppcm) von 35, 30?   ___",
+            "kgV (ppcm) von 18, 12?   ___",
+            "ggT (pgcd) von 10, 12?   ___",
+            "kgV (ppcm) von 14, 4?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Eine Lampe blinkt alle 6 Sekunden, eine andere alle 8 Sekunden. Gerade blinken beide. Nach wie vielen Sekunden blinken sie wieder gleichzeitig?   ___",
+            "Ein Boden ist 120 cm × 90 cm groß. Er soll mit möglichst großen gleichen quadratischen Fliesen ausgelegt werden. Wie groß ist eine Fliese? Wie viele braucht man?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "kgV und ggT von 12 und 18?   ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Erkläre, woran du bei einer Sachaufgabe erkennst, ob du das kgV oder den ggT brauchst. Gib je ein Beispiel."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich brauche das kgV, wenn …",
+            "Ich brauche den ggT, wenn …",
+            "Beispiel: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich bestimme das kleinste gemeinsame Vielfache (kgV) und den größten gemeinsamen Teiler (ggT) von zwei oder drei Zahlen und nutze sie bei Sachaufgaben.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Wiederholung zum Kapitel „Teiler und Vielfache“ – gemischt aus allen Lektionen. Was kannst du schon sicher?"
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Alle Teiler von 18?   ___",
+            "kgV (ppcm) von 30, 12?   ___",
+            "Ist 27 ein Vielfaches von 9?   ___",
+            "kgV (ppcm) von 20, 15?   ___",
+            "Alle Teiler von 48?   ___",
+            "ggT (pgcd) von 16, 24?   ___",
+            "Alle Teiler von 40?   ___",
+            "ggT (pgcd) von 28, 16?   ___"
+          ],
+          "buchstaben": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich bestimme das kleinste gemeinsame Vielfache (kgV) und den größten gemeinsamen Teiler (ggT) von zwei oder drei Zahlen und nutze sie bei Sachaufgaben.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Zwei Busse“ – Bus 12 fährt alle 12 Minuten, Bus 18 alle 18 Minuten. Um 7:00 Uhr fahren beide gleichzeitig ab. Wann fahren sie wieder zusammen? Bus 12: 12, 24, 36 … Minuten. Bus 18: 18, 36 … Minuten. Die erste gemeinsame Zahl ist 36 → um 7:36 Uhr.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): kgV von 3 und 4? · ggT von 12 und 16? Im Heft: Aufgabe 1.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 2 bis 8 nach Stufe; Übungspäckchen (Aufgabe 9) und Plus (Aufgabe 10) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 11): kgV und ggT von 12 und 18? Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 12) als Hausaufgabe.",
+          "Wiederholung zum Kapitel (Aufgabe 13): gemischte Aufgaben aus dem ganzen Kapitel – vor der Klassenarbeit oder als Hausaufgabe."
+        ],
+        "hintergrund": "kgV und ggT: Das kgV (ppcm) ist die kleinste Zahl, die ein Vielfaches aller Zahlen ist. Der ggT (pgcd) ist die größte Zahl, die alle Zahlen ohne Rest teilt. kgV (ppcm): die kleinste Zahl, die in beiden Vielfachen-Listen steht – „Wann wieder zusammen?“. ggT (pgcd): die größte Zahl, die in beiden Teiler-Listen steht – „Wie groß sind die gleichen Teile?“. Bei drei Zahlen suchst du in allen drei Listen. Im Unterricht: Die Frage „Wann wieder?“ (kgV) oder „Wie aufteilen?“ (ggT) auf ein Kärtchen schreiben und bei jeder Sachaufgabe zuerst entscheiden lassen. Listen nebeneinanderschreiben und gemeinsame Zahlen farbig einkreisen.",
+        "differenzierung": {
+          "leichter": "Basis: Erst die Listen, dann einkreisen. Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Die Frage „Wann wieder?“ (kgV) oder „Wie aufteilen?“ (ggT) auf ein Kärtchen schreiben und bei jeder Sachaufgabe zuerst entscheiden lassen. Listen nebeneinanderschreiben und gemeinsame Zahlen farbig einkreisen.",
+          "Spiel: Klatsch-Rhythmus: Gruppe A klatscht auf jeden 3. Schlag, Gruppe B auf jeden 4. Schlag. Wann klatschen beide zusammen? (beim 12. Schlag: kgV)"
+        ],
+        "material": "Vielfachen-Listen, Zwei Farbstifte",
+        "loesungen": [
+          "1) a) 12 · b) 4 · c) 2 · d) 80",
+          "2) a) 2 · b) 60 · c) 8 · d) 30 · e) 24 · f) 4 · g) 2 · h) 24",
+          "3) a) 10 · b) 18 · c) 5 · d) 2 · e) 75 · f) 40",
+          "4) a) 12 · b) 30 · c) 24 · d) 9 · e) 18 · f) 2",
+          "5) nach 30 Minuten, um 8:30 · kgV(10; 15) = 30 · um 8:00, 8:30 und 9:00 (3-mal)",
+          "6) 24",
+          "7) a) 24 / 24 · b) 24 / 3 / 4 · c) 12 / 3 / 4",
+          "8) mündlich – eigene Lösungen",
+          "9) a) 5 · b) 2 · c) 4 · d) 24 · e) 30 · f) 80 · g) 6 · h) 112 · i) 210 · j) 36 · k) 2 · l) 28",
+          "10) a) kgV(6; 8) = 24 Sekunden · b) ggT(120; 90) = 30 cm; 4 · 3 = 12 Fliesen",
+          "11) kgV 36, ggT 6",
+          "12) eigene Erklärung – auf Fachwörter und ein Beispiel achten",
+          "13) a) T(18) = {1; 2; 3; 6; 9; 18} · b) 60 · c) Ja: 9 · 3 = 27 · d) 60 · e) T(48) = {1; 2; 3; 4; 6; 8; 12; 16; 24; 48} · f) 8 · g) T(40) = {1; 2; 4; 5; 8; 10; 20; 40} · h) 4"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m8-potenzen",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Potenzen und Wurzeln",
+      "Potenz",
+      "Basis",
+      "Hochzahl (Exponent)",
+      "Quadratzahl",
+      "Modul 8"
+    ],
+    "bild": "icon:math",
+    "de": {
+      "titel": "Potenzen – Quadrat, Kubik und Zehnerpotenzen",
+      "untertitel": "Modul 8, Lektion 3",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Lina schickt eine Nachricht an 2 Personen. Jede schickt sie wieder an 2 Personen weiter, und so weiter. In Runde 1 sind es 2, in Runde 2 schon 2 · 2 = 4, in Runde 3: 2 · 2 · 2 = 8. In Runde 10: zehnmal 2 malgenommen = 1.024. Kurz geschrieben: 2¹⁰."
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Fit für das Kapitel „Potenzen und Wurzeln“ – Wiederholung aus Modul 1: Einmaleins. Rechne allein, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "8 · 5 = ___",
+            "10 · 7 = ___",
+            "9 · 8 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Fit für das Kapitel „Potenzen und Wurzeln“ – Wiederholung aus Modul 3: Fläche von Rechteck und Quadrat. Rechne allein, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Rechteck: Länge 15 cm, Breite 14 cm. Flächeninhalt?   ___",
+            "Rechteck: Länge 7 cm, Breite 4 cm. Flächeninhalt?   ___",
+            "Quadrat mit Seite 9 cm. Flächeninhalt?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Potenz",
+              "text": "Eine Potenz aⁿ ist ein Produkt aus n gleichen Faktoren a. a heißt Basis, n heißt Hochzahl (Exponent). Beispiel: 2³ = 2 · 2 · 2 = 8."
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Kurz geschrieben",
+                  "text": "Eine Potenz ist eine kurze Schreibweise für ein Produkt aus gleichen Zahlen. Die Basis wird so oft malgenommen, wie die Hochzahl sagt.  Beispiel: 5 · 5 · 5 = 5³ (Basis 5, Hochzahl 3) = 125"
+                },
+                {
+                  "titel": "Quadrat und Kubik",
+                  "text": "Hoch 2 heißt „Quadrat“ (wie die Fläche eines Quadrats), hoch 3 heißt „Kubik“ (wie das Volumen eines Würfels).  Beispiel: 6² = 6 · 6 = 36 · 4³ = 4 · 4 · 4 = 64"
+                },
+                {
+                  "titel": "Zehnerpotenzen",
+                  "text": "Bei 10 hoch n zählst du die Nullen: Die Hochzahl ist die Anzahl der Nullen.  Beispiel: 10³ = 1.000 · 10⁶ = 1.000.000 (eine Million)"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "geo",
+              "felder": [
+                {
+                  "b": 84,
+                  "h": 34,
+                  "raster": "karo",
+                  "elemente": [
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          5,
+                          25
+                        ],
+                        [
+                          10,
+                          25
+                        ],
+                        [
+                          10,
+                          30
+                        ],
+                        [
+                          5,
+                          30
+                        ]
+                      ],
+                      "fuellung": true
+                    },
+                    {
+                      "t": "text",
+                      "x": 7.5,
+                      "y": 22,
+                      "text": "1²",
+                      "mitte": true,
+                      "klein": true
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          15,
+                          20
+                        ],
+                        [
+                          25,
+                          20
+                        ],
+                        [
+                          25,
+                          30
+                        ],
+                        [
+                          15,
+                          30
+                        ]
+                      ],
+                      "fuellung": true
+                    },
+                    {
+                      "t": "text",
+                      "x": 20,
+                      "y": 17,
+                      "text": "2² = 4",
+                      "mitte": true,
+                      "klein": true
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          30,
+                          15
+                        ],
+                        [
+                          45,
+                          15
+                        ],
+                        [
+                          45,
+                          30
+                        ],
+                        [
+                          30,
+                          30
+                        ]
+                      ],
+                      "fuellung": true
+                    },
+                    {
+                      "t": "text",
+                      "x": 37.5,
+                      "y": 12,
+                      "text": "3² = 9",
+                      "mitte": true,
+                      "klein": true
+                    },
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          50,
+                          10
+                        ],
+                        [
+                          70,
+                          10
+                        ],
+                        [
+                          70,
+                          30
+                        ],
+                        [
+                          50,
+                          30
+                        ]
+                      ],
+                      "fuellung": true
+                    },
+                    {
+                      "t": "text",
+                      "x": 60,
+                      "y": 7,
+                      "text": "4² = 16",
+                      "mitte": true,
+                      "klein": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "Eine Potenz ist ein Produkt aus gleichen Zahlen: aⁿ = a · a · … · a (n-mal). a² heißt Quadrat, a³ heißt Kubik.",
+                "Bei 10ⁿ ist n die Anzahl der Nullen.",
+                "Achtung: 3² ist 3 · 3 = 9, nicht 3 · 2 = 6!"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Basis und Hochzahl ablesen.",
+                "2. Die Basis so oft hinschreiben, wie die Hochzahl sagt.",
+                "3. Malzeichen dazwischen und ausrechnen.",
+                "4. Bei 10ⁿ: eine 1 und n Nullen."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "Potenz – puissance",
+                "Basis – base",
+                "Hochzahl (Exponent) – exposant",
+                "Quadratzahl – carré",
+                "Kubikzahl – cube"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: Berechne 2⁵.",
+              "punkte": [
+                "Basis 2, Hochzahl 5",
+                "2 · 2 · 2 · 2 · 2",
+                "= 4 · 2 · 2 · 2 = 8 · 2 · 2 = 16 · 2 = 32",
+                "Ergebnis: 2⁵ = 32"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Zehnerpotenz",
+              "text": "Aufgabe: Schreib 7.000.000 als Zahl mal Zehnerpotenz.",
+              "punkte": [
+                "7.000.000 = 7 · 1.000.000",
+                "1.000.000 hat 6 Nullen → 10⁶",
+                "Ergebnis: 7.000.000 = 7 · 10⁶"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "Schreibe als Potenz: 2 · 2 · 2   2³",
+            "9² = 9 · 9 = 81",
+            "Schreibe als Potenz: 4 · 4 · 4   4³",
+            "Schreibe als Potenz: 8 · 8 · 8   8³",
+            "Schreibe als Potenz: 3 · 3   3²",
+            "Schreibe als Potenz: 2 · 2   2²"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "3² = ___",
+            "10⁴ = ___",
+            "3³ = ___",
+            "Schreibe als Potenz: 7 · 7   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Schreibe als Potenz: 6 · 6 · 6   ___",
+            "3² = ___",
+            "8² = ___",
+            "6³ = ___",
+            "6² = ___",
+            "4³ = ___",
+            "4² = ___",
+            "5² = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "Die Hochzahl sagt, wie oft mal."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "4² = ___",
+            "2³ = ___",
+            "Schreib als Potenz: 9 · 9   ___",
+            "5³ = ___",
+            "2² = ___",
+            "10² = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "11² = ___",
+            "5³ = ___",
+            "Schreib 100.000 als Zehnerpotenz.   ___",
+            "10³ als Zahl?   ___",
+            "13² = ___",
+            "14² = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Schreib als Potenz und rechne aus."
+        },
+        {
+          "art": "geo",
+          "felder": [
+            {
+              "b": 60,
+              "h": 40,
+              "label": "a) Würfel aus Würfeln",
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      6,
+                      12.399999999999999
+                    ],
+                    [
+                      30,
+                      12.399999999999999
+                    ],
+                    [
+                      30,
+                      36.4
+                    ],
+                    [
+                      6,
+                      36.4
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      6,
+                      12.399999999999999
+                    ],
+                    [
+                      30,
+                      12.399999999999999
+                    ],
+                    [
+                      40.8,
+                      4
+                    ],
+                    [
+                      16.8,
+                      4
+                    ]
+                  ],
+                  "fuellung": true
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      30,
+                      12.399999999999999
+                    ],
+                    [
+                      40.8,
+                      4
+                    ],
+                    [
+                      40.8,
+                      28
+                    ],
+                    [
+                      30,
+                      36.4
+                    ]
+                  ],
+                  "fuellung": true
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    14,
+                    12.399999999999999
+                  ],
+                  "bis": [
+                    14,
+                    36.4
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    14,
+                    12.399999999999999
+                  ],
+                  "bis": [
+                    24.8,
+                    4
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    22,
+                    12.399999999999999
+                  ],
+                  "bis": [
+                    22,
+                    36.4
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    22,
+                    12.399999999999999
+                  ],
+                  "bis": [
+                    32.8,
+                    4
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    6,
+                    20.4
+                  ],
+                  "bis": [
+                    30,
+                    20.4
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    30,
+                    20.4
+                  ],
+                  "bis": [
+                    40.8,
+                    12
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    6,
+                    28.4
+                  ],
+                  "bis": [
+                    30,
+                    28.4
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    30,
+                    28.4
+                  ],
+                  "bis": [
+                    40.8,
+                    20
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    9.6,
+                    9.599999999999998
+                  ],
+                  "bis": [
+                    33.6,
+                    9.599999999999998
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    33.6,
+                    9.599999999999998
+                  ],
+                  "bis": [
+                    33.6,
+                    33.6
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    13.2,
+                    6.799999999999999
+                  ],
+                  "bis": [
+                    37.2,
+                    6.799999999999999
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    37.2,
+                    6.799999999999999
+                  ],
+                  "bis": [
+                    37.2,
+                    30.799999999999997
+                  ]
+                }
+              ]
+            },
+            {
+              "b": 50,
+              "h": 40,
+              "raster": "karo",
+              "label": "b) Quadrat",
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      10,
+                      10
+                    ],
+                    [
+                      35,
+                      10
+                    ],
+                    [
+                      35,
+                      35
+                    ],
+                    [
+                      10,
+                      35
+                    ]
+                  ],
+                  "fuellung": true
+                }
+              ]
+            }
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Potenz",
+            "10¹",
+            "10²",
+            "10³",
+            "10⁶"
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "Zahl",
+              "10",
+              "100",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: 64, 128, 256 – warum diese Zahlen?",
+          "text": "Pause · Handys vergleichen. Lea und Yusuf vergleichen ihre Handys. Lea wundert sich über die Zahlen beim Speicher."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Lea",
+              "text": "Mein Handy hat 64 Gigabyte, deins 128. Warum immer so komische Zahlen?"
+            },
+            {
+              "wer": "Yusuf",
+              "text": "Das sind Zweierpotenzen. 2 hoch 6 ist 64, 2 hoch 7 ist 128."
+            },
+            {
+              "wer": "Lea",
+              "text": "2 mal 2 mal 2 mal 2 mal 2 mal 2 … ja, das gibt 64."
+            },
+            {
+              "wer": "Yusuf",
+              "text": "Und das nächste Modell hat 2 hoch 8."
+            },
+            {
+              "wer": "Lea",
+              "text": "Das ist das Doppelte von 128: 256 Gigabyte."
+            },
+            {
+              "wer": "Yusuf",
+              "text": "Ein Gigabyte sind übrigens etwa eine Milliarde Byte. Das ist 10 hoch 9 – eine 1 mit neun Nullen."
+            },
+            {
+              "wer": "Lea",
+              "text": "Dann ist mein Handy-Speicher ungefähr 64 mal 10 hoch 9 Byte groß. Riesig!"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "2⁶ = ? Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "64  []       12  []       36  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Lies mit und ergänze."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "2⁶ = 2 · 2 · 2 · 2 · 2 · 2 = ___",
+            "2⁷ = ___ · 2⁸ = ___",
+            "1 Milliarde = 1.000.000.000 = 10 hoch ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Verdoppel-Runde: Startet bei 1. Jede Person verdoppelt laut (2, 4, 8 …). In welcher Runde seid ihr über 1.000? Schreibt die Zahl als Potenz von 2."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Potenz",
+          "punkte": [
+            "Basis = welche Zahl",
+            "Hochzahl = wie oft mal",
+            "10ⁿ = 1 mit n Nullen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Schreibe als Potenz: 5 · 5   ___",
+            "7² = ___",
+            "2³ = ___",
+            "Schreibe als Potenz: 9 · 9 · 9   ___",
+            "Schreibe als Potenz: 9 · 9   ___",
+            "Schreibe als Potenz: 8 · 8   ___",
+            "Schreibe als Potenz: 6 · 6 · 6 · 6   ___",
+            "1.000 als Zehnerpotenz?   ___",
+            "1.000.000 als Zehnerpotenz?   ___",
+            "Schreibe als Potenz: 7 · 7 · 7 · 7 · 7   ___",
+            "10⁴ als Zahl?   ___",
+            "Schreibe als Potenz: 3 · 3 · 3 · 3   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Was ist größer: 2⁶ oder 6²?   ___",
+            "Die Sonne ist etwa 150.000.000 km von der Erde entfernt. Schreib das als Zahl mal Zehnerpotenz.   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Berechne 3³ und 10⁵.   ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Erkläre, warum 3² nicht 6 ist. Schreib ein Beispiel, an dem man den Unterschied gut sieht."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "3² bedeutet …",
+            "3 · 2 bedeutet …",
+            "Man sieht den Unterschied, wenn …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich schreibe Produkte aus gleichen Zahlen als Potenz, berechne Quadrat- und Kubikzahlen und rechne mit Zehnerpotenzen.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich schreibe Produkte aus gleichen Zahlen als Potenz, berechne Quadrat- und Kubikzahlen und rechne mit Zehnerpotenzen.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Die Kettennachricht“ – Lina schickt eine Nachricht an 2 Personen. Jede schickt sie wieder an 2 Personen weiter, und so weiter. In Runde 1 sind es 2, in Runde 2 schon 2 · 2 = 4, in Runde 3: 2 · 2 · 2 = 8. In Runde 10: zehnmal 2 malgenommen = 1.024. Kurz geschrieben: 2¹⁰.",
+          "Fit für das Kapitel (10 Min.): Aufgaben 1 und 2 – Wiederholung aus früheren Kapiteln und Modulen, allein und ohne Hilfe. Kurz vergleichen.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): 3² = ? · 10⁴ = ? Im Heft: Aufgabe 3.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 4 bis 10 nach Stufe; Übungspäckchen (Aufgabe 11) und Plus (Aufgabe 12) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 13): Berechne 3³ und 10⁵. Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 14) als Hausaufgabe."
+        ],
+        "hintergrund": "Potenz: Eine Potenz aⁿ ist ein Produkt aus n gleichen Faktoren a. a heißt Basis, n heißt Hochzahl (Exponent). Beispiel: 2³ = 2 · 2 · 2 = 8. Eine Potenz ist ein Produkt aus gleichen Zahlen: aⁿ = a · a · … · a (n-mal). a² heißt Quadrat, a³ heißt Kubik. Bei 10ⁿ ist n die Anzahl der Nullen. Achtung: 3² ist 3 · 3 = 9, nicht 3 · 2 = 6! Im Unterricht: Der häufigste Fehler ist 3² = 6. Quadratzahlen mit Plättchen als Quadrat legen und Kubikzahlen mit Würfeln bauen lassen. Eine Tabelle der Quadratzahlen bis 15² an der Wand hilft auch später bei Wurzeln und Pythagoras.",
+        "differenzierung": {
+          "leichter": "Basis: Die Hochzahl sagt, wie oft mal. Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Der häufigste Fehler ist 3² = 6. Quadratzahlen mit Plättchen als Quadrat legen und Kubikzahlen mit Würfeln bauen lassen. Eine Tabelle der Quadratzahlen bis 15² an der Wand hilft auch später bei Wurzeln und Pythagoras.",
+          "Spiel: Potenz-Duell: Zwei Karten ziehen (Basis 2–9, Hochzahl 1–4). Die größere Potenz gewinnt – erst schätzen, dann rechnen."
+        ],
+        "material": "Plättchen und Würfel, Tabelle der Quadratzahlen",
+        "loesungen": [
+          "1) a) 40 · b) 70 · c) 72",
+          "2) a) 15 · 14 = 210 cm² · b) 7 · 4 = 28 cm² · c) 9 · 9 = 81 cm²",
+          "3) a) 9 · b) 10.000 · c) 3 · 3 · 3 = 27 · d) 7²",
+          "4) a) 6³ · b) 3 · 3 = 9 · c) 8 · 8 = 64 · d) 6 · 6 · 6 = 216 · e) 6 · 6 = 36 · f) 4 · 4 · 4 = 64 · g) 4 · 4 = 16 · h) 5 · 5 = 25",
+          "5) a) 16 · b) 8 · c) 9² · d) 5 · 5 · 5 = 125 · e) 2 · 2 = 4 · f) 10 · 10 = 100",
+          "6) a) 121 · b) 125 · c) 10⁵ · d) 1.000 · e) 13 · 13 = 169 · f) 14 · 14 = 196",
+          "7) a) 3³ = 27 Würfel · b) 5² = 25 Kästchen – 10³ = 1 000 · 10⁶ = 1 000 000",
+          "8) 64",
+          "9) a) 64 · b) 128 / 256 · c) 9",
+          "10) mündlich – eigene Lösungen",
+          "11) a) 5² · b) 7 · 7 = 49 · c) 2 · 2 · 2 = 8 · d) 9³ · e) 9² · f) 8² · g) 6⁴ · h) 10³ · i) 10⁶ · j) 7⁵ · k) 10.000 · l) 3⁴",
+          "12) a) 2⁶ = 64 > 6² = 36 · b) 15 · 10⁷ km (oder 1,5 · 10⁸ km)",
+          "13) 27 und 100.000",
+          "14) eigene Erklärung – auf Fachwörter und ein Beispiel achten"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m8-quadratwurzel",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Potenzen und Wurzeln",
+      "Quadratwurzel",
+      "Wurzelzeichen",
+      "runden",
+      "Modul 8"
+    ],
+    "bild": "icon:math",
+    "de": {
+      "titel": "Die Quadratwurzel",
+      "untertitel": "Modul 8, Lektion 4",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ein Garten ist ein Quadrat mit 49 m² Fläche. Wie lang ist eine Seite? Gesucht ist die Zahl, die mal sich selbst 49 ergibt: 7 · 7 = 49. Die Seite ist also 7 m lang. Man schreibt: √49 = 7."
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Quadratwurzel",
+              "text": "Die Quadratwurzel √a ist die positive Zahl, die mit sich selbst multipliziert a ergibt. √49 = 7, weil 7 · 7 = 49."
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Wurzel ist das Gegenteil von Quadrat",
+                  "text": "Die Quadratwurzel √a ist die positive Zahl, die mal sich selbst a ergibt.  Beispiel: √64 = 8, weil 8 · 8 = 64"
+                },
+                {
+                  "titel": "Wurzeln schätzen",
+                  "text": "Liegt eine Zahl zwischen zwei Quadratzahlen, liegt ihre Wurzel zwischen den passenden Zahlen.  Beispiel: √50: 49 < 50 < 64 → 7 < √50 < 8 (näher an 7)"
+                },
+                {
+                  "titel": "Mit dem Taschenrechner",
+                  "text": "Tippe die √-Taste und die Zahl (bei manchen Rechnern umgekehrt). Runde auf zwei Stellen nach dem Komma.  Beispiel: √50 ≈ 7,07 · √2 ≈ 1,41"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "geo",
+              "felder": [
+                {
+                  "b": 70,
+                  "h": 40,
+                  "raster": "karo",
+                  "elemente": [
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          10,
+                          5
+                        ],
+                        [
+                          40,
+                          5
+                        ],
+                        [
+                          40,
+                          35
+                        ],
+                        [
+                          10,
+                          35
+                        ]
+                      ],
+                      "fuellung": true,
+                      "seiten": [
+                        "a = ?",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "t": "text",
+                      "x": 25,
+                      "y": 22,
+                      "text": "A = 36 Kästchen",
+                      "mitte": true,
+                      "klein": true
+                    },
+                    {
+                      "t": "text",
+                      "x": 45,
+                      "y": 22,
+                      "text": "√36 = 6",
+                      "fett": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "√a ist die positive Zahl, die mal sich selbst a ergibt.",
+                "Quadrieren und Wurzelziehen heben sich auf: √(7²) = 7.",
+                "Wurzeln aus Quadratzahlen weißt du auswendig.",
+                "Andere Wurzeln schätzt du und rechnest sie mit dem Taschenrechner."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Ist es eine Quadratzahl? Dann auswendig.",
+                "2. Sonst: Zwischen welchen Quadratzahlen liegt die Zahl?",
+                "3. Schätzen.",
+                "4. Mit dem Taschenrechner genau rechnen und runden."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "Quadratwurzel – racine carrée",
+                "Wurzelzeichen – radical (√)",
+                "runden – arrondir"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: √144 = ?",
+              "punkte": [
+                "Welche Zahl mal sich selbst gibt 144?",
+                "12 · 12 = 144",
+                "Ergebnis: √144 = 12"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Schätzen",
+              "text": "Aufgabe: Zwischen welchen ganzen Zahlen liegt √30? Rechne dann mit dem Taschenrechner.",
+              "punkte": [
+                "25 < 30 < 36",
+                "5 < √30 < 6",
+                "Taschenrechner: 5,477… ≈ 5,48",
+                "Ergebnis: √30 ≈ 5,48"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "Ein Quadrat hat 25 m² Fläche. Wie lang ist eine Seite?   √25 = 5 m",
+            "√64 = 8",
+            "Ein Quadrat hat 9 m² Fläche. Wie lang ist eine Seite?   √9 = 3 m",
+            "√9 = 3",
+            "Ein Quadrat hat 4 cm² Fläche. Wie lang ist eine Seite?   √4 = 2 cm",
+            "Ein Quadrat hat 4 m² Fläche. Wie lang ist eine Seite?   √4 = 2 m"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "√25 = ___",
+            "√100 = ___",
+            "Ein Quadrat hat 64 m² Fläche. Wie lang ist eine Seite?   ___",
+            "Ein Quadrat hat 49 cm² Fläche. Wie lang ist eine Seite?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Ein Quadrat hat 36 cm² Fläche. Wie lang ist eine Seite?   ___",
+            "√121 = ___",
+            "√25 = ___",
+            "√36 = ___",
+            "Ein Quadrat hat 100 cm² Fläche. Wie lang ist eine Seite?   ___",
+            "Ein Quadrat hat 81 cm² Fläche. Wie lang ist eine Seite?   ___",
+            "√144 = ___",
+            "√100 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "Welche Zahl mal sich selbst?"
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "√9 = ___",
+            "√81 = ___",
+            "√1 = ___",
+            "√16 = ___",
+            "Ein Quadrat hat 25 cm² Fläche. Wie lang ist eine Seite?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "√169 = ___",
+            "Zwischen welchen ganzen Zahlen liegt √20?   ___",
+            "√10 mit dem Taschenrechner, auf 2 Stellen gerundet?   ___",
+            "√225 = ___",
+            "Zwischen welchen ganzen Zahlen liegt √23?   ___",
+            "Ein quadratischer Garten hat 169 m² Fläche. Wie lang ist eine Seite?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Zwischen welchen ganzen Zahlen liegt die Wurzel? Markiere ungefähr auf dem Zahlenstrahl."
+        },
+        {
+          "art": "zahlenstrahl",
+          "von": "0",
+          "bis": "10",
+          "schritt": "1",
+          "fein": "0,5"
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "√20 liegt zwischen ___ und ___",
+            "√50 liegt zwischen ___ und ___",
+            "√2 liegt zwischen ___ und ___",
+            "√99 liegt zwischen ___ und ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: Wie lang wird jede Seite?",
+          "text": "Schulhof · neues Spielfeld. Auf dem Schulhof sollen zwei quadratische Spielfelder mit Kunstrasen entstehen. Finn hilft beim Planen."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Finn",
+              "text": "Die Firma liefert 81 Quadratmeter Kunstrasen für das große Feld. Es soll ein Quadrat werden. Wie lang wird jede Seite?"
+            },
+            {
+              "wer": "Lehrerin",
+              "text": "Welche Zahl mal sich selbst gibt 81?"
+            },
+            {
+              "wer": "Finn",
+              "text": "9 mal 9. Also 9 Meter."
+            },
+            {
+              "wer": "Lehrerin",
+              "text": "Und für das kleine Feld gibt es 50 Quadratmeter."
+            },
+            {
+              "wer": "Finn",
+              "text": "7 mal 7 ist 49, 8 mal 8 ist 64. Also etwas mehr als 7 Meter – ganz nah an 7."
+            },
+            {
+              "wer": "Lehrerin",
+              "text": "Und mit dem Taschenrechner?"
+            },
+            {
+              "wer": "Finn",
+              "text": "Wurzel aus 50 … 7,07 Meter. Gut geschätzt!"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "√81 = ? Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "9  []       40,5  []       8  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Lies mit und ergänze."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "√81 = ___ m, weil 9 · 9 = 81",
+            "7 · 7 = ___ und 8 · 8 = ___",
+            "√50 ≈ ___ m"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Schätz-Duell: Eine Person nennt eine Zahl bis 200. Die anderen schätzen die Wurzel auf eine Stelle nach dem Komma. Der Taschenrechner entscheidet."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Schätzen",
+          "punkte": [
+            "Quadratzahl davor und danach suchen",
+            "Näher an welcher?",
+            "Dann Taschenrechner"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "√4 = ___",
+            "√49 = ___",
+            "Ein Quadrat hat 36 m² Fläche. Wie lang ist eine Seite?   ___",
+            "Ein Quadrat hat 64 cm² Fläche. Wie lang ist eine Seite?   ___",
+            "Ein Quadrat hat 49 m² Fläche. Wie lang ist eine Seite?   ___",
+            "Ein Quadrat hat 16 m² Fläche. Wie lang ist eine Seite?   ___",
+            "√50 mit dem Taschenrechner, auf 2 Stellen gerundet?   ___",
+            "Ein quadratischer Garten hat 81 m² Fläche. Wie lang ist eine Seite?   ___",
+            "Ein quadratischer Garten hat 49 m² Fläche. Wie lang ist eine Seite?   ___",
+            "Zwischen welchen ganzen Zahlen liegt √14?   ___",
+            "Ein quadratischer Garten hat 100 m² Fläche. Wie lang ist eine Seite?   ___",
+            "Ein quadratischer Garten hat 196 m² Fläche. Wie lang ist eine Seite?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Ein quadratischer Platz hat 400 m² Fläche. Wie lang ist der Zaun rundherum?   ___",
+            "Stimmt das? √(9 + 16) = √9 + √16   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "√121 = ? Zwischen welchen ganzen Zahlen liegt √40?   ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Erkläre, wie du √30 ohne Taschenrechner schätzt."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich suche zwei Quadratzahlen …",
+            "Darum liegt √30 …",
+            "Näher an …, weil …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich ziehe die Quadratwurzel aus Quadratzahlen im Kopf, schätze andere Wurzeln und rechne sie mit dem Taschenrechner aus.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Wiederholung zum Kapitel „Potenzen und Wurzeln“ – gemischt aus allen Lektionen. Was kannst du schon sicher?"
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "13² = ___",
+            "√9 = ___",
+            "6³ = ___",
+            "√121 = ___",
+            "10⁶ als Zahl?   ___",
+            "√5 mit dem Taschenrechner, auf 2 Stellen gerundet?   ___",
+            "2² = ___",
+            "√169 = ___"
+          ],
+          "buchstaben": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich ziehe die Quadratwurzel aus Quadratzahlen im Kopf, schätze andere Wurzeln und rechne sie mit dem Taschenrechner aus.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Der quadratische Garten“ – Ein Garten ist ein Quadrat mit 49 m² Fläche. Wie lang ist eine Seite? Gesucht ist die Zahl, die mal sich selbst 49 ergibt: 7 · 7 = 49. Die Seite ist also 7 m lang. Man schreibt: √49 = 7.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): √25 = ? · √100 = ? Im Heft: Aufgabe 1.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 2 bis 8 nach Stufe; Übungspäckchen (Aufgabe 9) und Plus (Aufgabe 10) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 11): √121 = ? Zwischen welchen ganzen Zahlen liegt √40? Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 12) als Hausaufgabe.",
+          "Wiederholung zum Kapitel (Aufgabe 13): gemischte Aufgaben aus dem ganzen Kapitel – vor der Klassenarbeit oder als Hausaufgabe."
+        ],
+        "hintergrund": "Quadratwurzel: Die Quadratwurzel √a ist die positive Zahl, die mit sich selbst multipliziert a ergibt. √49 = 7, weil 7 · 7 = 49. √a ist die positive Zahl, die mal sich selbst a ergibt. Quadrieren und Wurzelziehen heben sich auf: √(7²) = 7. Wurzeln aus Quadratzahlen weißt du auswendig. Andere Wurzeln schätzt du und rechnest sie mit dem Taschenrechner. Im Unterricht: Die Quadratzahl-Tabelle sichtbar lassen und rückwärts lesen („Wo steht 81? Bei 9.“). Das Wurzelziehen am Plättchen-Quadrat zeigen: Die Fläche ist gegeben, die Seite gesucht.",
+        "differenzierung": {
+          "leichter": "Basis: Welche Zahl mal sich selbst? Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Die Quadratzahl-Tabelle sichtbar lassen und rückwärts lesen („Wo steht 81? Bei 9.“). Das Wurzelziehen am Plättchen-Quadrat zeigen: Die Fläche ist gegeben, die Seite gesucht.",
+          "Spiel: Wurzel-Ping-Pong: Eine Person sagt eine Quadratzahl, die andere antwortet blitzschnell mit der Wurzel. Dann wird getauscht."
+        ],
+        "material": "Taschenrechner, Tabelle der Quadratzahlen 1² bis 20²",
+        "loesungen": [
+          "1) a) 5 · b) 10 · c) √64 = 8 m · d) √49 = 7 cm",
+          "2) a) √36 = 6 cm · b) 11 · c) 5 · d) 6 · e) √100 = 10 cm · f) √81 = 9 cm · g) 12 · h) 10",
+          "3) a) 3 · b) 9 · c) 1 · d) 4 · e) √25 = 5 cm",
+          "4) a) 13 · b) 4 < √20 < 5 · c) ≈ 3,16 · d) 15 · e) 4 < √23 < 5 · f) √169 = 13 m",
+          "5) √20: zwischen 4 und 5 (≈ 4,47) · √50: zwischen 7 und 8 (≈ 7,07) · √2: zwischen 1 und 2 (≈ 1,41) · √99: zwischen 9 und 10 (≈ 9,95)",
+          "6) 9",
+          "7) a) 9 · b) 49 / 64 · c) 7,07",
+          "8) mündlich – eigene Lösungen",
+          "9) a) 2 · b) 7 · c) √36 = 6 m · d) √64 = 8 cm · e) √49 = 7 m · f) √16 = 4 m · g) 7,07 · h) √81 = 9 m · i) √49 = 7 m · j) 3 < √14 < 4 · k) √100 = 10 m · l) √196 = 14 m",
+          "10) a) Seite √400 = 20 m; Zaun 4 · 20 = 80 m · b) Nein: √25 = 5, aber 3 + 4 = 7",
+          "11) 11; 6 < √40 < 7",
+          "12) eigene Erklärung – auf Fachwörter und ein Beispiel achten",
+          "13) a) 13 · 13 = 169 · b) 3 · c) 6 · 6 · 6 = 216 · d) 11 · e) 1.000.000 · f) 2,24 · g) 2 · 2 = 4 · h) 13"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m8-brueche-verschiedenen-nennern",
+    "bereich": "mathe",
+    "thema": "brueche",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Brüche",
+      "gleichnamig",
+      "gemeinsamer Nenner",
+      "erweitern",
+      "kürzen",
+      "Modul 8"
+    ],
+    "bild": "icon:chart-pie",
+    "de": {
+      "titel": "Brüche mit verschiedenen Nennern addieren und subtrahieren",
+      "untertitel": "Modul 8, Lektion 5",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ben isst 1/2 Pizza, Lea isst 1/3 von einer gleich großen Pizza. Wie viel ist das zusammen? Halbe und Drittel kann man nicht direkt zusammenzählen. Schneidet man beide Pizzen in Sechstel, geht es: 3/6 + 2/6 = 5/6."
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Fit für das Kapitel „Brüche“ – Wiederholung aus Modul 4: Brüche kürzen und gleichnamige Brüche addieren. Rechne allein, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Kürze #10/15# so weit wie möglich.   ___",
+            "Kürze #9/24# so weit wie möglich.   ___",
+            "Kürze #9/12# so weit wie möglich.   ___",
+            "#1/8# + #6/8# = ___",
+            "#2/7# + #2/7# = ___",
+            "#1/8# + #5/8# = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Fit für das Kapitel „Brüche“ – Wiederholung aus Modul 8: kgV und ggT. Rechne allein, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "kgV (ppcm) von 8, 20?   ___",
+            "ggT (pgcd) von 15, 12?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "gleichnamig machen",
+              "text": "Brüche gleichnamig machen heißt: Sie auf denselben Nenner erweitern. Der kleinste gemeinsame Nenner ist das kgV der Nenner. Dann rechnest du nur mit den Zählern."
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Erst gleiche Stücke",
+                  "text": "Brüche kannst du nur addieren oder subtrahieren, wenn die Nenner gleich sind (gleichnamig, Modul 4). Sonst erweiterst du sie zuerst.  Beispiel: 1/2 + 1/3: Die Nenner 2 und 3 sind verschieden."
+                },
+                {
+                  "titel": "Der gemeinsame Nenner",
+                  "text": "Der kleinste gemeinsame Nenner ist das kgV der Nenner (Lektion 2). Erweitere jeden Bruch: Zähler und Nenner mit derselben Zahl malnehmen.  Beispiel: kgV(2; 3) = 6: 1/2 = 3/6 (mal 3), 1/3 = 2/6 (mal 2)"
+                },
+                {
+                  "titel": "Rechnen und kürzen",
+                  "text": "Jetzt rechnest du nur mit den Zählern. Der Nenner bleibt. Zum Schluss kürzt du, wenn es geht.  Beispiel: 3/4 − 1/6 = 9/12 − 2/12 = 7/12 · 1/6 + 1/2 = 1/6 + 3/6 = 4/6 = 2/3"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bruchbilder",
+              "items": [
+                {
+                  "form": "streifen",
+                  "teile": 2,
+                  "gefaerbt": 1,
+                  "bruch": "1/2"
+                },
+                {
+                  "form": "streifen",
+                  "teile": 3,
+                  "gefaerbt": 1,
+                  "bruch": "1/3"
+                },
+                {
+                  "form": "streifen",
+                  "teile": 6,
+                  "gefaerbt": 5,
+                  "bruch": "5/6",
+                  "text": "3/6 + 2/6 = 5/6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "1) Gemeinsamen Nenner suchen (kgV der Nenner).",
+                "2) Beide Brüche erweitern.",
+                "3) Zähler addieren oder subtrahieren, der Nenner bleibt.",
+                "4) Das Ergebnis kürzen."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. kgV der Nenner suchen.",
+                "2. Jeden Bruch auf diesen Nenner erweitern (Zähler und Nenner mal dieselbe Zahl).",
+                "3. Nur die Zähler rechnen.",
+                "4. Kürzen, wenn es geht."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "gleichnamig – de même dénominateur",
+                "gemeinsamer Nenner – dénominateur commun",
+                "erweitern – amplifier",
+                "kürzen – simplifier"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: 2/3 + 1/4",
+              "punkte": [
+                "kgV(3; 4) = 12",
+                "2/3 = 8/12 und 1/4 = 3/12",
+                "8/12 + 3/12 = 11/12",
+                "Ergebnis: 11/12"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Subtrahieren und kürzen",
+              "text": "Aufgabe: 5/6 − 1/2",
+              "punkte": [
+                "kgV(6; 2) = 6",
+                "1/2 = 3/6",
+                "5/6 − 3/6 = 2/6",
+                "Kürzen mit 2: 1/3",
+                "Ergebnis: 1/3"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "#4/5# − #3/10# = 8/10 − 3/10 = 5/10 = 1/2",
+            "#1/4# + #11/12# = 3/12 + 11/12 = 14/12 = 7/6",
+            "#3/4# + #1/8# = 6/8 + 1/8 = 7/8",
+            "#3/4# + #5/8# = 6/8 + 5/8 = 11/8",
+            "#1/2# + #5/8# = 4/8 + 5/8 = 9/8",
+            "#1/5# + #3/10# = 2/10 + 3/10 = 5/10 = 1/2"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "#1/2# + #1/4#   ___",
+            "#1/3# + #1/6#   ___",
+            "#2/5# + #7/10# = ___",
+            "#3/4# − #7/12# = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "#1/2# − #1/4# = ___",
+            "#3/4# + #3/8# = ___",
+            "#3/4# − #5/8# = ___",
+            "#1/3# − #1/9# = ___",
+            "#1/5# + #7/10# = ___",
+            "#2/3# − #5/9# = ___",
+            "#2/3# + #1/9# = ___",
+            "#1/2# + #3/8# = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "Ein Nenner ist ein Vielfaches des anderen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "#1/2# + #3/8#   ___",
+            "#3/4# − #1/2#   ___",
+            "#2/5# + #3/10#   ___",
+            "#2/3# + #8/9# = ___",
+            "#2/3# − #4/9# = ___",
+            "#1/2# + #1/6# = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "#1/3# + #1/4#   ___",
+            "#3/4# − #2/3#   ___",
+            "#5/6# + #1/4#   ___",
+            "#1/4# + #7/10# = ___",
+            "#1/3# + #2/5# = ___",
+            "#1/2# − #2/5# = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Suche in der Bruchwand den gemeinsamen Nenner. Rechne dann."
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "bruchbilder",
+              "items": [
+                {
+                  "form": "wand",
+                  "nenner": [
+                    2,
+                    3,
+                    4,
+                    6,
+                    12
+                  ]
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "#1/4# + #1/6# = ___",
+                "#2/3# − #1/4# = ___",
+                "#1/2# + #1/4# = ___",
+                "#5/6# − #1/3# = ___"
+              ],
+              "buchstaben": true
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: Reicht das Mehl noch?",
+          "text": "Schulküche · Rezept lesen. Chloe und Ben backen Pfannkuchen in der Schulküche. Im Rezept stehen Brüche."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Chloe",
+              "text": "Für den Teig brauchen wir einen halben Liter Milch und einen Viertelliter Wasser. Passt das zusammen in den Messbecher mit drei Viertel Litern?"
+            },
+            {
+              "wer": "Ben",
+              "text": "Ein halber Liter sind zwei Viertel. Zwei Viertel plus ein Viertel sind drei Viertel. Passt genau."
+            },
+            {
+              "wer": "Chloe",
+              "text": "Und das Mehl: Wir haben noch zwei Drittel von der Packung. Wir brauchen eine halbe Packung."
+            },
+            {
+              "wer": "Ben",
+              "text": "Drittel und Halbe … der gemeinsame Nenner ist 6. Zwei Drittel sind vier Sechstel, eine Hälfte sind drei Sechstel."
+            },
+            {
+              "wer": "Chloe",
+              "text": "Vier Sechstel minus drei Sechstel – ein Sechstel bleibt übrig."
+            },
+            {
+              "wer": "Ben",
+              "text": "Für den nächsten Pfannkuchen-Tag reicht das nicht. Wir schreiben Mehl auf die Einkaufsliste."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "1/2 + 1/4 = ? Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "3/4  []       2/6  []       1/8  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Rechne mit."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Milch und Wasser: #1/2# + #1/4# = ___",
+            "Mehl: #2/3# − #1/2# = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Rezept-Detektive: Sucht ein Rezept mit Bruch-Mengen (½, ¼, ⅓). Rechnet aus, wie viel man für die doppelte Menge braucht – oder was von einer Packung übrig bleibt."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Gleichnamig machen",
+          "punkte": [
+            "kgV der Nenner",
+            "beide Brüche erweitern",
+            "Zähler rechnen",
+            "kürzen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "#1/2# + #5/6# = ___",
+            "#3/4# − #1/12# = ___",
+            "#1/4# + #5/8# = ___",
+            "#1/4# + #5/12# = ___",
+            "#1/2# − #1/8# = ___",
+            "#3/4# − #3/8# = ___",
+            "#1/3# + #3/4# = ___",
+            "#1/2# + #2/3# = ___",
+            "#2/3# + #2/5# = ___",
+            "#2/5# + #5/6# = ___",
+            "#3/4# + #3/10# = ___",
+            "#1/4# + #5/6# = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Sami fährt #2/5# des Schulwegs mit dem Bus und #1/3# mit der Bahn. Den Rest geht Sami zu Fuß. Welcher Teil ist das?   ___",
+            "#7/12# − #1/8#   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "#1/2# + #2/5# = ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Tom rechnet: 1/2 + 1/3 = 2/5. Erkläre seinen Fehler und rechne richtig."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Tom hat …",
+            "Man darf nicht …",
+            "Richtig ist: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich mache Brüche gleichnamig (mit dem kgV als Nenner), addiere oder subtrahiere sie und kürze das Ergebnis.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich mache Brüche gleichnamig (mit dem kgV als Nenner), addiere oder subtrahiere sie und kürze das Ergebnis.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Pizza teilen“ – Ben isst 1/2 Pizza, Lea isst 1/3 von einer gleich großen Pizza. Wie viel ist das zusammen? Halbe und Drittel kann man nicht direkt zusammenzählen. Schneidet man beide Pizzen in Sechstel, geht es: 3/6 + 2/6 = 5/6.",
+          "Fit für das Kapitel (10 Min.): Aufgaben 1 und 2 – Wiederholung aus früheren Kapiteln und Modulen, allein und ohne Hilfe. Kurz vergleichen.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): 1/2 + 1/4 · 1/3 + 1/6 Im Heft: Aufgabe 3.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 4 bis 10 nach Stufe; Übungspäckchen (Aufgabe 11) und Plus (Aufgabe 12) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 13): 1/2 + 2/5 = ? Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 14) als Hausaufgabe."
+        ],
+        "hintergrund": "gleichnamig machen: Brüche gleichnamig machen heißt: Sie auf denselben Nenner erweitern. Der kleinste gemeinsame Nenner ist das kgV der Nenner. Dann rechnest du nur mit den Zählern. 1) Gemeinsamen Nenner suchen (kgV der Nenner). 2) Beide Brüche erweitern. 3) Zähler addieren oder subtrahieren, der Nenner bleibt. 4) Das Ergebnis kürzen. Im Unterricht: Bruchstreifen übereinanderlegen: Erst wenn beide in gleich große Stücke geschnitten sind, kann man zählen. Den typischen Fehler 1/2 + 1/3 = 2/5 am Streifen widerlegen: 2/5 ist sogar weniger als 1/2.",
+        "differenzierung": {
+          "leichter": "Basis: Ein Nenner ist ein Vielfaches des anderen. Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Bruchstreifen übereinanderlegen: Erst wenn beide in gleich große Stücke geschnitten sind, kann man zählen. Den typischen Fehler 1/2 + 1/3 = 2/5 am Streifen widerlegen: 2/5 ist sogar weniger als 1/2.",
+          "Spiel: Bruch-Memory: Paare finden, die zusammen 1 ergeben (z. B. 1/3 und 4/6)."
+        ],
+        "material": "Bruchstreifen, Vielfachen-Listen",
+        "loesungen": [
+          "1) a) 2/3 · b) 3/8 · c) 3/4 · d) 7/8 · e) 4/7 · f) 6/8 = 3/4",
+          "2) a) 40 · b) 3",
+          "3) a) 2/4 + 1/4 = 3/4 · b) 2/6 + 1/6 = 3/6 = 1/2 · c) 4/10 + 7/10 = 11/10 · d) 9/12 − 7/12 = 2/12 = 1/6",
+          "4) a) 2/4 − 1/4 = 1/4 · b) 6/8 + 3/8 = 9/8 · c) 6/8 − 5/8 = 1/8 · d) 3/9 − 1/9 = 2/9 · e) 2/10 + 7/10 = 9/10 · f) 6/9 − 5/9 = 1/9 · g) 6/9 + 1/9 = 7/9 · h) 4/8 + 3/8 = 7/8",
+          "5) a) 4/8 + 3/8 = 7/8 · b) 3/4 − 2/4 = 1/4 · c) 4/10 + 3/10 = 7/10 · d) 6/9 + 8/9 = 14/9 · e) 6/9 − 4/9 = 2/9 · f) 3/6 + 1/6 = 4/6 = 2/3",
+          "6) a) 4/12 + 3/12 = 7/12 · b) 9/12 − 8/12 = 1/12 · c) 10/12 + 3/12 = 13/12 · d) 5/20 + 14/20 = 19/20 · e) 5/15 + 6/15 = 11/15 · f) 5/10 − 4/10 = 1/10",
+          "7) a) 3/12 + 2/12 = 5/12 · b) 8/12 − 3/12 = 5/12 · c) 2/4 + 1/4 = 3/4 · d) 5/6 − 2/6 = 3/6 = 1/2",
+          "8) 3/4",
+          "9) a) 2/4 + 1/4 = 3/4 l · b) 4/6 − 3/6 = 1/6 Packung",
+          "10) mündlich – eigene Lösungen",
+          "11) a) 3/6 + 5/6 = 8/6 = 4/3 · b) 9/12 − 1/12 = 8/12 = 2/3 · c) 2/8 + 5/8 = 7/8 · d) 3/12 + 5/12 = 8/12 = 2/3 · e) 4/8 − 1/8 = 3/8 · f) 6/8 − 3/8 = 3/8 · g) 4/12 + 9/12 = 13/12 · h) 3/6 + 4/6 = 7/6 · i) 10/15 + 6/15 = 16/15 · j) 12/30 + 25/30 = 37/30 · k) 15/20 + 6/20 = 21/20 · l) 3/12 + 10/12 = 13/12",
+          "12) a) 2/5 + 1/3 = 11/15; zu Fuß: 4/15 · b) 14/24 − 3/24 = 11/24",
+          "13) 5/10 + 4/10 = 9/10",
+          "14) eigene Erklärung – auf Fachwörter und ein Beispiel achten"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m8-bruchteile-zahlen",
+    "bereich": "mathe",
+    "thema": "brueche",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Brüche",
+      "Bruchteil",
+      "multiplizieren",
+      "dividieren",
+      "Modul 8"
+    ],
+    "bild": "icon:chart-pie",
+    "de": {
+      "titel": "Bruchteile von Zahlen – und Brüche mal und geteilt",
+      "untertitel": "Modul 8, Lektion 6",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Im Sportladen steht: „1/4 billiger auf alle Schuhe!“ Die Schuhe kosten 80 €. Wie viel spart man? 1/4 von 80 € = 80 : 4 = 20 €. Und was zahlt man noch? 3/4 von 80 € = 80 : 4 · 3 = 60 €."
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Bruchteil",
+              "text": "Ein Bruchteil einer Zahl ist zum Beispiel 3/4 von 80. Du teilst durch den Nenner und nimmst das Ergebnis mal den Zähler: 80 : 4 · 3 = 60."
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Bruchteil einer Zahl",
+                  "text": "„3/4 von 80“: Teile durch den Nenner (in 4 Teile), dann mal den Zähler (3 Teile nehmen).  Beispiel: 3/4 von 80 = 80 : 4 · 3 = 20 · 3 = 60"
+                },
+                {
+                  "titel": "„von“ heißt mal",
+                  "text": "„2/3 von 30“ ist dasselbe wie 2/3 · 30. Du kannst auch zuerst mal und dann geteilt rechnen.  Beispiel: 2/3 · 30 = 30 : 3 · 2 = 20 (oder 2 · 30 : 3 = 20)"
+                },
+                {
+                  "titel": "Brüche mal und geteilt",
+                  "text": "Mal: Zähler mal Zähler, Nenner mal Nenner. Geteilt bei gleichem Nenner: Zähler durch Zähler – denn es ist die Frage „Wie oft passt das eine ins andere?“.  Beispiel: 2/5 · 3/5 = 6/25 · 4/5 : 2/5 = 4 : 2 = 2"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "bruchbilder",
+              "items": [
+                {
+                  "form": "menge",
+                  "anzahl": 12,
+                  "gruppen": 4,
+                  "gefaerbt": 3,
+                  "bruch": "3/4",
+                  "text": "12 : 4 = 3, dann 3 · 3 = 9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "Bruchteil von einer Zahl: durch den Nenner teilen, mal den Zähler nehmen.",
+                "„von“ bedeutet „mal“.",
+                "Bruch mal Bruch: Zähler mal Zähler, Nenner mal Nenner.",
+                "Gleichnamige Brüche geteilt: Zähler durch Zähler."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Bei „von“: die Zahl durch den Nenner teilen.",
+                "2. Das Ergebnis mal den Zähler.",
+                "3. Bei Bruch mal Bruch: oben mal oben, unten mal unten.",
+                "4. Kürzen, wenn es geht."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "Bruchteil – fraction d’une quantité",
+                "multiplizieren – multiplier",
+                "dividieren – diviser"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: 2/5 von 45 €",
+              "punkte": [
+                "45 : 5 = 9",
+                "9 · 2 = 18",
+                "Ergebnis: 18 €"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Geteilt mit gleichem Nenner",
+              "text": "Aufgabe: 6/7 : 2/7",
+              "punkte": [
+                "Gleiche Nenner: Wie oft passen 2 Siebtel in 6 Siebtel?",
+                "6 : 2 = 3",
+                "Ergebnis: 6/7 : 2/7 = 3"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "#2/3# von 6 = 6 : 3 · 2 = 4",
+            "#5/6# von 60 = 60 : 6 · 5 = 50",
+            "#1/2# von 8 = 8 : 2 · 1 = 4",
+            "#1/3# von 21 = 21 : 3 · 1 = 7",
+            "#1/2# von 20 = 20 : 2 · 1 = 10",
+            "#2/5# von 15 = 15 : 5 · 2 = 6"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "#1/3# von 27   ___",
+            "#3/4# von 20   ___",
+            "#3/4# von 24 = ___",
+            "#5/6# von 18 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "#3/8# von 16 = ___",
+            "#1/8# von 40 = ___",
+            "#2/5# von 50 = ___",
+            "#3/10# von 20 = ___",
+            "#2/5# von 20 = ___",
+            "#5/8# von 16 = ___",
+            "#5/6# von 24 = ___",
+            "#3/10# von 100 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "Erst durch den Nenner, dann mal den Zähler."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "#1/5# von 40   ___",
+            "#2/3# von 12   ___",
+            "#3/10# von 50   ___",
+            "#4/5# von 10 = ___",
+            "#1/6# von 12 = ___",
+            "#3/5# von 30 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "#3/8# von 64 km   ___",
+            "#3/5# · #2/5#   ___",
+            "#9/10# : #3/10#   ___",
+            "#7/10# von 260 km fährt der Zug durch Tunnel. Wie viel ist das?   ___",
+            "#1/10# von 210 € gibt Lou für Kleidung aus. Wie viel ist das?   ___",
+            "#1/2# von 60 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Färbe den Bruchteil. Wie viele sind es?"
+        },
+        {
+          "art": "bruchbilder",
+          "spalten": 3,
+          "items": [
+            {
+              "form": "menge",
+              "anzahl": 15,
+              "gruppen": 3,
+              "label": "a) 2/3 von 15",
+              "text": ""
+            },
+            {
+              "form": "menge",
+              "anzahl": 20,
+              "gruppen": 5,
+              "label": "b) 3/5 von 20",
+              "text": ""
+            },
+            {
+              "form": "menge",
+              "anzahl": 18,
+              "gruppen": 6,
+              "label": "c) 5/6 von 18",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: Ein Drittel billiger",
+          "text": "Modegeschäft · Schlussverkauf. Mia ist im Schlussverkauf. Auf den Schildern stehen Brüche statt Prozente."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Mia",
+              "text": "Auf dem Schild steht: ein Drittel billiger. Die Jacke kostet 90 Euro."
+            },
+            {
+              "wer": "Verkäuferin",
+              "text": "Ein Drittel von 90 Euro – wie viel ist das?"
+            },
+            {
+              "wer": "Mia",
+              "text": "90 durch 3 sind 30 Euro Rabatt. Dann zahle ich noch 60 Euro."
+            },
+            {
+              "wer": "Verkäuferin",
+              "text": "Oder du rechnest direkt zwei Drittel von 90: 90 durch 3, mal 2."
+            },
+            {
+              "wer": "Mia",
+              "text": "Auch 60. Und die Schuhe kosten 80 Euro. Hier steht: Sie zahlen nur drei Viertel."
+            },
+            {
+              "wer": "Verkäuferin",
+              "text": "Drei Viertel heißt: 80 durch 4, mal 3."
+            },
+            {
+              "wer": "Mia",
+              "text": "60 Euro. Für beides zahle ich 120 statt 170 Euro – 50 Euro gespart."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "1/3 von 90 € = ? Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "30 €  []       45 €  []       270 €  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Lies mit und ergänze."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Rabatt: 90 : 3 = ___ €",
+            "Preis: 2/3 von 90 € = ___ €",
+            "Schuhe: 3/4 von 80 € = 80 : 4 · 3 = ___ €",
+            "Gespart: 170 € − 120 € = ___ €"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Prospekt-Check: Schreibt drei Rabatt-Schilder mit Brüchen („ein Viertel billiger“ …). Die anderen rechnen den neuen Preis. Welches Angebot spart am meisten?"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Bruchteil",
+          "punkte": [
+            "durch den Nenner",
+            "mal den Zähler",
+            "„von“ heißt mal"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "#1/5# von 20 = ___",
+            "#3/8# von 24 = ___",
+            "#2/3# von 24 = ___",
+            "#3/10# von 90 = ___",
+            "#5/6# von 54 = ___",
+            "#7/8# von 24 = ___",
+            "#5/8# von 32 = ___",
+            "#3/4# von 60 = ___",
+            "#1/4# von 32 € gibt Lou für Kleidung aus. Wie viel ist das?   ___",
+            "#1/10# von 150 = ___",
+            "#2/3# der Klasse (15 Personen) fährt mit dem Bus. Wie viel ist das?   ___",
+            "#1/2# von 36 = ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "In einer Klasse sind 24 Jugendliche. #5/8# kommen mit dem Bus, #1/6# mit dem Rad, der Rest zu Fuß. Wie viele sind das jeweils?   ___",
+            "#3/4# einer Zahl sind 36. Wie heißt die Zahl?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "#4/5# von 35 = ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Erkläre, warum „ein Drittel billiger“ dasselbe ist wie „zwei Drittel vom Preis zahlen“."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Der ganze Preis sind …",
+            "Wenn ein Drittel wegfällt, …",
+            "Darum …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich berechne Bruchteile von Zahlen und Größen. Ich multipliziere und dividiere Brüche mit gleichem Nenner.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich berechne Bruchteile von Zahlen und Größen. Ich multipliziere und dividiere Brüche mit gleichem Nenner.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Rabatt im Sportladen“ – Im Sportladen steht: „1/4 billiger auf alle Schuhe!“ Die Schuhe kosten 80 €. Wie viel spart man? 1/4 von 80 € = 80 : 4 = 20 €. Und was zahlt man noch? 3/4 von 80 € = 80 : 4 · 3 = 60 €.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): 1/3 von 27 · 3/4 von 20 Im Heft: Aufgabe 1.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 2 bis 8 nach Stufe; Übungspäckchen (Aufgabe 9) und Plus (Aufgabe 10) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 11): 4/5 von 35 = ? Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 12) als Hausaufgabe."
+        ],
+        "hintergrund": "Bruchteil: Ein Bruchteil einer Zahl ist zum Beispiel 3/4 von 80. Du teilst durch den Nenner und nimmst das Ergebnis mal den Zähler: 80 : 4 · 3 = 60. Bruchteil von einer Zahl: durch den Nenner teilen, mal den Zähler nehmen. „von“ bedeutet „mal“. Bruch mal Bruch: Zähler mal Zähler, Nenner mal Nenner. Gleichnamige Brüche geteilt: Zähler durch Zähler. Im Unterricht: Bruchteile mit echten Mengen legen (24 Plättchen in Achtel teilen). „von heißt mal“ als Merkkarte. Bei Unsicherheit immer zuerst den Stammbruch (1/8 von 24) ausrechnen lassen.",
+        "differenzierung": {
+          "leichter": "Basis: Erst durch den Nenner, dann mal den Zähler. Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Bruchteile mit echten Mengen legen (24 Plättchen in Achtel teilen). „von heißt mal“ als Merkkarte. Bei Unsicherheit immer zuerst den Stammbruch (1/8 von 24) ausrechnen lassen.",
+          "Spiel: Laden-Spiel: Preisschilder mit „1/3 billiger“, „1/4 gratis“ … Wer rechnet am schnellsten den neuen Preis aus?"
+        ],
+        "material": "Plättchen, Preisschilder",
+        "loesungen": [
+          "1) a) 9 · b) 15 · c) 24 : 4 · 3 = 18 · d) 18 : 6 · 5 = 15",
+          "2) a) 16 : 8 · 3 = 6 · b) 40 : 8 · 1 = 5 · c) 50 : 5 · 2 = 20 · d) 20 : 10 · 3 = 6 · e) 20 : 5 · 2 = 8 · f) 16 : 8 · 5 = 10 · g) 24 : 6 · 5 = 20 · h) 100 : 10 · 3 = 30",
+          "3) a) 8 · b) 8 · c) 15 · d) 10 : 5 · 4 = 8 · e) 12 : 6 · 1 = 2 · f) 30 : 5 · 3 = 18",
+          "4) a) 24 km · b) 6/25 · c) 3 · d) 260 : 10 · 7 = 182 · e) 210 : 10 · 1 = 21 · f) 60 : 2 · 1 = 30",
+          "5) a) 15 : 3 = 5, · 2 = 10 · b) 20 : 5 = 4, · 3 = 12 · c) 18 : 6 = 3, · 5 = 15",
+          "6) 30 €",
+          "7) a) 30 · b) 60 · c) 60 · d) 50",
+          "8) mündlich – eigene Lösungen",
+          "9) a) 20 : 5 · 1 = 4 · b) 24 : 8 · 3 = 9 · c) 24 : 3 · 2 = 16 · d) 90 : 10 · 3 = 27 · e) 54 : 6 · 5 = 45 · f) 24 : 8 · 7 = 21 · g) 32 : 8 · 5 = 20 · h) 60 : 4 · 3 = 45 · i) 32 : 4 · 1 = 8 · j) 150 : 10 · 1 = 15 · k) 15 : 3 · 2 = 10 · l) 36 : 2 · 1 = 18",
+          "10) a) Bus 15, Rad 4, zu Fuß 5 · b) 36 : 3 · 4 = 48",
+          "11) 28",
+          "12) eigene Erklärung – auf Fachwörter und ein Beispiel achten"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m8-bruch-dezimalzahl-prozent",
+    "bereich": "mathe",
+    "thema": "brueche",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Brüche",
+      "Dezimalzahl",
+      "Prozent",
+      "Hundertstel",
+      "umwandeln",
+      "Modul 8"
+    ],
+    "bild": "icon:chart-pie",
+    "de": {
+      "titel": "Bruch, Dezimalzahl, Prozent – drei Schreibweisen",
+      "untertitel": "Modul 8, Lektion 7",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Im Schaufenster stehen drei Schilder: „Halber Preis!“, „−50 %“ und „Alles × 0,5“. Alle drei sagen dasselbe: 1/2 = 0,5 = 50 %."
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "drei Schreibweisen",
+              "text": "Ein Anteil kann als Bruch, als Dezimalzahl oder in Prozent geschrieben werden: 3/4 = 0,75 = 75 %. Prozent heißt „von hundert“."
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Bruch → Dezimalzahl",
+                  "text": "Rechne Zähler geteilt durch Nenner. Oder erweitere auf 10, 100 oder 1.000.  Beispiel: 3/4 = 3 : 4 = 0,75 · 3/4 = 75/100 = 0,75"
+                },
+                {
+                  "titel": "Dezimalzahl – Prozent",
+                  "text": "Prozent heißt „von hundert“. Dezimalzahl → Prozent: mal 100. Prozent → Dezimalzahl: geteilt durch 100.  Beispiel: 0,75 = 75 % · 8 % = 0,08"
+                },
+                {
+                  "titel": "Prozent → Bruch",
+                  "text": "Schreib die Prozentzahl über 100 und kürze.  Beispiel: 40 % = 40/100 = 2/5"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "hunderterfeld",
+              "felder": [
+                {
+                  "gefaerbt": 75,
+                  "text": "3/4 = 0,75 = 75 %"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "Bruch → Dezimalzahl: Zähler : Nenner.",
+                "Dezimalzahl → Prozent: mal 100.",
+                "Prozent → Bruch: über 100 schreiben und kürzen.",
+                "Wichtige Paare: 1/2 = 0,5 = 50 %, 1/4 = 0,25 = 25 %, 3/4 = 0,75 = 75 %, 1/5 = 0,2 = 20 %, 1/10 = 0,1 = 10 %."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Was ist gegeben: Bruch, Dezimalzahl oder Prozent?",
+                "2. Bruch → Dezimalzahl: Zähler : Nenner.",
+                "3. Dezimalzahl → Prozent: mal 100 (Komma zwei Stellen nach rechts).",
+                "4. Prozent → Bruch: über 100 schreiben und kürzen."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "Dezimalzahl – nombre décimal",
+                "Prozent – pour cent",
+                "Hundertstel – centième",
+                "umwandeln – convertir"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: 3/5 als Dezimalzahl und in Prozent",
+              "punkte": [
+                "3/5 = 6/10 = 0,6",
+                "0,6 · 100 = 60",
+                "Ergebnis: 3/5 = 0,6 = 60 %"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Prozent zu Bruch",
+              "text": "Aufgabe: 35 % als gekürzter Bruch",
+              "punkte": [
+                "35 % = 35/100",
+                "Kürzen mit 5: 7/20",
+                "Ergebnis: 35 % = 7/20 = 0,35"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "0,5 als Bruch (gekürzt) und in Prozent?   1/2 = 50 %",
+            "50 % als Bruch (gekürzt) und als Dezimalzahl?   1/2 = 0,5",
+            "0,75 als Bruch (gekürzt) und in Prozent?   3/4 = 75 %",
+            "0,4 als Bruch (gekürzt) und in Prozent?   2/5 = 40 %",
+            "#3/4# als Dezimalzahl und in Prozent?   0,75 = 75 %",
+            "#3/10# als Dezimalzahl und in Prozent?   0,3 = 30 %"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "#1/2# in Prozent?   ___",
+            "0,3 in Prozent?   ___",
+            "0,25 als Bruch (gekürzt) und in Prozent?   ___",
+            "70 % als Bruch (gekürzt) und als Dezimalzahl?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "40 % als Bruch (gekürzt) und als Dezimalzahl?   ___",
+            "75 % als Bruch (gekürzt) und als Dezimalzahl?   ___",
+            "10 % als Bruch (gekürzt) und als Dezimalzahl?   ___",
+            "20 % als Bruch (gekürzt) und als Dezimalzahl?   ___",
+            "#1/5# als Dezimalzahl und in Prozent?   ___",
+            "0,7 als Bruch (gekürzt) und in Prozent?   ___",
+            "0,1 als Bruch (gekürzt) und in Prozent?   ___",
+            "#3/5# als Dezimalzahl und in Prozent?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "Prozent heißt „von hundert“."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "#1/4# als Dezimalzahl?   ___",
+            "0,7 in Prozent?   ___",
+            "50 % als Bruch?   ___",
+            "#1/4# als Dezimalzahl und in Prozent?   ___",
+            "0,3 als Bruch (gekürzt) und in Prozent?   ___",
+            "#2/5# als Dezimalzahl und in Prozent?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "#3/20# als Dezimalzahl und in Prozent?   ___",
+            "0,08 in Prozent?   ___",
+            "64 % als gekürzter Bruch?   ___",
+            "36 % als Bruch (gekürzt) und als Dezimalzahl?   ___",
+            "#1/8# als Dezimalzahl und in Prozent?   ___",
+            "5 % als Bruch (gekürzt) und als Dezimalzahl?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Schreib jedes Bild auf drei Arten: als Bruch (gekürzt), als Dezimalzahl und in Prozent."
+        },
+        {
+          "art": "hunderterfeld",
+          "spalten": 4,
+          "felder": [
+            {
+              "gefaerbt": 20,
+              "label": "a)"
+            },
+            {
+              "gefaerbt": 40,
+              "label": "b)"
+            },
+            {
+              "gefaerbt": 25,
+              "label": "c)"
+            },
+            {
+              "gefaerbt": 60,
+              "label": "d)"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: 15 von 25",
+          "text": "Klassenzimmer · Plakat gestalten. Amira und Noah haben in der Klasse eine Umfrage gemacht. Jetzt gestalten sie ein Plakat mit dem Ergebnis."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Amira",
+              "text": "Bei unserer Umfrage haben 15 von 25 gesagt, dass sie ein Haustier haben."
+            },
+            {
+              "wer": "Noah",
+              "text": "Als Bruch: 15 Fünfundzwanzigstel. Gekürzt durch 5: drei Fünftel."
+            },
+            {
+              "wer": "Amira",
+              "text": "Für das Plakat brauche ich Prozent. Drei Fünftel sind sechs Zehntel, also 0,6."
+            },
+            {
+              "wer": "Noah",
+              "text": "0,6 mal 100 – das sind 60 Prozent."
+            },
+            {
+              "wer": "Amira",
+              "text": "Und 5 von 25 haben eine Katze."
+            },
+            {
+              "wer": "Noah",
+              "text": "Ein Fünftel. Das sind 0,2 – also 20 Prozent."
+            },
+            {
+              "wer": "Amira",
+              "text": "Dann schreibe ich aufs Plakat: 60 Prozent haben ein Haustier, 20 Prozent eine Katze."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "3/5 = … Prozent? Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "60 %  []       35 %  []       3,5 %  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Lies mit und ergänze."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Haustier: 15 von 25 = ___ = ___ = ___ %",
+            "Katze: 5 von 25 = ___ = ___ = ___ %"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Macht in der Klasse eine Mini-Umfrage mit einer Ja/Nein-Frage (z. B. „Fährst du mit dem Bus?“). Schreibt das Ergebnis als Bruch, Dezimalzahl und Prozent auf ein Plakat."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Umwandeln",
+          "punkte": [
+            "Bruch → Zähler : Nenner",
+            "Dezimalzahl → mal 100",
+            "Prozent → über 100, kürzen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "0,2 als Bruch (gekürzt) und in Prozent?   ___",
+            "#7/10# als Dezimalzahl und in Prozent?   ___",
+            "0,6 als Bruch (gekürzt) und in Prozent?   ___",
+            "#1/10# als Dezimalzahl und in Prozent?   ___",
+            "25 % als Bruch (gekürzt) und als Dezimalzahl?   ___",
+            "#1/2# als Dezimalzahl und in Prozent?   ___",
+            "#1/20# als Dezimalzahl und in Prozent?   ___",
+            "#9/25# als Dezimalzahl und in Prozent?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Ordne von klein nach groß: #2/5#; 0,45; 38 %   ___",
+            "Bei einer Umfrage sagen 18 von 24 Jugendlichen „ja“. Schreib den Anteil als Bruch, Dezimalzahl und Prozent.   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "#1/5# als Dezimalzahl und in Prozent?   ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Erkläre, wie man 0,35 in Prozent und als gekürzten Bruch schreibt."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "0,35 mal 100 …",
+            "Als Bruch: …",
+            "Gekürzt: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich wandle Brüche in Dezimalzahlen und Prozente um und umgekehrt.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Wiederholung zum Kapitel „Brüche“ – gemischt aus allen Lektionen. Was kannst du schon sicher?"
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "#5/6# + #3/8# = ___",
+            "#1/3# von 18 = ___",
+            "#1/10# als Dezimalzahl und in Prozent?   ___",
+            "#1/2# + #2/3# = ___",
+            "#5/6# der Klasse (180 Personen) fährt mit dem Bus. Wie viel ist das?   ___",
+            "12,5 % als Bruch (gekürzt) und als Dezimalzahl?   ___",
+            "#3/4# − #1/6# = ___",
+            "#1/2# von 4 km fährt der Zug durch Tunnel. Wie viel ist das?   ___",
+            "36 % als Bruch (gekürzt) und als Dezimalzahl?   ___"
+          ],
+          "buchstaben": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich wandle Brüche in Dezimalzahlen und Prozente um und umgekehrt.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Drei Schilder“ – Im Schaufenster stehen drei Schilder: „Halber Preis!“, „−50 %“ und „Alles × 0,5“. Alle drei sagen dasselbe: 1/2 = 0,5 = 50 %.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): 1/2 in Prozent? · 0,3 in Prozent? Im Heft: Aufgabe 1.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 2 bis 8 nach Stufe; Übungspäckchen (Aufgabe 9) und Plus (Aufgabe 10) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 11): 1/5 als Dezimalzahl und in Prozent? Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 12) als Hausaufgabe.",
+          "Wiederholung zum Kapitel (Aufgabe 13): gemischte Aufgaben aus dem ganzen Kapitel – vor der Klassenarbeit oder als Hausaufgabe."
+        ],
+        "hintergrund": "drei Schreibweisen: Ein Anteil kann als Bruch, als Dezimalzahl oder in Prozent geschrieben werden: 3/4 = 0,75 = 75 %. Prozent heißt „von hundert“. Bruch → Dezimalzahl: Zähler : Nenner. Dezimalzahl → Prozent: mal 100. Prozent → Bruch: über 100 schreiben und kürzen. Wichtige Paare: 1/2 = 0,5 = 50 %, 1/4 = 0,25 = 25 %, 3/4 = 0,75 = 75 %, 1/5 = 0,2 = 20 %, 1/10 = 0,1 = 10 %. Im Unterricht: Die wichtigsten Paare (Hälfte, Viertel, Fünftel, Zehntel) als Kartenset üben. Das Hunderterfeld aus Modul 4 zeigt Bruch, Dezimalzahl und Prozent gleichzeitig.",
+        "differenzierung": {
+          "leichter": "Basis: Prozent heißt „von hundert“. Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Die wichtigsten Paare (Hälfte, Viertel, Fünftel, Zehntel) als Kartenset üben. Das Hunderterfeld aus Modul 4 zeigt Bruch, Dezimalzahl und Prozent gleichzeitig.",
+          "Spiel: Trio-Memory: Je drei Karten gehören zusammen (Bruch, Dezimalzahl, Prozent). Wer ein Trio findet, darf es behalten."
+        ],
+        "material": "Hunderterfeld, Trio-Kärtchen",
+        "loesungen": [
+          "1) a) 50 % · b) 30 % · c) 1/4 = 25 % · d) 7/10 = 0,7",
+          "2) a) 2/5 = 0,4 · b) 3/4 = 0,75 · c) 1/10 = 0,1 · d) 1/5 = 0,2 · e) 0,2 = 20 % · f) 7/10 = 70 % · g) 1/10 = 10 % · h) 0,6 = 60 %",
+          "3) a) 0,25 · b) 70 % · c) 1/2 · d) 0,25 = 25 % · e) 3/10 = 30 % · f) 0,4 = 40 %",
+          "4) a) 0,15 = 15 % · b) 8 % · c) 16/25 · d) 9/25 = 0,36 · e) 0,125 = 12,5 % · f) 1/20 = 0,05",
+          "5) a) 1/5 = 0,2 = 20 % · b) 2/5 = 0,4 = 40 % · c) 1/4 = 0,25 = 25 % · d) 3/5 = 0,6 = 60 %",
+          "6) 60 %",
+          "7) a) 3/5 / 0,6 / 60 · b) 1/5 / 0,2 / 20",
+          "8) mündlich – eigene Lösungen",
+          "9) a) 1/5 = 20 % · b) 0,7 = 70 % · c) 3/5 = 60 % · d) 0,1 = 10 % · e) 1/4 = 0,25 · f) 0,5 = 50 % · g) 0,05 = 5 % · h) 0,36 = 36 %",
+          "10) a) 38 % < 2/5 (40 %) < 0,45 (45 %) · b) 18/24 = 3/4 = 0,75 = 75 %",
+          "11) 0,2 = 20 %",
+          "12) eigene Erklärung – auf Fachwörter und ein Beispiel achten",
+          "13) a) 20/24 + 9/24 = 29/24 · b) 18 : 3 · 1 = 6 · c) 0,1 = 10 % · d) 3/6 + 4/6 = 7/6 · e) 180 : 6 · 5 = 150 · f) 1/8 = 0,125 · g) 9/12 − 2/12 = 7/12 · h) 4 : 2 · 1 = 2 · i) 9/25 = 0,36"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m8-dreiecke-konstruieren",
+    "bereich": "mathe",
+    "thema": "geometrie",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Dreiecke konstruieren",
+      "konstruieren",
+      "Zirkel",
+      "Geodreieck",
+      "Planfigur (Skizze)",
+      "Modul 8"
+    ],
+    "bild": "icon:triangle",
+    "de": {
+      "titel": "Dreiecke konstruieren",
+      "untertitel": "Modul 8, Lektion 8",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Für eine Skate-Rampe wird ein dreieckiges Brett gebraucht: unten 60 cm, schräg 50 cm, hinten 40 cm. Wie sieht das Dreieck genau aus? Mit Zirkel und Lineal kannst du es klein (6 cm, 5 cm, 4 cm) genau zeichnen – bevor jemand sägt."
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Fit für das Kapitel „Dreiecke konstruieren“ – Wiederholung aus Modul 4: Winkel im Dreieck. Rechne allein, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Zwei Winkel eines Dreiecks: 78° und 36°. Der dritte?   ___",
+            "Zwei Winkel eines Dreiecks: 38° und 110°. Der dritte?   ___",
+            "Zwei Winkel eines Dreiecks: 85° und 44°. Der dritte?   ___",
+            "Ein Winkel misst 169°. Spitz, recht oder stumpf?   ___",
+            "Ein Winkel misst 113°. Spitz, recht oder stumpf?   ___",
+            "Ein Winkel misst 154°. Spitz, recht oder stumpf?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Konstruieren",
+              "text": "Konstruieren heißt: eine Figur mit Lineal, Geodreieck und Zirkel genau nach Maßen zeichnen. Für ein Dreieck brauchst du drei passende Angaben: drei Seiten (SSS), zwei Seiten und den Winkel dazwischen (SWS) oder eine Seite und die zwei Winkel an ihr (WSW)."
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Erst die Planfigur",
+                  "text": "Zeichne zuerst eine Skizze aus der Hand. Beschrifte die Ecken (A, B, C) und schreib die gegebenen Maße dazu.  Beispiel: Skizze: Dreieck ABC, unten c = 6 cm, links b = 5 cm, rechts a = 4 cm"
+                },
+                {
+                  "titel": "Drei Seiten (SSS): mit dem Zirkel",
+                  "text": "Zeichne die erste Seite. Stich den Zirkel in die eine Ecke und schlag einen Kreisbogen mit der zweiten Länge. Dann von der anderen Ecke mit der dritten Länge. Wo sich die Bögen schneiden, liegt die dritte Ecke.  Beispiel: c = 6 cm zeichnen; Bogen um A mit 5 cm, Bogen um B mit 4 cm → Schnittpunkt C"
+                },
+                {
+                  "titel": "Mit Winkeln (SWS und WSW)",
+                  "text": "SWS: Seite zeichnen, Winkel mit dem Geodreieck antragen, zweite Seite abmessen, Ecken verbinden. WSW: Seite zeichnen, an beiden Enden einen Winkel antragen – wo sich die Schenkel treffen, liegt die dritte Ecke.  Beispiel: SWS: c = 5 cm, α = 60°, b = 4 cm · WSW: c = 6 cm, α = 50°, β = 70°"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "geo",
+              "felder": [
+                {
+                  "b": 80,
+                  "h": 44,
+                  "elemente": [
+                    {
+                      "t": "vieleck",
+                      "punkte": [
+                        [
+                          8,
+                          38
+                        ],
+                        [
+                          68,
+                          38
+                        ],
+                        [
+                          44,
+                          6
+                        ]
+                      ],
+                      "ecken": [
+                        "A",
+                        "B",
+                        "C"
+                      ],
+                      "seiten": [
+                        "c = 6 cm",
+                        "a = 4 cm",
+                        "b = 5 cm"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Erst c zeichnen. Dann um A einen Kreis mit b, um B einen Kreis mit a. Wo sie sich schneiden: C."
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "Zuerst eine Planfigur mit allen Maßen.",
+                "Dann genau konstruieren: SSS mit dem Zirkel, SWS und WSW mit dem Geodreieck.",
+                "Ein Dreieck gibt es nur, wenn die zwei kürzeren Seiten zusammen länger sind als die längste.",
+                "Die drei Winkel ergeben zusammen immer 180°."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Planfigur aus der Hand zeichnen und beschriften.",
+                "2. Mit der gegebenen Seite beginnen (meistens unten).",
+                "3. SSS: zwei Kreisbögen · SWS und WSW: Winkel antragen.",
+                "4. Dritte Ecke finden, verbinden, beschriften.",
+                "5. Nachmessen: Stimmen die Maße?"
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "konstruieren – construire",
+                "Zirkel – compas",
+                "Geodreieck – équerre-rapporteur",
+                "Planfigur (Skizze) – figure à main levée",
+                "Kreisbogen – arc de cercle"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: Konstruiere das Dreieck ABC mit c = 6 cm, b = 5 cm und a = 4 cm.",
+              "punkte": [
+                "Planfigur zeichnen.",
+                "Strecke AB = 6 cm zeichnen.",
+                "Zirkel auf 5 cm, Einstich in A, Bogen schlagen.",
+                "Zirkel auf 4 cm, Einstich in B, Bogen schlagen.",
+                "Schnittpunkt = C. Mit A und B verbinden.",
+                "Ergebnis: Das Dreieck ABC ist fertig. Probe: alle Seiten nachmessen."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Geht das überhaupt?",
+              "text": "Aufgabe: Kann man ein Dreieck mit 3 cm, 4 cm und 8 cm zeichnen?",
+              "punkte": [
+                "Die zwei kürzeren Seiten: 3 + 4 = 7",
+                "Die längste Seite: 8",
+                "7 < 8 – die Bögen treffen sich nicht.",
+                "Ergebnis: Nein, dieses Dreieck gibt es nicht."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "Kann man ein Dreieck mit 3 cm, 3 cm und 7 cm zeichnen?   Nein: 3 + 3 = 6 < 7",
+            "Kann man ein Dreieck mit 3 cm, 2 cm und 3 cm zeichnen?   Ja: 2 + 3 = 5 > 3",
+            "Ein Dreieck hat die Winkel 65° und 48°. Wie groß ist der dritte Winkel?   180° − 65° − 48° = 67°",
+            "Kann man ein Dreieck mit 5 cm, 5 cm und 12 cm zeichnen?   Nein: 5 + 5 = 10 < 12",
+            "Ein Dreieck hat die Winkel 39° und 41°. Wie groß ist der dritte Winkel?   180° − 39° − 41° = 100°",
+            "Kann man ein Dreieck mit 6 cm, 9 cm und 18 cm zeichnen?   Nein: 6 + 9 = 15 < 18"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Ein Dreieck hat α = 50° und β = 60°. Wie groß ist γ?   ___",
+            "Gibt es ein Dreieck mit 5 cm, 5 cm und 5 cm?   ___",
+            "Kann man ein Dreieck mit 9 cm, 2 cm und 10 cm zeichnen?   ___",
+            "Kann man ein Dreieck mit 2 cm, 6 cm und 7 cm zeichnen?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Ein Dreieck hat die Winkel 55° und 40°. Wie groß ist der dritte Winkel?   ___",
+            "Kann man ein Dreieck mit 4 cm, 9 cm und 10 cm zeichnen?   ___",
+            "Ein Dreieck hat die Winkel 77° und 39°. Wie groß ist der dritte Winkel?   ___",
+            "Ein Dreieck hat die Winkel 66° und 75°. Wie groß ist der dritte Winkel?   ___",
+            "Ein Dreieck hat die Winkel 45° und 27°. Wie groß ist der dritte Winkel?   ___",
+            "Kann man ein Dreieck mit 7 cm, 9 cm und 4 cm zeichnen?   ___",
+            "Kann man ein Dreieck mit 9 cm, 7 cm und 11 cm zeichnen?   ___",
+            "Ein Dreieck hat die Winkel 33° und 55°. Wie groß ist der dritte Winkel?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "Erst die Planfigur!"
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Konstruiere: c = 5 cm, b = 4 cm, a = 3 cm (SSS). Miss den Winkel bei C.   ___",
+            "Konstruiere: c = 6 cm, α = 40°, β = 60° (WSW). Wie groß ist γ?   ___",
+            "Gibt es ein Dreieck mit 2 cm, 3 cm und 6 cm?   ___",
+            "Kann man ein Dreieck mit 4 cm, 2 cm und 8 cm zeichnen?   ___",
+            "Ein Dreieck hat die Winkel 57° und 85°. Wie groß ist der dritte Winkel?   ___",
+            "Ein Dreieck hat die Winkel 51° und 71°. Wie groß ist der dritte Winkel?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Konstruiere: c = 7 cm, α = 45°, b = 5 cm (SWS). Miss die Seite a.   ___",
+            "Konstruiere ein gleichseitiges Dreieck mit 6 cm Seitenlänge. Wie groß ist jeder Winkel?   ___",
+            "Gibt es ein Dreieck mit α = 100° und β = 90°?   ___",
+            "Ein Dreieck hat die Winkel 25° und 71°. Wie groß ist der dritte Winkel?   ___",
+            "Kann man ein Dreieck mit 5 cm, 6 cm und 11 cm zeichnen?   ___",
+            "Kann man ein Dreieck mit 8 cm, 7 cm und 17 cm zeichnen?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Geht das Dreieck? Prüfe: Die zwei kürzeren Seiten zusammen müssen länger sein als die längste. Konstruiere b) im Karo."
+        },
+        {
+          "art": "geo",
+          "felder": [
+            {
+              "b": 84,
+              "h": 26,
+              "label": "a) 3 cm, 4 cm, 8 cm",
+              "text": "",
+              "elemente": [
+                {
+                  "t": "linie",
+                  "von": [
+                    4,
+                    6
+                  ],
+                  "bis": [
+                    34,
+                    6
+                  ],
+                  "stil": "dick"
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    4,
+                    13
+                  ],
+                  "bis": [
+                    44,
+                    13
+                  ],
+                  "stil": "dick"
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    4,
+                    20
+                  ],
+                  "bis": [
+                    84,
+                    20
+                  ],
+                  "stil": "dick"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "geo",
+          "felder": [
+            {
+              "h": 45,
+              "raster": "karo",
+              "label": "b) c = 6 cm, a = 4 cm, b = 5 cm",
+              "elemente": []
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: Erst zeichnen, dann sägen",
+          "text": "Schreinerei · Schnupperpraktikum. Tom macht ein Schnupperpraktikum in einer Schreinerei. Für ein Eckregal braucht man ein dreieckiges Brett."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Meister",
+              "text": "Für das Eckregal brauchen wir ein dreieckiges Brett: 30, 40 und 50 Zentimeter."
+            },
+            {
+              "wer": "Tom",
+              "text": "Soll ich gleich sägen?"
+            },
+            {
+              "wer": "Meister",
+              "text": "Erst zeichnen. Im Maßstab 1 zu 10: 3, 4 und 5 Zentimeter. Mit dem Zirkel."
+            },
+            {
+              "wer": "Tom",
+              "text": "Unten 5 Zentimeter. Zirkel auf 3, Bogen. Zirkel auf 4, Bogen von der anderen Ecke. Da schneiden sie sich."
+            },
+            {
+              "wer": "Meister",
+              "text": "Miss mal den Winkel oben."
+            },
+            {
+              "wer": "Tom",
+              "text": "Genau 90 Grad! Das passt perfekt in die Zimmerecke."
+            },
+            {
+              "wer": "Meister",
+              "text": "Und ein Brett mit 20, 25 und 50 Zentimetern?"
+            },
+            {
+              "wer": "Tom",
+              "text": "20 plus 25 sind 45 – weniger als 50. Die Bögen treffen sich nie. So ein Brett gibt es nicht."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Was zeichnest du vor der genauen Konstruktion? Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "eine Planfigur (Skizze)  []       gleich die Lösung  []       nur die längste Seite  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Lies mit und ergänze."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Maßstab 1 : 10: 30 cm → ___ cm, 40 cm → ___ cm, 50 cm → ___ cm",
+            "Der Winkel oben ist ___°.",
+            "20 + 25 = ___ < 50 → ___ Dreieck"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Konstruiert alle das Regal-Dreieck (3 cm, 4 cm, 5 cm). Legt eure Zeichnungen übereinander. Wo gibt es Unterschiede – und warum?"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Konstruieren",
+          "punkte": [
+            "Planfigur",
+            "eine Seite zeichnen",
+            "Bögen oder Winkel",
+            "verbinden, nachmessen"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Ein Dreieck hat die Winkel 67° und 34°. Wie groß ist der dritte Winkel?   ___",
+            "Kann man ein Dreieck mit 2 cm, 5 cm und 6 cm zeichnen?   ___",
+            "Kann man ein Dreieck mit 2 cm, 2 cm und 7 cm zeichnen?   ___",
+            "Kann man ein Dreieck mit 2 cm, 7 cm und 10 cm zeichnen?   ___",
+            "Ein Dreieck hat die Winkel 49° und 95°. Wie groß ist der dritte Winkel?   ___",
+            "Kann man ein Dreieck mit 9 cm, 4 cm und 16 cm zeichnen?   ___",
+            "Ein Dreieck hat die Winkel 53° und 94°. Wie groß ist der dritte Winkel?   ___",
+            "Ein Dreieck hat die Winkel 47° und 28°. Wie groß ist der dritte Winkel?   ___",
+            "Kann man ein Dreieck mit 9 cm, 7 cm und 9 cm zeichnen?   ___",
+            "Ein Dreieck hat die Winkel 32° und 111°. Wie groß ist der dritte Winkel?   ___",
+            "Kann man ein Dreieck mit 9 cm, 2 cm und 8 cm zeichnen?   ___",
+            "Kann man ein Dreieck mit 7 cm, 9 cm und 3 cm zeichnen?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Eine Rampe ist unten 6 m lang, steht hinten senkrecht (90°) und hat vorne einen Winkel von 30°. Konstruiere im Maßstab 1 : 100 (1 m → 1 cm). Wie hoch ist die Rampe hinten?   ___",
+            "Warum gibt es kein Dreieck mit zwei rechten Winkeln?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Konstruiere: c = 5 cm, α = 50°, β = 50°. Was für ein Dreieck ist das?   ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Beschreibe Schritt für Schritt, wie du ein Dreieck aus drei Seiten (SSS) mit dem Zirkel konstruierst."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Zuerst …",
+            "Dann stelle ich den Zirkel …",
+            "Wo sich die Bögen …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich konstruiere Dreiecke mit Lineal, Geodreieck und Zirkel aus drei Seiten (SSS), aus zwei Seiten und dem Winkel dazwischen (SWS) und aus einer Seite und zwei Winkeln (WSW). Ich prüfe, ob ein Dreieck überhaupt möglich ist.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich konstruiere Dreiecke mit Lineal, Geodreieck und Zirkel aus drei Seiten (SSS), aus zwei Seiten und dem Winkel dazwischen (SWS) und aus einer Seite und zwei Winkeln (WSW). Ich prüfe, ob ein Dreieck überhaupt möglich ist.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Die Rampe“ – Für eine Skate-Rampe wird ein dreieckiges Brett gebraucht: unten 60 cm, schräg 50 cm, hinten 40 cm. Wie sieht das Dreieck genau aus? Mit Zirkel und Lineal kannst du es klein (6 cm, 5 cm, 4 cm) genau zeichnen – bevor jemand sägt.",
+          "Fit für das Kapitel (10 Min.): Aufgabe 1 – Wiederholung aus früheren Kapiteln und Modulen, allein und ohne Hilfe. Kurz vergleichen.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): Ein Dreieck hat α = 50° und β = 60°. Wie groß ist γ? · Gibt es ein Dreieck mit 5 cm, 5 cm und 5 cm? Im Heft: Aufgabe 2.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 3 bis 9 nach Stufe; Übungspäckchen (Aufgabe 10) und Plus (Aufgabe 11) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 12): Konstruiere: c = 5 cm, α = 50°, β = 50°. Was für ein Dreieck ist das? Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 13) als Hausaufgabe."
+        ],
+        "hintergrund": "Konstruieren: Konstruieren heißt: eine Figur mit Lineal, Geodreieck und Zirkel genau nach Maßen zeichnen. Für ein Dreieck brauchst du drei passende Angaben: drei Seiten (SSS), zwei Seiten und den Winkel dazwischen (SWS) oder eine Seite und die zwei Winkel an ihr (WSW). Zuerst eine Planfigur mit allen Maßen. Dann genau konstruieren: SSS mit dem Zirkel, SWS und WSW mit dem Geodreieck. Ein Dreieck gibt es nur, wenn die zwei kürzeren Seiten zusammen länger sind als die längste. Die drei Winkel ergeben zusammen immer 180°. Im Unterricht: Konstruieren ist Feinmotorik: spitzer Bleistift, Zirkel festgeschraubt, Nullpunkt des Geodreiecks auf der Ecke. Erst die Planfigur verlangen – sie verhindert die meisten Fehler. Mit Trinkhalmen (3, 4 und 8 cm) zeigen, warum manche Dreiecke nicht gehen.",
+        "differenzierung": {
+          "leichter": "Basis: Erst die Planfigur! Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Konstruieren ist Feinmotorik: spitzer Bleistift, Zirkel festgeschraubt, Nullpunkt des Geodreiecks auf der Ecke. Erst die Planfigur verlangen – sie verhindert die meisten Fehler. Mit Trinkhalmen (3, 4 und 8 cm) zeigen, warum manche Dreiecke nicht gehen.",
+          "Spiel: Diktat-Konstruktion: Eine Person beschreibt ein Dreieck nur mit Maßen, die andere konstruiert. Danach die Blätter übereinanderlegen – passt es?"
+        ],
+        "material": "Spitzer Bleistift, Lineal, Geodreieck, Zirkel, Trinkhalme (zum Legen)",
+        "loesungen": [
+          "1) a) 66° · b) 32° · c) 51° · d) stumpfwinklig · e) stumpfwinklig · f) stumpfwinklig",
+          "2) a) 70° · b) Ja (gleichseitig) · c) Ja: 2 + 9 = 11 > 10 · d) Ja: 2 + 6 = 8 > 7",
+          "3) a) 180° − 55° − 40° = 85° · b) Ja: 4 + 9 = 13 > 10 · c) 180° − 77° − 39° = 64° · d) 180° − 66° − 75° = 39° · e) 180° − 45° − 27° = 108° · f) Ja: 4 + 7 = 11 > 9 · g) Ja: 7 + 9 = 16 > 11 · h) 180° − 33° − 55° = 92°",
+          "4) a) γ = 90° · b) γ = 80° · c) Nein: 2 + 3 = 5 < 6 · d) Nein: 2 + 4 = 6 < 8 · e) 180° − 57° − 85° = 38° · f) 180° − 51° − 71° = 58°",
+          "5) a) a ≈ 5 cm · b) 60° · c) Nein: schon 190° > 180° · d) 180° − 25° − 71° = 84° · e) Nein: 5 + 6 = 11 = 11 · f) Nein: 7 + 8 = 15 < 17",
+          "6) a) geht nicht: 3 + 4 = 7 < 8 – b) geht: 4 + 5 = 9 > 6 – Dreieck mit c = 6 cm, Kreise mit 5 cm um A und 4 cm um B",
+          "7) eine Planfigur (Skizze)",
+          "8) a) 3 / 4 / 5 · b) 90 · c) 45 / kein",
+          "9) mündlich – eigene Lösungen",
+          "10) a) 180° − 67° − 34° = 79° · b) Ja: 2 + 5 = 7 > 6 · c) Nein: 2 + 2 = 4 < 7 · d) Nein: 2 + 7 = 9 < 10 · e) 180° − 49° − 95° = 36° · f) Nein: 4 + 9 = 13 < 16 · g) 180° − 53° − 94° = 33° · h) 180° − 47° − 28° = 105° · i) Ja: 7 + 9 = 16 > 9 · j) 180° − 32° − 111° = 37° · k) Ja: 2 + 8 = 10 > 9 · l) Ja: 3 + 7 = 10 > 9",
+          "11) a) ≈ 3,5 cm in der Zeichnung → ≈ 3,5 m · b) 90° + 90° = 180°. Für den dritten Winkel bleibt 0° – die Schenkel laufen parallel und treffen sich nie",
+          "12) gleichschenklig, γ = 80°",
+          "13) eigene Erklärung – auf Fachwörter und ein Beispiel achten"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m8-hoehen-mittelsenkrechte-winkelhalbierende",
+    "bereich": "mathe",
+    "thema": "geometrie",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Dreiecke konstruieren",
+      "Höhe",
+      "Mittelsenkrechte",
+      "Winkelhalbierende",
+      "stumpfwinklig",
+      "Modul 8"
+    ],
+    "bild": "icon:triangle",
+    "de": {
+      "titel": "Höhen, Mittelsenkrechte und Winkelhalbierende",
+      "untertitel": "Modul 8, Lektion 9",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Drei Freunde wohnen in drei Dörfern A, B und C. Sie suchen einen Treffpunkt, der von allen drei Häusern gleich weit weg ist. Die Mittelsenkrechten der Dreiecksseiten zeigen ihn: Dort, wo sie sich schneiden, liegt der Punkt."
+        },
+        {
+          "art": "text",
+          "text": "Die Regel – Schritt für Schritt:"
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Mittelsenkrechte",
+              "text": "Die Mittelsenkrechte einer Strecke geht durch ihre Mitte und steht senkrecht auf ihr. Jeder Punkt auf der Mittelsenkrechten ist von beiden Endpunkten gleich weit entfernt."
+            },
+            {
+              "art": "schritte",
+              "stil": "liste",
+              "linien": 0,
+              "teilbar": true,
+              "items": [
+                {
+                  "titel": "Die Höhe",
+                  "text": "Eine Höhe geht von einer Ecke senkrecht auf die gegenüberliegende Seite. Jedes Dreieck hat drei Höhen. Im stumpfwinkligen Dreieck liegen zwei Höhen außerhalb: Du verlängerst die Seite gestrichelt.  Beispiel: Höhe h_c: von C senkrecht auf die Seite c (oder ihre Verlängerung). Geodreieck: Mittellinie auf die Seite, Kante durch C."
+                },
+                {
+                  "titel": "Die Mittelsenkrechte",
+                  "text": "Die Mittelsenkrechte geht durch die Mitte einer Strecke und steht senkrecht auf ihr. Jeder Punkt auf ihr ist von beiden Enden gleich weit entfernt.  Beispiel: AB = 6 cm: Mitte bei 3 cm markieren, dort senkrecht zeichnen. Mit dem Zirkel: zwei gleich große Bögen um A und B, die Schnittpunkte verbinden."
+                },
+                {
+                  "titel": "Die Winkelhalbierende",
+                  "text": "Die Winkelhalbierende teilt einen Winkel in zwei gleich große Hälften.  Beispiel: α = 70° → zweimal 35°. Mit dem Geodreieck 35° antragen."
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "geo",
+              "felder": [
+                {
+                  "b": 80,
+                  "h": 44,
+                  "elemente": [
+                    {
+                      "t": "punkt",
+                      "name": "A",
+                      "x": 10,
+                      "y": 30,
+                      "lage": "l"
+                    },
+                    {
+                      "t": "punkt",
+                      "name": "B",
+                      "x": 70,
+                      "y": 30,
+                      "lage": "r"
+                    },
+                    {
+                      "t": "linie",
+                      "von": "A",
+                      "bis": "B"
+                    },
+                    {
+                      "t": "punkt",
+                      "name": "M",
+                      "x": 40,
+                      "y": 30,
+                      "lage": "ur"
+                    },
+                    {
+                      "t": "linie",
+                      "von": [
+                        40,
+                        4
+                      ],
+                      "bis": [
+                        40,
+                        42
+                      ],
+                      "stil": "gestrichelt",
+                      "name": "m"
+                    },
+                    {
+                      "t": "winkel",
+                      "x": 40,
+                      "y": 30,
+                      "a1": 0,
+                      "a2": 90,
+                      "r": 4,
+                      "marke": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Die Mittelsenkrechte m geht durch die Mitte M und steht senkrecht auf AB. Jeder Punkt auf m ist von A und B gleich weit weg."
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Merksatz",
+              "punkte": [
+                "Höhe: von der Ecke senkrecht auf die gegenüberliegende Seite (im stumpfwinkligen Dreieck auf ihre Verlängerung).",
+                "Mittelsenkrechte: durch die Mitte einer Strecke, senkrecht dazu – ihre Punkte sind von beiden Enden gleich weit weg.",
+                "Winkelhalbierende: teilt den Winkel in zwei gleiche Hälften."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "So gehst du vor",
+              "punkte": [
+                "1. Welche Linie ist gefragt: Höhe, Mittelsenkrechte oder Winkelhalbierende?",
+                "2. Höhe: Geodreieck mit der Mittellinie auf die Seite, Kante durch die Ecke.",
+                "3. Mittelsenkrechte: Mitte messen, senkrecht zeichnen.",
+                "4. Winkelhalbierende: Winkel messen, halbieren, antragen.",
+                "5. Rechte Winkel mit ∟ markieren."
+              ]
+            },
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Wörter · Mots",
+              "punkte": [
+                "Höhe – hauteur",
+                "Mittelsenkrechte – médiatrice",
+                "Winkelhalbierende – bissectrice",
+                "stumpfwinklig – obtusangle",
+                "senkrecht – perpendiculaire"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "zusammen": true,
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Musterlösung",
+              "text": "Aufgabe: Zeichne die Mittelsenkrechte einer Strecke AB = 8 cm.",
+              "punkte": [
+                "Die Mitte M liegt bei 4 cm.",
+                "Geodreieck: Mittellinie auf AB, Nullpunkt auf M.",
+                "Senkrechte Linie durch M zeichnen, ∟ markieren.",
+                "Ergebnis: Jeder Punkt auf dieser Linie ist gleich weit von A und B entfernt."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Musterlösung: Höhe im stumpfwinkligen Dreieck",
+              "text": "Aufgabe: Dreieck mit c = 5 cm, α = 120°, b = 3 cm. Zeichne die Höhe von C aus.",
+              "punkte": [
+                "Dreieck konstruieren (SWS).",
+                "Die Seite c über A hinaus gestrichelt verlängern.",
+                "Geodreieck: Mittellinie auf die Verlängerung, Kante durch C.",
+                "Senkrecht von C bis zur Verlängerung zeichnen.",
+                "Ergebnis: Die Höhe h_c liegt außerhalb des Dreiecks (etwa 2,6 cm lang)."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Noch mehr Beispiele",
+          "punkte": [
+            "Ein Winkel hat 104°. Wie groß sind die beiden Teile nach der Winkelhalbierenden?   je 52°",
+            "P liegt auf der Mittelsenkrechten von AB und ist 8,7 cm von A entfernt. Wie weit ist P von B entfernt?   8,7 cm",
+            "P liegt auf der Mittelsenkrechten von AB und ist 3,6 cm von A entfernt. Wie weit ist P von B entfernt?   3,6 cm",
+            "P liegt auf der Mittelsenkrechten von AB und ist 2,5 cm von A entfernt. Wie weit ist P von B entfernt?   2,5 cm",
+            "Eine Strecke AB ist 5 cm lang. Wo schneidet die Mittelsenkrechte die Strecke?   in der Mitte, 2,5 cm von A",
+            "Ein Punkt P liegt 7 cm über der Geraden g. Wie lang ist die Senkrechte von P auf g?   7 cm"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Gemeinsam: Rechnet zusammen an der Tafel. Sprecht laut, wie ihr rechnet."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Wie viele Höhen hat ein Dreieck?   ___",
+            "Ein Winkel hat 80°. Wie groß ist jede Hälfte?   ___",
+            "P liegt auf der Mittelsenkrechten von AB und ist 7,7 cm von A entfernt. Wie weit ist P von B entfernt?   ___",
+            "Eine Strecke AB ist 10 cm lang. Wo schneidet die Mittelsenkrechte die Strecke?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jetzt du – rechne genau wie in den Beispielen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Ein Punkt P liegt 9 cm über der Geraden g. Wie lang ist die Senkrechte von P auf g?   ___",
+            "Ein Winkel hat 100°. Wie groß sind die beiden Teile nach der Winkelhalbierenden?   ___",
+            "Ein Punkt P liegt 4 cm über der Geraden g. Wie lang ist die Senkrechte von P auf g?   ___",
+            "P liegt auf der Mittelsenkrechten von AB und ist 5,3 cm von A entfernt. Wie weit ist P von B entfernt?   ___",
+            "P liegt auf der Mittelsenkrechten von AB und ist 8,5 cm von A entfernt. Wie weit ist P von B entfernt?   ___",
+            "Ein Winkel hat 144°. Wie groß sind die beiden Teile nach der Winkelhalbierenden?   ___",
+            "P liegt auf der Mittelsenkrechten von AB und ist 6,9 cm von A entfernt. Wie weit ist P von B entfernt?   ___",
+            "Ein Winkel hat 54°. Wie groß sind die beiden Teile nach der Winkelhalbierenden?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Basis – Schritt für Schritt.",
+          "hinweis": "Geodreieck: Mittellinie auf die Seite."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Zeichne eine Strecke AB = 6 cm und ihre Mittelsenkrechte.   ___",
+            "Zeichne einen Winkel von 60° und seine Winkelhalbierende.   ___",
+            "Welchen Winkel bilden die Höhe und die Seite, auf der sie steht?   ___",
+            "Ein Punkt P liegt 2 cm über der Geraden g. Wie lang ist die Senkrechte von P auf g?   ___",
+            "P liegt auf der Mittelsenkrechten von AB und ist 5,9 cm von A entfernt. Wie weit ist P von B entfernt?   ___",
+            "P liegt auf der Mittelsenkrechten von AB und ist 7,4 cm von A entfernt. Wie weit ist P von B entfernt?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Kern – das Niveau des Moduls."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Konstruiere ein Dreieck mit c = 6 cm, a = 5 cm, b = 4 cm. Zeichne alle drei Höhen. Was fällt dir auf?   ___",
+            "Konstruiere ein stumpfwinkliges Dreieck (c = 6 cm, α = 30°, β = 110°). Zeichne die Höhe h_c.   ___",
+            "Ein Punkt P liegt auf der Mittelsenkrechten von AB. P ist 4,5 cm von A entfernt. Wie weit ist P von B entfernt?   ___",
+            "Die Winkelhalbierende teilt einen Winkel in zwei Teile zu je 71°. Wie groß ist der ganze Winkel?   ___",
+            "Im Dreieck sind α = 90° und β = 40°. Die Winkelhalbierende von γ teilt γ in zwei Teile. Wie groß ist jeder Teil?   ___",
+            "Im Dreieck ABC sind α = 101° und β = 43°. Liegt die Höhe h_c innerhalb oder außerhalb des Dreiecks?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Zwei Freunde wohnen in A und B. Wo können sie sich treffen, damit beide gleich weit laufen? Zeichne die Mittelsenkrechte von AB. Zeichne dann die Winkelhalbierende bei C."
+        },
+        {
+          "art": "geo",
+          "felder": [
+            {
+              "h": 55,
+              "raster": "karo",
+              "elemente": [
+                {
+                  "t": "punkt",
+                  "name": "A",
+                  "x": 20,
+                  "y": 45,
+                  "lage": "l"
+                },
+                {
+                  "t": "punkt",
+                  "name": "B",
+                  "x": 80,
+                  "y": 45,
+                  "lage": "r"
+                },
+                {
+                  "t": "punkt",
+                  "name": "C",
+                  "x": 60,
+                  "y": 10,
+                  "lage": "o"
+                },
+                {
+                  "t": "linie",
+                  "von": "A",
+                  "bis": "B"
+                },
+                {
+                  "t": "linie",
+                  "von": "B",
+                  "bis": "C"
+                },
+                {
+                  "t": "linie",
+                  "von": "C",
+                  "bis": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Rechnen im Alltag: Gleich weit für alle",
+          "text": "Karte · drei Dörfer. Lina, Sami und Mia wohnen in drei verschiedenen Dörfern. Sie suchen einen Treffpunkt, zu dem alle gleich weit fahren."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Lina",
+              "text": "Ich wohne in Altdorf, du in Bergen und Mia in Neudorf. Wo treffen wir uns, damit alle gleich weit fahren?"
+            },
+            {
+              "wer": "Sami",
+              "text": "Für zwei Dörfer ist es einfach: Alle Punkte auf der Mittelsenkrechten sind von beiden gleich weit weg."
+            },
+            {
+              "wer": "Lina",
+              "text": "Also zeichne ich die Mittelsenkrechte zwischen meinem und deinem Dorf."
+            },
+            {
+              "wer": "Sami",
+              "text": "Und dann die zwischen meinem Dorf und Mias Dorf. Wo sich die zwei Linien schneiden, ist der Punkt für alle drei."
+            },
+            {
+              "wer": "Lina",
+              "text": "Auf der Karte ist das … am Sportplatz! Von dort sind es zu jedem Dorf 4 Kilometer."
+            },
+            {
+              "wer": "Sami",
+              "text": "Und die dritte Mittelsenkrechte geht auch durch diesen Punkt. So können wir kontrollieren."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Ein Punkt auf der Mittelsenkrechten von AB ist … Kreuze an."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "gleich weit von A und B entfernt  []       näher bei A  []       immer genau in der Mitte von AB  []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Lies mit und ergänze."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Auf der Mittelsenkrechten ist jeder Punkt von beiden Dörfern ___ weit weg.",
+            "Zwei Mittelsenkrechten schneiden sich im ___.",
+            "Die ___ Mittelsenkrechte geht zur Kontrolle auch durch diesen Punkt."
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Zeichnet drei Punkte (eure „Dörfer“) auf ein Blatt. Konstruiert den Treffpunkt mit zwei Mittelsenkrechten. Prüft mit dem Zirkel: Ist er von allen gleich weit weg?"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Drei Linien",
+          "punkte": [
+            "Höhe: Ecke ⊥ Seite",
+            "Mittelsenkrechte: durch die Mitte, ⊥",
+            "Winkelhalbierende: Winkel halbieren"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Übungspäckchen – übe, bis es sitzt. Erst die leichten, dann die schwereren."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "P liegt auf der Mittelsenkrechten von AB und ist 2,4 cm von A entfernt. Wie weit ist P von B entfernt?   ___",
+            "Ein Punkt P liegt 6 cm über der Geraden g. Wie lang ist die Senkrechte von P auf g?   ___",
+            "Ein Winkel hat 148°. Wie groß sind die beiden Teile nach der Winkelhalbierenden?   ___",
+            "Ein Winkel hat 66°. Wie groß sind die beiden Teile nach der Winkelhalbierenden?   ___",
+            "Ein Punkt P liegt 3 cm über der Geraden g. Wie lang ist die Senkrechte von P auf g?   ___",
+            "P liegt auf der Mittelsenkrechten von AB und ist 5,8 cm von A entfernt. Wie weit ist P von B entfernt?   ___",
+            "Eine Strecke AB ist 13 cm lang. Wo schneidet die Mittelsenkrechte die Strecke?   ___",
+            "Im Dreieck ABC sind α = 36° und β = 77°. Liegt die Höhe h_c innerhalb oder außerhalb des Dreiecks?   ___",
+            "P liegt auf der Mittelsenkrechten von AB und ist 4 cm von A entfernt. Wie weit ist P von B entfernt?   ___",
+            "Eine Strecke AB ist 6 cm lang. Wo schneidet die Mittelsenkrechte die Strecke?   ___",
+            "Im Dreieck sind α = 50° und β = 30°. Die Winkelhalbierende von γ teilt γ in zwei Teile. Wie groß ist jeder Teil?   ___",
+            "Die Winkelhalbierende teilt einen Winkel in zwei Teile zu je 17°. Wie groß ist der ganze Winkel?   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Plus – zum Knobeln. Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Drei Häuser A, B, C bilden im Plan ein Dreieck (AB = 7 cm, BC = 6 cm, AC = 5 cm). Finde den Punkt, der von allen drei Häusern gleich weit weg ist.   ___",
+            "Zeichne in ein Dreieck alle drei Winkelhalbierenden. Zeichne um ihren Schnittpunkt einen Kreis, der alle drei Seiten berührt.   ___"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Exit-Ticket – allein lösen, ohne Hilfe."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Wo liegen alle Punkte, die von A und B gleich weit entfernt sind?   ___"
+          ],
+          "buchstaben": false
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Erklären: Erkläre den Unterschied zwischen einer Höhe und einer Mittelsenkrechten im Dreieck. Zeichne eine kleine Skizze dazu."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Eine Höhe geht …",
+            "Eine Mittelsenkrechte geht …",
+            "Der Unterschied: …"
+          ],
+          "linien": 2
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich zeichne die Höhen eines Dreiecks – auch im stumpfwinkligen Dreieck –, die Mittelsenkrechte einer Strecke und die Winkelhalbierende eines Winkels.",
+            "Ich kann einer anderen Person erklären, wie ich rechne.",
+            "Ich löse das Exit-Ticket allein."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ],
+          "titel": "Kurz-Check: Wie sicher bist du?"
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Wiederholung zum Kapitel „Dreiecke konstruieren“ – gemischt aus allen Lektionen. Was kannst du schon sicher?"
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Kann man ein Dreieck mit 2 cm, 9 cm und 9 cm zeichnen?   ___",
+            "Im Dreieck ABC sind α = 51° und β = 79°. Liegt die Höhe h_c innerhalb oder außerhalb des Dreiecks?   ___",
+            "Kann man ein Dreieck mit 7 cm, 8 cm und 9 cm zeichnen?   ___",
+            "Ein Winkel hat 68°. Wie groß sind die beiden Teile nach der Winkelhalbierenden?   ___",
+            "Kann man ein Dreieck mit 6 cm, 3 cm und 4 cm zeichnen?   ___",
+            "Ein Winkel hat 154°. Wie groß sind die beiden Teile nach der Winkelhalbierenden?   ___",
+            "Ein Dreieck hat die Winkel 54° und 76°. Wie groß ist der dritte Winkel?   ___",
+            "Eine Strecke AB ist 9 cm lang. Wo schneidet die Mittelsenkrechte die Strecke?   ___"
+          ],
+          "buchstaben": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Lernziel: Ich zeichne die Höhen eines Dreiecks – auch im stumpfwinkligen Dreieck –, die Mittelsenkrechte einer Strecke und die Winkelhalbierende eines Winkels.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Der Treffpunkt“ – Drei Freunde wohnen in drei Dörfern A, B und C. Sie suchen einen Treffpunkt, der von allen drei Häusern gleich weit weg ist. Die Mittelsenkrechten der Dreiecksseiten zeigen ihn: Dort, wo sie sich schneiden, liegt der Punkt.",
+          "Regel (10 Min.): „Die Regel – Schritt für Schritt“ gemeinsam lesen, dann Merksatz, „So gehst du vor“ und die zwei Musterlösungen besprechen.",
+          "Gemeinsam an der Tafel (5 Min.): Wie viele Höhen hat ein Dreieck? · Ein Winkel hat 80°. Wie groß ist jede Hälfte? Im Heft: Aufgabe 1.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 2 bis 8 nach Stufe; Übungspäckchen (Aufgabe 9) und Plus (Aufgabe 10) für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket (Aufgabe 11): Wo liegen alle Punkte, die von A und B gleich weit entfernt sind? Danach den Kurz-Check ausfüllen lassen. Erklären (Aufgabe 12) als Hausaufgabe.",
+          "Wiederholung zum Kapitel (Aufgabe 13): gemischte Aufgaben aus dem ganzen Kapitel – vor der Klassenarbeit oder als Hausaufgabe."
+        ],
+        "hintergrund": "Mittelsenkrechte: Die Mittelsenkrechte einer Strecke geht durch ihre Mitte und steht senkrecht auf ihr. Jeder Punkt auf der Mittelsenkrechten ist von beiden Endpunkten gleich weit entfernt. Höhe: von der Ecke senkrecht auf die gegenüberliegende Seite (im stumpfwinkligen Dreieck auf ihre Verlängerung). Mittelsenkrechte: durch die Mitte einer Strecke, senkrecht dazu – ihre Punkte sind von beiden Enden gleich weit weg. Winkelhalbierende: teilt den Winkel in zwei gleiche Hälften. Im Unterricht: Höhen mit einem Faden mit Gewicht (Lot) zeigen. Im stumpfwinkligen Dreieck immer zuerst die Seite gestrichelt verlängern lassen. Mittelsenkrechte: Blatt so falten, dass A auf B liegt – die Faltlinie ist die Mittelsenkrechte.",
+        "differenzierung": {
+          "leichter": "Basis: Geodreieck: Mittellinie auf die Seite. Mit den Musterlösungen und „Noch mehr Beispiele“ arbeiten.",
+          "schwerer": "Übungspäckchen, Plus-Aufgaben und „Erklären“."
+        },
+        "tipps": [
+          "Höhen mit einem Faden mit Gewicht (Lot) zeigen. Im stumpfwinkligen Dreieck immer zuerst die Seite gestrichelt verlängern lassen. Mittelsenkrechte: Blatt so falten, dass A auf B liegt – die Faltlinie ist die Mittelsenkrechte.",
+          "Spiel: Schatzsuche auf dem Plan: „Der Schatz liegt gleich weit von Baum und Brunnen – und genau auf der Winkelhalbierenden beim Tor.“ Wer findet die Stelle?"
+        ],
+        "material": "Geodreieck, Zirkel, Lineal, Faden mit Gewicht (Lot)",
+        "loesungen": [
+          "1) a) drei · b) 40° · c) 7,7 cm · d) in der Mitte, 5 cm von A",
+          "2) a) 9 cm · b) je 50° · c) 4 cm · d) 5,3 cm · e) 8,5 cm · f) je 72° · g) 6,9 cm · h) je 27°",
+          "3) a) Senkrechte durch die Mitte (bei 3 cm) · b) zwei Winkel zu 30° · c) 90° · d) 2 cm · e) 5,9 cm · f) 7,4 cm",
+          "4) a) Die drei Höhen schneiden sich in einem Punkt · b) h_c liegt außerhalb; die Seite c verlängern · c) 4,5 cm · d) 142° · e) γ = 50°; je 25° · f) außerhalb",
+          "5) Mittelsenkrechte: durch M (3 cm von A) senkrecht zu AB – jeder Punkt darauf ist ein fairer Treffpunkt – Winkelhalbierende bei C: teilt den Winkel bei C in zwei gleiche Teile",
+          "6) gleich weit von A und B entfernt",
+          "7) a) gleich · b) Treffpunkt · c) dritte",
+          "8) mündlich – eigene Lösungen",
+          "9) a) 2,4 cm · b) 6 cm · c) je 74° · d) je 33° · e) 3 cm · f) 5,8 cm · g) in der Mitte, 6,5 cm von A · h) innerhalb · i) 4 cm · j) in der Mitte, 3 cm von A · k) γ = 100°; je 50° · l) 34°",
+          "10) a) Schnittpunkt der drei Mittelsenkrechten (Mittelpunkt des Umkreises) · b) Inkreis: Sein Mittelpunkt ist der Schnittpunkt der Winkelhalbierenden",
+          "11) auf der Mittelsenkrechten von AB",
+          "12) eigene Erklärung – auf Fachwörter und ein Beispiel achten",
+          "13) a) Ja: 2 + 9 = 11 > 9 · b) innerhalb · c) Ja: 7 + 8 = 15 > 9 · d) je 34° · e) Ja: 3 + 4 = 7 > 6 · f) je 77° · g) 180° − 54° − 76° = 50° · h) in der Mitte, 4,5 cm von A"
+        ]
+      }
+    }
+  }
+]
