@@ -3,7 +3,7 @@
 // Kein Druck: Man kann sie ignorieren, nichts verfällt. Ton freundlich-frech, nie Mutprobe mit Risiko.
 export const HERAUSFORDERUNGEN = [
   // Jahreszeiten (nur in ihren Kapiteln): kommen zuerst dran; ist die Zeit vorbei, verschwindet eine offene still
-  { id: 'h_laub', von: 'luca', ab: 3, bis: 4, text: 'Laubhaufen auf dem Hof! Fünfmal reinrennen. Wetten?', ziel: (m) => (m.laub || 0) >= 5, danke: 'Fünfmal! Du hast jetzt Blätter in den Haaren.' },
+  { id: 'h_laub', von: 'luca', ab: 3, bis: 3, text: 'Laubhaufen auf dem Hof! Fünfmal reinrennen. Wetten?', ziel: (m) => (m.laub || 0) >= 5, danke: 'Fünfmal! Du hast jetzt Blätter in den Haaren.' },
   { id: 'h_pfuetze', von: 'yusuf', ab: 7, bis: 8, text: 'Pfützen auf dem Hof! Wer macht den größten Platsch?', ziel: (m) => (m.pfuetzen || 0) >= 3, danke: 'Drei Pfützen! Deine Schuhe sind jetzt Kunst.' },
   { id: 'h_eissorten', von: 'ayla', ab: 9, bis: 10, text: 'Tonio hat sechs Eissorten. Schaffst du drei?', ziel: (m) => (m.eisSorten || []).length >= 3, danke: 'Drei Sorten! Auch Gurke-Minze? Respekt.' },
   { id: 'h_schneemann', von: 'mila', ab: 5, bis: 6, text: 'Es schneit! Baust du einen Schneemann auf dem Hof?', ziel: (m) => (m.schneemann || 0) >= 1, danke: 'Mit Schal! Ich hab ihm „Fernand 2“ getauft.' },

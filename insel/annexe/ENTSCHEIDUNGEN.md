@@ -417,3 +417,20 @@ reparieren, jede Sequenz auf Sinn prüfen, AAA-Funktionen. Grundlage: Kritik all
 - **Lesepausen** in Situations-Spielen werden mit „Ohne Zeitdruck“ nicht mehr 60-mal so lang (vorher: 96 Sekunden pro Kommentar).
   Zeitlimits verlängern sich weiter.
 - **Geparkt (Auftraggeber):** Scheitern können, Skills nicht durchklickbar, Stunden als Pflicht in der Geschichte.
+
+## 27.11.2026 – Serie 2 · Runde 1 (Jugend-Panel K1–K4, nach dem Umbau der Skills-Hefte)
+Je Kapitel drei schwache Szenen gestrichen und neu gebaut, Wahlen ohne Folgen bekommen Folgen, Cringe-Zeilen ersetzt.
+- K1: „Einer schaut DICH an“ → „Drei Dinge. Kein Mensch.“ (5-4-3-2-1 aus Heft #00 als Ausweg aus Rot) · erster Klassenchat →
+  „Wie Ben dich speichert“ (Etikett „hinten links“ oder der eigene Name) · Essensausgabe → „Rafa in der Schlange“ · Jos Frage
+  „Warum bist du in der P?“ mit Weiter-Karte · kein Timer bei Bens Entschuldigung.
+- K2: Bens Handy 1:34 → „Ben am Bus“ (für ihn antworten oder nicht; Folge in K3) · Nachhak-Übung → Nachhak-Karten im Gespräch ·
+  „Ben schläft – Jo filmt“ → „Linas Heft“ · Folgen aus K1 am Montag sichtbar.
+- K3: Kamera-Rätsel → „23 Reaktionen“ (eine Nachricht; die wahre 📎-Antwort ist die Falle) · Vorstellen ×3 → „Übersetz mal“ (Manon
+  und die alte Liste) · Hinschauen + feste Patzer-Liste → Aufstellung mit Zeitdruck und „Übrig“ (Tausch zur Halbzeit) · erstes
+  Körper-Signal im Gang · „Bleib bis Schluss“ / „Geh“ mit Preis · Wut-Übersetzer am Freitag.
+- K4: SePAS-Stunde → Vorausblende Mittwoch 8:33 und eigener Zettel ohne Etiketten (Bei Rot … / Bei Gelb … / zu wem) ·
+  Notausgang-Suchbild → 👀 Aufschauen im Test kostet Zeit, bringt 📎 · Linas Suchbild → „Lina zoomt“ · Test ohne Zahl,
+  Gedanken-Parkschein · Eisrutsche statt Laubhaufen im Frost.
+- Motor: Start-Gespräche werden nicht mehr übersprungen; Warum-Frage 4 Antworten, einmal je Kapitel; Abzeichen nie mitten in einer
+  Szene; „X wird sich das merken“ → nur 🔖; Ort-Karten passen auf kleine Bildschirme; Handy-Karte mit Chat-Zeilen und Zähler.
+- Skills-Strang an die Hefte angeglichen (4 ein – 8 aus, Kopf ab Gelb, Ampelplan statt STOPP, „Weiter“ statt „Passe“).

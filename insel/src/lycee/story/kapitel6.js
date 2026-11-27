@@ -129,12 +129,12 @@ const MUT_LUCA = {
 // Wer für dich stimmt, hängt an dem, was du vorher getan hast. Das Ergebnis geht immer gegen dich: zwischen 15:4 und 9:9.
 const stimmen = (m) => {
   const wer = {
-    noah: !!(m.listeBeiNoah || m.k4YusufGeschickt || m.k4BeideGeblieben || m.k4NoahVerteidigt || m.wahlNoah),
+    noah: !!(m.listeBeiNoah || m.k4NoahVerteidigt || m.manonListeFalsch || m.wahlNoah),
     mila: !!(m.milaGesagt || m.k6Stopp || m.k6Komm || m.k6Linse),
     ben: !!(m.k5BenGefragt || m.gegenlisteNein || m.gegenlisteFragen),
     jo: !!((m.k6JoSelbst || m.k6JoVerstanden) && !m.k6DateiGepostet),
     lina: !!(m.wahlLina || m.linaNachgegangen),
-    yusuf: !!(m.wahlYusuf || m.k4NoahRunter || m.k3Uhr),
+    yusuf: !!(m.wahlYusuf || m.k3YusufGeschickt || m.k3Uhr),
   };
   let anon = 2 + (m.k4Ruhig ? 1 : 0) + (m.k5ChiaraGefragt ? 1 : 0) - (m.k4Wut ? 1 : 0) - (m.k5Laut ? 1 : 0);
   anon = Math.max(0, anon);
@@ -341,7 +341,7 @@ export const tunN6 = (c) => ({
   },
   n6_fuer: () => {
     const m = c.S.merke;
-    const s = (() => { const wer = { noah: !!(m.listeBeiNoah || m.k4YusufGeschickt || m.k4BeideGeblieben || m.k4NoahVerteidigt || m.wahlNoah), mila: !!(m.milaGesagt || m.k6Stopp || m.k6Komm || m.k6Linse), ben: !!(m.k5BenGefragt || m.gegenlisteNein || m.gegenlisteFragen), jo: !!((m.k6JoSelbst || m.k6JoVerstanden) && !m.k6DateiGepostet), lina: !!(m.wahlLina || m.linaNachgegangen), yusuf: !!(m.wahlYusuf || m.k4NoahRunter || m.k3Uhr) }; return Object.keys(wer).filter((k) => wer[k]); })();
+    const s = (() => { const wer = { noah: !!(m.listeBeiNoah || m.k4NoahVerteidigt || m.manonListeFalsch || m.wahlNoah), mila: !!(m.milaGesagt || m.k6Stopp || m.k6Komm || m.k6Linse), ben: !!(m.k5BenGefragt || m.gegenlisteNein || m.gegenlisteFragen), jo: !!((m.k6JoSelbst || m.k6JoVerstanden) && !m.k6DateiGepostet), lina: !!(m.wahlLina || m.linaNachgegangen), yusuf: !!(m.wahlYusuf || m.k3YusufGeschickt || m.k3Uhr) }; return Object.keys(wer).filter((k) => wer[k]); })();
     m.k6Fuer = s;   // wer für dich gestimmt hat – kommt in Kapitel 7 (Montage) und Kapitel 10 zurück
     return [];
   },

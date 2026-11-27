@@ -65,7 +65,7 @@ import { GEDAECHTNIS, RUF, BELAUSCHT } from './gedaechtnis.js';
 import { PLAUDERN, BANK } from './stimmen.js';
 import { DEUTSCH, deutschBlatt } from './deutsch.js';
 import { LEKTIONEN } from './lektionen.js';
-import { CHARAKTER, GLEICHALTRIGE, GRUSS, GRUENDE, nachricht, profil, stufe } from './freunde.js';
+import { CHARAKTER, GLEICHALTRIGE, GRUSS, GRUSS as FREUND_GRUSS, GRUENDE, nachricht, profil, stufe } from './freunde.js';
 import { BLAETTER } from './blaetter.js';
 import { MATHE, matheBlatt } from './mathe.js';
 import { createSteuerung } from './steuerung.js';
@@ -294,7 +294,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   neuStart(S);
   const neuerStand = (name, figur) => ({ v: 2, name, figur, schritt: 0, herz: {}, staerken: {}, merke: {}, entdeckt: [], stundenplan: false, bingo: {}, gefragt: [], fertig: false });
   // Schul-Pass: neue Abzeichen beim Speichern prüfen (Toast + Ton, nie mehr als drei auf einmal anzeigen)
-  const passPruefen = () => { const neu = neuePassAbzeichen(S); neu.slice(0, 3).forEach((x, n) => setTimeout(() => { ui.toast('<b>🏅 ' + x.sy + ' ' + x.t + '</b><span>Neues Abzeichen im Schul-Pass.</span>', 'ly-t-ent'); audio.play('unlock'); }, n * 900)); };
+  // Abzeichen nie mitten in einer Szene (nicht nach dem Mitlachen, nicht nach einem Verdacht): erst, wenn das Gespräch vorbei ist
+  let passSpaeter = 0;
+  const imG = () => { try { return imGespraech; } catch (e) { return false; } };   // imGespraech steht weiter unten (let)
+  const passPruefen = () => { if (imG()) { if (!passSpaeter) passSpaeter = setInterval(() => { if (!imG()) { clearInterval(passSpaeter); passSpaeter = 0; passPruefen(); } }, 1500); return; }
+    const neu = neuePassAbzeichen(S); neu.slice(0, 3).forEach((x, n) => setTimeout(() => { ui.toast('<b>🏅 ' + x.sy + ' ' + x.t + '</b><span>Neues Abzeichen im Schul-Pass.</span>', 'ly-t-ent'); audio.play('unlock'); }, n * 900)); };
   // Speichern sichtbar machen (AAA: „gespeichert“-Zeichen), aber gedrosselt – höchstens alle 20 s ein kleines Häkchen
   let gespeichertZeig = 0, fehlerGezeigt = false;
   speicherFehler = () => { if (fehlerGezeigt) return; fehlerGezeigt = true; ui.toast('<b>⚠️ Speichern klappt gerade nicht</b><span>Der Speicher im Browser ist voll oder gesperrt (privates Fenster?). Tipp: ⚙ Einstellungen → Sicherungscode kopieren.</span>', 'ly-t-kalt'); };
@@ -1349,7 +1353,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         await ui.sprich({ ...sprecher(wer), text: ersetze(text) });
         if (redner) { const [a, tp] = haltungAnim(redner); redner.f.spiele(a, { tempo: tp, blende: 0.4 }); }
       } else if (z.wahl) {
-        const opt = z.wahl.filter((w) => (!w.wenn || w.wenn(S.merke)) && (!w.bemerkt || bemerkt(w.bemerkt)) && (!w.beweis || beweisDa(w.beweis)));   // manche Antworten gibt es nur nach früheren Entscheidungen – oder nur, wenn man hingeschaut hat
+        const opt = z.wahl.filter((w) => (!w.wenn || w.wenn(S.merke)) && (!w.bemerkt || bemerkt(w.bemerkt)) && (!w.ohne || !bemerkt(w.ohne)) && (!w.beweis || beweisDa(w.beweis)));   // ohne: nur, wenn das NICHT bemerkt wurde   // manche Antworten gibt es nur nach früheren Entscheidungen – oder nur, wenn man hingeschaut hat
         // Reihenfolge mischen, wenn eine Antwort eine Stärke zeigt – sonst wäre „die erste ist die gute“ zu leicht
         const ord = opt.map((_, k) => k);
         if (opt.some((w) => w.staerke) && !z.fest) for (let k = ord.length - 1; k > 0; k--) { const r = Math.floor(Math.random() * (k + 1)); [ord[k], ord[r]] = [ord[r], ord[k]]; }
@@ -1359,7 +1363,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
           const rot = pultRot(), gesperrt = {}, tags = {};
           ord.forEach((k, pos) => { if (rot && opt[k].ruhig) gesperrt[pos] = 'Zu aufgewühlt. Erst atmen.'; else if (opt[k].beweis) tags[pos] = '📎 ' + (opt[k].weil || beweisText(opt[k].beweis) || 'Beweis'); else if (opt[k].bemerkt) tags[pos] = opt[k].weil || 'Weil du hingeschaut hast.'; });
           const extra = Object.keys(gesperrt).length ? PULT_HILFEN.filter((h) => !versucht[h.id]) : [];
-          if (extra.length && !S.merke.rotErklaert) { S.merke.rotErklaert = true; sichern(); ui.toast('<b>🔴 Rot</b><span>Der Kopf ist voll. Ruhige Antworten sind zu. Erst atmen (🫁), dann gehen sie auf.</span>', 'ly-t-ent'); }
+          if (extra.length && !S.merke.rotErklaert) { S.merke.rotErklaert = true; sichern(); ui.toast('<b>🔴 Rot</b><span>' + ((S.pult && S.pult.g && S.pult.g !== 'Ruhe') ? S.pult.g + ' am Steuer. ' : '') + 'Erst atmen (🫁).</span>', 'ly-t-ent'); }
           const r = partnerAn() && z.warum && !extra.length ? await partnerWahl(opt, ord) : await ui.waehle(ord.map((k) => ersetze(opt[k].t)), '', { fest: !!z.fest, gesperrt, tags, extra });
           if (r && typeof r === 'object' && r.extra) { versucht[r.extra] = true; await pultHilfe(r.extra); continue; }
           i = r; break;
@@ -1377,8 +1381,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         pultSetzen(z.pult);
       } else if ('handy' in z) {   // Handy, das jemand hinhält: { handy: { wer, foto: { von, auf, wer }, text, umfrage } } – { handy: null } weg
         if (!z.handy) ui.handyBild(null);
-        else if (typeof z.handy === 'function') { const h = z.handy(S.merke, S); ui.handyBild({ ...h, text: ersetze(h.text || ''), bild: h.fotoId ? fotoHolen(h.fotoId) : h.bild || '' }); }
-        else ui.handyBild({ ...z.handy, text: ersetze(z.handy.text || ''), bild: z.handy.foto ? fotoAusWelt(z.handy.foto) : z.handy.fotoId ? fotoHolen(z.handy.fotoId) : z.handy.bild || '' });
+        else if (typeof z.handy === 'function') { const h = z.handy(S.merke, S); ui.handyBild({ ...h, text: ersetze(h.text || ''), chat: (h.chat || []).map((c) => ({ ...c, t: ersetze(c.t || ''), wer: ersetze(c.wer || '') })), bild: h.fotoId ? fotoHolen(h.fotoId) : h.bild || '' }); }
+        else ui.handyBild({ ...z.handy, text: ersetze(z.handy.text || ''), chat: (z.handy.chat || []).map((c) => ({ ...c, t: ersetze(c.t || ''), wer: ersetze(c.wer || '') })), bild: z.handy.foto ? fotoAusWelt(z.handy.foto) : z.handy.fotoId ? fotoHolen(z.handy.fotoId) : z.handy.bild || '' });
       } else if (z.blick) {   // Hinschauen: unten die Leiste, die Kamera geht nah an die gewählte Person
         ui.dialogZu();
         const r = await ui.blickSzene(z.blick, { fokus: (w) => { const p = leute[w]; if (p) { steuerung.fokus = p.pos || p.f.group.position; steuerung.gegenSchuss = false; } },
@@ -1899,7 +1903,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       audio.play('unlock'); setTimeout(() => audio.play('chime'), 350);
       const woche = chronik(kap, S.merke); S.chronik = { ...(S.chronik || {}), [kap]: woche }; sichern();
       const bilder = (RUECKBLICK[kap] ? RUECKBLICK[kap](S.merke, S) : []).map((b) => ({ ...b, url: fotoHolen(b.id) })).filter((b) => b.url);
-      const wahl = await ui.ende({ ...bilanz(), kap, chronik: woche, bilder, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Die erste Woche', 2: 'Die Liste', 3: 'Unter der Wut', 4: '8:34', 5: 'Die Admin-Woche', 6: 'Die Sprachnachricht', 7: 'Wer geblieben ist', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' })[kap] || KAPITEL[kap],
+      const wahl = await ui.ende({ ...bilanz(), kap, chronik: woche, bilder, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Das Foto', 2: 'Die Liste', 3: 'Unter der Wut', 4: '8:34', 5: 'Die Admin-Woche', 6: 'Die Sprachnachricht', 7: 'Wer geblieben ist', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' })[kap] || KAPITEL[kap],
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '',
         // Haken fürs nächste Kapitel (kein Spoiler, nur die Frage)
         frage: (() => { const sit = Object.entries(SZENEN).find(([id]) => S.merke['sitKap_' + id] === kap && S.merke['sit_' + id]); return sit ? (REFLEXION[kap] ? REFLEXION[kap] + ' · ' : '') + 'Diese Woche: ' + sit[1].titel[1] + '. ' + sit[1].frage : REFLEXION[kap] || ''; })(), vorschau: weiterIdx >= 0 ? ({ 1: 'Eine Liste. Fünf Plätze. Wer steht drauf?', 2: 'Eine Neue. Ein Turnier. Und einer, der dauernd zur Uhr schaut.',
@@ -2442,7 +2446,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     hitze: 'Jemand provoziert dich. Oben steht die Hitze. Jede Antwort macht sie heißer oder kühler. Wähl, bevor die Zeit um ist. Nichts sagen ist auch eine Antwort.',
     feed: 'Du wischst durch einen Feed. Was du likest – und wo du länger hinschaust –, bekommst du öfter. Am Ende siehst du, woraus dein Feed geworden ist.',
     akku: 'Ein Tag von morgens bis nachts. Jede Entscheidung lädt deinen Akku – oder zieht ihn leer. Am Ende siehst du, wie voll du in den nächsten Morgen startest.',
-    test: 'Ein Test. Löse die Aufgaben. Die Anspannung steigt. Gedanken tauchen auf: Tipp sie an, dann ziehen sie weiter. Skills senken die Zahl. Ab Rot verschwimmt alles.',
+    test: 'Tipp die richtige Antwort. Gedanken tauchen auf. Unten steht, was dir hilft. Bei Rot verschwimmt alles.',
     koffer: 'Pack deinen Skills-Koffer: aus jedem Fach bis zu zwei Skills. Dann wählst du drei für die Notfallkarte – für Momente auf Rot.',
     zonen: 'Wo stehst du auf der Linie? Grün, Gelb oder Rot? Tipp auf die Linie. Dann wettest du, wo die meisten aus der Klasse stehen.',
     bohnen: 'Du hast fünf Bohnen. Leg sie zu den Sätzen, die du von dir kennst. Niemand sieht, wer was gelegt hat.',
@@ -2503,13 +2507,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const ECHO = (() => { const e = new Set(); const p = new Proxy({}, { get: (t, k) => { if (typeof k === 'string') e.add(k); return undefined; } }); for (let k = 1; k <= 10; k++) { try { chronik(k, p); } catch (x) { /* egal */ } } return e; })();
   // „Warum hast du das gemacht?“ – einmal je Kapitel, bei der wichtigsten Entscheidung. Über die eigenen Gründe nachdenken ist
   // der Kern von sozial-emotionalem Lernen. Kein richtig/falsch; die Lehrperson sieht es in der Lehrer-Ansicht.
-  const WARUM = ['Ich wollte niemanden verletzen.', 'Ich hatte Angst, selbst dran zu sein.', 'Ich wollte dazugehören.', 'Weil es fair ist.', 'Ich hab nicht lange nachgedacht.', 'Weiß ich nicht.'];
+  const WARUM = ['Wollte niemanden verletzen.', 'Angst, selbst dran zu sein.', 'Wollte dazugehören.', 'Hab nicht nachgedacht.'];   // höchstens vier (Formregel)
   async function warumFrage(w) {
     let grund;
     if (partnerAn()) {   // zu zweit: jede Person sagt ihren eigenen Grund
       const P = S.partner, gA = WARUM[await ui.waehle(WARUM, P.a + ': Warum? Sei ehrlich.', { fest: true })], gB = WARUM[await ui.waehle(WARUM, P.b + ': Und du? Warum?', { fest: true })];
       grund = P.a + ': ' + gA + ' · ' + P.b + ': ' + gB;
-    } else grund = WARUM[await ui.waehle(WARUM, 'Warum hast du das gemacht? Sei ehrlich – nur du und deine Lehrperson sehen es.', { fest: true })];
+    } else grund = WARUM[await ui.waehle(WARUM, 'Warum? Das sieht nur deine Lehrperson.', { fest: true })];
     const kap = (SCHRITTE[S.schritt] || {}).kap || 1;
     S.gruende = S.gruende || {}; S.gruende[kap] = [...(S.gruende[kap] || []).filter((g) => g.t !== ersetze(w.t)), { t: ersetze(w.t), grund }]; sichern();
   }
@@ -2540,7 +2544,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const ms = [].concat(w.merke || []).filter((m) => ECHO.has(m));
     if (!ms.length) return;
     const wer = Object.keys(w.herz || {}).filter((id) => LEUTE[id] && GLEICHALTRIGE.includes(id))[0] || Object.keys(w.herz || {}).filter((id) => LEUTE[id])[0];
-    setTimeout(() => ui.toast('<b>' + (wer ? esc(LEUTE[wer].name) + ' wird sich das merken.' : 'Das merkt sich die Geschichte.') + '</b>', 'ly-t-merkt'), 350);
+    setTimeout(() => ui.toast('<b>🔖</b>', 'ly-t-merkt'), 350);   // nur ein Lesezeichen – kein „X wird sich das merken“ (Jugend-Kritik: abgekupfert)
   }
   // Reflexionsfrage am Kapitelende (eine offene Frage, kein richtig/falsch – auch als Einstieg fürs Klassengespräch)
   const REFLEXION = { 1: 'Was hat dir am ersten Tag geholfen, dich ein bisschen sicherer zu fühlen?', 2: 'Was kannst du gut – auch wenn es keiner sieht?',
@@ -2549,7 +2553,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     7: 'Was hättest du gebraucht, um in der Kantine aufzustehen?', 8: 'Was prüfst du, bevor du etwas teilst?',
     9: 'Was lädt deinen Akku wirklich auf?', 10: 'Was nimmst du aus diesem Jahr mit?' };
   // Inhaltshinweise je Kapitel (wie in großen Spielen): kurz, sachlich, mit Weg nach draußen
-  const INHALT = { 2: 'Eine Ranking-Liste, Auslachen im Klassenchat.', 3: 'Ein Wutausbruch, Schubsen, ein bloßstellendes Foto im Klassenchat.', 4: 'Prüfungsstress, starke Anspannung, ein bloßstellendes Foto mit falschem Verdacht.',
+  const INHALT = { 2: 'Eine Ranking-Liste, Auslachen im Klassenchat.', 3: 'Jemand rastet aus. Schubsen. Ein fieses Foto im Chat.', 4: 'Test-Stress. Ein fieses Foto. Falscher Verdacht.',
     5: 'Verdacht gegen dich, Gerüchte, harte Gedanken über sich selbst.', 6: 'Filmen ohne Erlaubnis, Rauswurf aus dem Klassenchat.', 7: 'Gruppendruck, Mobbing in der Kantine.',
     8: 'Ein KI-Fake-Video über eine Lehrerin.', 9: 'Schlafmangel, ein schweres Geheimnis, ein Freund in einer Krise.', 10: 'Geständnis, Entschuldigungen, Abschied.' };
   // Dauer-Anzeige einer Woche (Anspannung 0–100 in Kapitel 4, Akku in Kapitel 9): gilt bis zum Kapitelende
@@ -2576,7 +2580,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       await ui.rueckblick(st.tag, st.kap !== vorher.kap ? kapName(st.kap) : 'Ein neuer Tag in der Annexe Junglinster.', eintraege);
       if (st.kap !== vorher.kap) await vorspann(st);
       const b = besteFreunde()[0];
-      if (b && st.kap !== vorher.kap) setTimeout(() => ui.toast('<b>' + LEUTE[b].name + ' (' + stufe(S.freund[b]) + ')</b><span>„' + GRUSS[b] + '“</span>', 'ly-t-herz'), 2500);
+      if (b && st.kap !== vorher.kap) setTimeout(() => ui.toast('<b>' + LEUTE[b].name + ' (' + stufe(S.freund[b]) + ')</b><span>„' + (FREUND_GRUSS[b] || 'Da bist du ja.') + '“</span>', 'ly-t-herz'), 2500);
       if (st.kap !== vorher.kap && INHALT[st.kap]) ui.toast('<b>ℹ️ In diesem Kapitel</b><span>' + INHALT[st.kap] + ' Wenn es zu viel wird: ☰ → Kurz raus.</span>');
     }
     sky.time.setTimeOfDay(st.uhr); ui.uhr(st.uhr, st.tag); uhrenStellen(st.uhr, st.kap);
@@ -2599,6 +2603,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     vertragPlakat(); sportParcours(); klassenBank();
     if (st.frei) freiStart(st);
     if (st.start && st.start.gespraech && mitStart !== false) {
+      // läuft noch ein Gespräch (z. B. das Ende des letzten Schritts), warten statt überspringen – sonst fehlt der Anfang des Schritts
+      for (let w = 0; imGespraech && w < 300; w++) await new Promise((r) => setTimeout(r, 100));
       await gespraech(GESPRAECHE[st.start.gespraech]);
       if (st.id === 'ankunft' && bus) busFaehrt = 1;
       if (st.fertig && st.fertig.nachStart && S.schritt === i) { S.fertig = true; setTimeout(() => { if (S.schritt === i) naechster(); }, 60); }
@@ -2611,6 +2617,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   // Wen spricht man in diesem Schritt an – und was passiert?
   async function rede(id) {
+    if (startet) return;   // solange ein Schritt startet (Rückblick, Vorspann, Start-Gespräch), noch nicht ansprechbar – sonst kommt die Startszene zu spät
     if (freiLauf && await freiFaden(id)) return;
     const st = SCHRITTE[S.schritt];
     const f = st && !S.fertig ? st.fertig : null;
@@ -4160,7 +4167,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const zu = id === 'k4_hof' || (id === 'k4_test' && !!m.k4TuerZu);
     if (zu !== tuer104Zu) { tuer104Zu = zu; extraNeu(); }
     tuer104W += ((zu ? 0 : (Math.PI / 2) * 0.96) - tuer104W) * Math.min(1, dt * 3); tuer104.rotation.y = tuer104W;
-    zettel104.visible = !!st && st.kap === 4 && ['k4_morgen', 'k4_ampel', 'k4_hof', 'k4_test'].includes(id) && !m.k4ZettelWeg;
+    zettel104.visible = !!st && st.kap === 4 && ['k4_morgen', 'k4_ampel', 'k4_hof', 'k4_test'].includes(id) && (!m.k4ZettelWeg || id === 'k4_test');   // abgerissen: Kenan klebt Mittwoch 8:31 neu
   }
   // Annexe News an der Pinnwand: jede Woche eine neue Ausgabe; Zoés Umfrage-Ergebnis mit deiner Antwort
   const KURZ_NOTIERT = { 1: 'Die Hallenuhr geht drei Minuten nach. Fernand arbeitet dran. Seit 1998.', 2: 'Coding-Club sucht Testpersonen. Informatik, mittwochs 13 Uhr.',

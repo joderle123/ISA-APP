@@ -95,7 +95,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
   ui.liveChat = (def) => new Promise((ok) => {
     const k = ui.ebeneAuf('szene', '<div class="sz sz-chat"><div class="sz-handy"><div class="ly-h-kopf">' + esc(def.titel) + '<small>' + esc(def.mitglieder || '') + ' Mitglieder · online</small></div>' +
       '<div class="sz-verlauf-wrap"><div class="ly-h-verlauf sz-verlauf" aria-live="polite"></div><button type="button" class="sz-neu" hidden>↓ Neue Nachricht</button></div><div class="ly-h-tippt" hidden></div>' +
-      (def.info || !chatErklaert() ? '<p class="sz-chat-info">' + esc(def.info || 'Nachrichten kommen nach und nach. Unten kannst du reagieren – oder nichts tun. Auch das hat Folgen.') + '</p>' : '') +
+      (def.info || !chatErklaert() ? '<p class="sz-chat-info">' + esc(def.info || 'Nachrichten kommen nach und nach. Tippen oder nicht. Beides zählt.') + '</p>' : '') +
       '<div class="sz-aktionen ly-d-optionen"></div><div class="sz-unten"><span class="sz-uhr"></span>' + (def.klingel && !ui.zeitlos ? '' : '<button type="button" class="ly-link" data-x="pause">⏸ Pause</button>') + '<button type="button" class="ly-link" data-x="weg">Handy weg <kbd>Esc</kbd></button></div></div></div>');
     chatErklaert(true);
     const verlauf = k.querySelector('.sz-verlauf'), tippt = k.querySelector('.ly-h-tippt'), leiste = k.querySelector('.sz-aktionen'), neuChip = k.querySelector('.sz-neu');
@@ -1386,12 +1386,12 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
   // → { beantwortet, richtig, max, skills: [ids], gedankenWeg }
   ui.mathTest = (def) => new Promise((ok) => {
     const k = ui.ebeneAuf('szene', '<div class="sz sz-test"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Mathe-Test') + '</span><b>Test · <span class="sz-t-uhr"></span></b></div>' +
-      '<div class="sz-puls"><span>Anspannung</span><div><i></i></div><b>0</b></div>' +
+      '<div class="sz-puls"><span>Dein Körper</span><div><i></i></div><b>–</b></div>' +
       '<div class="sz-t-feld"><div class="sz-t-aufgabe"></div><div class="sz-t-gedanken"></div></div>' +
-      '<div class="sz-karten sz-raster ly-d-optionen sz-t-antw"></div><div class="sz-t-skills"></div><div class="sz-t-fuss"></div></div>');
+      '<div class="sz-karten sz-raster ly-d-optionen sz-t-antw"></div><div class="sz-t-skills"></div>' + (def.parkschein ? '<div class="sz-t-park">🅿️ Parkschein: <b>nach dem Test</b> <span>0</span></div>' : '') + '<div class="sz-t-fuss"></div></div>');
     const auf = k.querySelector('.sz-t-aufgabe'), antw = k.querySelector('.sz-t-antw'), ged = k.querySelector('.sz-t-gedanken'), sk = k.querySelector('.sz-t-skills'), fuss = k.querySelector('.sz-t-fuss');
     const pulsF = k.querySelector('.sz-puls i'), pulsZ = k.querySelector('.sz-puls b'), uhr = k.querySelector('.sz-t-uhr'), feld = k.querySelector('.sz-t-feld');
-    let puls = def.start || 35, max = puls, n = 0, richtig = 0, gedankenWeg = 0, ende = false, sperre = 0, abzug = 0, bremse = false, kopfRot = 0, schnell = false;
+    let puls = def.start || 35, max = puls, n = 0, richtig = 0, gedankenWeg = 0, ende = false, sperre = 0, abzug = 0, bremse = false, kopfRot = 0, schnell = false, geparkt = 0, zurueck = 0, blickZeit = 0;
     const benutzt = [], gesehen = [], t0 = performance.now(), ZEIT = (def.zeit || 80) * zeitFaktor() * 1000;
     // Kapitel 4: Ereignisse während des Tests ({ bei: 0–1, text, plus, blitz, blick: { t, key, text } }), Uhrzeit statt Sekunden (def.uhr: { von, bis } in Minuten)
     const ER = (def.ereignisse || []).map((e) => ({ ...e, fertig: false }));
@@ -1401,13 +1401,15 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       const el = document.createElement('div'); el.className = 'sz-t-ereignis'; el.innerHTML = '<span>' + esc(ersetze(e.text)) + '</span>';
       if (e.blick) {
         const b = document.createElement('button'); b.type = 'button'; b.innerHTML = '👁 ' + esc(e.blick.t || 'Hinschauen');
-        b.onclick = () => { if (ende) return; gesehen.push(e.blick.key); sperre = performance.now() + 2200; puls = Math.min(100, puls + 2); el.querySelector('span').textContent = ersetze(e.blick.text); b.remove(); zeigPuls(); };
+        // Aufschauen kostet Testzeit (e.blick.kosten Sekunden), bringt aber etwas, das man später weiß
+        b.onclick = () => { if (ende) return; gesehen.push(e.blick.key); sperre = performance.now() + 2200; puls = Math.min(100, puls + 2); const ko = (e.blick.kosten || 0); if (ko) { abzug += ko * 1000 * zeitFaktor(); blickZeit += ko; } el.querySelector('span').textContent = ersetze(e.blick.text) + (ko ? ' (−' + ko + ' s)' : ''); b.remove(); zeigPuls(); };
         el.appendChild(b);
       }
       feld.before(el); zeigPuls();
       setTimeout(() => el.remove(), (e.blick ? 4200 : 3200) * zeitFaktor());
     };
-    const zeigPuls = () => { const Z = ZONE(puls); pulsF.style.width = puls + '%'; pulsF.style.background = Z[2]; pulsZ.textContent = Math.round(puls); max = Math.max(max, puls);
+    // keine Zahl (Heft #03: die Zahl schätzt man selbst) – nur Farbe und Wort
+    const zeigPuls = () => { const Z = ZONE(puls); pulsF.style.width = puls + '%'; pulsF.style.background = Z[2]; pulsZ.textContent = Z[1]; pulsZ.style.color = Z[2]; max = Math.max(max, puls);
       feld.classList.toggle('verschwommen', puls >= 70 && puls < 90); feld.classList.toggle('blackout', puls >= 90); };
     const aufgabe = () => {
       if (n >= def.aufgaben.length) {
@@ -1422,7 +1424,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     sk.innerHTML = '<small>' + esc(def.skillsTitel || 'Dein Koffer:') + '</small>' + def.skills.map((s) => '<button type="button" data-s="' + esc(s.id) + '">' + (s.sy || '') + ' ' + esc(s.t) + '</button>').join('');
     sk.querySelectorAll('[data-s]').forEach((b) => { b.onclick = () => {
       if (ende || b.disabled) return; const s = def.skills.find((x) => x.id === b.dataset.s);
-      if (s.kopf && puls >= 70) { kopfRot++; fuss.innerHTML = '<div class="sz-sys">' + esc(s.t) + ' … kommt nicht an. Auf Rot erreicht der Kopf nichts. Erst der Körper.</div>'; puls = Math.min(100, puls + 2); zeigPuls(); return; }
+      if (s.kopf && puls >= 70) { kopfRot++; fuss.innerHTML = '<div class="sz-sys">' + esc(s.rot || (s.t + ' … nichts. Die Zahlen rutschen weg.')) + '</div>'; puls = Math.min(100, puls + 2); zeigPuls(); return; }
       b.disabled = true; benutzt.push(s.id);
       if (def.wiederholbar) setTimeout(() => { if (!ende) b.disabled = false; }, def.wiederholbar * 1000 * zeitFaktor());   // Kapitel 4: der eigene Plan geht mehrmals, mit kurzer Pause
       sperre = performance.now() + 2500; fuss.innerHTML = '<div class="sz-sys">' + esc(ersetze(s.wie || s.t)) + ' …</div>';
@@ -1439,15 +1441,22 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       };
       sk.appendChild(nb);
     }
-    const gedanke = () => {
+    const gedanke = (fest, extra) => {
       if (ende) return;
-      const t = def.gedanken[Math.floor(Math.random() * def.gedanken.length)];
+      const t = fest || def.gedanken[Math.floor(Math.random() * def.gedanken.length)];
       const el = document.createElement('button'); el.type = 'button'; el.className = 'sz-gedanke'; el.textContent = t;
       el.style.left = (5 + Math.random() * 55) + '%'; el.style.top = (10 + Math.random() * 60) + '%';
-      el.onclick = () => { gedankenWeg++; el.classList.add('weg'); puls = Math.max(5, puls - 4); zeigPuls(); setTimeout(() => el.remove(), 600); };
+      el.onclick = () => {
+        if (el.classList.contains('weg')) return;
+        // Parkschein (Heft #03): ab Gelb parkt man einen Gedanken „bis nach dem Test“ – er bleibt weg. Auf Rot geht Parken nicht.
+        // Ohne Parkschein: wegdrücken – und er kommt doppelt zurück (der blaue Elefant).
+        if (def.parkschein && puls < 70) { geparkt++; gedankenWeg++; el.classList.add('weg', 'geparkt'); puls = Math.max(5, puls - 4); const pk = k.querySelector('.sz-t-park span'); if (pk) pk.textContent = geparkt; zeigPuls(); setTimeout(() => el.remove(), 600); return; }
+        gedankenWeg++; el.classList.add('weg'); puls = Math.max(5, puls - 2); zeigPuls(); setTimeout(() => el.remove(), 600);
+        if (def.elefant) { zurueck++; fuss.innerHTML = '<div class="sz-sys">' + esc(def.parkschein ? 'Auf Rot geht Parken nicht. Er kommt zurück.' : 'Weggedrückt … er kommt zurück. Doppelt.') + '</div>'; setTimeout(() => { if (ende) return; gedanke(t, true); gedanke(t, true); }, 1400); }
+      };
       ged.appendChild(el); puls = Math.min(100, puls + 5); zeigPuls();
       setTimeout(() => { if (el.isConnected) el.remove(); }, 6000);
-      setTimeout(gedanke, 3500 + Math.random() * 3000);
+      if (!extra) setTimeout(() => gedanke(), 3500 + Math.random() * 3000);   // zurückgekommene Gedanken starten keine neue Kette
     };
     const tick = () => {
       if (ende) return; if (schnell) abzug += 45; const t = performance.now() - t0 + abzug, f = Math.min(1, t / ZEIT);
@@ -1463,10 +1472,10 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       if (ende) return; ende = true; ged.innerHTML = ''; feld.classList.remove('verschwommen', 'blackout');
       auf.innerHTML = '<small>Abgabe</small>Du hast ' + n + ' von ' + def.aufgaben.length + ' Aufgaben bearbeitet.'; antw.innerHTML = '';
       sk.querySelectorAll('button').forEach((b) => { b.disabled = true; });
-      weiterKnopf(fuss, { beantwortet: n, richtig, max: Math.round(max), skills: benutzt, gedankenWeg, gesehen, notbremse: bremse, kopfRot }, ok, '<div class="sz-sys">Höchste Anspannung: ' + Math.round(max) + (benutzt.length ? ' · Skills benutzt: ' + benutzt.length : '') + '</div>');
+      weiterKnopf(fuss, { beantwortet: n, richtig, max: Math.round(max), skills: benutzt, gedankenWeg, gesehen, notbremse: bremse, kopfRot, geparkt, zurueck, blickZeit }, ok, '<div class="sz-sys">Am höchsten: ' + ZONE(max)[1] + (geparkt ? ' · 🅿️ ' + geparkt + ' geparkt' : '') + (blickZeit ? ' · Aufgeschaut: −' + blickZeit + ' s' : '') + '</div>');
     }
     halte((e) => { const m = /^Digit([1-9])$/.exec(e.code); if (m && !ende) { const b = antw.querySelector('[data-i="' + (+m[1] - 1) + '"]'); if (b) { e.preventDefault(); e.stopPropagation(); if (!e.repeat) b.click(); } } });
-    zeigPuls(); aufgabe(); setTimeout(gedanke, 2500); requestAnimationFrame(tick);
+    zeigPuls(); aufgabe(); setTimeout(() => gedanke(), 2500); requestAnimationFrame(tick);
   });
 
   // Gemeinsam atmen (E12 Partneratmung): Jemand ist bei Rot. Halten = einatmen (Kreis wird groß), loslassen = ausatmen.
@@ -2221,7 +2230,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
   ui.aufstellung = (def) => new Promise((ok) => {
     const N = def.anzahl || 5, team = [], angeschaut = [];
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Turnhalle') + '</span><b>Aufstellung</b></div>' +
-      '<p class="sz-info">' + (def.leute.length === 9 ? 'Neun' : def.leute.length) + ' warten an der Wand. Du spielst selbst mit und stellst ' + N + ' dazu. Einmal tippen: genauer hinschauen. Zweimal: aufstellen.</p><div class="sz-wand"></div><div class="sz-blick-text sz-sys"></div><div class="sz-teams"><div><b>Deine Fünf</b><span data-t="ich"></span></div></div><div class="sz-karten"></div></div>');
+      '<p class="sz-info">' + (def.schnell ? 'Frau Sommer zählt runter. Tipp ' + N + ' Namen an.' : (def.leute.length === 9 ? 'Neun' : def.leute.length) + ' warten an der Wand. Du spielst selbst mit und stellst ' + N + ' dazu. Einmal tippen: genauer hinschauen. Zweimal: aufstellen.') + '</p>' + (def.schnell ? '<div class="mv-zeit sz-auf-zeit"><i></i></div>' : '') + '<div class="sz-wand"></div><div class="sz-blick-text sz-sys"></div><div class="sz-teams"><div><b>Deine Fünf</b><span data-t="ich"></span></div></div><div class="sz-karten"></div></div>');
     const wand = k.querySelector('.sz-wand'), blick = k.querySelector('.sz-blick-text'), karten = k.querySelector('.sz-karten');
     let fokus = null;
     const zeig = () => {
@@ -2234,20 +2243,28 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     const tipp = (id) => {
       const p = def.leute.find((q) => q.id === id);
       if (team.includes(id)) { team.splice(team.indexOf(id), 1); fokus = id; blick.textContent = p.name + ' geht zurück an die Wand.'; zeig(); return; }
-      if (fokus !== id) { fokus = id; if (!angeschaut.includes(id)) angeschaut.push(id); blick.textContent = p.name + ': ' + (p.blick || p.info || 'wartet.'); zeig(); return; }
+      if (fokus !== id && !def.schnell) { fokus = id; if (!angeschaut.includes(id)) angeschaut.push(id); blick.textContent = p.name + ': ' + (p.blick || p.info || 'wartet.'); zeig(); return; }
       if (team.length >= N) { blick.textContent = 'Fünf stehen schon. Nimm erst jemanden raus.'; return; }
       team.push(id); fokus = null; blick.textContent = p.name + ' kommt nach vorne.'; zeig();
     };
-    const fertig = () => { if (team.length !== N) return; loesche(); ui.ebeneZu(); ok({ team: team.slice(), uebrig: def.leute.map((p) => p.id).filter((id) => !team.includes(id)), angeschaut }); };
+    let aus = false, uhr = 0;
+    const fertig = () => { if (aus || team.length !== N) return; aus = true; clearTimeout(uhr); loesche(); ui.ebeneZu(); ok({ team: team.slice(), uebrig: def.leute.map((p) => p.id).filter((id) => !team.includes(id)), angeschaut, zeitUm: !!fertig.zeitUm }); };
     halte((e) => { if ((e.code === 'KeyE' || e.code === 'Enter') && team.length === N) { e.preventDefault(); e.stopPropagation(); fertig(); } });
     zeig();
+    if (def.schnell) {   // Zeit um: Frau Sommer füllt auf – mit denen, die am nächsten an ihr stehen (Reihenfolge der Wand)
+      const sek = (def.zeit || 10) * zeitFaktor(), bar = k.querySelector('.sz-auf-zeit i');
+      if (bar) { bar.style.transition = 'transform ' + sek + 's linear'; requestAnimationFrame(() => requestAnimationFrame(() => { bar.style.transform = 'scaleX(0)'; })); }
+      uhr = setTimeout(() => { if (aus) return; for (const p of def.leute) if (team.length < N && !team.includes(p.id)) team.push(p.id); fertig.zeitUm = true; blick.textContent = 'Zeit! Frau Sommer nimmt den Rest.'; zeig(); setTimeout(fertig, 1100); }, sek * 1000);
+    }
   });
 
   // ---------- Pass-Spiel (Hallenturnier, Kapitel 3): Wer steht frei? Hinschauen unter Zeitdruck. ----------
   // Runden: der Ball ist bei dir, zwei Sekunden, die Gegner decken – tippe auf den, der frei ist. Am Ende der letzte Pass.
   // def: { wo, team: [{ id, name, farbe }], letzter: id (wer den letzten Pass nicht fängt), runden: 6 } → { gute, abgefangen, zuLang, stand: [a, b], letzter }
+  // Seit Serie 2: wer den Ball verliert, ergibt sich aus den eigenen Pässen (kein fester Patzer). def.muede: [ids] – wer müde ist,
+  // lässt einen freien Ball manchmal durchrutschen. def.ohneStart: erster Angriff ohne dich (du warst an der Wand). def.tausch: { rein, nach }.
   ui.passSpiel = (def) => new Promise((ok) => {
-    const T = def.team, R = def.runden || 6;
+    const T = def.team.slice(), R = def.runden || 6, muede = def.muede || [];
     const k = ui.ebeneAuf('szene', '<div class="sz sz-lotsen"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Turnhalle') + ' · 7P2 gegen 7P1</span><b>Wer steht frei?</b></div>' +
       '<p class="sz-info">Du hast den Ball. Tippe auf den, um den gerade niemand steht. Du hast nur einen Moment.</p>' +
       '<canvas width="520" height="300"></canvas><div class="sz-stand"></div></div>');
@@ -2264,6 +2281,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       frei = letzte && def.letzter && !fehlerVon ? Math.max(0, T.findIndex((p) => p.id === def.letzter)) : Math.floor(Math.random() * T.length);
       gegner = pos.map((p, i) => (i === frei ? { x: Math.min(500, p.x + zufall(70, 110) * (p.x > 330 ? -1 : 1)), y: Math.max(52, Math.min(270, p.y + zufall(-50, 50))) } : { x: p.x + zufall(-16, 16), y: p.y + zufall(-16, 16) }));
       text = letzte ? 'Letzter Angriff. Noch 20 Sekunden. ' + wir + ' : ' + sie + '.' : 'Angriff ' + runde + ' von ' + R; textT = 1.4;
+      if (runde === 1 && def.ohneStart) { phase = 'aus'; sie++; text = 'Du bist noch an der Wand. Die 7P1 trifft.'; textT = 2.2; weiter(); }
     };
     const zeitMax = () => 2.2 * zeitFaktor();
     const wahl = (i) => {
@@ -2271,16 +2289,23 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       phase = 'aus'; const letzte = runde === R;
       if (i === frei) {
         if (letzte && def.letzter && !fehlerVon) { text = T[i].name + ' ist frei … der Ball kommt … und rutscht ihm durch die Hände.'; sie++; fehlerVon = T[i].id; }
+        else if (muede.includes(T[i].id) && Math.random() < 0.5) { text = T[i].name + ' ist frei … gähnt … der Ball rutscht durch.'; sie++; fehlerVon = T[i].id; }
         else { gute++; wir++; text = 'Pass zu ' + T[i].name + ' – Tor!'; }
       } else { abgefangen++; sie++; fehlerVon = T[i].id; text = 'Abgefangen. ' + T[i].name + ' war gedeckt.'; }
       textT = 2.2; weiter();
     };
-    const weiter = () => { warten = true; setTimeout(() => { warten = false; if (runde >= R) ende(); else neueRunde(); }, letzteRunde() ? 2600 : 1500); };
+    const weiter = () => { warten = true; setTimeout(() => {
+      warten = false; if (runde >= R) return ende();
+      if (def.tausch && def.tausch.rein && runde === (def.tausch.nach || Math.floor(R / 2)) && !T.some((p) => p.id === def.tausch.rein.id)) {   // Halbzeit: wie versprochen
+        const raus = T[T.length - 1]; T[T.length - 1] = def.tausch.rein; text = 'Halbzeit. ' + def.tausch.rein.name + ' kommt rein. ' + raus.name + ' geht raus.'; textT = 2.4;
+        warten = true; setTimeout(() => { warten = false; neueRunde(); }, 2200); return;
+      }
+      neueRunde(); }, letzteRunde() ? 2600 : 1500); };
     const letzteRunde = () => runde >= R;
     const ende = () => {
       if (fertig) return; fertig = true;   // ehrlicher Spielstand: jeder gute Pass ein Tor, jeder Fehler ein Gegentor
       text = 'Abpfiff. ' + wir + ' : ' + sie + '.'; textT = 3;
-      setTimeout(() => { loesche(); ui.ebeneZu(); ok({ gute, abgefangen, zuLang, stand: [wir, sie], letzter: fehlerVon || def.letzter || T[frei].id }); }, 2200);
+      setTimeout(() => { loesche(); ui.ebeneZu(); ok({ gute, abgefangen, zuLang, stand: [wir, sie], letzter: fehlerVon || def.letzter || null, getauscht: !!(def.tausch && T.some((p) => p.id === def.tausch.rein.id)) }); }, 2200);
     };
     cv.addEventListener('pointerdown', (e) => {
       const r = cv.getBoundingClientRect(), sx = (e.clientX - r.left) * (520 / r.width), sy = (e.clientY - r.top) * (300 / r.height);
@@ -2348,6 +2373,8 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
         if (angriff) { angriff.t += dt; if (!angriff.fertig && angriff.t >= angriff.dauer) { angriff.fertig = true; if (duck > 0) { ausgewichen++; text = 'Weggeduckt!'; } else { getroffen++; sie++; splat = 0.9; text = 'Treffer! Schnee im Kragen.'; } textT = 1.2; } }
         // Mitspieler werfen ab und zu
         if (Math.random() < dt * 0.45 && def.team && def.team.length) { const m = def.team[Math.floor(Math.random() * def.team.length)], ziel = Math.floor(Math.random() * 3); baelle.push({ x0: zufall(60, 460), y0: 282, x1: koepfe[ziel].x + zufall(-8, 8), y1: 74, t: 0, dauer: 0.5, wer: m.name, ziel }); }
+        // Die 7P1 trifft auch deine Leute – sonst steht es am Ende 47 : 0 (Jugend-Kritik: zu leicht)
+        if (Math.random() < dt * 0.32 && def.team && def.team.length) { const m = def.team[Math.floor(Math.random() * def.team.length)], g = G[Math.floor(Math.random() * G.length)]; sie++; if (textT <= 0.2) { text = g.name + ' trifft ' + m.name + '.'; textT = 0.9; } }
         for (const b of baelle) {
           b.t += dt;
           if (!b.aus && b.t >= b.dauer) { b.aus = true; const q = koepfe[b.ziel];

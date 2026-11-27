@@ -113,13 +113,17 @@ export function createUI({ root, input, speech }) {
   ui.handyBild = (h) => {
     clearInterval(handyUhr);
     if (!h) { handyKarte.hidden = true; handyKarte.innerHTML = ''; return; }
-    const u = h.umfrage;
-    handyKarte.innerHTML = '<div class="ly-hk-kopf"><b>' + esc(h.wer || '') + '</b><span>' + esc(h.wann || 'gerade eben') + '</span></div>' +
-      (h.bild ? (h.streifen || h.kreis || h.gruen ? '<span class="ly-hk-bildrahmen"><img alt="' + esc(h.alt || 'Foto') + '" src="' + h.bild + '">' + (h.streifen ? '<i class="ly-hk-streifen"></i>' : '') +
+    const u = h.umfrage, zl = h.zaehler;
+    // h.chat: [{ wer, t, pin }] – Nachrichten statt Foto · h.zaehler: { start, wort, live } – Reaktionen, die mitlaufen
+    const chat = Array.isArray(h.chat) && h.chat.length ? '<div class="ly-hk-chat">' + h.chat.map((c) => '<p' + (c.pin ? ' class="pin"' : c.ich ? ' class="ich"' : '') + '>' + (c.wer ? '<b>' + esc(c.wer) + '</b>' : '') + esc(c.t || '') + '</p>').join('') + '</div>' : '';
+    handyKarte.innerHTML = '<div class="ly-hk-kopf"><b>' + esc(h.wer || '') + '</b><span>' + esc(h.wann || 'gerade eben') + '</span></div>' + chat +
+      (chat && !h.bild ? '' : h.bild ? (h.streifen || h.kreis || h.gruen ? '<span class="ly-hk-bildrahmen"><img alt="' + esc(h.alt || 'Foto') + '" src="' + h.bild + '">' + (h.streifen ? '<i class="ly-hk-streifen"></i>' : '') +
         (h.kreis ? '<i class="ly-hk-kreis" style="left:' + (+h.kreis.x || 50) + '%;top:' + (+h.kreis.y || 45) + '%;--r:' + (+h.kreis.r || 18) + '%"></i>' : '') + (h.gruen ? '<i class="ly-hk-gruen"></i>' : '') + '</span>' : '<img alt="' + esc(h.alt || 'Foto') + '" src="' + h.bild + '">') : '<div class="ly-hk-leer">📷</div>') +
-      '<div class="ly-hk-text">' + esc(h.text || '') + '</div>' +
+      (h.text ? '<div class="ly-hk-text">' + esc(h.text) + '</div>' : '') +
+      (zl ? '<div class="ly-hk-zaehler">' + (zl.live ? '<em>● live</em> ' : '') + '<b>' + (+zl.start || 0) + '</b> ' + esc(zl.wort || 'Reaktionen') + '</div>' : '') +
       (u ? '<div class="ly-hk-umfrage"><div class="ly-hk-bar a"><i></i><span>' + esc(u.a) + ' <b></b></span></div><div class="ly-hk-bar b"><i></i><span>' + esc(u.b) + ' <b></b></span></div><small>' + (u.live ? '<em>● live</em> ' : '') + '<span class="n"></span> Stimmen</small></div>' : '');
     handyKarte.hidden = false;
+    if (zl && zl.live) { let z = +zl.start || 0; const b = handyKarte.querySelector('.ly-hk-zaehler b'); handyUhr = setInterval(() => { z += 1 + Math.floor(Math.random() * 3); if (b) b.textContent = z; }, 900); }
     if (!u) return;
     let n = u.stimmen || 20, pa = u.pa || 50;
     const zeig = () => { const qa = Math.round(pa), qb = 100 - qa;
@@ -591,7 +595,7 @@ export function createUI({ root, input, speech }) {
     const k = ebeneAuf('ende', konfetti + '<div class="ly-e-stempel">Kapitel ' + kap + ' ✓</div><h2>' + esc(ueberschrift) + '</h2>' +
       // Rückblick in Bildern: echte Bilder aus dem eigenen Spiel – Grundlage fürs Gespräch mit der Lehrperson
       (bilder.length ? '<div class="ly-e-bilder"><h3>Rückblick in Bildern</h3><div class="ly-e-bild-reihe">' + bilder.map((b, n) => '<figure class="ly-e-bild' + (b.auch ? ' ly-e-auch' : '') + '"><img src="' + esc(b.url) + '" alt="' + esc(b.titel) + '"><figcaption><b>' + (n + 1) + ' · ' + esc(b.titel) + '</b>' + (b.text ? '<small>' + esc(b.text) + '</small>' : '') + '</figcaption></figure>').join('') + '</div></div>' : '') +
-      (chronik.length ? '<div class="ly-e-chronik"><h3>Deine Woche – was du entschieden hast</h3><ul>' + chronik.map((t) => '<li>' + esc(t) + '</li>').join('') + '</ul></div>' : '') +
+      (chronik.length ? '<div class="ly-e-chronik"><h3>' + (kap === 1 ? 'Dein Montag' : 'Deine Woche') + ' – was du entschieden hast</h3><ul>' + chronik.map((t) => '<li>' + esc(t) + '</li>').join('') + '</ul></div>' : '') +
       (brief ? '<div class="ly-e-brief"><span class="ly-j-name" style="--f:' + esc(brief.farbe) + '">' + esc(brief.von) + '</span> schreibt dir: „' + esc(brief.text) + '“</div>' : '') + freundesKreis(freunde) + '<div class="ly-e-spalten"><section><h3>Menschen</h3><ul class="ly-j-leute">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + '</span><span class="ly-herzen">' + '♥'.repeat(Math.max(0, Math.min(5, l.herz))) + '<i>' + '♥'.repeat(5 - Math.max(0, Math.min(5, l.herz))) + '</i></span></li>').join('') + '</ul></section>' +
       '<section><h3>Deine Stärken heute</h3><ul class="ly-j-staerken">' + (staerken.length ? staerken.map((s) => '<li><b>' + esc(s.name) + '</b><small>' + esc(s.text) + '</small></li>').join('') : '<li><small>Heute nix Besonderes. Passiert.</small></li>') + '</ul>' +
       '<p class="ly-leer">Entdeckt: ' + entdeckt + ' von ' + gesamt + ' Orten</p></section></div>' +

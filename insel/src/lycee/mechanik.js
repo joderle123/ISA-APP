@@ -148,7 +148,7 @@ export function mechaniken(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
       const p = L[j], alle = Object.fromEntries(L.map((x) => [x.id, x.spuren.length]));
       k.querySelectorAll('[data-i]').forEach((b) => b.classList.toggle('gewaehlt', +b.dataset.i === j));
       const n = p ? p.spuren.length : 0, max = Math.max(0, ...L.map((x) => x.spuren.length));
-      const satz = !p ? (def.offenSatz || 'Kein Name ohne Beweis. Das ist schwer. Und fair.') : n === 0 ? 'Du hast ' + p.name + ' gewählt. Ohne eine einzige Spur. Nur ein Gefühl.' : n < max ? p.name + ': ' + n + ' Spur' + (n > 1 ? 'en' : '') + '. Bei jemand anderem sind es mehr.' : p.name + ': ' + n + ' Spur' + (n > 1 ? 'en' : '') + '. Ein Verdacht. Noch kein Beweis.';
+      const satz = !p ? (def.offenSatz || 'Kein Name ohne Spur.') : n === 0 ? 'Du hast ' + p.name + ' gewählt. Ohne eine einzige Spur. Nur ein Gefühl.' : n < max ? p.name + ': ' + n + ' Spur' + (n > 1 ? 'en' : '') + '. Bei jemand anderem sind es mehr.' : p.name + ': ' + n + ' Spur' + (n > 1 ? 'en' : '') + '. Ein Verdacht. Noch kein Beweis.';
       k.querySelector('.mv-w-nach').innerHTML = '<div class="mv-f-urteil">' + esc(satz) + '</div><button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
       let zuA = false; const zu = () => { if (zuA) return; zuA = true; loesche(); ui.ebeneZu(); ok({ wahl: p ? p.id : 'offen', spuren: n, alle }); };
       k.querySelector('[data-a="w"]').onclick = zu; setTimeout(() => { if (!zuA) taste(['KeyE', 'Enter'], zu); }, 300);

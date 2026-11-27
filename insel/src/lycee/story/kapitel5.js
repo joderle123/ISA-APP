@@ -119,7 +119,7 @@ const ALLE = (m) => ({
   gruppen: [
     { t: 'Tische flüstern.', n: 4, farbe: '#d6452f', sy: '🤫' },
     { t: 'Leuten ist es egal. Sie essen.', n: 9, farbe: '#5b6472', sy: '🍝' },
-    { t: (m.k4YusufGeschickt || m.k4BeideGeblieben || m.k4NoahVerteidigt) ? 'nicken dir zu. Einer davon ist Noah.' : 'nicken dir zu.', n: 2, farbe: '#3fa66b', sy: '🙂' },
+    { t: (m.k4NoahVerteidigt || m.k3UebrigHin && m.k3UebrigId === 'noah') ? 'nicken dir zu. Einer davon ist Noah.' : 'nicken dir zu.', n: 2, farbe: '#3fa66b', sy: '🙂' },
   ],
   schluss: '„Alle“ sind vier Tische.',
   frage: 'Dein Satz für diese Woche:',

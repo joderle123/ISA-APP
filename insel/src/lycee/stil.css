@@ -1440,6 +1440,13 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-handykarte img { width: 100%; border-radius: 12px; display: block; aspect-ratio: 48 / 33; object-fit: cover; }
 .ly-hk-leer { aspect-ratio: 48 / 33; border-radius: 12px; background: #222a44; display: grid; place-items: center; font-size: 40px; }
 .ly-hk-text { font-size: 14px; padding: 0 4px; }
+.ly-hk-chat { display: grid; gap: 5px; padding: 2px 2px 0; }
+.ly-hk-chat p { margin: 0; background: #1d2540; border-radius: 12px 12px 12px 4px; padding: 6px 9px; font-size: 14px; line-height: 1.3; }
+.ly-hk-chat p b { display: block; font-size: 11px; color: #9aa3c2; }
+.ly-hk-chat p.pin { background: #3a3215; box-shadow: inset 3px 0 0 #f2b134; }
+.ly-hk-chat p.ich { background: #1f5a4e; border-radius: 12px 12px 4px 12px; justify-self: end; }
+.ly-hk-zaehler { font-size: 13px; color: #9aa3c2; padding: 0 4px 2px; font-variant-numeric: tabular-nums; }
+.ly-hk-zaehler b { color: #eef1fa; font-size: 15px; } .ly-hk-zaehler em { color: #f07a62; font-style: normal; font-weight: 800; }
 .ly-hk-umfrage { display: grid; gap: 5px; padding: 0 4px 4px; font-size: 13px; }
 .ly-hk-bar { position: relative; height: 24px; border-radius: 7px; background: rgba(255,255,255,.08); overflow: hidden; }
 .ly-hk-bar i { position: absolute; inset: 0 auto 0 0; transition: width 1s ease; }
@@ -1627,7 +1634,7 @@ body.ly-puls-rot .mv-bild img { animation: mv-unruhig 1.6s ease-in-out infinite;
 .mv-o-karte { all: unset; cursor: pointer; display: flex; flex-direction: column; border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 2px 0 #d5dbe5, 0 0 0 2px #e3e8ef; transition: transform .15s, box-shadow .15s, opacity .3s; }
 .mv-o-karte:hover, .mv-o-karte:focus-visible { transform: translateY(-2px); box-shadow: 0 4px 0 #b5485d, 0 0 0 3px #b5485d; }
 .mv-o-karte.gewaehlt { box-shadow: 0 0 0 4px #3fa66b; transform: scale(1.03); } .mv-o-karte.weg { opacity: .25; }
-.mv-o-bild { position: relative; aspect-ratio: 16 / 9; background: #2b3a55; overflow: hidden; display: grid; place-items: center; }
+.mv-o-bild { position: relative; height: clamp(84px, calc(50vh - 150px), 250px); background: #2b3a55; overflow: hidden; display: grid; place-items: center; }   /* Höhe statt 16:9: vier Karten passen auch auf 1000×640 */
 .mv-o-bild img { width: 100%; height: 100%; object-fit: cover; animation: mv-kenburns 9s ease-in-out infinite alternate; } .mv-o-bild .sy { font-size: 48px; }
 .mv-o-bild em { position: absolute; top: 8px; left: 8px; font-style: normal; font-weight: 900; font-size: 11px; color: #fff; background: rgba(224, 49, 79, .9); border-radius: 6px; padding: 2px 6px; animation: mv-blink 1.4s infinite; }
 @keyframes mv-kenburns { to { transform: scale(1.12) translate(-2%, 1%); } } @keyframes mv-blink { 50% { opacity: .45; } }
@@ -1670,3 +1677,8 @@ body.ly-puls-rot .mv-bild img { animation: mv-unruhig 1.6s ease-in-out infinite;
 
 /* Runde 5: keine Anspannungs-Zahl mehr sichtbar – der Balken reicht */
 .sz-test .sz-puls b { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+/* Test (K4): Parkschein für Gedanken */
+.sz-t-park { font-size: 13px; font-weight: 700; color: #2b3a55; background: #e8f1ff; border: 1px dashed #6f8fc4; border-radius: 8px; padding: 4px 10px; justify-self: start; }
+.sz-t-park b { color: #1d4f9a; } .sz-t-park span { display: inline-block; min-width: 1.4em; text-align: center; background: #1d4f9a; color: #fff; border-radius: 6px; margin-left: 4px; }
+.sz-gedanke.geparkt { background: #e8f1ff !important; color: #1d4f9a !important; transform: translateY(120px) scale(.5) !important; opacity: 0; transition: transform .55s ease, opacity .55s ease; }
+.sz-auf-zeit { margin: 4px 0 8px; }

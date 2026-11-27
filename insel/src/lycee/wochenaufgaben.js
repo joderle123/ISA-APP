@@ -17,7 +17,7 @@ export const AUFGABEN = [
   { id: 'enten', sy: '🦆', t: () => 'Die Enten im Park beobachten', zahl: (S) => m(S).enten || 0, n: [1] },
   { id: 'eisprobe', sy: '🍦', t: (n) => n + '× Eis probieren bei Tonio (Marktplatz)', zahl: (S) => m(S).eisBesuche || 0, n: [1, 2], nurKap: [9, 10] },
   { id: 'pfuetze', sy: '💦', t: (n) => n + '× durch eine Pfütze rennen (Schulhof)', zahl: (S) => m(S).pfuetzen || 0, n: [3, 5], nurKap: [7, 8] },
-  { id: 'laub', sy: '🍂', t: (n) => n + '× in einen Laubhaufen rennen (Schulhof)', zahl: (S) => m(S).laub || 0, n: [3, 5], nurKap: [3, 4] },
+  { id: 'laub', sy: '🍂', t: (n) => n + '× in einen Laubhaufen rennen (Schulhof)', zahl: (S) => m(S).laub || 0, n: [3, 5], nurKap: [3] },
   { id: 'eis', sy: '⛸️', t: (n) => n + ' m auf der Eisbahn rutschen (Marktplatz)', zahl: (S) => Math.floor(m(S).eisMeter || 0), n: [100, 150], nurKap: [5, 6] },
   { id: 'emote', sy: '🙌', t: (n) => n + '× ein Emote zeigen (X oder 🙌)', zahl: (S) => m(S).emotes || 0, n: [2, 3] },
   { id: 'jagd', sy: '🗺️', t: () => 'Einen Zettel der Schnitzeljagd finden', zahl: (S) => (m(S).jagd && m(S).jagd.i) || 0, n: [1], braucht: (S) => !!(m(S).jagd && !m(S).jagd.fertig) },
