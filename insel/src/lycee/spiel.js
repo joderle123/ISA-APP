@@ -78,7 +78,7 @@ import { tunN2, ORTE_N2, RUECKBLICK_N2 } from './story/kapitel2.js';
 import { tunN1, RUECKBLICK_N1 } from './story/kapitel1.js';
 import { fotoSpeichern, fotosLaden, fotosLoeschen } from './fotoablage.js';
 import { tunN3, ORTE_N3, RUECKBLICK_N3 } from './story/kapitel3.js';
-import { tunN4 } from './story/kapitel4.js';
+import { tunN4, ORTE_N4, RUECKBLICK_N4 } from './story/kapitel4.js';
 import { tunN5 } from './story/kapitel5.js';
 import { tunN6 } from './story/kapitel6.js';
 import { tunN7 } from './story/kapitel7.js';
@@ -209,7 +209,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const welt = baueWelt({ material, materialInnen, materialLaub });
   // Nächster echter Sitz (Stuhl, Bank, Kübelrand): Figuren sitzen AUF etwas – mit dessen Höhe und Richtung
   const sitzSuche = (x, z, r = 1.3) => { let best = null, bd = r; for (const q of welt.sitze || []) { const d = Math.hypot(q.x - x, q.z - z); if (d < bd) { bd = d; best = q; } } return best; };
-  Object.assign(welt.orte, ORTE2, ORTE3, ORTE4, ORTE6, ORTE_N3, ORTE_UMLAND, ORTE_N2);
+  Object.assign(welt.orte, ORTE2, ORTE3, ORTE4, ORTE6, ORTE_N3, ORTE_UMLAND, ORTE_N2, ORTE_N4);
   let paket = ladePaket();   // Aufgaben der Lehrperson (Phase 2) oder Grundaufgaben
   scene.add(welt.gruppe);
   const sky = createSky({ scene, renderer: rr.renderer, audio, quality: { ...q, shadowSize: Math.min(q.shadowSize || 0, 2048), shadowSpan: 28 }, events });
@@ -1460,6 +1460,15 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
   }
   const dbgG = (t) => { try { if (window.__gdbg) window.__gdbg.push(t + ' @' + (S && S.schrittId)); } catch (e) { /* nur Test */ } };
+  // Dinge in der Welt, die die Geschichte gerade braucht (Schritt mit dinge: { brunnen: 'gespraech', automat: … }) –
+  // z. B. Kapitel 4: am Brunnen und am Automaten ausprobieren, was die Anspannung senkt. Läuft im Rahmen von aktion().
+  async function storyDing(tu) {
+    const st = SCHRITTE[S.schritt], g = st && !S.fertig && st.dinge && st.dinge[tu];
+    if (!g) return false;
+    // aktion() hat das Gespräch schon gesperrt (imGespraech), darum hier direkt abspielen
+    try { await spiele(typeof g === 'string' ? GESPRAECHE[g] : g); } finally { ui.dialogZu(); ui.handyBild(null); }
+    return true;
+  }
   async function gespraech(zeilen) {
     if (imGespraech) { dbgG('G-übersprungen ' + JSON.stringify((zeilen || [])[0] || '').slice(0, 50)); return; }
     dbgG('G ' + JSON.stringify((zeilen || [])[0] || '').slice(0, 50));
@@ -1498,7 +1507,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     ...tunN1({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
     ...tunN2({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus), welt: () => klassenBank(), foto: (id, z) => fotoMerken(id, fotoAusWelt(z)) }),
     ...tunN3({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
-    ...tunN4({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
+    ...tunN4({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus),
+      setzen: (x, z, yaw) => steuerung.setzen(x, z, yaw),
+      teleport: (ort) => { const o = welt.orte[ort]; if (o) steuerung.teleport(o.x, o.z, o.yaw); },
+      // Foto von dir, aus der Richtung einer Person (Gesicht im Rückblick)
+      fotoAufDich: (id, vonWer, fov = 34) => { try { const p = spieler && spieler.group.position, q = leute[vonWer] && leute[vonWer].f.group.position; if (!p || !q) return;
+        const dx = q.x - p.x, dz = q.z - p.z, d = Math.hypot(dx, dz) || 1; fotoMerken(id, fotoAusWelt({ von: [p.x + (dx / d) * 1.4, 1.62, p.z + (dz / d) * 1.4], auf: [p.x, 1.42, p.z], fov })); } catch (e) { /* Foto ist nur Rückblick */ } } }),
     ...tunN5({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
     ...tunN6({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
     ...tunN7({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
@@ -1861,11 +1875,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       audio.play('unlock'); setTimeout(() => audio.play('chime'), 350);
       const woche = chronik(kap, S.merke); S.chronik = { ...(S.chronik || {}), [kap]: woche }; sichern();
       const bilder = (RUECKBLICK[kap] ? RUECKBLICK[kap](S.merke, S) : []).map((b) => ({ ...b, url: fotoHolen(b.id) })).filter((b) => b.url);
-      const wahl = await ui.ende({ ...bilanz(), kap, chronik: woche, bilder, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Die erste Woche', 2: 'Die Liste', 3: 'Unter der Wut', 4: 'Die Woche vor den Ferien', 5: 'Die Admin-Woche', 6: 'Die Sprachnachricht', 7: 'Wer geblieben ist', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' })[kap] || KAPITEL[kap],
+      const wahl = await ui.ende({ ...bilanz(), kap, chronik: woche, bilder, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Die erste Woche', 2: 'Die Liste', 3: 'Unter der Wut', 4: '8:34', 5: 'Die Admin-Woche', 6: 'Die Sprachnachricht', 7: 'Wer geblieben ist', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' })[kap] || KAPITEL[kap],
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '',
         // Haken fürs nächste Kapitel (kein Spoiler, nur die Frage)
-        frage: (() => { const sit = Object.entries(SZENEN).find(([id]) => S.merke['sitKap_' + id] === kap && S.merke['sit_' + id]); return sit ? (REFLEXION[kap] ? REFLEXION[kap] + ' · ' : '') + 'Diese Woche: ' + sit[1].titel[1] + '. ' + sit[1].frage : REFLEXION[kap] || ''; })(), vorschau: weiterIdx >= 0 ? ({ 1: 'Eine Liste. Fünf Plätze. Wer steht drauf?', 2: 'Ein Satz über Mila. Und ein heller Streifen, unten links.',
-          3: 'Montag, 8:34. Alle Handys liegen in der Kiste. Trotzdem kommt ein Foto.', 4: 'Alle glauben, du bist der Account. Eine prüft das.',
+        frage: (() => { const sit = Object.entries(SZENEN).find(([id]) => S.merke['sitKap_' + id] === kap && S.merke['sit_' + id]); return sit ? (REFLEXION[kap] ? REFLEXION[kap] + ' · ' : '') + 'Diese Woche: ' + sit[1].titel[1] + '. ' + sit[1].frage : REFLEXION[kap] || ''; })(), vorschau: weiterIdx >= 0 ? ({ 1: 'Eine Liste. Fünf Plätze. Wer steht drauf?', 2: 'Eine Neue. Ein Turnier. Und einer, der dauernd zur Uhr schaut.',
+          3: 'Mittwoch, 8:34. Ein Test. Ein Blitz an der Tür.', 4: 'Alle glauben, du bist der Account. Eine prüft das.',
           5: 'Eine Sprachnachricht. Sieben Sekunden. Jos Stimme.', 6: 'Fünf Monate später. Wer ist geblieben?',
           7: 'Ein Video von Mme Tidderich. Ihre Stimme. Ihr Gesicht.', 8: 'Ein Armband. Wie auf der Zeichnung.',
           9: 'Sommerfest. Freitag. 15:00. Alle Namen.' })[kap] || '' : '' });
@@ -2286,7 +2300,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   const FOTOS = {};   // Fotos aus der Welt (dataURL), für später: Handy-Karte, Rückblick
   fotosLaden(platz).then((f) => { for (const [k, v] of Object.entries(f)) if (!FOTOS[k]) FOTOS[k] = v; });   // für Lehrer-Ansicht schon vor dem Weiterspielen
-  const RUECKBLICK = { 1: RUECKBLICK_N1, 2: RUECKBLICK_N2, 3: RUECKBLICK_N3 };   // Rückblick in Bildern je Kapitel: (merke) => [{ id, titel, text }]
+  const RUECKBLICK = { 1: RUECKBLICK_N1, 2: RUECKBLICK_N2, 3: RUECKBLICK_N3, 4: RUECKBLICK_N4 };   // Rückblick in Bildern je Kapitel: (merke) => [{ id, titel, text }]
   const fotoHolen = (id) => FOTOS[id] || (() => { try { return sessionStorage.getItem('lycee.foto.' + id) || ''; } catch (e) { return ''; } })();
   const bemerkt = (k) => [].concat(k).every((x) => !!(S.bemerkt || {})[x]);
   const fotoMerken = (id, url) => { if (!url) return; FOTOS[id] = url; try { sessionStorage.setItem('lycee.foto.' + id, url); } catch (e) { /* voll */ } fotoSpeichern(platz, id, url); };   // auch dauerhaft (IndexedDB, nur auf dem Gerät)
@@ -2333,7 +2347,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       return url;
     } catch (e) { return ''; }
   }
-  const SZ_UI = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich', werkzeug: 'werkzeugKarte', werkbank: 'werkbank', steckbrief: 'steckbrief', weg: 'wegweiser', aufstellung: 'aufstellung', pass: 'passSpiel' };
+  const SZ_UI = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich', werkzeug: 'werkzeugKarte', werkbank: 'werkbank', steckbrief: 'steckbrief', weg: 'wegweiser', aufstellung: 'aufstellung', pass: 'passSpiel', schneeball: 'schneeball' };
   // Prüfungen gegen Durchklicken (nur Skill-Szenen). Rückgabe null = gemacht; sonst { sy, t, tipp } für „Noch mal“.
   const PRUEF = {
     atem: (r) => (r.gut < 2 ? { sy: '🫁', t: 'Das war noch kein ruhiges Atmen.', tipp: 'Halte, bis der Kreis groß ist (zwei, drei Sekunden). Dann loslassen und lange ausatmen – länger als das Einatmen. Erst dann wieder halten.' } : null),
@@ -2465,7 +2479,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     7: 'Was hättest du gebraucht, um in der Kantine aufzustehen?', 8: 'Was prüfst du, bevor du etwas teilst?',
     9: 'Was lädt deinen Akku wirklich auf?', 10: 'Was nimmst du aus diesem Jahr mit?' };
   // Inhaltshinweise je Kapitel (wie in großen Spielen): kurz, sachlich, mit Weg nach draußen
-  const INHALT = { 2: 'Eine Ranking-Liste, Auslachen im Klassenchat.', 3: 'Ein Wutausbruch, Schubsen, ein bloßstellendes Foto im Klassenchat.', 4: 'Prüfungsstress, eine Panikattacke, ein gefälschter Screenshot.',
+  const INHALT = { 2: 'Eine Ranking-Liste, Auslachen im Klassenchat.', 3: 'Ein Wutausbruch, Schubsen, ein bloßstellendes Foto im Klassenchat.', 4: 'Prüfungsstress, starke Anspannung, ein bloßstellendes Foto mit falschem Verdacht.',
     5: 'Verdacht gegen dich, Gerüchte, harte Gedanken über sich selbst.', 6: 'Filmen ohne Erlaubnis, Rauswurf aus dem Klassenchat.', 7: 'Gruppendruck, Mobbing in der Kantine.',
     8: 'Ein KI-Fake-Video über eine Lehrerin.', 9: 'Schlafmangel, ein schweres Geheimnis, ein Freund in einer Krise.', 10: 'Geständnis, Entschuldigungen, Abschied.' };
   // Dauer-Anzeige einer Woche (Anspannung 0–100 in Kapitel 4, Akku in Kapitel 9): gilt bis zum Kapitelende
@@ -3629,7 +3643,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       platz.forEach((x) => { x.f.group.visible = false; });
       try { return await tt3d.spiel({ tisch: T, gegnerId: pa ? pa.id : 'ben', gegnerName: pa ? pa.name : 'Ben', staerke: (pa ? STAERKE[pa.id] || 0.9 : 1.2) * (ui.leicht ? 0.6 : 1), leicht: !!ui.leicht }); }
       finally { platz.forEach((x) => { if (!x.weg) x.f.group.visible = true; }); } } : null;
-  const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl, spindAuf: () => spindAuf(), onKabel: (id) => tiere.kabelWeg(id),
+  const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl, onDing: (tu) => storyDing(tu), spindAuf: () => spindAuf(), onKabel: (id) => tiere.kabelWeg(id),
     freiwurf: async (o) => ui.freiwurf(o), skate: () => skaten(), pausenFussball: () => pausenFussball(), elfmeter: async (o) => { if (fahrt) absteigen(); return elfmeter.spiel(o); }, elfmeterAktiv: () => elfmeter.aktiv(), volley: async (o) => { if (fahrt) absteigen(); return volley.spiel(o); }, volleyAktiv: () => volley.aktiv(),
     botengang,
     dosen: async (o) => { if (fahrt) absteigen(); return dosen.spiel(o); }, dosenAktiv: () => dosen.aktiv(), schneemann, winter: () => eisbahn.visible, sommer: () => sommerAn, eiswagen: () => eiswagenBesuch(), farbeOben: () => garderobeLook().oben || (S && S.aussehen && S.aussehen.oben) || ((FIGUREN[S ? S.figur : 0] || FIGUREN[0]) || {}).oben || null,
@@ -3961,7 +3975,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const SAISON = { laub: { farbe: 0xd9822b, fall: 0.7, wind: 0.9, groesse: 0.1 }, schnee: { farbe: 0xffffff, fall: 0.55, wind: 0.35, groesse: 0.07 }, blueten: { farbe: 0xf6c1d4, fall: 0.45, wind: 0.8, groesse: 0.07 } };
   let saisonT = 0;
   // Deko je Monat (requisiten.js, plaetze mit saison): Kürbisse im Oktober, Weihnachten im Dezember, Winter bis Februar
-  const DEKO_KAP = { herbst: [1, 2], halloween: [], weihnacht: [3, 4], winter: [3, 4, 5, 6], fruehling: [], sommer: [7, 8, 9, 10] };   // Kalender der Storyline 7e
+  const DEKO_KAP = { herbst: [1, 2, 3], halloween: [], weihnacht: [4], winter: [4, 5, 6], fruehling: [], sommer: [7, 8, 9, 10] };   // Kalender der Storyline 7e (K3 November: Laub, K4 Dezember: Frost und Schnee)
   let dekoKap = -1;
   // Eisbahn auf dem Marktplatz im Winter (Kapitel 5–6): glattes Eis, Bande mit zwei Durchgängen (Weg vom Jugendhaus),
   // Schild, Lichterkette. Darauf rutscht man mit Schwung (steuerung.glatt); die Figur macht Schlittschuh-Bewegungen.
@@ -4021,7 +4035,49 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   const eiswagenBox = { x0: 47.1, x1: 48.9, z0: 115.55, z1: 116.45, y0: 0, y1: 1.2 };
   const eisbahnZeigen = (an) => { eisbahn.visible = an; steuerung.extraBoxen = an ? eisBande : []; };
-  const extraNeu = () => { steuerung.extraBoxen = [...(eisbahn.visible ? eisBande : []), ...(sommerAn ? [eiswagenBox] : [])]; };
+  const extraNeu = () => { steuerung.extraBoxen = [...(eisbahn.visible ? eisBande : []), ...(sommerAn ? [eiswagenBox] : []), ...(tuer104Zu ? [tuer104Box] : [])]; };
+  // Kapitel 4: Saal 1.04 bekommt eine Tür mit Glasfenster (sonst sind Klassentüren offene Durchgänge). In der Pause am Montag
+  // und während des Tests ist sie zu. Am Glas klebt von Montag bis Mittwoch ein gelber Zettel mit einem Loch, unten links, auf
+  // Sitzhöhe (Spur). Gegenüber im Gang hängt das grüne Notausgang-Schild – es spiegelt sich im Türglas (Foto von 8:34, Kapitel 8).
+  const TUER104 = { x0: -21.65, x1: -20.35, z: -18 };
+  const tuer104 = new THREE.Group(); tuer104.position.set(TUER104.x0 + 0.02, 0, TUER104.z); scene.add(tuer104);
+  let tuer104Zu = false, tuer104W = (Math.PI / 2) * 0.96;
+  const tuer104Box = { x0: TUER104.x0, x1: TUER104.x1, z0: TUER104.z - 0.12, z1: TUER104.z + 0.12, y0: 0, y1: 2.4 };
+  const zettel104 = (() => {
+    const holz = new THREE.MeshLambertMaterial({ color: '#8a6a4a' }), B = 1.26, H = 2.4;
+    for (const [a0, a1, y0, y1] of [[0, B, 0, 0.95], [0, B, 1.85, H], [0, 0.16, 0.95, 1.85], [0.66, B, 0.95, 1.85]]) {   // Türblatt um das Fenster
+      const m = new THREE.Mesh(new THREE.BoxGeometry(a1 - a0, y1 - y0, 0.045), holz); m.position.set((a0 + a1) / 2, (y0 + y1) / 2, 0); tuer104.add(m);
+    }
+    const glas = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.9, 0.02), new THREE.MeshLambertMaterial({ color: '#bfe3f2', transparent: true, opacity: 0.26, depthWrite: false }));
+    glas.position.set(0.41, 1.4, 0); tuer104.add(glas);
+    const griff = new THREE.Mesh(new THREE.BoxGeometry(0.14, 0.03, 0.05), new THREE.MeshLambertMaterial({ color: '#c9ced6' }));
+    griff.position.set(1.1, 1.05, 0.05); tuer104.add(griff); const griff2 = griff.clone(); griff2.position.z = -0.05; tuer104.add(griff2);
+    const cv = document.createElement('canvas'); cv.width = cv.height = 64; const g = cv.getContext('2d');
+    g.fillStyle = '#f5d442'; g.fillRect(0, 0, 64, 64); g.fillStyle = 'rgba(0,0,0,0.13)'; g.fillRect(0, 0, 64, 7);
+    g.globalCompositeOperation = 'destination-out'; g.beginPath(); g.arc(32, 37, 11, 0, Math.PI * 2); g.fill();
+    const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace;
+    const z = new THREE.Mesh(new THREE.PlaneGeometry(0.13, 0.13), new THREE.MeshBasicMaterial({ map: tex, transparent: true, alphaTest: 0.5 }));
+    z.position.set(0.25, 1.06, 0.034); z.visible = false; tuer104.add(z);
+    return z;
+  })();
+  {   // Notausgang-Schild im Gang, an der Decke, zur Tür von 1.04 hin
+    const cv = document.createElement('canvas'); cv.width = 128; cv.height = 64; const g = cv.getContext('2d');
+    g.fillStyle = '#10a04e'; g.fillRect(0, 0, 128, 64); g.strokeStyle = '#ffffff'; g.fillStyle = '#ffffff'; g.lineWidth = 5; g.lineCap = 'round';
+    g.strokeRect(86, 10, 30, 44); g.beginPath(); g.arc(44, 15, 6, 0, Math.PI * 2); g.fill();
+    g.beginPath(); g.moveTo(42, 22); g.lineTo(36, 38); g.lineTo(26, 52); g.moveTo(36, 38); g.lineTo(48, 52); g.moveTo(40, 27); g.lineTo(54, 32); g.moveTo(40, 27); g.lineTo(28, 30); g.stroke();
+    g.beginPath(); g.moveTo(60, 32); g.lineTo(78, 32); g.moveTo(71, 25); g.lineTo(78, 32); g.lineTo(71, 39); g.stroke();
+    const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace;
+    const schild = new THREE.Mesh(new THREE.BoxGeometry(0.44, 0.22, 0.03), [0, 1, 2, 3].map(() => new THREE.MeshBasicMaterial({ color: '#0c7a3b' })).concat([new THREE.MeshBasicMaterial({ map: tex }), new THREE.MeshBasicMaterial({ map: tex })]));
+    schild.position.set(-20.4, 2.72, -15.9); schild.rotation.y = Math.PI; scene.add(schild);
+    const stab = new THREE.Mesh(new THREE.BoxGeometry(0.02, 0.5, 0.02), new THREE.MeshLambertMaterial({ color: '#9aa1ab' })); stab.position.set(-20.4, 3.08, -15.9); scene.add(stab);
+  }
+  function tuer104Tick(dt) {
+    const st = S && SCHRITTE[S.schritt], id = st && st.id, m = (S && S.merke) || {};
+    const zu = id === 'k4_hof' || (id === 'k4_test' && !!m.k4TuerZu);
+    if (zu !== tuer104Zu) { tuer104Zu = zu; extraNeu(); }
+    tuer104W += ((zu ? 0 : (Math.PI / 2) * 0.96) - tuer104W) * Math.min(1, dt * 3); tuer104.rotation.y = tuer104W;
+    zettel104.visible = !!st && st.kap === 4 && ['k4_morgen', 'k4_ampel', 'k4_hof', 'k4_test'].includes(id) && !m.k4ZettelWeg;
+  }
   // Annexe News an der Pinnwand: jede Woche eine neue Ausgabe; Zoés Umfrage-Ergebnis mit deiner Antwort
   const KURZ_NOTIERT = { 1: 'Die Hallenuhr geht drei Minuten nach. Fernand arbeitet dran. Seit 1998.', 2: 'Coding-Club sucht Testpersonen. Informatik, mittwochs 13 Uhr.',
     3: 'Nach dem Sportfest fehlen zwei orange Hütchen. Hinweise an Fernand.', 4: 'Bonbon hat Geburtstag. Leckerli nur über die SePAS!', 5: 'Bandprobe: Noor und Gilles suchen immer noch einen Bass.',
@@ -4078,9 +4134,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     zeitung.tex.needsUpdate = true;
   }
   function saisonTick(dt) {
+    tuer104Tick(dt);
     const kap = (S && SCHRITTE[S.schritt] && SCHRITTE[S.schritt].kap) || 1;
-    if (kap !== dekoKap && req.saison) { dekoKap = kap; eisbahnZeigen((DEKO_KAP.winter || []).includes(kap)); laubAn = (DEKO_KAP.herbst || []).includes(kap); fruehlingAn = (DEKO_KAP.fruehling || []).includes(kap); sommerAn = (DEKO_KAP.sommer || []).includes(kap); eiswagen.visible = sommerAn; extraNeu(); if (S && S.merke && S.merke.schneemannBau) schneemann.wiederherstellen(S.merke.schneemannBau); for (const [k, m] of Object.entries(req.saison)) m.visible = (DEKO_KAP[k] || []).includes(kap); try { zeitungNeu(kap); } catch (e) { /* Zeitung */ } }
-    const art = kap === 2 ? 'laub' : kap >= 3 && kap <= 6 ? 'schnee' : null, A = art && SAISON[art];
+    if (kap !== dekoKap && req.saison) { dekoKap = kap; try { if (natur && natur.saison) natur.saison((DEKO_KAP.winter || []).includes(kap) ? 'winter' : kap >= 2 && (DEKO_KAP.herbst || []).includes(kap) ? 'herbst' : ''); } catch (e) { /* nur Farbe */ } eisbahnZeigen((DEKO_KAP.winter || []).includes(kap)); laubAn = (DEKO_KAP.herbst || []).includes(kap); fruehlingAn = (DEKO_KAP.fruehling || []).includes(kap); sommerAn = (DEKO_KAP.sommer || []).includes(kap); eiswagen.visible = sommerAn; extraNeu(); if (S && S.merke && S.merke.schneemannBau) schneemann.wiederherstellen(S.merke.schneemannBau); for (const [k, m] of Object.entries(req.saison)) m.visible = (DEKO_KAP[k] || []).includes(kap); try { zeitungNeu(kap); } catch (e) { /* Zeitung */ } }
+    const art = kap === 2 || kap === 3 ? 'laub' : kap >= 4 && kap <= 6 ? 'schnee' : null, A = art && SAISON[art];
     const draussen = !welt.raumBei(steuerung.pos.x, steuerung.pos.z);
     const ziel = laeuft && A && draussen && !(sky.night > 0.5) && regenJetzt < 0.1 ? 0.9 : 0;
     saisonMat.opacity = draussen ? saisonMat.opacity + (ziel - saisonMat.opacity) * Math.min(1, dt * 1.2) : 0;
@@ -4166,7 +4223,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Kapitel-Vorspann: Kamerafahrt über die Schule zur Tageszeit des ersten Schritts (ui.vorspann zeigt Titel) ----------
   const VORSPANN = {
     1: 'Neue Schule. Neue Leute. Und ein Account, der alles sieht.', 2: 'Eine Liste. Fünf Plätze. Und jemand, den du kennst, steht ganz oben.',
-    3: 'Eine Neue. Ein Turnier. Und einer, der dauernd zur Uhr schaut.', 4: 'Die letzte Woche vor den Ferien. Ein Test. Eine Kiste voller Handys.',
+    3: 'Eine Neue. Ein Turnier. Und einer, der dauernd zur Uhr schaut.', 4: 'Frost. Die letzte Woche vor den Ferien. Ein Test. Und ein Foto von 8:34.',
     5: 'Januar. Alle glauben, du bist der Account. Eine prüft das.', 6: 'Sieben Sekunden Sprachnachricht. Und eine Abstimmung über dich.',
     7: 'Juni. Fünf Monate später. Wer ist geblieben?', 8: 'Ein Video von Mme Tidderich. Ihre Stimme. Ihr Gesicht. Nicht echt.',
     9: 'Juli. 4:12 Uhr. Eine Nachricht von Dario. „bitte“.', 10: 'Letzte Woche. Sommerfest. Freitag, 15:00. Alle Namen.',

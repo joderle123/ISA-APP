@@ -48,7 +48,7 @@ const ROBOTER = [
 ];
 
 export const KABEL = [['cdi', 14, -62.4], ['kantine', 18.6, -8.2], ['gang', -15.5, -15.8], ['innenhof', -17.2, -44.9], ['skate', -36.4, 6.4]];
-export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, kicker = null, billard = null, arcade = null, tanzen = null, dosen = null, dosenAktiv = () => false, schneemann = null, winter = () => false, farbeOben = () => null, sommer = () => false, eiswagen = null, botengang = null, spindAuf = null, partner = () => null, bekannte = () => [], freund = () => {}, onKabel = null }) {
+export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, onDing = null, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, kicker = null, billard = null, arcade = null, tanzen = null, dosen = null, dosenAktiv = () => false, schneemann = null, winter = () => false, farbeOben = () => null, sommer = () => false, eiswagen = null, botengang = null, spindAuf = null, partner = () => null, bekannte = () => [], freund = () => {}, onKabel = null }) {
   const tt = welt.orte.tischtennis;
   const liste = [];
   let botenFrage = 0;   // Botengang: zweimal drücken = abbrechen
@@ -141,6 +141,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   const S = () => zustand();
   async function tu(i) {
     const s = S(); s.merke = s.merke || {};
+    if (onDing && await onDing(i.tu)) return;   // die Geschichte übernimmt (z. B. Kapitel 4: Brunnen und Automat als Werkzeuge ausprobieren)
     switch (i.tu) {
       case 'sitzen': steuerung.setzen(i.x, i.z, i.yaw); return;
       case 'arbeiten': steuerung.setzen(i.sitz.x, i.sitz.z, i.sitz.yaw); await blattWahl(); return;

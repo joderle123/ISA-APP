@@ -395,7 +395,7 @@ export const GESPRAECHE_N3 = {
   // ---------- 8 · Freitag 15:40: zwei Minuten bis zum Bus ----------
   n3_freitagHof: [
     ['erzaehler', 'Freitag, 15:40. Zwei Minuten bis zum Bus.'],
-    ['lenning', '(im Vorbeigehen) Montag, erste Stunde: Test. Die Handys kommen in die Kiste.'],
+    ['lenning', '(im Vorbeigehen) Mittwoch, erste Stunde: Mathe-Test. Die Handys bleiben in der Tasche. Aus.'],
     ['erzaehler', 'Ein paar stöhnen. Noah wird blass.'],
   ],
   n3_freiYusuf: [
@@ -415,7 +415,7 @@ export const GESPRAECHE_N3 = {
   n3_freitag: [
     { blende: 'Freitag · 21:00' },
     ['erzaehler', '@annexe.cam postet eine schwarze Kachel. Weiße Schrift.'],
-    ['erzaehler', '„montag. 8:34.“'],
+    ['erzaehler', '„mittwoch. 8:34.“'],
     { tu: 'kapitelEnde' },
   ],
 };

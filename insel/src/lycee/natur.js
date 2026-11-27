@@ -38,7 +38,7 @@ export async function baueNatur({ welt, scene, veil, windZeit, wenig = false }) 
     m.teile.push({ geo: g, quelle: o.material });
   });
   // Materialien: Lambert mit Textur und Alpha-Maske, Toon-Rampe der Welt; Laub, Gras, Blumen mit Wind
-  const matCache = new Map();
+  const matCache = new Map(), laubMats = [];   // laubMats: für Jahreszeiten (Herbstfarben, Frost)
   const material = (q, modell) => {
     const art = /Leaves|Leaf|Flowers|Grass/.test(q.name) ? 'laub' : 'fest';
     const baum = /Tree|Pine/.test(modell);
@@ -49,6 +49,7 @@ export async function baueNatur({ welt, scene, veil, windZeit, wenig = false }) 
     const wind = art === 'laub' ? WIND(baum ? 0.022 : 0.05) : null;
     veil.patch(m, { key: 'natur-' + key, ramp: art === 'laub' ? 'laub' : 'props', uniforms: wind ? { uWind: windZeit } : undefined, vertex: wind || undefined });
     matCache.set(key, m);
+    if (art === 'laub') laubMats.push({ m, baum, nadel: /Pine/i.test(q.name + ' ' + modell), farbe: m.color.clone() });
     return m;
   };
   // Plätze je Modell sammeln, dünnere Bodendecker bei wenig Leistung
@@ -103,5 +104,18 @@ export async function baueNatur({ welt, scene, veil, windZeit, wenig = false }) 
       z.m.visible = z.klein ? d < (drinnen ? 0 : wenig ? 40 : 60) : d < (drinnen ? 45 : z.baum ? (wenig ? 180 : 260) : (wenig ? 85 : 120));
     }
   }
-  return { gruppe, anzahl: plaetze.length, sicht };
+  // Jahreszeit: 'herbst' (warme Blätter), 'winter' (Frost: blasser, heller, Nadelbäume bleiben grün), sonst wie gemalt
+  function saison(art) {
+    for (const x of laubMats) {
+      x.m.color.copy(x.farbe);
+      if (x.m.emissive) x.m.emissive.setRGB(0, 0, 0);
+      if (art === 'herbst' && !x.nadel) x.m.color.multiply(new THREE.Color(x.baum ? 0xffb066 : 0xf2d49a));
+      if (art === 'winter') {
+        if (x.nadel) { if (x.m.emissive) x.m.emissive.setRGB(0.09, 0.1, 0.12); }
+        else { x.m.color.multiply(new THREE.Color(x.baum ? 0x8f9a9c : 0xa9b4b4)); if (x.m.emissive) x.m.emissive.setRGB(0.26, 0.29, 0.33); }
+      }
+      x.m.needsUpdate = true;
+    }
+  }
+  return { gruppe, anzahl: plaetze.length, sicht, saison };
 }

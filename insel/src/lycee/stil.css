@@ -1518,3 +1518,23 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-hk-bildrahmen { position: relative; display: block; }
 .ly-hk-bildrahmen img { display: block; width: 100%; }
 .ly-hk-streifen { position: absolute; left: 0; bottom: 0; width: 16%; height: 30%; background: linear-gradient(60deg, rgba(255,255,255,.92), rgba(255,255,255,.35) 70%, rgba(255,255,255,0)); filter: blur(3px); border-top-right-radius: 40%; pointer-events: none; }
+
+/* Kapitel 4: auf dem Foto ist um einen Kopf ein Kreis gemalt (wie mit dem Finger auf dem Handy) */
+/* Kapitel 4: im Türglas spiegelt sich das grüne Notausgang-Schild (oben rechts, verschwommen) – wer hinschaut, sieht: von draußen */
+.ly-hk-gruen { position: absolute; right: 7%; top: 6%; width: 13%; height: 7%; border-radius: 3px; background: linear-gradient(90deg, rgba(40, 210, 110, 0.55), rgba(90, 255, 160, 0.4)); box-shadow: 0 0 10px 3px rgba(60, 230, 130, 0.35); filter: blur(1.2px); transform: skewX(-8deg); pointer-events: none; }
+.ly-hk-kreis { position: absolute; width: calc(var(--r) * 2); aspect-ratio: 1 / 0.9; transform: translate(-50%, -50%) rotate(-8deg); border: 3px solid #ff3b30; border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 59, 48, 0.35); pointer-events: none; animation: ly-kreis 0.7s ease-out both; }
+@keyframes ly-kreis { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+
+/* Kapitel 4: Test mit Ereignissen (Flüstern, Handys, jemand am Türglas, Blitz) und Notbremse */
+.sz-t-ereignis { display: flex; align-items: center; gap: 8px; justify-content: space-between; margin: 4px 0; padding: 6px 10px; border-radius: 10px; background: #fff4d6; color: #5b4a1a; font-size: 14px; animation: ly-rein 0.25s ease-out both; }
+.sz-t-ereignis button { flex: none; border: 0; border-radius: 999px; padding: 6px 12px; background: #2b3a55; color: #fff; font: inherit; font-weight: 700; }
+.sz-test.sz-blitz { animation: sz-blitz 0.45s ease-out; }
+@keyframes sz-blitz { 0% { filter: brightness(2.6) saturate(0.2); } 100% { filter: none; } }
+.sz-t-feld.raus { opacity: 0.25; filter: blur(2px); }
+.sz-notbremse { margin-top: 6px; border: 2px dashed #d6452f; background: #fff; color: #b0392a; border-radius: 12px; padding: 6px 10px; font-weight: 700; }
+.sz-notbremse:disabled { opacity: 0.45; }
+
+/* Kapitel 4: Schneeballschlacht */
+.sz-schnee canvas { width: 100%; max-width: 520px; display: block; margin: 0 auto; border-radius: 14px; touch-action: none; }
+.sz-ducken { width: 100%; padding: 12px; border-radius: 14px; border: 0; background: #2b3a55; color: #fff; font-weight: 800; font-size: 17px; }

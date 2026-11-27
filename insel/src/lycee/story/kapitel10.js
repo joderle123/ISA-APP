@@ -54,8 +54,8 @@ const KURVE = (m) => ({
   momente: [
     { sy: '📸', t: 'Erster Tag. Du landest auf @annexe.cam.', dein: m.abgestimmt ? 'Bei der Umfrage hast du mitgeklickt. Einmal.' : 'Du hast nicht mitgeklickt.' },
     { sy: '📋', t: 'Die Liste. Platz sechs.', dein: m.listeBeiNoah ? 'Du bist zu Noah gegangen.' : m.listeGelacht ? 'Du hast mitgelacht. Kurz.' : 'Du hast weggeschaut.' },
-    { sy: '🧊', t: 'Der Würfel. Ein Satz über Mila.', dein: m.milaGesagt ? 'Du hast es ihr selbst gesagt.' : m.milaKommentiert ? 'Du hast kommentiert.' : 'Du hast nichts gemacht.' },
-    { sy: '📐', t: '8:34. Noah auf der Treppe.', dein: m.k4BeideGeblieben || m.k4YusufGeschickt ? 'Du bist bei ihm geblieben.' : m.k4LenningGeholt ? 'Du hast Hilfe geholt.' : 'Ihr habt geatmet.' },
+    { sy: '🏀', t: 'Das Turnier. Yusuf im Gang.', dein: m.k3Uhr ? 'Du hast gesagt, was du gesehen hast: die Uhr.' : m.k3Zurueck ? 'Du hast zurückgeschrien.' : m.k3Sommer ? 'Du hast Frau Sommer geholt.' : m.k3Dazwischen ? 'Du hast dich dazwischengestellt.' : 'Du bist weggegangen.' },
+    { sy: '⭕', t: '8:34. Ein Kreis um deinen Kopf.', dein: m.k4FotoGezeigt ? 'Du hast gezeigt: Das Foto ist von draußen.' : m.k4LenningGeholt ? 'Du bist zu Mme Lenning gegangen.' : m.k4Ruhig ? 'Du bist stehen geblieben und hast geatmet.' : m.k4Explodiert ? 'Du bist explodiert.' : m.k4Brunnen || m.k4Gerannt ? 'Du bist weg, um runterzukommen.' : m.k4Wut ? 'Du hast zurückgeschlagen.' : 'Es hat geklingelt.' },
     { sy: '🖼️', t: 'Der Screenshot. „Hinten links“.', dein: m.k4Ruhig ? 'Du hast einen ruhigen Satz geschrieben.' : m.k4Wut ? 'Du hast in Großbuchstaben geschrieben.' : 'Du hast nichts geschrieben.' },
     { sy: '✋', t: 'Luca filmt Mila.', dein: m.k6Eingegriffen ? 'Du hast etwas getan.' : 'Du hast weggeschaut.' },
     { sy: '🗳️', t: 'Die Abstimmung.', dein: 'Danach war dein Handy still.' },
@@ -358,7 +358,7 @@ export const tunN10 = (c) => ({
     const blatt = (t, nickt = true) => [['erzaehler', t], ['kiesser', 'Dieses auch?'], ['erzaehler', nickt ? 'Lina nickt.' : 'Lina schüttelt den Kopf.']];
     return [
       ...blatt('Der Hof im September. Ein Kreis aus Handys. ' + (m.abgestimmt ? 'Am Rand: du. Der Daumen auf dem Display.' : 'Am Rand: du. Die Hände in den Taschen.')),
-      ...blatt('Die Treppe. Noah auf der Stufe. Yusufs Hand. ' + (m.k4BeideGeblieben || m.k4YusufGeschickt ? 'Und du daneben.' : 'Und ein leerer Platz.')),
+      ...blatt('Das Foto von 8:34. Ein Kreis um einen Kopf. ' + (m.k4NoahVerteidigt ? 'Und daneben Noah, der wieder atmen kann.' : m.k4FotoGezeigt ? 'Und ein grüner Fleck im Glas.' : 'Und zwölf Handys, die es haben.')),
       ...blatt('Der Würfel. Ein Stein auf der Mauer. ' + (m.k6Eingegriffen ? 'Und jemand, der vor Mila steht.' : 'Und viele Rücken.')),
       ...blatt(m.k7Gesetzt ? 'Die Kantine. Zwei an einem Tisch. Dann vier.' : m.k7Gefilmt ? 'Die Kantine. Ein Handy, hochgehalten. Die Hand ist deine.' : 'Die Kantine. Ein Tablett mit einer Tüte. Viele Handys.'),
       ...blatt('Die Bank. Dario. Daneben ein Platz.'),

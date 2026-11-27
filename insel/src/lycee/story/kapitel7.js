@@ -308,7 +308,7 @@ export const tunN7 = (c) => ({
     const satz = m.k5SatzManche ? 'Manche glauben es. Nicht alle.' : m.k5SatzMittwoch ? 'Heute ist Mittwoch. Mehr weiß ich nicht.' : m.k5SatzWissen ? 'Ich weiß, was ich gemacht hab. Und was nicht.' : null;
     return [
       { blende: 'Februar' },
-      ['erzaehler', fuer.includes('noah') || m.k4BeideGeblieben || m.k4YusufGeschickt ? 'Februar. Noah hält dir einen Platz frei. Jeden Tag.' : 'Februar. Du isst meistens allein. Mit Kopfhörern.'],
+      ['erzaehler', fuer.includes('noah') || m.k4BeideGeblieben || m.k4YusufGeschickt || m.k4NoahVerteidigt ? 'Februar. Noah hält dir einen Platz frei. Jeden Tag.' : 'Februar. Du isst meistens allein. Mit Kopfhörern.'],
       { blende: 'März' },
       ['erzaehler', fuer.includes('ben') || m.k5BenGefragt ? 'März. Ben winkt. Von weitem.' : 'März. Ben schaut weg, wenn du kommst.'],
       ...(satz ? [['erzaehler', 'Auf deinem Spiegel klebt ein Zettel: „' + satz + '“']] : []),

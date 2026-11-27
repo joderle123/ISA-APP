@@ -1391,12 +1391,29 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       '<div class="sz-karten sz-raster ly-d-optionen sz-t-antw"></div><div class="sz-t-skills"></div><div class="sz-t-fuss"></div></div>');
     const auf = k.querySelector('.sz-t-aufgabe'), antw = k.querySelector('.sz-t-antw'), ged = k.querySelector('.sz-t-gedanken'), sk = k.querySelector('.sz-t-skills'), fuss = k.querySelector('.sz-t-fuss');
     const pulsF = k.querySelector('.sz-puls i'), pulsZ = k.querySelector('.sz-puls b'), uhr = k.querySelector('.sz-t-uhr'), feld = k.querySelector('.sz-t-feld');
-    let puls = def.start || 35, max = puls, n = 0, richtig = 0, gedankenWeg = 0, ende = false, sperre = 0;
-    const benutzt = [], t0 = performance.now(), ZEIT = (def.zeit || 80) * zeitFaktor() * 1000;
+    let puls = def.start || 35, max = puls, n = 0, richtig = 0, gedankenWeg = 0, ende = false, sperre = 0, abzug = 0, bremse = false, kopfRot = 0, schnell = false;
+    const benutzt = [], gesehen = [], t0 = performance.now(), ZEIT = (def.zeit || 80) * zeitFaktor() * 1000;
+    // Kapitel 4: Ereignisse während des Tests ({ bei: 0–1, text, plus, blitz, blick: { t, key, text } }), Uhrzeit statt Sekunden (def.uhr: { von, bis } in Minuten)
+    const ER = (def.ereignisse || []).map((e) => ({ ...e, fertig: false }));
+    const ereignis = (e) => {
+      if (e.plus) puls = Math.min(100, puls + e.plus);
+      if (e.blitz) { k.querySelector('.sz-test').classList.add('sz-blitz'); setTimeout(() => k.querySelector('.sz-test') && k.querySelector('.sz-test').classList.remove('sz-blitz'), 450); }
+      const el = document.createElement('div'); el.className = 'sz-t-ereignis'; el.innerHTML = '<span>' + esc(ersetze(e.text)) + '</span>';
+      if (e.blick) {
+        const b = document.createElement('button'); b.type = 'button'; b.innerHTML = '👁 ' + esc(e.blick.t || 'Hinschauen');
+        b.onclick = () => { if (ende) return; gesehen.push(e.blick.key); sperre = performance.now() + 2200; puls = Math.min(100, puls + 2); el.querySelector('span').textContent = ersetze(e.blick.text); b.remove(); zeigPuls(); };
+        el.appendChild(b);
+      }
+      feld.before(el); zeigPuls();
+      setTimeout(() => el.remove(), (e.blick ? 4200 : 3200) * zeitFaktor());
+    };
     const zeigPuls = () => { const Z = ZONE(puls); pulsF.style.width = puls + '%'; pulsF.style.background = Z[2]; pulsZ.textContent = Math.round(puls); max = Math.max(max, puls);
       feld.classList.toggle('verschwommen', puls >= 70 && puls < 90); feld.classList.toggle('blackout', puls >= 90); };
     const aufgabe = () => {
-      if (n >= def.aufgaben.length) return fertig();
+      if (n >= def.aufgaben.length) {
+        if (!def.uhr) return fertig();
+        schnell = true; auf.innerHTML = '<small>Fertig</small>Du drehst das Blatt um. Du wartest, bis Mme Lenning einsammelt.'; antw.innerHTML = ''; return;
+      }
       const a = def.aufgaben[n];
       auf.innerHTML = '<small>Aufgabe ' + (n + 1) + ' von ' + def.aufgaben.length + '</small>' + esc(a.f);
       antw.innerHTML = a.a.map((x, i) => '<button type="button" data-i="' + i + '"><span>' + esc(x) + '</span></button>').join('');
@@ -1404,11 +1421,24 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     };
     sk.innerHTML = '<small>' + esc(def.skillsTitel || 'Dein Koffer:') + '</small>' + def.skills.map((s) => '<button type="button" data-s="' + esc(s.id) + '">' + (s.sy || '') + ' ' + esc(s.t) + '</button>').join('');
     sk.querySelectorAll('[data-s]').forEach((b) => { b.onclick = () => {
-      if (ende || b.disabled) return; const s = def.skills.find((x) => x.id === b.dataset.s); b.disabled = true; benutzt.push(s.id);
+      if (ende || b.disabled) return; const s = def.skills.find((x) => x.id === b.dataset.s);
+      if (s.kopf && puls >= 70) { kopfRot++; fuss.innerHTML = '<div class="sz-sys">' + esc(s.t) + ' … kommt nicht an. Auf Rot erreicht der Kopf nichts. Erst der Körper.</div>'; puls = Math.min(100, puls + 2); zeigPuls(); return; }
+      b.disabled = true; benutzt.push(s.id);
+      if (def.wiederholbar) setTimeout(() => { if (!ende) b.disabled = false; }, def.wiederholbar * 1000 * zeitFaktor());   // Kapitel 4: der eigene Plan geht mehrmals, mit kurzer Pause
       sperre = performance.now() + 2500; fuss.innerHTML = '<div class="sz-sys">' + esc(ersetze(s.wie || s.t)) + ' …</div>';
       const ziel = Math.max(10, puls - (s.wirkung || 25)); const a = puls; let i = 0;
       const sinke = () => { if (ende) return; i++; puls = a + (ziel - a) * i / 25; zeigPuls(); if (i < 25) setTimeout(sinke, 100); else fuss.innerHTML = ''; }; sinke();
     }; });
+    if (def.notbremse) {
+      const nb = document.createElement('button'); nb.type = 'button'; nb.className = 'sz-notbremse'; nb.innerHTML = '✋ Notbremse: eine Minute raus';
+      nb.onclick = () => {
+        if (ende || bremse) return; bremse = true; nb.disabled = true; feld.classList.add('raus'); sperre = performance.now() + 2600;
+        fuss.innerHTML = '<div class="sz-sys">' + esc(def.notbremse.text || 'Handzeichen. Mme Lenning nickt. Eine Minute vor der Tür. Kalte Luft. Dann zurück.') + '</div>';
+        abzug += ZEIT * 0.15;
+        setTimeout(() => { feld.classList.remove('raus'); puls = Math.max(25, puls - 35); zeigPuls(); fuss.innerHTML = ''; }, 2600);
+      };
+      sk.appendChild(nb);
+    }
     const gedanke = () => {
       if (ende) return;
       const t = def.gedanken[Math.floor(Math.random() * def.gedanken.length)];
@@ -1420,10 +1450,12 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       setTimeout(gedanke, 3500 + Math.random() * 3000);
     };
     const tick = () => {
-      if (ende) return; const t = performance.now() - t0;
-      uhr.textContent = Math.max(0, Math.ceil((ZEIT - t) / 1000)) + ' s';
+      if (ende) return; if (schnell) abzug += 45; const t = performance.now() - t0 + abzug, f = Math.min(1, t / ZEIT);
+      if (def.uhr) { const mn = Math.floor(def.uhr.von + (def.uhr.bis - def.uhr.von) * f); uhr.textContent = Math.floor(mn / 60) + ':' + String(mn % 60).padStart(2, '0'); }
+      else uhr.textContent = Math.max(0, Math.ceil((ZEIT - t) / 1000)) + ' s';
+      for (const e of ER) if (!e.fertig && f >= e.bei) { e.fertig = true; ereignis(e); }
       if (puls >= 90) { puls = Math.max(75, puls - 0.06); }   // Blackout: kommt von selbst nur langsam runter
-      else puls = Math.min(100, puls + 0.035);   // die Uhr läuft, die Zahl steigt leise
+      else puls = Math.min(100, puls + (def.drift != null ? def.drift : 0.035));   // die Uhr läuft, die Zahl steigt leise
       zeigPuls();
       if (t >= ZEIT) fertig(); else requestAnimationFrame(tick);
     };
@@ -1431,7 +1463,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       if (ende) return; ende = true; ged.innerHTML = ''; feld.classList.remove('verschwommen', 'blackout');
       auf.innerHTML = '<small>Abgabe</small>Du hast ' + n + ' von ' + def.aufgaben.length + ' Aufgaben bearbeitet.'; antw.innerHTML = '';
       sk.querySelectorAll('button').forEach((b) => { b.disabled = true; });
-      weiterKnopf(fuss, { beantwortet: n, richtig, max: Math.round(max), skills: benutzt, gedankenWeg }, ok, '<div class="sz-sys">Höchste Anspannung: ' + Math.round(max) + (benutzt.length ? ' · Skills benutzt: ' + benutzt.length : '') + '</div>');
+      weiterKnopf(fuss, { beantwortet: n, richtig, max: Math.round(max), skills: benutzt, gedankenWeg, gesehen, notbremse: bremse, kopfRot }, ok, '<div class="sz-sys">Höchste Anspannung: ' + Math.round(max) + (benutzt.length ? ' · Skills benutzt: ' + benutzt.length : '') + '</div>');
     }
     halte((e) => { const m = /^Digit([1-9])$/.exec(e.code); if (m && !ende) { const b = antw.querySelector('[data-i="' + (+m[1] - 1) + '"]'); if (b) { e.preventDefault(); e.stopPropagation(); if (!e.repeat) b.click(); } } });
     zeigPuls(); aufgabe(); setTimeout(gedanke, 2500); requestAnimationFrame(tick);
@@ -2274,6 +2306,74 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       if (!fertig || textT > 0) requestAnimationFrame(draw);
     };
     setTimeout(neueRunde, 900); requestAnimationFrame(draw);
+  });
+
+  // ---------- Schneeballschlacht (Kapitel 4): 7P2 gegen 7P1 im Hof. Hinter drei Schneewällen tauchen Köpfe auf –
+  // antippen = werfen (trifft nur, wenn der Kopf noch oben ist). Wird ein Ball auf dich geworfen, leuchtet der Rand rot:
+  // „Ducken“ (Knopf oder Leertaste) rechtzeitig, sonst Treffer. Mitspieler werfen auch. Kein Verlieren, nur Spaß und Stand.
+  // def: { wo, zeit: s, team: [{ id, name, farbe }], gegner: [{ name, farbe }] } → { treffer, getroffen, ausgewichen, wuerfe, stand: [wir, sie] }
+  ui.schneeball = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz sz-schnee"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Hof') + ' · 7P2 gegen 7P1</span><b>Schneeballschlacht</b></div>' +
+      '<p class="sz-info">Tippe auf einen Kopf, der hinter dem Wall auftaucht. Wird der Rand rot: <b>Ducken!</b></p>' +
+      '<canvas width="520" height="300"></canvas><div class="sz-karten"><button type="button" class="sz-ducken">⬇ Ducken <kbd>Leertaste</kbd></button></div><div class="sz-stand"></div></div>');
+    const cv = k.querySelector('canvas'), x = cv.getContext('2d'), stand = k.querySelector('.sz-stand'), duckKnopf = k.querySelector('.sz-ducken');
+    const ZEIT = (def.zeit || 45) * zeitFaktor(), G = def.gegner && def.gegner.length ? def.gegner : [{ name: 'Tom', farbe: '#c0392b' }, { name: 'Sami', farbe: '#8e44ad' }, { name: 'Lea', farbe: '#16a085' }];
+    const WALL = [110, 260, 410];
+    let t = 0, treffer = 0, getroffen = 0, ausgewichen = 0, wuerfe = 0, wir = 0, sie = 0, fertig = false, duck = 0, text = 'Los!', textT = 1.2, naechster = 0.8, angriff = null, splat = 0;
+    const koepfe = WALL.map((wx, i) => ({ x: wx, y: 92, auf: 0, bis: 0, g: G[i % G.length] }));
+    const baelle = [];   // { x0, y0, x1, y1, t, dauer, wer: 'ich' | 'team', ziel }
+    cv.__st = () => ({ koepfe: koepfe.map((q) => [q.x, q.y - 22 * q.auf, q.auf > 0.6]), warn: !!angriff && !angriff.fertig, t, fertig });   // nur für Tests
+    const zufall = (a, b) => a + Math.random() * (b - a);
+    const werfen = (sx, sy) => {
+      if (fertig || duck > 0) return;
+      let ziel = -1, bd = 42; koepfe.forEach((q, i) => { const d = Math.hypot(q.x - sx, q.y - 22 * q.auf - sy); if (d < bd) { bd = d; ziel = i; } });
+      wuerfe++; baelle.push({ x0: 260, y0: 286, x1: sx, y1: sy, t: 0, dauer: 0.38, wer: 'ich', ziel });
+    };
+    const ducken = () => { if (fertig) return; duck = 0.75; if (angriff && !angriff.fertig && angriff.t < angriff.dauer) { angriff.fertig = true; ausgewichen++; text = 'Weggeduckt! Der Ball zischt über dich.'; textT = 1.3; } };
+    duckKnopf.addEventListener('pointerdown', (e) => { e.preventDefault(); ducken(); });
+    cv.addEventListener('pointerdown', (e) => { const r = cv.getBoundingClientRect(); werfen((e.clientX - r.left) * (520 / r.width), (e.clientY - r.top) * (300 / r.height)); });
+    halte((e) => { if (e.code === 'Space') { e.preventDefault(); e.stopPropagation(); if (!e.repeat) ducken(); } });
+    let last = performance.now();
+    const draw = (now) => {
+      const dt = Math.min(0.1, (now - last) / 1000); last = now;
+      if (!fertig) {
+        t += dt; duck = Math.max(0, duck - dt); splat = Math.max(0, splat - dt);
+        // Köpfe tauchen auf und ab
+        naechster -= dt;
+        if (naechster <= 0) { const q = koepfe[Math.floor(Math.random() * 3)]; if (q.bis <= t) { q.bis = t + zufall(1.0, 1.6) * zeitFaktor(); } naechster = zufall(0.5, 1.1); }
+        for (const q of koepfe) q.auf = q.bis > t ? Math.min(1, q.auf + dt * 6) : Math.max(0, q.auf - dt * 5);
+        // die 7P1 wirft auf dich (mit Warnung)
+        if (!angriff || angriff.fertig && angriff.t > angriff.dauer + 0.8) { if (Math.random() < dt * 0.55) angriff = { t: 0, dauer: 1.05 * zeitFaktor(), fertig: false, x: zufall(150, 370) }; }
+        if (angriff) { angriff.t += dt; if (!angriff.fertig && angriff.t >= angriff.dauer) { angriff.fertig = true; if (duck > 0) { ausgewichen++; text = 'Weggeduckt!'; } else { getroffen++; sie++; splat = 0.9; text = 'Treffer! Schnee im Kragen.'; } textT = 1.2; } }
+        // Mitspieler werfen ab und zu
+        if (Math.random() < dt * 0.45 && def.team && def.team.length) { const m = def.team[Math.floor(Math.random() * def.team.length)], ziel = Math.floor(Math.random() * 3); baelle.push({ x0: zufall(60, 460), y0: 282, x1: koepfe[ziel].x + zufall(-8, 8), y1: 74, t: 0, dauer: 0.5, wer: m.name, ziel }); }
+        for (const b of baelle) {
+          b.t += dt;
+          if (!b.aus && b.t >= b.dauer) { b.aus = true; const q = koepfe[b.ziel];
+            if (q && q.auf > 0.55) { q.bis = t; if (b.wer === 'ich') { treffer++; wir++; text = 'Treffer! ' + q.g.name + ' taucht ab.'; textT = 1.1; } else if (Math.random() < 0.6) { wir++; text = b.wer + ' trifft ' + q.g.name + '.'; textT = 1.1; } } }
+        }
+        while (baelle.length && baelle[0].aus && baelle[0].t > baelle[0].dauer + 0.3) baelle.shift();
+        if (t >= ZEIT) { fertig = true; text = 'Es klingelt. ' + wir + ' : ' + sie + '. Alle sind nass. Alle grinsen.'; textT = 3; setTimeout(() => { loesche(); ui.ebeneZu(); ok({ treffer, getroffen, ausgewichen, wuerfe, stand: [wir, sie] }); }, 2400); }
+      }
+      // Bild: Himmel, Hof mit Schnee, drei Wälle
+      x.fillStyle = '#dfe9f3'; x.fillRect(0, 0, 520, 300); x.fillStyle = '#f7fbff'; x.fillRect(0, 120, 520, 180);
+      for (const q of koepfe) {
+        const y = q.y - 22 * q.auf; x.fillStyle = q.g.farbe; x.beginPath(); x.arc(q.x, y, 15, 0, 7); x.fill();
+        x.fillStyle = '#fff'; x.font = 'bold 11px system-ui'; x.fillText(q.g.name[0], q.x - 4, y + 4);
+      }
+      for (const wx of WALL) { x.fillStyle = '#ffffff'; x.strokeStyle = '#c9d6e4'; x.lineWidth = 2; x.beginPath(); x.ellipse(wx, 108, 62, 22, 0, Math.PI, 0); x.lineTo(wx + 62, 118); x.lineTo(wx - 62, 118); x.closePath(); x.fill(); x.stroke(); }
+      for (const b of baelle) { if (b.aus) continue; const f = Math.min(1, b.t / b.dauer), bx = b.x0 + (b.x1 - b.x0) * f, by = b.y0 + (b.y1 - b.y0) * f - Math.sin(f * Math.PI) * 50; x.fillStyle = '#fff'; x.strokeStyle = '#9fb3c8'; x.beginPath(); x.arc(bx, by, b.wer === 'ich' ? 7 : 5, 0, 7); x.fill(); x.stroke(); }
+      // eigener Wall unten, ducken = tiefer
+      x.fillStyle = '#ffffff'; x.strokeStyle = '#c9d6e4'; x.beginPath(); x.ellipse(260, 300, 240, duck > 0 ? 70 : 46, 0, Math.PI, 0); x.fill(); x.stroke();
+      if (angriff && !angriff.fertig) { const f = Math.min(1, angriff.t / angriff.dauer); x.strokeStyle = 'rgba(214,69,47,' + (0.35 + f * 0.6) + ')'; x.lineWidth = 8 + f * 6; x.strokeRect(4, 4, 512, 292); x.fillStyle = '#fff'; x.beginPath(); x.arc(angriff.x + (260 - angriff.x) * f, 110 + 140 * f, 5 + f * 9, 0, 7); x.fill(); }
+      if (splat > 0) { x.fillStyle = 'rgba(255,255,255,' + Math.min(0.85, splat) + ')'; for (let i = 0; i < 7; i++) { x.beginPath(); x.arc(220 + Math.sin(i * 2.1) * 90, 170 + Math.cos(i * 1.7) * 60, 26 + (i % 3) * 10, 0, 7); x.fill(); } }
+      x.fillStyle = 'rgba(27,29,38,.82)'; x.fillRect(190, 10, 140, 26); x.fillStyle = '#fff'; x.font = 'bold 15px system-ui'; x.fillText('7P2 ' + wir + ' : ' + sie + ' 7P1', 200, 28);
+      x.fillStyle = '#3fa66b'; x.fillRect(10, 4, 500 * Math.max(0, 1 - t / ZEIT), 4);
+      if (textT > 0) { textT -= dt; x.font = 'bold 14px system-ui'; const w = Math.min(500, x.measureText(text).width + 16); x.fillStyle = 'rgba(255,255,255,.95)'; x.fillRect(260 - w / 2, 236, w, 26); x.fillStyle = '#1b1d26'; x.fillText(text, 260 - w / 2 + 8, 254); }
+      stand.textContent = 'Deine Treffer: ' + treffer + ' · weggeduckt: ' + ausgewichen + ' · erwischt: ' + getroffen;
+      if (!fertig || textT > 0) requestAnimationFrame(draw);
+    };
+    requestAnimationFrame(draw);
   });
 
   return ui;
