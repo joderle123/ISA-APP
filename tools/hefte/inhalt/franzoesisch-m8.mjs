@@ -362,8 +362,11 @@ export const LEKTIONEN = [
       { art: 'schreiben', auftrag: 'Compose un menu équilibré pour une journée pour Noah, 13 ans. Il joue au foot. Utilise la pyramide.', stufe: 2,
         anfaenge: ['Au petit-déjeuner, Noah mange …', 'À midi, …', 'Au goûter, …', 'Le soir, …', 'Il boit …, parce que …'], zeilen: 10,
         beispiel: 'Au petit-déjeuner, Noah mange du pain avec du fromage et une pomme. À midi, il prend du poisson, du riz et des légumes. Au goûter, il mange un yaourt et une banane. Le soir, il mange des pâtes avec de la sauce tomate. Il boit beaucoup d’eau, parce qu’il fait du sport.' },
+      { art: 'schreiben', auftrag: 'Écris un court message à l’auteur de l’article (pour le journal de l’école) : ce que tu as appris, ce que tu fais déjà et une question.', stufe: 2,
+        anfaenge: ['Bonjour,', 'Merci pour votre article. J’ai appris que …', 'Moi, je … déjà.', 'J’ai une question : … ?', 'Bonne journée,'], zeilen: 6,
+        beispiel: 'Bonjour,\nmerci pour votre article. J’ai appris que les légumes et les fruits sont tout en bas de la pyramide. Moi, je bois déjà beaucoup d’eau. J’ai une question : est-ce qu’on peut manger du chocolat tous les jours ?\nBonne journée,\nInès' },
     ],
-    check: ['Je comprends un article sur la santé.', 'Je reconstitue la pyramide alimentaire.', 'Je comprends une scène à la cantine.', 'J’utilise du, de la, des, pas de.', 'J’utilise le pronom en.'],
+    check: ['Je comprends un article sur la santé.', 'Je reconstitue la pyramide alimentaire.', 'Je comprends une scène à la cantine.', 'J’utilise du, de la, des, pas de.', 'J’utilise le pronom en.', 'J’écris un message à l’auteur d’un article.'],
   },
   // ================================================================ 5
   {

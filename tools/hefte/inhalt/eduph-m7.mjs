@@ -342,6 +342,7 @@ export const LEKTIONEN = [
     },
     ueben: [
       { art: 'tabelle', auftrag: 'Mein Dreikampf-Pass: Trage deine Leistungen ein.', stufe: 1, kopf: ['Station', 'im Training', 'beim Fest', 'verbessert?'], breiten: [40, 20, 20, 20], zeilen: [['Sprint, in Sekunden', '', '', ''], ['Weitsprung oder Weitrollen, in Metern', '', '', ''], ['Ballwurf, in Metern', '', '', '']] },
+      { art: 'tabelle', auftrag: 'Schätz-Lauf (Ausdauer): Schätze vorher, wie viele Runden du in 6 Minuten schaffst – in einem Tempo, bei dem du noch sprechen kannst. Lauf, zähl mit, vergleiche. Beim zweiten Lauf schätzt du neu.', stufe: 2, kopf: ['', 'geschätzt', 'gelaufen', 'Unterschied'], breiten: [40, 20, 20, 20], zeilen: [['1. Lauf: Runden in 6 Minuten', '', '', ''], ['2. Lauf: Runden in 6 Minuten', '', '', ''], ['Beim 2. Mal lag ich näher dran: ja / nein', '', '', '']] },
       { art: 'schneidekarten', auftrag: 'Stationskarten für das Sportfest: Schneidet sie aus und legt sie an die Stationen.', stufe: 2, neueSeite: true, titel: 'Sportfest', icon: 'trophy', farbe: FEST, spalten: 2,
         karten: [
           { text: '**Station Sprint**\n60 Meter, Hochstart oder Rollstuhl, zwei Versuche' }, { text: '**Station Weitsprung**\nAbsprungzone statt Balken, drei Versuche' },
@@ -354,6 +355,6 @@ export const LEKTIONEN = [
         anfaenge: ['Stolz bin ich auf …', 'Verbessert habe ich mich …', 'Beim nächsten Fest …'], zeilen: 6,
         beispiel: 'Stolz bin ich auf meinen Ballwurf, weil ich vier Meter weiter geworfen habe als im Training. Verbessert habe ich mich auch beim Sprint. Beim nächsten Fest möchte ich als Helferin an der Zeitstation mitmachen.' },
     ],
-    check: ['Ich kenne Para-Leichtathletik.', 'Ich passe Stationen so an, dass alle mitmachen können.', 'Ich dokumentiere meine Fortschritte.'],
+    check: ['Ich kenne Para-Leichtathletik.', 'Ich passe Stationen so an, dass alle mitmachen können.', 'Ich dokumentiere meine Fortschritte.', 'Ich schätze meine Ausdauer realistisch ein und vergleiche mit dem Ergebnis.'],
   },
 ]

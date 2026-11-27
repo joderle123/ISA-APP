@@ -1,6 +1,6 @@
 // Sport · Modul 9 (5P) „Sport fürs Leben“ – Éducation physique et sportive, Voie de préparation.
 // Sport im Verein (Probetraining anfragen, Mail schreiben), Verletzungen und Erste Hilfe (PECH, Kopfverletzung, Notruf 112),
-// Draußen aktiv (Wanderkarte lesen, Maßstab rechnen, Fahrradhelm), E-Sport und Bewegung (Argumente, Meinung),
+// Draußen aktiv (Wanderkarte lesen, Maßstab rechnen, Fahrradhelm), Fair bleiben, wenn es kracht (Bereich Attitude: Spiel selbst organisieren, Streit lösen, Entschuldigung in aller Form),
 // Projekt: Berufe im Sport und mein Bewegungsplan. Stand 2026. Keine Fragen nach eigenem Geld oder Familie.
 import { sachModul } from './sachfach-gemeinsam.mjs'
 import { wanderkarte } from './praxis-bilder.mjs'
@@ -8,15 +8,15 @@ import { wanderkarte } from './praxis-bilder.mjs'
 export const MODUL = sachModul('eduph', 9, {
   titel: 'Sport fürs Leben',
   titelFr: 'Le sport pour la vie',
-  unter: 'Einen Verein finden, Verletzungen richtig versorgen, draußen mit Karte unterwegs sein, über E-Sport diskutieren – und einen Plan machen, wie Bewegung auch nach der Schule zu deinem Leben gehört.',
-  unterFr: 'Club sportif, premiers secours, activités en plein air, e-sport et projet de vie active.',
+  unter: 'Einen Verein finden, Verletzungen richtig versorgen, draußen mit Karte unterwegs sein, einen Streit ohne Schiri fair lösen – und einen Plan machen, wie Bewegung auch nach der Schule zu deinem Leben gehört.',
+  unterFr: 'Club sportif, premiers secours, activités en plein air, fair-play sans arbitre et projet de vie active.',
   farbe: '#3b6ea8',
   deckbild: ['lio:froh:stehen-zeigen', 'nele:froh:rollstuhl', 'mia:froh:gehen'],
   blasen: [{ t: 'Probetraining!', x: 8, y: 104 }, { t: 'Nach Norden!', x: 128, y: 92 }, { t: 'Bleib dran!', x: 180, y: 150 }],
   aussprache: { '(\\d+) : (\\d+)': '\\1 zu \\2', 'PECH-Regel': 'Pech-Regel', 'Maison de l’orientation': 'Mäsong dö lorjangtasjong', '\\bE-Sport\\b': 'I-Sport', '\\bE-Mail\\b': 'I-Mehl' },
   themen: [
     { titel: { de: 'Verein und Sicherheit', fr: 'Club et sécurité' }, icon: 'first-aid-kit', lektionen: 2 },
-    { titel: { de: 'Draußen und digital', fr: 'Dehors et numérique' }, icon: 'map', lektionen: 2 },
+    { titel: { de: 'Draußen und fair', fr: 'Dehors et fair-play' }, icon: 'map', lektionen: 2 },
     { titel: { de: 'Meine Zukunft', fr: 'Mon avenir' }, icon: 'route', lektionen: 1 },
   ],
 })
@@ -226,73 +226,82 @@ export const LEKTIONEN = [
     check: ['Ich kenne die Farben und Zeichen auf einer Wanderkarte.', 'Ich rechne mit dem Maßstab.', 'Ich weiß, was beim Radfahren schützt.'],
   },
   // ================================================================ 4
+  // Bereich „Attitude“ (Programm EDUPH, Stufe 3): Spiele selbst organisieren, Konflikte gemeinsam lösen, Entschuldigung in aller Form
   {
-    thema: 'E-Sport und Bewegung', titel: 'Ist Zocken Sport?', untertitel: 'Viele Jugendliche spielen gern Videospiele, manche auch im Wettkampf. Du lernst Argumente kennen, hörst eine Diskussion und bildest dir deine eigene Meinung.',
-    ziel: { de: 'Ich vergleiche Argumente und begründe meine Meinung.', fr: 'Je compare des arguments et je justifie mon opinion.' },
-    bild: ['yusuf:froh:zocken', 'mia:verwirrt:stehen'],
+    thema: 'Fair bleiben, wenn es kracht', titel: 'Wir regeln das selbst', untertitel: 'Im Park, in der Pause oder im Verein pfeift oft niemand. Du lernst, wie ihr ein Spiel selbst organisiert, einen Streit fair löst – und was du tust, wenn du einmal nicht mitmachen kannst.',
+    ziel: { de: 'Ich organisiere ein Spiel mit, löse einen Streit fair und entschuldige mich in aller Form, wenn ich nicht mitmachen kann.', fr: 'J’organise un jeu avec les autres, je règle un conflit avec fair-play et je m’excuse dans les formes quand je ne peux pas participer.' },
+    bild: ['sami:wuetend:stehen-verschraenkt', 'chloe:ruhig:erklaeren'],
     start: {
-      was: 'Was meinst du?',
+      was: 'Was passiert bei euch?',
       aufgaben: [
-        { art: 'mc', auftrag: 'Ist E-Sport für dich ein Sport? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['ja', 'nein', 'ich bin mir nicht sicher'], r: [] }] },
+        { art: 'mc', auftrag: 'Streetball in der Pause. Einer ruft „Foul!“, der andere „Nie im Leben!“. Was passiert bei euch meistens? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['Wir streiten, bis jemand geht.', 'Der oder die Stärkste bestimmt.', 'Wir einigen uns schnell.', 'Wir spielen einfach weiter.'], r: [] }] },
       ],
     },
     lesen: {
       was: 'Ein Sachtext', art: 'text', stimme: 'm1', nummern: false,
-      quelle: 'Sportwissen (Stand 2026)', titel: 'E-Sport: Pro und Contra',
+      quelle: 'Fairplay im Sport (Stand 2026)', titel: 'Ohne Schiri geht es auch',
       absaetze: [
-        'Beim **E-Sport** treten Spielerinnen und Spieler in Videospielen gegeneinander an, oft in Teams und in großen Turnieren. Ob das ein richtiger **Sport** ist, darüber streiten Fachleute.',
-        '**Dafür spricht:** Man braucht schnelle **Reaktionen**, gute **Konzentration** und **Taktik**. Teams trainieren regelmäßig und müssen gut zusammenarbeiten. Es gibt Regeln, Schiedsrichter und Wettkämpfe.',
-        '**Dagegen spricht:** Der Körper bewegt sich kaum. Ausdauer, Kraft und Beweglichkeit werden nicht trainiert. Wer viele Stunden sitzt, bekommt oft Rückenschmerzen, müde Augen und schläft schlechter.',
-        '**Tipps für alle, die gern spielen:** Jede Stunde aufstehen und sich bewegen. Ab und zu in die Ferne schauen, um die Augen zu entspannen. Nicht kurz vor dem Schlafen spielen. Und: Profi-Teams im E-Sport machen selbst **Sport**, weil ein fitter Körper auch dem Kopf hilft.',
+        'Im Park, in der Pause oder beim Training pfeift meistens **niemand**. Trotzdem klappt ein Spiel, wenn sich alle an ein paar Dinge halten. Das nennt man **Fairplay**: fair spielen, auch wenn keiner zuschaut.',
+        '**Vor dem Spiel** klärt ihr kurz: Wie groß ist das Feld? Wie lange spielen wir? Was ist ein Foul? Wer baut auf, wer baut ab? Was am Anfang geklärt ist, muss später nicht gestritten werden.',
+        '**Wenn es kracht**, hilft ein fester Ablauf. **1. Stopp:** Das Spiel hält an. **2. Durchatmen:** Niemand schreit, niemand schubst. **3. Beide erzählen:** Jede Seite sagt, was sie gesehen hat. Die andere unterbricht nicht. **4. Lösung:** Freiwurf, Wiederholung oder eine Münze entscheidet. **5. Weiter:** Ihr spielt weiter, und die Sache ist erledigt.',
+        '**Wenn du einmal nicht mitmachen kannst**, zum Beispiel nach einer Verletzung, gibst du der Lehrkraft **vor der Stunde** eine **schriftliche Entschuldigung** mit Unterschrift einer erziehungsberechtigten Person oder ein **Attest** vom Arzt. „Ich hab keine Lust“ ist keine Entschuldigung. Du bist trotzdem dabei: als Schiedsrichter, beim Zeitnehmen oder beim Aufbauen.',
       ],
-      woerter: [['antreten', 'participer, affronter'], ['die Reaktion', 'la réaction'], ['die Konzentration', 'la concentration'], ['die Taktik', 'la tactique'], ['dafür sprechen', 'être un argument pour'], ['dagegen sprechen', 'être un argument contre'], ['die Ferne', 'le lointain'], ['entspannen', 'détendre']],
+      woerter: [['das Fairplay', 'le fair-play'], ['pfeifen', 'siffler'], ['klären', 'régler, mettre au clair'], ['das Foul', 'la faute'], ['durchatmen', 'respirer à fond'], ['unterbrechen', 'interrompre'], ['die Entschuldigung', 'le mot d’excuse'], ['das Attest', 'le certificat médical']],
       aufgaben: [
-        { art: 'tabelle', auftrag: 'Dafür oder dagegen? Kreuze an.', stufe: 1, kopf: ['Argument', 'E-Sport ist Sport', 'E-Sport ist kein Sport'], breiten: [60, 20, 20], zeilen: [['Man braucht schnelle Reaktionen.', '[x]', ''], ['Der Körper bewegt sich kaum.', '', '[x]'], ['Es gibt Regeln und Schiedsrichter.', '[x]', ''], ['Ausdauer und Kraft werden nicht trainiert.', '', '[x]'], ['Teams trainieren und arbeiten zusammen.', '[x]', '']] },
+        { art: 'ordnen', auftrag: 'Es kracht im Spiel. Ordne die fünf Schritte.', stufe: 1, teile: ['Stopp: Das Spiel hält an.', 'Durchatmen: niemand schreit, niemand schubst.', 'Beide erzählen, was sie gesehen haben.', 'Eine Lösung finden.', 'Weiterspielen.'], ordnung: [3, 0, 4, 2, 1] },
+        { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 1, saetze: [['Vor dem Spiel klärt man, was ein Foul ist.', true], ['Bei einem Streit entscheidet, wer am lautesten ist.', false], ['Wer erzählt, wird nicht unterbrochen.', true], ['Die Entschuldigung gibt man nach der Stunde ab.', false], ['Wer nicht mitmachen kann, kann zum Beispiel die Zeit nehmen.', true]] },
       ],
     },
     hoeren: {
-      was: 'Eine Diskussion', wo: 'Klasse · Diskussionsrunde', titel: 'Zocken oder kicken?',
-      situation: 'Yusuf und Mia diskutieren. Lina leitet die Diskussion.',
-      bild: ['yusuf:froh:zocken', 'mia:verwirrt:stehen'], sprecher: { Lina: 'w2', Yusuf: 'm3', Mia: 'w3' },
+      was: 'Ein Gespräch', wo: 'Schulhof · am Korb', titel: 'Foul oder nicht?',
+      situation: 'Sami und Tom spielen Streetball gegen Mia und Ben. Chloe steht am Rand. Eine Lehrkraft ist nicht da.',
+      bild: ['sami:wuetend:stehen-verschraenkt', 'tom:aufgeregt:zeigen', 'chloe:ruhig:erklaeren'], sprecher: { Sami: 'm2', Tom: 'm3', Chloe: 'w2' },
       text: [
-        ['Lina', 'Unsere Frage: Ist E-Sport ein Sport? Yusuf, du fängst an.'],
-        ['Yusuf', 'Ja, klar. Mein Team trainiert dreimal pro Woche. Wir besprechen Taktik, und man muss sich total konzentrieren. Das ist genauso anstrengend.'],
-        ['Mia', 'Für den Kopf vielleicht. Aber du schwitzt nicht, dein Herz schlägt nicht schneller, und deine Muskeln werden nicht stärker.'],
-        ['Yusuf', 'Beim Schach schwitzt man auch nicht, und viele nennen es trotzdem Sport.'],
-        ['Mia', 'Gutes Argument. Aber Schach macht man auch nicht sechs Stunden am Tag vor einem Bildschirm.'],
-        ['Lina', 'Yusuf, wie viel bewegst du dich neben dem Spielen?'],
-        ['Yusuf', 'Ehrlich gesagt: Unser Trainer sagt, wir sollen joggen gehen. Weil man dann länger konzentriert bleibt.'],
-        ['Mia', 'Siehst du! Sogar E-Sport braucht Sport.'],
-        ['Lina', 'Vielleicht ist das unser Ergebnis: Beides kann zusammenpassen.'],
+        ['Tom', 'Foul! Du hast mich am Arm geschlagen. Freiwurf für uns.'],
+        ['Sami', 'Nie im Leben! Ich hab nur den Ball getroffen. Hör auf zu jammern.'],
+        ['Tom', 'Jammern? Du schubst die ganze Zeit!'],
+        ['Chloe', 'Stopp. Ball zu mir. Einmal durchatmen, beide.'],
+        ['Chloe', 'Tom, was hast du gesehen? Sami, du hörst nur zu.'],
+        ['Tom', 'Ich wollte werfen, und seine Hand war an meinem Arm. Deshalb ging der Ball daneben.'],
+        ['Chloe', 'Okay. Sami, jetzt du.'],
+        ['Sami', 'Ich wollte an den Ball. Kann sein, dass ich den Arm erwischt hab. Absichtlich war das nicht.'],
+        ['Chloe', 'Also: Beide sind sich nicht sicher. Vorschlag: Der Wurf wird wiederholt. Okay?'],
+        ['Tom', 'Okay. Wiederholen.'],
+        ['Sami', '(gibt Tom die Hand) Passt. Und sorry für „jammern“.'],
+        ['Chloe', 'Und ab jetzt gilt: Wer gefoult wurde, sagt es sofort – nicht erst nach dem Wurf.'],
       ],
-      vor: [{ art: 'mc', auftrag: 'Was macht die Person, die eine Diskussion leitet? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['Sie gibt das Wort weiter und fasst zusammen.', 'Sie entscheidet, wer recht hat.'], r: 0 }] }],
+      vor: [{ art: 'mc', auftrag: 'Was macht Chloe in diesem Gespräch? Vermute. Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['Sie hilft, den Streit zu lösen.', 'Sie entscheidet allein, wer recht hat.'], r: 0 }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Hör zu. Welche Argumente nennen Yusuf und Mia?', stufe: 2, kopf: ['Yusuf: E-Sport ist Sport', 'Mia: E-Sport ist kein Sport'], breiten: [50, 50], zeilen: [['[Training dreimal pro Woche, Taktik]', '[Man schwitzt nicht, das Herz schlägt nicht schneller.]'], ['[Man muss sich total konzentrieren.]', '[Die Muskeln werden nicht stärker.]'], ['[Schach nennt man auch Sport.]', '[nicht sechs Stunden vor dem Bildschirm]']] },
-        { art: 'fragen', auftrag: 'Was sagt Yusufs Trainer? Warum?', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'Die Spieler sollen joggen gehen, weil man dann länger konzentriert bleibt.' }] },
+        { art: 'tabelle', auftrag: 'Lies oder hör zu. Welche Schritte macht Chloe? Schreib auf, was sie sagt.', stufe: 2, kopf: ['Schritt', 'Das sagt Chloe'], breiten: [30, 70], zeilen: [['Stopp', '[Stopp. Ball zu mir.]'], ['Durchatmen', '[Einmal durchatmen, beide.]'], ['Beide erzählen', '[Tom, was hast du gesehen? Sami, du hörst nur zu.]'], ['Lösung', '[Der Wurf wird wiederholt.]']] },
+        { art: 'fragen', auftrag: 'Was gibt Sami am Ende zu? Und wofür entschuldigt er sich?', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'Er gibt zu, dass er den Arm vielleicht erwischt hat. Er entschuldigt sich für das Wort „jammern“.' }] },
       ],
-      nach: [{ art: 'sprechen', auftrag: 'Meinungslinie: Stellt euch im Raum auf eine Linie. Links: „E-Sport ist Sport.“ Rechts: „E-Sport ist kein Sport.“ Begründet euren Platz.', stufe: 3, karten: [
-        { titel: 'Satzanfänge', text: ['Ich stehe hier, weil …', 'Ein wichtiges Argument ist …', 'Ich verstehe aber auch, dass …'] }] }],
+      nach: [{ art: 'sprechen', auftrag: 'Spielt die Szene zu dritt nach. Dann tauscht die Rollen. Wer Chloe spielt, achtet darauf: Jede Seite redet, ohne unterbrochen zu werden.', stufe: 3, karten: [
+        { titel: 'Für die Person in der Mitte', text: ['Stopp. Ball zu mir.', 'Was hast du gesehen?', 'Du hörst erst zu.', 'Mein Vorschlag: …'] },
+        { titel: 'Für die Streitenden', text: ['Ich habe gesehen, dass …', 'Kann sein, dass …', 'Okay, so machen wir das.'] }] }],
     },
     regel: {
       reihen: [
-        [{ titel: 'Argumentieren', nummern: true, punkte: ['**Meinung** sagen', '**Grund** nennen: weil …', '**Beispiel** geben', 'die **andere Seite** verstehen'] },
-         { titel: 'Spielen und bewegen', punkte: ['jede **Stunde** aufstehen', 'Augen: in die **Ferne** schauen', 'nicht vor dem **Schlafen** spielen', 'fit für **Kopf** und Körper'] }],
+        [{ titel: 'Wenn es kracht', nummern: true, punkte: ['**Stopp**: Spiel anhalten', '**durchatmen**', '**beide erzählen**, keiner unterbricht', '**Lösung**: wiederholen, Freiwurf, Münze', '**weiter** – erledigt'] },
+         { titel: 'Nicht mitmachen können', punkte: ['**vor** der Stunde Bescheid geben', '**schriftlich**: Entschuldigung oder **Attest**', '**Grund** und **Dauer** nennen', 'trotzdem **dabei**: Schiri, Zeit, Aufbau'] }],
       ],
     },
     ueben: [
-      { art: 'schneidekarten', auftrag: 'Bewegungspausen-Karten für Spielerinnen und Spieler: Zieht nach jeder Spielstunde eine Karte und macht die Übung.', stufe: 1, neueSeite: true, titel: 'Pause', icon: 'device-gamepad-2', farbe: LEBEN, spalten: 2,
+      { art: 'schneidekarten', auftrag: 'Ohne Lehrkraft: Zieht eine Karte. Organisiert das Spiel selbst (Feld, Zeit, Teams, Regeln, Aufbau) – oder löst den Streit mit den fünf Schritten. Eine Person beobachtet und sagt danach, was gut lief.', stufe: 2, neueSeite: true, titel: 'Selbst regeln', icon: 'scale', farbe: LEBEN, spalten: 2,
         karten: [
-          { text: '**Augen-Pause**\n20 Sekunden aus dem Fenster in die Ferne schauen' }, { text: '**Strecken**\nArme hoch, ganz lang machen, 10 Sekunden halten' },
-          { text: '**Treppe**\neinmal Treppe hoch und runter' }, { text: '**Schultern**\n10-mal die Schultern nach hinten kreisen' },
-          { text: '**Hampelmann**\n20 Hampelmänner' }, { text: '**Trinken**\nein Glas Wasser holen – zu Fuß!' },
+          { text: '**Teams wählen**\nIhr braucht zwei gleich starke Teams – ohne dass jemand als Letzter übrig bleibt.' },
+          { text: '**Aus oder nicht?**\nDer Ball war auf der Linie. Beide Teams sind sicher, dass sie recht haben.' },
+          { text: '**Zu wenig Platz**\nZwei Gruppen wollen gleichzeitig auf das Feld.' },
+          { text: '**Der Abbau**\nDas Spiel ist aus. Alle wollen sofort in die Umkleide. Die Matten liegen noch.' },
+          { text: '**Ein Neuer**\nJemand fragt, ob er mitspielen darf. Die Teams sind schon voll.' },
+          { text: '**Zu hart**\nEiner spielt immer härter. Zwei haben schon keine Lust mehr.' },
         ] },
     ],
     schreiben: [
-      { art: 'schreiben', auftrag: 'Mein Sport-Tagebuch: Ist E-Sport für dich ein Sport? Schreib deine Meinung mit zwei Gründen und einem Beispiel.', stufe: 3,
-        anfaenge: ['Ich finde, dass …', 'Ein Grund ist …', 'Außerdem …', 'Zum Beispiel …', 'Trotzdem verstehe ich, dass …'], zeilen: 8,
-        beispiel: 'Ich finde, dass E-Sport eine Art Sport ist, aber kein Ersatz für Bewegung. Ein Grund ist, dass man viel trainieren und sich konzentrieren muss. Außerdem gibt es Regeln und Teams. Zum Beispiel machen Profi-Teams Taktik-Training wie im Fußball. Trotzdem verstehe ich, dass viele sagen: Ohne Bewegung ist es kein Sport.' },
+      { art: 'schreiben', auftrag: 'Schreib eine Entschuldigung für die Sportstunde an Frau Diallo. Du hast dir den Fuß verstaucht. Nenne den Grund, die Dauer und was du in der Stunde trotzdem übernehmen kannst. Lass Platz für die Unterschrift.', stufe: 2,
+        anfaenge: ['Junglinster, den …', 'Sehr geehrte Frau Diallo,', 'ich kann vom … bis zum … nicht am Sportunterricht teilnehmen, weil …', 'In der Stunde kann ich …', 'Mit freundlichen Grüßen', 'Unterschrift einer erziehungsberechtigten Person: …'], zeilen: 9,
+        beispiel: 'Junglinster, den 12. März\nSehr geehrte Frau Diallo,\nich kann vom 12. bis zum 19. März nicht am Sportunterricht teilnehmen, weil ich mir beim Training den rechten Fuß verstaucht habe. Ein Attest vom Arzt liegt bei.\nIn der Stunde kann ich die Zeit nehmen oder beim Aufbauen die Liste führen.\nMit freundlichen Grüßen\nSam\nUnterschrift einer erziehungsberechtigten Person: ____________' },
     ],
-    check: ['Ich kenne Argumente für und gegen E-Sport.', 'Ich begründe meine Meinung mit „weil“.', 'Ich kenne Tipps für Bewegungspausen.'],
+    check: ['Ich organisiere ein Spiel mit: Feld, Zeit, Regeln, Auf- und Abbau.', 'Ich löse einen Streit mit den fünf Schritten.', 'Ich gebe eine Entschuldigung in aller Form ab, wenn ich nicht mitmachen kann.'],
   },
   // ================================================================ 5
   {

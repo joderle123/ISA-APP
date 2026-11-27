@@ -269,6 +269,8 @@ export const LEKTIONEN = [
       reihen: [
         [{ titel: 'Vor dem Sport', punkte: ['**dynamisch** dehnen', 'in **Bewegung**: schwingen, kreisen', 'gehört zum **Aufwärmen**'] },
          { titel: 'Nach dem Sport', punkte: ['**ruhig** dehnen', '**20–30 Sekunden** halten', '**nicht wippen**', 'ziehen ja, **wehtun nein**', '**atmen**'] }],
+        [{ titel: 'Entspannen: anspannen – loslassen', nummern: true, punkte: ['bequem liegen oder sitzen, **Augen zu**', 'eine Körperstelle **5 Sekunden fest anspannen**: Fäuste, Schultern, Bauch, Beine', '**loslassen** und 10 Sekunden nachspüren', 'ruhig **atmen**: 4 Sekunden ein, 6 aus'] },
+         { titel: 'Wann hilft das?', punkte: ['nach dem **Sport**', 'vor einer **Prüfung**', 'wenn du **nicht einschlafen** kannst', 'wenn du **wütend** bist'] }],
       ],
     },
     ueben: [
@@ -284,7 +286,7 @@ export const LEKTIONEN = [
         anfaenge: ['Zuerst …', 'Dann …', 'Zum Schluss …'], zeilen: 5,
         beispiel: 'Zuerst gehe ich zwei Minuten langsam und atme tief. Dann dehne ich den Oberschenkel vorn und die Wade, je 25 Sekunden pro Seite. Zum Schluss lege ich mich auf den Rücken und atme drei Mal tief in den Bauch.' },
     ],
-    check: ['Ich weiß, wann man wie dehnt.', 'Ich halte Dehnungen ruhig und ohne Wippen.', 'Ich kenne ein Cool-down.'],
+    check: ['Ich weiß, wann man wie dehnt.', 'Ich halte Dehnungen ruhig und ohne Wippen.', 'Ich kenne ein Cool-down.', 'Ich kann mich mit Anspannen und Loslassen entspannen.'],
   },
   // ================================================================ 5
   {

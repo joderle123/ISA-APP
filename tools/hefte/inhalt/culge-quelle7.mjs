@@ -350,17 +350,20 @@ export const LEKTIONEN = [
       reihen: [
         [{ titel: 'Ab wann? (vereinfacht, Stand 2026)', punkte: ['**15**: Ferienjob', '**16**: Mofa-/Roller-Führerschein', '**17**: Autofahren lernen mit Begleitung', '**18**: volljährig – Verträge, wählen, Führerschein'] },
          { titel: 'Volljährig heißt auch', punkte: ['**selbst verantwortlich**', 'Schulden und Verträge **selbst** tragen', '**Wahlpflicht** mit luxemburgischem Pass'] }],
+        [{ titel: 'Menschenrechte (UNO, 10. Dezember 1948)', punkte: ['gelten für **alle** Menschen, ohne Ausnahme', '**30 Artikel**, zum Beispiel:', 'Art. 1: alle sind frei und **gleich an Würde** und Rechten', 'Art. 19: **Meinungsfreiheit** · Art. 26: Recht auf **Bildung**'] },
+         { titel: 'Kinderrechte und Menschenrechte', punkte: ['**Kinderrechte** (UNO 1989) gelten bis 18', '**Menschenrechte** gelten ein Leben lang', 'mein Recht = die **Pflicht** der anderen, es zu achten'] }],
       ],
     },
     ueben: [
       { art: 'meinungslinie', auftrag: 'Was denkst du? Begründe.', stufe: 2, aussagen: ['Man sollte schon mit 16 wählen dürfen.', 'Mit 18 ist man erwachsen genug, um alles selbst zu entscheiden.'] },
+      { art: 'zuordnen', auftrag: 'Menschenrechte im Alltag: Welches Recht steckt dahinter? Verbinde.', stufe: 2, links: ['Eine Zeitung berichtet über einen Fehler der Regierung.', 'Jedes Kind darf zur Schule gehen.', 'Ein Betrieb lehnt niemanden wegen der Hautfarbe ab.', 'Angestellte treten einer Gewerkschaft bei.'], rechts: ['Meinungs- und Pressefreiheit (Art. 19)', 'Recht auf Bildung (Art. 26)', 'Verbot von Diskriminierung (Art. 2)', 'Recht auf Arbeit und Gewerkschaften (Art. 23)'] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Wählen ab 16 – ja oder nein? Schreibe deine Meinung mit zwei Gründen und einem Gegenargument.', stufe: 3,
         anfaenge: ['Ich bin dafür / dagegen, dass …', 'Ein Grund ist …', 'Außerdem …', 'Manche sagen, …', 'Trotzdem …'], zeilen: 8,
         beispiel: 'Ich bin dafür, dass man ab 16 wählen darf. Ein Grund ist, dass Politik auch über unsere Schule und unsere Zukunft entscheidet. Außerdem arbeiten manche mit 16 schon in einer Ausbildung. Manche sagen, dass Jugendliche zu wenig über Politik wissen. Trotzdem finde ich: Wer wählen darf, interessiert sich auch mehr dafür.' },
     ],
-    check: ['Ich nenne Rechte, die mit dem Alter kommen.', 'Ich erkläre, was Volljährigkeit bedeutet.', 'Ich begründe meine Meinung zum Wählen ab 16.'],
+    check: ['Ich nenne Rechte, die mit dem Alter kommen.', 'Ich erkläre, was Volljährigkeit bedeutet.', 'Ich begründe meine Meinung zum Wählen ab 16.', 'Ich nenne Menschenrechte und erkenne sie im Alltag.'],
   },
   // ================================================================ 6
   {

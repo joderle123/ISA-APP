@@ -223,7 +223,10 @@ export const LEKTIONEN = [
       ],
       nach: [{ art: 'sprechen', auftrag: 'Compare la vie d’un enfant romain et la vie d’un jeune aujourd’hui.', stufe: 3, karten: [
         { titel: 'Avant', text: ['Les enfants romains jouaient …', 'Ils écrivaient …', 'Ils mangeaient …'] },
-        { titel: 'Aujourd’hui', text: ['Nous jouons …', 'Nous écrivons …', 'Par contre, …'] }] }],
+        { titel: 'Aujourd’hui', text: ['Nous jouons …', 'Nous écrivons …', 'Par contre, …'] }] },
+        { art: 'sprechen', auftrag: 'Mini-exposé sans lire : présente un aspect de la vie des Romains (l’école, les jeux, la nourriture ou les thermes) en une minute. Sur ta fiche : cinq mots-clés, pas de phrases.', stufe: 3, karten: [
+        { titel: 'Ma fiche', text: ['1 mot-clé : le sujet', '2–4 : trois détails', '5 : une comparaison avec aujourd’hui'] },
+        { titel: 'Phrases utiles', text: ['Je vais parler de …', 'À l’époque, les Romains …', 'Aujourd’hui, par contre, …', 'Pour finir, …'] }] }],
     },
     regel: {
       reihen: [
@@ -546,7 +549,10 @@ export const LEKTIONEN = [
       ],
       nach: [{ art: 'sprechen', auftrag: 'Au téléphone : invite ton ou ta partenaire. Il ou elle accepte, refuse ou propose un autre jour.', stufe: 3, karten: [
         { titel: 'Inviter', text: ['Tu veux venir … ?', 'Ça te dit de … ?', 'On se retrouve à … ?'] },
-        { titel: 'Répondre', text: ['Avec plaisir !', 'Désolé(e), je ne peux pas parce que …', 'On peut le déplacer à … ? Ça te va ?'] }] }],
+        { titel: 'Répondre', text: ['Avec plaisir !', 'Désolé(e), je ne peux pas parce que …', 'On peut le déplacer à … ? Ça te va ?'] }] },
+        { art: 'sprechen', auftrag: 'Lundi matin : la fête a eu lieu. Raconte-la à quelqu’un qui n’était pas là (fête vraie ou inventée). Ton ou ta partenaire pose au moins trois questions.', stufe: 3, karten: [
+        { titel: 'Raconter (passé composé)', text: ['Samedi, je suis allé(e) à …', 'C’était chez … / à …', 'Il y avait …', 'On a mangé / dansé / joué …', 'À la fin, …'] },
+        { titel: 'Questionner', text: ['C’était où ? Quand ?', 'Qui est venu ?', 'Qu’est-ce que vous avez fait ?', 'C’était comment ?'] }] }],
     },
     regel: {
       reihen: [

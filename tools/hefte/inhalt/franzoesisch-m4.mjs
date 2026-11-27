@@ -284,7 +284,10 @@ export const LEKTIONEN = [
       ],
       nach: [{ art: 'sprechen', auftrag: 'Préparez l’interview d’une star imaginaire et jouez-la.', stufe: 3, karten: [
         { titel: 'Journaliste', text: ['Comment avez-vous commencé ?', 'Quel a été le plus beau moment ?', 'Qu’est-ce que vous aimez ?', 'Quels sont vos projets ?'] },
-        { titel: 'Star', text: ['J’ai commencé à … ans.', 'Le plus beau moment, c’est …', 'Ce que j’aime, c’est …', 'Je vais …'] }] }],
+        { titel: 'Star', text: ['J’ai commencé à … ans.', 'Le plus beau moment, c’est …', 'Ce que j’aime, c’est …', 'Je vais …'] }] },
+        { art: 'sprechen', auftrag: 'Exposé d’une minute : présente une personne que tu admires (connue ou inventée) devant un petit groupe. Prépare une fiche avec cinq mots-clés seulement. Les autres écoutent et posent une question à la fin.', stufe: 3, karten: [
+        { titel: 'Ma fiche', text: ['Qui ? nom, métier', 'Né(e) quand ? où ?', 'Ce qu’il/elle fait', 'Un moment important', 'Pourquoi je l’admire'] },
+        { titel: 'Pour commencer et finir', text: ['Je vais vous présenter …', 'Il/Elle est né(e) en … à …', 'Je l’admire parce que …', 'Merci. Vous avez des questions ?'] }] }],
     },
     regel: {
       reihen: [

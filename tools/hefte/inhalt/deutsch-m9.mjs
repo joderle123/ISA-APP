@@ -166,8 +166,13 @@ export const LEKTIONEN = [
       { art: 'schreiben', auftrag: 'Bereite dein Vorstellungsgespräch vor: Schreib Antworten auf drei typische Fragen und zwei eigene Fragen an den Betrieb (echt oder erfunden).', stufe: 2,
         anfaenge: ['Warum dieser Beruf? – Ich möchte …, weil …', 'Meine Stärken: Ich bin …', 'Meine Freizeit: …', 'Meine Fragen: Wie …? Wann …?'], zeilen: 11,
         beispiel: 'Warum dieser Beruf? – Ich möchte Köchin werden, weil ich gern für andere koche. Nachdem ich ein Praktikum in einer Kantine gemacht hatte, wusste ich: Das passt. Meine Stärken: Ich bin schnell und arbeite sauber. Meine Freizeit: Ich backe und spiele Handball. Meine Fragen: Wie viele Lehrlinge haben Sie? Wann beginnt die Arbeit morgens?' },
+      { art: 'tabelle', auftrag: 'Zur Bewerbung gehört ein tabellarischer Lebenslauf. Füll ihn aus – für dich oder für eine erfundene Person. Schreib kurz und in Stichworten, die neueste Station steht oben.', stufe: 2, neueSeite: true, kopf: ['Lebenslauf', ''], breiten: [30, 70], zeilen: [
+        ['Name', '[Sam Weber]'], ['Geburtsdatum', '[14. Mai 2011]'], ['E-Mail', '[sam.weber@beispiel.lu]'],
+        ['Schule', '[seit 2023: Lycée, Voie de préparation, Klasse 5P]'], ['Praktikum', '[2025: eine Woche in der Kantine, Küche und Ausgabe]'],
+        ['Sprachen', '[Luxemburgisch, Deutsch, Französisch, etwas Englisch]'], ['Kenntnisse', '[Computer: Texte schreiben, Tabellen]'],
+        ['Interessen', '[Kochen, Handball, Fahrrad reparieren]'], ['Ort, Datum', '[Junglinster, 3. März 2026]']] },
     ],
-    check: ['Ich verstehe Tipps für ein Vorstellungsgespräch.', 'Ich verstehe ein Vorstellungsgespräch und mache Notizen.', 'Ich beantworte typische Fragen.', 'Ich benutze nachdem mit dem Plusquamperfekt.', 'Ich bereite Fragen an den Betrieb vor.'],
+    check: ['Ich verstehe Tipps für ein Vorstellungsgespräch.', 'Ich verstehe ein Vorstellungsgespräch und mache Notizen.', 'Ich beantworte typische Fragen.', 'Ich benutze nachdem mit dem Plusquamperfekt.', 'Ich bereite Fragen an den Betrieb vor.', 'Ich schreibe einen tabellarischen Lebenslauf.'],
   },
   // ================================================================ 3
   {

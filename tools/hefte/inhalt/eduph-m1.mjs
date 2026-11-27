@@ -39,6 +39,7 @@ export const LEKTIONEN = [
       absaetze: [
         'Wenn du dich bewegst, arbeitet dein **Herz** stärker. Es wird dabei kräftiger – wie ein Muskel, der trainiert. Auch deine **Muskeln** und **Knochen** werden stärker.',
         'Bewegung tut auch dem **Kopf** gut. Nach dem Sport kann man sich oft besser **konzentrieren**. Man schläft besser. Und der Körper bildet Stoffe, die die **Laune** heben. Viele Menschen sagen: Nach dem Sport bin ich weniger gestresst.',
+        'Und Bewegung verbindet: Im **Team**, im Verein oder beim Fußball in der Pause lernt man Leute kennen, lacht zusammen und gehört dazu. Gesundheit hat drei Seiten: Man fühlt sich **körperlich**, **im Kopf** und **mit anderen** wohl.',
         '### Wie viel Bewegung?',
         'Die **Weltgesundheitsorganisation** empfiehlt für Kinder und Jugendliche: im Durchschnitt mindestens **60 Minuten pro Tag**, bei denen man etwas ins Schwitzen oder außer Atem kommt. Dazu an drei Tagen pro Woche Übungen, die **Muskeln und Knochen** stärken – zum Beispiel springen, klettern oder Kraftübungen.',
         'Das müssen keine 60 Minuten am Stück sein. **Jede Bewegung zählt**: der Weg zur Schule mit dem Rad, die Treppe, Tanzen im Zimmer, Fußball in der Pause. Lange **Sitzzeiten** sollte man ab und zu unterbrechen – einfach aufstehen und sich strecken.',

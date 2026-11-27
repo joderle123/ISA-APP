@@ -201,7 +201,7 @@
      "lektionen": 8,
      "heft": "Francais_Module-4_Cahier",
      "loesungen": "Francais_Module-4_Solutions",
-     "mb": 1.6,
+     "mb": 1.7,
      "mbLoesungen": 1.7
     },
     {
@@ -730,7 +730,7 @@
      "nr": 3,
      "niveau": "Modul 3 von 9",
      "titel": "Sicher arbeiten",
-     "untertitel": "Sicherheitszeichen lesen, die richtige Schutzausrüstung tragen, Gefahren erkennen, bei kleinen Verletzungen helfen, Brände verhindern und mit Strom sicher umgehen.",
+     "untertitel": "Sicherheitszeichen lesen, die richtige Schutzausrüstung tragen, Gefahren erkennen, bei kleinen Verletzungen helfen, Brände verhindern – und ein erstes Werkstück sicher nach Anleitung bauen.",
      "farbe": "#d08a1e",
      "zart": "#fbf6ed",
      "lektionen": 6,
@@ -950,14 +950,14 @@
      "nr": 9,
      "niveau": "5P · Modul 9 von 9 · Schwerpunkt Attitude",
      "titel": "Sport fürs Leben",
-     "untertitel": "Einen Verein finden, Verletzungen richtig versorgen, draußen mit Karte unterwegs sein, über E-Sport diskutieren – und einen Plan machen, wie Bewegung auch nach der Schule zu deinem Leben gehört.",
+     "untertitel": "Einen Verein finden, Verletzungen richtig versorgen, draußen mit Karte unterwegs sein, einen Streit ohne Schiri fair lösen – und einen Plan machen, wie Bewegung auch nach der Schule zu deinem Leben gehört.",
      "farbe": "#3b6ea8",
      "zart": "#eff3f8",
      "lektionen": 5,
      "heft": "Sport_Modul-9_Heft",
      "loesungen": "Sport_Modul-9_Loesungen",
-     "mb": 0.7,
-     "mbLoesungen": 0.7
+     "mb": 0.8,
+     "mbLoesungen": 0.8
     }
    ]
   }

@@ -1,15 +1,16 @@
 // Atelier · Modul 3 (7P) „Sicher arbeiten“ – Enseignement pratique, Voie de préparation.
 // Leitfaden VP: Die Kompetenz „respecte les consignes d’hygiène et de sécurité“ steht ausdrücklich in Modul 3 –
 // darum hier Sicherheitszeichen, Schutzausrüstung, Gefahren erkennen, Erste Hilfe bei kleinen Verletzungen,
-// Brandschutz und Strom in der Werkstatt. Erste Hilfe ersetzt keinen Kurs; Notruf 112.
+// Brandschutz und ein erstes Werkstück nach Anweisung (GROPA M3: Produktion teilweise selbst, einfache Rechnungen,
+// Problem erkennen und melden, Werkzeug pflegen) mit Geräte-Check und Strom. Erste Hilfe ersetzt keinen Kurs; Notruf 112.
 import { sachModul } from './sachfach-gemeinsam.mjs'
 import { sicherheitsZeichen, stromkreis } from './praxis-bilder.mjs'
 
 export const MODUL = sachModul('atelier', 3, {
   titel: 'Sicher arbeiten',
   titelFr: 'Travailler en sécurité',
-  unter: 'Sicherheitszeichen lesen, die richtige Schutzausrüstung tragen, Gefahren erkennen, bei kleinen Verletzungen helfen, Brände verhindern und mit Strom sicher umgehen.',
-  unterFr: 'Signalisation, équipement de protection, dangers, premiers secours, incendie, électricité.',
+  unter: 'Sicherheitszeichen lesen, die richtige Schutzausrüstung tragen, Gefahren erkennen, bei kleinen Verletzungen helfen, Brände verhindern – und ein erstes Werkstück sicher nach Anleitung bauen.',
+  unterFr: 'Signalisation, équipement de protection, dangers, premiers secours, incendie, première pièce selon les consignes.',
   farbe: '#d08a1e',
   deckbild: ['yusuf:froh:stehen', 'jana:froh:stehen-zeigen', 'finn:froh:stehen'],
   blasen: [{ t: 'Schutzbrille auf!', x: 8, y: 104 }, { t: 'Was heißt das Zeichen?', x: 112, y: 92 }, { t: '112!', x: 176, y: 150 }],
@@ -17,7 +18,7 @@ export const MODUL = sachModul('atelier', 3, {
   themen: [
     { titel: { de: 'Zeichen und Schutz', fr: 'Signes et protection' }, icon: 'helmet', lektionen: 2 },
     { titel: { de: 'Gefahren', fr: 'Dangers' }, icon: 'alert-triangle', lektionen: 2 },
-    { titel: { de: 'Feuer und Strom', fr: 'Feu et électricité' }, icon: 'flame', lektionen: 2 },
+    { titel: { de: 'Feuer und erstes Werkstück', fr: 'Feu et première pièce' }, icon: 'flame', lektionen: 2 },
   ],
 })
 
@@ -387,8 +388,8 @@ export const LEKTIONEN = [
   },
   // ================================================================ 6
   {
-    thema: 'Strom in der Werkstatt · Elektrowerkzeuge', titel: 'Strom – aber sicher', untertitel: 'Aus der Steckdose kommen 230 Volt – das kann tödlich sein. Du lernst die Regeln für Elektrowerkzeuge, liest einen einfachen Schaltplan und prüfst Geräte vor der Arbeit.',
-    ziel: { de: 'Ich gehe sicher mit Elektrowerkzeugen um und lese einen einfachen Schaltplan.', fr: 'J’utilise les outils électriques en sécurité et je lis un schéma électrique simple.' },
+    thema: 'Produktion nach Anweisung · Geräte-Check · Strom', titel: 'Mein erstes Werkstück', untertitel: 'Jetzt wird gebaut – sicher und Schritt für Schritt. Du baust einen Handyhalter aus Holz nach Anleitung, machst vorher den Geräte-Check, rechnest die Maße und räumst am Ende richtig auf.',
+    ziel: { de: 'Ich baue ein einfaches Werkstück nach Anweisung, arbeite sicher mit Elektrowerkzeugen und melde Probleme.', fr: 'Je fabrique une pièce simple selon les consignes, j’utilise les outils électriques en sécurité et je signale les problèmes.' },
     bild: ['chloe:froh:stehen', 'tom:froh:zeigen'],
     start: {
       was: 'Gefährlich oder nicht?',
@@ -397,19 +398,21 @@ export const LEKTIONEN = [
       ],
     },
     lesen: {
-      was: 'Regeln', art: 'text', stimme: 'w2', nummern: false,
-      quelle: 'Sicherheitsregeln (vereinfacht)', titel: 'Fünf Regeln für Elektrowerkzeuge',
-      absaetze: [
-        'Batterien mit 1,5 V, 4,5 V oder 9 V sind für den Körper **ungefährlich**. Aber aus der Steckdose kommen **230 Volt**. Wenn dieser Strom durch den Körper fließt, kann das Herz aus dem Takt kommen. Darum gelten bei Elektrowerkzeugen strenge Regeln.',
-        '**Prüfen:** Vor jeder Arbeit Kabel und Stecker ansehen. Ist die Hülle kaputt? Ist der Stecker locker? Dann das Gerät **nicht benutzen** und melden.',
-        '**Trocken:** Nie mit nassen Händen oder in der Nähe von Wasser mit Elektrogeräten arbeiten.',
-        '**Stecker ziehen:** Bevor man den Bohrer oder das Sägeblatt wechselt, immer den **Stecker ziehen**. Und zwar am **Stecker**, nicht am Kabel.',
-        '**Kabel führen:** Das Kabel so legen, dass man nicht darüber stolpert und es nicht durchschneidet. Kabeltrommeln ganz abrollen, sonst werden sie heiß.',
-        '**Nie öffnen:** Ein Gerät oder eine Steckdose öffnen nur Elektrikerinnen und Elektriker. Viele Steckdosen sind durch einen **FI-Schalter** geschützt, der bei einem Fehler den Strom blitzschnell abschaltet.',
+      was: 'Eine Anleitung', art: 'anleitung', stimme: 'w2',
+      quelle: 'Werkstatt-Anleitung', titel: 'Handyhalter aus Holz',
+      material: ['Brett (Fichte) 120 × 80 × 18 mm', 'Leiste 80 × 20 × 10 mm', 'Holzleim, 2 Schrauben 3 × 25 mm', 'Bleistift, Winkel, Zwinge', 'Bohrmaschine mit Bohrer Ø 2,5 mm', 'Schleifpapier, Körnung 120'],
+      schritte: [
+        { icon: 'ruler-measure', text: '**Anzeichnen:** Miss auf dem Brett **30 mm** von der unteren Kante und zieh mit dem **Winkel** eine Linie. Hier kommt die Leiste hin.' },
+        { icon: 'checklist', text: '**Geräte-Check:** Kabel und Stecker prüfen, Bohrer festziehen (Stecker draußen!), Leiste mit der **Zwinge** einspannen, Brille auf.' },
+        { icon: 'tools', text: '**Vorbohren:** Zwei Löcher Ø 2,5 mm in die Leiste bohren, je **15 mm** vom Rand. So platzt das Holz beim Schrauben nicht.' },
+        { icon: 'hammer', text: '**Leimen und schrauben:** Leim auf die Leiste, genau an die Linie legen, mit zwei Schrauben festmachen. Ausgetretenen Leim gleich abwischen.' },
+        { icon: 'brush', text: '**Schleifen:** Alle Kanten glatt schleifen – immer **mit** der Holzfaser, nicht quer.' },
+        { icon: 'trash', text: '**Aufräumen:** Stecker ziehen, Werkzeug sauber an seinen Platz, Späne zusammenkehren.' },
       ],
-      woerter: [['der Strom', 'le courant'], ['die Steckdose', 'la prise'], ['der Stecker', 'la fiche'], ['das Kabel', 'le câble'], ['die Hülle', 'la gaine'], ['locker', 'desserré'], ['das Sägeblatt', 'la lame de scie'], ['die Kabeltrommel', 'l’enrouleur']],
+      danach: ['Wenn etwas nicht klappt – ein Loch sitzt schief, ein Bohrer ist stumpf, ein Kabel hat einen Riss –, **sag es sofort**. Ein Problem melden ist kein Fehler. Es gehört zur Arbeit.', 'Steckdosen-Strom (**230 Volt**) ist lebensgefährlich. Batterien (1,5–9 V) sind ungefährlich. Ein Gerät öffnen nur Elektrikerinnen und Elektriker.'],
+      woerter: [['anzeichnen', 'tracer'], ['der Winkel', 'l’équerre'], ['die Zwinge', 'le serre-joint'], ['vorbohren', 'pré-percer'], ['leimen', 'coller'], ['schleifen', 'poncer'], ['die Holzfaser', 'la fibre du bois'], ['melden', 'signaler']],
       aufgaben: [
-        { art: 'zuordnen', auftrag: 'Welche Regel passt? Verbinde.', stufe: 1, links: ['Das Kabel der Stichsäge hat einen Riss.', 'Tom will den Bohrer wechseln.', 'Die Kabeltrommel ist noch halb aufgerollt.', 'Mia hat sich gerade die Hände gewaschen.'], rechts: ['Gerät nicht benutzen, melden.', 'Zuerst den Stecker ziehen.', 'Ganz abrollen.', 'Erst gut abtrocknen.'] },
+        { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 1, saetze: [['Vor dem Bohren mache ich den Geräte-Check.', true], ['Den Bohrer wechsle ich, während der Stecker in der Steckdose ist.', false], ['Man schleift quer zur Holzfaser.', false], ['Ein stumpfes Werkzeug melde ich sofort.', true], ['Aufräumen gehört zur Arbeit.', true]] },
       ],
     },
     hoeren: {
@@ -438,12 +441,15 @@ export const LEKTIONEN = [
     },
     regel: {
       reihen: [
+        [{ titel: 'Nach Anweisung arbeiten', nummern: true, punkte: ['Anleitung **ganz lesen**', 'Material **bereitlegen**', '**Schritt für Schritt**, nichts auslassen', 'Problem? **sofort melden**', '**aufräumen**: Stecker, Werkzeug, Späne'] },
+         { titel: 'Werkzeug pflegen', punkte: ['Werkzeug **sauber** zurücklegen', 'stumpf oder kaputt? **melden**', 'Kabel **aufrollen**, Akkus **laden**'] }],
         [{ titel: 'Strom', punkte: ['Batterie (1,5–9 V): **ungefährlich**', 'Steckdose (**230 V**): **lebensgefährlich**', '**FI-Schalter** schaltet bei Fehlern ab', 'öffnen nur **Elektriker**'] },
          { titel: 'Geräte-Check', nummern: true, punkte: ['**Kabel** prüfen', '**Stecker** prüfen', 'Werkzeug wechseln: **Stecker raus**', 'Werkstück **einspannen**', 'Kabel **hinter** dich legen'] }],
       ],
     },
     ueben: [
-      { art: 'beschriften', auftrag: 'Ein einfacher Schaltplan: Was ist was? Schreibe die Namen. Ist der Stromkreis offen oder geschlossen? Leuchtet die Lampe?', stufe: 2, html: stromkreis(),
+      { art: 'rechnen', auftrag: 'Rechne für den Handyhalter. Alle Maße in Millimetern.', stufe: 1, spalten: 1, items: [{ a: 'Das Brett ist 120 mm hoch, die Linie liegt bei 30 mm. Wie viel Platz bleibt darüber?', l: '90 mm' }, { a: 'Die Leiste ist 80 mm lang, die Löcher liegen je 15 mm vom Rand. Wie weit sind die Löcher voneinander entfernt?', l: '50 mm' }, { a: 'Die Gruppe baut 6 Handyhalter. Wie viele Schrauben braucht sie?', l: '12 Schrauben' }, { a: 'Für 6 Halter braucht ihr 6 Leisten à 80 mm. Wie lang muss die Holzleiste mindestens sein?', l: '480 mm' }] },
+      { art: 'beschriften', auftrag: 'Plus: Ein einfacher Schaltplan. Was ist was? Schreibe die Namen. Ist der Stromkreis offen oder geschlossen? Leuchtet die Lampe?', stufe: 3, html: stromkreis(),
         liste: [['1', 'Batterie'], ['2', 'Schalter'], ['3', 'Lampe'], ['4', 'Leitung (Kabel)'], ['Stromkreis', 'geschlossen – die Lampe leuchtet']], spalten: 2 },
       { art: 'schneidekarten', auftrag: 'Geräte-Check-Karte: Schneidet die Karte aus, klebt sie auf Karton und legt sie an die Maschine. Hakt jeden Punkt ab, bevor ihr anfangt.', stufe: 1, titel: 'Mein Geräte-Check', icon: 'plug', farbe: WARN, spalten: 2,
         karten: [
@@ -452,10 +458,13 @@ export const LEKTIONEN = [
         ] },
     ],
     schreiben: [
+      { art: 'schreiben', auftrag: 'Mein Werkstück-Bericht: Was hat gut geklappt? Gab es ein Problem – und wem hast du es gesagt? Was machst du beim nächsten Mal anders?', stufe: 1,
+        anfaenge: ['Gut geklappt hat …', 'Ein Problem war …', 'Ich habe es … gesagt.', 'Beim nächsten Mal …'], zeilen: 5,
+        beispiel: 'Gut geklappt hat das Schleifen, die Kanten sind ganz glatt. Ein Problem war, dass ein Loch schief war. Ich habe es Herrn Steffen gesagt, und wir haben ein neues Loch daneben gebohrt. Beim nächsten Mal spanne ich die Leiste fester ein.' },
       { art: 'schreiben', auftrag: 'Mein Sicherheits-Bericht: Was hast du in diesem Modul über Sicherheit gelernt? Welche Regel wirst du nie vergessen?', stufe: 2,
         anfaenge: ['In diesem Modul habe ich gelernt, …', 'Besonders wichtig finde ich …', 'Die Regel, die ich nie vergesse: …', 'Zu Hause achte ich jetzt auf …'], zeilen: 7,
         beispiel: 'In diesem Modul habe ich gelernt, was die Farben der Sicherheitszeichen bedeuten und was ich bei kleinen Verletzungen tue. Besonders wichtig finde ich, dass man Fett nie mit Wasser löscht. Die Regel, die ich nie vergesse: keine Handschuhe an der Bohrmaschine. Zu Hause achte ich jetzt auf Kabel mit kaputter Hülle.' },
     ],
-    check: ['Ich mache den Geräte-Check.', 'Ich kenne die Gefahren von 230 Volt.', 'Ich lese einen einfachen Schaltplan.'],
+    check: ['Ich baue ein Werkstück Schritt für Schritt nach Anleitung.', 'Ich mache den Geräte-Check und kenne die Gefahren von 230 Volt.', 'Ich erkenne ein Problem und sage es.', 'Ich räume auf und pflege das Werkzeug.'],
   },
 ]

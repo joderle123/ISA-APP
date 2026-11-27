@@ -364,6 +364,7 @@ export const LEKTIONEN = [
       reihen: [
         [{ titel: 'Gefühle zeigen', punkte: ['**Tempo**: schnell – langsam', '**Größe**: groß – klein', '**Spannung**: fest – locker', '**Blick** und Gesicht'] },
          { titel: 'Übungen', punkte: ['**Spiegel**: nachmachen', '**Standbild**: einfrieren', 'niemand wird **ausgelacht**', 'Pause am Rand ist **okay**'] }],
+        [{ titel: 'Wenn ich nicht mitmachen kann', punkte: ['**vor** der Stunde Bescheid sagen', 'höflich und **mit Grund**', 'krank oder verletzt: **schriftliche Entschuldigung**', '„keine Lust“ ist **kein Grund**', 'trotzdem dabei: **beobachten**, Musik, Zeit'] }],
       ],
     },
     ueben: [
@@ -374,6 +375,13 @@ export const LEKTIONEN = [
           { text: '**stolz**\nTipp: groß, Blick nach vorn' }, { text: '**müde**\nTipp: langsam und locker' },
           { text: '**nervös**\nTipp: kleine, schnelle Bewegungen' }, { text: '**überrascht**\nTipp: plötzlich stoppen, Augen groß' },
         ] },
+      { art: 'tabelle', auftrag: 'Nicht mitmachen – aber richtig: Ist das eine Entschuldigung in aller Form? Kreuze an. Sprecht danach: Was könnte die Person stattdessen sagen?', stufe: 2, kopf: ['Was sagt die Person zu Frau Diallo?', 'in aller Form', 'so nicht'], breiten: [64, 18, 18], zeilen: [
+        ['„Ich habe mir gestern den Knöchel verstaucht. Hier ist die Entschuldigung. Darf ich heute die Musik machen?“', '[x]', ''],
+        ['„Kein Bock heute.“', '', '[x]'],
+        ['„Mir ist schwindlig. Darf ich mich kurz an den Rand setzen und später wieder einsteigen?“', '[x]', ''],
+        ['(geht einfach auf die Bank und sagt nichts)', '', '[x]'],
+        ['„Tanzen ist mir peinlich. Kann ich mit der Spiegel-Übung zu zweit anfangen?“', '[x]', ''],
+      ] },
       { art: 'tabelle', auftrag: 'Standbild-Rätsel: Eine Gruppe friert in einem Standbild ein. Was seht ihr?', stufe: 2, kopf: ['Standbild', 'Welches Gefühl?', 'Woran erkennt ihr es?'], breiten: [20, 30, 50], zeilen: [['Gruppe 1', '', ''], ['Gruppe 2', '', ''], ['Gruppe 3', '', '']] },
     ],
     schreiben: [
@@ -381,7 +389,7 @@ export const LEKTIONEN = [
         anfaenge: ['Gut zeigen konnte ich …', 'Dafür habe ich …', 'Bei der Spiegel-Übung …'], zeilen: 5,
         beispiel: 'Gut zeigen konnte ich Wut. Dafür habe ich feste Schritte gemacht und die Fäuste geballt. Bei der Spiegel-Übung musste ich erst lachen, aber dann hat es gut geklappt.' },
     ],
-    check: ['Ich zeige Gefühle mit Tempo, Größe und Spannung.', 'Ich erkenne Gefühle bei anderen.', 'Ich mache bei der Spiegel-Übung mit.'],
+    check: ['Ich zeige Gefühle mit Tempo, Größe und Spannung.', 'Ich erkenne Gefühle bei anderen.', 'Ich mache bei der Spiegel-Übung mit.', 'Wenn ich nicht mitmachen kann, sage ich es höflich und mit Grund.'],
   },
   // ================================================================ 6
   {
@@ -442,6 +450,7 @@ export const LEKTIONEN = [
     },
     ueben: [
       { art: 'tabelle', auftrag: 'Auftritts-Check: Was müssen wir vorher klären? Hakt ab.', stufe: 1, kopf: ['Frage', 'erledigt'], breiten: [80, 20], zeilen: [['Ist die Musik bereit und laut genug?', ''], ['Kennen alle die Anfangspose?', ''], ['Haben wir uns aufgewärmt?', ''], ['Ist der Platz frei und sicher?', ''], ['Sind alle einverstanden, wenn gefilmt wird?', '']] },
+      { art: 'tabelle', auftrag: 'Auf- und Abbau in der Gruppe: Verteilt die Aufgaben selbst. Am Ende kontrolliert eine Person, ob alles wieder an seinem Platz ist.', stufe: 2, kopf: ['Aufgabe', 'Wer?', 'aufgebaut', 'abgebaut'], breiten: [46, 26, 14, 14], zeilen: [['Lautsprecher und Musik', '', '', ''], ['Bühne markieren (Hütchen, Klebeband)', '', '', ''], ['Bänke für das Publikum', '', '', ''], ['Licht und Türen', '', '', ''], ['Kontrolle: alles weggeräumt?', '', '', '']] },
       { art: 'tabelle', auftrag: 'Feedback-Bogen: Schau dir den Tanz einer anderen Gruppe an. Gib zwei Sterne und einen Wunsch.', stufe: 2, kopf: ['', 'Gruppe: …'], breiten: [36, 64], zeilen: [['Stern 1: Das war gut.', ''], ['Stern 2: Das war auch gut.', ''], ['Wunsch: Das könnt ihr noch verbessern.', '']] },
     ],
     schreiben: [
@@ -449,6 +458,6 @@ export const LEKTIONEN = [
         anfaenge: ['Vor dem Auftritt …', 'Während des Tanzes …', 'Danach …', 'Das Feedback …'], zeilen: 6,
         beispiel: 'Vor dem Auftritt war ich sehr nervös, meine Hände waren ganz kalt. Während des Tanzes habe ich einmal einen Schritt vergessen, aber einfach weitergemacht. Danach war ich richtig stolz. Das Feedback der anderen Gruppe hat mich gefreut.' },
     ],
-    check: ['Ich kenne Tipps gegen Lampenfieber.', 'Ich gebe Feedback mit zwei Sternen und einem Wunsch.', 'Ich filme und poste nur mit Erlaubnis.'],
+    check: ['Ich kenne Tipps gegen Lampenfieber.', 'Ich gebe Feedback mit zwei Sternen und einem Wunsch.', 'Ich filme und poste nur mit Erlaubnis.', 'Wir bauen in der Gruppe selbst auf und ab.'],
   },
 ]

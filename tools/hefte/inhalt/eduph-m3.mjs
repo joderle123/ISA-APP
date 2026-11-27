@@ -25,8 +25,8 @@ const TURN = '#7a4fa0', AKRO = '#2f8a6b'
 export const LEKTIONEN = [
   // ================================================================ 1
   {
-    thema: 'Geräte aufbauen · helfen und sichern', titel: 'Sicher ist sicher', untertitel: 'Beim Turnen passt man aufeinander auf. Du lernst, wie man Matten und Geräte sicher trägt und aufbaut, die wichtigsten Turnregeln und wie man einem anderen hilft und ihn sichert.',
-    ziel: { de: 'Ich baue Geräte sicher auf und helfe und sichere andere.', fr: 'J’installe le matériel en toute sécurité, j’aide et je pare les autres.' },
+    thema: 'Geräte aufbauen · helfen und sichern', titel: 'Sicher ist sicher', untertitel: 'Beim Turnen passt man aufeinander auf. Du lernst die Regeln jeder Sportstunde, wie man Matten und Geräte sicher trägt und aufbaut, die wichtigsten Turnregeln und wie man einem anderen hilft und ihn sichert.',
+    ziel: { de: 'Ich halte die Regeln der Sportstunde ein, baue Geräte sicher auf und helfe und sichere andere.', fr: 'Je respecte les règles du cours, j’installe le matériel en toute sécurité, j’aide et je pare les autres.' },
     bild: ['lehrerin:froh:erklaeren', 'tom:froh:stehen-zeigen'],
     start: {
       was: 'Was meinst du?',
@@ -38,6 +38,8 @@ export const LEKTIONEN = [
       was: 'Ein Sachtext', art: 'text', stimme: 'w1', nummern: false,
       quelle: 'Turnregeln der Sporthalle', titel: 'Regeln für sicheres Turnen',
       absaetze: [
+        '### In jeder Sportstunde',
+        'Du bist **pünktlich** und umgezogen in der Halle. Du hast deine **Sportsachen** dabei: Sporthose, T-Shirt, saubere Hallenschuhe. Beim **Pfiff** bleibst du stehen, hältst den Ball fest und hörst zu. Am Ende **bauen alle gemeinsam ab** – nicht nur die, die zuletzt am Gerät waren.',
         '### Vor dem Turnen',
         '**Schmuck ab**, Uhren und Ketten weg, lange Haare zusammenbinden, **kein Kaugummi**. Man turnt in Turnschuhen oder barfuß – nicht in Socken, da rutscht man.',
         '### Geräte tragen und aufbauen',
@@ -48,7 +50,7 @@ export const LEKTIONEN = [
       ],
       woerter: [['turnen', 'faire de la gymnastique'], ['das Gerät', 'l’agrès'], ['die Matte', 'le tapis'], ['tragen', 'porter'], ['das Kommando', 'le signal'], ['helfen', 'aider'], ['sichern', 'parer'], ['der Klammergriff', 'la prise en pince']],
       aufgaben: [
-        { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 1, saetze: [['Beim Turnen behält man die Kette an.', false], ['Matten werden über den Boden gezogen.', false], ['Wer sichert, schaut immer auf die turnende Person.', true], ['Man darf sagen, wenn man etwas noch nicht probieren will.', true], ['In Socken turnt man am sichersten.', false]] },
+        { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 1, saetze: [['Beim Pfiff spielt man noch schnell zu Ende.', false], ['Am Ende der Stunde bauen alle gemeinsam ab.', true], ['Beim Turnen behält man die Kette an.', false], ['Matten werden über den Boden gezogen.', false], ['Wer sichert, schaut immer auf die turnende Person.', true], ['Man darf sagen, wenn man etwas noch nicht probieren will.', true], ['In Socken turnt man am sichersten.', false]] },
       ],
     },
     hoeren: {
@@ -75,6 +77,7 @@ export const LEKTIONEN = [
     },
     regel: {
       reihen: [
+        [{ titel: 'In jeder Sportstunde', punkte: ['**pünktlich** und umgezogen', '**Sportsachen** dabei', 'beim **Pfiff**: stehen, Ball fest, zuhören', 'am Ende: **alle** bauen ab'] }],
         [{ titel: 'Turnregeln', punkte: ['**Schmuck ab**, Haare zusammen', '**kein Kaugummi**', 'Turnschuhe oder **barfuß**', 'Matten **tragen**, nicht ziehen', 'Matten **ohne Lücken**'] },
          { titel: 'Helfen und sichern', punkte: ['**Klammergriff** am Oberarm', '**immer hinschauen**', '**reden**: „Bereit? Ich bin da.“', '**Nein** sagen ist erlaubt'] }],
       ],
@@ -88,7 +91,7 @@ export const LEKTIONEN = [
         anfaenge: ['Wenn mich jemand sichert, …', 'Wenn ich sichere, …', 'Wichtig ist mir, dass …'], zeilen: 5,
         beispiel: 'Wenn mich jemand sichert, traue ich mich mehr, weil ich weiß, dass ich nicht falle. Wenn ich sichere, bin ich ganz konzentriert und fühle mich verantwortlich. Wichtig ist mir, dass mein Partner mir sagt, wann er bereit ist.' },
     ],
-    check: ['Ich kenne die Turnregeln.', 'Ich trage Matten richtig mit Kommando.', 'Ich weiß, wie man hilft und sichert.'],
+    check: ['Ich halte die Regeln der Sportstunde ein: pünktlich, Sportsachen, Pfiff, Abbau.', 'Ich kenne die Turnregeln.', 'Ich trage Matten richtig mit Kommando.', 'Ich weiß, wie man hilft und sichert.'],
   },
   // ================================================================ 2
   {
