@@ -33,25 +33,38 @@ async function klickWeiter(wahl = 'erste') {
     return '';
   }, wahl);
 }
-for (let i = 0; i < 200; i++) {
-  const r = await klickWeiter(); const e = await L(() => (document.querySelector('.ly-ebene:not([hidden])') || {}).dataset?.art || '');
-  if (e && e !== 'km') await L(() => { const k = document.querySelector('.ly-ebene:not([hidden])'); const b = k.querySelector('.ly-primaer, .ly-zu, button'); if (b) b.click(); });
-  if (!r && !e && !(await L(() => LYCEE.imGespraech))) break;
-  await page.waitForTimeout(120);
+// Die Hauptgeschichte beginnt mit Vorschau und Suchbild: beides lösen, bis man frei laufen kann (sonst nimmt das Spiel keine Missionen an)
+for (let i = 0; i < 400; i++) {
+  const r = await klickWeiter();
+  const s = await L(() => {
+    const vo = document.querySelector('.mv-voraus'); if (vo) { vo.click(); return 'voraus'; }
+    const sb = document.querySelector('.mv-such .mv-bild');
+    if (sb && !sb.classList.contains('aus')) {
+      const z = JSON.parse(sb.dataset.ziele || '[]'); window.__sk = window.__sk || [];
+      const q = z.find((q) => q[3] && !window.__sk.includes(q[0]));
+      if (q) { window.__sk.push(q[0]); const b = sb.getBoundingClientRect(); sb.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true, clientX: b.left + q[1] * b.width, clientY: b.top + q[2] * b.height })); }
+      return 'such';
+    }
+    const w = document.querySelector('.ly-ebene:not([hidden]) .sz-weiter, .ly-ebene:not([hidden]) .ly-primaer'); if (w) { w.click(); return 'weiter'; }
+    return LYCEE.imGespraech ? 'gespraech' : '';
+  });
+  if (!r && !s) break;
+  await page.waitForTimeout(s === 'such' ? 700 : 150);
 }
+await L(() => { for (let i = 0; i < 5 && LYCEE.ui.ebeneArt(); i++) LYCEE.ui.ebeneZu(); });
 
 // 🎟-Knopf da?
 check('🎟-Knopf im Spiel', !!(await page.$('[data-k="mission"]')));
 await page.click('[data-k="mission"]'); await page.waitForTimeout(300);
-check('Missionen-Fenster mit Code-Feld', !!(await page.$('.km-fenster input')));
-await page.fill('.km-fenster input', 'xyz-9'); await page.press('.km-fenster input', 'Enter'); await page.waitForTimeout(200);
+check('Missionen-Fenster mit Code-Feld', !!(await page.$('.km-code:not(.km-partner) input')));
+await page.fill('.km-code:not(.km-partner) input', 'xyz-9'); await page.press('.km-code:not(.km-partner) input', 'Enter'); await page.waitForTimeout(200);
 check('Falscher Code: freundliche Meldung', /kenne ich nicht/.test(await page.textContent('.km-meldung').catch(() => '')));
 
 const CODES = process.argv.slice(2).length ? process.argv.slice(2) : await L(() => Object.keys(LYCEE.km.skripte || {}));
 for (const code of CODES) {
   await L(() => { if (LYCEE.ui.ebeneArt()) LYCEE.ui.ebeneZu(); });
   await page.click('[data-k="mission"]'); await page.waitForTimeout(200);
-  await page.fill('.km-fenster input', code.toLowerCase().replace('-', ' ')); await page.press('.km-fenster input', 'Enter'); await page.waitForTimeout(250);
+  await page.fill('.km-code:not(.km-partner) input', code.toLowerCase().replace('-', ' ')); await page.press('.km-code:not(.km-partner) input', 'Enter'); await page.waitForTimeout(250);
   const karte = await L(() => !!document.querySelector('.km-karte [data-a="los"]'));
   check(code + ': Code erkannt, Missionskarte', karte);
   if (!karte) continue;
@@ -108,7 +121,7 @@ if (CODES.includes('BLEIBT-3') && CODES.some((c) => ['ICH-2', 'GRENZE-3', 'EULE-
 // Lehrer-Ansicht
 await L(() => { if (LYCEE.ui.ebeneArt()) LYCEE.ui.ebeneZu(); });
 await page.click('[data-k="mission"]'); await page.waitForTimeout(200);
-await page.fill('.km-fenster input', 'Lehrer'); await page.press('.km-fenster input', 'Enter'); await page.waitForTimeout(250);
+await page.fill('.km-code:not(.km-partner) input', 'Lehrer'); await page.press('.km-code:not(.km-partner) input', 'Enter'); await page.waitForTimeout(250);
 const n = await L(() => document.querySelectorAll('.km-fenster .km-liste li').length);
 check('Lehrer-Ansicht zeigt die Resümees', n >= 1, n);
 await bild('lehrer');

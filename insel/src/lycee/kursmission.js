@@ -333,10 +333,10 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
       (lauf ? '<p class="km-laeuft">Läuft gerade: <b>' + esc(infoVon(lauf.code).titel) + '</b> – ' + esc((schritt() || {}).ziel || '') + ' <button type="button" class="ly-link" data-a="pause">pausieren</button></p>' : '') +
       (frei.length ? '<ul class="km-liste">' + frei.map(zeile).join('') + '</ul>' : '<p class="km-leer">Noch keine Mission freigeschaltet.</p>') +
       '<p class="km-fuss"><button type="button" class="ly-link" data-a="meine">Meine Resümees (' + (Object.keys(fertig).length + ((bericht() || { kapitel: [] }).kapitel.length ? 1 : 0)) + ')</button>' +
-      (m.briefe && Object.keys(m.briefe).length ? ' · <button type="button" class="ly-link" data-a="brief">✉️ Brief an mich</button>' : '') + '</p></div>');
-    const inp = k.querySelector('input'); inp.addEventListener('keydown', (e) => e.stopPropagation()); setTimeout(() => inp.focus(), 80);
+      (m.briefe && Object.keys(m.briefe).length ? ' · <button type="button" class="ly-link" data-a="brief">✉️ Postkarte an mich</button>' : '') + '</p></div>');
+    const code = k.querySelector('form.km-code:not(.km-partner)'), inp = code.querySelector('input'); inp.addEventListener('keydown', (e) => e.stopPropagation()); setTimeout(() => inp.focus(), 80);   // gezielt das Code-Feld (die Stunden-Liste hat eigene Eingaben)
     k.querySelector('.ly-zu').onclick = () => ui.ebeneZu();
-    k.querySelector('form').onsubmit = (e) => { e.preventDefault(); codeRein(inp.value); };
+    code.onsubmit = (e) => { e.preventDefault(); codeRein(inp.value); };
     k.querySelectorAll('[data-start]').forEach((b) => { b.onclick = () => karte(b.dataset.start); });
     k.querySelectorAll('[data-res]').forEach((b) => { b.onclick = () => einzeln(fertig[b.dataset.res], () => fenster()); });
     const p = k.querySelector('[data-a="pause"]'); if (p) p.onclick = () => { pausieren(); fenster('Mission pausiert. Du kannst sie jederzeit weiterspielen.'); };
@@ -344,15 +344,15 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
     const br = k.querySelector('[data-a="brief"]'); if (br) br.onclick = () => brief();
     if (api.stundenBinden) api.stundenBinden(k, fenster);
   }
-  // Brief an mich (ENDE-4): nur für die Person, mit Datum; Löschen möglich
+  // Postkarte an mich (ENDE-4, Speicher-Schlüssel bleibt „briefe“): nur für die Person, mit Datum; Löschen möglich
   function brief() {
     const m = M(), b = Object.values(m.briefe || {});
-    const k = ui.ebeneAuf('km', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><div class="km-fenster"><span class="km-kicker">Nur für dich</span><h2>✉️ Brief an mich</h2>' +
+    const k = ui.ebeneAuf('km', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><div class="km-fenster"><span class="km-kicker">Nur für dich</span><h2>✉️ Postkarte an mich</h2>' +
       b.map((x) => '<p class="km-leer">Geschrieben am ' + new Date(x.datum).toLocaleDateString('de-LU') + '</p><p class="km-brief">' + esc(x.text).replace(/\n/g, '<br>') + '</p>').join('') +
-      '<p class="km-fuss"><button type="button" class="ly-link" data-a="weg">Brief löschen</button> · <button type="button" class="ly-link" data-a="zurueck">Zurück</button></p></div>');
+      '<p class="km-fuss"><button type="button" class="ly-link" data-a="weg">Postkarte löschen</button> · <button type="button" class="ly-link" data-a="zurueck">Zurück</button></p></div>');
     k.querySelector('.ly-zu').onclick = () => ui.ebeneZu();
     k.querySelector('[data-a="zurueck"]').onclick = () => fenster();
-    k.querySelector('[data-a="weg"]').onclick = () => { m.briefe = {}; sichern(); fenster('Brief gelöscht.'); };
+    k.querySelector('[data-a="weg"]').onclick = () => { m.briefe = {}; sichern(); fenster('Postkarte gelöscht.'); };
   }
   function codeRein(roh) {
     const c = codeNorm(roh);

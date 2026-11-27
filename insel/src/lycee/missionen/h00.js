@@ -16,14 +16,14 @@ export default {
           ['jade', 'Die anderen denken, ich bin immer krank. Bin ich nicht. Ich hab Angst.'],
           { wahl: [
             { t: '„Danke, dass du mir das sagst.“', log: 'Jade fürs Erzählen gedankt', folge: 'Jade atmet aus.', skill: true },
-            { t: '„Echt jetzt? Mit fünfzehn?“', log: 'Überrascht nachgefragt: „Mit fünfzehn?“', folge: 'Jade wird rot und schaut weg.', skill: false, dann: [['jade', '(schaut weg) Ja. Mit fünfzehn. Deshalb sag ich’s ja keinem.']] },
+            { t: '„Echt jetzt? Gar nicht?“', log: 'Überrascht nachgefragt: „Gar nicht?“', folge: 'Jade wird rot und schaut weg.', skill: false, dann: [['jade', '(schaut weg) Gar nicht. Deshalb sag ich’s ja keinem.']] },
             { t: '„Dann lern’s halt schnell.“', log: 'Sofort einen Rat gegeben', folge: 'Jade: „Als ob ich da nicht selbst drauf gekommen wäre.“', skill: false, dann: [['jade', 'Als ob ich da nicht drauf gekommen wäre. Bis Montag?']] },
           ] },
           ['jade', 'Bleibt das unter uns?'],
           { wahl: [
-            { t: '„Ja. Außer du bist in Gefahr – dann hol ich Hilfe. Das sag ich dir vorher.“', log: 'Versprochen – mit der ehrlichen Ausnahme „Gefahr“', folge: 'Jade nickt: „Fair.“', skill: true, setze: { jadeVersprochen: true } },
-            { t: '„Ja. Hundert Prozent. Ich sag nie irgendwem was.“', log: 'Ohne Ausnahme alles versprochen', folge: 'Jade glaubt dir. Ein großes Versprechen.', skill: null, setze: { jadeVersprochen: true } },
-            { t: '„Ich weiß nicht, ob ich das kann.“', log: 'Ehrlich gesagt, dass das Versprechen schwer ist', folge: 'Jade zögert: „Dann versuch’s wenigstens.“', skill: null, setze: { jadeVersprochen: false } },
+            { t: '„Ja. Außer du bist in Gefahr.“', log: 'Versprochen – mit der ehrlichen Ausnahme „Gefahr“', folge: 'Du sagst noch: „Dann hol ich Hilfe – und sag’s dir vorher.“ Jade nickt: „Fair.“', skill: true, setze: { jadeVersprochen: true } },
+            { t: '„Hundert Prozent. Ich sag nie was.“', log: 'Ohne Ausnahme alles versprochen', folge: 'Jade glaubt dir. Ein großes Versprechen.', skill: null, setze: { jadeVersprochen: true } },
+            { t: '„Weiß nicht, ob ich das kann.“', log: 'Ehrlich gesagt, dass das Versprechen schwer ist', folge: 'Jade zögert: „Dann versuch’s wenigstens.“', skill: null, setze: { jadeVersprochen: false } },
           ] },
         ],
       },
@@ -40,7 +40,7 @@ export default {
           { moment: 'Finn behauptete, Jade hätte es erlaubt.' },
           { wahl: [
             { t: 'Ihm glauben und es erzählen.', log: 'Finn geglaubt und Jades Geheimnis erzählt', folge: 'Finn: „Wusste ich’s doch.“ – Jade hatte nichts erlaubt.', skill: false, setze: { jadeVerraten: true }, dann: [['finn', 'Wusste ich’s doch. Hab nur geraten.']] },
-            { t: '„Dann frag ich sie kurz. Wenn sie Ja sagt, okay.“', log: 'Bei Jade nachgefragt, statt Finn zu glauben', folge: 'Finn grinst: „War ein Test. Du bist dicht.“', skill: true, dann: [['finn', '(grinst) War ein Test. Hat sie gar nicht gesagt. Respekt.']] },
+            { t: '„Ich frag sie erst kurz.“', log: 'Bei Jade nachgefragt, statt Finn zu glauben', folge: 'Finn grinst: „War ein Test. Du bist dicht.“', skill: true, dann: [['finn', '(grinst) War ein Test. Hat sie gar nicht gesagt. Respekt.']] },
           ] },
         ],
       },
@@ -50,8 +50,9 @@ export default {
           ['sara', 'Hey. Deal: Ich sag dir, wer in wen verknallt ist. Du sagst mir, was mit Jade ist.'],
           { wahl: [
             { t: 'Den Deal machen.', log: 'Getauscht: Jades Geheimnis gegen Klatsch', folge: 'Sara weiß es jetzt. Und morgen ihre beste Freundin.', skill: false, setze: { jadeVerraten: true }, dann: [['sara', '(tippt schon) Krass. Okay. Danke.']] },
-            { t: '„Kein Deal. Das ist nicht meins zum Weitergeben.“', log: 'Den Tausch abgelehnt – freundlich, klar', folge: 'Sara: „Okay, okay. Dann sag ich dir meins auch nicht.“', skill: true },
-            { t: '„Kein Deal. Und deins will ich auch nicht hören.“', log: 'Den Tausch abgelehnt und auch fremde Geheimnisse nicht angenommen', folge: 'Sara lacht verlegen. Dann: „Ja … stimmt eigentlich.“', skill: true },
+            { t: '„Kein Deal. Das ist nicht meins.“', log: 'Den Tausch abgelehnt – freundlich, klar', folge: 'Sara: „Okay, okay. Dann sag ich dir meins auch nicht.“', skill: true },
+            { t: '„Weiter.“', log: 'Mit „Weiter“ geantwortet – ohne Erklärung', folge: 'Sara: „Hä?“ – Du: „Heißt: Darüber red ich nicht.“ Sara zuckt mit den Schultern.', skill: true },
+            { t: '„Kein Deal. Deins will ich auch nicht.“', log: 'Den Tausch abgelehnt und auch fremde Geheimnisse nicht angenommen', folge: 'Sara lacht verlegen. Dann: „Ja … stimmt eigentlich.“', skill: true },
           ] },
         ],
       },
@@ -62,9 +63,9 @@ export default {
           { wenn: (f) => f.jadeVerraten, dann: [['h:Klassen-Chat', 'Jade kann nicht schwimmen 😂 deswegen immer „krank“'], { moment: 'Am Abend stand Jades Geheimnis im Klassen-Chat.' }],
             sonst: [['h:Klassen-Chat', 'Warum ist Jade beim Schwimmen eigentlich immer krank? 🤔'], { moment: 'Im Klassen-Chat fing jemand an zu raten.' }] },
           { wahl: [
-            { t: 'Nichts schreiben. Jade privat: „Im Chat fragen Leute. Ich bin da, wenn du reden willst.“', log: 'Jade privat Bescheid gegeben, im Chat nichts beigetragen', folge: 'Jade schreibt: „Danke.“', skill: true },
-            { t: 'In den Chat: „Lasst sie in Ruhe. Geht euch nichts an.“', log: 'Im Chat für Jade eingestanden', folge: 'Zwei Daumen hoch. Einer schreibt: „Woher weißt du was?“', skill: null, setze: { chatOffen: true } },
-            { t: 'Ein Lach-Emoji schicken, damit es nicht komisch wirkt.', log: 'Im Chat mitgelacht', folge: 'Jade sieht das Emoji.', skill: false, setze: { jadeGesehen: true } },
+            { t: 'Jade privat: „Ich bin da.“', log: 'Jade privat Bescheid gegeben, im Chat nichts beigetragen', folge: 'Jade schreibt: „Danke.“', skill: true },
+            { t: 'Chat: „Lasst sie in Ruhe.“', log: 'Im Chat für Jade eingestanden', folge: 'Zwei Daumen hoch. Einer schreibt: „Woher weißt du was?“', skill: null, setze: { chatOffen: true } },
+            { t: 'Ein Lach-Emoji schicken.', log: 'Im Chat mitgelacht', folge: 'Jade sieht das Emoji.', skill: false, setze: { jadeGesehen: true } },
           ] },
         ],
       },
@@ -94,8 +95,8 @@ export default {
           ['lenz', 'Jade, wenn du magst: Schwimmkurs im Hallenbad, samstags, kleine Gruppe. Keiner guckt. Willst du? Dann melde ich dich an.'],
           ['lenz', 'Und du: Wann darf etwas, das dir jemand anvertraut, nicht bei dir bleiben?'],
           { wahl: [
-            { t: '„Wenn jemand in Gefahr ist. Dann hole ich Hilfe – und sag es vorher.“', log: 'Die Ausnahme genannt: Gefahr', skill: true },
-            { t: '„Nie. Geheimnis ist Geheimnis.“', log: 'Gesagt: Ein Geheimnis bleibt immer', folge: 'Herr Lenz: „Auch wenn jemand sich etwas antun will? Dann ist Weitersagen Hilfe. Dann holst du eine erwachsene Person – oder rufst 116 111 an.“', skill: false },
+            { t: '„Wenn jemand in Gefahr ist.“', log: 'Die Ausnahme genannt: Gefahr', folge: 'Herr Lenz: „Genau. Dann holst du Hilfe – und sagst es vorher.“', skill: true },
+            { t: '„Nie. Geheimnis ist Geheimnis.“', log: 'Gesagt: Ein Geheimnis bleibt immer', folge: 'Herr Lenz: „Auch wenn jemand sich etwas antun will? Dann ist Weitersagen Hilfe. Dann holst du eine erwachsene Person, gehst zum SePAS – oder rufst 116 111 an.“', skill: false },
             { t: '„Wenn es eh schon alle wissen.“', log: 'Gesagt: Wenn es eh schon alle wissen', folge: 'Herr Lenz schaut dich lange an.', skill: false },
           ] },
         ],
@@ -141,11 +142,13 @@ export default {
         zeilen: [
           ['malik', '(laut) Drei Croissants! Nee, vier! Wer will eins? Ich lad alle ein!'],
           { wahl: [
+            { t: '„Warum bist du in dieser Klasse?“', log: 'Rote Frage gestellt: zu privat für den Anfang', folge: 'Malik: „Geht dich nix an.“', skill: false, dann: [['malik', 'Geht dich nix an.'], ['du', 'Sorry. Andere Frage: Wie ist es, heute neu zu sein?'], ['malik', '… Komisch. Ich kenn hier keinen.']] },
+            { t: '„Welches Spiel zockst du gerade?“', log: 'Grüne Frage gestellt: leicht und offen', folge: 'Malik grinst. Dann wird er leiser.', skill: true, dann: [['malik', 'Fußball. Jeden Abend. (leiser) Hier kenn ich ja noch keinen. Ist komisch.']] },
             { t: '„Bist du immer so laut?“', log: 'Geschlossene Frage mit Vorwurf: „Immer so laut?“', folge: 'Malik: „Ja. Problem?“ Das Gespräch ist zu.', skill: false, dann: [['malik', 'Ja. Problem?'], ['du', 'Sorry. Anders: Wie ist es für dich, heute neu zu sein?'], ['malik', '(kurz still) … Komisch.']] },
-            { t: '„Wie ist es für dich, heute neu zu sein?“', log: 'Offene Frage gestellt: „Wie ist es, neu zu sein?“', folge: 'Malik wird leiser.', skill: true, dann: [['malik', '(kurz still) … Komisch. Ich kenn hier keinen.']] },
+            { t: '„Wie ist es, heute neu zu sein?“', log: 'Offene Frage gestellt: „Wie ist es, neu zu sein?“', folge: 'Malik wird leiser.', skill: true, dann: [['malik', '(kurz still) … Komisch. Ich kenn hier keinen.']] },
           ] },
           { wahl: [
-            { t: '„Wie meinst du das – komisch?“', log: 'Nachgehakt: „Wie meinst du das?“', folge: 'Malik erzählt: An der alten Schule war er der Stille. Hier will er es anders machen.', skill: true, dann: [['malik', 'An meiner alten Schule hat mich keiner bemerkt. Hier will ich nicht wieder unsichtbar sein. Darum bin ich so … laut.'], { moment: 'Malik war nicht angeberisch, sondern nervös: Er wollte nicht wieder unsichtbar sein.' }] },
+            { t: '„Komisch – wie?“', log: 'Nachgehakt: „Wie meinst du das?“', folge: 'Malik erzählt: An der alten Schule war er der Stille. Hier will er es anders machen.', skill: true, dann: [['malik', 'An meiner alten Schule hat mich keiner bemerkt. Hier will ich nicht wieder unsichtbar sein. Darum bin ich so … laut.'], { moment: 'Malik war nicht angeberisch, sondern nervös: Er wollte nicht wieder unsichtbar sein.' }] },
             { t: '„Ach, das wird schon.“', log: 'Abgekürzt: „Das wird schon.“', folge: 'Malik nickt und macht den nächsten Witz.', skill: false, dann: [['malik', 'Klar. (lacht zu laut) Wer will ein Croissant?']] },
           ] },
         ],
@@ -176,7 +179,7 @@ export default {
             { t: '„Du redest nicht viel, oder?“', log: 'Mia ein Etikett gegeben: „Redest nicht viel“', folge: 'Mia: „Mit Leuten, die so fragen, nicht.“', skill: false, dann: [['mia', 'Mit Leuten, die so fragen, nicht.'], ['du', 'Okay. Anders: Was hast du vorhin gehört?'], ['mia', '(kurz) Podcast. Torhüterinnen. Ich will in die Auswahl.']] },
           ] },
           { wahl: [
-            { t: '„Und was fehlt dir noch dafür?“', log: 'Nachgehakt: „Was fehlt dir noch?“', folge: 'Mia: „Jemand, der mir aufs Tor schießt. Jeden Tag.“', skill: true, dann: [['mia', 'Jemand, der mir jeden Tag aufs Tor schießt. Kennst du wen?']] },
+            { t: '„Was fehlt dir noch?“', log: 'Nachgehakt: „Was fehlt dir noch?“', folge: 'Mia: „Jemand, der mir aufs Tor schießt. Jeden Tag.“', skill: true, dann: [['mia', 'Jemand, der mir jeden Tag aufs Tor schießt. Kennst du wen?']] },
             { t: '„Viel Glück.“', log: 'Freundlich, aber ohne Nachfrage', folge: 'Mia nickt. Kopfhörer wieder auf.', skill: false },
           ] },
           { moment: 'Mia war nicht arrogant: Sie hatte einen Plan und einen Podcast im Ohr.' },
@@ -185,9 +188,13 @@ export default {
       {
         ziel: 'Zurück zur Bushaltestelle. Die drei warten auf die Linie 12 zurück.', ort: 'Bushaltestelle', p: [-19.6, 42.8], leute: { mia: [-18.0, 43.8], malik: [-18.6, 41.6, null, 'redet'], chloe: [-21.0, 44.2] },
         zeilen: [
+          ['chloe', 'Schon mal in den falschen Bus gestiegen?'],
+          ['malik', 'Auch Linie 12? Ich bin am ersten Tag bis zur Endstation gefahren.'],
+          ['mia', '(lacht) Ich auch.'],
+          { moment: 'Ein Treffer, den man nicht sieht: Alle drei sind schon mal im falschen Bus gelandet.' },
           ['malik', 'Und? Wie fandest du uns am Anfang? Ehrlich.'],
           { wahl: [
-            { t: 'Ehrlich sagen, was der erste Eindruck war – und was sich geändert hat.', log: 'Den eigenen ersten Eindruck offen zugegeben', folge: 'Malik lacht: „Fair. Ich fand dich am Anfang streng.“', skill: true },
+            { t: '„Ehrlich: erst falsch gedacht.“', log: 'Den eigenen ersten Eindruck offen zugegeben', folge: 'Malik lacht: „Fair. Ich fand dich am Anfang streng.“', skill: true },
             { t: '„Alles super von Anfang an.“', log: 'Den ersten Eindruck verschwiegen', folge: 'Chloé zeichnet etwas. Es sieht aus wie eine Maske.', skill: null },
           ] },
           { skala: 'Wie sicher warst du dir beim ersten Eindruck?', links: 'gar nicht', rechts: 'total' },
@@ -210,7 +217,7 @@ export default {
         ziel: 'Zum Anfang des Waldwegs hinter der Schule. Ruf Mia von dort an.', ort: 'Waldweg', p: [-61.2, -27.4], leute: {},
         zeilen: [
           { wahl: [
-            { t: 'Zuerst Herrn Lenz schreiben: „Mia hat sich im Wald verlaufen. Ich ruf sie an.“', log: 'Zuerst einem Erwachsenen Bescheid gegeben', folge: 'Herr Lenz: „Bin unterwegs. Bleib dran.“', skill: true },
+            { t: 'Erst Herrn Lenz schreiben.', log: 'Zuerst einem Erwachsenen Bescheid gegeben', folge: 'Herr Lenz: „Bin unterwegs. Bleib dran.“', skill: true },
             { t: 'Sofort anrufen. Keine Zeit.', log: 'Sofort angerufen, ohne jemandem Bescheid zu sagen', folge: 'Niemand weiß, wo ihr seid.', skill: null },
           ], frage: 'Mia hat nur noch 9 % Akku. Was zuerst?' },
           ['e', 'Du rufst an. Mia atmet schnell.'],
@@ -226,13 +233,13 @@ export default {
           ] },
           { wenn: (f) => !f.miaOrt, dann: [['du', 'Okay … was siehst du denn?'], ['h:Mia', 'Einen umgefallenen Baum. Ein rotes Schild. Und es plätschert.']] },
           { wahl: [
-            { t: '„Das rote Schild kenn ich. Das ist bei der Lichtung. Glaub ich.“', log: 'Ehrlich gesagt: „Glaub ich“ – nicht mehr versprochen, als du weißt', folge: 'Mia: „Glaubst du oder weißt du?“ – „Glaube. Aber wir prüfen es.“', skill: true, setze: { bluff: false } },
+            { t: '„Rotes Schild? Bei der Lichtung, glaub ich.“', log: 'Ehrlich gesagt: „Glaub ich“ – nicht mehr versprochen, als du weißt', folge: 'Mia: „Glaubst du oder weißt du?“ – „Glaube. Aber wir prüfen es.“', skill: true, setze: { bluff: false } },
             { t: '„Klar, ich weiß genau, wo du bist.“', log: 'Sicherheit versprochen, die du nicht hattest', folge: 'Mia verlässt sich voll auf dich.', skill: false, setze: { bluff: true } },
           ] },
           ['h:Mia', 'Akku 3 %.'],
           { moment: 'Mitten im Gespräch ging Mias Akku fast aus.' },
           { wahl: [
-            { t: '„Plan: Du bleibst am roten Schild. Herr Lenz und ich kommen zu dir. Leg auf und spar Akku.“', log: 'Einen klaren Plan abgemacht: Mia bleibt, du kommst mit Herrn Lenz', folge: 'Mia: „Okay. Ich bleib am Schild.“ Tuut.', skill: true, setze: { plan: true } },
+            { t: '„Bleib am Schild. Wir kommen.“', log: 'Einen klaren Plan abgemacht: Mia bleibt, du kommst mit Herrn Lenz', folge: 'Mia: „Okay. Ich bleib am Schild.“ Tuut.', skill: true, setze: { plan: true } },
             { t: 'Weiterreden, bis der Akku leer ist.', log: 'Ohne Plan weitergeredet', folge: 'Tuut. Weg. Ihr habt nichts abgemacht.', skill: false, setze: { plan: false } },
           ] },
         ],
@@ -248,9 +255,14 @@ export default {
           ] }] },
           ['mia', 'Und jetzt? Welcher Weg?'],
           { wahl: [
-            { t: 'Vorgehen und alle paar Meter sagen, was kommt: „Wurzel. Bach. Gleich der Zaun.“', log: 'Beim Zurückführen jeden Schritt angesagt', folge: 'Mia läuft dicht hinter dir. Kein Stolpern.', skill: true, setze: { knie: false } },
-            { t: 'Schnell vorlaufen. Sie wird schon hinterherkommen.', log: 'Schnell vorgelaufen, ohne zu sagen, was kommt', folge: 'Mia stolpert über eine Wurzel. Aufgeschürftes Knie.', skill: false, setze: { knie: true } },
+            { t: 'Jeden Schritt ansagen.', log: 'Beim Zurückführen jeden Schritt angesagt', folge: '„Wurzel. Bach. Gleich der Zaun.“ Mia läuft dicht hinter dir. Kein Stolpern.', skill: true, setze: { knie: false } },
+            { t: 'Schnell vorlaufen.', log: 'Schnell vorgelaufen, ohne zu sagen, was kommt', folge: 'Mia stolpert über eine Wurzel. Aufgeschürftes Knie.', skill: false, setze: { knie: true } },
           ] },
+          ['mia', 'Stopp! Da war was.'],
+          { wahl: [
+            { t: 'Sofort stehen bleiben.', log: 'Bei Mias „Stopp“ sofort stehen geblieben', folge: 'Ihr bleibt stehen. Nur ein Ast. Mia: „Danke, dass du gewartet hast.“', skill: true },
+            { t: '„Weiter, ist nichts.“', log: 'Mias „Stopp“ übergangen', folge: 'Mia bleibt trotzdem stehen: „Ich hab Stopp gesagt.“', skill: false },
+          ], frage: 'Mia sagt Stopp.' },
         ],
       },
       {

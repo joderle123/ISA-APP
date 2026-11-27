@@ -21,7 +21,7 @@
         "code": "BUS-12",
         "titel": "Linie 12",
         "ort": "Bushaltestelle",
-        "kurz": "An der Haltestelle stehen drei Neue. Finde mit guten Fragen heraus, wer sie wirklich sind – dein erster Eindruck wird dreimal auf die Probe gestellt.",
+        "kurz": "An der Haltestelle stehen drei Neue. Eine kleine Frage, einmal nachhaken – und du findest, was man nicht sieht.",
         "belohnung": "Busfahrer-Kappe",
         "skill": "Fragen und nachhaken",
         "item": {
@@ -77,9 +77,9 @@
       },
       {
         "code": "STARK-24",
-        "titel": "Stärken-Post",
+        "titel": "Was nicht drinsteht",
         "ort": "Campus",
-        "kurz": "Beobachte vier Leute auf dem Campus. Finde bei jeder Person eine Stärke mit Beweis – und bring ihr die passende Karte.",
+        "kurz": "Vier Leute auf dem Campus. Finde bei jeder Person eine Stärke, die in keinem Zeugnis steht – mit Beweis.",
         "belohnung": "Stärken-Jacke",
         "skill": "Stärken sehen",
         "item": {
@@ -133,11 +133,11 @@
       },
       {
         "code": "MISCH-10",
-        "titel": "Das Mischpult",
-        "ort": "Aula",
-        "kurz": "Bei der Probe in der Aula fühlt Amira vier Dinge gleichzeitig. Stell mit ihr am Mischpult ein, was gerade wie laut ist.",
-        "belohnung": "DJ-Mütze",
-        "skill": "Gefühle mischen",
+        "titel": "Der Deckel",
+        "ort": "Aula und Innenhof",
+        "kurz": "Amira schreit „Dann geh doch!“. Finde heraus, was unter ihrer Wut liegt – und hilf zwei Freundinnen, sich beides zu sagen.",
+        "belohnung": "Mütze „Deckel“",
+        "skill": "Unter die Wut schauen",
         "item": {
           "art": "kopf",
           "sy": "🎚️",
@@ -164,7 +164,7 @@
         "code": "ATEM-48",
         "titel": "Vier ein, acht aus",
         "ort": "vor dem Sekretariat",
-        "kurz": "Du wartest vor dem Büro und weißt nicht, warum. Atme mit dem Atem-Kreis, bis dein Bein ruhig ist – dann kommt die Überraschung.",
+        "kurz": "Du wartest vor dem Sekretariat und weißt nicht, warum. Miss deinen Puls, wähl eine Bremse – und schau, was sich ändert.",
         "belohnung": "Spur „Atem“",
         "skill": "Bremse im Körper",
         "item": {
@@ -177,7 +177,7 @@
         "code": "KALT-30",
         "titel": "Das Notfall-Set",
         "ort": "Épicerie und Brunnen",
-        "kurz": "Stell dein eigenes Set für die Tasche zusammen – stark, aber harmlos. Teste es in drei Druck-Momenten.",
+        "kurz": "Teste Kälte, Saures und Duft: Was wirkt bei dir? Nur das kommt ins Set. Dann drei Druck-Momente.",
         "belohnung": "Notfall-Täschchen",
         "skill": "Sinne nutzen",
         "item": {
@@ -189,9 +189,9 @@
       },
       {
         "code": "SCHIFF-7",
-        "titel": "Gedanken-Schiffe",
+        "titel": "Gedanken parken",
         "ort": "Innenhof",
-        "kurz": "Nachts läuft der Film im Kopf. Fang deine Gedanken ein, setz sie auf Schiffe und lass sie den Fluss hinunterfahren.",
+        "kurz": "Nachts dreht Mias Kopf. Beschäftigen, parken oder reden – finde mit ihr den Weg, der hilft.",
         "belohnung": "Papierschiff-Hut",
         "skill": "Gedanken beobachten",
         "item": {
@@ -245,11 +245,11 @@
       },
       {
         "code": "BEWEIS-3",
-        "titel": "Gericht im Kopf",
-        "ort": "Lesesaal",
-        "kurz": "Im Lesesaal stellst du einen Gedanken vor Gericht: Beweise dafür, Beweise dagegen – und du fällst das Urteil.",
+        "titel": "Wiegt das was?",
+        "ort": "Lesesaal und Werkstatt",
+        "kurz": "Lios Satz „Ich bin dumm“ kommt auf die Wippe. Nur Beweise wiegen – Gefühle und Meinungen sind Lautsprecher.",
         "belohnung": "Brille „Durchblick“",
-        "skill": "Gedanken prüfen",
+        "skill": "Beweise wiegen",
         "item": {
           "art": "brille",
           "sy": "🔍",
@@ -261,9 +261,9 @@
         "code": "NEU-4",
         "titel": "Neuer Satz, neuer Tag",
         "ort": "Bushaltestelle",
-        "kurz": "Ein Morgen mit deinem neuen Satz: Probier ihn in mehreren Situationen aus und schau, was passiert.",
+        "kurz": "Ein neuer Satz und eine Stufe von deiner Mut-Leiter – ausprobiert an einem echten Tag.",
         "belohnung": "Sonnenaufgang-Shirt",
-        "skill": "Neue Sätze",
+        "skill": "Mut-Leiter",
         "item": {
           "art": "oben",
           "sy": "🌅",
@@ -288,11 +288,11 @@
       },
       {
         "code": "ICH-2",
-        "titel": "Ich statt Du",
-        "ort": "Jugendhaus",
-        "kurz": "Beim Billard gibt es Streit um eine Regel. Bau Ich-Sätze, die den Streit lösen, statt ihn anzuheizen.",
-        "belohnung": "Hoodie „Ich statt Du“",
-        "skill": "Ich-Botschaften",
+        "titel": "Die Wort-Schere",
+        "ort": "Jugendhaus und Sportplatz",
+        "kurz": "Beim Billard knallt es. Schneid das Gift aus den Sätzen – der Kern darf bleiben.",
+        "belohnung": "Hoodie „Ohne Gift“",
+        "skill": "Ohne Gift reden",
         "item": {
           "art": "oben",
           "sy": "🗣️",
@@ -303,7 +303,7 @@
         "code": "GRENZE-3",
         "titel": "Bauchgefühl",
         "ort": "Lichtung",
-        "kurz": "Auf der Lichtung wird dir etwas angeboten. Hör auf dein Bauchgefühl und zieh deine Grenze.",
+        "kurz": "An der Lichtung wird es eng: Nähe, Abstand, Fragen. Merk, wo deine Grenze liegt – und wo die der anderen.",
         "belohnung": "Spur „Kompass“",
         "skill": "Grenzen spüren",
         "item": {
@@ -332,7 +332,7 @@
         "code": "EULE-1",
         "titel": "Hai oder Eule",
         "ort": "Sportplatz",
-        "kurz": "Beim Fußball wird gefoult. Bleib Eule: erst runter, dann reden.",
+        "kurz": "Beim Fußball wird gefoult. Erst runter. Dann den Streit in Zeitlupe anschauen: Wo war der billigste Stopp?",
         "belohnung": "Eulen-Hoodie",
         "skill": "Ruhig bleiben",
         "item": {
@@ -345,7 +345,7 @@
         "code": "ANFANG-2",
         "titel": "Einer fängt an",
         "ort": "Gang mit Spinden",
-        "kurz": "Alle lachen über ein Video. Finde den Moment, in dem du anfängst, etwas anderes zu tun.",
+        "kurz": "Die anderen drängeln: „Komm, nur einmal.“ Finde ein Nein, das hält – und merk, dass einer reicht.",
         "belohnung": "Leuchtstreifen-Jacke",
         "skill": "Den Anfang machen",
         "item": {
@@ -385,11 +385,11 @@
       },
       {
         "code": "ONLINE-2",
-        "titel": "Gelesen um 23:14",
-        "ort": "Handy und Campus",
-        "kurz": "Amira schreibt dir nachts ständig und will sofort Antworten. Setz eine Grenze, die hält – und merk, was aus Nachrichten wird, die du abschickst.",
+        "titel": "Nur für mich",
+        "ort": "Handy und Jugendhaus",
+        "kurz": "Im Spiel: Beim Zocken will einer ein Foto von Jade. „Nur für mich.“ Hilf ihr, den Druck zu erkennen – und den ersten Handgriff.",
         "belohnung": "Mütze „Mond“",
-        "skill": "Grenzen im Netz",
+        "skill": "Druck erkennen",
         "item": {
           "art": "kopf",
           "sy": "🌙",
@@ -417,7 +417,7 @@
         "code": "NACHT-8",
         "titel": "Acht Stunden",
         "ort": "zu Hause",
-        "kurz": "Eine Woche im Spiel: Plane deine Abende so, dass dein Akku morgens voll ist.",
+        "kurz": "Eine Woche bis zum Test – und Amiras Zimmer um 1:50. Drei Züge, damit der Akku morgens voll ist.",
         "belohnung": "Beanie „Nachtmodus“",
         "skill": "Schlaf",
         "item": {
@@ -443,9 +443,9 @@
       },
       {
         "code": "BLEIBT-3",
-        "titel": "Das Jahr in Bildern",
-        "ort": "Campus",
-        "kurz": "Finde zehn Orte, an denen dieses Jahr etwas passiert ist, und sammle die Erinnerungen für dein Album.",
+        "titel": "Das Jahres-Museum",
+        "ort": "Aula und Campus",
+        "kurz": "Stell ein Stück aus diesem Jahr aus, zeig es einem Neuen – und hör, was sich bei dir verändert hat.",
         "belohnung": "Jacke „Erinnerung“",
         "skill": "Rückblick",
         "item": {
@@ -458,7 +458,7 @@
         "code": "ENDE-4",
         "titel": "Stärken-Post zum Abschied",
         "ort": "Innenhof",
-        "kurz": "Verteile zum Schluss Stärken-Post an deine Leute – und bekomm selbst welche.",
+        "kurz": "Verteile Stärken-Post, hol Chloé zurück – und schreib eine Postkarte an dich für den Herbst.",
         "belohnung": "Jahrgangs-Jacke",
         "skill": "Abschied",
         "item": {

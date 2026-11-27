@@ -1,5 +1,5 @@
 // REAL TALK #02 „Gefühle“ – vier Missionen (Format: kursmission.js). Skills der Stunden: Gefühle genau benennen und ihre
-// Botschaft hören · Wer sitzt am Steuer? · Körpersignale früh merken · Gefühle mischen (mehrere gleichzeitig). Alle Personen erfunden.
+// Botschaft hören · Wer sitzt am Steuer? · Körpersignale früh merken · Wut ist oft ein Deckel (was liegt drunter?). Alle Personen erfunden.
 export default {
   // ---------- Stunde 1 · Wozu der Mist? → Mehr als zwei Wörter ----------
   'WORT-6': {
@@ -15,12 +15,18 @@ export default {
           ['lio', 'Scheiße.'],
           { wahl: [
             { t: '„Okay.“ Und weiter.', log: 'Bei Lio „scheiße“ stehen gelassen', folge: 'Lio: „Siehste. Gewonnen.“', skill: false, dann: [['lio', 'Siehste. Gewonnen. (Pause) … Na gut, frag noch mal richtig.']] },
-            { t: '„Scheiße wie wütend, wie traurig – oder wie enttäuscht?“', log: 'Lio genaue Wörter angeboten', folge: 'Lio denkt nach: „Enttäuscht. Eher enttäuscht.“', skill: true },
+            { t: '„Wütend, traurig – oder enttäuscht?“', log: 'Lio genaue Wörter angeboten', folge: 'Lio denkt nach: „Enttäuscht. Eher enttäuscht.“', skill: true },
           ] },
-          ['lio', 'Enttäuscht. Ich bin nicht in die Schulmannschaft gekommen. Dabei hab ich jeden Tag trainiert.'],
+          ['lio', 'Enttäuscht. Ich bin nicht in die Schulmannschaft gekommen. Dabei hab ich jeden Tag trainiert. Und sauer bin ich auch.'],
           { wahl: [
-            { t: 'Enttäuschung meldet: „Das war mir wichtig.“', log: 'Die Botschaft erkannt: Enttäuschung = es war wichtig', skill: true },
-            { t: 'Enttäuschung meldet: „Hör auf damit.“', log: 'Enttäuschung als „aufhören“ gelesen', folge: 'Lio: „Aufhören? Nee. Es war mir halt wichtig.“', skill: false },
+            { t: 'genervt', log: 'Wort-Leiter: Lios Ärger als „genervt“ eingeschätzt', folge: 'Lio: „Mehr als genervt.“', skill: null },
+            { t: 'sauer', log: 'Wort-Leiter: Lios Ärger als „sauer“ eingeschätzt', folge: 'Lio: „Ja. So ungefähr.“', skill: null },
+            { t: 'wütend', log: 'Wort-Leiter: Lios Ärger als „wütend“ eingeschätzt', folge: 'Lio: „Nee, so schlimm nicht.“', skill: null },
+            { t: 'rasend', log: 'Wort-Leiter: Lios Ärger als „rasend“ eingeschätzt', folge: 'Lio lacht kurz: „Rasend? Ich steh doch ganz ruhig hier.“', skill: null },
+          ], frage: 'Wort-Leiter: Wie sauer ist Lio?' },
+          { wahl: [
+            { t: '„Das war mir wichtig.“', log: 'Die Botschaft erkannt: Enttäuschung = es war wichtig', skill: true },
+            { t: '„Jemand geht über meine Grenze.“', log: 'Enttäuschung mit der Botschaft der Wut verwechselt', folge: 'Lio: „Grenze? Nee. Keiner hat mir was getan. Es war mir halt wichtig.“', skill: false },
           ], frage: 'Was will Lios Enttäuschung melden?' },
           ['lio', 'Okay. Ein Wort. Mal sehen, ob du noch eins findest.'],
         ],
@@ -36,8 +42,8 @@ export default {
           ] },
           ['sara', 'Die Mathearbeit ist rum. Ich hab zwei Nächte schlecht geschlafen. Jetzt ist alles weg.'],
           { wahl: [
-            { t: 'Erleichterung meldet: „Der Druck ist weg.“', log: 'Die Botschaft erkannt: Erleichterung = der Druck ist weg', skill: true },
-            { t: 'Erleichterung meldet: „Die Arbeit lief gut.“', log: 'Erleichterung mit Erfolg verwechselt', folge: 'Sara: „Keine Ahnung, wie sie lief. Hauptsache vorbei.“', skill: false },
+            { t: '„Die Arbeit lief gut.“', log: 'Erleichterung mit Erfolg verwechselt', folge: 'Sara: „Keine Ahnung, wie sie lief. Hauptsache vorbei.“', skill: false },
+            { t: '„Der Druck ist weg.“', log: 'Die Botschaft erkannt: Erleichterung = der Druck ist weg', skill: true },
           ], frage: 'Was meldet Saras Erleichterung?' },
         ],
       },
@@ -50,13 +56,13 @@ export default {
             { t: '„Egal wie müde? Oder egal wie nervös?“', log: 'Hinter Finns „egal“ nachgefragt', folge: 'Finn hält den Ball fest. „Nervös.“', skill: true },
             { t: '„Wenn’s dir egal ist, ist ja gut.“', log: 'Finns „egal“ geglaubt', folge: 'Finn wirft. Daneben. Dann noch mal. Daneben.', skill: false, dann: [['e', 'Finn wirft. Daneben. Noch mal. Daneben.'], ['finn', '… Ist nicht egal. Ich bin nervös.']] },
           ] },
-          ['finn', 'Morgen hab ich ein Vorstellungsgespräch. Praktikum in der Werkstatt. Ich weiß nicht, was ich sagen soll.'],
+          ['finn', 'Morgen hab ich ein Gespräch bei der Klassenlehrerin. Keine Ahnung, worum’s geht.'],
           { wahl: [
-            { t: 'Nervosität meldet: „Da kommt was Wichtiges. Bereite dich vor.“', log: 'Die Botschaft erkannt: Nervosität = vorbereiten', skill: true },
-            { t: 'Nervosität meldet: „Sag lieber ab.“', log: 'Nervosität als „absagen“ gelesen', folge: 'Finn: „Absagen? Dann bin ich morgen erleichtert und übermorgen sauer auf mich.“', skill: false },
+            { t: '„Geh da nicht hin.“', log: 'Nervosität als „wegbleiben“ gelesen', folge: 'Finn: „Schwänzen? Dann ist es übermorgen noch schlimmer.“', skill: false },
+            { t: '„Da kommt was Wichtiges.“', log: 'Die Botschaft erkannt: Nervosität = da kommt was Wichtiges, vorbereiten', skill: true },
           ], frage: 'Was meldet Finns Nervosität?' },
           { wahl: [
-            { t: '„Lass uns drei Sätze üben. Jetzt.“', log: 'Mit Finn drei Sätze fürs Gespräch geübt', folge: 'Finn übt dreimal. Beim dritten Mal wirft er einen Korb.', skill: true, setze: { finnGeuebt: true } },
+            { t: '„Was willst du sie fragen?“', log: 'Mit Finn seine Fragen fürs Gespräch gesammelt', folge: 'Finn: „Ob ich was falsch gemacht hab.“ Er schreibt es ins Handy. Dann wirft er einen Korb.', skill: true, setze: { finnGeuebt: true } },
             { t: '„Du schaffst das schon.“', log: 'Finn Mut zugesprochen', folge: 'Finn: „Mhm.“ Er glaubt es nicht ganz.', skill: null },
           ] },
         ],
@@ -66,19 +72,19 @@ export default {
         zeilen: [
           ['du', 'Hey. Wie geht’s?'],
           ['chloe', 'Passt.'],
-          ['e', 'Chloé schaut auf ihr Handy. Da steht: „Heute 15“ – ein Geburtstag. Keine einzige Nachricht.'],
+          ['e', 'Chloé schaut auf ihr Handy. Da steht: „Heute 13“ – ein Geburtstag. Keine einzige Nachricht.'],
           { wahl: [
-            { t: '„Du hast Geburtstag, oder? Und keiner hat geschrieben?“', log: 'Hingesehen und vorsichtig angesprochen', folge: 'Chloé schluckt. „Gekränkt. So heißt das wohl.“', skill: true },
+            { t: '„Geburtstag? Und keiner schreibt?“', log: 'Hingesehen und vorsichtig angesprochen', folge: 'Chloé schluckt. „Gekränkt. So heißt das wohl.“', skill: true },
             { t: '„Passt? Dann ist ja gut.“', log: 'Chloés „passt“ geglaubt', folge: 'Chloé nickt. Sie steigt in den Bus. Allein.', skill: false, setze: { chloeAllein: true } },
           ] },
           { wenn: (f) => !f.chloeAllein, dann: [
             ['chloe', 'Gekränkt. Und ein bisschen einsam. Zwei Wörter, oder? Mehr als zwei.'],
             { wahl: [
-              { t: 'Kränkung meldet: „Ich bin wichtig. Behandle mich so.“', log: 'Die Botschaft erkannt: Kränkung = ich bin wichtig', skill: true },
-              { t: 'Kränkung meldet: „Sei nicht so empfindlich.“', log: 'Kränkung als „empfindlich“ abgetan', folge: 'Chloé: „Toll. Danke.“', skill: false },
+              { t: '„Pass auf, Gefahr.“', log: 'Kränkung mit der Botschaft der Angst verwechselt', folge: 'Chloé: „Gefahr? Nee. Ich wollte nur, dass einer dran denkt.“', skill: false },
+              { t: '„Ich bin wichtig.“', log: 'Die Botschaft erkannt: Kränkung = ich bin wichtig', skill: true },
             ], frage: 'Was meldet Chloés Kränkung?' },
             { wahl: [
-              { t: '„Alles Gute! Komm mit, wir holen uns was an der Bäckerei.“', log: 'Chloé gratuliert und eingeladen', folge: 'Chloé lacht zum ersten Mal heute.', skill: null, setze: { chloeGeburtstag: true } },
+              { t: '„Alles Gute! Komm mit zum Bäcker.“', log: 'Chloé gratuliert und eingeladen', folge: 'Chloé lacht zum ersten Mal heute.', skill: null, setze: { chloeGeburtstag: true } },
               { t: '„Alles Gute.“ Und los.', log: 'Chloé gratuliert', folge: 'Chloé: „Danke. Echt.“', skill: null },
             ] },
           ] },
@@ -89,7 +95,7 @@ export default {
         zeilen: [
           ['lio', 'Und? Wie viele Wörter?'],
           { wenn: (f) => f.chloeGeburtstag, dann: [{ moment: 'Hinter einem „passt“ steckte ein Geburtstag, an den keiner gedacht hatte. Chloé kam mit zur Bäckerei.' }] },
-          { wenn: (f) => f.finnGeuebt, dann: [['h:Finn', 'Hab die drei Sätze noch mal vorm Spiegel geübt. Morgen 9 Uhr. Daumen drücken.']] },
+          { wenn: (f) => f.finnGeuebt, dann: [['h:Finn', 'War beim Gespräch. Es ging nur um den Ausflug. Ich hab trotzdem meine Frage gestellt. Alles gut.']] },
           ['lio', 'Okay, verloren. Aber jetzt du: Wie geht’s dir? Mehr als zwei Wörter.'],
           { wahl: [
             { t: 'Zwei genaue Wörter sagen.', log: 'Die eigene Lage mit genauen Wörtern beschrieben', dann: [{ notiz: 'Deine zwei Wörter für heute:', platz: 'zum Beispiel: müde und stolz' }] },
@@ -98,8 +104,8 @@ export default {
         ],
       },
     ],
-    ende: [{ wenn: (f) => f.lioGewonnen, dann: [['lio', 'Unentschieden. Hier, trotzdem die Sticker. Für jedes Wort einen.']],
-      sonst: [['lio', 'Ich nehm meine Wette zurück. Hier, die Sticker. Für jedes Wort einen.']] }],
+    ende: [{ wenn: (f) => f.lioGewonnen, dann: [['lio', 'Unentschieden. Die Spur „Gefühle“ kriegst du trotzdem. Für jedes Wort eine Farbe.']],
+      sonst: [['lio', 'Ich nehm meine Wette zurück. Ab heute ziehst du eine Spur „Gefühle“ hinter dir her. Für jedes Wort eine Farbe.']] }],
     resuemee: { frage: 'Welches Gefühl versteckt sich bei euch am häufigsten hinter „gut“ oder „egal“?', satz: 'Ein Gefühl, das ich öfter beim Namen nennen will: …' },
   },
 
@@ -118,12 +124,14 @@ export default {
           ['malik', 'Ey, chill! Du hast mich geschubst!'],
           ['e', 'Jade filmt. Drei Leute schauen zu.'],
           { wahl: [
-            { t: 'Nur Wut – der ist halt sauer.', log: 'Bei Finn nur die Wut gesehen', folge: 'Die Wut ist echt. Aber darunter sitzt noch etwas.', skill: false },
-            { t: 'Wut – und darunter Scham, weil er vor allen gestürzt ist.', log: 'Bei Finn die Wut und die Scham darunter erkannt', folge: 'Genau: Er ist vor allen gestürzt.', skill: true },
+            { t: 'Wut', log: 'Bei Finn die Wut am Steuer gesehen', folge: 'Die Wut ist laut. Aber warum gerade jetzt?', skill: null },
+            { t: 'Scham', log: 'Bei Finn die Scham am Steuer gesehen: vor allen gestürzt', folge: 'Genau: Er ist vor allen gestürzt. Die Wut ist nur laut.', skill: true },
+            { t: 'Trauer', log: 'Bei Finn Trauer vermutet', folge: 'Eher nicht. Er ist nicht traurig – er ist bloßgestellt.', skill: false },
+            { t: 'Angst', log: 'Bei Finn Angst vermutet', folge: 'Ein bisschen vielleicht: Angst, dass alle lachen.', skill: null },
           ], frage: 'Wer sitzt bei Finn am Steuer?' },
           { wahl: [
-            { t: 'Zuerst Jade: „Mach das Handy weg. Das macht es schlimmer.“', log: 'Zuerst dem Streit das Publikum genommen', folge: 'Jade zögert – und steckt das Handy ein.', skill: true, setze: { gefilmt: false } },
-            { t: 'Zuerst Finn: „Beruhig dich mal!“', log: 'Finn gesagt: „Beruhig dich!“', folge: 'Finn wird lauter: „Ich bin ruhig!“', skill: false, setze: { gefilmt: true } },
+            { t: 'Jade: „Handy weg.“', log: 'Zuerst dem Streit das Publikum genommen', folge: 'Jade zögert – und steckt das Handy ein.', skill: true, setze: { gefilmt: false } },
+            { t: 'Finn: „Beruhig dich mal!“', log: 'Finn gesagt: „Beruhig dich!“', folge: 'Finn wird lauter: „Ich bin ruhig!“', skill: false, setze: { gefilmt: true } },
             { t: 'Zuschauen, was passiert.', log: 'Zugeschaut', folge: 'Jade filmt weiter.', skill: false, setze: { gefilmt: true } },
           ], frage: 'Was machst du zuerst?' },
           ['e', 'Finn stapft weg Richtung Fahrradständer.'],
@@ -134,7 +142,7 @@ export default {
         zeilen: [
           ['finn', 'Was? Kommst du jetzt auch noch lachen?'],
           { wahl: [
-            { t: '„Nö. Vor allen hinfallen ist mies. Mir wär das peinlich.“', log: 'Die Scham ausgesprochen, ohne Finn bloßzustellen', folge: 'Finn: „… Ja. Voll peinlich.“ Seine Schultern gehen runter.', skill: true, setze: { finnRuhig: true } },
+            { t: '„Vor allen hinfallen? Mir wär’s peinlich.“', log: 'Die Scham ausgesprochen, ohne Finn bloßzustellen', folge: 'Finn: „… Ja. Voll peinlich.“ Seine Schultern gehen runter.', skill: true, setze: { finnRuhig: true } },
             { t: '„Du hast übertrieben. Entschuldig dich bei Malik.“', log: 'Sofort eine Entschuldigung verlangt', folge: 'Finn: „Ich? Er hat gelacht!“ Er wird wieder laut.', skill: false, setze: { finnRuhig: false } },
           ] },
           { wenn: (f) => f.finnRuhig, dann: [
@@ -151,11 +159,11 @@ export default {
         zeilen: [
           ['malik', 'Der schubst mich und ich bin schuld? Ich bin so sauer.'],
           { wahl: [
-            { t: 'Bei Malik sitzt Wut am Steuer. Sie meldet: „Das war unfair.“', log: 'Maliks Wut und ihre Botschaft erkannt: unfair behandelt', skill: true },
-            { t: '„Malik regt sich halt über alles auf.“', log: 'Malik ein Etikett gegeben', folge: 'Malik: „Toll. Ich bin also das Problem.“', skill: false },
+            { t: 'Wut: „Das war unfair.“', log: 'Maliks Wut und ihre Botschaft erkannt: unfair behandelt', skill: true },
+            { t: '„Du regst dich über alles auf.“', log: 'Malik ein Etikett gegeben', folge: 'Malik: „Toll. Ich bin also das Problem.“', skill: false },
           ], frage: 'Was sitzt bei Malik am Steuer?' },
           { wahl: [
-            { t: '„Er war vor allen hingefallen. Dein Lachen kam als Auslachen an.“', log: 'Malik erklärt, wie sein Lachen ankam', folge: 'Malik: „Ich hab doch nicht ihn ausgelacht. Nur den Sturz … oh.“', skill: true, setze: { malikVersteht: true } },
+            { t: '„Dein Lachen kam als Auslachen an.“', log: 'Malik erklärt, wie sein Lachen ankam', folge: 'Malik: „Ich hab doch nicht ihn ausgelacht. Nur den Sturz … oh.“', skill: true, setze: { malikVersteht: true } },
             { t: '„Du hast recht. Finn ist ein Idiot.“', log: 'Mit Malik über Finn hergezogen', folge: 'Malik fühlt sich bestätigt. Der Graben wird tiefer.', skill: false, setze: { malikVersteht: false } },
           ] },
         ],
@@ -166,7 +174,7 @@ export default {
           { wenn: (f) => f.finnRuhig && f.malikVersteht, dann: [
             ['malik', 'Sorry wegen dem Lachen. Sah übel aus.'],
             ['finn', 'War’s auch. Sorry fürs Schubsen.'],
-            { moment: 'Finn und Malik haben sich entschuldigt – weil beide wussten, welches Gefühl am Steuer saß.' },
+            { moment: 'Gleiche Szene, drei Fahrer: bei Finn Scham, bei Malik Wut, bei Jade Neugier. Als beide das wussten, kam die Entschuldigung.' },
           ], sonst: [
             ['finn', '(zu Malik) Lach noch mal und …'],
             ['malik', 'Und was?'],
@@ -176,7 +184,7 @@ export default {
           { wenn: (f) => f.gefilmt, dann: [
             ['jade', 'Das Video ist schon in einer Gruppe. Soll ich’s löschen lassen?'],
             { wahl: [
-              { t: '„Ja. Und schreib dazu: Bitte löschen, war nicht okay.“', log: 'Jade geraten, das Video löschen zu lassen', folge: 'Jade schreibt es. Zwei löschen. Einer nicht.', skill: true },
+              { t: '„Ja. Schreib: Bitte löschen.“', log: 'Jade geraten, das Video löschen zu lassen', folge: 'Jade schreibt es. Zwei löschen. Einer nicht.', skill: true },
               { t: '„Ist doch eh zu spät.“', log: 'Das Video laufen lassen', folge: 'Finn sieht es am Abend. Schon wieder Scham.', skill: false },
             ] },
           ] },
@@ -212,15 +220,14 @@ export default {
             { t: 'Nichts', log: 'Eigenes Signal: nichts gemerkt', privat: true },
           ], frage: 'Was merkst du? (Nur für dich.)' },
           { wahl: [
-            { t: 'Einmal lang ausatmen, Füße fest auf den Boden.', log: 'Vor dem Schuss das eigene Signal genutzt: ausgeatmet', folge: 'Dein Schuss geht ins Eck.', skill: true },
+            { t: 'Lang ausatmen. Füße fest.', log: 'Vor dem Schuss das eigene Signal genutzt: ausgeatmet', folge: 'Dein Schuss geht ins Eck.', skill: true },
             { t: 'Schnell schießen, damit es vorbei ist.', log: 'Schnell geschossen, um es loszuwerden', folge: 'Der Schuss geht drüber.', skill: false },
           ] },
-          ['e', 'Lio schießt. Mia hält. Lio bleibt stehen.'],
-          ['e', 'Sein Kiefer ist fest. Die Hände sind Fäuste. Er atmet schnell durch die Nase.'],
+          ['e', 'Lio schießt. Mia hält. Lio bleibt stehen. Sein Kiefer ist fest. Die Hände sind Fäuste. Er atmet schnell durch die Nase.'],
           { wahl: [
-            { t: 'Jetzt zu Lio: „Kurz rüberkommen? Trink was.“', log: 'Lios erstes Signal bemerkt und früh reagiert', folge: 'Lio kommt mit. Sein Atem wird langsamer.', skill: true, setze: { lioFrueh: true } },
+            { t: 'Lio: „Kurz rüber? Trink was.“', log: 'Lios erstes Signal bemerkt und früh reagiert', folge: 'Lio kommt mit. Sein Atem wird langsamer.', skill: true, setze: { lioFrueh: true } },
             { t: 'Abwarten. Er sagt ja noch nichts.', log: 'Lios Signale gesehen, aber gewartet', folge: 'Lio dreht sich zu Mia: „Das war Glück!“', skill: false, setze: { lioFrueh: false } },
-            { t: '„Lio, chill, ist nur ein Spiel!“ – laut über den Platz.', log: 'Lio laut vor allen beruhigen wollen', folge: 'Alle schauen Lio an. Er wird rot – und lauter.', skill: false, setze: { lioFrueh: false } },
+            { t: 'Laut: „Lio, ist nur ein Spiel!“', log: 'Lio laut vor allen beruhigen wollen', folge: 'Alle schauen Lio an. Er wird rot – und lauter.', skill: false, setze: { lioFrueh: false } },
           ], frage: 'Was machst du?' },
         ],
       },
@@ -239,7 +246,7 @@ export default {
             ['lio', '(von weiter weg) Weil’s unfair war!'],
             { moment: 'Weil niemand früh reagiert hat, ist Lio vor allen laut geworden.' },
             { wahl: [
-              { t: 'Zu Lio: „Was hat dein Körper gemacht, kurz bevor du geschrien hast?“', log: 'Mit Lio nachträglich die Signale gesucht', folge: 'Lio: „Kiefer … fest. Und ich hab nur noch rot gesehen.“', skill: true },
+              { t: 'Lio: „Was hat dein Körper gemacht?“', log: 'Mit Lio nachträglich die Signale gesucht', folge: 'Lio: „Kiefer … fest. Und ich hab nur noch rot gesehen.“', skill: true },
               { t: 'Zu Mia: „Lio ist halt so.“', log: 'Lios Ausbruch entschuldigt', folge: 'Mia: „Dann will ich nicht mehr mit ihm spielen.“', skill: false },
             ] },
           ] },
@@ -253,11 +260,10 @@ export default {
       {
         ziel: 'Zurück zum Stade. Finale.', ort: 'Stade', p: [-77.6, -6.0], leute: { brandt: [-76.2, -4.6, null, 'redet'], lio: [-79.2, -4.8], mia: [-78.4, -8.2] },
         zeilen: [
-          ['e', 'Finale: Lio gegen Mia. Lio schießt. Mia hält – aber war sie zu früh von der Linie? Frau Brandt pfeift: „Wiederholen.“'],
-          ['e', 'Lio und Mia schauen sich an. Beide sind kurz davor.'],
+          ['e', 'Finale: Lio gegen Mia. Lio schießt. Mia hält – aber war sie zu früh von der Linie? Frau Brandt pfeift: „Wiederholen.“ Lio und Mia schauen sich an. Beide sind kurz davor.'],
           { wahl: [
-            { t: 'Laut: „Stopp. Zehn Sekunden Pause für alle.“', log: 'Im Finale eine Pause für alle angeregt', folge: 'Frau Brandt nickt: „Gute Idee. Zehn Sekunden.“', skill: true, setze: { finaleRuhig: true } },
-            { t: 'Zu Lio: „Kiefer?“ – nur ein Wort, leise.', log: 'Lio leise an sein Signal erinnert', folge: 'Lio lacht kurz. Sein Kiefer wird locker.', skill: true, setze: { finaleRuhig: true } },
+            { t: '„Stopp. Zehn Sekunden Pause.“', log: 'Im Finale eine Pause für alle angeregt', folge: 'Frau Brandt nickt: „Gute Idee. Zehn Sekunden.“', skill: true, setze: { finaleRuhig: true } },
+            { t: 'Leise zu Lio: „Kiefer?“', log: 'Lio leise an sein Signal erinnert', folge: 'Lio lacht kurz. Sein Kiefer wird locker.', skill: true, setze: { finaleRuhig: true } },
             { t: 'Rufen: „Die war zu früh!“', log: 'Im Finale Partei ergriffen', folge: 'Jetzt diskutieren fünf Leute.', skill: false },
           ], frage: 'Was machst du?' },
           { wenn: (f) => f.finaleRuhig, dann: [{ wenn: (f) => f.lioFrueh, dann: [['e', 'Lio schießt noch mal. Mia hält. Lio klatscht ihr ab.'], { moment: 'Im Finale hat Lio verloren – und Mia abgeklatscht.' }],
@@ -268,86 +274,88 @@ export default {
         ],
       },
     ],
-    ende: [['brandt', 'Die Pulsuhr ist für dich. Nicht zum Messen. Zum Erinnern: Erst spüren, dann handeln.']],
+    ende: [['brandt', 'Die Sportbrille mit der Puls-Anzeige ist für dich. Nicht zum Messen. Zum Erinnern: Erst spüren, dann handeln.']],
     resuemee: { frage: 'Woran merken andere bei euch, dass ihr gleich hochgeht – noch bevor ihr etwas sagt?', satz: 'Mein erstes Signal ist … Dann mache ich …' },
   },
 
-  // ---------- Stunde 4 · Alles gleichzeitig → Das Mischpult ----------
+  // ---------- Stunde 4 · Wut ist der Deckel → Der Deckel (neu 27.11.2026 nach Jugend-Kritik: Mischpult raus) ----------
   'MISCH-10': {
     start: [
-      ['h:Amira', 'Probe in der Aula. Ich soll beim Sommerfest singen. Kommst du? Ich glaub, ich dreh durch.'],
-      ['e', 'Manchmal sind vier Gefühle gleichzeitig da. Keins ist falsch. Es geht nur darum, wer gerade wie laut ist.'],
+      ['h:Sara', 'Kannst du in die Aula kommen? Amira ist komisch. Ich glaub, wegen mir.'],
+      ['e', 'Wut ist oft laut – und liegt wie ein Deckel auf etwas anderem.'],
     ],
     schritte: [
       {
-        ziel: 'Zur Aula. Amira wartet an der Bühne.', ort: 'Aula', p: [-14.0, -57.0], leute: { amira: [-12.4, -57.8] },
+        ziel: 'Zur Aula. Sara und Amira sind an der Bühne.', ort: 'Aula', p: [-14.0, -57.0], leute: { sara: [-15.6, -56.6], amira: [-12.4, -57.8, null, 'redet'] },
         zeilen: [
-          ['amira', 'Ich freu mich. Und ich hab Angst. Und ich bin traurig. Alles gleichzeitig. Das ist doch krank.'],
+          ['e', 'Sara hat es eben erzählt: Nach den Ferien wechselt sie in die Sportklasse.'],
+          ['amira', '(laut, Tasche auf der Schulter) Dann geh doch! Ist mir egal.'],
+          ['sara', '(leise) Okay …'],
           { wahl: [
-            { t: '„Das ist nicht krank. Das ist ein Mischpult. Lass uns schauen, was wie laut ist.“', log: 'Amira das Mischpult angeboten: mehrere Gefühle dürfen gleichzeitig da sein', folge: 'Amira: „Okay. Mischpult. Klingt besser als krank.“', skill: true },
-            { t: '„Entscheid dich halt für eins.“', log: 'Amira geraten, sich für ein Gefühl zu entscheiden', folge: 'Amira: „Geht aber nicht.“ Sie wird hektischer.', skill: false },
-          ] },
-          ['amira', 'Okay. Angst. Wie laut?'],
-          { skala: 'Wie laut ist Amiras Angst, was schätzt du?', links: 'leise', rechts: 'voll aufgedreht' },
-          ['amira', 'Acht von zehn. Mindestens. Und die Trauer?'],
-          { wahl: [
-            { t: '„Warum bist du traurig?“', log: 'Nach der Trauer gefragt', folge: 'Amira: „Sara wechselt nach den Ferien in die Sportklasse. Das Fest ist das letzte Mal, dass wir in einer Klasse sind.“', skill: true, dann: [['amira', 'Sara wechselt nach den Ferien in die Sportklasse. Andere Klasse, anderer Stundenplan. Das Fest ist das letzte Mal zusammen.']] },
-            { t: '„Trauer passt nicht zu einem Fest. Weg damit.“', log: 'Die Trauer weggeschoben', folge: 'Amira schweigt. Die Trauer bleibt trotzdem.', skill: false, dann: [['amira', '(leise) Geht nicht weg. Sara wechselt nach den Ferien die Klasse.']] },
-          ] },
-          { moment: 'Hinter Amiras Chaos steckte auch ein Abschied: Sara wechselt die Klasse.' },
+            { t: 'Trauer', log: 'Tipp: Unter Amiras Wut liegt Trauer', skill: null, setze: { deckelTipp: 'trauer' } },
+            { t: 'Eifersucht', log: 'Tipp: Unter Amiras Wut liegt Eifersucht', skill: null, setze: { deckelTipp: 'eifersucht' } },
+            { t: 'Angst', log: 'Tipp: Unter Amiras Wut liegt Angst', skill: null, setze: { deckelTipp: 'angst' } },
+            { t: 'Nur Wut', log: 'Tipp: Bei Amira ist nur Wut', folge: 'Kann sein. Aber warum dann so laut – und so schnell?', skill: null, setze: { deckelTipp: 'wut' } },
+          ], frage: 'Dein Tipp, verdeckt: Was liegt unter „Dann geh doch!“?' },
+          ['e', 'Amira geht raus. Sara bleibt auf der Bühnenkante sitzen.'],
         ],
       },
       {
-        ziel: 'Zum Lesesaal. Sara lernt dort.', ort: 'Lesesaal', p: [14.0, -59.0], leute: { sara: [15.6, -59.6] },
+        ziel: 'Sara will kurz raus. Zum Lesesaal.', ort: 'Lesesaal', p: [14.0, -59.0], leute: { sara: [15.6, -59.6] },
         zeilen: [
-          ['sara', '(packt Bücher ein) Amira hat’s dir erzählt, oder? Dass ich in die Sportklasse wechsle.'],
-          ['sara', 'Ich freu mich riesig. Ich hab den Platz bekommen. Und gleichzeitig …'],
+          ['sara', 'Ich freu mich auf die Sportklasse. Echt. Aber ich bin auch traurig. Ist das falsch?'],
+          { skala: 'Wie groß ist Saras Freude, was schätzt du?', links: 'klein', rechts: 'riesig' },
+          { skala: 'Und wie groß ist ihre Trauer?', links: 'klein', rechts: 'riesig' },
+          ['sara', 'Beides gleichzeitig. Wie eine Torte mit zwei großen Stücken.'],
           { wahl: [
-            { t: '„Und gleichzeitig bist du traurig, oder? Geht ja beides.“', log: 'Saras gemischte Gefühle ausgesprochen', folge: 'Sara nickt. „Ich trau mich nicht, mich vor Amira zu freuen.“', skill: true },
-            { t: '„Freu dich doch einfach!“', log: 'Sara geraten, sich nur zu freuen', folge: 'Sara: „Sag das mal meinem Bauch.“', skill: false },
-          ] },
-          ['sara', 'Amira denkt bestimmt, ich freu mich, dass ich weg bin. Wir reden kaum noch.'],
-          { wahl: [
-            { t: '„Sagt es euch. Beide Gefühle. Ich komm mit, wenn ihr wollt.“', log: 'Angeboten, ein Gespräch zwischen Sara und Amira zu begleiten', folge: 'Sara: „Innenhof, in zehn Minuten?“', skill: true, setze: { treffen: true } },
-            { t: '„Ich sag Amira, dass du traurig bist.“', log: 'Angeboten, Saras Gefühle für sie weiterzusagen', folge: 'Sara: „Ähm … okay.“ Es fühlt sich falsch an.', skill: false, setze: { treffen: false } },
-          ] },
+            { t: '„Sag Amira beides.“', log: 'Sara geraten, Amira Freude und Trauer zu sagen', folge: 'Sara: „Beides? … Okay. Aber nicht allein.“', skill: true, setze: { treffen: true } },
+            { t: '„Freu dich einfach.“', log: 'Sara geraten, nur die Freude zu zeigen', folge: 'Sara: „Mach ich ja. Und Amira?“', skill: false, setze: { treffen: false } },
+            { t: '„Ich sag’s ihr für dich.“', log: 'Angeboten, für Sara mit Amira zu reden', folge: 'Sara: „Lieb von dir. Aber das muss ich selbst.“', skill: null, setze: { treffen: false } },
+          ], frage: 'Was rätst du Sara?' },
         ],
       },
       {
-        ziel: 'Zum Innenhof. Amira und Sara treffen sich.', ort: 'Innenhof', p: [-24.0, -40.0], leute: { amira: [-22.6, -39.0], sara: [-25.4, -38.8] },
+        ziel: 'Amira sitzt allein im Innenhof.', ort: 'Innenhof', p: [-24.0, -40.0], leute: { amira: [-22.6, -39.4] },
         zeilen: [
-          { wenn: (f) => f.treffen, dann: [
-            ['amira', 'Du freust dich, oder? Auf die Sportklasse.'],
-            ['sara', 'Ja. Und ich bin traurig. Beides. Ich hab mich nicht getraut, es dir zu sagen.'],
-            ['amira', '(lange still) Ich auch. Ich freu mich für dich. Und ich hasse es.'],
-            { moment: 'Sara und Amira haben sich beide Gefühle gesagt – Freude und Trauer gleichzeitig.' },
+          ['amira', 'Soll sie doch gehen. Ich brauch keinen.'],
+          { wahl: [
+            { t: '„Klingt, als würdest du sie vermissen.“', log: 'Unter Amiras Wut nachgefragt', folge: 'Amira schaut weg. Dann nickt sie.', skill: true, setze: { amiraOffen: true } },
+            { t: 'Daneben sitzen. Nichts sagen.', log: 'Bei Amira geblieben, ohne zu reden', folge: 'Nach einer Minute sagt Amira leise: „Ich bin nicht sauer. Ich bin …“', skill: true, setze: { amiraOffen: true } },
+            { t: '„Du übertreibst.“', log: 'Amiras Wut abgetan', folge: 'Amira: „Ach ja? Dann lass mich halt.“', skill: false },
+            { t: '„Sie ist halt weg.“', log: 'Amira gesagt: Sie ist halt weg', folge: 'Amira: „Danke. Echt hilfreich.“', skill: false },
+          ] },
+          { wenn: (f) => f.amiraOffen, dann: [
+            ['amira', 'Ich bin traurig. Und ich hab Angst, dass sie da neue Freundinnen findet. Und ich bin dann … egal.'],
+            { moment: 'Unter Amiras „Dann geh doch!“ lagen Trauer und Angst.' },
+            { wenn: (f) => f.deckelTipp === 'trauer' || f.deckelTipp === 'angst', dann: [['e', 'Dein Tipp aus der Aula lag richtig: Unter dem Deckel war mehr als Wut.']],
+              sonst: [['e', 'In der Aula hast du etwas anderes getippt. Unter dem Deckel lagen Trauer und Angst.']] },
           ], sonst: [
-            ['amira', 'Du hast gesagt, Sara ist traurig. Sie selbst sagt nichts.'],
-            ['sara', '(zu dir) Danke … glaub ich.'],
-            ['e', 'Es bleibt still. Keine sagt, was sie fühlt.'],
-            { moment: 'Weil du für Sara gesprochen hast, haben die beiden nichts selbst gesagt.' },
-          ] },
-          { wahl: [
-            { t: 'Still bleiben und die beiden reden lassen.', log: 'Den beiden Raum gelassen', folge: 'Nach einer Weile lachen beide. Über irgendwas von früher.', skill: true },
-            { t: 'Die Stille mit einem Witz füllen.', log: 'Die Stille mit einem Witz gefüllt', folge: 'Alle lachen kurz. Das Gespräch ist vorbei.', skill: false },
+            ['amira', '(steht auf) Lass mich einfach.'],
+            { moment: 'Amira ist allein geblieben – mit dem Deckel drauf.' },
           ] },
         ],
       },
       {
-        ziel: 'Zurück zur Aula. Generalprobe.', ort: 'Aula', p: [-14.0, -57.0], leute: { amira: [-12.4, -57.8], sara: [-15.6, -58.6] },
+        ziel: 'Zurück zur Aula.', ort: 'Aula', p: [-14.0, -57.0], leute: { sara: [-15.6, -56.6], amira: [-12.4, -57.8] },
         zeilen: [
-          ['amira', 'Mischpult, letzter Check. Angst?'],
-          { wahl: [
-            { t: '„Runter auf drei. Ganz weg muss sie nicht.“', log: 'Angst dazu genommen statt weggeschickt', folge: 'Amira grinst.', skill: true },
-            { t: '„Ganz runterdrehen!“', log: 'Angst ganz wegdrehen wollen', folge: 'Amira: „Geht nicht. Aber leiser geht.“', skill: false },
-          ] },
-          { wenn: (f) => f.treffen, dann: [['amira', 'Und die Trauer singt mit. Der Song ist für Sara.'], ['e', 'Amira singt. Die Stimme wackelt am Anfang. Dann nicht mehr. Sara steht in der ersten Reihe.']],
-            sonst: [['e', 'Amira singt. Die Stimme wackelt. Sara steht hinten an der Tür.']] },
-          { notiz: 'Wann hattest du zuletzt zwei Gefühle gleichzeitig?', platz: 'zum Beispiel: froh und traurig, als …' },
+          { wenn: (f) => f.treffen && f.amiraOffen, dann: [
+            ['sara', 'Ich freu mich auf die Sportklasse. Und ich bin traurig wegen dir.'],
+            ['amira', 'Außen hab ich „Dann geh doch“ gesagt. Innen hieß das: Ich vermiss dich jetzt schon.'],
+            ['sara', '(lacht und heult gleichzeitig) Mittwochs ist Training. Danach Bäcker? Jede Woche.'],
+            { moment: 'Zwei Sätze statt einem Knall: außen und innen.' },
+          ], sonst: [{ wenn: (f) => f.treffen, dann: [
+            ['e', 'Sara wartet an der Bühne. Amira kommt nicht. Nach zehn Minuten geht Sara.'],
+            { moment: 'Sara war bereit zu reden. Amira saß noch unter ihrem Deckel.' },
+          ], sonst: [
+            ['e', 'Amira geht an Sara vorbei. Keine sagt etwas. Beide schauen aufs Handy.'],
+            { moment: 'Zwischen Amira und Sara blieb der Deckel drauf.' },
+          ] }] },
+          ['e', 'Und du? Auch du hast einen Satz, der laut rausrutscht.'],
+          { notiz: 'Mein Übersetzer – nur für dich:', platz: 'Außen sag ich: … Innen heißt das oft: …', privat: true },
         ],
       },
     ],
-    ende: [['amira', 'Die DJ-Mütze ist für dich. Du hast heute das Mischpult bedient.']],
-    resuemee: { frage: 'Wann hattet ihr zuletzt zwei Gefühle gleichzeitig – und welches war lauter?', satz: 'Zwei Gefühle, die bei mir oft zusammen kommen: …' },
+    ende: [['amira', '(setzt dir eine Mütze auf) Ein Deckel für dich. Damit du dran denkst, was drunter sein kann.']],
+    resuemee: { frage: 'Welcher laute Satz rutscht euch am schnellsten raus – und was sitzt oft darunter?', satz: 'Wenn ich „…“ sage, heißt das oft: …' },
   },
 };
