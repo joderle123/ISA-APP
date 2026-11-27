@@ -56,22 +56,22 @@ const d: Heft = {
   "cast": [
     {
       "bild": "peep:lio:wuetend",
-      "name": "Lio, 14",
+      "name": "Lio, 12",
       "x": "Hat zwei Wörter für alles: gut und beschissen."
     },
     {
       "bild": "peep:noah:gelangweilt",
-      "name": "Noah, 15",
+      "name": "Noah, 13",
       "x": "Sagt zu allem „mir egal“. Ist es fast nie."
     },
     {
       "bild": "peep:lina:froh",
-      "name": "Lina, 16",
+      "name": "Lina, 13",
       "x": "Lächelt, wenn sie wütend ist. Seit Jahren."
     },
     {
       "bild": "peep:ines:traurig",
-      "name": "Ines, 15",
+      "name": "Ines, 13",
       "x": "Zieht schon wieder um. Alle sagen: Freu dich doch."
     }
   ],
@@ -110,8 +110,8 @@ const d: Heft = {
       "kurz": "Was Gefühle sind – und was sie von dir wollen.",
       "szene": {
         "bild": "peep:lio:wuetend",
-        "name": "Lio, 14",
-        "text": "Die Betreuerin fragt: „Wie geht’s dir?“ Lio: „Beschissen.“ – „Was genau?“ – „Na, beschissen halt.“ Lio meint das nicht frech. Er hat einfach nur zwei Wörter: gut und beschissen. Dabei ist heute alles dabei: Er ist sauer auf seinen Bruder, hat Angst vor dem Gespräch morgen und schämt sich für gestern. Drei Gefühle. Ein Wort.",
+        "name": "Lio, 12",
+        "text": "Die Klassenlehrerin fragt: „Wie geht’s dir?“ Lio: „Beschissen.“ – „Was genau?“ – „Na, beschissen halt.“ Lio meint das nicht frech. Er hat einfach nur zwei Wörter: gut und beschissen. Dabei ist heute alles dabei: Er ist sauer auf seinen Bruder, hat Angst vor dem Gespräch morgen und schämt sich für gestern. Drei Gefühle. Ein Wort.",
         "frage": "Welche drei Wörter hätte Lio gebraucht?"
       },
       "fakten": [
@@ -285,8 +285,8 @@ const d: Heft = {
       "kurz": "Dein Kopf hat ein Steuerpult. Wer sitzt gerade dran?",
       "szene": {
         "bild": "peep:noah:gelangweilt",
-        "name": "Noah, 15",
-        "text": "Noah hat seit Wochen dieselbe Antwort: „Mir egal.“ Die neue Schule – egal. Dass sein Vater nicht gekommen ist – egal. Die Fünf in Mathe – egal. Abends zockt er bis drei. Als sein kleiner Bruder fragt, ob er traurig ist, fliegt der Controller an die Wand. So viel zu egal.",
+        "name": "Noah, 13",
+        "text": "Noah hat seit Wochen dieselbe Antwort: „Mir egal.“ Die neue Schule – egal. Dass sein Vater nicht gekommen ist – egal. Der verhauene Mathetest – egal. Abends zockt er bis drei. Als sein kleiner Bruder fragt, ob er traurig ist, fliegt der Controller an die Wand. So viel zu egal.",
         "frage": "Wer saß bei Noah die ganze Zeit am Steuer?"
       },
       "fakten": [
@@ -299,8 +299,8 @@ const d: Heft = {
           "x": "Derselbe Satz klingt mit Wut am Steuer anders als mit Angst. Und du **handelst** auch anders."
         },
         {
-          "t": "Kummer hat einen Job",
-          "x": "Wer nie traurig sein darf, bekommt keine Hilfe. **Kummer holt Leute zu dir.**"
+          "t": "Trauer hat einen Job",
+          "x": "Wer nie traurig sein darf, bekommt keine Hilfe. **Trauer holt Leute zu dir.**"
         }
       ],
       "mythen": [
@@ -462,7 +462,7 @@ const d: Heft = {
       "kurz": "Dein Körper meldet jedes Gefühl – meist früher als dein Kopf.",
       "szene": {
         "bild": "peep:lina:froh",
-        "name": "Lina, 16",
+        "name": "Lina, 13",
         "text": "Lina lächelt. Immer. Auch als ihre Tante sagt: „Aus dir wird nie was.“ Lina sagt: „Okay.“ Und lächelt. Ihr Magen ist ein Stein, die Hände sind eiskalt, die Zähne mahlen. Später in ihrem Zimmer zittert sie und weiß nicht, warum. Ihr Gesicht hat gelernt zu lügen. Ihr Körper nicht.",
         "frage": "Welche Signale hat Linas Körper gesendet?"
       },
@@ -518,13 +518,13 @@ const d: Heft = {
                   "Hitze",
                   "Muskeln",
                   "Schwere",
-                  "Weite"
+                  "groß, stark"
                 ],
                 "zeilen": [
                   "**1** 30 Sekunden auf der Stelle sprinten",
                   "**2** Fäuste, Kiefer, Schultern: 10 Sekunden fest",
                   "**3** 20 Sekunden Zeitlupe, Kopf hängt",
-                  "**4** 20 Sekunden Siegerpose"
+                  "**4** 20 Sekunden Arme hoch und strecken"
                 ]
               }
             },
@@ -626,12 +626,12 @@ const d: Heft = {
     },
     {
       "nr": 10,
-      "titel": "Alles gleichzeitig",
+      "titel": "Unter der Wut",
       "unter": "Froh und traurig. Wütend und verknallt. Gefühle kommen selten allein",
-      "kurz": "Gemischte Gefühle – und wie stark sie sind, von 0 bis 10.",
+      "kurz": "Gemischte Gefühle – und was unter einem wütenden Satz sitzt.",
       "szene": {
         "bild": "peep:ines:traurig",
-        "name": "Ines, 15",
+        "name": "Ines, 13",
         "text": "Ines’ Mutter hat einen neuen Freund. Sie zieht mit Ines zu ihm. Größeres Zimmer, eigener Balkon. Alle sagen: „Freu dich doch!“ Ines freut sich. Ein bisschen. Sie ist auch wütend, weil keiner sie gefragt hat. Traurig wegen ihrer Freundin im alten Haus. Und sie hat Angst, dass ihre Mutter und der Freund sich wieder trennen. Vier Gefühle. Alle echt. Alle gleichzeitig.",
         "frage": "Welches der vier ist bei Ines wohl am lautesten?"
       },
@@ -826,7 +826,7 @@ const d: Heft = {
         "r": 2
       },
       {
-        "f": "Wozu ist Kummer gut?",
+        "f": "Wozu ist Trauer gut?",
         "o": [
           "für nichts",
           "Er holt Leute zu dir.",
@@ -1013,7 +1013,7 @@ const d: Heft = {
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."
     ],
     "hot": "Es gibt keine richtige Position. Nachfragen statt korrigieren: „Was hast du erlebt, dass du dort stehst?“ Take 1 und 2 berühren Bilder von Männlichkeit – Gegenbeispiele aus Sport und Musik helfen mehr als Argumente. Take 4 ernst nehmen: Taubheit ist für manche ein vertrauter Schutz. Nicht bewerten, sondern fragen, was sie kostet. Satz 5: Eifersucht ist ein Gefühl, kein Beweis – Handy kontrollieren und Verbote sind Kontrolle, keine Liebe; Hinweise darauf später unter vier Augen aufgreifen.",
-    "achtung": "Der Fall Ines (Umzug zum neuen Freund der Mutter) kann eigene Erfahrungen berühren. Körper-Labor und Bodyscan sind freiwillig. Die Szene mit Lina (Abwertung in der Familie) nicht auf eigene Familien übertragen lassen.",
+    "achtung": "Der Fall Ines (Umzug zum neuen Freund der Mutter) kann eigene Erfahrungen berühren. Körper-Labor und Körper-Karte sind freiwillig. Die Szene mit Lina (Abwertung in der Familie) nicht auf eigene Familien übertragen lassen.",
     "hintergrund": "Gefühle haben eine Signal- und eine Handlungsfunktion (Ekman; Plutchik). Wer Gefühle differenziert benennen kann, reguliert sie leichter – deshalb der Wortschatz vor den Skills. Körperliche Muster von Emotionen sind über Kulturen hinweg ähnlich (Nummenmaa et al.); wer das erste Körpersignal bemerkt, kann eingreifen, bevor die Reaktion voll da ist (vgl. Gross). Gemischte Gefühle kommen häufig vor, besonders bei Abschieden und Übergängen (Larsen et al.). Die Idee, dass hinter Ärger oft verletzlichere Gefühle liegen, ist u. a. im Skillstraining für Jugendliche verbreitet (Rathus & Miller).",
     "quellen": "Ekman (1992) · Plutchik (2001) · Nummenmaa et al. (2014) · Gross (1998) · Larsen, McGraw & Cacioppo (2001) · Rathus & Miller (2015) · Keltner & Ekman (2015). Angaben zu den Einheiten 7–10 in der Toolbox."
   },

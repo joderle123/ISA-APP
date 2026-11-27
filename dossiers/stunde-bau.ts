@@ -22,6 +22,8 @@ export interface StundenHelfer {
   ic: (name: string) => string
   qr: (url: string) => string
   kurzlink: (url: string) => string
+  /** nur diese Material-Station als Kopiervorlage rendern (eigene Seite am Ende des PDFs) */
+  vorlage?: Station
   linien: (n: number) => string
   frage: (f: Frage, i: number) => string
   /** Mission im Annexe-Spiel zu dieser Stunde (Ticket am Ende der Stunde) */
@@ -29,14 +31,21 @@ export interface StundenHelfer {
 }
 
 /** Stationen einer Stunde in Reihenfolge (ohne Fortsetzungen) – für Fahrplan, Streifen und die Seiten der Leitung */
+/** Material der großen Runde steht seit 27.11.2026 als Kopiervorlage am Ende des PDFs: „von der nächsten Seite (ausschneiden)“ wird umgeschrieben */
+export const ohneSeite = (x: string, leitung = false) => x
+  .replace(/ von der nächsten Seite( \([^)]*\))?/g, (_, k?: string) => leitung ? ` (Kopiervorlage hinten im PDF${k && /je Paar/.test(k) ? ', je Paar' : ''})` : ' (bringt die Leitung mit)')
+  .replace(/ de la page suivante( \([^)]*\))?/g, () => leitung ? ' (modèle à copier en fin de PDF)' : ' (l’animateur les apporte)')
+
 export function stationen(e: Track): { nr: number; s: Station; seite: number }[] {
   const l: { nr: number; s: Station; seite: number }[] = []
   e.stunde?.seiten.forEach((p, k) => p.stationen.forEach((s) => { if (!s.fort) l.push({ nr: l.length + 1, s, seite: k }) }))
   return l
 }
 
-/** kurzer Name einer Station für Fahrplan und Streifen: der Teil vor dem Doppelpunkt */
-export const kurzName = (s: Station) => s.titel.split(':')[0].trim()
+/** kurzer Name einer Station für Fahrplan und Streifen: der Teil vor dem Doppelpunkt, lange Standardnamen gekürzt
+ *  (sonst schneidet der Streifen bei acht Stationen „Ankommen“ zu „Ankomme“ ab – Kritik 27.11.2026) */
+const KURZ: Record<string, string> = { 'Ankommen': 'Start', 'Arriver': 'Départ', 'Die große Runde': 'Große Runde', 'La grande ronde': 'Grande ronde', 'Der Fall': 'Fall', 'Le cas': 'Cas', 'Das Modell': 'Modell', 'Le modèle': 'Modèle', 'Zum Abschied': 'Abschied' }
+export const kurzName = (s: Station) => { const k = s.titel.split(':')[0].trim(); return KURZ[k] ?? k }
 
 export function baueStunde(e: Track, i: number, h: StundenHelfer): string[] {
   const { t, esc, figur, ic, qr, kurzlink, linien, frage } = h
@@ -67,23 +76,23 @@ export function baueStunde(e: Track, i: number, h: StundenHelfer): string[] {
       case 'spuren':
         return `<div class="sd-spuren">${b.spuren.map((s) => `<div><div class="kp"><span class="k">${esc(s.k)}</span>${ic(s.icon)}<span class="mo">${esc(s.quelle)}</span></div><p>${t(s.x)}</p></div>`).join('')}</div>${fragen(b.fragen)}`
       case 'clip':
-        return `<div class="sd-clip"><div class="clip"><div class="qr">${qr(b.clip.url)}</div><div class="tx"><div class="lab mo">${ic('player-play')}Clip · ${esc(b.clip.dauer)}</div><h3>${t(b.clip.titel)}</h3><div class="ka mo">${esc(b.clip.kanal)} · ${esc(kurzlink(b.clip.url))}</div><div class="fr2">${t(b.clip.frage)}</div></div></div>
+        return `<div class="sd-clip"><div class="clip"><div class="tx"><div class="lab mo">${ic('player-play')}Clip · ${esc(b.clip.dauer)} · ${L('die Leitung zeigt ihn', 'l’animateur le montre')}</div><h3>${t(b.clip.titel)}</h3><div class="ka mo">${esc(b.clip.kanal)}</div><div class="fr2">${t(b.clip.frage)}</div></div></div>
           <div class="drei"><div><div class="lab mo">${ic('eye')}${L('Vorher', 'Avant')}</div>${b.vorher.map(frage).join('')}</div>
             <div><div class="lab mo">${ic('pencil')}${L('Beim Schauen', 'Pendant')}</div><p class="k">${L('Schreib mit – Stichwörter reichen:', 'Note – des mots-clés suffisent :')}</p>${b.dabei.map((x) => `<div class="satz"><span>${t(x)}</span></div>${linien(1)}`).join('')}</div>
             <div><div class="lab mo">${ic('message-circle')}${L('Danach', 'Après')}</div>${b.nachher.map(frage).join('')}</div></div></div>`
       case 'fragen':
         return `${b.kontext ? `<p class="sd-kon">${t(b.kontext)}</p>` : ''}${fragen(b.fragen)}`
       case 'aktion':
-        return `<div class="sd-akt"><div class="ziel"><span class="mo">${L('Ziel', 'But')}</span><span>${t(b.ziel)}</span></div><div class="ziel"><span class="mo">${L('Material', 'Matériel')}</span><span>${t(b.material)}</span></div>
+        return `<div class="sd-akt"><div class="ziel"><span class="mo">${L('Ziel', 'But')}</span><span>${t(b.ziel)}</span></div><div class="ziel"><span class="mo">${L('Material', 'Matériel')}</span><span>${t(ohneSeite(b.material))}</span></div>
           <ol>${b.schritte.map((x) => `<li><span>${t(x)}</span></li>`).join('')}</ol>
           ${b.runden ? `<div class="runden">${b.runden.map((r) => `<div><b class="mo">${esc(r.t)}</b><span>${t(r.x)}</span></div>`).join('')}</div>` : ''}
           ${b.regeln ? `<div class="regeln">${b.regeln.map((x) => `<div>${ic('shield-check')}<span>${t(x)}</span></div>`).join('')}</div>` : ''}
-          ${b.zu3 ? `<p class="z3"><b class="mo">${L('Zu dritt', 'À trois')}</b> ${t(b.zu3)}</p>` : ''}
+          ${b.zu3 && !/^(Genauso|Pareil)\.?$/.test(b.zu3.trim()) ? `<p class="z3"><b class="mo">${L('Zu dritt', 'À trois')}</b> ${t(b.zu3)}</p>` : ''}
           ${b.wertung ? `<table class="sd-tab wert"><tr>${b.wertung.kopf.map((x) => `<th>${t(x)}</th>`).join('')}</tr>${b.wertung.zeilen.map((z) => `<tr><td>${t(z)}</td>${b.wertung!.kopf.slice(1).map(() => '<td></td>').join('')}</tr>`).join('')}</table>` : ''}
           ${b.notiz ? `<div class="not"><b>${t(b.notiz.titel)}</b>${linien(b.notiz.linien)}</div>` : ''}
           ${b.auswertung ? `<div class="aus"><div class="mo">${ic('messages')}${L('Auswertung im Kreis', 'Bilan en cercle')}</div>${b.auswertung.map((x) => `<p>${t(x)}</p>`).join('')}</div>` : ''}</div>`
       case 'karten':
-        return `${b.hinweis ? `<p class="sd-kon sch">${ic('scissors')}<span>${t(b.hinweis)}</span></p>` : ''}<div class="sd-karten" style="grid-template-columns:repeat(${b.spalten},1fr)${b.hoehe ? `;--kh:${b.hoehe}mm` : ''}">${b.karten.map((k) => `<div class="${b.wort ? 'wort' : ''}">${b.wort ? emoji(k.t) : ''}<b>${t(k.t)}</b>${k.x ? `<span>${t(k.x)}</span>` : ''}${k.marke ? `<i class="mo">${esc(k.marke)}</i>` : ''}</div>`).join('')}</div>`
+        return `${b.hinweis ? `<p class="sd-kon sch">${ic('scissors')}<span>${t(b.hinweis)}</span></p>` : ''}<div class="sd-karten" style="grid-template-columns:repeat(${b.spalten},1fr)${b.hoehe ? `;--kh:${b.hoehe + (b.wort && b.karten.some((k) => emoji(k.t)) ? 9 : 0)}mm` : ''}">${b.karten.map((k) => `<div class="${b.wort ? 'wort' : ''}">${b.wort ? emoji(k.t) : ''}<b>${t(k.t)}</b>${k.x ? `<span>${t(k.x)}</span>` : ''}${k.marke ? `<i class="mo">${esc(k.marke)}</i>` : ''}</div>`).join('')}</div>`
       case 'tabelle':
         return `<table class="sd-tab"${b.breiten ? ` style="--br:${b.breiten}"` : ''}>${b.breiten ? `<colgroup>${b.breiten.split(' ').map((w) => `<col style="width:${w}">`).join('')}</colgroup>` : ''}<tr>${b.kopf.map((x) => `<th>${t(x)}</th>`).join('')}</tr>${b.zeilen.map((z) => `<tr${b.hoehe ? ` style="height:${b.hoehe}mm"` : ''}>${z.map((x) => `<td>${t(x)}</td>`).join('')}</tr>`).join('')}</table>`
       case 'menue':
@@ -101,9 +110,9 @@ export function baueStunde(e: Track, i: number, h: StundenHelfer): string[] {
   const station = (s: Station): string => {
     if (!s.fort) lauf++
     fn = 0
-    // Material gehört zur großen Runde: die Nummer wird hier ausgerechnet, nicht von Hand gepflegt
-    const runde = alle.find((x) => /^(Die große Runde|La grande ronde)/.test(x.s.titel))
-    const wie = s.fort && /^(Material|Matériel)/.test(s.titel) && runde ? s.wie.replace(/zu Station \d+/, `zu Station ${runde.nr}`).replace(/pour la station \d+/, `pour la station ${runde.nr}`) : s.wie
+    // Material: die Nummer steht von Hand an der Station (tmp/rt-regeln.ts prüft sie). Bis 27.11.2026 wurde automatisch die
+    // erste große Runde eingesetzt – falsch, wenn die Karten schon vorher gebraucht werden (#00 Stunde 2, #04 Stunde 1).
+    const wie = s.wie
     return `<div class="sd-st${s.fort ? ' fort' : ''}"><div class="kp"><div class="b">${s.fort ? ic(s.icon) : lauf}</div><h3>${t(s.titel)}</h3><div class="me mo"><span>${ic(s.fort ? 'paperclip' : s.icon)}${esc(wie)}</span>${s.zeit ? `<span>${esc(s.zeit)}</span>` : ''}</div></div><div class="kb">${s.bausteine.map(baustein).join('')}</div></div>`
   }
   /** Streifen: alle Stationen der Stunde, die dieser Seite hervorgehoben */
@@ -114,10 +123,14 @@ export function baueStunde(e: Track, i: number, h: StundenHelfer): string[] {
   const ticket = m ? `<div class="sd-mission"><div class="l"><div class="lab mo">${ic('device-gamepad-2')}${L('Im Spiel weiter · Mission', 'Suite dans le jeu · Mission')}</div><h3>${t(m.titel)}</h3><p>${t(m.kurz)}</p>
     <div class="meta mo"><span>${ic('map-pin')}${esc(m.ort)}</span><span>${ic('gift')}${esc(m.belohnung)}</span></div></div>
     <div class="r"><div class="qr">${qr('ANNEXE:' + m.code)}</div><div class="code mo">${esc(m.code)}</div><div class="hn mo">${L('In der Annexe-App: Code eingeben', 'Dans l’app Annexe : taper le code')}</div></div></div>` : ''
+  if (h.vorlage) {
+    // Kopiervorlage: eine Seite am Ende des PDFs, einseitig gedruckt – auf der Rückseite liegt nie eine Station
+    return [`<div><div class="sd-kopf kv"><div><span class="mo">${L('Kopiervorlage', 'Modèle à copier')} · ${L('Stunde', 'Séance')} ${z2(i + 1)}</span><b class="an">${t(e.titel)}</b></div><div class="kvh mo">${ic('printer')}${L('einseitig drucken · die Leitung schneidet vorher aus', 'imprimer en recto seul · l’animateur découpe avant')}</div></div><div class="inhalt sd">${station(h.vorlage)}</div></div>`]
+  }
   return st.seiten.map((p, k) => {
     const kopf = k === 0
       ? `<div class="th sd-th"><div class="znr">${z2(i + 1)}</div><div class="lab mo">${L('Stunde', 'Séance')} ${z2(i + 1)} · ${esc(st.dauer)}</div><h1 class="an${e.titel.length > 15 ? ' kl' : ''}">${t(e.titel)}</h1><div class="ut">${t(st.frage)}</div></div>
-         <div class="sd-plan"><div class="kann"><span class="mo">${L('Am Ende kannst du', 'À la fin, tu sais')}</span>${st.kannst.map((x) => `<span>${ic('check')}${t(x)}</span>`).join('')}</div>
+         <div class="sd-plan"><div class="kann"><span class="mo">${L('Darum geht’s heute', 'Aujourd’hui')}</span>${st.kannst.map((x) => `<span>${ic('check')}${t(x)}</span>`).join('')}</div>
            <div class="weg">${alle.map((x) => `<div><i>${x.nr}</i><b>${esc(kurzName(x.s))}</b><span class="mo">${esc(x.s.zeit)}</span></div>`).join('')}</div></div>`
       : `<div class="sd-kopf"><div><span class="mo">${L('Stunde', 'Séance')} ${z2(i + 1)}</span><b class="an">${t(e.titel)}</b></div>${streifen(k)}</div>`
     return `<div>${kopf}<div class="inhalt sd${k === 0 ? ' eins' : ''}">${p.stationen.map(station).join('')}${k === st.seiten.length - 1 ? ticket : ''}</div></div>`

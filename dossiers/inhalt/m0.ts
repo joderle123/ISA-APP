@@ -56,23 +56,23 @@ const d: Heft = {
   "cast": [
     {
       "bild": "peep:tom:neutral",
-      "name": "Tom, 14",
+      "name": "Tom, 12",
       "x": "Dritte Schule in zwei Jahren. Setzt sich immer an die Tür."
     },
     {
       "bild": "peep:chloe:neutral",
-      "name": "Chloé, 16",
+      "name": "Chloé, 12",
       "x": "Sagt in neuen Gruppen drei Wochen nichts. Beobachtet alles."
     },
     {
       "bild": "peep:finn:froh",
-      "name": "Finn, 15",
+      "name": "Finn, 13",
       "x": "Testet jede neue Gruppe: Wer hält was aus?"
     },
     {
       "bild": "peep:jana:froh",
-      "name": "Jana, 15",
-      "x": "Neu in der Wohngruppe. Redet viel, damit keiner fragt."
+      "name": "Jana, 13",
+      "x": "Neu in der Klasse. Redet viel, damit keiner fragt."
     }
   ],
   "warm": {
@@ -105,14 +105,14 @@ const d: Heft = {
       "kurz": "Welche Regeln ihr braucht – und was hier vertraulich bleibt.",
       "szene": {
         "bild": "peep:tom:neutral",
-        "name": "Tom, 14",
+        "name": "Tom, 12",
         "text": "Erster Tag, neue Gruppe. Tom setzt sich auf den Stuhl an der Tür, Jacke an, Rucksack auf dem Schoß. Er kennt das: wieder ein Kreis, wieder jemand, der sagt, hier könne man über alles reden. In der letzten Gruppe hat er einmal etwas erzählt. Am nächsten Tag wusste es der ganze Flur. Seitdem hat Tom eine Regel: nichts sagen, schnell wieder weg.",
         "frage": "Was müsste hier gelten, damit Tom die Jacke auszieht?"
       },
       "fakten": [
         {
-          "t": "Regeln schützen",
-          "x": "Nicht die Lauten, sondern alle. **Ohne Regeln gewinnt, wer am meisten Angst macht.**"
+          "t": "Lachen ja, auslachen nein",
+          "x": "Wer lacht, lacht mit – nie über jemanden. **Ohne diese Regel gewinnt, wer am meisten Angst macht.**"
         },
         {
           "t": "Was hier bleibt",
@@ -267,7 +267,7 @@ const d: Heft = {
       "kurz": "Die anderen kennenlernen – ohne dein Leben zu erzählen.",
       "szene": {
         "bild": "peep:chloe:neutral",
-        "name": "Chloé, 16",
+        "name": "Chloé, 12",
         "text": "Chloé sagt in neuen Gruppen sonst drei Wochen lang nichts. Sie beobachtet: Wer redet wie? Wer lacht über wen? Wer ist gefährlich? Diesmal fragt die Leitung schon am vierten Tag: „Wer ist schon mal in den falschen Bus gestiegen?“ Wer das kennt, soll einen Schritt nach vorn machen. Chloé macht einen Schritt nach vorn. Neben ihr steht der Laute mit der Kappe. Er grinst: „Auch Linie 12?“ Zum ersten Mal lacht Chloé.",
         "frage": "Warum war gerade diese Frage ein guter Anfang?"
       },
@@ -285,13 +285,6 @@ const d: Heft = {
           "x": "Wer fragt und einmal nachhakt, zeigt: Du interessierst mich. Mehr braucht es am Anfang nicht."
         }
       ],
-      "clip": {
-        "titel": "So stoppst du dein Schubladendenken – das Sozialexperiment",
-        "kanal": "Terra Xplore",
-        "url": "https://www.youtube.com/watch?v=e-DBi8d4UAM",
-        "dauer": "00:00 bis 05:10 – vorher selbst ansehen (siehe Leitung)",
-        "frage": "„In eine Schublade stecken“ heißt: nach einem Blick denken, wie jemand ist. Was steckt hinter der Schublade?"
-      },
       "mythen": [
         [
           "Der erste Eindruck stimmt immer.",
@@ -306,7 +299,7 @@ const d: Heft = {
           "Manche schauen erst zu. Das ist Vorsicht, keine Ablehnung."
         ]
       ],
-      "merk": "Gib jedem ==eine zweite Runde.==",
+      "merk": "Eine kleine Frage. ==Einmal nachhaken.==",
       "moveUnter": "Finde heraus, wer hier sitzt",
       "moves": [
         {
@@ -435,7 +428,7 @@ const d: Heft = {
       "kurz": "Was diese Gruppe braucht, damit sie funktioniert.",
       "szene": {
         "bild": "peep:finn:froh",
-        "name": "Finn, 15",
+        "name": "Finn, 13",
         "text": "Finn testet jede neue Gruppe. Am dritten Tag lotst er Jana durch den Hof. Sie hat freiwillig die Augen zu. Er könnte sie gegen die Bank laufen lassen – wäre ein Lacher. Jana sagt leise: „Ich hab Schiss. Sag mir einfach ehrlich, wo es langgeht.“ Finn schaut auf die Bank. Dann sagt er: „Zwei Schritte geradeaus. Stopp. Jetzt links.“ Jana kommt an, ohne einmal zu stolpern. Finn ist seltsam stolz.",
         "frage": "Was hat Finn in diesem Moment entschieden?"
       },
@@ -453,13 +446,6 @@ const d: Heft = {
           "x": "Sagt jemand Stopp, ist Schluss. Ohne Begründung. **Das macht Vertrauen erst möglich.**"
         }
       ],
-      "clip": {
-        "titel": "Mobbing-Experiment: So schnell wird man zum Außenseiter",
-        "kanal": "Quarks",
-        "url": "https://www.youtube.com/watch?v=oG73p5RlKNw",
-        "dauer": "ganz, gut 4 Min. (00:00 bis 04:05)",
-        "frage": "Wie schnell entsteht ein „Wir“ und ein „Die“ – und was hält dagegen?"
-      },
       "mythen": [
         [
           "Ein Team braucht einen Boss.",
@@ -638,11 +624,11 @@ const d: Heft = {
         "r": 2
       },
       {
-        "f": "Wie schnell urteilt der Kopf über Fremde?",
+        "f": "Was geht immer – auch am ersten Tag?",
         "o": [
-          "in Sekunden",
-          "in Wochen",
-          "gar nicht"
+          "eine grüne Frage",
+          "eine rote Frage",
+          "gar keine Frage"
         ],
         "r": 0
       },
@@ -755,11 +741,11 @@ const d: Heft = {
       "titel": "Hilfe",
       "icon": "lifebuoy",
       "zeilen": [
-        "Wird etwas zu viel: zur Leitung gehen.",
+        "Wird etwas zu viel: zur Leitung oder zum SePAS gehen.",
         "Kanner-Jugendtelefon **116 111**",
         "Notruf **112**"
       ],
-      "eigen": "Mein Mensch hier im Haus:"
+      "eigen": "Mein Mensch in der Schule:"
     }
   ],
   "abspann": {
@@ -802,17 +788,17 @@ const d: Heft = {
       "Sie finden Gemeinsamkeiten mit anderen, ohne Persönliches preisgeben zu müssen.",
       "Sie übernehmen in einer Vertrauensübung Verantwortung für eine andere Person und benennen, was sie selbst in der Gruppe brauchen."
     ],
-    "start": "Titel und Ansage gemeinsam lesen (vorlesen – der Ton ist Absicht), Namen ins Heft, Soundcheck. Etwa 10 Minuten vor Station 1 von Stunde 01.",
+    "start": "Titel und Ansage gemeinsam lesen (vorlesen – der Ton ist Absicht), Namen ins Heft. Etwa 10 Minuten vor Station 1 von Stunde 01 – dafür sind Ball-Rekord und Modell kurz.",
     "schluss": "Hot Takes: zwei Sätze statt „Ankommen“ (5 Min., gleiche Zeit) – oder alle sechs im Stehen, wenn eine Stunde früher fertig ist, „Knack den Code“ als Wiederholung, Karten ausschneiden – „Unsere Regeln“ zuerst –, Abspann in der Abschlussrunde von Einheit 3.",
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
       "Bei Schreibaufgaben reicht ein Stichwort.",
-      "Wer nicht herumgehen mag (Bingo), bleibt sitzen und wird gefragt.",
+      "Wer nicht auf die Linie mag, bleibt sitzen und hebt die Hand.",
       "Blind-Übungen: Augen schließen statt Augenbinde, oder nur lotsen."
     ],
     "forder": [
       "Die Regeln der Gruppe als Plakat gestalten.",
-      "Eine eigene „Alle, die …“-Runde anleiten.",
+      "Eine eigene Runde „Ein Schritt nach vorn“ mit harmlosen Sätzen anleiten.",
       "Drei Leute mit je einer Frage interviewen und einen gemeinsamen Treffer finden.",
       "Eine neue Team-Aufgabe für draußen erfinden."
     ],
@@ -834,4 +820,6 @@ const d: Heft = {
 // Fassung mit Stunden (16.11.2026): Die Einheiten sind zusammenhängende Stunden (m0-stunden.ts). Die Angaben oben bleiben als Quelle;
 // gedruckt werden die Stunden.
 aufStunden(d, stunden(d), { geprueft: '16.11.2026', loesungen })
+d.tracks[0].leitung.material = 'weicher Ball, Stoppuhr, Zettel für „Weiter“; ' + d.tracks[0].leitung.material
+d.tracks[1].leitung.material = 'Klebeband für die Linie; ' + d.tracks[1].leitung.material
 export default d

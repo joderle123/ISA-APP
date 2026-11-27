@@ -19,7 +19,7 @@ const d: Heft = {
       "Durchdrücken, nachgeben, abtauchen: Wie streitest du?",
       "„Oder hast du Schiss?“ – drei Sekunden Gruppendruck",
       "Einmal geklickt: Was Zuschauer anrichten",
-      "Vier Arten, Nein zu sagen – eine passt zu dir"
+      "Ein Nein, das hält – und einer reicht"
     ]
   },
   "ansage": {
@@ -56,22 +56,22 @@ const d: Heft = {
   "cast": [
     {
       "bild": "peep:finn:wuetend",
-      "name": "Finn, 15",
+      "name": "Finn, 13",
       "x": "Will jeden Streit gewinnen. Hat danach meistens einen Freund weniger."
     },
     {
       "bild": "peep:lina:froh",
-      "name": "Lina, 16",
+      "name": "Lina, 13",
       "x": "Gibt immer nach, damit Ruhe ist. Die Wut hebt sie für später auf."
     },
     {
       "bild": "peep:ben:besorgt",
-      "name": "Ben, 15",
+      "name": "Ben, 12",
       "x": "Wollte nie klauen. Wollte nur nicht der Einzige sein, der Nein sagt."
     },
     {
       "bild": "peep:noah:neutral",
-      "name": "Noah, 15",
+      "name": "Noah, 13",
       "x": "Hat einen Clip weitergeleitet. Fand ihn lustig. Bis er ihr Gesicht gesehen hat."
     }
   ],
@@ -107,7 +107,7 @@ const d: Heft = {
       "kurz": "Wie du streitest – und wie ein Streit gut ausgeht.",
       "szene": {
         "bild": "peep:finn:wuetend",
-        "name": "Finn, 15",
+        "name": "Finn, 13",
         "text": "Finn und Lina sollen zusammen ein Plakat machen. Finn hat eine Idee und zieht sie durch. Lina sagt dreimal: „Können wir nicht …?“ Dreimal sagt Finn: „Nee, so ist besser.“ Lina zuckt die Schultern: „Mach halt.“ Am Tag der Abgabe fehlt Linas Teil. „Hab ich vergessen“, sagt sie und lächelt. Finn tobt. Lina ist auch wütend – nur leiser, und schon seit drei Wochen.",
         "frage": "Wer hat diesen Streit gebaut: Finn, der durchdrückt – oder Lina, die nachgibt?"
       },
@@ -126,13 +126,6 @@ const d: Heft = {
           "x": "Die **Eule** fragt: Was brauchst du, was brauche ich? Sie sucht die Lösung, mit der **beide** leben können."
         }
       ],
-      "clip": {
-        "titel": "Die 9 Konfliktstufen nach Friedrich Glasl",
-        "kanal": "Simon Josef Eckert",
-        "url": "https://www.youtube.com/watch?v=Sfc9f2Ubr_E",
-        "dauer": "die ersten 5 Min.",
-        "frage": "Im Video führt die Treppe in den Streit hinein. Auf welcher Stufe standen Finn und Lina?"
-      },
       "mythen": [
         [
           "Der Klügere gibt nach.",
@@ -209,7 +202,7 @@ const d: Heft = {
         "x": "Welches Tier warst du? Und welches wärst du gern gewesen?",
         "linien": 1
       },
-      "woche": "Beobachte einen Streit – bei dir, in der Pause oder in einer Serie. **Welche Tiere siehst du? Welche Stufe fehlt?**",
+      "woche": "Beobachte einen Streit – bei dir, in der Pause oder in einer Serie. **Welche Tiere siehst du? Wo wäre der billigste Stopp gewesen?**",
       "gruppe": [
         {
           "titel": "Über die Linie",
@@ -259,11 +252,11 @@ const d: Heft = {
       "nr": 25,
       "titel": "Alle machen mit",
       "unter": "Gruppendruck ist selten laut. Meistens ist er nur ein Blick",
-      "kurz": "Warum man mitmacht, obwohl man nicht will – und vier Arten Nein.",
+      "kurz": "Warum man mitmacht, obwohl man nicht will – und ein Nein, das hält.",
       "szene": {
         "bild": "peep:ben:besorgt",
-        "name": "Ben, 15",
-        "text": "Samstag, Einkaufszentrum. Die anderen stecken Sachen ein. Einer hält Ben einen Kopfhörer hin: „Na los. Oder hast du Schiss?“ Niemand zwingt ihn. Alle schauen. Bens Herz hämmert. Er will nicht klauen. Er will aber noch weniger der sein, über den sie später lachen. Ben steckt ihn ein. Am Ausgang piept es. Die Kopfhörer kosten 19,99. Die Anzeige bei der Polizei kostet ihn den Praktikumsplatz.",
+        "name": "Ben, 12",
+        "text": "Samstag, Einkaufszentrum. Die anderen stecken Sachen ein. Einer hält Ben einen Kopfhörer hin: „Na los. Oder hast du Schiss?“ Niemand zwingt ihn. Alle schauen. Bens Herz hämmert. Er will nicht klauen. Er will aber noch weniger der sein, über den sie später lachen. Ben steckt ihn ein. Am Ausgang piept es. Die Kopfhörer kosten 19,99. Der Ladendetektiv ruft seine Mutter an.",
         "frage": "Was hätte Ben in diesen drei Sekunden gebraucht?"
       },
       "fakten": [
@@ -285,7 +278,7 @@ const d: Heft = {
         "kanal": "Quarks",
         "url": "https://www.youtube.com/watch?v=I40g6U3K7hc",
         "dauer": "die ersten 5 Min.",
-        "frage": "Warum sagen Leute im Experiment etwas, das sie selbst für falsch halten?"
+        "frage": "Asch hat getestet, ob Leute bei einer falschen Antwort der Gruppe mitmachen. Warum sagen sie etwas, das sie selbst für falsch halten?"
       },
       "mythen": [
         [
@@ -404,7 +397,7 @@ const d: Heft = {
           "Move B: Mitmachen bringt kurz Zugehörigkeit und kostet die Anzeige. Ein klares Nein kostet einen peinlichen Moment und bringt Respekt – oder zeigt, wer kein Freund ist."
         ],
         "impulse": [
-          "Wann habt ihr zuletzt mitgemacht, obwohl ihr nicht wolltet? Ein Stichwort reicht.",
+          "Was hätte Ben in den drei Sekunden geholfen?",
           "Was braucht man, um als Erster Nein zu sagen?"
         ],
         "material": "Drängel-Karten, Würfel, drei Zonen am Boden",
@@ -418,7 +411,7 @@ const d: Heft = {
       "kurz": "Spaß, Streit oder Mobbing? Und was Zuschauer tun können.",
       "szene": {
         "bild": "peep:noah:besorgt",
-        "name": "Noah, 15",
+        "name": "Noah, 13",
         "text": "Lea schickt eine Sprachnachricht in den Klassenchat. Ihre Stimme zittert. Einer macht daraus einen Clip mit Quietschgeräuschen. Noah findet ihn lustig und leitet ihn weiter: zwei Gruppen, ein Klick. Am Montag sitzt Lea nicht in der Kantine. Am Dienstag auch nicht. Am Mittwoch sieht Noah sie auf der Treppe, allein, mit dem Brot in der Hand. Er hat nichts gegen Lea. Er hat nur einmal geklickt.",
         "frage": "Welche Rolle spielt Noah in dieser Geschichte?"
       },
@@ -612,13 +605,13 @@ const d: Heft = {
         "r": 1
       },
       {
-        "f": "Die erste Stufe der Treppe?",
+        "f": "Je früher man einen Streit stoppt, desto …",
         "o": [
-          "Lösungen sammeln",
-          "einigen",
-          "Stopp und runterkommen"
+          "lauter",
+          "billiger",
+          "teurer"
         ],
-        "r": 2
+        "r": 1
       },
       {
         "f": "Wer immer nachgibt, …",
@@ -648,13 +641,13 @@ const d: Heft = {
         "r": 2
       },
       {
-        "f": "Die „Dauerschleife“ heißt:",
+        "f": "Welches Nein hält am längsten?",
         "o": [
-          "denselben Satz ruhig wiederholen",
-          "laut Musik hören",
-          "weglaufen"
+          "eine lange Erklärung",
+          "lachen",
+          "„Nee.“"
         ],
-        "r": 0
+        "r": 2
       },
       {
         "f": "Was gehört zu Mobbing?",
@@ -675,11 +668,11 @@ const d: Heft = {
         "r": 2
       },
       {
-        "f": "Die erste Stufe der Zivilcourage-Leiter?",
+        "f": "Die kleinste Hilfe für Lea?",
         "o": [
-          "nicht mitlachen, nichts weiterleiten",
-          "sich prügeln",
-          "den Täter filmen"
+          "privat: „Alles ok?“",
+          "den Täter filmen",
+          "mitlachen"
         ],
         "r": 0
       }
@@ -687,22 +680,21 @@ const d: Heft = {
   },
   "karten": [
     {
-      "titel": "Konflikt-Treppe",
-      "icon": "stairs-up",
+      "titel": "Streit in Zeitlupe",
+      "icon": "player-pause",
       "zeilen": [
-        "**1** Stopp – Anspannung runter unter 70 (von 100)",
-        "**2** Ich-Satz",
-        "**3** Zuhören, zusammenfassen",
-        "**4** Lösungen sammeln · **5** einigen"
+        "Früh stoppen ist **billig**.",
+        "Eulen-Satz: „Was ist dir daran wichtig?“",
+        "Oder: „Ich bin sauer. Kurz Pause.“"
       ]
     },
     {
-      "titel": "Vier Arten Nein",
+      "titel": "Ein Nein, das hält",
       "icon": "ban",
       "zeilen": [
-        "**Dauerschleife:** denselben Satz wiederholen",
-        "**Nein plus Vorschlag**",
-        "**Mit Humor** · **Einfach gehen**"
+        "Kurz. Ohne Begründung: **„Nee.“**",
+        "Gehen ist auch ein Nein.",
+        "Einer reicht – dann wird es für alle leichter."
       ],
       "eigen": "Mein Nein-Satz:"
     },
@@ -749,7 +741,7 @@ const d: Heft = {
   "abspann": {
     "posten": [
       "Mein Streit-Tier kennen",
-      "Die Treppe gehen",
+      "Früh stoppen",
       "Nein sagen",
       "Mobbing erkennen",
       "Nicht mitlachen"
@@ -781,24 +773,24 @@ const d: Heft = {
     ],
     "wozu": "REAL TALK ist das Heft der Jugendlichen zu Modul 6 – gemacht wie ein Magazin, nicht wie ein Arbeitsblatt. Diese Ausgabe zeigt bewusst beide Seiten: den, der durchdrückt, die, die nachgibt, den, der mitmacht, den, der weiterleitet. Viele Jugendliche der Zielgruppe kennen mehr als eine Rolle. Das Heft verurteilt nicht; es lässt die Rechnung aufmachen.",
     "lernziele": [
-      "Die Jugendlichen kennen fünf Konfliktstile, schätzen den eigenen ein und gehen die fünf Stufen der Konflikt-Treppe.",
-      "Sie beschreiben, wie Gruppendruck wirkt, und nutzen eine von vier Arten, Nein zu sagen.",
-      "Sie unterscheiden Spaß, Konflikt und Mobbing anhand von vier Merkmalen.",
-      "Sie kennen die Rollen der Zuschauenden und wählen eine sichere Stufe der Zivilcourage-Leiter."
+      "Die Jugendlichen kennen fünf Arten zu streiten, schätzen die eigene ein und finden die Stelle, an der ein Streit billig zu stoppen ist.",
+      "Sie beschreiben, wie Gruppendruck wirkt, und wählen ein kurzes Nein, das zu ihnen passt.",
+      "Sie unterscheiden Spaß, Streit und Mobbing anhand von vier Merkmalen.",
+      "Sie sehen, wie jeder Klick die Bühne größer oder kleiner macht, und kennen die kleinste Hilfe, die sie wirklich leisten würden."
     ],
     "start": "Titel, Ansage (vorlesen – der Ton ist Absicht), Tracklist und Soundcheck. Etwa 10 Minuten, z. B. in der Brücke von Einheit 24.",
     "schluss": "Hot Takes: zwei Sätze statt „Ankommen“ (5 Min., gleiche Zeit) – oder alle sechs im Stehen, wenn eine Stunde früher fertig ist, „Knack den Code“ als Wiederholung, Karten ausschneiden, Abspann in der Abschlussrunde von Einheit 26.",
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
       "Die fünf Tiere als Schilder im Raum lassen – zum Zeigen.",
-      "Bei der „Rechnung“ zu zweit arbeiten und mündlich antworten lassen.",
-      "Wer nicht spielen mag, ist Jury oder stoppt die Zeit."
+      "Wer nicht spielen mag, ist Jury oder stoppt die Zeit.",
+      "Die Handlungen in Stunde 3 nur im Heft ankreuzen – niemand muss Karten ausschneiden."
     ],
     "forder": [
-      "Eine Streit-Szene aus einer Serie mit Tieren und Treppen-Stufen analysieren.",
-      "Eine eigene Drängel-Karte schreiben und im Nein-Baukasten einsetzen.",
+      "Eine Streit-Szene aus einer Serie in Zeitlupe anschauen: Wo wäre der billigste Stopp gewesen?",
+      "Eine eigene Drängel-Karte schreiben und ein Nein dazulegen, das hält.",
       "Für die Geschichte von Lea ein anderes Ende schreiben – ab dem Moment des Clips.",
-      "Die Zivilcourage-Leiter als Plakat für den Gruppenraum gestalten."
+      "Die kleinste Hilfe als Plakat für den Gruppenraum gestalten."
     ],
     "gespraech": "Konflikte zwischen Gruppenmitgliedern werden nicht im Rollenspiel nachgespielt und nicht im Plenum verhandelt; dafür ein begleitetes Gespräch außerhalb der Einheit anbieten. Mobbing kann in der Gruppe selbst vorkommen – bei Betroffenen, Tätern und Zuschauenden. Niemanden nach eigenen Erfahrungen fragen. Erzählt jemand von aktuellem Mobbing oder von Straftaten, das Gespräch unter vier Augen führen und die zuständige Leitung (Responsable) einbeziehen.",
     "druck": [

@@ -1,207 +1,178 @@
-// REAL TALK #06 · ÄRGER – drei Einheiten als zusammenhängende Stunden (16.11.2026).
-// Kein Streit wird nachgespielt: Reaktionen werden gelegt, Antworten geschrieben, Handlungen sortiert.
-// Stunde 1 beginnt mit einem Versuch an der Linie, Stunde 2 mit dem Schwarm, Stunde 3 mit einer Zeitleiste.
-// Neu im Sweet Spot (24.11.2026): „Kennst du das?“, Sprechblasen nach jedem Fall, Modelle mit einfacher Übung, mehr
-// Clip-Fragen, große Runden ohne Punkte und ohne Teams gegeneinander, je ein Beispiel „So kann es klingen“.
+// REAL TALK #06 · ÄRGER – drei Stunden (Umbau 27.11.2026 nach fünf jugendlichen Kritikern).
+// Kein Streit wird nachgespielt, niemand liest vor der Gruppe vor: Es wird gelegt, verdeckt gewählt und gleichzeitig aufgedeckt.
+// Stunde 1: Streit in Zeitlupe – die Plakat-Geschichte als Karten, an jeder Stopp-Stelle ein Eulen-Satz (ohne Glasl-Clip,
+// ohne Treppe mit Fachwörtern, ohne zweiten Ich-Satz). Stunde 2: Nein-Karten – verdeckt legen, gleichzeitig aufdecken,
+// „Einer reicht“ (statt 40 Sekunden schreiben und vorlesen). Stunde 3: der Klassenchat in Zeitlupe – Münzen zeigen,
+// wie jeder Klick die Bühne für Lea größer oder kleiner macht. Alle Figuren sind 12–13.
 import type { Frage, Heft, Stunde } from '../typen'
-import { ankommen, beispiel, clip, fall, fragen, fuerDich, karten, kennstDu, kreuz, kreuzU, material, modell, raster, reden, runde, satz, schluss, seite, st, stimmtDas, stunde, strich, text, verbinden, weiter } from './stunden-hilfe'
+import { ankommen, beispiel, clip, fall, fragen, karten, kennstDu, kreuz, kreuzU, material, raster, reden, runde, satz, schluss, seite, st, strich, stunde, text, weiter, pause } from './stunden-hilfe'
 
 const kreis = (f: string, ...l: string[]): Frage => ({ f, kreis: l })
 
 export function stunden(d: Heft): Stunde[] {
   const [hai, alle, zuschauer] = d.tracks
+  delete hai.clip
 
-  /* ---------- Stunde 1 · Hai oder Eule ---------- */
-  const REAKTIONEN: [string, string][] = [
-    ['„So wird es gemacht. Punkt.“', 'Hai'], ['„Wenn du nicht mitmachst, bist du raus.“', 'Hai'], ['lauter werden, bis der andere aufgibt', 'Hai'],
-    ['„Mir egal.“', 'Schildkröte'], ['weggehen und nicht mehr antworten', 'Schildkröte'], ['so tun, als wäre nichts', 'Schildkröte'],
-    ['„Okay, dann machen wir es wie du.“', 'Chamäleon'], ['„Hauptsache, kein Streit.“', 'Chamäleon'], ['Ja sagen und Nein meinen', 'Chamäleon'],
-    ['„Du die Hälfte, ich die Hälfte.“', 'Fuchs'], ['„Heute du, morgen ich.“', 'Fuchs'], ['„Jeder gibt ein bisschen nach.“', 'Fuchs'],
-    ['„Was ist dir daran wichtig?“', 'Eule'], ['„Wir suchen etwas, das für beide passt.“', 'Eule'], ['„Ich sage, was ich brauche. Dann du.“', 'Eule'],
-  ]
-  const s1 = stunde('Wie streitest du – und wie kommst du wieder raus?', ['fünf Arten zu streiten erkennen', 'sagen, welches Tier in dir am stärksten ist', 'die fünf Stufen aus einem Streit heraus ordnen'],
+  /* ---------- Stunde 1 · Streit in Zeitlupe ---------- */
+  const TIERE: [string, string][] = [['Hai', 'drückt durch'], ['Schildkröte', 'zieht sich zurück'], ['Chamäleon', 'gibt nach'], ['Fuchs', 'handelt'], ['Eule', 'sucht etwas für beide']]
+  const PLAKAT = ['Woche 1 · Lina: „Können wir nicht die Fotos groß machen?“', 'Woche 1 · Finn: „Nee, so ist besser.“', 'Woche 2 · Lina: „Können wir nicht noch Farbe …?“', 'Woche 2 · Finn: „Nee. Vertrau mir.“', 'Woche 3 · Lina: „Können wir nicht …?“', 'Woche 3 · Finn: „Nee, so ist besser.“ – Lina: „Mach halt.“', 'Abgabe · Finn: „Wo ist dein Teil?“', 'Abgabe · Lina lächelt: „Hab ich vergessen.“']
+  const EULE = ['„Was ist dir daran wichtig?“', '„Beides aufs Plakat?“', '„Du die Überschrift, ich die Bilder?“', '„Ich bin sauer. Kurz Pause.“', '„Sag du zuerst.“', '„Was wäre für dich okay?“']
+  const s1 = stunde('Wie streitest du – und wo kippt ein Streit?', ['fünf Arten zu streiten erkennen', 'die Stelle finden, an der ein Streit kippt', 'einen Eulen-Satz wählen'],
     seite(
       ankommen('du im Streit', kreuz('Was machst du im Streit am ehesten?', 'durchdrücken', 'nachgeben', 'abhauen', 'verhandeln'), kreuz('Muss man einen Streit gewinnen?', 'ja', 'nein', 'kommt darauf an')),
-      st('Erst machen: über die Linie', '6 Min.', 'zu zweit · alle gleichzeitig', 'line-dashed', 'Alle Paare gleichzeitig; bei ungerader Zahl spielt die Leitung mit. Die Lösung nicht verraten: Beide gewinnen, wenn sie einfach die Seiten tauschen.',
+      st('Erst machen: über die Linie', '8 Min.', 'zu zweit · alle gleichzeitig', 'line-dashed', 'Alle Paare gleichzeitig; bei ungerader Zahl spielt die Leitung mit. Die Lösung nicht verraten: Beide gewinnen, wenn sie einfach die Seiten tauschen. Danach auflösen.',
         text('Stellt euch zu zweit gegenüber an eine Linie, jeder auf seiner Seite. Der Auftrag: **„Du gewinnst, wenn dein Gegenüber in 30 Sekunden auf deiner Seite steht.“** Nur mit Worten, ohne Anfassen. Los.'),
         fragen(null, kreuz('Was habt ihr gemacht?', 'gedroht', 'überredet', 'verhandelt', 'Seiten getauscht'))),
-      modell(hai, 'fünf Tiere im Streit', ['fish', 'arrows-exchange', 'bulb'], { intro: 'Jeder hat alle fünf Tiere in sich. Nur verschieden viel.', wie: 'alle · dann allein',
-        leitung: 'Vorlesen. Den Tier-Check füllt jede Person nur für sich aus – nicht einsammeln, nicht vergleichen.',
-        fragen: [raster('Wie viel davon steckt in dir? Ein Kreuz pro Zeile. Nur für dich.', ['viel', 'mittel', 'wenig'], 'Hai – durchdrücken', 'Schildkröte – zurückziehen', 'Chamäleon – nachgeben', 'Fuchs – handeln', 'Eule – eine Lösung für beide')],
-        danach: [reden('Welches Tier trifft man bei Jugendlichen am häufigsten – und welches am seltensten?')] }),
+      st('Fünf Tiere', '10 Min.', 'alle gleichzeitig', 'paw', 'Die Tier-Karten (Kopiervorlage) vorher ausschneiden und in die Mitte legen. Vorlesen: „Mir egal.“ · „Was ist dir daran wichtig?“ · „So wird es gemacht. Punkt.“ · „Du die Hälfte, ich die Hälfte.“ · „Hauptsache, kein Streit.“ Alle tippen gleichzeitig auf ein Tier. Der Tier-Check unten bleibt privat.',
+        text('Jeder hat alle fünf Tiere in sich – nur verschieden viel. Die Leitung liest eine Reaktion vor, zum Beispiel **„Mir egal.“** oder **„Was ist dir daran wichtig?“**. Auf „drei“ tippen alle auf das Tier, das passt.'),
+        fragen(null, raster('Wie viel davon steckt in dir? Nur für dich.', ['viel', 'mittel', 'wenig'], ...TIERE.map(([t, x]) => `${t} – ${x}`)))),
     ),
     seite(
       fall(hai, 'Finn, Lina und das Plakat', [
-        kreuz('Welches Tier ist Finn?', 'Hai', 'Schildkröte', 'Eule'),
-        kreuz('Welches Tier ist Lina?', 'Hai', 'Chamäleon', 'Eule'),
         kreuzU('Wer hat diesen Streit gebaut?', 'beide: Finn drückt durch, Lina gibt nach und sammelt Wut', 'nur Finn', 'nur Lina'),
       ], { leitung: 'Vorlesen. Erst ankreuzen, dann die Sprechblase.' }),
       weiter('Der Fall: Finn, Lina und das Plakat', 4, 'search', reden('Was macht ihr öfter: durchdrücken oder nachgeben – und was kommt danach?')),
-      clip(hai, 'Wie ein Streit größer wird', [kreuzU('Wie wird aus einem kleinen Streit ein großer?', 'Stufe für Stufe', 'auf einen Schlag', 'gar nicht'), kreuz('Wie oft wird bei dir aus einem kleinen Streit ein großer?', 'oft', 'manchmal', 'selten')], ['So fängt es an:', 'So endet es, wenn niemand stoppt:', 'Hier hätte man stoppen können:'],
-        [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Wann hätten Finn und Lina am leichtesten stoppen können?', 'beim ersten „Können wir nicht …?“', 'am Tag der Abgabe')]),
+      pause(),
     ),
     seite(
-      runde('Tiere und Treppe', '25 Min.', 'alle · am Tisch', 'cards', {
-        ziel: 'Reaktionen im Streit erkennen – und den Weg aus dem Streit heraus bauen.',
-        material: 'die fünf Tier-Karten, 15 Reaktions-Karten und fünf Stufen von der nächsten Seite (ausschneiden)',
+      runde('Streit in Zeitlupe', '35 Min.', 'alle · am Tisch', 'player-pause', {
+        ziel: 'Einen Streit Bild für Bild anschauen – und die Stellen finden, an denen man ihn hätte stoppen können.',
+        material: 'die 8 Sprechblasen-Karten, 5 Tier-Karten, je Person eine Stopp-Karte und die 6 Eulen-Karten von der nächsten Seite (ausschneiden)',
         schritte: [
-          '**Teil 1 · Tiere:** Die fünf Tiere liegen auf dem Tisch. Reihum eine Reaktion ziehen, vorlesen und zum passenden Tier legen. Die Gruppe sagt, ob es passt.',
-          '**Teil 2 · Treppe raus:** Diese Treppe führt aus dem Streit heraus – andersherum als im Clip. Legt die fünf Stufen gemeinsam: Was kommt zuerst? Dann löst die Leitung auf (Karte „Konflikt-Treppe“).',
-          '**Teil 3 · Eule gesucht:** Die Leitung liest einen Streit vor. Jede Person schreibt den ersten Satz, den die Eule sagen würde. Vorlesen – alle zeigen den Daumen: Passt er zur Eule?',
+          '**Legen:** Legt die acht Sprechblasen der Plakat-Geschichte der Reihe nach hin – von Woche 1 bis zur Abgabe.',
+          '**Tiere:** Legt den Hai zu Finns erster Blase und das Chamäleon zu Linas erster Blase. Welches Tier fehlt in der ganzen Geschichte?',
+          '**Stopp:** Jede Person legt ihre Stopp-Karte **verdeckt** an die Stelle, an der sie den Streit gestoppt hätte. Auf „drei“ decken alle auf.',
+          '**Eule:** An jede Stopp-Stelle kommt eine Eulen-Karte: Was hätte man dort sagen können?',
         ],
-        regeln: ['Es gibt keine Punkte und keine Teams.', 'Kein Streit wird nachgespielt. Es wird gelegt, geschrieben und vorgelesen.'],
-        zu3: 'Genauso. Die Leitung schreibt in Teil 3 mit.',
-        auswertung: ['Welches Tier hatte bei euch die meisten Karten, die ihr von euch kennt?', 'Welche Stufe der Treppe wird am häufigsten übersprungen?'],
-      }, { leitung: 'Streit für Teil 3: „Zwei wollen denselben Platz.“ · „Einer hat das Ladekabel des anderen genommen.“ · „Zwei wollen verschiedene Musik.“', danach: [beispiel('So kann es klingen', ['Leitung liest:', '„Zwei wollen verschiedene Musik.“'], ['Sara schreibt als Eule:', '„Was ist dir an deinem Song wichtig?“'], ['Ben:', 'Passt. Die Eule fragt erst mal, bevor sie entscheidet.'])] }),
-      fuerDich('mein Streit, zweiter Versuch', '8 Min.', fragen('Ein Streit aus den letzten Wochen – deiner oder einer, den du gesehen hast. Sieht keiner.',
-        kreuz('Welches Tier war vorne?', 'Hai', 'Schildkröte', 'Chamäleon', 'Fuchs', 'Eule'),
-        kreuzU('Welche Stufe der Treppe hat gefehlt?', 'Stopp und runterkommen', 'Ich-Satz sagen', 'zuhören und zusammenfassen', 'Lösungen sammeln', 'einigen'),
-        satz('Zweiter Versuch – der erste Satz der Eule:', '„'))),
+        regeln: ['Je früher, desto billiger.', 'Keine Punkte. Niemand spielt den Streit nach.'],
+        zu3: 'Die Leitung legt auch eine Stopp-Karte.',
+        notiz: { titel: 'Hier hätten wir gestoppt – und das hätte die Eule gesagt:', linien: 1 },
+        auswertung: ['Warum hat Lina beim ersten Mal nicht gestoppt?', 'Welche Stopp-Stelle war am frühesten – und warum ist früh billiger?'],
+      }, { leitung: 'Sagen Sie: „Je früher, desto billiger.“ Lina ist nicht schuld, weil sie nachgibt – aber Nachgeben sammelt Wut.',
+        danach: [beispiel('So sieht eine Runde aus', ['', 'Drei Stopp-Karten liegen bei Montag, eine bei der Abgabe.'], ['Sara:', 'Montag hätte Finn fragen können: „Was ist dir daran wichtig?“'], ['Ben:', 'Und Lina hätte am Mittwoch sagen können: „Ich bin sauer. Kurz Pause.“'])] }),
     ),
     seite(
-      material('5 Tiere, 15 Reaktionen, 5 Stufen', 6,
-        karten(5, 15, 'Die Tiere: ausschneiden und auf den Tisch legen.', ['Hai', 'Schildkröte', 'Chamäleon', 'Fuchs', 'Eule'].map((t) => ({ t })), true),
-        karten(3, 14, 'Die Reaktionen: ausschneiden, mischen, verdeckt stapeln.', [...REAKTIONEN].sort((a, b) => a[0].length - b[0].length).map(([t]) => ({ t }))),
-        karten(5, 15, 'Die Stufen: ausschneiden und mischen.', ['zuhören und zusammenfassen', 'einigen', 'Stopp und runterkommen', 'Lösungen sammeln', 'Ich-Satz sagen'].map((t) => ({ t })))),
-      schluss(hai, 'Finn und Lina, zweiter Versuch', [kreuzU('Lina sagt zum ersten Mal: „Können wir nicht …?“ Was würde die Eule in Finn antworten?', '„Was ist dir daran wichtig?“', '„Nee, so ist besser.“'), kreuz('Schau auf Station 1: Muss man einen Streit gewinnen?', 'ja', 'nein', 'kommt darauf an')], ['beobachtet']),
+      { ...material('8 Sprechblasen, 5 Tiere, Stopp- und Eulen-Karten', 6,
+        karten(2, 12, 'Die Plakat-Geschichte: ausschneiden und mischen.', PLAKAT.map((t) => ({ t }))),
+        karten(5, 14, 'Die Tiere: ausschneiden.', TIERE.map(([t, x]) => ({ t, x }))),
+        karten(3, 12, 'Die Eulen-Karten: ausschneiden.', EULE.map((t) => ({ t }))),
+        karten(5, 10, 'Die Stopp-Karten: eine pro Person.', [1, 2, 3, 4, 5].map(() => ({ t: 'STOPP' })), true)), wie: 'zu Station 3 und 6' },
+      schluss(hai, 'deine Eule', [strich('Wie früh stoppst du einen Streit? Nur für dich.', 'spät', 'früh'), kreuz('Schau auf Station 1: Muss man einen Streit gewinnen?', 'ja', 'nein', 'kommt darauf an')], ['gestoppt']),
     ),
   )
 
-  /* ---------- Stunde 2 · Alle machen mit ---------- */
+  /* ---------- Stunde 2 · Nein-Karten ---------- */
   const DRAENGEL = ['„Komm, nur einmal.“', '„Alle machen mit.“', '„Sei kein Spielverderber.“', '„Hast du Schiss?“', '„Merkt doch keiner.“', '„Ich dachte, wir sind Freunde.“', '„Dann bist du raus.“', '„Stell dich nicht so an.“', '„Nur ganz kurz.“']
-  const s2 = stunde('Warum machst du mit, obwohl du nicht willst?', ['erklären, warum Gruppen so stark ziehen', 'vier Arten nennen, Nein zu sagen', 'ein Nein finden, das zu dir passt'],
+  const NEIN = ['„Nee.“', '„Ohne mich.“', '„Kein Bock.“', '„Nee – lass uns lieber Pizza holen.“', '„Meine Mutter killt mich.“', '„Hab gleich Training.“', '„Ich geh jetzt.“', '„Nee. Echt nicht.“', '„Würd ich nie machen.“', '„Langweilig.“', '„Nö.“', '„Bin raus.“', '„Mach du, ich nicht.“', '„Ich warte draußen.“', '„Keine Zeit.“', '„Nee, das ist mir zu blöd.“', '________', '________', '________', '________']
+  const s2 = stunde('Warum machst du mit, obwohl du nicht willst?', ['erklären, warum die Gruppe so stark zieht', 'ein Nein wählen, das zu dir passt', 'wissen: Einer reicht'],
     seite(
       ankommen('du und die Gruppe', kreuz('Hast du schon mal mitgemacht, obwohl du nicht wolltest?', 'ja', 'nein', 'weiß nicht'), strich('Wie leicht sagst du Nein, wenn alle Ja sagen?', 'schwer', 'leicht')),
-      st('Erst machen: der Schwarm', '5 Min.', 'alle', 'users-group', 'Sie gehen mit. Kein Wort. Nach zwei Minuten stoppen und fragen: Wer hat gelenkt?',
-        text('Alle gehen kreuz und quer durch den Raum. Kein Wort. Einzige Regel: **Bleibt jemand stehen, bleiben alle stehen. Geht jemand los, gehen alle.** Niemand ist Chef.'),
+      st('Erst machen: der Schwarm', '6 Min.', 'alle', 'users-group', 'Sie gehen mit. Kein Wort. Nach zwei Minuten stoppen und fragen: Wer hat gelenkt?',
+        text('Alle gehen kreuz und quer durch den Raum. Kein Wort. Einzige Regel: **Bleibt jemand stehen, bleiben alle stehen. Geht jemand los, gehen alle.** Niemand bestimmt.'),
         fragen(null, kreuz('Wer hat den Schwarm gelenkt?', 'eine Person', 'mehrere', 'niemand', 'keine Ahnung'))),
-      st('Kennst du das?', '8 Min.', 'allein · dann alle', 'hand-finger', 'Erst still ankreuzen, dann jeden Satz vorlesen – alle zeigen gleichzeitig den Daumen, Sie auch. Nur zählen, nicht nachfragen.',
-        fragen('Kreuz an, was du kennst. Danach zeigen alle gleichzeitig den Daumen.',
-          kennstDu('Kennst du das?', 'Ich habe gelacht, obwohl ich es nicht lustig fand.', 'Ich habe mitgemacht, damit keiner etwas sagt.', 'Ich wollte Nein sagen – und habe Ja gesagt.', 'In der Gruppe traue ich mich Dinge, die ich allein nie machen würde.', 'Später kam raus: Die anderen wollten auch nicht. Aber keiner hat es gesagt.')),
-        reden('Welcher Satz kam am häufigsten? Warum ist es in der Gruppe so schwer, Nein zu sagen?')),
-    ),
-    seite(
       fall(alle, 'Ben und die Kopfhörer', [
-        kreuzU('Zwingt jemand Ben?', 'Nein. Aber alle schauen.', 'Ja.'),
         kreuzU('Wovor hat Ben in diesem Moment mehr Angst?', 'ausgelacht zu werden', 'erwischt zu werden'),
       ], { leitung: 'Vorlesen. Erst ankreuzen, dann die Sprechblase.' }),
-      weiter('Der Fall: Ben und die Kopfhörer', 4, 'search', reden('Was macht es so schwer, in so einem Moment einfach zu gehen?')),
-      clip(alle, 'der Linien-Test', [kreuzU('Alle in der Gruppe sagen etwas Falsches. Was machst du?', 'Ich sage, was ich sehe.', 'Ich sage, was alle sagen.', 'weiß nicht'), kreuz('Hast du schon mal gegen die ganze Gruppe geantwortet?', 'ja', 'nein', 'weiß nicht')], ['Das passiert im Test:', 'So viele machen mit:', 'Das hat mich überrascht:'],
-        [kreuz('Hättest du gedacht, dass so viele mitmachen?', 'ja', 'nein'), kreuzU('Was macht es leichter, bei der eigenen Antwort zu bleiben? (Denk nach – das muss nicht im Clip vorkommen.)', 'wenn noch jemand dasselbe sagt', 'wenn man leiser spricht', 'nichts')]),
+      weiter('Der Fall: Ben und die Kopfhörer', 3, 'search', reden('Was macht es so schwer, in so einem Moment einfach zu gehen?')),
     ),
     seite(
-      modell(alle, 'warum die Gruppe zieht', ['users-group', 'flame', 'user-check'], { zeit: '8 Min.', wie: 'alle · dann allein',
-        leitung: 'Vorlesen, dann allein verbinden und auflösen. Wichtig ist Punkt 3: Einer reicht.',
-        fragen: [verbinden('Was passt zu welchem Punkt? Verbinde.', ['Alle gehen los – du gehst mit, ohne nachzudenken.', 'Allein wärst du nie bei Rot gegangen. Mit Freunden schon.', 'Mia sagt: „Ich auch nicht.“ Plötzlich sagen drei Nein.'], ['Einer reicht', 'Der Schwarm', 'Mit Freunden riskanter'])],
-        danach: [reden('Habt ihr schon erlebt, dass einer Nein sagt – und dann andere auch?')] }),
-      st('Zu zweit: Bens drei Sekunden', '8 Min.', 'zu zweit', 'clock', 'Jedes Paar füllt nur zwei Zeilen aus, den Rest mündlich. Auch „mitmachen“ bringt etwas (dazugehören) – das darf gesagt werden. Der Preis ist nur höher.',
-        fragen(alle.moves[1].kontext ?? null, ...alle.moves[1].fragen)),
+      clip(alle, 'der Linien-Test', [kreuzU('Alle in der Gruppe sagen etwas Falsches. Was machst du?', 'Ich sage, was ich sehe.', 'Ich sage, was alle sagen.', 'weiß nicht')], ['Das passiert im Test:', 'Das hilft der Versuchsperson:'],
+        [kreuzU('Was macht es leichter, bei der eigenen Antwort zu bleiben?', 'wenn noch jemand dasselbe sagt', 'wenn man leiser spricht', 'nichts')]),
+      pause(),
     ),
     seite(
-      runde('der Nein-Baukasten', '25 Min.', 'alle · am Tisch', 'tool', {
-        ziel: 'Ein Nein finden, das hält – und das zu dir passt.',
-        material: 'die vier Nein-Arten und 9 Drängel-Karten von der nächsten Seite (ausschneiden), ein Würfel, Papier, Stifte',
+      runde('Nein-Karten', '32 Min.', 'alle · am Tisch', 'cards', {
+        ziel: 'Ein Nein finden, das zu dir passt – und erleben, dass das zweite Nein leichter ist.',
+        material: 'die 9 Drängel-Karten und 20 Nein-Karten von der nächsten Seite (ausschneiden)',
         schritte: [
-          'Eine Drängel-Karte wird aufgedeckt. Der Würfel sagt die Nein-Art: **1** Dauerschleife · **2** Nein plus Vorschlag · **3** mit Humor · **4** einfach gehen · **5–6** freie Wahl.',
-          'Jede Person schreibt in 40 Sekunden ihre Antwort auf. Bei „gehen“: den Satz, den ihr beim Gehen sagt.',
-          'Vorlesen. Die anderen zeigen mit den Fingern, von 1 bis 5: Hält das?',
-          'Ab der zweiten Karte drängelt die Leitung einmal nach: Sie liest die nächste Drängel-Karte vor. Hält euer Satz immer noch?',
+          'Jede Person bekommt **vier Nein-Karten** auf die Hand. Leere Karten darf man selbst beschriften.',
+          'Die Leitung liest eine Drängel-Karte an alle. Alle legen **verdeckt** ein Nein. Auf „drei“ decken alle auf.',
+          'Die Leitung drängelt nach – mit der nächsten Karte. Wer seine Karte liegen lässt, **hält.** Wer will, tauscht.',
+          '**Teil 2 · Einer reicht:** Eine Person legt freiwillig ihr Nein **offen** hin. Danach dürfen die anderen eins dazulegen. Wie war das?',
         ],
-        regeln: ['Es gibt keine Punkte und keine Teams.', 'Die Antworten werden geschrieben und vorgelesen. Niemand muss die Szene spielen.', 'Kein Nein muss begründet werden.'],
-        zu3: 'Genauso. Die Leitung drängelt nach und zeigt die Zahl mit.',
+        regeln: ['Ausreden sind erlaubt. Niemand liest vor – die Karte spricht für euch.', 'Kein Nein muss begründet werden. Keine Punkte.'],
+        zu3: 'Die Leitung drängelt.',
         notiz: { titel: 'Das Nein, das zu mir passt:', linien: 1 },
-        auswertung: ['Welche Nein-Art hat am besten gehalten?', 'Was passiert bei echten Freunden nach deinem Nein?'],
-      }, { leitung: 'Nur Sie drängeln – freundlich und hartnäckig. Ein Nein wird nie abgewertet.', danach: [beispiel('So kann es klingen', ['Karte:', '„Hast du Schiss?“ – der Würfel zeigt 1: Dauerschleife.'], ['Finn schreibt:', '„Nee. Mach ich nicht.“'], ['Leitung drängelt:', '„Komm, nur ganz kurz.“'], ['Finn liest:', '„Nee. Mach ich nicht.“'], ['', 'Alle zeigen eine 5.'])] }),
-      fuerDich('mein Nein für die Woche', '6 Min.', fragen('Wo könnte dich diese Woche jemand drängeln? Etwas Kleines reicht. Sieht keiner.',
-        kreuz('Wo?', 'Schule oder Betrieb', 'Wohngruppe', 'draußen mit Freunden', 'online'),
-        satz('Mein Plan:', 'Wenn jemand sagt: „', 'dann sage ich (dein Nein aus der Runde): „', 'Mit mir Nein sagen könnte (nur für dich):'))),
+        auswertung: ['War das zweite Nein leichter als das erste?', 'Welche Karte hat am längsten gehalten?'],
+      }, { leitung: 'Nur Sie drängeln – freundlich und hartnäckig. Sagen Sie: „Die Karte spricht für euch.“ Ein Nein wird nie abgewertet.',
+        danach: [beispiel('So sieht eine Runde aus', ['Leitung:', '„Hast du Schiss?“'], ['', 'Alle legen verdeckt. Aufgedeckt: „Nee.“, „Hab gleich Training.“, „Ohne mich.“'], ['Leitung drängelt:', '„Ich dachte, wir sind Freunde.“'], ['', 'Zwei lassen liegen, Finn tauscht gegen „Ich geh jetzt.“'])] }),
     ),
     seite(
-      material('4 Nein-Arten und 9 Drängel-Karten', 6,
-        karten(4, 24, 'Die vier Nein-Arten: ausschneiden und auf den Tisch legen.', [
-          { t: 'Dauerschleife', x: 'Denselben Satz ruhig wiederholen: „Nein. Mach ich nicht.“', marke: '1' },
-          { t: 'Nein plus Vorschlag', x: '„Nee. Aber lass uns …“', marke: '2' },
-          { t: 'Mit Humor', x: 'Ein Spruch, der nicht verletzt.', marke: '3' },
-          { t: 'Einfach gehen', x: 'Ein kurzer Satz – und weg.', marke: '4' },
-        ]),
-        karten(3, 17, 'Die Drängel-Karten: ausschneiden, mischen, verdeckt stapeln.', DRAENGEL.map((t) => ({ t })))),
-      schluss(alle, 'Bens drei Sekunden', [kreuzU('„Na los. Oder hast du Schiss?“ Welches Nein hätte zu Ben gepasst?', '„Nee. Mach ich nicht.“ – und wiederholen', 'ein Witz – und bleiben', 'gehen'), strich('Schau auf Station 1. Wie leicht sagst du jetzt Nein, wenn alle Ja sagen?', 'schwer', 'leicht')], ['Nein gesagt']),
+      material('9 Drängel-Karten und 20 Nein-Karten', 6,
+        karten(3, 13, 'Die Drängel-Karten: ausschneiden, mischen, verdeckt stapeln.', DRAENGEL.map((t) => ({ t }))),
+        karten(4, 13, 'Die Nein-Karten: ausschneiden, mischen, vier pro Person.', NEIN.map((t) => ({ t })))),
+      schluss(alle, 'Bens drei Sekunden', [
+        kreuz('Wo könnte dich jemand drängeln? Nur für dich.', 'Pause', 'Bus', 'draußen', 'online', 'beim Zocken'),
+        strich('Schau auf Station 1. Wie leicht sagst du jetzt Nein, wenn alle Ja sagen?', 'schwer', 'leicht'),
+      ], ['gesagt']),
     ),
   )
 
-  /* ---------- Stunde 3 · Zuschauer ---------- */
-  const TUN: [string, string][] = [['mitlachen', '+'], ['weiterleiten', '+'], ['ein Herz unter den Clip setzen', '+'], ['wegschauen', '+'], ['filmen', '+'],
-    ['nichts weiterleiten', '−'], ['der Person schreiben: „Alles okay bei dir?“', '−'], ['sich in der Kantine dazusetzen', '−'], ['einem Erwachsenen Bescheid sagen', '−'], ['Beweise sichern und melden', '−'], ['„Lass gut sein.“ sagen', '−'], ['andere dazuholen', '−']]
-  const s3 = stunde('Was hat das Publikum damit zu tun?', ['Spaß, Streit und Mobbing unterscheiden', 'erklären, warum Zuschauer entscheiden', 'einen Schritt nennen, den du gehen kannst'],
+  /* ---------- Stunde 3 · Der Klassenchat in Zeitlupe ---------- */
+  const HANDLUNG = ['😂 reagieren', 'weiterleiten', 'nichts tun', 'Lea privat: „Fand das nicht lustig. Alles ok?“', 'in die Gruppe: „Lösch das.“', 'einem Erwachsenen zeigen']
+  const ZEIT = ['Fr 17:02 · Der Clip von Lea ist im Klassenchat.', 'Fr 17:03 · Drei 😂 darunter.', 'Fr 17:10 · Jemand: „Schickt das der 7b!“', 'Mo · Lea fehlt in der Kantine.', 'Mi · Lea sitzt allein auf der Treppe.']
+  const s3 = stunde('Was hat das Publikum damit zu tun?', ['Spaß, Streit und Mobbing unterscheiden', 'sehen, wie jeder Klick die Bühne größer oder kleiner macht', 'die kleinste Karte kennen, die du wirklich spielen würdest'],
     seite(
       ankommen('ein Klick', kreuz('Ist Weiterleiten „etwas machen“?', 'ja', 'nein', 'kommt darauf an'), kreuz('Jemand wird fertiggemacht. Was ist am schwersten?', 'nicht mitlachen', 'etwas sagen', 'Hilfe holen')),
       fall(zuschauer, 'Noah und der Clip', [
-        kreuzU('Welche Rolle spielt Noah?', 'Verstärker: Er gibt dem Clip mehr Publikum.', 'Täter: Er hat den Clip gemacht.', 'Er hat nichts damit zu tun.'),
         kreuzU('Noah hat „nur einmal geklickt“. Was hat der Klick gemacht?', 'Zwei Gruppen mehr haben Lea ausgelacht.', 'nichts'),
-      ], { zeitleiste: [['Freitag', 'Der Clip. Noah leitet ihn weiter: zwei Gruppen, ein Klick.'], ['Montag', 'Lea sitzt nicht in der Kantine.'], ['Dienstag', 'Lea sitzt nicht in der Kantine.'], ['Mittwoch', 'Lea auf der Treppe. Allein. Mit dem Brot in der Hand.']], leitung: 'Vorlesen. Erst ankreuzen, dann die Sprechblase.' }),
+      ], { leitung: 'Vorlesen. Erst ankreuzen, dann die Sprechblase.' }),
       weiter('Der Fall: Noah und der Clip', 2, 'search', reden('Warum leiten Leute so etwas weiter – auch wenn sie es nicht gut finden?')),
     ),
     seite(
-      modell(zuschauer, 'die Bühne', ['list-check', 'theater', 'eye'], { wie: 'alle · dann allein',
-        leitung: 'Vorlesen, dann allein verbinden und auflösen.',
-        fragen: [verbinden('Welches Merkmal ist das? Verbinde.', ['Es passiert jeden Tag.', 'Sie machen es extra.', 'Fünf gegen einen.', 'Lea traut sich nicht, etwas zu sagen.'], ['ungleich', 'kann sich allein nicht wehren', 'wiederholt', 'absichtlich'])],
-        danach: [reden('Warum ist es so schwer, der Erste zu sein, der nicht mehr mitlacht?')] }),
-      clip(zuschauer, 'Warum viele nicht eingreifen', [kreuzU('Viele sehen zu und tun nichts. Warum?', 'Jeder denkt: Ein anderer macht schon was.', 'Es ist ihnen egal.', 'weiß nicht'), kreuz('Was glaubst du: Finden die meisten Mobbing okay?', 'ja', 'nein', 'weiß nicht')], ['Darum greifen viele nicht ein:', 'Das hilft:', 'Das hat mich überrascht:'],
-        [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Was hätte Lea am Montag geholfen?', 'eine Nachricht: „Alles okay bei dir?“', 'noch ein Clip', 'nichts')]),
+      st('Spaß, Streit oder Mobbing?', '10 Min.', 'alle · dann allein', 'list-check', 'Die vier Merkmale vorlesen: wiederholt · absichtlich · ungleich · kann sich allein nicht wehren. Dann allein ankreuzen und auflösen.',
+        text('Mobbing hat vier Merkmale: Es passiert **immer wieder**, **mit Absicht**, **einer oder mehrere gegen einen, der schwächer ist**, und die Person **kann sich allein nicht wehren.**'),
+        fragen(null, ...zuschauer.moves[0].fragen.filter((f) => !/Merkmal/.test(f.f)))),
+      clip(zuschauer, 'Warum viele nicht eingreifen', [kreuzU('Viele sehen zu und tun nichts. Warum?', 'Jeder denkt: Ein anderer macht schon was.', 'Es ist ihnen egal.', 'weiß nicht')], ['Darum greifen viele nicht ein:', 'Das hilft:'],
+        [kreuzU('Was hätte Lea am Montag geholfen?', 'eine Nachricht: „Alles okay bei dir?“', 'ein Like unter dem Clip', 'nichts')]),
+      pause(),
     ),
     seite(
-      fuerDich('Spaß, Streit oder Mobbing?', '8 Min.', fragen(null, ...zuschauer.moves[0].fragen)),
-      runde('Kipp die Bühne', '25 Min.', 'alle · am Tisch', 'theater', {
-        ziel: 'Sehen, was die Bühne größer macht – und was sie kleiner macht.',
-        material: 'die 12 Karten von der nächsten Seite (ausschneiden), zwei Zettel „macht die Bühne größer“ und „macht die Bühne kleiner“',
+      runde('der Klassenchat in Zeitlupe', '30 Min.', 'alle · am Tisch', 'messages', {
+        ziel: 'Sehen, wie jeder Klick die Bühne für Lea größer oder kleiner macht – und welche Karte du wirklich spielen würdest.',
+        material: 'eine Lea-Karte, 40 Büroklammern (das Publikum) und die 5 Zeit-Karten von der nächsten Seite, je Person ein Radiergummi als Zeiger',
         schritte: [
-          '**Teil 1 · sortieren:** Reihum eine Karte ziehen, vorlesen und zu „größer“ oder „kleiner“ legen. Die Gruppe sagt, ob es passt.',
-          '**Teil 2 · die Leiter:** Legt alle „kleiner“-Karten in eine Reihe – vom Einfachen zum Mutigen.',
-          '**Teil 3 · der Fall:** Die Leitung liest einen Fall vor. Auf „drei“ tippt jede Person auf die Karte, die sie wählen würde.',
-          'Zählt: Wie viele Karten nehmen dem Clip das Publikum – ohne dass jemand „Stopp“ rufen muss?',
+          'Die Lea-Karte liegt in der Mitte. Daneben liegen **10 Büroklammern** – so viele schauen am Anfang zu.',
+          'Die Leitung liest eine Zeit-Karte vor. Jede Person legt ihren Radiergummi **verdeckt** (Hand drüber) auf eine Handlung in ihrem Heft – unten auf dieser Seite. Auf „drei“ heben alle die Hand.',
+          'Für jedes 😂 und jedes Weiterleiten legt die Leitung **eine Büroklammer** zu Lea. Für jede Hilfe nimmt sie **eine weg.** „Nichts tun“ ändert nichts.',
+          'Fünf Zeit-Karten, von Freitag 17:02 bis Mittwoch. Wie viele Büroklammern liegen am Ende bei Lea?',
         ],
-        regeln: ['Niemand muss sagen, was er selbst schon getan oder gelassen hat.', 'Direkt „Stopp“ sagen ist nur eine Möglichkeit – und nur, wenn es sicher ist.'],
-        zu3: 'Genau so. Die Leitung tippt in Teil 3 mit.',
-        notiz: { titel: 'Die einfachste Karte, die schon etwas ändert:', linien: 1 },
-        auswertung: ['Welche Karte lag ganz unten auf der Leiter – und würde trotzdem etwas ändern?', 'Was passiert mit der Bühne, wenn drei Leute nicht mehr lachen?'],
-      }, { leitung: 'Fälle für Teil 3: Noah und der Clip · „Über Samuels Schuhe gibt es täglich einen Witz.“ · „Eine Gruppe macht Geräusche, sobald Elias etwas sagt.“', danach: [beispiel('So kann es klingen', ['Ben zieht:', '„ein Herz unter den Clip setzen“'], ['Ben:', 'Das ist doch nichts.'], ['Amira:', 'Doch. Das ist Applaus. Macht die Bühne größer.'])] }),
+        regeln: ['Es gibt keine Heldenkarte. Die kleinste Hilfe nimmt auch eine Büroklammer weg.', 'Niemand muss sagen, was er selbst schon getan hat. Keine Punkte.'],
+        zu3: 'Die Leitung legt mit.',
+        notiz: { titel: 'Die kleinste Hilfe, die ich wirklich machen würde:', linien: 1 },
+        auswertung: ['Welche Karte würdest du am Freitag um 17:03 wirklich spielen?', 'Was kostet dich „Lösch das“ – und was bringt es Lea?'],
+      }, { leitung: 'Sagen Sie: „Es gibt keine Heldenkarte. Die kleinste Hilfe nimmt auch eine Büroklammer weg.“ Nach Mittwoch fragen: „Was kostet dich ‚Lösch das‘?“',
+        danach: [fragen(null, kreuz('Meine Handlung – Radiergummi verdeckt drauf:', ...HANDLUNG)), beispiel('So sieht eine Runde aus', ['Leitung:', '„Fr 17:03 · Drei 😂 darunter.“'], ['', 'Aufgedeckt: zweimal „nichts tun“, einmal 😂, einmal „Lea privat“.'], ['', 'Plus 1 für das 😂, minus 1 für die Nachricht an Lea. Es bleiben 10 Büroklammern.'])] }),
     ),
     seite(
-      st('Zum Abschluss: eine Runde Respekt', '6 Min.', 'alle · im Kreis', 'heart-handshake', 'Sie beginnen und schreiben mit. Fällt jemandem nichts ein, helfen Sie – niemand bleibt ohne Zettel.',
-        text('Jede Person schreibt der Person rechts neben sich **eine Sache, die sie im Kurs gut gemacht hat**, auf einen Zettel. Konkret. Wer mag, liest vor. Die Person sagt nur: „Danke.“')),
-      material('12 Karten', 5, karten(3, 18, 'Ausschneiden, mischen, verdeckt stapeln.', [...TUN].sort((a, b) => a[0].length - b[0].length).map(([t]) => ({ t })))),
-      fuerDich('die Leiter', '8 Min.', fragen(null, ...zuschauer.moves[1].fragen,
-        kreuz('Diese Woche: Denk an eine Person, die oft allein steht (Namen nicht aufschreiben). Wo?', 'Pause', 'Kantine', 'Bus', 'Gruppenchat'),
-        kreuz('Womit zeigst du ihr, dass du sie siehst?', 'ein Hallo', 'ein Platz', 'eine Nachricht'))),
-    ),
-    seite(
-      schluss(zuschauer, 'Mittwoch auf der Treppe', [kreuzU('Noah sieht Lea auf der Treppe. Was kann er jetzt noch tun?', 'hingehen: „Das mit dem Clip war mies. Tut mir leid.“', 'so tun, als wäre nichts'), kreuz('Schau auf Station 1: Ist Weiterleiten „etwas machen“?', 'ja', 'nein')], ['gezeigt']),
+      material('Lea-Karte und 5 Zeit-Karten', 6,
+        karten(3, 13, 'Lea und die Zeit-Karten: ausschneiden.', [{ t: 'LEA', x: 'Hier liegt das Publikum.' }, ...ZEIT.map((t) => ({ t }))])),
+      schluss(zuschauer, 'Mittwoch auf der Treppe', [
+        kreuzU('Noah sieht Lea auf der Treppe. Was kann er jetzt noch tun?', 'hingehen: „Das mit dem Clip war mies. Tut mir leid.“', 'so tun, als wäre nichts'),
+        kreuz('Was könntest du diese Woche tun? Nur für dich.', 'jemanden grüßen', 'einen Platz frei machen', 'eine Nachricht schreiben', 'noch nichts'),
+      ], ['gezeigt']),
     ),
   )
   return [s1, s2, s3]
 }
 
-/** Lösungen für die Leitung – passend zu den Stationen oben */
+/** Lösungen für die Leitung – passend zu den Stationen oben (Umbau 27.11.2026) */
 export const loesungen: string[][] = [
   [
     'Über die Linie: Beide gewinnen, wenn sie die Seiten tauschen. Fast niemand kommt darauf – „gewinnen“ klingt nach „gegeneinander“.',
-    'Tier-Check: Es gibt kein falsches Tier. Jedes hat seinen Platz – nur die Eule löst den Streit für beide.',
+    'Fünf Tiere: „Mir egal.“ – Schildkröte · „Was ist dir daran wichtig?“ – Eule · „So wird es gemacht. Punkt.“ – Hai · „Du die Hälfte, ich die Hälfte.“ – Fuchs · „Hauptsache, kein Streit.“ – Chamäleon. Es gibt kein falsches Tier im Tier-Check.',
     'Der Fall: Finn ist der Hai, Lina das Chamäleon. Gebaut haben den Streit beide.',
-    'Tiere: Hai – „So wird es gemacht“, „bist du raus“, lauter werden · Schildkröte – „Mir egal“, weggehen, so tun als wäre nichts · Chamäleon – „wie du“, „Hauptsache kein Streit“, Ja sagen und Nein meinen · Fuchs – Hälfte, „heute du, morgen ich“, nachgeben · Eule – die drei Fragen und Angebote.',
-    'Treppe: 1 Stopp und runterkommen · 2 Ich-Satz sagen · 3 zuhören und zusammenfassen · 4 Lösungen sammeln · 5 einigen.',
+    'Streit in Zeitlupe: Reihenfolge Woche 1 – Woche 2 – Woche 3 – Abgabe. Bei den Tieren fehlt die Eule. Die billigste Stopp-Stelle ist der erste „Können wir nicht …?“-Satz. Passende Eulen-Sätze dort: „Was ist dir daran wichtig?“ oder „Beides aufs Plakat?“. Für Lina am Mittwoch: „Ich bin sauer. Kurz Pause.“',
   ],
   [
     'Der Fall: Niemand zwingt Ben – aber alle schauen. Er hat mehr Angst, ausgelacht zu werden, als erwischt zu werden.',
-    'Warum die Gruppe zieht: losgehen ohne Nachdenken – der Schwarm · bei Rot mit Freunden – mit Freunden riskanter · „Ich auch nicht“ – einer reicht.',
     'Clip: Im Linien-Test machen drei von vier Leuten mindestens einmal mit. Geholfen hat eine zweite Person, die auch Nein sagt.',
-    'Bens drei Sekunden: Mitmachen bringt Dazugehören und kostet die Anzeige und den Praktikumsplatz. „Nee, mach ich nicht“ kostet einen Moment Spott und bringt Respekt vor sich selbst.',
-    'Nein-Baukasten: Die Dauerschleife hält oft am besten. Humor wirkt nur, wenn er niemanden verletzt.',
+    'Nein-Karten: Am längsten halten kurze Neins ohne Begründung („Nee.“, „Ohne mich.“) und Neins mit Vorschlag. Ausreden („Hab gleich Training.“) sind erlaubt. Teil 2 zeigt: Das zweite Nein ist fast immer leichter – einer reicht.',
   ],
   [
     'Der Fall: Noah ist Verstärker. Sein Klick hat dem Clip zwei Gruppen Publikum gegeben.',
-    'Merkmale: jeden Tag – wiederholt · extra – absichtlich · fünf gegen einen – ungleich · traut sich nicht – kann sich allein nicht wehren.',
-    'Spaß, Streit oder Mobbing: 1 Spaß · 2 Streit · 3 Mobbing · 4 Mobbing (er lacht mit und geht allein). Merkmale: wiederholt, absichtlich, mehrere gegen einen, wehrlos – „laut“ gehört nicht dazu.',
-    'Kipp die Bühne: größer – mitlachen, weiterleiten, Herz setzen, wegschauen, filmen. Alles andere macht sie kleiner.',
+    'Spaß, Streit oder Mobbing: 1 Spaß · 2 Streit · 3 Mobbing · 4 Mobbing (er lacht mit und geht allein). Merkmale: wiederholt, absichtlich, einer oder mehrere gegen einen Schwächeren, wehrlos – „laut“ gehört nicht dazu.',
+    'Klassenchat in Zeitlupe: 😂 und Weiterleiten machen die Bühne größer (+1), jede Hilfe kleiner (−1), „nichts tun“ lässt sie, wie sie ist. Die kleinste Hilfe (eine private Nachricht) zählt genauso wie „Lösch das“.',
     'Schluss: Hingehen und sich entschuldigen. Es ist nie zu spät.',
   ],
 ]

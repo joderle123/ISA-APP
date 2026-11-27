@@ -28,8 +28,8 @@ gesetzt von `stunde-bau.ts`):
 
 - **Stationen in der Reihenfolge des Unterrichts.** Die erste Seite zeigt Leitfrage, „Am Ende kannst du …“ und den Fahrplan mit
   Minuten; jede weitere Seite zeigt oben, wo die Gruppe gerade ist.
-- **Ein roter Faden:** Der Fall vom Anfang kommt bei Clip, Modell und Schluss wieder vor (z. B. Nele: Ankommen → Fall → Clip über
-  Schlaf → Schlaf ist einer von sechs Tanks → Warnlichter erkennen → eigener Tank → ein Satz für Nele).
+- **Ein roter Faden:** Der Fall vom Anfang kommt bei Clip, Modell und Schluss wieder vor (z. B. Amira: Ankommen → Fall → Clip über
+  Schlaf → ihr Zimmer im Raum nachbauen und umbauen → eigener Plan für heute Abend → ein Satz an die Lehrerin).
 - **Jede Stunde ist anders gebaut:** einmal vom Fall aus, einmal von einem Experiment aus (dieselbe Aufgabe laut und leise), einmal von dem,
   was die Gruppe schon kann. Bausteine: Fall mit Zeitleiste, Gesprächsprotokoll, Akte, Modell, Clip, große Aktion, Karten, Tabelle, Auswahl.
 - **Clip nur, wenn er zum Fall passt – und immer mit Aufträgen:** vorher (Tipp abgeben), beim Schauen (mitschreiben), danach
@@ -59,19 +59,48 @@ die Ausgabe um (Wörter, Einsatz, Material, Lösungen der Leitung). #01 ist von 
 `m1.ts`). Die Kurzschreibweisen stehen in `inhalt/stunden-hilfe.ts` (`ankommen`, `fall`, `clip`, `modell`, `stimmtDas`, `runde`,
 `material`, `fuerDich`, `schluss` …). Hefte ohne `stunde` würden weiter als Doppelseiten gesetzt – es gibt aber keine mehr.
 
-**Die großen Runden** (je Stunde eine, Material im Heft): #00 eigene Regeln · Treffer-Jagd · Blind-Lotse — #01 Tank-Detektive · Brücke ·
-Stärken-Markt — #02 Wörter-Jagd · Pult-Wette · Song-Tipp · Chips setzen — #03 Druck-Tag · Atem-Labor · Sinnes-Labor · Kopf-Zirkel ·
-Skills-Notruf — #04 Zwei Filme · geheime Zählung · Tatort · Mut-Leiter — #05 drei Kanäle · Satz-Werkstatt · drei Felder · von unklar
-bis klar — #06 Tiere und Treppe · Nein-Baukasten · Kipp die Bühne — #07 gegen den Algorithmus · bevor ich sende · Schlagzeilen-Wette —
-#08 Schlaf-Auktion · Rucksack-Rennen · das Jahr in 16 Karten · Stärken-Post.
+**Die großen Runden** (je Stunde eine, Material im Heft; Stand 27.11.2026): #00 eure eigenen Regeln · Frage-Duelle · Blind-Lotse —
+#01 Kenn ich! · Brücke · Stärken-Markt — #02 Wort-Leiter in allen Sprachen · Pult-Wette · Song-Tipp · Wut-Übersetzer — #03 Druck-Tag ·
+Puls-Labor · Sinnes-Labor · Kopf-Zirkel · Skills-Notruf — #04 Wie-wahrscheinlich-Linie und zwei Filme mit Münze · geheime Zählung ·
+Lio auf der Wippe · Mut-Leiter — #05 drei Kanäle · Wort-Schere · Grenz-Skala · von unklar bis klar — #06 Streit in Zeitlupe ·
+Nein-Karten · Klassenchat in Zeitlupe — #07 gegen den Algorithmus · bevor ich sende · Schlagzeilen-Check — #08 Bau Amiras Zimmer um ·
+Rucksack-Rennen · Jahres-Museum · Stärken-Post.
+
+**Zweite Runde mit jugendlichen Kritikern (27.11.2026, „von First Principles aus“):** Was nicht funktionierte, ist gestrichen und neu
+gebaut – nicht nur abgemildert. Seitdem gilt:
+- **Alter 12–13, Welt der 7e:** Schule, Bus, Sport, Klassenchat, Zocken. Kein Betrieb, kein Meister, kein Praktikum, keine Klinik,
+  keine Wohngruppe. Die Figuren sind 12 oder 13 (Tom, Chloé, Lio, Ben 12; alle anderen 13).
+- **Höchstens etwa sechs Stationen** plus Ankommen und Schluss, **jede Stunde eine Pause** (`pause()`, 5 Minuten; sie zählt als Station –
+  `material(…, zuStation)` mitzählen). Ziel 75–90 Minuten.
+- **Höchstens ein bis zwei Clips je Heft.** Im Heft der Jugendlichen steht beim Clip kein QR-Code mehr („die Leitung zeigt ihn“) –
+  der QR-Code steht in der Clip-Tabelle der Leitung.
+- **Machen statt Ausfüllen:** Linien und Wege auf dem Boden (Schlaf-Linie, Mut-Leiter, Wie-wahrscheinlich-Linie), Dinge bauen und umbauen
+  (Amiras Zimmer im Raum, Jahres-Museum), Körper-Karte zum Ausmalen (`umriss`), Gefühls-Torte (`torte`), Zimmer-Grundriss (`zimmer`).
+- **Keine Punkte, keine Teams gegeneinander.** Gezählt werden höchstens Zeiten oder Münzen auf Dingen – nie auf Personen.
+- Hilfe-Karten nennen auch den **SePAS**.
+- Prüfung: alle Hefte bauen, PDFs bauen (`frei` nie negativ), Material-Verweise auf die richtige Station.
 
 **Seiten prüfen:** `pdf.cjs` meldet den freien Platz je Seite. Faustwerte: erste Seite einer Stunde (Kopf und Fahrplan) trägt Ankommen
 und ein bis zwei kurze Stationen; Fall 70–95 mm, Clip etwa 80 mm, Modell etwa 55 mm, große Runde 150–180 mm, Schluss 50–60 mm.
 Ab vier Stunden verteilt sich „Der Ablauf der Stunden“ auf mehrere Seiten; bei fünf Stunden entfällt die Stations-Kette auf „Das kommt“.
 
-**Clips umgehängt (16.11.2026):** #02 – der Clip über das Steuerpult der Gefühle gehört jetzt zu „Wer sitzt am Steuer?“; #04 – der Clip
-über Glaubenssätze gehört zu „Alte Sätze“. Ohne Clip (keiner passte zum Fall): #00 Stunde 1, #02 Stunde 4, #04 Stunde 1, #07 Stunde 2,
-#08 Stunde 3.
+**Dritte Runde (27.11.2026, dieselben fünf Kritiker auf den fertigen PDFs):**
+- **Kopiervorlagen:** Material-Stationen (`material(…)`, `fort`, Titel „Material: …“) stehen nicht mehr zwischen den Stationen,
+  sondern als einseitige Kopiervorlagen am Ende des PDFs (`bau.tsx`: `vorlagen`, `stunde-bau.ts`: `h.vorlage`). Im Heft der
+  Jugendlichen steht „(bringt die Leitung mit)“ statt „von der nächsten Seite (ausschneiden)“ (`ohneSeite`). So liegt nie
+  eine Station auf der Rückseite einer Schneideseite. Die Stationsnummer an „zu Station N“ steht von Hand (auch „4 und 6“).
+- Fahrplan mit Kurznamen (Start, Fall, Modell, Große Runde), „Darum geht’s heute“ statt „Am Ende kannst du“, „Drei Regeln für
+  dieses Heft“, Hilfe-Zeile mit SePAS, Leitung: 12–13 Jahre, etwa 90 Minuten, keine Teams. „Zu dritt: Genauso.“ wird nicht gedruckt.
+- Gefühlskarten mit Bild werden automatisch höher, damit das Bild das Wort nicht verdeckt.
+- Neu gebaut: #04 Stunde 1 (Fall Ben → die Kette Sache–Gedanke–Gefühl → Wie-wahrscheinlich-Linie mit neuer Info → mein zweiter
+  Film) und #08 Stunde 2 (10-Minuten-Test statt Sport-Clip, Rucksack-Rennen mit Leer-Machern und Ladern).
+- Gestrichen: #01 „Kennst du das?“ (Dopplung), #02 „meine Torte“, #04 „Wie ein Satz einzieht“, „zwei Filme mit Münze“,
+  #08 „Lio-Moment“; #01 und #03 ohne Akku, Schiff und „sicheren Ort“ (dafür Tank, Parken, Reden).
+- Berichte: `scratchpad` der Sitzung (R3-bericht-00-04.md, R3-bericht-05-08.md) – nicht im Repo.
+
+**Clips (Stand 27.11.2026, nach Runde 3):** #00 keiner · #01 Stunde 2 · #02 Stunden 1 und 2 · #03 Stunde 1 · #04 Stunde 4 ·
+#05 Stunde 3 · #06 Stunden 2 und 3 · #07 Stunden 1 und 3 · #08 Stunde 1. Clips, die gestrichen wurden, bleiben in `inhalt/mN.ts`
+und werden in `stunden(d)` mit `delete e.clip` entfernt.
 
 Videos und Filme
 - `clip` je Track wird als QR-Code gedruckt. Nur Links eintragen, die über die oEmbed-Schnittstelle von

@@ -1,10 +1,12 @@
 // REAL TALK #03 · DRUCK – fünf Einheiten als zusammenhängende Stunden (16.11.2026).
 // Stunde 1 ist ein Brettspiel (der Druck-Tag), Stunde 2 ein Atem-Labor, Stunde 3 ein Sinnes-Labor mit fünf Plätzen,
 // Stunde 4 ein Kopf-Zirkel, Stunde 5 ein Kartenspiel – am Ende steht der eigene Plan.
-// Neu im Sweet Spot (24.11.2026): Sprechblasen nach jedem Fall, Modelle mit einfacher Übung, mehr Clip-Fragen, große Runden
-// ohne Punkte und ohne Teams gegeneinander (die Gruppe spielt zusammen).
+// Neu im Sweet Spot (24.11.2026): Sprechblasen nach jedem Fall, Modelle mit einfacher Übung, große Runden ohne Punkte.
+// Umbau 27.11.2026 nach fünf jugendlichen Kritikern: ein Clip im Heft (Stunde 1), Pausen, Stunde 2 neu als Puls-Labor
+// (messen statt glauben), Stunde 3 mit echtem Set zum Mitnehmen, Stunde 4 mit dem Gedanken-Parkplatz statt Fantasiereisen,
+// Stunde 5 mit dem Ampelplan zum Legen und Falten.
 import type { Frage, Heft, Stunde } from '../typen'
-import { ankommen, beispiel, clip, fall, fragen, fuerDich, karten, kreuz, kreuzU, material, modell, raster, reden, runde, satz, schluss, seite, st, stimmtDas, stunde, tabelle, text, verbinden, weiter, zeile } from './stunden-hilfe'
+import { ankommen, beispiel, clip, fall, fragen, fuerDich, karten, kreuz, kreuzU, material, modell, raster, reden, runde, satz, schluss, seite, st, stimmtDas, stunde, tabelle, text, verbinden, weiter, zeile, pause } from './stunden-hilfe'
 
 const zahl = (f: string, wann: string): Frage => ({ f, skala: [wann] })
 const kreis = (f: string, ...l: string[]): Frage => ({ f, kreis: l })
@@ -37,12 +39,11 @@ export function stunden(d: Heft): Stunde[] {
         [kreuzU('Woher kommt Wut?', 'Sie kommt aus dem Nichts.', 'Sie baut sich auf.', 'Manche sind halt so.'), kreuz('Wie schnell wirst du wütend?', 'schnell', 'mittel', 'langsam')],
         ['Das macht Wut im Körper:', 'Das hilft:', 'Das hat mich überrascht:'],
         [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Finn sagt: „Ich wollte das gar nicht.“ Stimmt das?', 'Ja. Bei Rot schaltet der Kopf fast ab – darum muss man vorher handeln.', 'Nein. Er wollte es.')]),
-      fuerDich('dein Tag wie Finns', '8 Min.', fragen('Denk an einen Tag, an dem es bei dir fast geknallt hat – oder bei jemandem, den du kennst. Nur für dich.',
-        kreuz('Was hat die Zahl schon **vorher** hochgetrieben? Mehrere Kreuze gehen.', 'wenig Schlaf', 'kein Essen', 'Streit', 'Lärm', 'Ärger in der Schule', 'Handy oder Chat', 'weiß nicht'),
-        kreuz('Wo war die Zahl kurz vor dem letzten Tropfen?', 'Grün', 'Gelb', 'Rot'), satz('Wo hättest du bremsen können – wie Finn am Morgen?', 'Bei Zahl … hätte ich'))),
     ),
     seite(
-      runde('der Druck-Tag', '25 Min.', 'alle · am Tisch', 'dice', {
+      pause(),
+
+      runde('der Druck-Tag', '30 Min.', 'alle · am Tisch', 'dice', {
         ziel: 'Zusammen einen Tag durchspielen: Wie sammelt sich Druck – und was senkt ihn wieder?',
         material: 'das Thermometer und die 18 Karten von der nächsten Seite (ausschneiden), eine Spielfigur für die ganze Gruppe',
         schritte: [
@@ -61,79 +62,72 @@ export function stunden(d: Heft): Stunde[] {
         notiz: { titel: 'In Runde 2 haben wir die „−“-Karten gespielt bei Zahl:', linien: 1 },
         auswertung: ['Wann habt ihr in Runde 2 die „−“-Karten gespielt – früh oder erst kurz vor Rot?', 'Welche Karte kennt ihr aus eurem eigenen Tag?'],
       }, { danach: [beispiel('So kann es klingen', ['Ben zieht:', '„Streit am Morgen. Plus 20.“ Die Figur steht bei 60.'], ['Sara:', 'Jetzt die Minus-Karte spielen – sonst sind wir gleich bei Rot.'], ['Alle:', 'Okay. „Fünf Minuten draußen gehen.“ Minus 20.'])] }),
-      st('Der Skill: Gehen ohne Worte', '6 Min.', 'alle · still', 'walk', 'Gemeinsam gehen, Flur oder Hof. Sie gehen mit. Danach die Zahl einkreisen lassen.',
-        fragen(dieZahl.moves[1].kontext ?? null, ...dieZahl.moves[1].fragen)),
     ),
     seite(
-      material('das Thermometer und 18 Karten', 6,
-        tabelle('', ['0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100'], [['Runde 1', '', '', '', '', '', '', '', '', '', ''], ['Runde 2', '', '', '', '', '', '', '', '', '', '']], 10),
-        text('**Grün** 0–30 · **Gelb** 30–70 · **Rot** ab 70. Die Figur läuft in der Zeile der Runde.'),
-        karten(4, 14, 'Die 18 Karten: ausschneiden, mischen, verdeckt stapeln.', [...RAUF, ...RUNTER].map(([t, marke]) => ({ t, marke })))),
-      schluss(dieZahl, 'Finn am Morgen', [kreuzU('Finn hätte seine Zahl am Morgen gekannt. Was hätte er tun können?', 'etwas essen und dem Lehrer sagen: „Heute bin ich schon bei 60.“', 'gar nichts', 'zu Hause bleiben'), zahl('Schau auf Station 1. Wie hoch ist dein Druck jetzt?', 'jetzt')], ['morgens', 'mittags', 'abends']),
+      material('das Thermometer und 18 Karten', 7,
+        tabelle('', ['', '0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100'], [['Runde 1', '', '', '', '', '', '', '', '', '', '', ''], ['Runde 2', '', '', '', '', '', '', '', '', '', '', ''], ['Runde 3', '', '', '', '', '', '', '', '', '', '', '']], 8),
+        text('**Grün** 0–29 · **Gelb** 30–69 · **Rot** ab 70. Die Figur läuft in der Zeile der Runde.'),
+        karten(4, 13, 'Die 18 Karten: ausschneiden, mischen, verdeckt stapeln.', [...RAUF, ...RUNTER].map(([t, marke]) => ({ t, marke })))),
+      schluss(dieZahl, 'Finn am Morgen', [kreuzU('Finn hätte seine Zahl am Morgen gekannt. Was hätte er tun können?', 'etwas essen und kurz Bescheid sagen: „Heute ist schwer.“', 'gar nichts', 'zu Hause bleiben'), zahl('Schau auf Station 1. Wie hoch ist dein Druck jetzt?', 'jetzt')], ['morgens', 'mittags', 'abends']),
     ),
   )
 
-  /* ---------- Stunde 2 · Körper zuerst ---------- */
-  const s2 = stunde('Was hilft, wenn der Kopf nicht mehr zuhört?', ['erklären, warum bei viel Druck zuerst der Körper dran ist', 'drei Arten zu atmen ausprobieren', 'deinen Favoriten zum Runterkommen nennen'],
+  /* ---------- Stunde 2 · Das Puls-Labor (neu 27.11.2026) ---------- */
+  // Raus: Modell-Raster, Box-Clip, Skill-Block, Atem-Parcours, Becherturm („Esoterik-Marathon“, Durchgang 2 gewinnt nur durch Übung).
+  // Neu: Die Jugendlichen messen ihren Puls – vor und nach Vollgas, vor und nach drei Bremsen. „Heute glauben wir nichts.“
+  const s2 = stunde('Was hilft, wenn der Kopf nicht mehr zuhört?', ['deinen Puls messen', 'zwei Bremsen anwenden', 'sagen, welche Bremse bei dir wirkt'],
     seite(
       ankommen('deine Zahl jetzt', zahl('Wie hoch ist dein Druck gerade?', 'jetzt'), kreuz('Was machst du, wenn du aufgeregt bist?', 'atmen', 'bewegen', 'nichts', 'weiß nicht')),
-      st('Erst machen: der Vollgas-Test', '8 Min.', 'alle gleichzeitig', 'bolt', 'Würfel bereitlegen. Alle gleichzeitig, auch Sie. Wer nicht mag, geht zügig auf der Stelle.',
-        fragen('Zwei Minuten volle Kraft – der Würfel sagt, was: **1–2** Hampelmann · **3–4** auf der Stelle laufen · **5–6** Kniebeugen. Dann zwei Minuten sitzen.', ...koerper.moves[0].fragen.slice(0, 1))),
-      fall(koerper, 'Sami vor dem Büro', [
+      st('Puls finden', '8 Min.', 'alle gleichzeitig', 'heartbeat', 'Sagen Sie: „Heute glauben wir nichts. Wir messen.“ Sie zählen die 15 Sekunden laut an und messen mit.',
+        text('Leg zwei Finger an den Hals (neben den Kehlkopf) oder innen ans Handgelenk. Die Leitung sagt „los“ – **zähl 15 Sekunden lang die Schläge.** Mal 4 = dein Puls pro Minute.'),
+        fragen(null, zahl('Mein Ruhepuls:', 'Schläge pro Minute'))),
+      fall(koerper, 'Sami vor dem Lehrerzimmer', [
         kreis('Woran sieht man, dass Sami auf Vollgas ist? Kreise alles ein.', 'Bein wippt', 'Hände schwitzen', 'Film im Kopf', 'er gähnt'),
         kreuzU('Warum hat ausgerechnet Atmen geholfen?', 'Langes Ausatmen bremst den Körper.', 'Das war Zufall.'),
       ], { leitung: 'Vorlesen. Erst ankreuzen, dann die Sprechblase.' }),
+      weiter('Der Fall: Sami vor dem Lehrerzimmer', 3, 'search', reden('Wo wartet ihr ungern – und was macht euer Körper dann?')),
     ),
     seite(
-      weiter('Der Fall: Sami vor dem Büro', 3, 'search', reden('Wo wartet ihr ungern – und was macht euer Körper dann?')),
-      modell(koerper, 'Gas und Bremse', ['bolt', 'wind', 'hand-grab'], { zeit: '8 Min.', wie: 'alle · dann allein',
-        leitung: 'Vorlesen, dann allein ankreuzen. Rennen ist erst Gas – danach fällt bei vielen die Zahl.',
-        fragen: [raster('Gas oder Bremse? Ein Kreuz pro Zeile.', ['Gas', 'Bremse'], 'ein Energydrink', 'lang ausatmen', 'den Streit-Chat noch mal lesen', 'Fäuste ballen und loslassen', 'schnell und flach atmen')],
-        danach: [reden('Was ist eure Lieblings-Bremse?')] }),
-      clip(koerper, 'die Box-Atmung zum Mitmachen', [kreuz('Dein Druck vor dem Clip?', 'Grün', 'Gelb', 'Rot'), kreuz('Hast du so etwas schon mal probiert?', 'ja', 'nein')], ['Erst mitatmen, danach schreiben – das war leicht:', 'Das war schwer:', 'So fühlt sich mein Körper jetzt an:'],
-        [kreuz('Dein Druck nach dem Clip?', 'Grün', 'Gelb', 'Rot'), kreuzU('Sami sitzt wieder vor dem Büro. Was rätst du ihm?', '4 ein, 8 aus', 'Luft anhalten', 'ganz schnell atmen')], '10 Min.'),
-      st('Der Skill: anspannen – loslassen', '5 Min.', 'alle gleichzeitig', 'hand-grab', 'Ruhig ansagen und mitmachen. Hände dürfen unter dem Tisch bleiben.',
-        text('Das geht überall – auch unter dem Tisch. **Fäuste:** fünf Sekunden fest, dann loslassen. **Schultern:** zu den Ohren ziehen, fallen lassen. **Zehen:** einrollen, loslassen. Zwei Durchgänge. Spür den Unterschied.')),
+      st('Vollgas mit Wette', '12 Min.', 'alle gleichzeitig', 'bolt', 'Würfel bereitlegen. Alle gleichzeitig, auch Sie. Wer nicht mag, geht zügig auf der Stelle.',
+        fragen('Erst tippen: Wie hoch geht dein Puls nach **einer Minute Vollgas?** Dann sagt der Würfel, was: **1–2** Hampelmann · **3–4** auf der Stelle laufen · **5–6** Kniebeugen. Sofort danach messen.',
+          zahl('Mein Tipp:', 'Schläge'), zahl('Gemessen:', 'Schläge'))),
+      pause(),
     ),
     seite(
-      runde('das Atem-Labor', '25 Min.', 'zu zweit · dann alle', 'flask', {
-        ziel: 'Herausfinden, welche Atmung bei dir wirkt – und ob ruhige Hände wirklich besser bauen.',
-        material: 'die fünf Atem-Karten von der nächsten Seite (ausschneiden und im Raum verteilen), 20 Becher, Stoppuhr',
+      runde('das Puls-Labor', '35 Min.', 'alle gleichzeitig', 'flask', {
+        ziel: 'Messen, welche Bremse deinen Puls wirklich runterbringt.',
+        material: 'eine Uhr mit Sekundenzeiger oder Stoppuhr, die Tabelle unten',
         schritte: [
-          '**Teil 1 · der Parcours:** Zu zweit von Karte zu Karte. An jeder Karte eine Minute so atmen, wie es draufsteht. Dann unten ankreuzen.',
-          'Nach fünf Karten: Schreib deinen Favoriten auf.',
-          '**Teil 2 · ruhige Hand – das Experiment:** Die ganze Gruppe baut zusammen einen Becherturm, zwei Minuten.',
-          '**Durchgang 1:** vorher 20 Sekunden auf der Stelle laufen. **Durchgang 2:** vorher dreimal mit dem Favoriten atmen.',
-          'Zählt die Becher. In welchem Durchgang war der Turm höher?',
+          '**Drei Durchgänge.** Jedes Mal: eine Minute Vollgas – messen – zwei Minuten Bremse – messen.',
+          '**Bremse A:** einfach sitzen. **Bremse B:** 4 Sekunden ein, 8 Sekunden aus – wie Sami. **Bremse C:** Fäuste fest anspannen, loslassen – immer wieder.',
+          'Vor jeder Bremse tippen: Wie weit runter geht es? Danach messen und eintragen.',
+          'Zum Schluss: Kreis in der Tabelle die Bremse ein, bei der deine Zahl am tiefsten fiel.',
         ],
-        regeln: ['Wem beim Atmen schwindelig wird: normal weiteratmen und hinsetzen.', 'Keine Teams gegeneinander – ihr vergleicht nur die zwei Durchgänge.'],
-        zu3: 'Genauso.',
-        wertung: { kopf: ['Becher', 'Durchgang 1 · nach dem Laufen', 'Durchgang 2 · nach dem Atmen'], zeilen: ['unser Turm'] },
-        auswertung: ['Welcher Turm war höher – und warum?', 'Welche Atmung kann man machen, ohne dass es jemand sieht?'],
-      }, { danach: [fragen(null, ...koerper.moves[1].fragen)] }),
+        regeln: ['Wem schwindelig wird: normal weiteratmen und hinsetzen.', 'Keine Punkte. Jede Person vergleicht nur sich selbst.'],
+        zu3: 'Genauso. Die Leitung misst mit.',
+        notiz: { titel: 'Bei mir hat am meisten gebremst:', linien: 1 },
+        auswertung: ['Welche Bremse geht im Unterricht, ohne dass es einer merkt?', 'Wirken alle gleich? Dann zählt, was sich ruhiger anfühlt.'],
+      }, { leitung: 'Wirken alle gleich, ist das auch ein Ergebnis. Erzählen Sie nichts vorher – die Zahlen sollen sprechen.',
+        danach: [tabelle('auto 22mm 24mm 24mm', ['Durchgang', 'Ruhe', 'nach Vollgas', 'nach Bremse'], [['A · einfach sitzen', '', '', ''], ['B · 4 ein, 8 aus', '', '', ''], ['C · Fäuste an und los', '', '', '']], 9),
+          beispiel('So sieht eine Runde aus', ['Amira:', 'Ruhe 84. Nach Vollgas 132.'], ['', 'Zwei Minuten 4 ein, 8 aus.'], ['Amira:', '96. Fast wieder unten.'])] }),
     ),
     seite(
-      material('5 Atem-Karten', 6,
-        karten(2, 30, 'Ausschneiden und an fünf Plätzen im Raum auslegen.', [
-          { t: '4-7-8', x: '4 ein – 7 halten – 8 aus. Vier Runden.', marke: 'Karte 1' },
-          { t: 'Finger', x: 'Mit dem Finger die andere Hand entlangfahren: hoch = ein, runter = aus.', marke: 'Karte 2' },
-          { t: 'Box', x: '4 ein – 4 halten – 4 aus – 4 halten. Wie ein Viereck.', marke: 'Karte 3' },
-          { t: 'Bauch', x: 'Hand auf den Bauch. Beim Einatmen wird er rund.', marke: 'Karte 4' },
-          { t: '4-8', x: '4 ein – 8 aus. So wie Sami.', marke: 'Karte 5' },
-          { t: 'Eure Karte', x: 'Kennt ihr noch eine Art zu atmen? Schreibt sie auf die Rückseite.', marke: 'Karte 6' },
-        ])),
-      schluss(koerper, 'vor dem Büro', [satz('Dein Test für die Woche: Wann wird es bei dir eng? (Deine höchste Zahl von letzter Woche hilft.)', 'Wenn ich (wann? wo?) …', 'dann mache ich (mein Favorit) …'), zahl('Schau auf Station 1. Wie hoch ist dein Druck jetzt?', 'jetzt')], ['Zahl vorher', 'Skill', 'Zahl nachher']),
+      schluss(koerper, 'vor dem Lehrerzimmer', [
+        raster('Was wirkt bei dir? Ein Kreuz pro Zeile.', ['wirkt', 'geht so', 'nichts für mich'], 'einfach sitzen', '4 ein, 8 aus', 'Fäuste an und los'),
+        satz('Mein Favorit:', 'Wenn ich (wann? wo?) …, dann mache ich …'),
+        zahl('Schau auf Station 1. Wie hoch ist dein Druck jetzt?', 'jetzt'),
+      ], ['Zahl vorher', 'Skill', 'Zahl nachher']),
     ),
   )
 
   /* ---------- Stunde 3 · Reiz gegen Reiz ---------- */
   const s3 = stunde('Was holt dich zurück, wenn innen alles dreht?', ['erklären, warum starke Reize den Kopf bremsen', 'fünf Sinne ausprobieren und vergleichen', 'sagen, was in deine Tasche kommt'],
     seite(
-      ankommen('was dich runterbringt', kreuzU('Dein Test von letzter Woche – Favorit im echten Leben: Was hat deine Zahl gemacht?', 'runter', 'gleich', 'rauf', 'nicht getestet'), kreis('Was beruhigt dich am ehesten? Kreise ein.', 'Musik', 'Kälte', 'ein Duft', 'etwas in der Hand', 'Bewegung', 'weiß nicht')),
+      ankommen('was dich runterbringt', kreuzU('Letzte Woche hast du eine Bremse getestet. Was hat deine Zahl gemacht?', 'runter', 'gleich', 'rauf', 'nicht getestet'), kreis('Was beruhigt dich am ehesten? Kreise ein.', 'Musik', 'Kälte', 'ein Duft', 'etwas in der Hand', 'Bewegung', 'weiß nicht')),
       fall(reiz, 'Amira und das kalte Wasser', [
         kreis('Was hat Amira getan? Kreise alles ein.', 'kaltes Wasser', 'Fliesen gezählt', 'Cousine angerufen', 'Tür geknallt', 'Handy geworfen'),
         kreuzU('Was hat das kalte Wasser mit ihrem Kopf gemacht?', 'Es hat ihn ins Jetzt geholt.', 'Es hat sie bestraft.'),
-        kreuz('Hat sich Amira dabei wehgetan?', 'ja', 'nein'),
+        kreuz('War das stark – und trotzdem ungefährlich?', 'ja', 'nein'),
       ], { leitung: 'Vorlesen. Erst ankreuzen, dann die Sprechblase.' }),
       weiter('Der Fall: Amira und das kalte Wasser', 2, 'search', reden('Was macht ihr, wenn innen alles dreht – und was davon hilft wirklich?')),
     ),
@@ -142,15 +136,12 @@ export function stunden(d: Heft): Stunde[] {
         leitung: 'Vorlesen. Allein ankreuzen, dann auflösen. Bei „schadet“ klar bleiben: Stark ist gut, schädlich nie.',
         fragen: [raster('Bringt es runter, macht es wach – oder schadet es? Ein Kreuz pro Zeile.', ['runter', 'wach', 'schadet'], 'kaltes Wasser ins Gesicht', 'ein saures Bonbon', 'ruhige Musik', 'mit der Faust gegen die Wand', 'ein Duft, den du magst')],
         danach: [reden('Was fehlt euch öfter: runterkommen oder wach werden?')] }),
-      clip(reiz, '5-4-3-2-1 zum Mitmachen', [kreuz('Wo sind deine Gedanken gerade?', 'hier', 'woanders', 'überall'), kreuz('Wie unruhig bist du gerade?', 'gar nicht', 'etwas', 'sehr')], ['Das habe ich gesehen:', 'Das habe ich gehört:', 'Das habe ich gespürt:'],
-        [kreuz('Wo waren deine Gedanken beim Zählen?', 'hier', 'woanders'), kreuzU('Amira zählt die Fliesen. Warum hilft das?', 'Der Kopf ist mit dem Jetzt beschäftigt.', 'Fliesen sind spannend.', 'Es hilft gar nicht.')], '10 Min.'),
-      stimmtDas(reiz),
+      pause(),
     ),
     seite(
-      fuerDich('mein Set für die Tasche', '6 Min.', fragen('Nach dem Labor ausfüllen. Stark: ja. Schädlich: nein.', kreis('Was kommt in deine Tasche? Kreise ein.', 'Duft', 'Kopfhörer', 'Knetball', 'glatter Stein', 'saures Bonbon', 'Kaugummi', 'nichts davon'), satz('Und dann:', 'Das stecke ich diese Woche ein:'))),
-      runde('das Sinnes-Labor', '30 Min.', 'zu zweit · fünf Plätze', 'flask', {
+      runde('das Sinnes-Labor', '35 Min.', 'zu zweit · fünf Plätze', 'flask', {
         ziel: 'Herausfinden, welcher Reiz dich runterbringt, welcher dich wach macht – und welcher nur nervt.',
-        material: 'die fünf Platz-Karten von der nächsten Seite; Duftstreifen (zum Beispiel Zitrone, Minze, Lavendel, Vanille), Kühlpacks im Tuch, eine Kiste mit Gegenständen (Stein, Knetball, Bürste, Tuch), Musik mit Kopfhörern, saure Bonbons',
+        material: 'die fünf Platz-Karten von der nächsten Seite; Duftstreifen (zum Beispiel Zitrone, Minze, Lavendel, Vanille), Kühlpacks (am Vortag ins Gefrierfach) im Tuch oder ein Becher Eiswasser, eine Kiste mit Gegenständen (Stein, Knetball, Bürste, Tuch), Musik mit Kopfhörern, saure Bonbons',
         schritte: [
           'Die fünf Karten liegen an fünf Plätzen im Raum, das Material daneben.',
           'Zu zweit von Platz zu Platz. Vier Minuten pro Platz.',
@@ -163,21 +154,25 @@ export function stunden(d: Heft): Stunde[] {
       }, { danach: [tabelle('auto 24mm 24mm 24mm', ['Platz', 'beruhigt', 'macht wach', 'nervt'], [['1 Riechen'], ['2 Kälte'], ['3 Tasten'], ['4 Hören'], ['5 Schmecken']].map(([p]) => [p, '', '', '']), 7)], leitung: 'Plätze vorher aufbauen. Nach Allergien fragen; Bonbons und Düfte sind freiwillig. Sie probieren mit.' }),
     ),
     seite(
-      material('5 Platz-Karten', 6,
+      st('Dein Set bauen', '10 Min.', 'allein', 'package', 'Material bereitlegen: kleine Umschläge oder Dosen, Duftstreifen, saure Bonbons, glatte Steine. Jede Person nimmt mit, was bei ihr gewirkt hat.',
+        text('Bau dein Set für die Tasche – **nur aus dem, was bei dir gewirkt hat.** Ein Umschlag oder eine kleine Dose, darin zum Beispiel: dein Duftstreifen, ein saures Bonbon, ein glatter Stein. Schreib deinen Namen drauf.'),
+        fragen(null, kreis('Was ist in deinem Set?', 'Duft', 'saures Bonbon', 'glatter Stein', 'Knetball', 'Kopfhörer', 'etwas anderes'))),
+      material('5 Platz-Karten', 5,
         karten(2, 30, 'Ausschneiden und an fünf Plätzen im Raum auslegen.', [
           { t: 'Riechen', x: 'Riech an jedem Streifen. Nichts kommt auf die Haut. Welcher Duft ist deiner?', marke: 'Platz 1' },
           { t: 'Kälte', x: 'Kühlpack im Tuch in die Hand. 30 Sekunden, nicht länger. Was macht dein Kopf?', marke: 'Platz 2' },
           { t: 'Tasten', x: 'Augen zu, Hand in die Kiste. Nimm etwas heraus: warm oder kalt? glatt oder rau?', marke: 'Platz 3' },
           { t: 'Hören', x: 'Kopfhörer auf, 30 Sekunden Musik. Bringt sie dich runter – oder lädt sie dich auf?', marke: 'Platz 4' },
           { t: 'Schmecken', x: 'Ein saures Bonbon, wenn du magst. Achte nur auf den Geschmack.', marke: 'Platz 5' },
-          { t: 'Euer Platz', x: 'Fällt euch noch ein Reiz ein, der stark ist und nicht schadet?', marke: 'Platz 6' },
         ])),
+    ),
+    seite(
       schluss(reiz, 'innen 85', [kreuzU('Jemand sitzt ruhig da – innen ist er bei 85. Was hilft am schnellsten?', 'ein starker Reiz: Kälte, Duft, Musik', 'lange darüber reden', 'abwarten'), kreis('Schau auf Station 1: Was beruhigt dich wirklich am ehesten?', 'Musik', 'Kälte', 'ein Duft', 'etwas in der Hand', 'Bewegung')], ['benutzt']),
     ),
   )
 
   /* ---------- Stunde 4 · Kopfkino ---------- */
-  const s4 = stunde('Wie hältst du den Film im Kopf an?', ['erklären, warum Wegdrücken Gedanken stärker macht', 'den Kopf beschäftigen, damit er Pause hat', 'einen sicheren Ort in Gedanken finden'],
+  const s4 = stunde('Wie hältst du den Film im Kopf an?', ['erklären, warum Wegdrücken Gedanken stärker macht', 'den Kopf beschäftigen, damit er Pause hat', 'einen Gedanken bis morgen parken'],
     seite(
       ankommen('dein Kopfkino', kreuz('Kennst du das: Ein Gedanke läuft in Dauerschleife?', 'oft', 'manchmal', 'nie'), kreis('Wann dreht dein Kopf am meisten? Kreise ein.', 'abends im Bett', 'in der Schule', 'nach Streit', 'vor Prüfungen', 'fast nie')),
       st('Erst machen: der blaue Elefant', '5 Min.', 'alle · still', 'ban', 'Eine Minute stoppen. Danach nur fragen: Wer hatte null Striche? (Fast niemand.)',
@@ -189,19 +184,14 @@ export function stunden(d: Heft): Stunde[] {
       ], { leitung: 'Vorlesen. Erst ankreuzen, dann die Sprechblase.' }),
     ),
     seite(
-      weiter('Der Fall: Mia um zwei Uhr nachts', 3, 'search', reden('Was dreht bei euch nachts im Kopf – Schule, Streit, Chat? Wer mag, erzählt.')),
-      modell(kopf, 'drei Wege aus dem Kopfkino', ['puzzle', 'eye', 'switch-horizontal'], { zeit: '8 Min.', wie: 'alle · dann allein',
-        leitung: 'Vorlesen, dann allein ankreuzen und auflösen.',
-        fragen: [raster('Welcher Weg ist das? Ein Kreuz pro Zeile.', ['beschäftigen', 'beobachten', 'umschalten'], 'ein ABC mit Tieren', 'den Gedanken auf ein Schiff setzen', 'in Gedanken an einen ruhigen Strand gehen', 'von 100 in Siebenerschritten zählen')],
+      weiter('Der Fall: Mia um zwei Uhr nachts', 3, 'search', reden('Was dreht bei Leuten in eurem Alter nachts am meisten – Schule, Streit, Chat?')),
+      modell(kopf, 'drei Wege aus dem Kopfkino', ['puzzle', 'eye', 'switch-horizontal'], { zeit: '6 Min.', wie: 'alle',
+        leitung: 'Nur vorlesen. Zu jedem Weg ein Beispiel aus der Gruppe.',
         danach: [reden('Welcher Weg passt am besten zu euch?')] }),
-      clip(kopf, 'Warum wir grübeln', [kreuzU('Hilft Grübeln, ein Problem zu lösen?', 'ja', 'meistens nicht', 'weiß nicht'), kreuz('Wie oft grübelst du abends?', 'oft', 'manchmal', 'selten')], ['Darum grübeln wir:', 'Das hilft dagegen:', 'Das hat mich überrascht:'],
-        [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Mia liegt wieder wach. Was kann sie noch probieren?', 'den Gedanken zuschauen wie Schiffen', 'sich über sich ärgern', 'auf die Uhr schauen')]),
     ),
     seite(
-      st('Still: die Gedanken-Schiffe', '8 Min.', 'alle · still', 'sailboat', 'Langsam vorlesen, drei Minuten Stille lassen. Augen offen ist erlaubt.',
-        text('Stell dir einen Fluss vor. Du stehst am Ufer. Jeder Gedanke, der kommt, ist ein Schiff. **Du schaust nur zu.** Bist du eingestiegen? Dann steig wieder aus. Drei Minuten.'),
-        fragen(null, ...kopf.moves[0].fragen.slice(0, 2))),
-      runde('der Kopf-Zirkel', '25 Min.', 'alle · gegen die Uhr', 'brain', {
+      pause(),
+      runde('der Kopf-Zirkel', '32 Min.', 'alle · gegen die Uhr', 'brain', {
         ziel: 'Merken: Wenn der Kopf voll beschäftigt ist, hat das Kopfkino Pause.',
         material: 'der ABC-Bogen von der nächsten Seite, Stifte, Stoppuhr',
         schritte: [
@@ -209,27 +199,30 @@ export function stunden(d: Heft): Stunde[] {
           '**Rückwärts:** Zählt reihum von 50 rückwärts – jede Person eine Zahl. Die Leitung stoppt die Zeit. Zweiter Versuch: Schafft ihr es schneller?',
           '**Blau-Jagd:** 45 Sekunden still alle blauen Dinge im Raum zählen. Dann vergleichen.',
           '**Eine Minute:** Alle stehen, Augen zu. Setz dich, wenn du glaubst, 60 Sekunden sind um.',
+          '**Wie Mia:** Von 100 rückwärts in Dreierschritten. Jede Person still für sich – wer bei 70 ist, hebt die Hand.',
         ],
         regeln: ['Es gibt keine Punkte und keine Teams. Ihr spielt zusammen gegen die Uhr.', 'Wer sich verzählt, macht einfach weiter. Niemand wird vorgeführt.'],
         zu3: 'Genauso.',
-        wertung: { kopf: ['Gruppe', 'ABC: Felder', 'Rückwärts: Versuch 1', 'Rückwärts: Versuch 2'], zeilen: ['unser Ergebnis'] },
         auswertung: ['Bei welcher Runde war kein Platz mehr für andere Gedanken?', 'Welche Runde könnte Mia nachts im Bett machen?'],
       }),
-      fuerDich('mein Ort', '8 Min.', fragen(kopf.moves[1].kontext ?? null, ...kopf.moves[1].fragen)),
+      st('Der Gedanken-Parkplatz', '8 Min.', 'allein', 'parking', 'Sagen Sie: „Was auf dem Zettel steht, muss der Kopf nachts nicht festhalten.“ Was nicht bis morgen warten kann, gehört zu einem Menschen – tagsüber auch an die 116 111, im Notfall 112.',
+        text('Füll den **Parkschein** unten aus – mit Mias Gedanken oder einem eigenen. Heute Abend legst du ihn neben dein Bett.'),
+        tabelle('auto', ['Mein Parkschein'], [['Was dreht? ______________'], ['Wann kümmere ich mich darum? Morgen um ______'], ['Wer kann helfen? ______________']], 10),
+        reden('Was kann bis morgen warten – und was nicht?')),
     ),
     seite(
       material('der ABC-Bogen', 6,
         tabelle('8mm auto 8mm auto 8mm auto', ['', 'Tier, Stadt oder Verein', '', '', '', ''], [['A', '', 'J', '', 'S', ''], ['B', '', 'K', '', 'T', ''], ['C', '', 'L', '', 'U', ''], ['D', '', 'M', '', 'V', ''], ['E', '', 'N', '', 'W', ''], ['F', '', 'O', '', 'X', ''], ['G', '', 'P', '', 'Y', ''], ['H', '', 'Q', '', 'Z', ''], ['I', '', 'R', '', '', '']], 7)),
-      schluss(kopf, 'zwei Uhr nachts', [kreuzU('Schau auf Station 1: Dann, wenn dein Kopf am meisten dreht – was probierst du zuerst?', 'rückwärts zählen', 'den Gedanken zuschauen', 'an meinen Ort denken', 'wegdrücken')], ['1', '2', '3']),
+      schluss(kopf, 'zwei Uhr nachts', [kreuzU('Schau auf Station 1: Wenn dein Kopf am meisten dreht – was probierst du zuerst?', 'rückwärts zählen', 'Parkschein schreiben', 'mit jemandem reden', 'wegdrücken')], ['1', '2', '3']),
     ),
   )
 
   /* ---------- Stunde 5 · Dein Plan ---------- */
-  const SKILLS: [string, string][] = [['4 ein, 8 aus', 'Körper'], ['Fäuste ballen, loslassen', 'Körper'], ['auf der Stelle sprinten', 'Körper'], ['gegen die Wand drücken', 'Körper'], ['kaltes Wasser über die Hände', 'Sinne'], ['mein Duft aus der Tasche', 'Sinne'], ['Musik auf die Ohren', 'Sinne'], ['saures Bonbon', 'Sinne'], ['rückwärts zählen', 'Kopf'], ['5-4-3-2-1', 'Sinne'], ['an meinen Ort denken', 'Kopf'], ['alle blauen Dinge zählen', 'Kopf'], ['jemanden anrufen', 'Mensch'], ['sagen: „Ich brauche kurz Pause.“', 'Mensch'], ['zu jemandem gehen, dem ich vertraue', 'Mensch'], ['schreiben statt reden', 'Mensch'], ['rausgehen', 'Tun'], ['kritzeln oder zeichnen', 'Tun'], ['etwas essen und trinken', 'Tun'], ['aufräumen', 'Tun']]
-  const NOTRUF = ['Jemand beleidigt deine Familie.', 'Du hast kaum geschlafen. Erste Stunde: Test.', 'Du wartest auf ein Gespräch beim Direktor.', 'Dein Handy wird eingesammelt.', 'Im Chat wird über dich gelästert.', 'Es ist nachts. Du kannst nicht schlafen.', 'Zu Hause gab es Streit. Du sitzt im Bus.', 'Jemand rempelt dich im Flur an – mit Absicht.', 'Du sollst vor allen etwas vortragen.']
+  const SKILLS: [string, string][] = [['4 ein, 8 aus', 'Körper'], ['Fäuste ballen, loslassen', 'Körper'], ['auf der Stelle sprinten', 'Körper'], ['gegen die Wand drücken', 'Körper'], ['kaltes Wasser über die Hände', 'Sinne'], ['mein Duft aus der Tasche', 'Sinne'], ['Musik auf die Ohren', 'Sinne'], ['saures Bonbon', 'Sinne'], ['rückwärts zählen', 'Kopf'], ['5-4-3-2-1', 'Sinne'], ['einen Parkschein schreiben', 'Kopf'], ['alle blauen Dinge zählen', 'Kopf'], ['jemanden anrufen', 'Mensch'], ['sagen: „Ich brauche kurz Pause.“', 'Mensch'], ['zu jemandem gehen, dem ich vertraue', 'Mensch'], ['schreiben statt reden', 'Mensch'], ['rausgehen', 'Tun'], ['kritzeln oder zeichnen', 'Tun'], ['etwas essen und trinken', 'Tun'], ['aufräumen', 'Tun']]
+  const NOTRUF = ['Jemand beleidigt deine Familie.', 'Du hast kaum geschlafen. Erste Stunde: Test.', 'Du wartest auf ein Gespräch mit der Klassenlehrerin.', 'Dein Handy wird eingesammelt.', 'Im Chat wird über dich gelästert.', 'Es ist nachts. Du kannst nicht schlafen.', 'Zu Hause gab es Streit. Du sitzt im Bus.', 'Jemand rempelt dich im Flur an – mit Absicht.', 'Du sollst vor allen etwas vortragen.']
   const s5 = stunde('Was machst du bei Grün, Gelb und Rot?', ['Skills nach Zonen sortieren', 'sagen, was bei dir wirkt – und was nicht', 'deinen eigenen Ampelplan aufschreiben'],
     seite(
-      ankommen('was bei dir gewirkt hat', kreis('Was hat dir in den letzten Stunden am meisten gebracht? Kreise ein.', 'Atmen', 'Kälte', 'Duft', 'Musik', 'Zählen', 'Gehen', 'mein Ort', 'noch nichts'), kreuz('Hast du diese Woche einen Skill benutzt?', 'ja', 'nein')),
+      ankommen('was bei dir gewirkt hat', kreis('Was hat dir in den letzten Stunden am meisten gebracht? Kreise ein.', 'Atmen', 'Kälte', 'Duft', 'Musik', 'Zählen', 'Parkschein', 'noch nichts'), kreuz('Hast du diese Woche einen Skill benutzt?', 'ja', 'nein')),
       fall(plan, 'Finn, vier Wochen später', [
         kreuz('Bei welcher Zahl hat Finn diesmal reagiert?', '30', '60', '95'),
         kreis('Was hat Finn getan? Kreise alles ein.', 'Handy hingelegt', 'Fäuste geballt – unter dem Tisch', 'lang ausgeatmet', 'Tisch umgeworfen', 'später mit dem Lehrer geredet'),
@@ -241,9 +234,8 @@ export function stunden(d: Heft): Stunde[] {
         leitung: 'Vorlesen, dann allein verbinden. Kernpunkt: Bei Rot wird nicht geredet – erst runter.',
         fragen: [verbinden('Was gehört in welche Zone? Verbinde.', ['Grün', 'Gelb', 'Rot'], ['raus aus der Situation, zu einem Menschen gehen', 'auftanken: Schlaf, Essen, Leute', 'Warnsignal merken, Skill machen'])],
         danach: [reden('Was ist schwerer: bei Gelb reagieren oder bei Grün auftanken?')] }),
-      clip(plan, 'Rauslassen oder runterschlucken?', [kreuzU('Wut: besser rauslassen oder runterschlucken?', 'rauslassen – draufhauen', 'runterschlucken', 'keins von beiden'), kreuz('Was machst du meistens?', 'rauslassen', 'runterschlucken', 'beides')], ['Das passiert beim Draufhauen:', 'Das hilft wirklich:', 'Das hat mich überrascht:'],
-        [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Was hat Finn gemacht?', 'Kraft raus ohne Ziel: Fäuste, Atem', 'draufgehauen', 'alles runtergeschluckt')]),
       stimmtDas(plan),
+      pause(),
     ),
     seite(
       runde('der Skills-Notruf', '25 Min.', 'alle · am Tisch', 'cards', {
@@ -264,15 +256,17 @@ export function stunden(d: Heft): Stunde[] {
         zu3: 'Die Leitung spielt mit. Jede Person bekommt vier Karten.',
         auswertung: ['Welche Karte hat fast immer gepasst?', 'Welche Karten gingen bei Rot nicht mehr?'],
       }),
-      fuerDich('mein Ampelplan', '12 Min.', fragen(plan.moves[1].kontext ?? null, ...plan.moves[1].fragen, satz('Ein Mensch für meinen Plan:', 'Wenn es brennt, gehe ich zu:'), kreuzU('Probe: Nimm in Gedanken eine Notruf-Karte, die du kennst. Geh deinen Plan durch – Warnsignal, Skill, Mensch. Hält er?', 'ja', 'fast – ich ändere eine Stelle', 'nein – ich frage die Leitung'))),
+      st('Dein Ampelplan zum Falten', '15 Min.', 'allein', 'traffic-lights', 'Faltkarten (ein Blatt, zweimal gefaltet) und Kleber bereitlegen. Stille Arbeit – niemand muss seinen Plan zeigen.',
+        text('Nimm drei Skill-Karten aus dem Notruf-Spiel: **eine für Grün, eine für Gelb, eine für Rot.** Kleb sie auf eine Faltkarte und mal die drei Felder grün, gelb und rot aus. Schreib nur eins dazu: **zu wem du bei Rot gehst.**'),
+        fragen(null, satz('Bei Rot gehe ich zu (zum Beispiel SePAS, Raum ___):', ''), kreuzU('Probe: Nimm in Gedanken eine Notruf-Karte, die du kennst. Hält dein Plan?', 'ja', 'fast – ich tausche eine Karte', 'nein – ich frage die Leitung'))),
     ),
     seite(
       material('20 Skill-Karten und 9 Notrufe', 6,
-        karten(4, 15, 'Die Skill-Karten: ausschneiden, mischen, austeilen.', SKILLS.map(([t, marke]) => ({ t, marke }))),
+        karten(4, 15, 'Die Skill-Karten: zweimal drucken, ausschneiden, mischen, austeilen.', SKILLS.map(([t, marke]) => ({ t, marke }))),
         karten(3, 16, 'Die Notrufe: ausschneiden, mischen, verdeckt stapeln.', NOTRUF.map((t) => ({ t })))),
     ),
     seite(
-      schluss(plan, 'Finn und du', [kreuzU('Finn hatte seinen Plan im Kopf, bevor es brannte. Wann machst du deinen?', 'jetzt – bei Grün', 'wenn es so weit ist', 'gar nicht'), kreuz('Schau auf Station 1: Steht das in deinem Plan?', 'ja', 'nein')], ['gezeigt']),
+      schluss(plan, 'Finn und du', [kreuz('Schau auf Station 1: Steht das, was dir am meisten gebracht hat, in deinem Plan?', 'ja', 'nein')], ['gezeigt']),
     ),
   )
   return [s1, s2, s3, s4, s5]
@@ -287,9 +281,9 @@ export const loesungen: string[][] = [
     'Druck-Tag: In Runde 2 hat die Gruppe meist die wenigsten Rot-Striche, wenn sie die „−“-Karten bei Gelb (ab etwa 50) spielt – zu früh verpufft, zu spät ist man schon bei Rot. Das ist die Botschaft: bei Gelb reagieren, nicht erst bei Rot.',
   ],
   [
+    'Puls: In Ruhe meist 70–100 Schläge pro Minute, nach einer Minute Vollgas oft 120–160.',
     'Der Fall: Bein wippt, Hände schwitzen, Film im Kopf. Langes Ausatmen bremst den Körper – der Puls sinkt.',
-    'Gas oder Bremse: Energydrink, Streit-Chat lesen und flach atmen = Gas. Lang ausatmen und Fäuste ballen–loslassen = Bremse.',
-    'Atem-Labor: kein Richtig oder Falsch. Der zweite Turm ist oft schon durch Übung höher – das offen ansprechen. Ehrlich auswerten, auch wenn Atmen nicht „gewinnt“.',
+    'Puls-Labor: Meist sinkt der Puls bei allen drei Bremsen, bei B (4 ein, 8 aus) oft etwas schneller. Wirken alle gleich, ist das ein ehrliches Ergebnis – dann zählt, was sich ruhiger anfühlt. B und C gehen unbemerkt im Unterricht.',
   ],
   [
     'Der Fall: kaltes Wasser, Fliesen gezählt, Cousine angerufen. Das Wasser hat den Kopf ins Jetzt geholt. Wehgetan hat sie sich nicht – stark, aber nicht schädlich.',
@@ -298,14 +292,13 @@ export const loesungen: string[][] = [
   ],
   [
     'Elefant und Fall: Wegdrücken macht Gedanken stärker. Geholfen hat, den Kopf zu beschäftigen (rückwärts rechnen).',
-    'Drei Wege: ABC und Siebenerschritte = beschäftigen, Schiff = beobachten, Strand = umschalten.',
-    'Clip: Grübeln löst meistens nichts – es dreht sich im Kreis.',
+    'Drei Wege: ABC und Rückwärtszählen = beschäftigen, Parkschein = parken, jemandem schreiben oder sagen = reden.',
+    'Gedanken-Parkplatz: Gut sind kleine, konkrete Zeiten („morgen in der Pause“) und echte Menschen. Was nicht warten kann (Angst um sich oder andere), gehört sofort zu einem Menschen – tagsüber auch an die 116 111, im Notfall 112.',
     'Schluss: Alles außer „wegdrücken“ ist eine gute Antwort.',
   ],
   [
     'Der Fall: Finn hat bei 60 reagiert: Handy hingelegt, Fäuste unter dem Tisch, lang ausgeatmet, später geredet. Anders als in Stunde 1 hat er sein Warnsignal früh gemerkt.',
     'Ampel: Grün – auftanken. Gelb – Warnsignal merken, Skill machen. Rot – raus aus der Situation, zu einem Menschen gehen.',
-    'Clip: Keins von beiden. Draufhauen heizt nach; dauerndes Runterschlucken kostet Kraft. Besser: runterfahren (lang ausatmen, anspannen–loslassen), dann reden.',
     'Skills-Notruf: Bei Rot zählen Körper, Sinne, Rausgehen und zu einem Menschen gehen. Kopf-Skills und langes Reden wirken erst wieder bei Gelb.',
   ],
 ]

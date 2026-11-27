@@ -18,7 +18,7 @@ const d: Heft = {
     "zeilen": [
       "Zwei blaue Haken, keine Antwort: Was dein Kopf daraus macht",
       "Alte Sätze: Wer hat dir das eigentlich erzählt?",
-      "Du bist Detektiv – ein Gefühl ist kein Beweis",
+      "Ein Gefühl ist kein Beweis",
       "Neuer Satz, neue Beweise: sieben Tage Test"
     ]
   },
@@ -26,7 +26,7 @@ const d: Heft = {
     "text": [
       "Dein Kopf redet den ganzen Tag mit dir. Meistens merkst du es nicht mal.",
       "Manche Sätze darin sind so alt, dass du sie für Tatsachen hältst: **Ich bin dumm. Mich mag eh keiner. Aus mir wird nichts.** Irgendwer hat sie mal gesagt – oder du hast sie dir selbst zusammengereimt. Seitdem laufen sie in Dauerschleife und bestimmen, was du dich traust.",
-      "In diesem Heft bist du Detektiv. Du nimmst so einen Satz fest, prüfst die Beweise – und entscheidest, ob er bleiben darf."
+      "In diesem Heft legst du so einen Satz auf die Wippe. Du prüfst, was er wirklich wiegt – und entscheidest, ob er bleiben darf."
     ],
     "zitat": "Glaub nicht alles, ==was du denkst.==",
     "so": [
@@ -56,23 +56,23 @@ const d: Heft = {
   "cast": [
     {
       "bild": "peep:ben:besorgt",
-      "name": "Ben, 15",
+      "name": "Ben, 12",
       "x": "Liest jede Nachricht dreimal. Findet immer das Schlimmste."
     },
     {
       "bild": "peep:lea:traurig",
-      "name": "Lea, 16",
+      "name": "Lea, 13",
       "x": "Trägt seit der Grundschule einen Satz mit sich: „Ich bin zu viel.“"
     },
     {
       "bild": "peep:lio:traurig",
-      "name": "Lio, 14",
+      "name": "Lio, 12",
       "x": "Sagt „Ich bin halt dumm“, bevor es ein anderer sagen kann."
     },
     {
       "bild": "peep:mia:nervoes",
-      "name": "Mia, 16",
-      "x": "Hat eine Stimme im Kopf, die an allem herummeckert. Feierabend macht die nie."
+      "name": "Mia, 13",
+      "x": "Hat eine Stimme im Kopf, die an allem herummeckert. Die hat nie Pause."
     }
   ],
   "warm": {
@@ -107,7 +107,7 @@ const d: Heft = {
       "kurz": "Gleiche Situation, anderer Gedanke, anderer Abend.",
       "szene": {
         "bild": "peep:ben:besorgt:handy",
-        "name": "Ben, 15",
+        "name": "Ben, 12",
         "text": "Ben schreibt Mila: „Bock auf Kino?“ Zwei blaue Haken. Keine Antwort. Nach zehn Minuten weiß Ben: Sie hat keinen Bock mehr auf ihn. Nach zwanzig: Sie lacht gerade mit ihren Freundinnen über die Nachricht. Nach dreißig löscht er den Chat. Um halb neun schreibt Mila: „Sorry, war beim Training. Klar, wann?“ Ben antwortet nicht mehr.",
         "frage": "Was hat Ben den Abend versaut – Mila oder sein Film?"
       },
@@ -125,13 +125,6 @@ const d: Heft = {
           "x": "Sätze über dich selbst, die immer wieder laufen. Manche **helfen**. Manche **bremsen**."
         }
       ],
-      "clip": {
-        "titel": "Was sind Glaubenssätze und wo habe ich die her?",
-        "kanal": "LitLounge · Stefanie Stahl",
-        "url": "https://www.youtube.com/watch?v=_QBYhQa29DI",
-        "dauer": "die ersten 5 Min.",
-        "frage": "Woher kommen laut Video die meisten Sätze, die wir über uns glauben?"
-      },
       "mythen": [
         [
           "Die Situation macht mich wütend.",
@@ -264,8 +257,8 @@ const d: Heft = {
       "kurz": "Woher deine Sätze über dich kommen – und was sie kosten.",
       "szene": {
         "bild": "peep:lea:traurig",
-        "name": "Lea, 16",
-        "text": "Vierte Klasse. Lea erzählt beim Abendessen von ihrem Tag, laut, mit Händen und Füßen. Ihr Stiefvater, müde und genervt, sagt: „Kannst du einmal nicht so viel sein?“ Ein Satz, drei Sekunden. Heute ist Lea sechzehn. Wenn sie lacht, hält sie die Hand vor den Mund. Wenn sie etwas erzählen will, sagt sie: „Ach, egal.“ Der Stiefvater ist längst ausgezogen. Der Satz wohnt noch da.",
+        "name": "Lea, 13",
+        "text": "Lea ist neun. Sie erzählt beim Abendessen von ihrem Tag, laut, mit Händen und Füßen. Ihr Stiefvater, müde und genervt, sagt: „Kannst du einmal nicht so viel sein?“ Ein Satz, drei Sekunden. Heute ist Lea dreizehn. Wenn sie lacht, hält sie die Hand vor den Mund. Wenn sie etwas erzählen will, sagt sie: „Ach, egal.“ Der Stiefvater ist längst ausgezogen. Der Satz wohnt noch da.",
         "frage": "Wie heißt der Satz, der bei Lea eingezogen ist?"
       },
       "fakten": [
@@ -282,13 +275,6 @@ const d: Heft = {
           "x": "„Ich bin nicht gut genug.“ „Mich mag keiner.“ Diese Sätze kennen **fast alle**."
         }
       ],
-      "clip": {
-        "titel": "Impostor-Syndrom: Warum wir uns manchmal als Hochstapler fühlen",
-        "kanal": "Quarks Dimension Ralph",
-        "url": "https://www.youtube.com/watch?v=8sPRWUwsmfk",
-        "dauer": "die ersten 5 Min.",
-        "frage": "Warum glauben sogar Leute mit Erfolg, sie seien nicht gut genug?"
-      },
       "mythen": [
         [
           "So bin ich eben.",
@@ -399,7 +385,7 @@ const d: Heft = {
           "material": "–",
           "schritte": [
             "Reihum, auch die Leitung: Bring einen Spruch, den Erwachsene ständig sagen – mit Stimme und Geste. „Solange du die Füße unter meinen Tisch stellst …“",
-            "Die anderen raten: Wer redet so? Lehrer, Oma, Trainer, Chef?",
+            "Die anderen raten: Wer redet so? Lehrer, Oma, Trainer, große Schwester?",
             "Nur Sprüche, die nerven – keine, die wehtun. Am Ende wählt ihr den Spruch des Jahres."
           ],
           "frage": "Welchen Spruch habt ihr so oft gehört, dass ihr ihn fast selbst sagt?",
@@ -425,11 +411,11 @@ const d: Heft = {
       "nr": 18,
       "titel": "Beweise, bitte",
       "unter": "Nimm den Satz fest. Prüf, was wirklich für ihn spricht – und was dagegen",
-      "kurz": "Du bist Detektiv: Was spricht wirklich für den Satz?",
+      "kurz": "Leg den Satz auf die Wippe: Was wiegt wirklich?",
       "szene": {
         "bild": "peep:lio:traurig",
-        "name": "Lio, 14",
-        "text": "Lio bekommt den Mathetest zurück: 22 von 60. „War ja klar. Ich bin halt dumm.“ Sein Sitznachbar sagt: „Letztes Mal hattest du 15.“ Lio zuckt die Schultern. Dass er jedes Moped im Viertel wieder zum Laufen kriegt, zählt für ihn nicht. Dass er im Praktikum allein an die Kasse durfte, auch nicht. Sein Kopf lässt nur rein, was zum Satz passt.",
+        "name": "Lio, 12",
+        "text": "Lio bekommt den Mathetest zurück: 22 von 60. „War ja klar. Ich bin halt dumm.“ Sein Sitznachbar sagt: „Letztes Mal hattest du 15.“ Lio zuckt die Schultern. Dass er jedes Fahrrad im Viertel wieder zum Laufen kriegt, zählt für ihn nicht. Dass er beim Schulfest allein an die Kasse durfte, auch nicht. Sein Kopf lässt nur rein, was zum Satz passt.",
         "frage": "Welche Beweise lässt Lios Kopf nicht rein?"
       },
       "fakten": [
@@ -446,13 +432,6 @@ const d: Heft = {
           "x": "Nicht „Ich bin der Beste“. Sondern **wahr, aktiv, im Jetzt**: „Mathe fällt mir schwer. Wenn ich frage, wird es besser.“"
         }
       ],
-      "clip": {
-        "titel": "So fällst du nie wieder auf Scheinargumente rein",
-        "kanal": "Quarks Dimension Ralph",
-        "url": "https://www.youtube.com/watch?v=9USIhOR78Do",
-        "dauer": "die ersten 5 Min.",
-        "frage": "Ein Scheinargument klingt wie ein Beweis, ist aber keiner. Welches benutzt dein Kopf am liebsten gegen dich?"
-      },
       "mythen": [
         [
           "Ein neuer Satz muss positiv klingen.",
@@ -488,9 +467,9 @@ const d: Heft = {
                   "22 von 60 Punkten im Mathetest",
                   "Seit dem letzten Test: sieben Punkte mehr.",
                   "Er fühlt sich dumm, wenn er aufgerufen wird.",
-                  "Er repariert jedes Moped im Viertel.",
+                  "Er repariert jedes Fahrrad im Viertel.",
                   "Sein Cousin sagt: „Du checkst nichts.“",
-                  "Im Praktikum durfte er allein an die Kasse."
+                  "Beim Schulfest durfte er allein an die Kasse."
                 ]
               }
             },
@@ -588,8 +567,8 @@ const d: Heft = {
       "leitung": {
         "einsatz": "Szene vor dem „Fall Tiago“ (bei den Sessions als „Tatort“). Move A ist die Kurzfassung des Falls im Heft. Die Arbeit am eigenen Satz („Mein Fall“) bleibt auf dem Detektivblatt im Umschlag. Move B ist der Prüfstand. „Dein Satz“ ist der neue Satz; die Karte dazu steht auf Seite {K}.",
         "loesungen": [
-          "Szene: die Steigerung von 15 auf 22, das Moped, die Kasse im Praktikum.",
-          "Move A: dafür – 22 Punkte (schwach: ein Test, ein Fach) · dagegen – sieben Punkte mehr, Moped, Kasse · kein Beweis – fühlt sich dumm, Spruch des Cousins. Urteil: zu grob.",
+          "Szene: die Steigerung von 15 auf 22, das Fahrrad, die Kasse beim Schulfest.",
+          "Move A: dafür – 22 Punkte (schwach: ein Test, ein Fach) · dagegen – sieben Punkte mehr, Fahrrad, Kasse · kein Beweis – fühlt sich dumm, Spruch des Cousins. Urteil: zu grob.",
           "Move B: besteht – Satz 2, 4, 6 · fällt durch – 1 (nicht wahr), 3 (sagt, was ich nicht bin), 5 (nicht im Jetzt)."
         ],
         "impulse": [
@@ -607,7 +586,7 @@ const d: Heft = {
       "kurz": "Den neuen Satz ausprobieren – und Beweise sammeln.",
       "szene": {
         "bild": "peep:mia:nervoes",
-        "name": "Mia, 16",
+        "name": "Mia, 13",
         "text": "Mia hat einen neuen Satz: „Meine Idee zählt genauso.“ Montag, Gruppenrunde. Ihr Herz klopft. Der alte Satz brüllt: „Halt die Klappe, das interessiert keinen.“ Sie sagt ihre Idee trotzdem. Leise, zu schnell. Zwei nicken. Einer sagt: „Gar nicht blöd.“ Kein Applaus, keine Musik. Aber am Abend macht Mia einen Strich auf ihrem Zettel. Beweis Nummer eins.",
         "frage": "Warum zählt dieser kleine Moment so viel?"
       },
@@ -780,8 +759,8 @@ const d: Heft = {
     ]
   },
   "quiz": {
-    "unter": "Acht Fragen. Acht Buchstaben. Ein Beruf.",
-    "wort": "DETEKTIV",
+    "unter": "Acht Fragen. Acht Buchstaben. Darum geht es hier.",
+    "wort": "GEDANKEN",
     "fragen": [
       {
         "f": "Was sitzt zwischen Situation und Gefühl?",
@@ -793,7 +772,7 @@ const d: Heft = {
         "r": 0
       },
       {
-        "f": "Ein Glaubenssatz ist …",
+        "f": "Ein alter Satz ist …",
         "o": [
           "ein Gesetz",
           "ein Satz über dich, der immer wieder läuft",
@@ -820,11 +799,11 @@ const d: Heft = {
         "r": 0
       },
       {
-        "f": "Was sammelt ein guter Detektiv?",
+        "f": "Was bekommt auf der Wippe eine Münze?",
         "o": [
-          "nur Beweise dafür",
-          "Beweise dafür und dagegen",
-          "Gerüchte"
+          "jedes Gefühl",
+          "nur Beweise",
+          "was andere sagen"
         ],
         "r": 1
       },
@@ -958,7 +937,7 @@ const d: Heft = {
     "schluss": "Hot Takes: zwei Sätze statt „Ankommen“ (5 Min., gleiche Zeit) – oder alle sechs im Stehen, wenn eine Stunde früher fertig ist, „Knack den Code“ als Wiederholung, Karten ausschneiden – „Mein neuer Satz“ zuerst –, Abspann in der Abschlussrunde von Einheit 19.",
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
-      "Beim Sortieren (Akte, Prüfstand) zu zweit arbeiten lassen.",
+      "Bei der Wippe zu zweit arbeiten lassen.",
       "Neue Sätze aus den Beispielen des Prüfstands auswählen lassen, statt sie selbst zu bauen.",
       "Wer nicht schreiben mag, diktiert oder zeichnet."
     ],
@@ -976,7 +955,7 @@ const d: Heft = {
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."
     ],
     "hot": "Es gibt keine richtige Position. Nachfragen statt korrigieren: „Was hast du erlebt, dass du dort stehst?“ Take 6 kann nahegehen – nach Figuren fragen (Lea), nicht nach der eigenen Familie. Take 2 lädt ein, über Veränderung zu sprechen, auch über die eigene Akte: Was steht über mich drin, und stimmt es noch?",
-    "achtung": "Die persönlichen Blätter („Meine Glaubenssätze“, Detektivblatt) werden nicht eingesammelt und nicht vorgelesen. Die Zettel der geheimen Zählung (Stunde 02) nach dem Zählen sofort vernichten.",
+    "achtung": "Die persönlichen Seiten („mein zweiter Film“, „mein Prüfstand“) werden nicht eingesammelt und nicht vorgelesen. Die Zettel der geheimen Zählung (Stunde 02) nach dem Zählen sofort vernichten.",
     "hintergrund": "Grundlage ist das kognitive Modell: Nicht die Situation, sondern ihre Bewertung bestimmt Gefühl und Verhalten (Ellis; Beck). Glaubenssätze entstehen aus wiederholten oder prägenden Erfahrungen und wirken als Filter. Das Prüfen von Belegen für und gegen einen Gedanken ist die Kerntechnik der kognitiven Umstrukturierung (Beck). Neue Überzeugungen festigen sich über eigene Erfolgserfahrungen (Bandura) und konkrete Wenn-dann-Pläne (Gollwitzer). Ein freundlicher Umgang mit sich selbst geht nicht mit weniger, sondern mit mehr Anstrengungsbereitschaft einher (Neff).",
     "quellen": "Ellis (1962) · Beck (2011) · Bandura (1977) · Gollwitzer (1999) · Neff (2003) · Dweck (2006) · Kross & Ayduk (2017). Angaben zu den Einheiten 16–19 in der Toolbox."
   },

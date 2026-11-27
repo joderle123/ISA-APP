@@ -17,7 +17,7 @@ const d: Heft = {
     "sticker": "ok.",
     "zeilen": [
       "Warum „ok.“ nie einfach ok ist",
-      "Streiten ohne Krieg: der Satz mit Ich",
+      "Streiten ohne Krieg: die Wort-Schere",
       "Wo bei dir Schluss ist – und bei den anderen",
       "Nein sagen. Ohne Lächeln. Ohne Entschuldigung."
     ]
@@ -50,29 +50,29 @@ const d: Heft = {
     "regeln": [
       "**Du schreibst nur, was du willst.** Niemand sammelt das Heft ein. Niemand liest mit.",
       "**Stopp heißt Stopp.** In jeder Übung. Für jeden.",
-      "**Lachen ja, auslachen nein.** Was hier gesagt wird, bleibt hier."
+      "**Lachen ja, auslachen nein.** Was andere hier erzählen, trägst du nicht weiter. Ist jemand in Gefahr, holt die Leitung Hilfe."
     ]
   },
   "cast": [
     {
       "bild": "peep:yusuf:neutral",
-      "name": "Yusuf, 16",
-      "x": "Zweite Verwarnung im Betrieb. Wird laut, bevor er nachdenkt."
+      "name": "Yusuf, 13",
+      "x": "Kommt oft zu spät zum Sport. Wird laut, bevor er nachdenkt."
     },
     {
       "bild": "peep:jana:froh",
-      "name": "Jana, 15",
-      "x": "Wohngruppe seit dem Sommer. Redet viel, damit keiner fragt."
+      "name": "Jana, 13",
+      "x": "Seit dem Sommer neu in der Klasse. Redet viel, damit keiner fragt."
     },
     {
       "bild": "peep:tom:muede",
-      "name": "Tom, 14",
+      "name": "Tom, 12",
       "x": "Dritte Schule in zwei Jahren. Antwortet am liebsten mit „ok.“"
     },
     {
       "bild": "peep:chloe:verlegen",
-      "name": "Chloé, 16",
-      "x": "War im Frühling ein paar Wochen in der Klinik. Sagt Ja, wenn sie Nein meint."
+      "name": "Chloé, 12",
+      "x": "Neu in der Klasse. Sagt Ja, wenn sie Nein meint."
     }
   ],
   "warm": {
@@ -109,8 +109,8 @@ const d: Heft = {
       "kurz": "Warum „Alles gut“ selten alles gut heißt.",
       "szene": {
         "bild": "peep:tom:muede",
-        "name": "Tom, 14",
-        "text": "Der Erzieher fragt: „Alles klar bei dir?“ Tom sagt: „Ja.“ Kapuze auf, Blick am Boden, Kiefer fest. Der Erzieher nickt und geht weiter. Am Abend fliegt ein Stuhl. Alle sagen: „Aus dem Nichts.“ War es nicht. Tom hat den ganzen Tag gesendet. Nur nicht mit Worten.",
+        "name": "Tom, 12",
+        "text": "Die Klassenlehrerin fragt in der Pause: „Alles klar bei dir?“ Tom sagt: „Ja.“ Kapuze auf, Blick am Boden, Kiefer fest. Sie nickt und geht weiter. In der sechsten Stunde fliegt ein Stuhl. Alle sagen: „Aus dem Nichts.“ War es nicht. Tom hat den ganzen Tag gesendet. Nur nicht mit Worten.",
         "frage": "Was hat Toms Körper gesagt?"
       },
       "fakten": [
@@ -141,13 +141,6 @@ const d: Heft = {
           "Oder kalt. Oder unsicher. Ein Signal allein beweist nichts."
         ]
       ],
-      "clip": {
-        "titel": "Körpersprache: Ich sehe, was du fühlst",
-        "kanal": "Terra Xplore",
-        "url": "https://www.youtube.com/watch?v=pOGO-JByT5c",
-        "dauer": "die ersten 5 Min.",
-        "frage": "Welches Signal im Video hättest du übersehen?"
-      },
       "merk": "Wenn Worte und Körper streiten, ==gewinnt der Körper.==",
       "moveUnter": "Lesen lernen, was keiner sagt",
       "moves": [
@@ -268,11 +261,11 @@ const d: Heft = {
       "nr": 21,
       "titel": "Streiten ohne Krieg",
       "unter": "Sagen, was stört – so, dass der andere nicht sofort zurückschießt",
-      "kurz": "Der Satz mit Ich. Und warum Zuhören keine Schwäche ist.",
+      "kurz": "Welche Wörter aus Ärger Krieg machen – und was übrig bleibt.",
       "szene": {
         "bild": "peep:yusuf:wuetend",
-        "name": "Yusuf, 16",
-        "text": "Yusuf kommt zu spät in den Betrieb. Der Meister, vor allen: „Schon wieder.“ Yusuf: „Sie haben doch eh was gegen mich!“ Der Meister: „So redest du nicht mit mir.“ Zwei Minuten später steht Yusuf draußen. Dabei wollte er nur sagen: Der Bus ist ausgefallen. Und dass es ihm peinlich ist.",
+        "name": "Yusuf, 13",
+        "text": "Yusuf kommt zu spät in die Sporthalle. Der Bus ist ausgefallen. Der Sportlehrer, vor allen: „Schon wieder.“ Yusuf: „Sie haben doch eh was gegen mich!“ Der Sportlehrer: „Raus.“ Zwei Minuten später steht Yusuf draußen. Dabei wollte er nur sagen: Der Bus ist ausgefallen – und es ist mir peinlich.",
         "frage": "An welchem Satz ist es gekippt?"
       },
       "fakten": [
@@ -289,13 +282,6 @@ const d: Heft = {
           "x": "Wer zuhört und zusammenfasst, nimmt Tempo raus: „Du bist also sauer, weil …?“"
         }
       ],
-      "clip": {
-        "titel": "Gewaltfreie Kommunikation nach Rosenberg – einfach erklärt",
-        "kanal": "ErzieherWissen",
-        "url": "https://www.youtube.com/watch?v=76kTePn8mqI",
-        "dauer": "die ersten 4 Min.",
-        "frage": "Gewaltfrei heißt hier: reden ohne Angriff. Das Video nennt vier Schritte – welche findest du im Bauplan „Ich bin … weil … Ich will, dass …“ wieder?"
-      },
       "mythen": [
         [
           "Ich-Sätze sind Sozialarbeiter-Sprech.",
@@ -345,7 +331,7 @@ const d: Heft = {
           "titel": "Yusufs zweiter Versuch",
           "wie": "zu zweit",
           "zeit": "8 Min.",
-          "kontext": "Gleiche Szene. Der Meister sagt: „Schon wieder.“ Bau Yusufs Antwort neu – in drei Teilen:",
+          "kontext": "Gleiche Szene. Der Sportlehrer sagt: „Schon wieder.“ Bau Yusufs Antwort neu – in drei Teilen:",
           "fragen": [
             {
               "f": "Yusuf sagt:",
@@ -356,7 +342,7 @@ const d: Heft = {
               ]
             },
             {
-              "f": "Lies es vor. Dein Partner ist der Meister. Was passiert jetzt eher?",
+              "f": "Lies es vor. Dein Partner ist der Sportlehrer. Was passiert jetzt eher?",
               "kreis": [
                 "ein Gespräch",
                 "eine Ansage, aber fair",
@@ -378,7 +364,7 @@ const d: Heft = {
         "x": "Ein Satz, den du jemandem schon lange sagen willst – als Ich-Satz. Niemand liest ihn.",
         "linien": 2
       },
-      "woche": "Ein Ich-Satz im echten Leben. Zwei Teile reichen: **was los ist** und **was du willst**.",
+      "woche": "Nimm einmal im echten Leben die Wort-Schere: **weg mit immer, nie, typisch.** Übrig bleibt, was passiert ist – und was du willst.",
       "gruppe": [
         {
           "titel": "Schritt vor, Schritt zurück",
@@ -430,8 +416,8 @@ const d: Heft = {
       "kurz": "Wo bei dir Schluss ist. Und woran du es merkst.",
       "szene": {
         "bild": "peep:chloe:verlegen",
-        "name": "Chloé, 16",
-        "text": "Neue Gruppe. Jemand legt Chloé den Arm um die Schulter. Nett gemeint. Chloé lacht. Ihr Bauch zieht sich zusammen. Sie sagt nichts – sie ist ja neu. Am Abend ist sie völlig fertig und weiß nicht, warum.",
+        "name": "Chloé, 12",
+        "text": "Erster Tag in der neuen Klasse. Ein Junge legt Chloé den Arm um die Schulter: „Hey, Neue!“ Nett gemeint. Chloé lacht. Ihr Bauch zieht sich zusammen. Sie sagt nichts – sie ist ja neu. Am Abend ist sie völlig fertig und weiß nicht, warum.",
         "frage": "Woran hätte Chloé ihre Grenze merken können?"
       },
       "fakten": [
@@ -488,7 +474,7 @@ const d: Heft = {
                 "zeilen": [
                   "Jemand nimmt dein Ladekabel, ohne zu fragen.",
                   "Jemand postet ein Foto von dir.",
-                  "Jemand fragt vor allen, warum du in der Klinik warst.",
+                  "Jemand fragt vor allen, warum du gefehlt hast.",
                   "Jemand setzt sich im leeren Bus direkt neben dich.",
                   "Jemand liest deine Chats mit.",
                   "Jemand lacht über das, was dir wichtig ist."
@@ -579,7 +565,7 @@ const d: Heft = {
         "einsatz": "Szene nach der Karten-Staffel. Move A sichert die Staffel, Move B statt oder neben dem Blatt „Meine Grenzen“ (privat). Die Challenge ist „Stopp-Abstand“.",
         "loesungen": [
           "Szene: am Bauch, am Lachen ohne Grund, an der Erschöpfung danach. Niemand hat Schuld – aber Chloé darf beim nächsten Mal etwas sagen.",
-          "Move A: Ladekabel – Körper (Sachen) · Foto – Digital · Klinik-Frage – Inneres · Bus – Körper (Raum) · Chats – Digital, auch Inneres · Auslachen – Inneres.",
+          "Move A: Ladekabel – Körper (Sachen) · Foto – Digital · Fehl-Frage – Inneres · Bus – Körper (Raum) · Chats – Digital, auch Inneres · Auslachen – Inneres.",
           "Move B: offen und privat. Wichtig ist der zweite Teil: die Grenzen anderer lesen lernen."
         ],
         "impulse": [
@@ -597,8 +583,8 @@ const d: Heft = {
       "kurz": "Ein Nein, das ankommt. Und was du tust, wenn du eins hörst.",
       "szene": {
         "bild": "peep:jana:neutral",
-        "name": "Jana, 15",
-        "text": "Ein Typ aus der Parallelklasse stellt ein Foto von Jana in die Gruppe. Jana schreibt: „haha lösch das mal bitte“. Er löscht es nicht. Am nächsten Tag steht sie vor ihm. Gerade. Kein Lächeln. Ruhige, feste Stimme: „Lösch das Foto. Jetzt.“ Er löscht es. Gleiche Bitte. Anderes Ergebnis.",
+        "name": "Jana, 13",
+        "text": "Ein Junge aus der Parallelklasse stellt ein Foto von Jana in die Gruppe. Jana schreibt: „haha lösch das mal bitte“. Er löscht es nicht. Am nächsten Tag steht sie vor ihm. Gerade. Kein Lächeln. Ruhige, feste Stimme: „Lösch das Foto. Jetzt.“ Er löscht es. Gleiche Bitte. Anderes Ergebnis.",
         "frage": "Was war beim zweiten Mal anders?"
       },
       "fakten": [
@@ -629,13 +615,6 @@ const d: Heft = {
           "Muss man nicht. Und wenn du eins hörst: Okay. Ohne Diskussion."
         ]
       ],
-      "clip": {
-        "titel": "Einverständnis – so einfach wie Tee",
-        "kanal": "GONEASTRAYfilms",
-        "url": "https://www.youtube.com/watch?v=2ovcQgIN5G4",
-        "dauer": "ca. 3 Min.",
-        "frage": "Im Clip geht es um Sex und Einverständnis. Was hat eine Tasse Tee damit zu tun?"
-      },
       "merk": "==Nein== ist ein ganzer Satz.",
       "moveUnter": "Kurz. Klar. Ohne Lächeln.",
       "moves": [
@@ -643,14 +622,14 @@ const d: Heft = {
           "titel": "Die Jury",
           "wie": "alle zusammen",
           "zeit": "5 Min.",
-          "kontext": "Deine Leitung zeigt drei Stopps. Gib Punkte von **0 bis 10**: Wie ernst nimmst du es?",
+          "kontext": "Deine Leitung zeigt drei Stopps. Zeig nach jedem **0 bis 5 Finger**: Wie ernst nimmst du es? Dann kreuz an.",
           "fragen": [
             {
-              "f": "Deine Wertung:",
-              "zahl": [
-                "**Stopp 1**\nleise, mit Lächeln",
-                "**Stopp 2**\nlaut, mit Grinsen",
-                "**Stopp 3**\nruhig, klar, mit Hand"
+              "f": "Welcher Stopp kam am ehesten an?",
+              "kreuz": [
+                "Stopp 1 · leise, mit Lächeln",
+                "Stopp 2 · laut, mit Grinsen",
+                "Stopp 3 · ruhig, klar, mit Hand"
               ]
             },
             {
@@ -781,11 +760,11 @@ const d: Heft = {
         "r": 1
       },
       {
-        "f": "Womit beginnt ein Ich-Satz?",
+        "f": "Was bleibt, wenn das Gift weg ist?",
         "o": [
-          "mit „Du bist …“",
-          "mit „immer“",
-          "mit dem, was bei mir los ist"
+          "„Du bist …“",
+          "„immer“",
+          "was passiert ist"
         ],
         "r": 2
       },
@@ -799,11 +778,11 @@ const d: Heft = {
         "r": 0
       },
       {
-        "f": "Was gehört zum Zuhören?",
+        "f": "Bei einem „ok.“ bist du unsicher. Was hilft?",
         "o": [
-          "sofort Tipps geben",
-          "zusammenfassen",
-          "von sich erzählen"
+          "raten",
+          "nachfragen",
+          "beleidigt sein"
         ],
         "r": 1
       },
@@ -838,13 +817,14 @@ const d: Heft = {
   },
   "karten": [
     {
-      "titel": "Ich-Satz",
-      "icon": "message-2",
+      "titel": "Wort-Schere",
+      "icon": "scissors",
       "zeilen": [
-        "**Ich bin** … (was bei mir los ist)",
-        "**wenn / weil** … (was passiert ist – ohne „immer“ und „nie“)",
-        "**Ich will, dass** … (klein und machbar)"
-      ]
+        "Weg mit: **immer · nie · typisch · schon wieder · du bist … · wegen dir**",
+        "Übrig bleibt: **was passiert ist.**",
+        "Dazu: **was du willst.** „Frag vorher.“ · „Nicht vor allen.“"
+      ],
+      "eigen": "Mein Giftwort:"
     },
     {
       "titel": "Stopp",
@@ -867,13 +847,12 @@ const d: Heft = {
       ]
     },
     {
-      "titel": "Zuhören",
-      "icon": "ear",
+      "titel": "Ist das okay?",
+      "icon": "hand-stop",
       "zeilen": [
-        "Zuwenden. Handy weg.",
-        "Ausreden lassen. Keine Tipps, um die keiner gebeten hat.",
-        "Nachfragen: „Wie war das genau?“",
-        "Zusammenfassen: „Du bist also …, weil …?“"
+        "Vorher fragen.",
+        "Aufs Gesicht schauen.",
+        "Ein Nein heißt: **„Okay.“**"
       ]
     },
     {
@@ -892,7 +871,7 @@ const d: Heft = {
       "zeilen": [
         "Weggehen ist erlaubt. Hilfe holen ist kein Petzen.",
         "Online: Screenshot, blockieren, melden.",
-        "Kanner-Jugendtelefon **116 111** · Notruf **112**"
+        "SePAS in der Schule · Kanner-Jugendtelefon **116 111** · Notruf **112**"
       ],
       "eigen": "Mein Mensch:"
     }
@@ -900,7 +879,7 @@ const d: Heft = {
   "abspann": {
     "posten": [
       "Körper lesen",
-      "Ich-Satz bauen",
+      "Giftwörter wegschneiden",
       "Grenze merken",
       "Stopp sagen",
       "Stopp annehmen"
@@ -933,7 +912,7 @@ const d: Heft = {
     "wozu": "REAL TALK ist das Heft der Jugendlichen zu Modul 5 – gemacht wie ein Magazin, nicht wie ein Arbeitsblatt. Es ersetzt die Spiele der Einheiten nicht. Pro Einheit liefert es eine Szene zum Einsteigen, drei Fakten, drei Mythen und Aufgaben. Die Schülerblätter des Kurses können Sie weiter nutzen oder durch die Doppelseite ersetzen.",
     "lernziele": [
       "Die Jugendlichen unterscheiden Worte, Stimme und Körper und wissen, warum Textnachrichten leicht falsch ankommen.",
-      "Sie bauen einen Ich-Satz aus dem, was los ist, und dem, was sie wollen – und fassen Gehörtes zusammen.",
+      "Sie finden Giftwörter (immer, nie, typisch, du bist …, wegen dir) und kürzen einen Streit-Satz, bis er die Sache trifft – nicht die Person.",
       "Sie unterscheiden körperliche, innere und digitale Grenzen und kennen Signale bei sich und anderen.",
       "Sie setzen eine Grenze mit Körper, Stimme und kurzem Satz – und nehmen ein Nein anderer ohne Diskussion an."
     ],
@@ -949,9 +928,9 @@ const d: Heft = {
       "Eine eigene Szene schreiben (fünf Sätze, erfundene Person).",
       "Einen eigenen Hot Take formulieren und zur Abstimmung stellen.",
       "Die „Rechnung“ (kostet mich / bringt mir) für eine echte Situation aufmachen.",
-      "In der Satz-Werkstatt die Umbauten des anderen Teams prüfen und begründen."
+      "Eigene Streit-Sätze aus Chats oder Serien sammeln und mit der Wort-Schere kürzen."
     ],
-    "gespraech": "Die Szenen sind nah am Alltag der Jugendlichen (Betrieb, Wohngruppe, Klinik). Das ist gewollt: Wer sich wiedererkennt, hört zu. Niemand muss sagen, ob er etwas kennt. Fragen Sie nach der Figur („Was braucht Tom?“), nicht nach der Person im Raum. Erzählt jemand von Übergriff, Gewalt oder Bedrohung: freundlich unterbrechen, ein Gespräch unter vier Augen direkt nach der Einheit anbieten und die zuständige Leitung (Responsable) informieren.",
+    "gespraech": "Die Szenen sind nah am Alltag der Jugendlichen (Klasse, Pause, Sport, Klassenchat). Das ist gewollt: Wer sich wiedererkennt, hört zu. Niemand muss sagen, ob er etwas kennt. Fragen Sie nach der Figur („Was braucht Tom?“), nicht nach der Person im Raum. Erzählt jemand von Übergriff, Gewalt oder Bedrohung: freundlich unterbrechen, ein Gespräch unter vier Augen direkt nach der Einheit anbieten und die zuständige Leitung (Responsable) informieren.",
     "druck": [
       "A4, doppelseitig, an der langen Seite gewendet. Material-Seiten (Schere) einmal extra einseitig drucken und daraus schneiden – im Heft der Jugendlichen steht auf der Rückseite die nächste Station.",
       "Seiten 1–{J} für die Jugendlichen, Seiten {L} nur für Sie.",
@@ -959,7 +938,7 @@ const d: Heft = {
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."
     ],
     "hot": "Es gibt keine richtige Position. Ziel ist, dass Meinungen nebeneinander stehen dürfen und begründet werden. Nachfragen statt korrigieren: „Was hast du erlebt, dass du dort stehst?“ Bei Take 6 lohnt die Unterscheidung von Respekt und Angst: Vor wem habe ich Respekt – und warum? Abwertung einzelner sofort stoppen.",
-    "achtung": "Beim Thema Chat können aktuelle Konflikte oder Cybermobbing zur Sprache kommen: nicht in der Gruppe auswerten, keine echten Chats zeigen lassen. In allen Übungen gilt das Stopp-Recht; niemand wird angefasst. „Du hörst ein Nein“ (Track 04) kann eigene Grenzüberschreitungen berühren – ohne Beschämung besprechen: Es geht um den nächsten Moment, nicht um Schuld. Der Tee-Clip (Track 04) handelt von sexuellem Einverständnis – vorher ansehen.",
+    "achtung": "Beim Thema Chat können aktuelle Konflikte oder Cybermobbing zur Sprache kommen: nicht in der Gruppe auswerten, keine echten Chats zeigen lassen. In allen Übungen gilt das Stopp-Recht; niemand wird angefasst. Das „Okay“ auf ein Nein (Stunde 4) kann eigene Grenzüberschreitungen berühren – ohne Beschämung besprechen: Es geht um den nächsten Moment, nicht um Schuld.",
     "hintergrund": "Jede Nachricht hat einen Inhalts- und einen Beziehungsaspekt; die Beziehung wird vor allem über Stimme, Blick und Haltung vermittelt (Watzlawick). Ich-Botschaft und aktives Zuhören gehören zusammen (Gordon). Menschen halten je nach Beziehung unterschiedliche Abstände ein; die Werte schwanken mit Kultur, Situation und Stimmung (Hall). Das Skillstraining für Jugendliche übt, ein Anliegen klar zu sagen, zu wiederholen und dabei sicher aufzutreten (Rathus & Miller). Die Kosten-Nutzen-Rechnung („kostet mich / bringt mir“) folgt der Pro-und-Contra-Technik desselben Trainings: Sie ersetzt die Moral durch eine eigene Abwägung.",
     "quellen": "Watzlawick, Beavin & Jackson (1967) · Schulz von Thun (1981) · Gordon (1972) · Hall (1966) · Rathus & Miller (2015) – vollständige Angaben in den Einheiten 20–23 der Toolbox."
   },
@@ -969,4 +948,6 @@ const d: Heft = {
 // Fassung mit Stunden (16.11.2026): Die Einheiten sind zusammenhängende Stunden (m5-stunden.ts). Die Angaben oben bleiben als Quelle;
 // gedruckt werden die Stunden.
 aufStunden(d, stunden(d), { geprueft: '16.11.2026', loesungen })
+d.tracks[0].leitung.material = 'Papier und Stifte für „Rücken an Rücken“; ' + d.tracks[0].leitung.material
+d.tracks[2].leitung.material = 'je Person drei Papierstreifen mit F, K, B (vorher beschriften); ' + d.tracks[2].leitung.material
 export default d

@@ -597,6 +597,7 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .sd-modell p { font-size: 9pt; line-height: 1.28; }
 .sd-modell p.w { margin-top: 1mm; padding-top: 1mm; border-top: .3mm dashed var(--g); color: #333; }
 .sd-modell p.w .mo { display: block; font-size: 6.2pt; color: var(--g); }
+.lqr { width: 15mm; height: 15mm; margin-bottom: .6mm; } .lqr svg { width: 100%; height: 100%; }
 .sd-clip { display: flex; flex-direction: column; gap: 2.6mm; }
 .sd-clip .clip { box-shadow: none; }
 .sd-clip .clip .qr { width: 21mm; height: 21mm; }
@@ -704,6 +705,13 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .akku .bat { display: flex; border: .55mm solid var(--k); border-radius: 1.4mm; padding: .7mm; gap: .7mm; position: relative; background: #fff; }
 .akku .bat::after { content: ''; position: absolute; right: -2.2mm; top: 30%; width: 1.5mm; height: 40%; background: var(--k); border-radius: 0 .6mm .6mm 0; }
 .akku .bat i { width: 11mm; height: 7mm; border: .3mm solid var(--l); border-radius: .6mm; }
+.umriss { display: flex; align-items: flex-end; gap: 4mm; margin-top: 1.6mm; }
+.umriss svg { height: 48mm; width: auto; fill: none; stroke: var(--k); stroke-width: 1.1; stroke-linejoin: round; }
+.umriss.torte svg { height: 40mm; }
+.umriss.zimmer { display: block; }
+.umriss.zimmer svg { height: auto; width: 100%; max-height: 50mm; stroke-width: 0.8; }
+.umriss.zimmer .mo { display: block; max-width: none; margin-top: 1mm; }
+.umriss .mo { font-size: 6.6pt; color: var(--g); max-width: 40mm; }
 .verb { display: grid; grid-template-columns: 1fr 1fr; gap: 16mm; margin-top: 1.6mm; font-size: 9.8pt; }
 .verb > div { display: flex; flex-direction: column; gap: 1.8mm; }
 .verb span { display: flex; align-items: center; gap: 2mm; justify-content: space-between; border-bottom: .3mm dotted #DCDCDC; padding-bottom: .6mm; }
@@ -729,3 +737,7 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .sd-mission .qr svg { width: 100%; height: 100%; display: block; }
 .sd-mission .code { font-size: 11pt; letter-spacing: .12em; color: #fff; background: #2A2A2A; border: .35mm solid var(--a); padding: .6mm 2mm; }
 .sd-mission .hn { font-size: 5.6pt; color: #BDBDBD; text-align: center; line-height: 1.2; }
+/* Kopiervorlagen am Ende des PDFs (27.11.2026): einseitig drucken, die Leitung schneidet aus */
+.sd-kopf.kv { align-items: center; }
+.sd-kopf.kv .kvh { display: flex; align-items: center; gap: 1.5mm; font-size: 8pt; color: #555; }
+.sd-kopf.kv .kvh svg { width: 4mm; height: 4mm; }

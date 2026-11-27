@@ -55,17 +55,17 @@ const d: Heft = {
   "cast": [
     {
       "bild": "peep:sami:aufgeregt",
-      "name": "Sami, 14",
+      "name": "Sami, 13",
       "x": "Der Lauteste im Raum. Zu Hause sagt er kaum ein Wort."
     },
     {
       "bild": "peep:amira:neutral",
-      "name": "Amira, 16",
+      "name": "Amira, 13",
       "x": "Die Leise. Hat oft den wichtigsten Satz – und behält ihn für sich."
     },
     {
       "bild": "peep:yusuf:neutral",
-      "name": "Yusuf, 16",
+      "name": "Yusuf, 13",
       "x": "Kennt seine Akte auswendig. Seine Stärken nicht."
     }
   ],
@@ -279,7 +279,7 @@ const d: Heft = {
       "kurz": "Wo du zwischen laut und leise stehst – und warum beides zählt.",
       "szene": {
         "bild": "peep:amira:neutral",
-        "name": "Amira, 16",
+        "name": "Amira, 13",
         "text": "Gruppenarbeit. Sami redet seit vier Minuten. Er hat drei Ideen, zwei davon sind Quatsch, eine ist gut. Amira hat noch kein Wort gesagt. Sie hat die ganze Zeit zugehört – und den Fehler im Plan gefunden. Am Ende sagt der Lehrer: „Sami, gut mitgemacht. Amira, du musst dich mehr beteiligen.“ Amira nickt. Den Fehler behält sie für sich.",
         "frage": "Was hat die Gruppe verloren – und warum?"
       },
@@ -444,8 +444,8 @@ const d: Heft = {
       "kurz": "Deine Stärken – auch die, die in keiner Akte stehen.",
       "szene": {
         "bild": "peep:yusuf:neutral",
-        "name": "Yusuf, 16",
-        "text": "Über Yusuf gibt es eine dicke Akte. Was drinsteht, weiß er auswendig: laut, impulsiv, zwei Verwarnungen. Was nicht drinsteht: dass er jeden Morgen seine kleine Schwester zur Schule bringt. Dass er dem Neuen in der Werkstatt alles zweimal erklärt. Dass er noch nie einen Freund verpfiffen hat. Als die Betreuerin fragt: „Was kannst du gut?“, sagt Yusuf: „Nichts Besonderes.“",
+        "name": "Yusuf, 13",
+        "text": "Über Yusuf gibt es eine dicke Akte. Was drinsteht, weiß er auswendig: laut, impulsiv, zwei Verwarnungen. Was nicht drinsteht: dass er jeden Morgen seine kleine Schwester zur Schule bringt. Dass er dem Neuen in der Klasse alles zweimal erklärt. Dass er seinem Kumpel nach dem Streit als Erster geschrieben hat. Als die Klassenlehrerin fragt: „Was kannst du gut?“, sagt Yusuf: „Nichts Besonderes.“",
         "frage": "Welche Stärken von Yusuf stehen in keiner Akte?"
       },
       "faktenTitel": "Dein Baum",
@@ -604,7 +604,7 @@ const d: Heft = {
           "Wie fühlt es sich an, eine Stärken-Karte zu bekommen?"
         ],
         "material": "Stärken-Karten, A3-Papier, Stifte",
-        "blaetter": "Gefühlsrad, „Baum der Stärke“, Stärken-Karten, Skills-Pass."
+        "blaetter": "Gefühlsrad, Stärken-Karten, Skills-Pass."
       }
     }
   ],
@@ -677,11 +677,11 @@ const d: Heft = {
         "r": 1
       },
       {
-        "f": "Eine Schnell-Tankstelle dauert höchstens …",
+        "f": "Was füllt einen Tank wirklich auf?",
         "o": [
-          "einen Tag",
-          "eine Stunde",
-          "zehn Minuten"
+          "ein Energydrink",
+          "bis drei Uhr zocken",
+          "etwas Richtiges essen"
         ],
         "r": 2
       },
@@ -704,11 +704,11 @@ const d: Heft = {
         "r": 1
       },
       {
-        "f": "Was gehört zu den Wurzeln?",
+        "f": "Was steht hinten auf einer Stärken-Karte?",
         "o": [
-          "deine Noten",
-          "deine Fehler",
-          "was dich hält"
+          "eine Note",
+          "dein Fehler",
+          "das „weil …“"
         ],
         "r": 2
       },
@@ -774,14 +774,14 @@ const d: Heft = {
       ]
     },
     {
-      "titel": "Meine Wurzeln",
-      "icon": "tree",
+      "titel": "Meine Akte, Seite 2",
+      "icon": "folder",
       "zeilen": [
-        "Das hält mich, wenn es wackelt:",
+        "Drei Stärken, die ich geschenkt bekommen habe:",
         "_",
         "_"
       ],
-      "eigen": "Mein Ort:"
+      "eigen": "Das hat keiner gesehen:"
     },
     {
       "titel": "Kompliment",
@@ -831,21 +831,21 @@ const d: Heft = {
       "Die Jugendlichen benennen sechs Grundbedürfnisse („Tanks“) und erkennen an Gefühlen, welcher Tank leer ist.",
       "Sie wählen eine kleine, selbst machbare „Tankstelle“ für den eigenen Alltag.",
       "Sie ordnen sich zwischen Gegensätzen wie laut und leise ein und nennen Stärken beider Seiten.",
-      "Sie nennen eigene Stärken und Halt gebende „Wurzeln“ und geben anderen eine konkrete Stärken-Rückmeldung."
+      "Sie nennen eigene Stärken und geben anderen eine konkrete Stärken-Rückmeldung – mit Beweis."
     ],
     "start": "Titel, Ansage (vorlesen – der Ton ist Absicht), Tracklist und Soundcheck. Etwa 10 Minuten, z. B. in der Brücke von Einheit 4.",
     "schluss": "Kino – der Film des Trimesters – als eigener Termin. Hot Takes: zwei Sätze statt „Ankommen“ (5 Min., gleiche Zeit) – oder alle sechs im Stehen am Schluss, „Knack den Code“ als Wiederholung, Karten ausschneiden, Abspann in der Abschlussrunde von Einheit 6.",
     "hilfe": [
-      "Szene und Fakten vorlesen oder reihum lesen lassen.",
+      "Den Fall vorlesen oder reihum lesen lassen.",
       "Die Tanks einmal an einem Beispiel aus der Gruppe erklären; danach malt jede Person still für sich aus.",
       "Beim Stärken-Check Beispiele aus dem Alltag der Gruppe nennen.",
-      "Wer nicht schreiben mag, zeichnet den Baum."
+      "Wer nicht schreiben mag, klebt nur die Karten ein."
     ],
     "forder": [
       "Für eine Figur aus einer Serie die sechs Tanks einschätzen.",
       "Eine Woche lang abends den blinkenden Tank notieren.",
       "Ein Interview mit einer vertrauten Person führen: „Was kann ich gut?“",
-      "Den Baum auf A3 groß gestalten und (freiwillig) aufhängen."
+      "„Meine Akte, Seite 2“ auf A3 groß gestalten (freiwillig)."
     ],
     "gespraech": "Das Thema Bedürfnisse kann Mangel sichtbar machen: kein sicheres Zuhause, zu wenig Essen, niemand, der zu einem hält. Nichts davon wird in der Gruppe vertieft; Hinweise auf Vernachlässigung oder Gewalt gehen an die zuständige Leitung (Responsable). Fremdeinschätzungen (Punkte-Galerie) können kränken – auf Kommentare und gehäufte Punkte achten. Die Frage nach den Wurzeln kann schmerzen, wenn wichtige Menschen fehlen: ausdrücklich auch Orte, Tiere, Musik und Erinnerungen zulassen.",
     "druck": [
@@ -886,57 +886,56 @@ d.warm.titel = 'Zum Aufwärmen'
 d.ansage.so = [
   ['Stationen', 'Jede Stunde läuft von Station 1 bis zum Schluss. Oben auf der Seite siehst du, wo ihr gerade seid.'],
   ['Fall', 'Eine erfundene Person, der etwas passiert. Sie kommt in der Stunde wieder vor.'],
-  ['Clip', 'Ein Video per QR-Code – mit Aufträgen für vorher, beim Schauen und danach.'],
+  ['Clip', 'Ein kurzes Video. Die Leitung zeigt es – mit Fragen für vorher, beim Schauen und danach.'],
   ['Große Runde', 'Eine Aktion für alle, 25 bis 30 Minuten. Die Karten dafür stehen im Heft. Niemand muss etwas vorspielen.'],
 ]
-// Clip zu Stunde 1: Schlaf – der Tank, den alle kennen (seit 24.11.2026 ohne Fall, mit Fragen vorher, beim Schauen, danach und „Stimmt das?“). Titel und Kanal über oEmbed bestätigt (16.11.2026).
-d.tracks[0].clip = { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal: 'Quarks', url: 'https://www.youtube.com/watch?v=sdH-fEEh1uY', dauer: '00:00 bis 05:09 (ganz)', frage: 'Was macht dein Gehirn, während du schläfst?' }
+// Clips seit 27.11.2026 (jugendliche Kritiker): Stunde 1 ohne Clip (Schlaf-Wette statt Video), Stunde 3 ohne Clip (das Video
+// spricht vor und nach dem Ausschnitt über Suizid und Essstörung). Es bleibt der Clip in Stunde 2.
+delete d.tracks[0].clip
+delete d.tracks[2].clip
 d.geprueft = '16.11.2026'
 d.tracks[0].leitung = {
   ...d.tracks[0].leitung,
-  einsatz: 'Nah am eigenen Alltag, ohne erfundene Hauptfigur: Akku ausmalen → „Kennst du das?“ (sechs Sätze ankreuzen, dann gleichzeitig Daumen zeigen) → Clip über Schlaf mit Fragen vorher, beim Schauen und danach plus „Stimmt das?“ → die sechs Tanks: eigene Tanks ausmalen und die sechs Sätze verbinden → große Runde „Kenn ich!“ ohne Punkte → Tanken – aber richtig (echte und Fake-Tankstellen) → mein Tank-Plan mit Tankstellen-Tausch → ein Tipp für einen Freund.',
+  einsatz: 'Nah am eigenen Alltag, ohne erfundene Hauptfigur: Tank-Anzeige ausmalen → Wette: fünf Sätze über Schlaf → die sechs Tanks: eigene Tanks ausmalen → Pause → große Runde „Kenn ich!“ ohne Punkte → Tanken – aber richtig (echte und Fake-Tankstellen) → mein Tank-Plan mit Tankstellen-Tausch → die Anzeige noch einmal ausmalen.',
   loesungen: [
-    'Kennst du das? Kein Richtig oder Falsch. Die Sätze gehören später zu den Tanks: A Körper · B Sicherheit · C Dazugehören · D Ernst genommen · E Selbst entscheiden · F Spaß und Neues.',
-    'Clip: Jugendliche brauchen etwa 8–10 Stunden Schlaf. Danach 1: Das Gehirn speichert, was du gelernt hast. Stimmt das? – Gehirn räumt auf und speichert: stimmt (im Video) · schneller gereizt: stimmt (nicht im Video, Alltagswissen) · am Wochenende ganz nachholen: stimmt nicht (nur zum Teil) · Handy hilft meistens beim Einschlafen: stimmt nicht (Licht und Inhalte halten wach) · Energydrink ersetzt Schlaf: stimmt nicht (er macht kurz wach, ersetzt nichts). Bitte den Ausschnitt vorher ansehen.',
-    'Modell: A–Körper, B–Sicherheit, C–Dazugehören, D–Ernst genommen, E–Selbst entscheiden, F–Spaß und Neues.',
+    'Wette: Gehirn räumt auf und speichert: stimmt · schneller gereizt: stimmt · am Wochenende ganz nachholen: stimmt nicht (nur zum Teil) · Handy hilft meistens beim Einschlafen: stimmt nicht (Licht und Inhalte halten wach) · Energydrink ersetzt Schlaf: stimmt nicht (er macht kurz wach, ersetzt nichts). Mit 12 oder 13 braucht man etwa 9 bis 11 Stunden Schlaf.',
+    'Modell: Beim Ausmalen gibt es kein Richtig oder Falsch. Wer will, sagt nur, welcher Tank heute am leersten ist.',
     'Große Runde: Es gibt keine richtige Lösung. Passen zwei Tanks (z. B. Teamwahl: Dazugehören und Ernst genommen), liegt die Karte dazwischen.',
     'Tanken – aber richtig: echt – Runde um den Block, eine Stunde mit Freunden zocken, jemanden anrufen, Lieblingslied, etwas Richtiges essen · Fake – Energydrink, bis drei Uhr zocken, stundenlang scrollen, Streit anfangen. Zocken: Die Menge macht den Unterschied – begrenzt und mit Freunden füllt es auf, bis drei Uhr leert es den Körper-Tank.',
-    'Schluss: gute Fragen sind offen und ohne Vorwurf: „Was fehlt dir gerade?“, „Wie schläfst du?“, „Soll ich einfach da sein?“',
+    'Schluss: Die Anzeige muss nicht voller sein als am Anfang. Fragen Sie nur: Hat sich etwas bewegt – nach oben oder nach unten?',
   ],
-  material: '6 Tank-Karten und 18 Situations-Karten (im Heft, ausschneiden), Buntstifte zum Ausmalen, Zettel für den Tankstellen-Tausch, Gerät für den Clip',
+  material: '6 Tank-Karten und 18 Situations-Karten (Kopiervorlage hinten im PDF), Buntstifte zum Ausmalen, Zettel für den Tankstellen-Tausch',
   // Hinweise je Station stehen direkt an den Stationen (m1-stunden.ts, Feld leitung)
   stationen: [],
 }
 d.tracks[1].leitung = {
   ...d.tracks[1].leitung,
-  einsatz: 'Erst das Experiment (laut und leise), dann die Linie: Wo stehe ich? Der Fall Sami und Amira ist kurz – mit der Frage „Bist du eher wie Sami oder wie Amira?“ und einer Sprechblase zum Reden. Nach dem Clip kreuzt jede Person an, was ihren Akku lädt. Die Brücke ist eine gemeinsame Aufgabe mit lauten und leisen Rollen.',
+  einsatz: 'Erst das Experiment (laut und leise), dann die Linie: Wo stehe ich? Der Fall Sami und Amira ist kurz – mit der Frage „Bist du eher wie Sami oder wie Amira?“ und einer Sprechblase zum Reden. Nach dem Clip und der Pause ist die Brücke eine gemeinsame Aufgabe mit lauten und leisen Rollen.',
   loesungen: [
     'Experiment: Oft bringt Runde A viele Ideen von wenigen, Runde B Ideen von allen. Kommt es anders, fragen: Woran lag es?',
     'Fall: Amira hat es gemerkt. Damit sie etwas sagt: sie direkt fragen („Was denkst du?“), erst alle still aufschreiben lassen, reihum reden. Sami kann gut anfangen und Ideen haben.',
     'Clip: Die Antworten hängen vom Ausschnitt ab – bitte vorher ansehen.',
-    'Akku: keine richtigen Antworten – beide Arten sind normal.',
     'Brücke: Häufig steckt die tragende Idee (rollen, falten) in einem Blatt aus der stillen Phase.',
   ],
-  material: 'Papier und Stifte, Klebeband für die Linie, 20 Blatt Papier, Klebeband zum Bauen, eine volle Plastikflasche, zwei Stühle, Rollen-Karten (im Heft), Gerät für den Clip',
+  material: 'Papier und Stifte, Klebeband für die Linie, 20 Blatt Papier, Klebeband zum Bauen, eine volle 0,5-Liter-Flasche, zwei Stühle, Rollen-Karten (Kopiervorlage hinten im PDF), Gerät für den Clip',
   // Hinweise je Station stehen direkt an den Stationen (m1-stunden.ts, Feld leitung)
   stationen: [],
 }
 d.tracks[2].leitung = {
   ...d.tracks[2].leitung,
-  einsatz: 'Die Stunde beginnt mit einer Liste: Was steckt in diesem Raum? Die Akte Yusuf zeigt, was in Akten fehlt. Im Modell verbinden die Jugendlichen Stärken mit ihrer Kehrseite. Nach dem Clip verschenken alle auf dem Stärken-Markt Karten mit einem Satz. Der Baum sammelt am Ende, was bleibt.',
+  einsatz: 'Die Stunde beginnt mit einer Liste: Was steckt in diesem Raum? Die Akte Yusuf zeigt, was in Akten fehlt. Im Modell verbinden die Jugendlichen Stärken mit ihrer Kehrseite. Nach der Pause verschenken alle auf dem Stärken-Markt Karten – mit dem „weil …“ auf der Rückseite. Die geschenkten Karten kleben sie in „Meine Akte, Seite 2“: die Akte, die bisher gefehlt hat.',
   loesungen: [
     'Akte: verlässlich, hilfsbereit, treu, geduldig – nur „faul“ passt nicht. „Nichts Besonderes“: Für Yusuf ist das normal, und niemand hat es ihm gesagt. Alle drei Kreuze können stimmen.',
     'Modell: mutig – leichtsinnig · ehrlich – verletzend · hilfsbereit – kann nie Nein sagen · lustig – nimmt nichts ernst. Laut im Unterricht: alle drei Stärken sind möglich.',
-    'Clip: Die Antworten hängen vom Ausschnitt ab – bitte vorher ansehen.',
-    'Markt: Wer wenig Karten bekommt, bekommt welche von der Leitung.',
-    'Baum: Bei den Wurzeln ausdrücklich auch Orte, Tiere, Musik und Erinnerungen zulassen – nicht nur Menschen.',
+    'Markt: Wer wenig Karten bekommt, bekommt welche von der Leitung. Das „weil …“ muss etwas sein, das man gesehen hat – nicht „weil du nett bist“.',
+    'Meine Akte, Seite 2: Wer weniger als drei Karten hat, schreibt selbst eine dazu. Die Akte bleibt im Heft – keiner sammelt sie ein.',
   ],
-  material: '24 Stärken-Karten (im Heft, ausschneiden), Stifte, Gerät für den Clip',
+  material: 'Stärken-Karten (Kopiervorlage zweimal drucken), Stifte, Klebestift',
   // Hinweise je Station stehen direkt an den Stationen (m1-stunden.ts, Feld leitung)
   stationen: [],
 }
 d.leitung.wozu = 'REAL TALK ist das Heft der Jugendlichen zu Modul 1. Jede der drei Einheiten ist eine **zusammenhängende Stunde** mit Stationen. Gebaut für den Sweet Spot: **persönlich** (Situationen aus dem eigenen Alltag, „Kennst du das?“), **zum Nachdenken** (eine gute Frage statt vieler Aufgaben), **leicht ins Gespräch** (Sprechblase „Redet darüber“ – freiwillig), **Spaß** (ausmalen, legen, bauen – ohne Punkte, ohne Teams gegeneinander) und **leicht verständlich** (kurze Anweisungen, erst ankreuzen). **Niemand muss etwas vorspielen.** Leitmotiv: Die Jugendlichen kennen ihre „Akte“ – hier entdecken sie die andere Seite.'
 d.leitung.start = 'Titel, Ansage (vorlesen – der Ton ist Absicht), „Das kommt“ und die zwei Fragen zum Aufwärmen. Etwa 10 Minuten vor Station 1 von Stunde 01.'
 d.leitung.schluss = 'Kino – der Film des Trimesters – als eigener Termin. Streitfragen: je zwei Sätze als Einstieg in eine Einheit – oder alle sechs im Stehen am Schluss. „Knack den Code“ als Wiederholung, Karten ausschneiden, „Zum Schluss“ in der Abschlussrunde von Einheit 6.'
-d.leitung.fakten = [['Zielgruppe', '12–16 Jahre, 3–6 Jugendliche'], ['Dauer', '3 Stunden à etwa 90 Min. (E4–E6)'], ['Sozialform', 'allein, zu zweit, Teams'], ['Material', 'Schere, Stoppuhr, Papier, Klebeband, Flasche']]
+d.leitung.fakten = [['Zielgruppe', '12–13 Jahre (7e), 3–5 Jugendliche'], ['Dauer', '3 Stunden à etwa 90 Min. (E4–E6)'], ['Sozialform', 'allein, zu zweit, alle zusammen'], ['Material', 'Schere, Stoppuhr, Papier, Klebeband, Flasche']]
 export default d

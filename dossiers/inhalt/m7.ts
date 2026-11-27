@@ -56,23 +56,18 @@ const d: Heft = {
   "cast": [
     {
       "bild": "peep:sami:muede",
-      "name": "Sami, 14",
+      "name": "Sami, 13",
       "x": "Tagesdurchschnitt: 6 Stunden 12. Sagt: „Ich hab’s im Griff.“"
     },
     {
       "bild": "peep:jana:besorgt",
-      "name": "Jana, 15",
+      "name": "Jana, 13",
       "x": "Schreibt seit drei Wochen mit einem, der zuhört. Jetzt will er ein Foto."
     },
     {
       "bild": "peep:tom:neutral:handy",
-      "name": "Tom, 14",
+      "name": "Tom, 12",
       "x": "Glaubt keinem Bild ohne Quelle. Hat das Fake als Einziger erkannt."
-    },
-    {
-      "bild": "peep:mia:traurig",
-      "name": "Mia, 16",
-      "x": "Vergleicht sich jeden Abend mit Leuten, die sie nie getroffen hat."
     }
   ],
   "warm": {
@@ -107,7 +102,7 @@ const d: Heft = {
       "kurz": "Was der Algorithmus mit dir macht – und wie du die Kontrolle behältst.",
       "szene": {
         "bild": "peep:sami:muede",
-        "name": "Sami, 14",
+        "name": "Sami, 13",
         "text": "Sami will nur kurz nachschauen. 23:10 Uhr. Ein Clip, noch einer, der nächste startet von selbst. Um 1:40 Uhr legt er das Handy weg. Die Augen brennen, im Kopf ist Rauschen. Er weiß nicht mehr, was er gesehen hat. Zweieinhalb Stunden, null Erinnerung. Sami sagt: „Ich hab’s im Griff.“ Die App sagt: Tagesdurchschnitt 6 Stunden 12.",
         "frage": "Wer hat hier entschieden, wann Schluss ist?"
       },
@@ -266,8 +261,8 @@ const d: Heft = {
       "kurz": "Screenshots, Fotos, Druck im Chat: Was bleibt – und was du tun kannst.",
       "szene": {
         "bild": "peep:jana:besorgt",
-        "name": "Jana, 15",
-        "text": "Seit drei Wochen schreiben sie. Er ist witzig, er hört zu. Jetzt will er ein Foto. „Nur für mich“, schreibt er. Jana zögert. Er schreibt: „Vertraust du mir nicht?“ Dann: „Andere machen das auch.“ Dann: „Schade. Dachte, du bist anders.“ Janas Daumen liegt über der Kamera. In ihrem Bauch ist ein Knoten. Den kennt sie.",
+        "name": "Jana, 13",
+        "text": "Beim Zocken schreibt Jana seit drei Wochen mit einem, der sagt, er ist 14. Er ist witzig, er hört zu, er hat ihr einen Skin geschenkt. Jetzt will er ein Foto. „Nur für mich“, schreibt er. Jana zögert. Er schreibt: „Vertraust du mir nicht?“ Dann: „Andere machen das auch.“ Dann: „Schade. Dachte, du bist anders.“ Janas Daumen liegt über der Kamera. In ihrem Bauch ist ein Knoten. Den kennt sie.",
         "frage": "Welche seiner Sätze sind Druck – und kein Kompliment?"
       },
       "fakten": [
@@ -424,14 +419,14 @@ const d: Heft = {
       "kurz": "Fakes erkennen – und warum man sie so gern teilt.",
       "szene": {
         "bild": "peep:tom:neutral:handy",
-        "name": "Tom, 14",
+        "name": "Tom, 12",
         "text": "Im Klassenchat taucht ein Bild auf: der Mathelehrer, betrunken auf einer Bank. Darunter: „OMG, heute im Stadtpark!!! TEILEN!!!“ In zehn Minuten haben es drei Klassen. Tom zoomt rein. Alles sieht echt aus. Aber auf der Seite der Schule steht: Der Lehrer ist seit Montag mit einer Klasse in Berlin. Er schreibt: „Leute, das ist KI.“ Keiner reagiert. Das Bild ist längst schneller als er.",
         "frage": "Warum war das Fake schneller als die Wahrheit?"
       },
       "fakten": [
         {
           "t": "KI kann fälschen",
-          "x": "Bilder, Stimmen, Videos von echten Menschen, die das nie gesagt oder getan haben: **Deepfakes.**"
+          "x": "Bilder, Stimmen, Videos von echten Menschen, die das nie gesagt oder getan haben: **Deepfakes** (= gefälschte Bilder, Videos, Stimmen)."
         },
         {
           "t": "Fakes wollen ein Gefühl",
@@ -782,7 +777,7 @@ const d: Heft = {
       "zeilen": [
         "Bild von dir im Umlauf? Du bist nicht schuld.",
         "Beweise sichern. Erwachsene einschalten.",
-        "Kanner-Jugendtelefon **116 111** · Notruf **112**"
+        "SePAS · Kanner-Jugendtelefon **116 111** · Notruf **112**"
       ]
     }
   ],
@@ -847,7 +842,7 @@ const d: Heft = {
       "Schwarz-Weiß ist möglich; das Titelblatt braucht viel Toner.",
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."
     ],
-    "hot": "Es gibt keine richtige Position – mit einer Ausnahme. Take 3 („Wer ein Foto schickt, ist selbst schuld“) kommt in jeder Gruppe und ist bewusst gesetzt. Nach der Diskussion die Haltung der Leitung klar sagen: Verantwortlich ist, wer weitergibt. Betroffene brauchen Hilfe, keine Schuldzuweisung.",
+    "hot": "Es gibt keine richtige Position – mit einer Ausnahme. Take 3 („Wer ein Foto schickt, ist selbst schuld“) kommt in jeder Gruppe und ist bewusst gesetzt. Nach der Diskussion die Haltung der Leitung klar sagen: Verantwortlich ist, wer weitergibt. Betroffene brauchen Hilfe, keine Schuldzuweisung. Take 3 nur im Heft ankreuzen, nicht im Raum aufstellen – wer betroffen ist, soll sich nicht zu „selbst schuld“ stellen müssen.",
     "achtung": " Keine Deepfakes oder Bearbeitungen echter Personen im Kurs erstellen – auch nicht zur Demonstration.  Der Film zeigt riskante Mutproben: vorher ansehen und das Thema Nachahmung ansprechen.",
     "hintergrund": "Der Zusammenhang zwischen Bildschirmzeit und Wohlbefinden ist im Durchschnitt klein (Orben & Przybylski); entscheidend sind Inhalte, Vergleiche und verdrängter Schlaf. Soziale Vergleiche mit idealisierten Bildern verschlechtern Stimmung und Körperbild (Fardouly et al.). Konkrete Wenn-dann-Pläne ändern Gewohnheiten zuverlässiger als Vorsätze (Gollwitzer). Wer selbst einmal eine Falschmeldung gebaut hat, erkennt die Tricks danach besser (Roozenbeek & van der Linden); geübte Faktenprüfer verlassen eine Seite und suchen, was andere über die Quelle sagen (Wineburg & McGrew).",
     "quellen": "Orben & Przybylski (2019) · Fardouly et al. (2015) · Gollwitzer (1999) · Roozenbeek & van der Linden (2019) · Wineburg & McGrew (2019) · BEE SECURE · klicksafe. Angaben zu den Einheiten 27–28 in der Toolbox."
@@ -873,5 +868,6 @@ const d: Heft = {
 // Fassung mit Stunden (16.11.2026): Die Einheiten sind zusammenhängende Stunden (m7-stunden.ts). Die Angaben oben bleiben als Quelle;
 // gedruckt werden die Stunden.
 aufStunden(d, stunden(d), { geprueft: '16.11.2026', loesungen })
+d.tracks[1].leitung.material = 'Klebezettel und Stifte für die Versteck-Kette; ' + d.tracks[1].leitung.material
 d.tracks[1].leitung.einsatz = 'Zusatz zu Einheit 27 – eigener Termin. ' + d.tracks[1].leitung.einsatz
 export default d

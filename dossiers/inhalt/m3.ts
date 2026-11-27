@@ -56,22 +56,22 @@ const d: Heft = {
   "cast": [
     {
       "bild": "peep:finn:wuetend",
-      "name": "Finn, 15",
+      "name": "Finn, 13",
       "x": "Von 20 auf 90 in drei Sekunden. Zwei Türen hat er schon bezahlt."
     },
     {
       "bild": "peep:amira:ruhig",
-      "name": "Amira, 16",
+      "name": "Amira, 13",
       "x": "Wird still, wenn es zu viel wird. Alle denken, sie hat sich im Griff."
     },
     {
       "bild": "peep:sami:nervoes",
-      "name": "Sami, 14",
+      "name": "Sami, 13",
       "x": "Kann vor Terminen nicht sitzen. Sein Bein wippt für zwei."
     },
     {
       "bild": "peep:mia:muede",
-      "name": "Mia, 16",
+      "name": "Mia, 13",
       "x": "Liegt nachts wach. Der Kopf macht Überstunden."
     }
   ],
@@ -92,10 +92,8 @@ const d: Heft = {
         ]
       },
       {
-        "f": "Dein Druck gerade – kreise die Zahl ein:",
-        "skala": [
-          "jetzt"
-        ]
+        "f": "Was macht dir gerade am meisten Druck? Ein Stichwort reicht:",
+        "linien": 1
       }
     ]
   },
@@ -107,7 +105,7 @@ const d: Heft = {
       "kurz": "Warum Reden bei 80 nicht mehr funktioniert.",
       "szene": {
         "bild": "peep:finn:wuetend",
-        "name": "Finn, 15",
+        "name": "Finn, 13",
         "text": "Mathe, sechste Stunde. Finn hat kaum geschlafen und nichts gegessen. Der Lehrer sagt: „Handy weg.“ Finn: „Gleich.“ Der Lehrer greift nach dem Handy. Zwei Sekunden später liegt Finns Tisch auf der Seite. In der Pause sagt Finn: „Ich wollte das gar nicht.“ Das stimmt sogar.",
         "frage": "Bei welcher Zahl war Finn schon vor dem Satz mit dem Handy?"
       },
@@ -267,8 +265,8 @@ const d: Heft = {
       "kurz": "Skills, die auch bei Rot noch gehen.",
       "szene": {
         "bild": "peep:sami:nervoes",
-        "name": "Sami, 14",
-        "text": "Sami wartet vor dem Büro der Direktorin. Sein Bein wippt, die Hände schwitzen, im Kopf läuft ein Film in Dauerschleife. Ein Älterer setzt sich daneben: „Atme mal länger aus als ein. Vier ein, acht aus.“ Sami findet das albern. Er macht es trotzdem. Nach einer Minute wippt das Bein nicht mehr.",
+        "name": "Sami, 13",
+        "text": "Sami wartet vor dem Lehrerzimmer. Gleich gibt es ein Gespräch mit seiner Klassenlehrerin. Sein Bein wippt, die Hände schwitzen, im Kopf läuft ein Film in Dauerschleife. Ein Älterer setzt sich daneben: „Atme mal länger aus als ein. Vier ein, acht aus.“ Sami findet das albern. Er macht es trotzdem. Nach einer Minute wippt das Bein nicht mehr.",
         "frage": "Warum hat ausgerechnet Atmen geholfen?"
       },
       "fakten": [
@@ -299,13 +297,6 @@ const d: Heft = {
           "Skills sind Training. Wer bei Grün übt, hat bei Rot etwas in der Hand."
         ]
       ],
-      "clip": {
-        "titel": "Box-Atmung 4-4-4-4 zum Mitmachen",
-        "kanal": "MindCare Media",
-        "url": "https://www.youtube.com/watch?v=wazCdqIBi2c",
-        "dauer": "3 Min. mitmachen",
-        "frage": "Zahl vorher – mitatmen – Zahl nachher. Was wirkt bei dir besser: die Box oder 4 ein, 8 aus?"
-      },
       "merk": "Der Kopf hört nicht zu. ==Der Körper schon.==",
       "moveUnter": "Zahl vorher – Skill – Zahl nachher",
       "moves": [
@@ -432,7 +423,7 @@ const d: Heft = {
       "kurz": "Starke Reize gegen starken Druck. Stark – nicht schädlich.",
       "szene": {
         "bild": "peep:amira:traurig",
-        "name": "Amira, 16",
+        "name": "Amira, 13",
         "text": "Nach dem Streit sitzt Amira auf der Bettkante. Von außen sieht sie ruhig aus. Innen: 85. Die Gedanken drehen sich, immer schneller. Sie geht ins Bad und hält die Handgelenke unter eiskaltes Wasser. Dreißig Sekunden. Der Kopf wird langsamer. Sie zählt die Fliesen. Dann ruft sie ihre Cousine an.",
         "frage": "Was hat das kalte Wasser mit ihrem Kopf gemacht?"
       },
@@ -464,13 +455,6 @@ const d: Heft = {
           "Lavendel entspannt die einen und nervt die anderen. Du testest selbst."
         ]
       ],
-      "clip": {
-        "titel": "5-4-3-2-1: zurück ins Hier und Jetzt",
-        "kanal": "MindCare Media",
-        "url": "https://www.youtube.com/watch?v=TsIGZklzSyc",
-        "dauer": "mitmachen",
-        "frage": "Mach mit. Welcher Sinn war bei dir am stärksten?"
-      },
       "merk": "Stark: ==ja.== Schädlich: ==nein.==",
       "moveUnter": "Was holt dich zurück ins Jetzt?",
       "moves": [
@@ -595,7 +579,7 @@ const d: Heft = {
       "kurz": "Gedanken beobachten, statt mitzufahren.",
       "szene": {
         "bild": "peep:mia:muede",
-        "name": "Mia, 16",
+        "name": "Mia, 13",
         "text": "Zwei Uhr nachts. Mia liegt wach. Im Kopf läuft derselbe Film: der Blick von heute Mittag, der Satz, den sie hätte sagen sollen, die Klassenarbeit morgen. Sie versucht, nicht daran zu denken. Es wird schlimmer. Dann probiert sie etwas anderes: Sie zählt von 100 in Siebenerschritten rückwärts. Bei 44 ist sie raus.",
         "frage": "Warum hat „nicht dran denken“ nicht funktioniert?"
       },
@@ -605,12 +589,12 @@ const d: Heft = {
           "x": "Gib dem Kopf einen Job: 100 minus 7 minus 7 … Oder ein ABC mit Automarken. **Ein voller Kopf grübelt nicht.**"
         },
         {
-          "t": "Beobachten",
-          "x": "Setz jeden Gedanken auf ein Schiff und schau ihm nach. **Du musst nicht mitfahren.**"
+          "t": "Parken",
+          "x": "Schreib den Gedanken auf einen Zettel: **Morgen um … kümmere ich mich.** Dann darf der Kopf ihn loslassen."
         },
         {
-          "t": "Umschalten",
-          "x": "Geh in Gedanken an einen Ort, an dem dir nichts passiert. Mit Übung bist du in Sekunden dort."
+          "t": "Reden",
+          "x": "Schreib oder sag es jemandem. **Ein geteilter Gedanke dreht langsamer.**"
         }
       ],
       "mythen": [
@@ -627,14 +611,7 @@ const d: Heft = {
           "Sie helfen bei Gelb. Bei Rot braucht zuerst der Körper Hilfe."
         ]
       ],
-      "clip": {
-        "titel": "Overthinking – warum wir ständig grübeln",
-        "kanal": "psychologeek",
-        "url": "https://www.youtube.com/watch?v=J_mvG4KZt44",
-        "dauer": "die ersten 5 Min.",
-        "frage": "Overthinking heißt: sich im Kreis denken. Warum macht „nicht dran denken“ alles schlimmer?"
-      },
-      "merk": "Du bist nicht dein Gedanke. ==Du schaust nur zu.==",
+      "merk": "Parken statt ==grübeln.==",
       "moveUnter": "Wer lenkt hier eigentlich?",
       "moves": [
         {
@@ -707,7 +684,7 @@ const d: Heft = {
         "x": "Red mit dir wie mit einem guten Freund – mit deinem Namen. „…, du schaffst die nächsten zehn Minuten.“",
         "linien": 1
       },
-      "woche": "Besuch deinen Ort dreimal in Gedanken – **dann, wenn es dir gut geht**. Eine Minute reicht.",
+      "woche": "Schreib an drei Abenden einen Parkschein – **und leg ihn neben dein Bett.**",
       "hilfe": true,
       "gruppe": [
         {
@@ -760,7 +737,7 @@ const d: Heft = {
       "kurz": "Deine Skills. Dein Plan für Rot.",
       "szene": {
         "bild": "peep:finn:neutral",
-        "name": "Finn, 15",
+        "name": "Finn, 13",
         "text": "Vier Wochen später. Wieder Mathe, wieder der Satz: „Handy weg.“ Finn merkt: Kiefer fest, Hitze im Gesicht. 60, Tendenz steigend. Er legt das Handy hin, ballt unter dem Tisch die Fäuste, atmet lang aus. Nach der Stunde geht er zum Lehrer: „Ich war kurz davor. Können wir das anders regeln?“ Der Lehrer ist so überrascht, dass er Ja sagt.",
         "frage": "Was hat Finn diesmal früher gemerkt?"
       },
@@ -793,13 +770,6 @@ const d: Heft = {
           "Einen Menschen im Plan zu haben, ist der stärkste Skill von allen."
         ]
       ],
-      "clip": {
-        "titel": "Rauslassen oder unterdrücken – was tun bei Wut?",
-        "kanal": "Quarks Dimension Ralph",
-        "url": "https://www.youtube.com/watch?v=0L_uYTxRz1I",
-        "dauer": "die ersten 5 Min.",
-        "frage": "Draufhauen, um Dampf abzulassen: Hilft das wirklich?"
-      },
       "merk": "Bei Rot denkt keiner. ==Darum denkst du jetzt.==",
       "moveUnter": "Dein Plan für Grün, Gelb und Rot",
       "moves": [
@@ -1001,18 +971,18 @@ const d: Heft = {
       {
         "f": "Wie lange bleibt das Eis in der Hand?",
         "o": [
-          "bis es wehtut",
+          "bis die Hand warm ist",
           "30 Sekunden",
           "10 Minuten"
         ],
         "r": 1
       },
       {
-        "f": "Gedanken-Schiffe: Was tust du?",
+        "f": "Was kommt auf den Parkschein?",
         "o": [
-          "Gedanken wegdrücken",
-          "mitfahren",
-          "nachschauen"
+          "alles, was du heute gegessen hast",
+          "ein Witz",
+          "was dreht – und wann du dich kümmerst"
         ],
         "r": 2
       },
@@ -1061,9 +1031,9 @@ const d: Heft = {
       "titel": "Atem",
       "icon": "wind",
       "zeilen": [
-        "**4-7-8:** 4 ein, 7 halten, 8 aus.",
-        "**Box:** 4 ein – 4 halten – 4 aus – 4 halten.",
-        "Halten unangenehm? Zweimal kurz ein, lang aus."
+        "**4 ein, 8 aus.** Zwei Minuten.",
+        "Wie im Puls-Labor: messen, dann bremsen.",
+        "Geht im Unterricht – keiner merkt es."
       ]
     },
     {
@@ -1082,9 +1052,9 @@ const d: Heft = {
       "zeilen": [
         "100 minus 7 minus 7 minus 7 …",
         "ABC mit Automarken, Städten, Spielern.",
-        "Gedanke aufs Schiff. Nachschauen."
+        "Parkschein: Morgen um … kümmere ich mich."
       ],
-      "eigen": "Mein Ort:"
+      "eigen": "Mein Mensch:"
     },
     {
       "titel": "Unsichtbar",

@@ -17,9 +17,9 @@ const d: Heft = {
     "sticker": "Letzte Ausgabe",
     "zeilen": [
       "Nachts wach, morgens tot: Warum das nicht deine Schuld ist",
-      "Hangry ist echt. Was dein Tank mit deiner Laune macht",
+      "Hunger macht gereizt. Was dein Tank mit deiner Laune macht",
       "Ein Jahr später: Du hast dich mehr verändert, als du denkst",
-      "Ein Brief, den nur du liest"
+      "Eine Postkarte an dich – für den Herbst"
     ]
   },
   "ansage": {
@@ -50,29 +50,29 @@ const d: Heft = {
     "regeln": [
       "**Keine Zahlen zum Körper.** Kein Gewicht, keine Kalorien, keine Größen.",
       "**Niemand muss sich bewegen, der nicht will.** Zuschauen ist erlaubt.",
-      "**Dein Brief gehört dir.** Niemand liest ihn. Auch die Leitung nicht."
+      "**Deine Postkarte gehört dir.** Niemand liest sie. Auch die Leitung nicht."
     ]
   },
   "cast": [
     {
       "bild": "peep:amira:muede",
-      "name": "Amira, 15",
+      "name": "Amira, 13",
       "x": "Schläft um zwei ein. Der Wecker klingelt um halb sieben."
     },
     {
       "bild": "peep:yusuf:wuetend",
-      "name": "Yusuf, 16",
-      "x": "Kein Frühstück, zwei Energy-Drinks. Um drei knallt es im Betrieb."
+      "name": "Yusuf, 13",
+      "x": "Kein Frühstück, zwei Energy-Drinks. Um drei knallt es in der Turnhalle."
     },
     {
       "bild": "peep:lio:stolz",
-      "name": "Lio, 14",
-      "x": "Hatte am Anfang zwei Wörter für alles. Heute erklärt er die Box-Atmung."
+      "name": "Lio, 12",
+      "x": "Hatte am Anfang zwei Wörter für alles. Heute erklärt er „4 ein, 8 aus“."
     },
     {
       "bild": "peep:chloe:besorgt",
-      "name": "Chloé, 16",
-      "x": "Hasst Abschiede. Ist beim letzten einfach nicht mehr gekommen."
+      "name": "Chloé, 12",
+      "x": "Hasst Abschiede. Den letzten Tag in der Grundschule hat sie geschwänzt."
     }
   ],
   "warm": {
@@ -88,7 +88,7 @@ const d: Heft = {
       {
         "f": "Was lädt dich am schnellsten auf?",
         "satz": [
-          "In zehn Minuten wieder da durch:"
+          "Das lädt mich in zehn Minuten auf:"
         ]
       }
     ]
@@ -101,7 +101,7 @@ const d: Heft = {
       "kurz": "Warum du nachts wach bist – und was wirklich hilft.",
       "szene": {
         "bild": "peep:amira:muede",
-        "name": "Amira, 15",
+        "name": "Amira, 13",
         "text": "1:50 Uhr. Amira liegt wach. Der Kopf rattert, das Handy leuchtet, „nur noch ein Video“. Um 6:30 Uhr klingelt der Wecker. In der ersten Stunde fällt ihr der Kopf auf den Tisch. Die Lehrerin sagt: „Geh halt früher ins Bett.“ Amira würde ihr gern erklären, dass sie um zehn im Bett war. Sie war nur nicht müde. Stattdessen sagt sie: „Mir doch egal.“",
         "frage": "Was weiß die Lehrerin nicht über Amiras Nacht?"
       },
@@ -198,10 +198,10 @@ const d: Heft = {
         }
       ],
       "challenge": {
-        "titel": "60 Sekunden",
+        "titel": "Die Schlaf-Linie",
         "wie": "alle",
-        "x": "Alle stehen, Augen zu. **Setz dich, wenn du glaubst, dass genau eine Minute um ist.** Wer ist am nächsten dran?",
-        "wann": "Mitte"
+        "x": "Eine Linie aus Klebeband: 20 Uhr bis 1 Uhr. **Stell dich hin: Wann bist du gestern eingeschlafen?** Niemand muss etwas sagen.",
+        "wann": "Start"
       },
       "line": {
         "titel": "Mein Abschalt-Plan",
@@ -240,7 +240,7 @@ const d: Heft = {
         }
       ],
       "leitung": {
-        "einsatz": "Erste Hälfte von Einheit 29. Szene als Einstieg, Move A allein und ohne Vergleich, Move B zu zweit. Der Bodyscan aus der Einheit steht bei den Sessions; die Schlaf-Auktion ist neu und ersetzt bei Bedarf eine Station der „Vier Ecken“.",
+        "einsatz": "Schlaf-Linie, Fall, Clip, dann der Zimmer-Umbau als große Runde.",
         "loesungen": [
           "Szene: Amira war im Bett, aber ihre innere Uhr stand noch auf „wach“. Dazu kommen Grübeln und Handy. Es ist kein fehlender Wille.",
           "Move B: hilft – gleiche Zeit, kühles dunkles Zimmer, Tageslicht am Morgen · schadet – Energy-Drink am späten Nachmittag, Handy im Bett.",
@@ -258,16 +258,16 @@ const d: Heft = {
       "nr": 29,
       "titel": "Treibstoff",
       "unter": "Was du isst und wie du dich bewegst, entscheidet mit, wie du drauf bist",
-      "kurz": "Hangry, Energy-Drinks, Bewegung – und warum kein Körper falsch ist.",
+      "kurz": "Hunger, Energy-Drinks, zehn Minuten Bewegung – und was dich wirklich lädt.",
       "szene": {
         "bild": "peep:yusuf:wuetend",
-        "name": "Yusuf, 16",
-        "text": "Yusuf hat verschlafen. Kein Frühstück, am Bahnhof ein Energy-Drink. In der Pause noch einer, mittags eine Tüte Chips. Um 14:50 Uhr stellt ihm ein Kollege eine Kiste in den Weg. Yusuf brüllt ihn zusammen. Der Chef holt ihn ins Büro: „Du hast ein Problem mit deiner Art.“ Yusuf denkt: Stimmt wohl. Dabei hat er seit gestern Abend nichts Richtiges gegessen.",
+        "name": "Yusuf, 13",
+        "text": "Yusuf hat verschlafen. Kein Frühstück, an der Bushaltestelle ein Energy-Drink. In der Pause noch einer, mittags eine Tüte Chips. Um 14:50 Uhr, Sport: Beim Aufwärmen rempelt Noah ihn aus Versehen an. Yusuf brüllt ihn zusammen und knallt den Ball gegen die Wand. Die Sportlehrerin schickt ihn auf die Bank: „Du hast ein Problem mit deiner Art.“ Yusuf denkt: Stimmt wohl. Dabei hat er seit gestern Abend nichts Richtiges gegessen.",
         "frage": "Was hat Yusufs Ausraster mit seinem Tag zu tun?"
       },
       "fakten": [
         {
-          "t": "Hangry ist echt",
+          "t": "Hunger macht gereizt",
           "x": "Ist der Tank leer, schüttet der Körper Stresshormone aus. **Du wirst gereizt, bevor du Hunger merkst.**"
         },
         {
@@ -275,8 +275,8 @@ const d: Heft = {
           "x": "Zügig gehen, Treppen, Tanzen: Schon kurze Bewegung **hebt die Stimmung und senkt den Druck.**"
         },
         {
-          "t": "Kein Körper ist falsch",
-          "x": "Was du im Netz siehst, ist Licht, Winkel und Filter. **Dein Körper muss dich tragen, nicht gefallen.**"
+          "t": "Trinken zählt mit",
+          "x": "Schon ein bisschen Durst macht **müde und unkonzentriert** – und fühlt sich oft an wie schlechte Laune."
         }
       ],
       "clip": {
@@ -336,7 +336,7 @@ const d: Heft = {
           "titel": "Yusufs Tag, zweiter Versuch",
           "wie": "zu zweit",
           "zeit": "6 Min.",
-          "kontext": "Gleicher Tag, gleicher Kollege, gleiche Kiste. Tauscht drei Dinge aus.",
+          "kontext": "Gleicher Tag, gleiche Sportstunde, gleicher Rempler. Tauscht drei Dinge aus.",
           "fragen": [
             {
               "f": "Was macht Yusuf anders?",
@@ -352,7 +352,7 @@ const d: Heft = {
       "challenge": {
         "titel": "Akku-Würfel",
         "wie": "alle",
-        "x": "Reihum würfeln. Wer will, macht mit: **1** Glas Wasser · **2** Fenster auf, drei Atemzüge · **3** einmal ums Haus · **4** zehn Kniebeugen · **5** 30 Sekunden Lieblingssong, laut · **6** freie Wahl.",
+        "x": "Reihum würfeln. Wer will, macht mit: **1** Glas Wasser · **2** Fenster auf, drei Atemzüge · **3** einmal den Flur entlang · **4** zehn Kniebeugen · **5** 30 Sekunden Lieblingssong, laut · **6** freie Wahl.",
         "wann": "Start"
       },
       "line": {
@@ -401,7 +401,7 @@ const d: Heft = {
         "loesungen": [
           "Szene: zu wenig Schlaf, nichts gegessen, viel Koffein und Zucker – der Körper war schon auf Alarm, bevor die Kiste kam. Das entschuldigt das Brüllen nicht, erklärt aber die kurze Zündschnur.",
           "Move A: Es gibt kein Richtig. Zocken und Scrollen dürfen in beiden Spalten stehen – das ist ein guter Gesprächsanlass.",
-          "Move B: z. B. Wasser und etwas Richtiges zu essen; zwei Minuten raus, Box-Atmung, Druck-Zahl prüfen (Ausgabe #03)."
+          "Move B: z. B. Wasser und etwas Richtiges zu essen; zwei Minuten raus, 4 ein – 8 aus, Druck-Zahl prüfen (Ausgabe #03)."
         ],
         "impulse": [
           "Woran merkt ihr, dass euer Tank leer ist – bevor es knallt?",
@@ -418,8 +418,8 @@ const d: Heft = {
       "kurz": "Ein Jahr im Rückspiegel: Was du jetzt kannst.",
       "szene": {
         "bild": "peep:lio:stolz",
-        "name": "Lio, 14",
-        "text": "Am ersten Tag hatte Lio zwei Wörter: gut und beschissen. Sein Satz über sich: „Ich bin halt dumm.“ Heute sitzt ein Neuer in der Gruppe, mit Kapuze, an der Tür. Lio setzt sich neben ihn und zeigt ihm die Box-Atmung. „Vier rein, vier halten. Klingt blöd, hilft aber.“ Jana grinst: „Ey. Vor einem Jahr hättest du das nie gemacht.“ Lio zuckt mit den Schultern. Ihm war das gar nicht aufgefallen.",
+        "name": "Lio, 12",
+        "text": "Im September, am ersten Tag in der 7e, hatte Lio zwei Wörter für alles: gut und scheiße. Sein Satz über sich: „Ich bin halt dumm.“ Heute, im Juni, kommt ein Neuer in die Klasse. Kapuze auf, er setzt sich direkt an die Tür. Lio setzt sich neben ihn und zeigt ihm „4 ein, 8 aus“. „Vier rein, acht raus. Klingt blöd, hilft aber.“ Jana grinst: „Ey. Im September hättest du das nie gemacht.“ Lio zuckt mit den Schultern. Ihm war das gar nicht aufgefallen.",
         "frage": "Warum merkt Lio seine eigene Veränderung nicht?"
       },
       "fakten": [
@@ -464,7 +464,7 @@ const d: Heft = {
           "titel": "Meine Jahreskurve",
           "wie": "allein",
           "zeit": "8 Min.",
-          "kontext": "Zeichne dein Jahr als Linie: links der erste Tag, rechts heute. Hoch heißt gut, tief heißt hart. **Markiere drei Punkte** und schreib ein Wort dazu.",
+          "kontext": "Zeichne dein Jahr als Linie: links September, rechts heute. Hoch heißt gut, tief heißt hart. Dann markiere: **★** ein guter Moment · **⚡** ein harter Moment · **↗** ein Moment, an dem du etwas geschafft hast. Ein Wort dazu reicht.",
           "fragen": [
             {
               "f": "Mein Jahr:",
@@ -481,12 +481,12 @@ const d: Heft = {
               "f": "Welche drei Skills bleiben? Kreise ein:",
               "kreis": [
                 "Druck-Zahl",
-                "Box-Atmung",
+                "4 ein, 8 aus",
                 "5-4-3-2-1",
                 "Kälte",
                 "Beweise prüfen",
                 "neuer Satz",
-                "Ich-Satz",
+                "Wort-Schere",
                 "Stopp",
                 "Nein-Satz",
                 "Wenn-dann",
@@ -503,15 +503,15 @@ const d: Heft = {
         }
       ],
       "challenge": {
-        "titel": "Rückblick-Duell",
-        "wie": "zwei Teams",
-        "x": "Die Leitung hält Dinge aus dem Jahr hoch: eine Tasse Tee, einen Becher, einen Eiswürfel, ein Hai-Bild. **Wer zuerst sagt, was ihr damit gelernt habt, holt den Punkt.**",
-        "wann": "Start",
-        "zu3": "alle zusammen gegen die Uhr. Schafft ihr zehn Dinge in drei Minuten?"
+        "titel": "Das Jahres-Museum",
+        "wie": "alle",
+        "x": "Zu zweit stellt ihr zwei Stücke aus dem Jahr aus – mit Museumsschild. **Dann Führung: Ihr seid die Profis.** Jede Person legt drei Münzen auf die Stücke, die ihr am meisten gebracht haben.",
+        "wann": "Mitte",
+        "zu3": "Jede Person stellt zwei Stücke aus. Die Leitung ist Besucher und fragt nach."
       },
       "line": {
         "titel": "Früher – heute",
-        "x": "Ein Satz: „Früher habe ich …, heute …“",
+        "x": "Ein Satz: „Im September habe ich …, heute …“",
         "linien": 2
       },
       "woche": "Zeig jemandem außerhalb des Kurses **einen** Skill. Erklären ist die beste Übung.",
@@ -564,11 +564,11 @@ const d: Heft = {
       "nr": 30,
       "titel": "Letzter Track",
       "unter": "Abschiede sind mies. Überspringen ist mieser",
-      "kurz": "Tschüss sagen, ohne abzuhauen. Und ein Brief an dich.",
+      "kurz": "Tschüss sagen, ohne abzuhauen. Und eine Postkarte an dich.",
       "szene": {
         "bild": "peep:chloe:besorgt",
-        "name": "Chloé, 16",
-        "text": "Letzter Tag. Chloé steht vor der Tür und überlegt umzudrehen. In der Klinik hat sie das so gemacht: am letzten Tag einfach nicht mehr gekommen. Kein Tschüss, keine Umarmung, kein Kloß im Hals. Drei Monate lang hat sie sich danach gefragt, was die anderen wohl gesagt hätten. Ihre Hand liegt auf der Klinke.",
+        "name": "Chloé, 12",
+        "text": "Letzte Stunde vor den Ferien. Chloé steht vor der Tür und überlegt umzudrehen. Am letzten Tag in der Grundschule hat sie es so gemacht: Bauchweh gesagt, zu Hause geblieben. Kein Tschüss, keine Umarmung, kein Kloß im Hals. Den ganzen Sommer hat sie sich danach gefragt, was die anderen wohl gesagt hätten. Ihre Hand liegt auf der Klinke.",
         "frage": "Was verpasst Chloé, wenn sie umdreht?"
       },
       "fakten": [
@@ -610,17 +610,17 @@ const d: Heft = {
       "moveUnter": "Sag Tschüss. Und schreib dir selbst",
       "moves": [
         {
-          "titel": "Brief an mich",
+          "titel": "Postkarte an mich",
           "wie": "allein",
           "zeit": "12 Min.",
-          "kontext": "Sammle hier Stichworte. Dann schreib den Brief auf ein eigenes Blatt und kleb den Umschlag zu. **Niemand liest ihn. In sechs Monaten bekommst du ihn zurück.**",
+          "kontext": "Schreib an dich im Herbst – an dich in der 6e. Dann Karte ausschneiden, in den Umschlag, Namen drauf, zukleben. **Niemand liest sie. Im Herbst bekommst du sie zurück.**",
           "fragen": [
             {
-              "f": "An mich in sechs Monaten:",
+              "f": "An mich im Herbst:",
               "satz": [
                 "Darauf bin ich stolz:",
                 "Das war hart, und ich bin noch da:",
-                "Das wünsche ich dir:",
+                "Das wünsche ich dir für die 6e:",
                 "Vergiss nicht:"
               ]
             }
@@ -629,13 +629,28 @@ const d: Heft = {
         {
           "titel": "Mein Netz",
           "wie": "allein",
-          "zeit": "4 Min.",
+          "zeit": "6 Min.",
           "fragen": [
             {
-              "f": "Für die Zeit danach:",
+              "f": "Wenn es eng wird – wen kannst du fragen? Kreuz an. Nur für dich.",
+              "raster": {
+                "spalten": [
+                  "ja",
+                  "vielleicht"
+                ],
+                "zeilen": [
+                  "jemand zu Hause",
+                  "ein Bruder, eine Schwester, eine Cousine …",
+                  "ein Freund oder eine Freundin",
+                  "eine Lehrperson",
+                  "der SePAS in der Schule",
+                  "das Kinder- und Jugendtelefon 116 111"
+                ]
+              }
+            },
+            {
+              "f": "Und noch:",
               "satz": [
-                "Wenn es eng wird, gehe ich zu:",
-                "Mein Skill Nummer eins:",
                 "Danke sagen will ich noch:"
               ]
             }
@@ -654,7 +669,7 @@ const d: Heft = {
         "x": "Was sagst du der Gruppe zum Schluss? Ein Satz reicht.",
         "linien": 1
       },
-      "woche": "Der Kurs endet. **Dein Brief kommt in sechs Monaten.** Bis dahin: Karten in die Tasche.",
+      "woche": "Der Kurs endet. **Deine Postkarte kommt im Herbst.** Bis dahin: Karten in die Tasche.",
       "hilfe": true,
       "gruppe": [
         {
@@ -685,18 +700,18 @@ const d: Heft = {
         }
       ],
       "leitung": {
-        "einsatz": "Zweite Hälfte von Einheit 30. Move A bereitet den Brief an sich selbst vor (der Brief selbst kommt auf ein eigenes Blatt), die Challenge sind die Stärken-Zettel mit Musik-Stopp (an der Stuhllehne statt auf dem Rücken), „Wie am ersten Tag“ schließt den Bogen zur ersten Einheit.",
+        "einsatz": "Fall, Postkarte an mich, Pause, Stärken-Post, 5-4-3-2-1, Mein Netz, Schluss – danach der letzte Kreis.",
         "loesungen": [
           "Szene: den Abschluss – zu hören, was sie den anderen bedeutet hat, und selbst etwas zu sagen. Offene Enden bleiben länger als traurige.",
-          "Move A: Briefe werden nie gelesen. Verschlossen und sicher aufbewahren, nach sechs Monaten zurückgeben oder zuschicken.",
+          "Postkarten werden nie gelesen. Verschlossen aufbewahren und in der ersten Stunde im Herbst zurückgeben.",
           "Stärken-Zettel: nur Stärken, keine Witze. Blätter vor dem Vorlesen kurz selbst überfliegen."
         ],
         "impulse": [
           "Was macht einen guten Abschied aus?",
           "Was wünscht ihr der Gruppe, die nach euch kommt?"
         ],
-        "material": "Briefpapier, Umschläge, Blätter, Kreppband, Musik",
-        "blaetter": "Skills-Pass, Briefbogen, Gefühlsrad."
+        "material": "Umschläge, Blätter, Kreppband, Musik, ein Gegenstand zum Weitergeben",
+        "blaetter": "Skills-Pass, Postkarte, Gefühlsrad."
       }
     }
   ],
@@ -744,7 +759,7 @@ const d: Heft = {
         "r": 2
       },
       {
-        "f": "„Hangry“ heißt:",
+        "f": "Hunger macht gereizt heißt:",
         "o": [
           "gereizt, weil der Tank leer ist",
           "müde vom Essen",
@@ -859,8 +874,8 @@ const d: Heft = {
       "icon": "lifebuoy",
       "zeilen": [
         "Der Kurs ist vorbei. Hilfe nicht.",
-        "Sprich mit jemandem, dem du vertraust.",
-        "Kanner-Jugendtelefon **116 111** · Notruf **112**"
+        "Sprich mit jemandem, dem du vertraust – auch der SePAS hört zu.",
+        "Kinder- und Jugendtelefon **116 111** · Notruf **112**"
       ]
     }
   ],
@@ -887,7 +902,7 @@ const d: Heft = {
       ],
       [
         "Dauer",
-        "4 Stunden à etwa 90 Min.: E29, E30 und zwei Zusatz-Termine – oder zwei Stunden auswählen"
+        "4 Stunden à etwa 90 Min.: E29, E30 und zwei Zusatz-Termine – nur zwei Termine? Dann Stunde 01 und Stunde 04"
       ],
       [
         "Sozialform",
@@ -910,12 +925,12 @@ const d: Heft = {
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
       "Schlafzeiten gemeinsam ausrechnen.",
-      "Jahreskurve mit drei vorgegebenen Punkten beginnen (erster Tag, Mitte, heute).",
-      "Der Brief darf auch gezeichnet oder diktiert werden."
+      "Jahreskurve mit drei vorgegebenen Punkten beginnen (September, Weihnachten, heute).",
+      "Die Postkarte darf auch gezeichnet werden."
     ],
     "forder": [
       "Eine Woche Schlaf-Protokoll führen.",
-      "Für die nächste Gruppe eine Seite „Was ich gern am Anfang gewusst hätte“ schreiben.",
+      "Für die Neuen eine Seite „Was ich gern am Anfang gewusst hätte“ schreiben.",
       "Einen eigenen Akku-Würfel mit sechs Mini-Schritten bauen.",
       "Die Jahreskurve mit Belegen aus dem Skills-Pass ergänzen."
     ],
@@ -927,7 +942,7 @@ const d: Heft = {
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."
     ],
     "hot": "Es gibt keine richtige Position. Take 4 („In einem Jahr kann sich ein Mensch nicht ändern“) ist die Vorlage für Track 03 – wer zustimmt, bekommt später Gegenbeweise von der Gruppe. Take 5 offen stehen lassen; er wird am letzten Tag von selbst beantwortet.",
-    "achtung": "Beim Thema Körper keine Zahlen: kein Gewicht, keine Kalorien, keine Kleidergrößen. Niemanden zu Bewegung oder Leistung drängen; Rucksack-Rennen und Würfel sind freiwillig. Bei „60 Sekunden“ und „5-4-3-2-1“ dürfen die Augen offen bleiben; wer mag, setzt aus. Die Briefe liest niemand.",
+    "achtung": "Beim Thema Körper keine Zahlen: kein Gewicht, keine Kalorien, keine Kleidergrößen. Niemanden zu Bewegung oder Leistung drängen; Rucksack-Rennen und Würfel sind freiwillig. Bei „5-4-3-2-1“ dürfen die Augen offen bleiben; wer mag, setzt aus. Niemand muss etwas über das eigene Zimmer oder die eigene Familie sagen. Die Postkarten liest niemand.",
     "hintergrund": "In der Pubertät verschiebt sich der Schlaf-Wach-Rhythmus nach hinten (Carskadon); empfohlen sind acht bis zehn Stunden Schlaf (Paruthi et al.). Stress entsteht, wenn Anforderungen die eigenen Mittel übersteigen (Lazarus & Folkman); gesund bleibt eher, wer sein Leben als verstehbar, handhabbar und sinnvoll erlebt (Antonovsky). Kleine, konkrete Pläne werden eher umgesetzt als gute Vorsätze (Gollwitzer). Widerstandskraft ist nichts Besonderes, sondern entsteht aus gewöhnlichen Dingen wie verlässlichen Beziehungen (Masten). Über Erlebtes zu schreiben entlastet (Pennebaker), Dankbarkeit hebt das Wohlbefinden (Emmons & McCullough).",
     "quellen": "Carskadon (2011) · Paruthi et al. (2016) · Lazarus & Folkman (1984) · Antonovsky (1987) · Gollwitzer (1999) · Masten (2014) · Pennebaker (1997) · Emmons & McCullough (2003). Angaben zu den Einheiten 29–30 in der Toolbox."
   },
@@ -938,4 +953,6 @@ const d: Heft = {
 // gedruckt werden die Stunden. Die letzte Einheit heißt jetzt „Letzte Stunde“ (früher „Letzter Track“).
 Object.assign(d, JSON.parse(JSON.stringify(d).split('Letzter Track').join('Letzte Stunde')))
 aufStunden(d, stunden(d), { geprueft: '16.11.2026', loesungen })
+d.tracks[0].leitung.material = 'Kreppband und Zeit-Zettel (20–1 Uhr) für die Schlaf-Linie; ' + d.tracks[0].leitung.material
+d.tracks[3].leitung.material = 'Postkarten (A6) und Umschläge, ein Gegenstand für den Kreis, Musik; ' + d.tracks[3].leitung.material
 export default d

@@ -39,11 +39,11 @@ d.ansage = {
     '**Ici, on ne dit sur les autres que ce qu’on leur dirait en face.**',
   ],
 }
-d.hilfeText = 'Si quelque chose dans ce magazine te travaille : parles-en à quelqu’un de confiance. Kanner-Jugendtelefon **116 111** · Urgences **112**'
+d.hilfeText = 'Si quelque chose dans ce magazine te travaille : parles-en à quelqu’un de confiance – par exemple au **SePAS** de ton école. Kanner-Jugendtelefon **116 111** · Urgences **112**'
 d.cast = [
-  { ...d.cast[0], name: 'Sami, 14 ans', x: 'Le plus bruyant de la salle. À la maison, il dit à peine un mot.' },
-  { ...d.cast[1], name: 'Amira, 16 ans', x: 'La discrète. Elle a souvent la phrase la plus importante – et la garde pour elle.' },
-  { ...d.cast[2], name: 'Yusuf, 16 ans', x: 'Il connaît son dossier par cœur. Ses forces, non.' },
+  { ...d.cast[0], name: 'Sami, 13 ans', x: 'Le plus bruyant de la salle. À la maison, il dit à peine un mot.' },
+  { ...d.cast[1], name: 'Amira, 13 ans', x: 'La discrète. Elle a souvent la phrase la plus importante – et la garde pour elle.' },
+  { ...d.cast[2], name: 'Yusuf, 13 ans', x: 'Il connaît son dossier par cœur. Ses forces, non.' },
 ]
 d.warm = {
   titel: 'Pour s’échauffer',
@@ -62,59 +62,56 @@ const KURZ = [
   'Tes forces – même celles qui ne sont dans aucun dossier.',
 ]
 d.tracks.forEach((e, i) => { e.titel = TITEL[i]; e.kurz = KURZ[i]; e.stunde = stunden[i] })
-d.tracks[0].clip = { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal: 'Quarks · vidéo en allemand', url: 'https://www.youtube.com/watch?v=sdH-fEEh1uY', dauer: '00:00 à 05:09 (en entier)', frage: 'Que fait ton cerveau pendant que tu dors ?' }
+delete d.tracks[0].clip   // seit 27.11.2026: Pari sur le sommeil statt Video
 if (d.tracks[1].clip) d.tracks[1].clip = { ...d.tracks[1].clip, kanal: d.tracks[1].clip.kanal + ' · vidéo en allemand', dauer: '04:07 à 07:45 (un peu plus de 3 min)', frage: 'Un côté est-il meilleur ?' }
-if (d.tracks[2].clip) d.tracks[2].clip = { ...d.tracks[2].clip, kanal: d.tracks[2].clip.kanal + ' · vidéo en allemand', dauer: 'SEULEMENT 02:42 à 04:42 (2 min)', frage: 'Qu’est-ce qui aide quand on a peu confiance en soi ?' }
+delete d.tracks[2].clip   // seit 27.11.2026: ohne Clip (das Video spricht vor und nach dem Ausschnitt über Suizid und Essstörung)
 
 d.tracks[0].leitung = {
   ...d.tracks[0].leitung,
-  einsatz: 'Proche du quotidien, sans personnage principal inventé : colorier la batterie → « Ça te parle ? » (cocher six phrases, puis montrer le pouce en même temps) → clip sur le sommeil avec des questions avant, pendant et après, plus « C’est vrai ? » → les six réservoirs : colorier ses propres réservoirs et relier les six phrases → grande ronde « Je connais ! » sans points → Faire le plein – mais bien (vraies et fausses stations) → mon plan réservoir avec échange de stations → un conseil pour un ami ou une amie.',
+  einsatz: 'Proche du quotidien, sans personnage principal inventé : colorier la jauge du réservoir → pari : cinq phrases sur le sommeil → les six réservoirs : colorier ses propres réservoirs → pause → grande ronde « Je connais ! » sans points → Faire le plein – mais bien (vraies et fausses stations) → mon plan réservoir avec échange de stations → colorier la jauge encore une fois.',
   loesungen: [
-    'Ça te parle ? Ni vrai ni faux. Les phrases vont ensuite avec les réservoirs : A le corps · B la sécurité · C faire partie · D être pris au sérieux · E décider soi-même · F plaisir et nouveauté.',
-    'Clip : les jeunes ont besoin d’environ 8 à 10 heures de sommeil. Après 1 : le cerveau garde ce que tu as appris. C’est vrai ? – Le cerveau range et garde : vrai (dans la vidéo) · on s’énerve plus vite : vrai (pas dans la vidéo, savoir du quotidien) · rattraper entièrement le week-end : faux (seulement en partie) · le téléphone aide à s’endormir : faux (la lumière et les contenus tiennent éveillé) · la boisson énergisante remplace le sommeil : faux (elle réveille un moment, elle ne remplace rien). Regarder l’extrait avant, s’il vous plaît. Vidéo en allemand.',
-    'Modèle : A – le corps, B – la sécurité, C – faire partie, D – être pris au sérieux, E – décider soi-même, F – plaisir et nouveauté.',
+    'Pari : le cerveau range et garde ce que tu as appris : vrai · on s’énerve plus vite : vrai · rattraper entièrement le sommeil le week-end : faux (seulement en partie) · le téléphone au lit aide à s’endormir : faux (la lumière et les contenus tiennent éveillé) · la boisson énergisante remplace une heure de sommeil : faux (elle réveille un moment, elle ne remplace rien). À 12 ou 13 ans, on a besoin d’environ 9 à 11 heures de sommeil.',
+    'Modèle : pour colorier, ni vrai ni faux. Qui veut dit seulement quel réservoir est le plus vide aujourd’hui.',
     'Grande ronde : il n’y a pas de bonne solution. Si deux réservoirs vont (p. ex. choix des équipes : faire partie et être pris au sérieux), la carte est posée entre les deux.',
-    'Faire le plein – mais bien : vraies – tour du pâté de maisons, une heure de jeu avec des amis, appeler quelqu’un, chanson préférée, un vrai repas · fausses – boisson énergisante, jouer jusqu’à trois heures, faire défiler pendant des heures, commencer une dispute. Jouer : c’est la quantité qui fait la différence – limité et avec des amis, ça remplit ; jusqu’à trois heures, ça vide le réservoir « corps ».',
-    'Fin : les bonnes questions sont ouvertes et sans reproche : « Qu’est-ce qui te manque en ce moment ? », « Tu dors comment ? », « Tu veux que je sois juste là ? »',
+    'Faire le plein – mais bien : vraies – tour du pâté de maisons, une heure de jeu avec des amis, appeler quelqu’un, chanson préférée, un vrai repas · fausses – boisson énergisante, jouer jusqu’à trois heures, faire défiler pendant des heures, commencer une dispute. Jouer : c’est la quantité qui compte – limité et avec des amis, ça remplit ; jusqu’à trois heures, ça vide le réservoir « corps ».',
+    'Fin : la jauge n’a pas besoin d’être plus pleine qu’au début. Demander seulement : est-ce que quelque chose a bougé – vers le haut ou vers le bas ?',
   ],
   impulse: ['Quel réservoir est le plus souvent vide chez les jeunes ?', 'Quelle est la différence entre « vouloir » et « avoir besoin » ?'],
-  material: '6 cartes réservoirs et 18 cartes situations (dans le magazine, à découper), crayons de couleur, papiers pour l’échange de stations, appareil pour le clip',
+  material: '6 cartes réservoirs et 18 cartes situations (modèle à copier en fin de PDF), crayons de couleur, papiers pour l’échange de stations',
   blaetter: 'Roue des émotions, cartes voyants, « Mes réservoirs », passeport Skills.',
 }
 d.tracks[1].leitung = {
   ...d.tracks[1].leitung,
-  einsatz: 'D’abord l’expérience (à voix haute et en silence), puis la ligne : où est-ce que je me place ? Le cas Sami et Amira est court – avec la question « Tu es plutôt comme Sami ou comme Amira ? » et une bulle pour parler. Après le clip, chaque personne coche ce qui recharge sa batterie. Le pont est une tâche commune avec des rôles voix haute et voix basse.',
+  einsatz: 'D’abord l’expérience (à voix haute et en silence), puis la ligne : où est-ce que je me place ? Le cas Sami et Amira est court – avec la question « Tu es plutôt comme Sami ou comme Amira ? » et une bulle pour parler. Après le clip et la pause, le pont est une tâche commune avec des rôles voix haute et voix basse.',
   loesungen: [
     'Expérience : souvent, la ronde A donne beaucoup d’idées de peu de personnes, la ronde B des idées de tout le monde. Si c’est différent, demander : à quoi ça tenait ?',
     'Cas : Amira l’a remarqué. Pour qu’elle dise quelque chose : lui demander directement (« Tu en penses quoi ? »), faire d’abord écrire tout le monde en silence, parler à tour de rôle. Sami sait bien démarrer et avoir des idées.',
     'Clip : les réponses dépendent de l’extrait – à regarder avant. Vidéo en allemand.',
-    'Batterie : pas de bonnes réponses – les deux façons sont normales.',
     'Pont : souvent, l’idée qui porte (rouler, plier) est sur une feuille de la phase silencieuse.',
   ],
   impulse: ['Où êtes-vous plus « voix haute » que vous ne l’êtes vraiment – et pourquoi ?', 'Comment un groupe remarque-t-il ce que savent les voix basses ?'],
-  material: 'papier et crayons, ruban adhésif pour la ligne, 20 feuilles de papier, ruban adhésif pour construire, une bouteille en plastique pleine, deux chaises, cartes rôles (dans le magazine), appareil pour le clip',
+  material: 'papier et crayons, ruban adhésif pour la ligne, 20 feuilles de papier, ruban adhésif pour construire, une bouteille pleine de 0,5 litre, deux chaises, cartes rôles (modèle à copier en fin de PDF), appareil pour le clip',
   blaetter: 'Roue des émotions, « Voix haute et voix basse », passeport Skills.',
 }
 d.tracks[2].leitung = {
   ...d.tracks[2].leitung,
-  einsatz: 'La séance commence par une liste : qu’est-ce qu’il y a dans cette salle ? Le dossier de Yusuf montre ce qui manque dans les dossiers. Dans le modèle, les jeunes relient des forces à leur revers. Après le clip, tout le monde offre des cartes avec une phrase sur le marché des forces. L’arbre rassemble à la fin ce qui reste.',
+  einsatz: 'La séance commence par une liste : qu’est-ce qu’il y a dans cette salle ? Le dossier de Yusuf montre ce qui manque dans les dossiers. Dans le modèle, les jeunes relient des forces à leur revers. Après la pause, tout le monde offre des cartes sur le marché des forces – avec le « parce que … » au dos. Les cartes reçues sont collées dans « Mon dossier, page 2 » : le dossier qui manquait.',
   loesungen: [
     'Dossier : fiable, serviable, fidèle, patient – seul « paresseux » ne va pas. « Rien de spécial » : pour Yusuf, c’est normal, et personne ne le lui a dit. Les trois croix peuvent être justes.',
     'Modèle : courage – prendre des risques bêtes · franchise – blesser · aider les autres – ne jamais savoir dire non · humour – rien n’est sérieux. Bruyant en classe : les trois forces sont possibles.',
-    'Clip : les réponses dépendent de l’extrait – à regarder avant. Vidéo en allemand.',
-    'Marché : qui reçoit peu de cartes en reçoit de l’adulte.',
-    'Arbre : pour les racines, accepter aussi expressément des endroits, des animaux, de la musique et des souvenirs – pas seulement des personnes.',
+    'Marché : qui reçoit peu de cartes en reçoit de l’adulte. Le « parce que … » doit être quelque chose qu’on a vu – pas « parce que tu es gentil ».',
+    'Mon dossier, page 2 : qui a moins de trois cartes en écrit une lui-même. Le dossier reste dans le magazine – personne ne le ramasse.',
   ],
   impulse: ['Quelle force faut-il dans votre vie que personne ne voit à l’école ?', 'Qu’est-ce que ça fait de recevoir une carte force ?'],
-  material: '24 cartes forces (dans le magazine, à découper), crayons, appareil pour le clip',
-  blaetter: 'Roue des émotions, « L’arbre de vie », cartes forces, passeport Skills.',
+  material: 'cartes forces (modèle à copier, imprimer deux fois), crayons, colle',
+  blaetter: 'Roue des émotions, cartes forces, passeport Skills.',
 }
 
 // Missions-Tickets am Ende jeder Stunde (gleiche Codes; das Spiel selbst ist auf Deutsch)
 d.missionen = [
-  { code: 'TANK-6', titel: 'Mission réservoirs', ort: 'Village et boulangerie', kurz: 'Trois personnes du village sont à cran aujourd’hui. Trouve quel réservoir est vide chez qui – et apporte à chacune une vraie station. Attention : l’une d’elles veut une fausse station.', belohnung: 'Casquette de la station', skill: 'Réservoirs et stations' },
+  { code: 'TANK-6', titel: 'Le pompiste', ort: 'Village et boulangerie', kurz: 'Trois personnes du village sont à cran aujourd’hui. Trouve quel réservoir est vide chez qui – et apporte à chacune une vraie station. Attention : l’une d’elles veut une fausse station.', belohnung: 'Casquette de la station', skill: 'Réservoirs et stations' },
   { code: 'LEISE-4', titel: 'L’idée discrète', ort: 'Maison des jeunes', kurz: 'À la maison des jeunes, on prépare la fête d’été. La meilleure idée vient de quelqu’un qui ne dit rien. Fais en sorte qu’elle soit entendue.', belohnung: 'Casque « Voix basse »', skill: 'Tout le monde a la parole' },
-  { code: 'STARK-24', titel: 'Courrier des forces', ort: 'Campus', kurz: 'Observe quatre personnes sur le campus. Trouve chez chacune une force avec une preuve – et apporte-lui la bonne carte.', belohnung: 'Veste des forces', skill: 'Voir les forces' },
+  { code: 'STARK-24', titel: 'Ce qui n’y est pas', ort: 'Campus', kurz: 'Quatre personnes sur le campus. Trouve chez chacune une force qui n’est dans aucun bulletin – avec une preuve.', belohnung: 'Veste des forces', skill: 'Voir les forces' },
 ]
 
 if (d.kino) {
@@ -153,10 +150,10 @@ d.quiz = {
   fragen: [
     { f: 'Sur combien de réservoirs fonctionne une personne (d’après le magazine) ?', o: ['six', 'deux', 'vingt'], r: 0 },
     { f: 'Tu t’énerves sans raison – qu’est-ce qui clignote souvent ?', o: ['le téléphone', 'le réservoir « corps »', 'rien du tout'], r: 1 },
-    { f: 'Une station express dure au maximum …', o: ['une journée', 'une heure', 'dix minutes'], r: 2 },
+    { f: 'Qu’est-ce qui remplit vraiment un réservoir ?', o: ['une boisson énergisante', 'jouer jusqu’à trois heures', 'un vrai repas'], r: 2 },
     { f: 'Voix haute et voix basse sont …', o: ['les deux bouts d’une ligne', 'le bien et le mal', 'fixées pour toujours'], r: 0 },
     { f: 'Qu’est-ce que les voix basses savent souvent très bien faire ?', o: ['frimer', 'écouter et bien observer', 'rien'], r: 1 },
-    { f: 'Qu’est-ce qui fait partie des racines ?', o: ['tes notes', 'tes erreurs', 'ce qui te tient'], r: 2 },
+    { f: 'Qu’est-ce qui est au dos d’une carte force ?', o: ['une note', 'ton erreur', 'le « parce que … »'], r: 2 },
     { f: 'Laquelle est une force ?', o: ['être fidèle', 'toujours gagner', 'ne jamais avoir besoin d’aide'], r: 0 },
     { f: 'Qu’est-ce qui ne figure pas dans le dossier de Yusuf ?', o: ['ses avertissements', 'ce qu’il sait bien faire', 'son nom'], r: 1 },
   ],
@@ -167,7 +164,7 @@ d.karten = [
   { titel: 'Stations express', icon: 'gas-station', zeilen: ['dix minutes dehors', 'un vrai repas', 'écrire à quelqu’un qui fait du bien', 'une chanson à fond'], eigen: 'Les miennes :' },
   { titel: 'Mes forces', icon: 'star', zeilen: ['Trois choses que je sais faire :', '_1', '_2', '_3'] },
   { titel: 'Voix haute & basse', icon: 'volume', zeilen: ['Voix haute sait : démarrer, mettre l’ambiance.', 'Voix basse sait : écouter, bien observer.', 'Aujourd’hui, j’essaie l’autre côté.'] },
-  { titel: 'Mes racines', icon: 'tree', zeilen: ['Ce qui me tient quand ça vacille :', '_', '_'], eigen: 'Mon endroit :' },
+  { titel: 'Mon dossier, page 2', icon: 'folder', zeilen: ['Trois forces qu’on m’a offertes :', '_', '_'], eigen: 'Ce que personne n’a vu :' },
   { titel: 'Compliment', icon: 'gift', zeilen: ['Dis une force à quelqu’un.', 'Dis **à quoi** tu l’as remarquée.', 'N’attends pas le bon moment.'] },
 ]
 
@@ -178,13 +175,13 @@ d.abspann = {
 }
 
 d.leitung = {
-  fakten: [['Public', '12–16 ans, 3–6 jeunes'], ['Durée', '3 séances d’environ 90 min (U4–U6)'], ['Forme', 'individuel, à deux, en équipe'], ['Matériel', 'ciseaux, chronomètre, papier, ruban adhésif, bouteille']],
+  fakten: [['Public', '12–13 ans (7e), 3–5 jeunes'], ['Durée', '3 séances d’environ 90 min (U4–U6)'], ['Forme', 'individuel, à deux, tous ensemble'], ['Matériel', 'ciseaux, chronomètre, papier, ruban adhésif, bouteille']],
   wozu: 'REAL TALK est le magazine des jeunes pour le module 1. Chacune des trois unités est une **séance continue** avec des stations. Pensé pour le juste milieu : **personnel** (situations du quotidien, « Ça te parle ? »), **pour réfléchir** (une bonne question plutôt que beaucoup d’exercices), **facile pour parler** (bulle « Parlez-en » – facultatif), **fun** (colorier, poser, construire – sans points, sans équipes les unes contre les autres) et **facile à comprendre** (consignes courtes, d’abord cocher). **Personne ne doit jouer une scène devant les autres.** Fil rouge : les jeunes connaissent leur « dossier » – ici, ils en découvrent l’autre côté.',
   lernziele: [
     'Les jeunes nomment six besoins de base (« réservoirs ») et reconnaissent, à leurs émotions, quel réservoir est vide.',
     'Ils choisissent une petite « station » faisable seul pour leur quotidien.',
     'Ils se placent entre des contraires comme voix haute et voix basse et nomment des forces des deux côtés.',
-    'Ils nomment leurs propres forces et les « racines » qui les tiennent, et donnent aux autres un retour concret sur une force.',
+    'Ils nomment leurs propres forces et donnent aux autres un retour concret sur une force – avec une preuve.',
   ],
   start: 'Titre, message (à lire à voix haute – le ton est voulu), « Au programme » et les deux questions pour s’échauffer. Environ 10 minutes avant la station 1 de la séance 01.',
   schluss: 'Cinéma – le film du trimestre – à part. Débats : deux phrases pour commencer une unité – ou les six debout à la fin. « Craque le code » comme révision, découper les cartes, « Pour finir » lors du bilan de l’unité 6.',
@@ -192,13 +189,13 @@ d.leitung = {
     'Lire les consignes à voix haute ; d’abord cocher, ensuite parler.',
     'Expliquer les réservoirs une fois avec un exemple du groupe ; ensuite, chaque jeune colorie en silence.',
     'Pour les forces, donner des exemples du quotidien du groupe.',
-    'Qui ne veut pas écrire dessine l’arbre.',
+    'Qui ne veut pas écrire colle seulement ses cartes.',
   ],
   forder: [
     'Évaluer les six réservoirs d’un personnage de série.',
     'Pendant une semaine, noter le soir le réservoir qui clignote.',
     'Interviewer une personne de confiance : « Qu’est-ce que je sais bien faire ? »',
-    'Faire l’arbre en grand sur A3 et l’accrocher (si on veut).',
+    'Faire « Mon dossier, page 2 » en grand sur A3 (si on veut).',
   ],
   gespraech: 'Le thème des besoins peut rendre visible un manque : pas de foyer sûr, pas assez à manger, personne qui tient à soi. Rien de cela n’est approfondi dans le groupe ; les signes de négligence ou de violence vont à la direction compétente (responsable). Les regards des autres (marché des forces) peuvent blesser – veiller à ce que personne ne reparte les mains vides. La question des racines peut faire mal quand des personnes importantes manquent : accepter expressément aussi des endroits, des animaux, de la musique et des souvenirs.',
   druck: [

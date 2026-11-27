@@ -1,10 +1,14 @@
 // REAL TALK #04 · GEDANKEN – vier Einheiten als zusammenhängende Stunden (16.11.2026).
 // Stunde 1 ist ein Lege-Spiel (zwei Filme zu einer Situation), Stunde 2 eine geheime Zählung, Stunde 3 eine Ermittlung
 // mit Hinweisen im Raum, Stunde 4 eine Leiter aus kleinen Schritten – mit einem echten Schritt am Ende.
-// Neu im Sweet Spot (24.11.2026): „Kennst du das?“, Sprechblasen nach jedem Fall, Modelle mit einfacher Übung, mehr
-// Clip-Fragen, große Runden ohne Punkte und ohne Teams gegeneinander, je ein Beispiel „So kann es klingen“.
+// Umbau 27.11.2026 nach fünf jugendlichen Kritikern: Stunde 1 mit der Wie-wahrscheinlich-Linie auf dem Boden, Stunde 2 mit
+// dem Satz-Umbau (Freundes-Satz über den alten kleben), Stunde 3 neu: „Wiegt das was?“ – eine Lineal-Wippe, auf die nur
+// Beweise Münzen legen (ersetzt den Hinweis-Rundgang, ein Arbeitsblatt im Gehen). Stunde 4: Mut-Leiter auf dem Boden.
+// Ein Clip im Heft (Stunde 4), Pausen, keine Praktikums- und Mopedwelt mehr – Lio ist 12.
+// Runde 3 (27.11.2026): Stunde 1 neu – Fall Ben, „die Kette“ auf dem Boden (Sache → Gedanke → Gefühl), die Linie mit einer
+// neuen Info, „mein zweiter Film“; raus: „Kennst du das?“ (wie in #01) und „zwei Filme mit Münze“ (dieselben Paare noch einmal).
 import type { Frage, Heft, Stunde } from '../typen'
-import { ankommen, beispiel, clip, fall, fragen, fuerDich, karten, kennstDu, kreuz, kreuzU, material, modell, raster, reden, runde, satz, schluss, seite, st, stimmtDas, stunde, strich, tabelle, verbinden, weiter } from './stunden-hilfe'
+import { ankommen, beispiel, blasen, clip, fall, fragen, fuerDich, karten, kennstDu, kreuz, kreuzU, material, modell, raster, reden, runde, satz, schluss, seite, st, stimmtDas, stunde, strich, tabelle, text, verbinden, weiter, pause } from './stunden-hilfe'
 
 const kreis = (f: string, ...l: string[]): Frage => ({ f, kreis: l })
 
@@ -12,71 +16,60 @@ export function stunden(d: Heft): Stunde[] {
   const [film, alte, beweise, neuer] = d.tracks
   // Der Clip über Glaubenssätze passt zu Stunde 2 („Alte Sätze“), nicht zu Stunde 1. Der frühere Clip von Stunde 2
   // (Hochstapler-Gefühl) passte nicht zum Fall und entfällt. Stunde 1 kommt ohne Clip aus.
-  alte.clip = { ...film.clip!, frage: 'Woher kommen die Sätze, die wir über uns glauben?' }
-  delete film.clip
 
   /* ---------- Stunde 1 · Film im Kopf ---------- */
-  const PAARE: [string, string, string][] = [
-    ['Gelesen. Keine Antwort.', 'Sie hat keinen Bock auf mich.', 'Sie hat gerade keine Zeit.'],
-    ['Zwei tuscheln und schauen zu dir.', 'Die lästern über mich.', 'Die reden über irgendwas.'],
-    ['Der Lehrer sagt: „Komm nach der Stunde zu mir.“', 'Jetzt gibt es Ärger.', 'Vielleicht will er nur etwas fragen.'],
-    ['Du bist nicht zur Party eingeladen.', 'Keiner will mich dabeihaben.', 'Es war nur Platz für wenige.'],
-    ['Dein Freund geht ohne Gruß an dir vorbei.', 'Er ist sauer auf mich.', 'Er hat mich nicht gesehen.'],
-    ['Du bekommst eine Fünf zurück.', 'Ich bin dumm.', 'Diesmal habe ich zu wenig geübt.'],
-    ['Jemand lacht, als du reinkommst.', 'Die lachen über mich.', 'Da war gerade ein Witz.'],
-    ['Der Trainer sagt nach dem Spiel nichts zu dir.', 'Ich war schlecht.', 'Er hatte den Kopf woanders.'],
+  const PAARE: [string, string, string, string][] = [
+    ['Gelesen. Keine Antwort.', 'Sie hat keinen Bock auf mich.', 'Sie hat gerade keine Zeit.', 'Ihr Akku war seit Mittag leer.'],
+    ['Zwei tuscheln und schauen zu dir.', 'Die lästern über mich.', 'Die reden über irgendwas.', 'Dann zeigen sie dir ein Video von ihrem Hund.'],
+    ['Der Lehrer sagt: „Komm nach der Stunde zu mir.“', 'Jetzt gibt es Ärger.', 'Vielleicht will er nur etwas fragen.', 'Er fragt, ob du beim Schulfest hilfst.'],
+    ['Du bist nicht zur Party eingeladen.', 'Keiner will mich dabeihaben.', 'Es war nur Platz für wenige.', 'Es war ein Geburtstag nur mit Familie.'],
+    ['Dein Freund geht ohne Gruß an dir vorbei.', 'Er ist sauer auf mich.', 'Er hat mich nicht gesehen.', 'Er hatte Kopfhörer drin und schaute aufs Handy.'],
+    ['Du bekommst den Test zurück: 22 von 60.', 'Ich bin dumm.', 'Diesmal habe ich zu wenig geübt.', 'Die halbe Klasse hat unter 30.'],
+    ['Jemand lacht, als du reinkommst.', 'Die lachen über mich.', 'Da war gerade ein Witz.', 'Auf dem Handy lief gerade ein Katzenvideo.'],
+    ['Der Trainer sagt nach dem Spiel nichts zu dir.', 'Ich war schlecht.', 'Er hatte den Kopf woanders.', 'Am Samstag stellt er dich wieder auf.'],
   ]
-  const s1 = stunde('Was macht dir die Laune kaputt – die Sache oder dein Gedanke?', ['erklären, dass zwischen Situation und Gefühl ein Gedanke sitzt', 'zu einer Situation zwei Gedanken finden', 'merken, welcher Gedanke dich runterzieht'],
+  const s1 = stunde('Was macht dir die Laune kaputt – die Sache oder dein Gedanke?', ['zeigen, dass zwischen Sache und Gefühl ein Gedanke sitzt', 'zu einer Sache zwei Gedanken finden', 'mit einer neuen Info umdenken'],
     seite(
       ankommen('dein erster Gedanke', kreuzU('Jemand antwortet nicht auf deine Nachricht. Was denkst du zuerst?', '„Der hat keine Zeit.“', '„Der mag mich nicht mehr.“', '„Mir egal.“'), strich('Wie ist deine Laune gerade?', 'mies', 'gut')),
-      st('Kennst du das?', '8 Min.', 'allein · dann alle', 'hand-finger', 'Erst still ankreuzen, dann jeden Satz vorlesen – alle zeigen gleichzeitig den Daumen, Sie auch. Nur zählen, nicht nachfragen.',
-        fragen('Kreuz an, was du kennst. Danach zeigen alle gleichzeitig den Daumen.',
-          kennstDu('Kennst du das?', 'Ich warte auf eine Antwort und denke schon das Schlimmste.', 'Zwei lachen – und ich denke sofort, es geht um mich.', 'Ich lese eine Nachricht dreimal, um herauszufinden, wie sie gemeint ist.', 'Ich bin sicher, dass jemand sauer auf mich ist – und dann stimmt es gar nicht.', 'Ein Satz von jemandem geht mir den ganzen Tag nicht aus dem Kopf.')),
-        reden('Welcher Satz kam am häufigsten? Was macht so ein Gedanke mit eurer Laune?')),
-    ),
-    seite(
       fall(film, 'Ben und die zwei blauen Haken', [
         kreuzU('Was wusste Ben **sicher**?', 'Mila hat die Nachricht gelesen.', 'Mila hat keinen Bock auf ihn.', 'Mila lacht über ihn.'),
-        kreuz('Was hat Ben den Abend verdorben?', 'Mila', 'sein Film im Kopf'),
-      ], { zeitleiste: [['nach 10 Min.', '„Sie hat keinen Bock mehr auf mich.“'], ['nach 20 Min.', '„Sie lacht gerade über meine Nachricht.“'], ['nach 30 Min.', 'Ben löscht den Chat.'], ['halb neun', 'Mila: „Sorry, war beim Training. Klar, wann?“']], leitung: 'Vorlesen. Erst ankreuzen, dann die Sprechblase.' }),
-      weiter('Der Fall: Ben und die zwei blauen Haken', 3, 'search', reden('Was macht ihr, wenn eine Antwort nicht kommt – warten, nachschreiben, löschen?')),
-      modell(film, 'Situation – Gedanke – Gefühl', ['message-circle', 'arrows-right', 'repeat'], { wie: 'alle · dann allein',
-        leitung: 'Vorlesen, dann allein ankreuzen und auflösen. Wichtig: Die Situation ist gleich – der Gedanke macht das Gefühl.',
-        fragen: [raster('Was ist das? Ein Kreuz pro Zeile.', ['Situation', 'Gedanke', 'Gefühl'], 'Zwei blaue Haken, keine Antwort.', '„Die hat keinen Bock auf mich.“', 'traurig', 'Jemand rempelt dich an.', '„Der hat mich nicht gesehen.“', 'ruhig')],
-        danach: [reden('Welcher Gedanke kommt bei euch schneller: der dunkle oder der ruhige?')] }),
+        kreuz('Was hat Ben den Abend verdorben?', 'Mila', 'sein Film im Kopf', 'beides ein bisschen'),
+      ], { zeit: '12 Min.', leitung: 'Vorlesen wie einen Chat: die Nachricht, dann Bens Gedanken. Erst ankreuzen, dann die Sprechblase.' }),
     ),
     seite(
-      st('Zu zweit: drei Filme für Ben', '10 Min.', 'zu zweit', 'movie', 'Gefühl und Tun: ein Wort reicht. Den dritten Gedanken gemeinsam sammeln, wenn er schwerfällt.',
-        fragen(film.moves[0].kontext ?? null, ...film.moves[0].fragen)),
-      fuerDich('mein Film', '8 Min.', fragen('Ein Moment, der dir die Laune verdorben hat – dir oder jemandem, den du kennst. Sieht keiner.',
-        kreuzU('Was ist passiert?', 'keine Antwort auf eine Nachricht', 'jemand hat gelacht oder getuschelt', 'eine schlechte Note', 'etwas anderes'),
-        kreuz('Was hast du gefühlt?', 'traurig', 'wütend', 'peinlich', 'Angst'),
-        satz('Zwei Filme:', 'Mein erster Gedanke: „', 'Ein zweiter, der auch stimmen könnte: „'))),
+      weiter('Der Fall: Ben und die zwei blauen Haken', 2, 'device-mobile-message',
+        blasen(['18:02 · Ben', '„Gehst du Samstag mit ins Kino?“'], ['', '✓✓ gelesen'], ['~Ben, 18:12', 'Sie hat keinen Bock mehr auf mich.'], ['~Ben, 18:22', 'Sie lacht gerade über meine Nachricht.'], ['', '18:32 – Ben löscht den Chat.'], ['20:30 · Mila', '„Sorry, war beim Training. Klar, wann?“']),
+        reden('Was macht ihr, wenn eine Antwort nicht kommt – warten, nachschreiben, löschen?')),
+      st('Erst legen: die Kette', '12 Min.', 'alle · am Boden', 'arrow-right', 'Drei Blätter auf den Boden: SACHE → GEDANKE → GEFÜHL. Die Karten nach Sachen sortiert bereithalten. Die erste Sache legen Sie selbst. Nur zeigen lassen, nicht diskutieren – das kommt bei der Linie.',
+        text('Auf dem Boden liegen drei Blätter: **SACHE → GEDANKE → GEFÜHL.** Die Leitung legt eine Sache hin, zum Beispiel „Gelesen. Keine Antwort.“ Eine Person legt den **dunklen Gedanken** dazu. Alle zeigen mit dem Daumen: **Laune hoch oder runter?** Dann kommt der **andere Gedanke** obendrauf – alle zeigen neu. Drei Sachen.'),
+        fragen(null, kreuzU('Die Sache ist gleich geblieben. Was hat die Laune geändert?', 'der Gedanke', 'die Sache', 'gar nichts')),
+        reden('Wann merkt ihr den Gedanken zwischen Sache und Gefühl – sofort, später oder gar nicht?')),
+      pause(),
     ),
     seite(
-      runde('zwei Filme', '25 Min.', 'alle · am Tisch', 'cards', {
-        ziel: 'Sehen: Zu jeder Situation gibt es mehr als einen Gedanken – und jeder macht ein anderes Gefühl.',
-        material: 'die 8 Situations-Karten und 16 Gedanken-Karten von der nächsten Seite (ausschneiden), eine Münze pro Person',
+      runde('die Wie-wahrscheinlich-Linie', '35 Min.', 'alle · im Raum', 'chart-line', {
+        ziel: 'Merken: Der dunkle Gedanke fühlt sich an wie 100 Prozent – und eine neue Info kann ihn kippen.',
+        material: 'Klebeband für eine Linie auf dem Boden mit drei Zetteln: 0 % · 50 % · 100 %; die neuen Infos (bringt die Leitung mit)',
         schritte: [
-          'Die acht Situationen liegen offen auf dem Tisch. Die Gedanken-Karten liegen gemischt und verdeckt daneben.',
-          'Reihum: eine Gedanken-Karte ziehen, vorlesen und zur passenden Situation legen. Wer unsicher ist, fragt die Gruppe.',
-          'Am Ende liegen bei jeder Situation **zwei Filme**: einer zieht runter, einer könnte auch stimmen.',
+          'Die Leitung liest eine Sache und den **dunklen Gedanken** vor. Alle stellen sich gleichzeitig auf die Linie: Wie wahrscheinlich stimmt der Gedanke?',
+          '**Neue Info:** Die Leitung liest vor, was man später erfährt. Alle stellen sich neu auf.',
+          'Die Gruppe erfindet einen **dritten Gedanken**, der auch stimmen könnte. Wo steht der?',
+          'So geht es durch alle acht Sachen. Wer mag, sagt, warum er umgezogen ist.',
         ],
-        runden: [
-          { t: 'Runde 1 · legen', x: 'Alle 16 Karten zusammen zuordnen. Schafft ihr es in fünf Minuten?' },
-          { t: 'Runde 2 · Münze', x: 'Eine Situation wird vorgelesen. Alle legen gleichzeitig ihre Münze auf den Film, der bei ihnen zuerst käme.' },
-          { t: 'Runde 3 · dritter Film', x: 'Jede Person erfindet zu einer Situation einen dritten Gedanken. Kann er stimmen? Alle zeigen den Daumen.' },
-        ],
-        regeln: ['Es gibt keine Punkte und keine Teams.', 'Niemand muss sagen, warum seine Münze wo liegt.'],
-        zu3: 'Genauso – die Leitung legt und setzt mit.',
-        auswertung: ['Bei welcher Situation lagen fast alle Münzen auf dem dunklen Film?', 'Der andere Film: Ist er schöngeredet – oder könnte er wirklich stimmen?'],
-      }, { danach: [beispiel('So kann es klingen', ['Leitung liest:', '„Dein Freund geht ohne Gruß an dir vorbei.“'], ['', 'Vier Münzen landen auf „Er ist sauer auf mich“, eine auf „Er hat mich nicht gesehen“.'], ['Amira:', 'Bei mir kommt sofort der dunkle Film. Dabei schaut er meistens nur aufs Handy.'])] }),
+        regeln: ['Ihr stellt euch für Ben und die anderen – nicht für euch selbst.', 'Umstellen ist erlaubt. Keine Punkte.'],
+        zu3: 'Die Leitung stellt sich mit auf die Linie.',
+        notiz: { titel: 'Am weitesten bin ich umgezogen bei:', linien: 1 },
+        auswertung: ['Der dunkle Gedanke fühlt sich an wie 100 Prozent. Wie viel blieb nach der neuen Info übrig?', 'Bei welcher Sache war es am schwersten, umzuziehen – obwohl die Info klar war?'],
+      }, { leitung: 'Sache, dunkler Gedanke, dann die neue Info (Kopiervorlage) vorlesen. Es wird gestritten, wer bei 80 steht – genau das ist das Gespräch.',
+        danach: [beispiel('So sieht eine Runde aus', ['Leitung:', '„Gelesen. Keine Antwort.“ – „Sie hat keinen Bock auf mich.“'], ['', 'Drei stehen bei 70, Amira bei 20.'], ['Leitung:', 'Neue Info: „Ihr Akku war seit Mittag leer.“'], ['', 'Alle ziehen nach unten. Nur Finn bleibt bei 50: „Kann ja trotzdem sein.“'])] }),
     ),
     seite(
-      material('8 Situationen und 16 Gedanken', 5,
-        karten(4, 20, 'Die Situationen: ausschneiden und offen auf den Tisch legen.', PAARE.map(([t]) => ({ t, marke: 'Situation' }))),
-        karten(4, 16, 'Die Gedanken: ausschneiden, mischen, verdeckt stapeln.', [...PAARE.map(([, a]) => ({ t: `„${a}“` })), ...PAARE.map(([, , b]) => ({ t: `„${b}“` }))])),
-      schluss(film, 'Bens zweiter Film', [satz('Zwei blaue Haken, keine Antwort. Welcher zweite Gedanke hätte Ben den Abend gerettet?', '„Vielleicht'), kreuzU('Schau auf Station 1. Dein erster Gedanke war:', 'einer, der runterzieht', 'einer, der auch stimmen könnte')], ['gefangen']),
+      { ...material('8 Sachen, 16 Gedanken, 8 neue Infos', 3,
+        karten(4, 20, 'Die Sachen: ausschneiden und nach Sachen sortieren.', PAARE.map(([t]) => ({ t, marke: 'Sache' }))),
+        karten(4, 16, 'Die Gedanken: ausschneiden und zu ihrer Sache legen.', PAARE.flatMap(([t, a, b]) => [{ t: `„${a}“`, marke: 'dunkel' }, { t: `„${b}“`, marke: 'anders' }])),
+        karten(4, 16, 'Die neuen Infos für die Linie – liest die Leitung vor.', PAARE.map(([t, , , i]) => ({ t: i, x: t, marke: 'neue Info' })))), wie: 'zu Station 3 und 5' },
+      fuerDich('mein zweiter Film', '8 Min.', fragen('Ein Moment, der dir zuletzt die Laune verdorben hat. Nur für dich – keiner sieht es.', satz('Mein zweiter Film:', '„Vielleicht'), satz('Und eine Info, die ich noch nicht kenne – wen könnte ich fragen?', ''))),
+      schluss(film, 'Bens zweiter Film', [kreuzU('Schau auf Station 1. Dein erster Gedanke war:', 'einer, der runterzieht', 'einer, der auch stimmen könnte')], ['gefangen']),
     ),
   )
 
@@ -88,21 +81,12 @@ export function stunden(d: Heft): Stunde[] {
       fall(alte, 'Lea und der Satz vom Abendessen', [
         kreuzU('Wie heißt der Satz, der bei Lea eingezogen ist?', '„Ich bin zu viel.“', '„Ich bin dumm.“', '„Ich bin allein.“'),
         kreis('Woran sieht man den Satz heute? Kreise ein.', 'Hand vor dem Mund', '„Ach, egal.“', 'sie lacht laut', 'sie erzählt viel'),
-        kreuzU('Der Stiefvater hat es gesagt. Stimmt der Satz deshalb?', 'Nein. Er war genervt – der Satz war falsch.', 'Ja. Erwachsene haben recht.'),
-      ], { leitung: 'Vorlesen. Erst ankreuzen, dann die Sprechblase.' }),
-      weiter('Der Fall: Lea und der Satz vom Abendessen', 2, 'search', reden('Welche Sätze hört man oft – auf dem Hof, im Sport, im Netz? Welche bleiben hängen?')),
+        kreuzU('Der Stiefvater hat es gesagt. Stimmt der Satz deshalb?', 'Nein. Er war genervt – der Satz war falsch.', 'Vielleicht. Er kennt sie ja.'),
+      ], { zeit: '12 Min.', leitung: 'Vorlesen. Erst ankreuzen, dann die Sprechblase.' }),
+      weiter('Der Fall: Lea und der Satz vom Abendessen', 2, 'search', reden('Wer hat den Satz gesagt – und wer sagt ihn heute?', 'Welche Sätze hört man oft – auf dem Hof, im Sport, im Netz? Welche bleiben hängen?')),
     ),
     seite(
-      clip(alte, 'Was sind Glaubenssätze?', [kreuzU('Woher kommen Sätze wie „Ich bin nicht gut genug“?', 'Sie sind angeboren.', 'Sie sind gelernt – meist früh.', 'Sie kommen aus dem Nichts.'), kreuz('Wie redest du innerlich mit dir, wenn etwas schiefgeht?', 'hart', 'freundlich', 'je nachdem')], ['So entsteht ein Glaubenssatz:', 'Ein Beispiel aus dem Clip:', 'Das hat mich überrascht:'],
-        [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Leas Satz ist gelernt. Was heißt das?', 'Man kann ihn umlernen.', 'Er bleibt für immer.')]),
-      modell(alte, 'wie ein Satz einzieht', ['home', 'search', 'users'], { zeit: '8 Min.', wie: 'alle · dann allein',
-        leitung: 'Vorlesen, dann allein verbinden und auflösen.',
-        fragen: [verbinden('Was passt zu welchem Punkt? Verbinde.', ['Ein Trainer sagt einmal: „Du bist zu langsam.“', 'Seitdem sieht Tom nur noch die Läufe, die er verliert.', 'In der Klasse kennen fast alle so einen Satz.'], ['Du bist nicht allein', 'Sätze haben eine Herkunft', 'Der Kopf sammelt Beweise'])],
-        danach: [reden('Woher kommen bei Jugendlichen oft solche Sätze – Schule, Sport, Netz, Freunde?')] }),
-      fuerDich('die Fahndung', '8 Min.', fragen(alte.moves[0].kontext ?? null, ...alte.moves[0].fragen)),
-    ),
-    seite(
-      runde('die geheime Zählung', '25 Min.', 'alle · geheim', 'box', {
+      runde('die geheime Zählung', '35 Min.', 'alle · geheim', 'box', {
         ziel: 'Sehen: Fast alle kennen dieselben Sätze. Niemand ist damit allein.',
         material: 'die 12 Satz-Karten von der nächsten Seite, pro Person ein Zettel mit den Zahlen 1 bis 12, eine Schachtel, Stifte',
         schritte: [
@@ -118,64 +102,63 @@ export function stunden(d: Heft): Stunde[] {
       }, { leitung: 'Zettel vorbereiten. Selbst einen einwerfen. Nach dem Zählen die Zettel sofort wegwerfen.', danach: [beispiel('So kann es klingen', ['Leitung zählt:', '„Ich bin nicht gut genug.“ – sechs Striche.'], ['Finn:', 'Echt? Ich dachte, das kenn nur ich.'], ['Sara, wie eine Freundin:', '„Du musst nicht perfekt sein, um dazuzugehören.“'], ['', 'Alle zeigen: Daumen hoch.'])] }),
     ),
     seite(
-      material('12 Sätze', 5,
+      material('12 Sätze', 3,
         karten(3, 19, 'Ausschneiden und offen auf den Tisch legen. Die Nummer gehört dazu.', SAETZE.map((t, i) => ({ t: `„${t}“`, marke: `Satz ${i + 1}` })))),
-      fuerDich('mein Satz und sein Preis', '8 Min.', fragen('Ein Satz aus der Zählung, den du kennst – oder den jemand kennt, den du kennst. Nicht aufschreiben. Sieht keiner.',
-        kreuzU('Was tust du, wenn er läuft?', 'mich nicht melden – wie Tom', 'absagen – wie Nora', 'alles perfekt machen – wie Sami', 'so tun, als wäre nichts – wie Finn', 'etwas anderes'),
-        kreis('Was kostet er dich? Kreise ein.', 'Spaß', 'Freunde', 'meine Stimme', 'Ruhe', 'Chancen'),
-        satz('Meldet er sich diese Woche, sage ich mir – wie eine gute Freundin:', '„'))),
-    ),
+      pause(),
+      st('Der Satz-Umbau', '18 Min.', 'allein', 'scissors', 'Sagen Sie: „Ihr müsst den neuen Satz nicht glauben. Er muss nur stimmen.“ Eine leere 13. Karte bereithalten: Gibt es einen Spruch über eure Klasse? Nur wenn die Gruppe ihn selbst nennt, wird er aufgeschrieben.',
+        text('Nimm eine Satz-Karte – es muss nicht deine sein. Schreib auf einen Papierstreifen den Satz, den eine **gute Freundin** sagen würde – und der **stimmt.** Kleb ihn über den alten Satz. Die Karte gehört dir.'),
+        fragen(null, kreis('Was kostet der alte Satz? Kreise ein.', 'Spaß', 'Freunde', 'meine Stimme', 'Ruhe', 'Chancen'))),    ),
     seite(
       schluss(alte, 'der Satz wohnt noch da', [kreuzU('Lea will etwas erzählen und sagt wieder „Ach, egal“. Was könnte sie sich sagen?', '„Der Satz ist gelernt. Er stimmt nicht.“', '„Ich bin halt zu viel.“'), strich('Schau auf Station 1. Wie willst du mit dir reden, wenn etwas schiefgeht?', 'hart', 'freundlich')], ['gefunden']),
     ),
   )
 
-  /* ---------- Stunde 3 · Beweise, bitte ---------- */
-  const HINWEISE = ['Jana hat in Mathe eine Fünf.', 'Jana passt jeden Samstag auf zwei kleine Kinder auf.', 'Jana fühlt sich klein, wenn sie vorlesen soll.', 'Jana hat ihr Fahrrad selbst geflickt.', 'Ihr Bruder sagt: „Du kannst ja gar nichts.“', 'Jana hat den Schwimmkurs abgebrochen.', 'Jana kocht oft für die ganze Familie.', 'Jana glaubt: Alle anderen sind besser.', 'Im Praktikum wurde sie gelobt: pünktlich und freundlich.', 'Jana hat dreimal die Hausaufgaben vergessen.', 'Heute ist ein schlechter Tag. Alles nervt.', 'Jana spricht zwei Sprachen.']
-  const s3 = stunde('Stimmt der Satz überhaupt?', ['einen Beweis von einem Gefühl unterscheiden', 'Hinweise für und gegen einen Satz sammeln', 'einen neuen Satz prüfen: wahr, was du tust, jetzt'],
+  /* ---------- Stunde 3 · Wiegt das was? (neu 27.11.2026) ---------- */
+  // Raus: Akte-Lio-Raster, Modell-Raster, Debattier-Clip, Hinweis-Rundgang (dreimal dasselbe Sortieren, „Ermittlung“ – zu schwer).
+  // Neu: Eine Lineal-Wippe. Nur Beweise bekommen eine Münze. Gefühle und Meinungen sind laut, aber wiegen nichts.
+  const LIO: [string, string][] = [['22 von 60 Punkten im Mathetest.', 'Beweis'], ['Sieben Punkte mehr als beim letzten Test.', 'Beweis'], ['Repariert jedes Fahrrad im Viertel.', 'Beweis'], ['Durfte beim Schulfest allein an die Kasse.', 'Beweis'], ['Hat im Test drei Aufgaben nicht verstanden.', 'Beweis'], ['Erklärt seiner Schwester die Uhr.', 'Beweis'], ['Fühlt sich dumm.', 'Gefühl'], ['Der Cousin sagt: „Du checkst nichts.“', 'Meinung'], ['„Alle denken, Lio ist faul.“', 'Meinung'], ['Lio sagt: „War ja klar.“', 'Gefühl']]
+  const s3 = stunde('Stimmt der Satz – oder fühlt er sich nur wahr an?', ['Beweis, Gefühl und Meinung unterscheiden', 'einen Satz wiegen', 'einen neuen Satz bauen, der beide Seiten trägt'],
     seite(
       ankommen('Gefühl oder Beweis?', kreuz('„Wenn ich mich dumm fühle, bin ich auch dumm.“ Stimmt das?', 'stimmt', 'stimmt nicht', 'weiß nicht'), kreuz('Was merkst du dir leichter?', 'was schiefging', 'was geklappt hat')),
+      st('Erst bauen: die Lineal-Wippe', '10 Min.', 'zu zweit', 'scale', 'Material je Paar: ein Lineal, ein runder Stift, zehn gleiche Münzen (bei drei Paaren 30). Sagen Sie: „Die Wippe ist heute euer Richter.“',
+        text('Legt das Lineal quer über einen runden Stift. Probiert aus: Gleich viele Münzen auf beiden Enden – die Wippe ist gerade. Eine Münze mehr auf einer Seite – sie kippt.')),
       fall(beweise, 'Lio und die 22 Punkte', [
-        kreis('Welche Beweise lässt Lios Kopf nicht rein? Kreise ein.', 'sieben Punkte mehr', 'die Mopeds', 'die Kasse im Praktikum', 'die 22 Punkte'),
-        kreuzU('Warum zählen die guten Sachen für Lio nicht?', 'Sein Kopf lässt nur rein, was zum alten Satz passt.', 'Weil sie nicht wichtig sind.'),
+        kreis('Welche Beweise lässt Lios Kopf nicht rein? Kreise ein.', 'sieben Punkte mehr', 'die Fahrräder', 'die Kasse beim Schulfest', 'die 22 Punkte'),
       ], { leitung: 'Vorlesen. Erst ankreuzen, dann die Sprechblase.' }),
-      weiter('Der Fall: Lio und die 22 Punkte', 2, 'search', reden('Was merkt man sich leichter – ein Lob oder einen fiesen Spruch? Warum wohl?')),
+      weiter('Der Fall: Lio und die 22 Punkte', 3, 'search', reden('Lob oder fieser Spruch – was bleibt länger hängen?')),
     ),
     seite(
-      st('Zu zweit: die Akte Lio', '8 Min.', 'zu zweit', 'folder', 'Erst zu zweit sortieren, dann gemeinsam das Urteil: „zu grob – so stimmt er nicht“.',
-        fragen(beweise.moves[0].kontext ?? null, ...beweise.moves[0].fragen)),
-      modell(beweise, 'wie man einen Satz prüft', ['scale', 'arrows-left-right', 'pencil'], { zeit: '8 Min.', wie: 'alle · dann allein',
-        leitung: 'Vorlesen, dann allein ankreuzen. Faustregel: Kann man es sehen oder zählen? Dann ist es ein Beweis.',
-        fragen: [raster('Beweis, Gefühl oder Meinung? Ein Kreuz pro Zeile.', ['Beweis', 'Gefühl', 'Meinung'], 'Lio hat 22 von 60 Punkten.', 'Lio fühlt sich dumm.', 'Der Cousin sagt: „Du checkst nichts.“', 'Lio hat zwei Mopeds repariert.', '„Alle denken, Lio ist faul.“')],
-        danach: [reden('Welche Sprüche fühlen sich an wie ein Beweis – sind aber nur eine Meinung?')] }),
-    ),
-    seite(
-      clip(beweise, 'Beweis oder Trick?', [kreuzU('Woran erkennst du einen echten Beweis?', 'Man kann ihn nachprüfen.', 'Er wird laut gesagt.', 'Viele glauben ihn.'), kreuz('Glaubst du schnell, was viele sagen?', 'oft', 'manchmal', 'selten')], ['Ein Trick aus dem Clip:', 'So erkenne ich ihn:', 'Das hat mich überrascht:'],
-        [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Lios Cousin sagt: „Du checkst nichts.“ Was ist das?', 'eine Meinung – kein Beweis', 'ein Beweis')]),
-      fuerDich('mein Prüfstand', '8 Min.', fragen('Dein Satz aus Stunde 2 – oder der von jemandem, den du kennst. Sieht keiner.',
-        kreuzU('Worauf stützt er sich vor allem?', 'auf ein Gefühl', 'auf einen Spruch von jemandem', 'auf etwas, das man sehen oder zählen kann'),
-        satz('Der Test:', 'Ein Beweis dagegen (sehen oder zählen):', 'Mein neuer Satz – wahr, was ich tue, jetzt: „'))),
-    ),
-    seite(
-      runde('der Hinweis-Rundgang', '25 Min.', 'zu zweit · dann alle', 'search', {
-        ziel: 'Üben, Hinweise zu sortieren: dafür, dagegen – oder gar kein Beweis.',
-        material: 'die 12 Hinweis-Karten von der nächsten Seite (ausschneiden und im Raum aufhängen oder auslegen), Stifte',
+      st('Zeigen oder fühlen?', '10 Min.', 'alle gleichzeitig', 'hand-finger', 'Acht Sätze vorlesen, nach jedem zeigen alle gleichzeitig. Kurz auflösen: Kann man es sehen oder zählen?',
+        text('Die Leitung liest einen Satz. Alle zeigen gleichzeitig: **Finger auf den Tisch** = kann man sehen oder zählen · **Hand aufs Herz** = ein Gefühl · **Hand an den Mund** = jemand sagt das.'),
+        text('„Lio hat 22 Punkte.“ · „Ich fühle mich dumm.“ · „Alle sagen, er ist faul.“ · „Er hat zwei Fahrräder repariert.“ · „Ich bin so peinlich.“ · „Der Trainer sagt, ich bin zu langsam.“ · „Ich bin dreimal zu spät gekommen.“ · „Keiner mag mich.“'),
+        reden('Welcher Satz fühlt sich an wie ein Beweis – und ist keiner?')),
+      pause(),
+      runde('Lio auf der Wippe', '30 Min.', 'zu zweit · dann alle', 'scale', {
+        ziel: 'Lios Satz „Ich bin dumm“ wiegen – nur mit Beweisen.',
+        material: 'die Lineal-Wippe, zehn Münzen und die zehn Lio-Karten von der nächsten Seite (je Paar), zwei Zettel: „Lios Satz stimmt“ und „stimmt nicht“, ein Zettel „Lautsprecher“',
         schritte: [
-          'Der Fall: Jana, 15, sagt über sich: **„Ich kann nichts.“** Im Raum hängen zwölf Hinweise.',
-          'Geht zu zweit von Hinweis zu Hinweis. Kreuzt unten an: **dafür**, **dagegen** oder **kein Beweis** (nur ein Gefühl oder eine Meinung).',
-          'Acht Minuten. Dann vergleichen alle: Wo seid ihr euch uneinig? Die Frage hilft: Kann man es sehen oder zählen?',
-          'Das Urteil: Stimmt Janas Satz? Alle zeigen gleichzeitig: Daumen hoch, runter oder quer („zu grob“).',
-          'Zum Schluss schreibt jedes Paar einen **neuen Satz für Jana**, der den Prüfstand besteht.',
+          'Lios Satz ist „Ich bin dumm.“ Der Zettel „stimmt“ liegt links, „stimmt nicht“ rechts von der Wippe. Daneben liegt der **Lautsprecher**.',
+          'Das Paar liest eine Lio-Karte und macht den Zeige-Test: sehen oder zählen?',
+          '**Nur Beweise bekommen eine Münze** – auf die Seite, zu der sie passen. Gefühle und Meinungen kommen auf den Lautsprecher: laut, aber ohne Gewicht.',
+          'Am Ende: Wie steht die Wippe? Alle zeigen das Urteil mit dem Daumen.',
+          'Jedes Paar baut einen **Satz für Lio, der beide Seiten trägt** – zum Beispiel: „Mathe fällt mir schwer. Fahrräder kann ich.“',
         ],
-        zu3: 'Ihr geht zusammen, die Leitung geht allein – dann vergleichen.',
-        notiz: { titel: 'Unser neuer Satz für Jana:', linien: 1 },
-        auswertung: ['Welcher Hinweis sah aus wie ein Beweis – und war keiner?'],
-      }, { danach: [beispiel('So kann es klingen', ['Ben:', 'Hinweis 5: Ihr Bruder sagt, sie kann gar nichts. Das ist „dafür“, oder?'], ['Amira:', 'Nee. Das ist nur eine Meinung. Kann man nicht zählen.'], ['Ben:', 'Stimmt. Kein Beweis.']), tabelle('14mm 1fr 14mm 1fr', ['Nr.', 'dafür · dagegen · kein Beweis', 'Nr.', 'dafür · dagegen · kein Beweis'], [1, 2, 3, 4, 5, 6].map((k) => [String(k), '☐ dafür   ☐ dagegen   ☐ kein Beweis', String(k + 6), '☐ dafür   ☐ dagegen   ☐ kein Beweis']), 6)], leitung: 'Hinweise vorher aufhängen. Lösung: dafür 1, 6, 10 · dagegen 2, 4, 7, 9, 12 · kein Beweis 3, 5, 8, 11.' }),
+        regeln: ['Gefühle sind echt. Als Beweis wiegen sie nichts.', 'Keine Punkte, keine Teams gegeneinander.'],
+        zu3: 'Ein Paar und die Leitung, oder alle drei an einer Wippe.',
+        notiz: { titel: 'Unser Satz für Lio:', linien: 1 },
+        auswertung: ['Warum ist der Lautsprecher so laut, obwohl er nichts wiegt?', 'Wie steht die Wippe – und was heißt das für Lios Satz?'],
+      }, { danach: [beispiel('So sieht eine Runde aus', ['Ben liest:', '„Der Cousin sagt: Du checkst nichts.“'], ['Amira:', 'Hand an den Mund. Das sagt einer. Lautsprecher.'], ['', 'Keine Münze. Die Wippe bleibt, wie sie ist.'])] }),
     ),
     seite(
-      material('12 Hinweise zum Fall Jana', 6,
-        karten(3, 22, 'Ausschneiden und im Raum verteilen. Die Nummer gehört dazu.', HINWEISE.map((t, i) => ({ t, marke: `Hinweis ${i + 1}` })))),
-      schluss(beweise, 'Lios neuer Satz', [kreuzU('Welcher neue Satz besteht bei Lio den Prüfstand?', '„Mathe fällt mir schwer. Ich bleibe trotzdem dran.“', '„Ich bin der Beste.“', '„Irgendwann kann ich es schon.“'), kreuz('Schau auf Station 1: „Wenn ich mich dumm fühle, bin ich auch dumm.“', 'stimmt', 'stimmt nicht')], ['gelesen']),
+      material('10 Lio-Karten', 6,
+        karten(2, 14, 'Die Lio-Karten: einmal pro Paar drucken, ausschneiden, mischen, verdeckt stapeln.', LIO.map(([t]) => ({ t }))),
+        karten(3, 12, 'Die drei Zettel.', [{ t: 'Lios Satz stimmt' }, { t: 'stimmt nicht' }, { t: 'Lautsprecher', x: 'laut – aber kein Gewicht' }])),
+      fuerDich('mein Prüfstand', '10 Min.', fragen('Dein alter Satz aus Stunde 2 – oder der von jemandem, den du kennst. Nicht aufschreiben. Sieht keiner.',
+        kreuzU('Worauf stützt er sich vor allem?', 'auf ein Gefühl', 'auf einen Spruch von jemandem', 'auf etwas, das man sehen oder zählen kann'),
+        satz('Ein Beweis dagegen – etwas, das man sehen oder zählen kann:', ''))),
+    ),
+    seite(
+      schluss(beweise, 'Lios Wippe', [kreuz('Schau auf Station 1: „Wenn ich mich dumm fühle, bin ich auch dumm.“', 'stimmt', 'stimmt nicht')]),
     ),
   )
 
@@ -198,28 +181,26 @@ export function stunden(d: Heft): Stunde[] {
         danach: [reden('Was ist für euch ein kleiner Schritt – und was wäre schon zu groß?')] }),
       clip(neuer, 'Zwei Arten zu denken', [kreuzU('Kann man besser werden in etwas, das man „nicht kann“?', 'ja – mit Üben', 'nein – das ist angeboren', 'weiß nicht'), kreuz('Was sagst du dir, wenn etwas nicht klappt?', '„noch nicht“', '„kann ich halt nicht“', 'je nachdem')], ['So denkt der eine Typ:', 'So denkt der andere:', 'Das passt zu mir:'],
         [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Welcher Satz passt zu Mia am Montag?', '„Ich kann das noch nicht – ich probiere es.“', '„Ich kann das halt nicht.“')]),
-      stimmtDas(neuer),
+      pause(),
     ),
     seite(
-      runde('die Mut-Leiter', '25 Min.', 'alle · am Tisch', 'stairs', {
+      runde('die Mut-Leiter', '30 Min.', 'alle · auf dem Boden', 'stairs', {
         ziel: 'Kleine Schritte finden, die du wirklich gehen kannst – und merken, dass für jeden etwas anderes schwer ist.',
-        material: 'die 16 Mut-Karten von der nächsten Seite (ausschneiden), ein langer Tisch oder der Boden',
+        material: 'die 16 Mut-Karten von der nächsten Seite (ausschneiden), Klebeband für eine Leiter auf dem Boden',
         schritte: [
-          '**Teil 1 · die Leiter:** Legt alle 16 Karten in eine Reihe – von „leicht“ bis „schwer“. Ihr müsst euch einigen.',
-          '**Teil 2 · Zwillinge:** Die Leitung liest eine Karte vor. Auf „drei“ zeigen alle mit den Fingern: Wie schwer ist das für dich, von 1 bis 5? Gleiche Zahl: Zwilling.',
-          '**Teil 3 · mein Schritt:** Jede Person nimmt sich **eine** Karte aus der leichten Hälfte. Das ist dein Schritt bis heute Abend. Wer mag, macht ihn gleich hier – mit der Leitung, nicht vor der Gruppe.',
+          '**Teil 1 · die Leiter:** Klebt eine Leiter auf den Boden. Legt die 16 Karten auf die Sprossen – von „leicht“ bis „schwer“. Ihr müsst euch einigen.',
+          '**Teil 2 · mein Schritt:** Jede Person nimmt sich **eine** Karte aus der leichten Hälfte. Das ist dein Schritt für diese Woche. Wer mag, macht ihn gleich hier – mit der Leitung, nicht vor der Gruppe.',
         ],
         regeln: ['Du suchst deinen Schritt selbst aus. Niemand wird zu etwas gedrängt.', 'Niemand muss etwas vorspielen. Es zählt nur, was du wirklich tust.'],
-        zu3: 'Die Leitung legt und zeigt mit. Bei Teil 3 nimmt sie sich auch eine Karte.',
-        notiz: { titel: 'Mein Schritt bis heute Abend:', linien: 1 },
+        zu3: 'Die Leitung legt mit. Bei Teil 2 nimmt sie sich auch eine Karte.',
+        notiz: { titel: 'Mein Schritt für diese Woche:', linien: 1 },
         auswertung: ['Welche Karte lag bei euch weit auseinander – für die einen leicht, für die anderen schwer?', 'Was passiert mit dem alten Satz, wenn du den Schritt gemacht hast?'],
-      }, { danach: [beispiel('So kann es klingen', ['Leitung liest:', '„Um Hilfe bitten.“'], ['', 'Auf „drei“ zeigen zwei Leute eine 1. Finn zeigt eine 5.'], ['Finn:', 'Für mich ist das das Schwerste auf der ganzen Leiter.'], ['Mia:', 'Und bei mir ist „Nein sagen“ die 5.'])] }),
+      }, { danach: [beispiel('So kann es klingen', ['Mia legt:', '„Um Hilfe bitten“ – ganz unten. Leicht.'], ['Finn:', 'Für mich ist das das Schwerste auf der ganzen Leiter.'], ['Mia:', 'Und bei mir ist „Nein sagen“ ganz oben.'], ['', 'Die Karte kommt in die Mitte. Beides stimmt.'])] }),
     ),
     seite(
       material('16 Mut-Karten', 6, karten(4, 18, 'Ausschneiden und mischen.', MUT.map((t) => ({ t })))),
-      fuerDich('mein Wenn-dann', '8 Min.', fragen('Ein Plan schlägt jeden Vorsatz. Nimm deine Karte von der Mut-Leiter.',
-        satz('Für die nächste Woche:', 'Mein neuer Satz: „', 'Wenn (wann, wo, bei wem):', 'dann (mein Schritt):', 'Brüllt der alte Satz, sage ich mir: „'),
-        { f: 'Wie sehr glaubst du deinen neuen Satz?', regler: ['heute', 'in 7 Tagen'] })),
+      fuerDich('mein Wenn-dann', '6 Min.', fragen('Ein Plan schlägt jeden Vorsatz. Nimm deine Karte von der Mut-Leiter.',
+        satz('Für diese Woche:', 'Wenn (wann, wo, bei wem):', 'dann (mein Schritt):'))),
     ),
     seite(
       schluss(neuer, 'Beweis Nummer eins', [kreuzU('Der alte Satz meldet sich wieder. Was heißt das?', 'Es hat nicht geklappt.', 'Das ist normal. Ich mache trotzdem meinen Schritt.')], ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So']),
@@ -231,23 +212,22 @@ export function stunden(d: Heft): Stunde[] {
 /** Lösungen für die Leitung – passend zu den Stationen oben */
 export const loesungen: string[][] = [
   [
-    'Der Fall: Sicher wusste Ben nur: Mila hat die Nachricht gelesen. Den Abend hat ihm sein Film verdorben, nicht Mila.',
-    'Was ist das? Zwei blaue Haken und Anrempeln = Situation · „keinen Bock auf mich“ und „nicht gesehen“ = Gedanke · traurig und ruhig = Gefühl.',
-    'Drei Filme: „Keinen Bock auf mich“ – traurig, Chat löschen. „Beim Training“ – ruhig, abwarten. Dritter Gedanke zum Beispiel: „Akku leer.“',
-    'Zwei Filme: Der zweite Gedanke muss nicht schön sein – er muss auch stimmen können. Runde 1: Gelesen – „keinen Bock“/„gerade keine Zeit“ · tuscheln – „lästern“/„reden über irgendwas“ · Lehrer – „Ärger“/„will nur etwas fragen“ · Party – „keiner will mich“/„nur Platz für wenige“ · Freund – „sauer“/„nicht gesehen“ · Fünf – „dumm“/„zu wenig geübt“ · jemand lacht – „lachen über mich“/„ein Witz“ · Trainer – „Ich war schlecht“/„Kopf woanders“. Eine begründete andere Zuordnung zählt auch.',
+    'Der Fall: Sicher wusste Ben nur: Mila hat die Nachricht gelesen. Den Abend hat ihm vor allem sein Film verdorben – „beides ein bisschen“ ist auch ehrlich.',
+    'Die Kette: Die Sache bleibt gleich, nur der Gedanke wechselt – und mit ihm die Laune. Fast alle Daumen drehen sich beim anderen Gedanken.',
+    'Wie-wahrscheinlich-Linie: Es gibt keine richtige Prozentzahl. Wichtig ist der Unterschied zwischen dem Gefühl (fast 100 %) und dem, was nach der neuen Info übrig bleibt. Dritter Gedanke zum Beispiel: „Akku leer.“ Wer nach der Info nicht umzieht, darf das – fragen Sie nur: „Was müsstest du noch wissen?“',
+    'Für dich: Der zweite Film muss nicht schön sein – er muss auch stimmen können. Die zweite Frage ist der eigentliche Skill: nachfragen statt raten.',
   ],
   [
     'Der Fall: „Ich bin zu viel.“ Man sieht ihn an der Hand vor dem Mund und an „Ach, egal“. Der Satz war falsch – gesagt im Stress.',
-    'Wie ein Satz einzieht: Trainer-Spruch – Herkunft · Tom sieht nur verlorene Läufe – der Kopf sammelt Beweise · fast alle kennen so einen Satz – du bist nicht allein.',
-    'Fahndung: Tom – A (nicht gut genug) · Nora – B (mich mag keiner) · Sami – C (keine Fehler) · Finn – D (stark sein).',
+    'Sprechblase: Gesagt hat den Satz der Stiefvater – heute sagt Lea ihn sich selbst. So ziehen Sätze ein: einmal gehört, dann selbst wiederholt.',
+    'Satz-Umbau: Gute Freundes-Sätze stimmen und sind klein: „Du darfst Fehler machen.“ · „Manche mögen dich sehr.“ · „Du bist nicht zu viel – nur manchmal laut, und das ist okay.“ Schönreden („Du bist perfekt.“) besteht nicht.',
     'Geheime Zählung: Die Zettel danach sofort wegwerfen. Wichtig ist nur das Bild: Viele kennen dieselben Sätze.',
   ],
   [
-    'Der Fall: Lios Kopf lässt nicht rein: sieben Punkte mehr, die Mopeds, die Kasse im Praktikum.',
-    'Beweis, Gefühl oder Meinung: 22 Punkte und Mopeds = Beweis · fühlt sich dumm = Gefühl · Cousin und „alle denken“ = Meinung.',
-    'Akte Lio: dafür – 22 von 60 · dagegen – sieben Punkte mehr, Mopeds, Kasse · kein Beweis – fühlt sich dumm, Satz des Cousins. Urteil: zu grob.',
-    'Mein Prüfstand: Ein Satz besteht, wenn er wahr ist, sagt, was man tut, und jetzt gilt – zum Beispiel „Mathe fällt mir schwer. Ich bleibe trotzdem dran.“',
-    'Hinweis-Rundgang: dafür 1, 6, 10 · dagegen 2, 4, 7, 9, 12 · kein Beweis 3, 5, 8, 11. Urteil: zu grob. Neuer Satz zum Beispiel: „Manches fällt mir schwer. Vieles kann ich.“',
+    'Der Fall: Lios Kopf lässt nicht rein: sieben Punkte mehr, die Fahrräder, die Kasse beim Schulfest.',
+    'Zeigen oder fühlen: Finger auf den Tisch – 22 Punkte, zwei Fahrräder, dreimal zu spät · Hand aufs Herz – dumm fühlen, peinlich · Hand an den Mund – „alle sagen“, der Trainer, „keiner mag mich“ (fühlt sich wie ein Beweis an, ist keiner).',
+    'Lio auf der Wippe: Beweise sind die ersten sechs Karten. Zwei davon gehen eher auf „stimmt“ (22 Punkte, drei Aufgaben nicht verstanden), vier auf „stimmt nicht“. Vergessen oder nicht verstehen ist übrigens nicht dumm. Gefühl und Meinungen kommen auf den Lautsprecher. Urteil: Der Satz „Ich bin dumm“ hält nicht – „Mathe fällt mir schwer“ schon.',
+    'Mein Prüfstand: Ein guter neuer Satz ist wahr, sagt, was man tut, und gilt jetzt – zum Beispiel „Mathe fällt mir schwer. Ich bleibe trotzdem dran.“',
   ],
   [
     'Der Fall: Der alte Satz brüllt „Halt die Klappe“. Mia war mutig – mit Herzklopfen. Der Moment ist Beweis Nummer eins.',

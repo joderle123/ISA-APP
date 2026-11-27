@@ -34,6 +34,12 @@ export interface Frage {
   akku?: string
   /** Verbinden: links und rechts je eine Spalte mit Punkten, Linien ziehen */
   verbinden?: [string[], string[]]
+  /** Körperumriss zum Ausmalen (Beschriftung daneben), z. B. „Wo meldet sich ‚zu viel‘?“ */
+  umriss?: string
+  /** Kreis zum Aufteilen und Ausmalen (Gefühls-Torte), Beschriftung daneben */
+  torte?: string
+  /** Grundriss eines Zimmers (Bett, Fenster, Tür, Schreibtisch) – Beschriftung darunter, z. B. „Zeichne die Züge als Pfeile ein.“ */
+  zimmer?: string
 }
 export interface Clip { titel: string; kanal: string; url: string; dauer: string; frage: string }
 export interface Film { titel: string; jahr: number; fsk: number | null; laenge: string; worum: string; achte: string[]; achtung?: string }

@@ -8,12 +8,12 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { ZeichnungSvg } from '../src/blatt/ZeichnungSvg'
 import { bildZeichnung, bildGueltig, palette } from '../src/blatt/zeichnung'
 import qrcode from 'qrcode-generator'
-import type { Heft, Frage, Track } from './typen'
+import type { Heft, Frage, Track, Station } from './typen'
 import { URHEBER } from '../src/lib/urheber'
 import { L, setzeSprache, sprache } from './sprache'
 import { baueSolo } from './solo-bau'
 import { baueAktion } from './aktion-bau'
-import { baueStunde, stationen, kurzName } from './stunde-bau'
+import { baueStunde, stationen, kurzName, ohneSeite } from './stunde-bau'
 import type { AktionsHeft } from './aktion-typen'
 import type { Solo } from './solo-typen'
 // Skills-Missionen im Annexe-Spiel: eine je Kurs-Stunde, gemeinsame Daten mit dem Spiel (Auftrag 24.11.2026)
@@ -79,6 +79,9 @@ function frage(f: Frage, i: number): string {
   if (f.strich) a += `<div class="strich"><span class="mo">${t(f.strich[0])}</span><div></div><span class="mo">${t(f.strich[1])}</span></div>`
   if (f.akku) a += `<div class="akku"><span class="mo">${esc(f.akku)}</span><div class="bat"><i></i><i></i><i></i><i></i><i></i></div><span class="mo">${L('voll', 'plein')}</span></div>`
   if (f.verbinden) a += `<div class="verb"><div>${f.verbinden[0].map((w) => `<span>${t(w)}<i></i></span>`).join('')}</div><div>${f.verbinden[1].map((w) => `<span><i></i>${t(w)}</span>`).join('')}</div></div>`
+  if (f.umriss) a += `<div class="umriss"><svg viewBox="0 0 60 120" aria-hidden="true"><circle cx="30" cy="13" r="10"/><path d="M30 25C22 25 16 28 13 33L6 62C5 67 11 68 12 63L17 41L18 70L15 111C15 117 22 117 22 111L27 77L33 77L38 111C38 117 45 117 45 111L42 70L43 41L48 63C49 68 55 67 54 62L47 33C44 28 38 25 30 25Z"/></svg><span class="mo">${esc(f.umriss)}</span></div>`
+  if (f.zimmer) a += `<div class="umriss zimmer"><svg viewBox="0 0 170 100" aria-hidden="true"><rect x="2" y="2" width="166" height="96" stroke-width="1.8"/><rect x="62" y="0.6" width="44" height="2.8" fill="#fff" stroke="none"/><line x1="62" y1="1" x2="106" y2="1"/><line x1="62" y1="3" x2="106" y2="3"/><rect x="14" y="96.6" width="22" height="2.8" fill="#fff" stroke="none"/><path d="M14 98V76A22 22 0 0 1 36 98" stroke-dasharray="1.6 1.6"/><rect x="126" y="6" width="40" height="62" rx="2"/><rect x="130" y="9" width="32" height="10" rx="2"/><line x1="126" y1="24" x2="166" y2="24"/><rect x="110" y="6" width="14" height="14"/><circle cx="117" cy="23" r="1.2"/><rect x="4" y="30" width="22" height="44"/><rect x="28" y="44" width="12" height="12" rx="2"/><rect x="4" y="4" width="34" height="9"/><rect x="70" y="70" width="34" height="8"/><g fill="#666" stroke="none" font-size="4.2" font-family="sans-serif" text-anchor="middle"><text x="84" y="9">Fenster (Straßenlaterne)</text><text x="146" y="46">Bett</text><text x="117" y="14.5">Nacht-</text><text x="117" y="18.5">tisch</text><text x="117" y="28">Steckdose</text><text x="15" y="54">Schreib-</text><text x="15" y="58.5">tisch</text><text x="34" y="51.5">Stuhl</text><text x="21" y="10">Regal</text><text x="87" y="75.5">Fernseher</text><text x="25" y="91">Tür</text><text x="146" y="80">Flur →</text></g></svg><span class="mo">${esc(f.zimmer)}</span></div>`
+  if (f.torte) a += `<div class="umriss torte"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="47"/><circle cx="50" cy="50" r="1.6"/></svg><span class="mo">${esc(f.torte)}</span></div>`
   if (f.wortkasten) a += `<div class="wkasten">${f.wortkasten.map((w) => `<span>${t(w)}</span>`).join('')}</div>`
   if (f.kette) a += `<div class="kette">${f.kette.map((w) => `<span class="${w ? 'fest mo' : ''}">${t(w)}</span>`).join('<b>→</b>')}</div>`
   if (f.feld) a += `<div class="feld" style="height:${f.feld}mm"></div>`
@@ -99,6 +102,15 @@ function baue(d: Heft): string {
   const neu = d.tracks.every((e) => e.stunde)
   const einheit = neu ? L('Stunde', 'Séance') : 'Track'
   const E = L('E', 'U')   // Einheit / unité
+  /** Kopiervorlagen (seit 27.11.2026, jugendliche Kritiker): Material zum Ausschneiden steht nicht mehr zwischen den Stationen –
+   *  sonst liegt beim beidseitigen Druck eine Station auf der Rückseite der Schneideseite. Es kommt einseitig ans Ende des PDFs. */
+  const vorlagen: { i: number; s: Station }[] = []
+  d.tracks.forEach((e, i) => {
+    if (!e.stunde) return
+    e.stunde = { ...e.stunde, seiten: e.stunde.seiten.map((p) => ({ ...p, stationen: p.stationen.filter((s) => { const m = !!s.fort && /^(Material|Matériel)/.test(s.titel); if (m) vorlagen.push({ i, s }); return !m }) })).filter((p) => p.stationen.length > 0) }
+    e.leitung = { ...e.leitung, material: ohneSeite(e.leitung.material, true) }
+  })
+  if (vorlagen.length && !d.leitung.druck.some((x) => /Kopiervorlage|Modèles à copier/.test(x))) d.leitung.druck = [...d.leitung.druck, L('**Kopiervorlagen** (die letzten Seiten): einseitig drucken und vor der Stunde ausschneiden. Wie oft, steht auf der Vorlage.', '**Modèles à copier** (dernières pages) : imprimer en recto seul et découper avant la séance. Le nombre d’exemplaires est indiqué sur le modèle.')]
   const nSeiten = (e: Track) => (e.stunde ? e.stunde.seiten.length : 2)
   const seiteVon = (i: number) => ersteSeite + d.tracks.slice(0, i).reduce((x, e) => x + nSeiten(e), 0)
   const nT = d.tracks.length
@@ -133,9 +145,9 @@ function baue(d: Heft): string {
       <div class="ansage">${d.ansage.text.map((x) => `<p>${t(x)}</p>`).join('')}<div class="zit">${t(d.ansage.zitat)}</div></div>
       <div class="gr">${tape('book-2', L('So liest du das Heft', 'Comment lire ce magazine'))}
         <div class="so">${d.ansage.so.map((s) => `<div><b>${t(s[0])}</b><span>${t(s[1])}</span></div>`).join('')}</div></div>
-      <div class="gr">${tape('bolt', L('Drei Regeln. Mehr gibt es nicht.', 'Trois règles. Pas une de plus.'), true)}
+      <div class="gr">${tape('bolt', L('Drei Regeln für dieses Heft.', 'Trois règles pour ce magazine.'), true)}
         <div class="bx p regeln">${d.ansage.regeln.map((r, i) => `<div><b class="z">${i + 1}</b><span>${t(r)}</span></div>`).join('')}</div></div>
-      <div class="hilfe">${ic('phone')}<span>${t(d.hilfeText ?? L('Wenn dich etwas aus dem Heft nicht loslässt: Sprich mit jemandem, dem du vertraust. Kanner-Jugendtelefon **116 111** · Notruf **112**', 'Si quelque chose dans ce magazine te travaille : parles-en à quelqu’un de confiance. Kanner-Jugendtelefon **116 111** · Urgences **112**'))}</span></div>
+      <div class="hilfe">${ic('phone')}<span>${t(d.hilfeText ?? L('Wenn dich etwas aus dem Heft nicht loslässt: Sprich mit jemandem, dem du vertraust – zum Beispiel mit dem **SePAS** in deiner Schule. Kanner-Jugendtelefon **116 111** · Notruf **112**', 'Si quelque chose dans ce magazine te travaille : parles-en à quelqu’un de confiance – par exemple au **SePAS** de ton école. Kanner-Jugendtelefon **116 111** · Urgences **112**'))}</span></div>
     </div></div>`,
   })
 
@@ -181,7 +193,7 @@ function baue(d: Heft): string {
           <div class="bx ln"><div class="lab mo">Dein Satz</div><h3>${t(e.line.titel)}</h3><p>${tp(e.line.x)}</p>${e.line.feld ? `<div class="feld" style="height:${e.line.feld}mm"></div>` : ''}${e.line.kaestchen ? `<div class="wk">${e.line.kaestchen.map((k) => `<span><i></i><b class="mo">${esc(k)}</b></span>`).join('')}</div>` : ''}${linien(e.line.linien ?? 0)}</div></div>
         <div class="wo"><span class="mo">Diese Woche</span><span>${t(e.woche)}</span></div>
         <div class="vibe"><span class="mo">Erledigt <i></i></span><span class="mo">Der Track war: <i></i> nichts für mich <i></i> okay <i></i> gut</span><span class="mo">Datum: ____________</span></div>
-        ${e.hilfe ? `<div class="hilfe">${ic('phone')}<span>${t(d.hilfeText ?? 'Wenn dich etwas belastet: Sprich mit jemandem, dem du vertraust. Kanner-Jugendtelefon **116 111** · Notruf **112**')}</span></div>` : ''}
+        ${e.hilfe ? `<div class="hilfe">${ic('phone')}<span>${t(d.hilfeText ?? 'Wenn dich etwas belastet: Sprich mit jemandem, dem du vertraust – zum Beispiel mit dem **SePAS** in deiner Schule. Kanner-Jugendtelefon **116 111** · Notruf **112**')}</span></div>` : ''}
       </div></div>`,
     })
   })
@@ -290,7 +302,7 @@ function baue(d: Heft): string {
       <div class="fakten">${lt.fakten.map((x) => `<div><small>${esc(x[0])}</small><b>${t(x[1])}</b></div>`).join('')}</div>
       <div><h2>${L('Wozu dieses Heft?', 'Pourquoi ce magazine ?')}</h2><p>${t(lt.wozu)}</p></div>
       <div><h2>${L('Lernziele', 'Objectifs')}</h2><ul>${lt.lernziele.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>
-      <div><h2>${L('Das Heft in den Einheiten', 'Le magazine dans les unités')}</h2><table class="t"><tr><th>${L('Einheit', 'Unité')}</th><th>${L('Seiten', 'Pages')}</th><th>${L('So passt das Heft in die 100 Minuten', 'Comment le magazine s’intègre dans les 100 minutes')}</th></tr>
+      <div><h2>${L('Das Heft in den Einheiten', 'Le magazine dans les unités')}</h2><table class="t"><tr><th>${L('Einheit', 'Unité')}</th><th>${L('Seiten', 'Pages')}</th><th>${L('So passt das Heft in die Stunden (je etwa 90 Minuten)', 'Comment le magazine s’intègre dans les séances (environ 90 minutes)')}</th></tr>
         <tr><td>${L('vor Einheit', 'avant l’unité')} ${d.tracks[0].nr}</td><td>1–3</td><td>${t(lt.start)}</td></tr>
         ${d.tracks.map((e, i) => `<tr><td>${E}${e.nr} · ${einheit} ${z2(i + 1)}</td><td>${seiteVon(i)}–${seiteVon(i) + nSeiten(e) - 1}</td><td>${tp(e.leitung.einsatz)}${ablauf(e)}</td></tr>`).join('')}
         <tr><td>${L('nach Einheit', 'après l’unité')} ${d.tracks[n - 1].nr}</td><td>${S.ses + nSes}–${S.ab}</td><td>${tp(lt.schluss)}</td></tr></table></div>
@@ -308,7 +320,7 @@ function baue(d: Heft): string {
     seiten.push({
       klasse: 'lt eng',
       html: `<div>${lkopf(`${L('Der Ablauf der Stunden', 'Le déroulement des séances')}${nAbl > 1 ? ` (${k + 1} ${L('von', 'sur')} ${nAbl})` : ''}`)}<div class="inhalt">
-      ${k > 0 || teil.reduce((x, y) => x + stationen(y.e).length, 0) > 20 ? '' : `<p class="klein">${L('Zeiten sind Richtwerte (100 Minuten mit Pause). Wird es eng: „Für dich“ kürzen, nicht die große Runde. Niemand muss etwas vorspielen.', 'Les durées sont indicatives (100 minutes avec pause). Si le temps manque : raccourcir « Pour toi », pas la grande ronde. Personne ne doit jouer une scène devant les autres.')}</p>`}
+      ${k > 0 || teil.reduce((x, y) => x + stationen(y.e).length, 0) > 20 ? '' : `<p class="klein">${L('Zeiten sind Richtwerte (etwa 90 Minuten mit Pause). Wird es eng: „Für dich“ kürzen, nicht die große Runde. Niemand muss etwas vorspielen.', 'Les durées sont indicatives (environ 90 minutes avec pause). Si le temps manque : raccourcir « Pour toi », pas la grande ronde. Personne ne doit jouer une scène devant les autres.')}</p>`}
       ${teil.map(({ e, i }) => `<div><h2>${einheit} ${z2(i + 1)} · ${t(e.titel)} (${L('Einheit', 'unité')} ${e.nr}) – ${t(e.stunde!.frage)}</h2>
         <table class="sd-abl"><colgroup><col style="width:27%"><col style="width:9%"><col style="width:15%"><col style="width:5%"><col></colgroup><tr><th>Station</th><th>${L('Zeit', 'Durée')}</th><th>${L('Form', 'Forme')}</th><th>${L('S.', 'p.')}</th><th>${L('Darauf kommt es an', 'Ce qui compte')}</th></tr>
         ${stationen(e).map((x) => `<tr><td>${x.nr} ${esc(kurzName(x.s))}</td><td>${esc(x.s.zeit)}</td><td>${esc(x.s.wie)}</td><td>${seiteVon(i) + x.seite}</td><td>${t(x.s.leitung ?? (e.leitung.stationen ?? [])[x.nr - 1] ?? '')}</td></tr>`).join('')}</table></div>`).join('')}
@@ -331,7 +343,8 @@ function baue(d: Heft): string {
       <div><h2>${L('Was Sie je Einheit zusätzlich brauchen', 'Ce qu’il faut en plus pour chaque unité')}</h2><table class="t"><tr><th>${L('Einheit', 'Unité')}</th><th>${L('Für das Heft', 'Pour le magazine')}</th><th>${L('Aus dem Kurs (Toolbox)', 'Du cours (Toolbox)')}</th></tr>
         ${d.tracks.map((e, i) => `<tr><td>${E}${e.nr} · ${einheit} ${z2(i + 1)}</td><td>${t(e.leitung.material)}</td><td>${t(e.leitung.blaetter)}</td></tr>`).join('')}</table></div>
       <div><h2>${kino ? L('Videos und Film', 'Vidéos et film') : L('Videos', 'Vidéos')} (${L('Links geprüft am', 'liens vérifiés le')} ${esc(d.geprueft ?? kino?.geprueft ?? '14.11.2026')})</h2><table class="t"><tr><th>${L('Wo', 'Où')}</th><th>${L('Titel und Kanal', 'Titre et chaîne')}</th><th>${L('Link', 'Lien')}</th><th>${L('läuft', 'marche')}</th></tr>
-        ${d.tracks.filter((e) => e.clip).map((e) => `<tr><td>${einheit} ${z2(d.tracks.indexOf(e) + 1)}</td><td>${t(e.clip!.titel)} – ${esc(e.clip!.kanal)} (${esc(e.clip!.dauer)})</td><td>${esc(kurzlink(e.clip!.url))}</td><td>☐</td></tr>`).join('')}
+        ${d.tracks.some((e) => e.clip) || kino ? '' : `<tr><td colspan="4">${L('In diesem Heft gibt es keinen Clip.', 'Pas de clip dans ce magazine.')}</td></tr>`}
+        ${d.tracks.filter((e) => e.clip).map((e) => `<tr><td>${einheit} ${z2(d.tracks.indexOf(e) + 1)}</td><td>${t(e.clip!.titel)} – ${esc(e.clip!.kanal)} (${esc(e.clip!.dauer)})</td><td><div class="lqr">${qr(e.clip!.url)}</div>${esc(kurzlink(e.clip!.url))}</td><td>☐</td></tr>`).join('')}
         ${(kino?.filme ?? []).map((f) => `<tr><td>${L('Kino', 'Cinéma')}</td><td>${t(f.titel)} (${f.jahr}, ${esc(f.laenge)}, ${f.fsk === null ? L('FSK vor dem Einsatz prüfen', 'âge à vérifier avant') : L('FSK ' + f.fsk, 'dès ' + f.fsk + ' ans (FSK)')})${f.achtung ? ' – ' + t(f.achtung) : ''}</td><td>${L('DVD, Mediathek oder Streaming', 'DVD, médiathèque ou streaming')}</td><td>☐</td></tr>`).join('')}</table>
         <p class="klein" style="margin-top:1mm">${L('Videos können verschwinden: vor jeder Einheit kurz öffnen.', 'Les vidéos peuvent disparaître : les ouvrir avant chaque unité.')}${kino ? L(' Den Film vorher selbst ansehen und die Vorführrechte der Einrichtung beachten.', ' Regarder le film avant et respecter les droits de projection de la structure.') : ''}</p></div>
       <div class="sp2"><div class="kasten"><h2>${L('Drucken', 'Impression')}</h2><ul>${lt.druck.map((x) => `<li>${tp(x)}</li>`).join('')}</ul></div>
@@ -340,6 +353,9 @@ function baue(d: Heft): string {
       <p class="klein">${L('Alle Personen und Szenen im Heft sind erfunden. Zeichnungen: Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Schriften: Anton, Space Grotesk (SIL Open Font License), Permanent Marker (Apache-Lizenz 2.0).', 'Toutes les personnes et scènes du magazine sont inventées. Dessins : Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Polices : Anton, Space Grotesk (SIL Open Font License), Permanent Marker (licence Apache 2.0).')} ${esc(URHEBER[sprache()])} ${L('Stand:', 'État :')} ${esc(d.stand)}.</p>
     </div></div>`,
   })
+
+  // Kopiervorlagen ganz am Ende
+  vorlagen.forEach(({ i, s }) => baueStunde(d.tracks[i], i, { t, esc, figur, ic, qr, kurzlink, linien, frage, vorlage: s }).forEach((html) => seiten.push({ e: i, html, klasse: 'kv' })))
 
   const body = seiten.map((s, i) => `<section class="seite ${s.klasse ?? ''}" data-nr="${i + 1}">${s.html}${s.ohneFuss ? '' : fuss(i + 1, s.e)}</section>`).join('\n')
   return huelle(d.datei, `REAL TALK #${d.nr} – ${d.thema}`, d.farbe, body, 'real-talk', sprache())
@@ -387,7 +403,7 @@ function bauePlan(hefte: Heft[]): string {
       ${teil === 1 ? '<p class="klein">Verschwindet ein Video, bleibt die Stunde vollständig: Die Station „Clip“ entfällt, alles andere funktioniert ohne. Stunden ohne Video sind Absicht – dort passte keines zum Fall.</p>' : ''}
     </div></div>` }),
     `<div>${kopf('Das Spiel dazu: eine Mission je Stunde')}<div class="inhalt">
-      <p>Am Ende jeder Stunde steht im Heft ein <strong>Missions-Ticket</strong> mit Code und QR-Code. Im Annexe-Spiel wird die Mission damit freigeschaltet (Code eingeben oder QR scannen). Die Mission übt den Skill der Stunde an einem Ort im Spiel – mit Entscheidungen und Folgen. Am Ende steht ein <strong>Resümee</strong>: was entschieden wurde, was daraus folgte, der Skill, ein eigener Satz (freiwillig) und eine Frage für die Gruppe. Die Resümees sieht die Leitung in der <strong>Lehrer-Ansicht</strong>: im Spiel auf 🎟 tippen und als Code <strong>LEHRER</strong> eingeben. Von dort lassen sie sich teilen oder kopieren – gut für das Gespräch nach dem Spielen. Ein „Brief an mich“ aus der letzten Mission bleibt privat und erscheint dort nicht.</p>
+      <p>Am Ende jeder Stunde steht im Heft ein <strong>Missions-Ticket</strong> mit Code und QR-Code. Im Annexe-Spiel wird die Mission damit freigeschaltet (Code eingeben oder QR scannen). Die Mission übt den Skill der Stunde an einem Ort im Spiel – mit Entscheidungen und Folgen. Am Ende steht ein <strong>Resümee</strong>: was entschieden wurde, was daraus folgte, der Skill, ein eigener Satz (freiwillig) und eine Frage für die Gruppe. Die Resümees sieht die Leitung in der <strong>Lehrer-Ansicht</strong>: im Spiel auf 🎟 tippen und als Code <strong>LEHRER</strong> eingeben. Von dort lassen sie sich teilen oder kopieren – gut für das Gespräch nach dem Spielen. Eine „Postkarte an mich“ aus der letzten Mission bleibt privat und erscheint dort nicht.</p>
       <table class="t plan"><tr><th>Ausgabe · Stunde</th><th>Mission</th><th>Ort</th><th>Code</th></tr>
       ${hefte.flatMap((d) => d.tracks.map((e, i) => ({ d, e, i, m: MISSIONEN.hefte[d.nr]?.[i] })).filter((x) => x.m)).map(({ d, e, i, m }) => `<tr><td>${punkt(d)}#${esc(d.nr)} · ${z2(i + 1)} ${esc(e.titel)}</td><td><strong>${esc(m!.titel)}</strong> – ${esc(m!.skill)}</td><td>${esc(m!.ort)}</td><td class="mo">${esc(m!.code)}</td></tr>`).join('')}</table>
       <p class="klein">Die Missionen sind freiwillig und ergänzen die Stunde – sie ersetzen sie nicht. Belohnungen gibt es nur für gespielte Missionen, keine Zufallskisten, kein Geld.</p>

@@ -2,6 +2,8 @@
 // Französisch“). Gleicher Aufbau wie m1-stunden.ts, Station für Station. Begriffe: Tank = réservoir, Tankstelle = station,
 // laut/leise = voix haute/voix basse (ohne männliche/weibliche Endungen), Akte = dossier, Leitung = l’adulte.
 // Die Tank-Karten tragen beide Wörter (Auftrag 24.11.2026). Die Videos sind deutschsprachig (Hinweis an der Station).
+// Seit 27.11.2026 synchron mit dem Umbau nach den jugendlichen Kritikern (Schlaf-Wette statt Clip, Pausen, ohne „Ça te parle ?“,
+// ohne Clip in Séance 3, „Mon dossier, page 2“ statt Baum).
 // Alle Personen und Situationen sind erfunden.
 import type { Stunde } from '../typen'
 
@@ -16,29 +18,13 @@ const tank: Stunde = {
     {
       stationen: [
         {
-          titel: 'Arriver : ta batterie aujourd’hui', zeit: '5 min', wie: 'solo', icon: 'door-enter',
-          leitung: 'En silence. Personne ne montre sa feuille. Le mot de la question 2 servira à tout le monde à la fin.',
+          titel: 'Arriver : ton réservoir aujourd’hui', zeit: '5 min', wie: 'solo', icon: 'door-enter',
+          leitung: 'En silence. Personne ne montre sa feuille. La jauge et le mot de la question 2 reviennent à la fin.',
           bausteine: [
             { art: 'fragen', kontext: 'Juste pour toi.', fragen: [
-              { f: 'Ta batterie est pleine comment, là ? Colorie-la.', akku: 'vide' },
+              { f: 'Ton réservoir est plein comment, là ? Colorie la jauge.', akku: 'vide' },
               { f: 'Qu’est-ce qui était déjà agaçant aujourd’hui ? Un mot suffit.', linien: 1 },
             ] },
-          ],
-        },
-        {
-          titel: 'Ça te parle ?', zeit: '12 min', wie: 'solo · puis tous', icon: 'hand-finger',
-          leitung: 'D’abord cocher en silence. Puis lire chaque phrase, tout le monde montre le pouce en même temps – vous aussi. Seulement compter, pas de questions.',
-          bausteine: [
-            { art: 'text', x: ['Six phrases. Coche ce que tu connais de toi. Ensuite, l’adulte lit chaque phrase – tout le monde montre le pouce en même temps : **en haut** = je connais, **en bas** = je ne connais pas.'] },
-            { art: 'fragen', fragen: [{ f: 'Ça te parle ?', raster: { spalten: ['je connais', 'un peu', 'je ne connais pas'], zeilen: [
-              'A · Quand j’ai faim, tout m’énerve.',
-              'B · Quand je ne sais pas ce qui va se passer demain, je deviens nerveux ou nerveuse.',
-              'C · Quand tout le monde prévoit quelque chose sans moi, ma journée est fichue.',
-              'D · Quand personne ne m’écoute, je hausse le ton – ou je ne dis plus rien.',
-              'E · Quand quelqu’un me dit sans arrêt quoi faire, je fais exprès le contraire.',
-              'F · Quand il ne se passe rien, je fais des bêtises.',
-            ] } }] },
-            { art: 'reden', x: ['Quelle phrase presque tout le monde connaissait ?', 'Qui veut : c’était quand, la dernière fois, chez toi ?'] },
           ],
         },
       ],
@@ -46,30 +32,17 @@ const tank: Stunde = {
     {
       stationen: [
         {
-          titel: 'Clip : ce que la nuit fait de toi', zeit: '15 min', wie: 'tous', icon: 'player-play',
-          leitung: VIDEO_DE + 'Plutôt difficile : expliquer avant « mémoire » et « sommeil profond ». Montre comment le cerveau range la nuit, pas l’effet sur l’humeur – pour « C’est vrai ? », on devine puis on corrige.',
+          titel: 'Pari : cinq phrases sur le sommeil', zeit: '6 min', wie: 'solo · puis tous', icon: 'bed',
+          leitung: 'D’abord deviner en silence, puis corriger (voir solutions) – une phrase par correction, pas de cours.',
           bausteine: [
-            {
-              art: 'clip',
-              clip: { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal: 'Quarks · vidéo en allemand', url: 'https://www.youtube.com/watch?v=sdH-fEEh1uY', dauer: '00:00 à 05:09 (en entier)', frage: 'Que fait ton cerveau pendant que tu dors ?' },
-              vorher: [
-                { f: 'Ton pronostic : que fait ton cerveau pendant que tu dors ?', kreuz: ['Il est éteint.', 'Il continue de travailler.'], unter: true },
-                { f: 'Combien d’heures as-tu dormi cette nuit – à peu près ? (Juste pour toi.)', zahl: ['heures'] },
-              ],
-              dabei: ['Voilà ce que fait le cerveau la nuit (une chose suffit) :', 'Ce qui était surprenant :'],
-              nachher: [
-                { f: 'Pourquoi le sommeil aide avant un contrôle ?', kreuz: ['Le cerveau garde ce que tu as appris.', 'On a meilleure mine quand on est reposé.', 'Ça n’aide pas.'], unter: true },
-                { f: 'Qu’est-ce que tu essaies cette semaine ? (C’est ok aussi : « Rien – ça va comme ça. »)', linien: 1 },
-              ],
-            },
-            { art: 'fragen', fragen: [{ f: 'C’est vrai ? Certaines choses ne sont pas dans la vidéo – alors devine. On corrige après.', raster: { spalten: ['vrai', 'faux'], zeilen: [
+            { art: 'fragen', fragen: [{ f: 'C’est vrai ? Devine – on corrige après.', raster: { spalten: ['vrai', 'faux'], zeilen: [
               'Pendant le sommeil, le cerveau range et garde ce que tu as appris.',
               'Quand on dort trop peu, on s’énerve plus vite.',
               'Le sommeil perdu se rattrape entièrement le week-end.',
               'Le téléphone au lit aide la plupart du temps à s’endormir.',
               'Une boisson énergisante remplace une heure de sommeil.',
             ] } }] },
-            { art: 'reden', x: ['Qu’est-ce qui vous empêche de dormir le soir ?'] },
+            { art: 'reden', x: ['Qu’est-ce qui vous tient éveillés le plus longtemps le soir ?'] },
           ],
         },
       ],
@@ -77,8 +50,8 @@ const tank: Stunde = {
     {
       stationen: [
         {
-          titel: 'Le modèle : tes six réservoirs', zeit: '12 min', wie: 'tous · puis solo', icon: 'gauge',
-          leitung: 'Lire les six réservoirs, un exemple du groupe pour chacun. Puis relier et colorier – en silence. Personne ne doit montrer ses réservoirs.',
+          titel: 'Le modèle : tes six réservoirs', zeit: '10 min', wie: 'tous · puis solo', icon: 'gauge',
+          leitung: 'Lire les six réservoirs, un exemple du groupe pour chacun. Puis colorier – en silence. Personne ne doit montrer ses réservoirs.',
           bausteine: [
             { art: 'text', x: ['Le sommeil n’est qu’**un** réservoir sur six. Chaque personne fonctionne avec eux – comme les jauges dans un jeu vidéo. Si l’un est vide, tu t’énerves plus vite, tu te fatigues plus vite ou tu deviens triste. Ce qui remplit un réservoir s’appelle une **station**.'] },
             {
@@ -94,7 +67,6 @@ const tank: Stunde = {
             },
             { art: 'fragen', fragen: [
               { f: 'Colorie chaque réservoir : il est plein comment chez toi aujourd’hui ?' },
-              { f: 'Les six phrases de la station 2 : quel réservoir est vide à chaque fois ? Relie.', verbinden: [['A · faim', 'B · demain pas clair', 'C · pas dans le plan', 'D · personne n’écoute', 'E · on me dit toujours quoi faire', 'F · rien ne se passe'], ['Être pris au sérieux', 'Plaisir et nouveauté', 'Le corps', 'Décider soi-même', 'La sécurité', 'Faire partie']] },
             ] },
             { art: 'reden', x: ['Quel réservoir est le plus vide chez vous le lundi matin – et lequel le vendredi soir ?', 'Qu’est-ce qui vous remplit le plus vite ?'] },
           ],
@@ -104,8 +76,13 @@ const tank: Stunde = {
     {
       stationen: [
         {
-          titel: 'La grande ronde : Je connais !', zeit: '20 min', wie: 'tous · à la table', icon: 'cards',
-          leitung: 'Découper les cartes avant. Vous jouez aussi. Pas de points : reconnaître et raconter. Qui ne veut rien dire montre le pouce.',
+          titel: 'Pause', zeit: '5 min', wie: 'tous', icon: 'coffee',
+          leitung: 'Vraiment faire une pause – vous aussi.',
+          bausteine: [{ art: 'text', x: ['Se lever, boire, ouvrir la fenêtre. Ensuite, on continue.'] }],
+        },
+        {
+          titel: 'La grande ronde : Je connais !', zeit: '25 min', wie: 'tous · à la table', icon: 'cards',
+          leitung: 'Découper les cartes avant (modèle à copier). Vous jouez aussi. Pas de points : reconnaître et raconter. Qui ne veut rien dire montre le pouce.',
           bausteine: [
             {
               art: 'aktion',
@@ -120,8 +97,7 @@ const tank: Stunde = {
               ],
               regeln: ['Il n’y a ni vrai ni faux. Si deux réservoirs vont, posez la carte entre les deux.', 'Personne ne doit raconter quelque chose. Montrer le pouce suffit.'],
               zu3: 'Pareil – l’adulte tire et montre aussi.',
-              notiz: { titel: 'La meilleure station que j’ai entendue aujourd’hui :', linien: 1 },
-              auswertung: ['À côté de quel réservoir y a-t-il le plus de cartes ?', 'Quelle carte presque tout le monde connaissait ?'],
+              auswertung: ['À côté de quel réservoir y a-t-il le plus de cartes ?', 'Quelle carte vous a surpris ?'],
             },
             {
               art: 'chat', titel: 'Voilà à quoi ressemble un tour',
@@ -153,7 +129,7 @@ const tank: Stunde = {
                 { t: 'Pas de petit-déjeuner, pas de goûter. Il est midi.' },
                 { t: 'Six heures sur une chaise. Et maintenant les devoirs.' },
                 { t: 'Nouvel horaire. Personne ne te dit dans quelle salle aller.' },
-                { t: 'Ton éducatrice est malade. Personne ne sait qui vient aujourd’hui.' },
+                { t: 'Ta prof principale est malade. Personne ne sait qui vient aujourd’hui.' },
                 { t: 'Demain, il y a un rendez-vous important. Tu ne sais pas ce qui va se passer.' },
                 { t: 'Récré. Tout le monde est en groupe. Toi, tu es à côté.' },
                 { t: 'Dans le groupe de discussion, on organise quelque chose. Personne ne t’a demandé.' },
@@ -192,7 +168,6 @@ const tank: Stunde = {
               'manger un vrai repas',
             ] } }] },
             { art: 'reden', x: ['Jouer est deux fois dans la liste. Pourquoi c’est une fois vrai et une fois faux ?', 'Quelle fausse station connaissez-vous chez vous – et pourquoi elle est si tentante ?'] },
-            { art: 'fragen', kontext: 'Juste pour toi.', fragen: [{ f: 'Quelle fausse station tu utilises parfois ? Et qu’est-ce que tu pourrais faire à la place ?', satz: ['Ma fausse station :', 'À la place, j’essaie :'] }] },
           ],
         },
       ],
@@ -203,17 +178,6 @@ const tank: Stunde = {
           titel: 'Pour toi : mon plan réservoir', zeit: '12 min', wie: 'solo · puis tous', icon: 'user',
           leitung: 'D’abord en silence. La station doit être petite : dix minutes maximum. Pour l’échange, vous écrivez aussi un papier.',
           bausteine: [
-            {
-              art: 'menue', titel: 'Vraies stations express – dix minutes maximum. Coche-en deux que tu veux essayer.',
-              gruppen: [
-                { t: 'Le corps', punkte: ['manger un vrai repas, boire de l’eau', 'dix minutes dehors à l’air', 'poser le téléphone à 22 heures'] },
-                { t: 'La sécurité', punkte: ['demander : « Qu’est-ce qui se passe demain ? »', 'écrire le plan pour demain', 'aller dans un endroit que tu aimes'] },
-                { t: 'Faire partie', punkte: ['écrire à quelqu’un qui te fait du bien', 'aller t’asseoir à côté de quelqu’un', 'rejoindre quelque chose qui a déjà commencé'] },
-                { t: 'Être pris au sérieux', punkte: ['dire : « Écoute-moi une minute. »', 'écrire ce que tu veux dire', 'le dire à la personne qui écoute vraiment'] },
-                { t: 'Décider soi-même', punkte: ['décider toi-même d’une chose aujourd’hui', 'demander : « Je peux le faire à ma façon ? »', 'choisir entre deux possibilités'] },
-                { t: 'Plaisir et nouveauté', punkte: ['prendre un nouveau chemin', 'essayer quelque chose pour la première fois', 'écouter ta chanson préférée à fond'] },
-              ],
-            },
             { art: 'fragen', fragen: [
               { f: 'Retourne à la station 1 : qu’est-ce qui était agaçant aujourd’hui ? Quel réservoir était vide ?', kreis: ['Le corps', 'La sécurité', 'Faire partie', 'Être pris au sérieux', 'Décider soi-même', 'Plaisir et nouveauté'] },
               { f: 'Ton plan réservoir. Exemple : quand je rentre de l’école à cran, je mange d’abord quelque chose.', satz: ['Quand je remarque que …', 'alors je fais le plein comme ça :'] },
@@ -223,10 +187,10 @@ const tank: Stunde = {
           ],
         },
         {
-          titel: 'Fin : ton conseil', zeit: '5 min', wie: 'tous', icon: 'flag',
-          leitung: 'Qui veut lit son conseil. À la prochaine séance, demander où en sont les trois croix.',
+          titel: 'Fin : ton réservoir maintenant', zeit: '5 min', wie: 'solo · puis qui veut', icon: 'flag',
+          leitung: 'Colorier en silence. Qui veut dit seulement : plus, pareil ou moins qu’au début. À la prochaine séance, demander où en sont les trois croix.',
           bausteine: [
-            { art: 'fragen', fragen: [{ f: 'Ta meilleure amie ou ton meilleur ami n’a pas le moral depuis des jours. Quelle question tu poses ?', linien: 1 }] },
+            { art: 'fragen', fragen: [{ f: 'Et maintenant ? Colorie la jauge encore une fois – comme au début.', akku: 'vide' }] },
             { art: 'merk', x: 'D’abord faire le plein. ==Ensuite discuter.==' },
             { art: 'woche', x: 'Remplis ton réservoir le plus vide – **trois fois cette semaine.** Une croix par fois.', kaestchen: ['1', '2', '3'] },
           ],
@@ -282,7 +246,6 @@ const lautLeise: Stunde = {
               ],
               fragen: [
                 { f: 'Qui a remarqué que le plan ne marchait pas ?', kreuz: ['Sami', 'Amira', 'le prof'] },
-                { f: 'Et toi – tu es plutôt comme Sami ou plutôt comme Amira ?', strich: ['Sami', 'Amira'] },
               ],
             },
             { art: 'reden', x: ['Qu’est-ce que le groupe aurait pu faire pour qu’Amira dise quelque chose ?', 'Et qu’est-ce que Sami sait très bien faire ?'] },
@@ -295,7 +258,7 @@ const lautLeise: Stunde = {
             {
               art: 'clip',
               clip: { titel: 'Introvertiert | extrovertiert: Wer ist glücklicher?', kanal: 'Terra Xplore · vidéo en allemand', url: 'https://www.youtube.com/watch?v=x_un3Ojno7Y', dauer: '04:07 à 07:45 (un peu plus de 3 min)', frage: 'Introverti veut dire : plutôt voix basse. Extraverti veut dire : plutôt voix haute. Un côté est-il meilleur ?' },
-              vorher: [{ f: 'Ton pronostic : un côté est-il meilleur ?', kreuz: ['les voix hautes', 'les voix basses', 'aucun'], unter: true }, { f: 'Tu es plutôt … ?', kreuz: ['voix haute', 'voix basse', 'les deux'] }],
+              vorher: [{ f: 'Ton pronostic : un côté est-il meilleur ?', kreuz: ['les voix hautes', 'les voix basses', 'aucun'], unter: true }],
               dabei: ['Ce que les voix basses savent bien faire :', 'Ce que les voix hautes savent bien faire :', 'Ce qui était surprenant :'],
               nachher: [{ f: 'Que dit la psychologue : peut-on être voix haute et voix basse en même temps ?', kreuz: ['oui', 'non'], unter: true }, { f: 'Que devrait savoir le prof d’Amira sur les voix basses ?', linien: 1 }],
             },
@@ -307,13 +270,9 @@ const lautLeise: Stunde = {
     {
       stationen: [
         {
-          titel: 'Le modèle : ta batterie', zeit: '8 min', wie: 'solo · puis à deux', icon: 'battery-charging',
-          leitung: 'Lire, puis cocher chacun pour soi. Comparer à deux. Insister : les deux sont normaux, beaucoup sont un mélange.',
-          bausteine: [
-            { art: 'text', x: ['Certaines personnes rechargent leur batterie **avec du monde**. D’autres la rechargent **seules**. Les deux sont normaux.'] },
-            { art: 'fragen', fragen: [{ f: 'Qu’est-ce que ça fait à ta batterie ? Une croix par ligne.', raster: { spalten: ['recharge', 'vide'], zeilen: ['une fête avec beaucoup de monde', 'écouter de la musique dans son coin', 'parler avec une seule personne', 'jouer avec des amis', 'une longue journée d’école', 'dessiner ou bricoler dans son coin'] } }] },
-            { art: 'reden', x: ['Comparez à deux : où êtes-vous pareils – et où complètement différents ?'] },
-          ],
+          titel: 'Pause', zeit: '5 min', wie: 'tous', icon: 'coffee',
+          leitung: 'Vraiment faire une pause – vous aussi.',
+          bausteine: [{ art: 'text', x: ['Se lever, boire, ouvrir la fenêtre. Ensuite, on continue.'] }],
         },
         {
           titel: 'La grande ronde : le pont', zeit: '25 min', wie: 'tous · avec des rôles', icon: 'building-bridge',
@@ -322,7 +281,7 @@ const lautLeise: Stunde = {
             {
               art: 'aktion',
               ziel: 'Construire quelque chose ensemble – avec des rôles voix haute et voix basse.',
-              material: '20 feuilles de papier, ruban adhésif, une bouteille en plastique pleine, deux chaises, les cartes rôles ci-dessous',
+              material: '20 feuilles de papier, ruban adhésif, une bouteille pleine de 0,5 litre, deux chaises, les cartes rôles (l’animateur les apporte)',
               schritte: [
                 'Construisez en papier un pont entre deux chaises (40 cm). Il doit porter la bouteille pleine **dix secondes**.',
                 'Chaque personne tire une carte rôle.',
@@ -333,15 +292,24 @@ const lautLeise: Stunde = {
               zu3: 'Chaque personne prend deux rôles.',
               auswertung: ['De qui venait l’idée que vous avez construite ?', 'Quel rôle a le plus aidé ?'],
             },
+          ],
+        },
+      ],
+    },
+    {
+      stationen: [
+        {
+          titel: 'Matériel : 6 cartes rôles', zeit: '', wie: 'pour la station 6', icon: 'scissors', fort: true,
+          bausteine: [
             {
-              art: 'karten', spalten: 3, hoehe: 22, hinweis: 'Cartes rôles : découpe et tire face cachée.',
+              art: 'karten', spalten: 3, hoehe: 22, hinweis: 'Cartes rôles : imprimer une fois, découper, faire tirer face cachée.',
               karten: [
                 { t: 'Démarrage', x: 'Tu dis : « Allez, première idée ! »', marke: 'voix haute' },
-                { t: 'Encouragement', x: 'Tu dis ce qui marche déjà bien.', marke: 'voix haute' },
+                { t: 'Fan', x: 'Tu dis ce qui tient déjà.', marke: 'voix haute' },
                 { t: 'Porte-parole', x: 'À la fin, tu dis pourquoi il tient.', marke: 'voix haute' },
                 { t: 'Écoute', x: 'Tu dis : « Jusqu’ici, on a … »', marke: 'voix basse' },
                 { t: 'Contrôle', x: 'Tu demandes : « Attends – ça tient ? »', marke: 'voix basse' },
-                { t: 'Questions', x: 'Tu demandes à quelqu’un qui n’a encore rien dit : « Tu en penses quoi ? »', marke: 'voix basse' },
+                { t: 'Questions', x: 'Tu demandes à qui est encore silencieux : « Tu en penses quoi ? »', marke: 'voix basse' },
               ],
             },
           ],
@@ -357,7 +325,7 @@ const lautLeise: Stunde = {
             { art: 'fragen', fragen: [
               { f: 'Qu’est-ce que tu aimerais savoir faire plus souvent ?', kreuz: ['dire quelque chose plus souvent', 'écouter plus souvent', 'ça va comme ça'] },
               { f: 'Où veux-tu l’essayer cette semaine ?', kreuz: ['à l’école', 'avec des amis', 'au club', 'à la maison', 'en ligne'] },
-              { f: 'Où recharges-tu le mieux ta batterie ? Écris ou dessine ton endroit préféré.', feld: 42 },
+              { f: 'Où est-ce que tu te poses le mieux ? Écris ou dessine l’endroit.', feld: 42 },
             ] },
           ],
         },
@@ -398,9 +366,9 @@ const kannst: Stunde = {
           leitung: 'Lire le dossier comme une administration, « Ce qui n’y est pas » tout à fait normalement. Pour la bulle, ne laisser raconter que qui veut.',
           bausteine: [
             {
-              art: 'akte', titel: 'Dossier · page 1', kopf: 'Yusuf, 16 ans', stempel: 'incomplet',
+              art: 'akte', titel: 'Dossier · page 1', kopf: 'Yusuf, 13 ans', stempel: 'incomplet',
               eintraege: ['bruyant en classe', 'répond aux adultes', 'deux avertissements', 'À la question « Qu’est-ce que tu sais bien faire ? » : « Rien de spécial. »'],
-              daneben: { titel: 'Ce qui n’y est pas', punkte: ['Emmène sa petite sœur à l’école tous les matins.', 'Explique tout deux fois au nouveau à l’atelier.', 'N’a jamais balancé un ami.'] },
+              daneben: { titel: 'Ce qui n’y est pas', punkte: ['Emmène sa petite sœur à l’école tous les matins.', 'Explique tout deux fois au nouveau de la classe.', 'A écrit le premier à son pote après la dispute.'] },
               fragen: [
                 { f: 'Qu’est-ce que Yusuf sait bien faire ? Coche tout ce qui va.', kreuz: ['fiable', 'serviable', 'fidèle', 'paresseux', 'patient'] },
                 { f: 'Yusuf dit : « Rien de spécial. » Pourquoi ?', kreuz: ['Pour lui, c’est normal.', 'Personne ne le lui a jamais dit.', 'Il ne veut pas se vanter.'], unter: true },
@@ -424,36 +392,27 @@ const kannst: Stunde = {
             ] },
           ],
         },
-        {
-          titel: 'Clip : je vaux quoi ?', zeit: '10 min', wie: 'tous', icon: 'player-play',
-          leitung: VIDEO_DE + 'Seulement 02:42 à 04:42 – avant et après : idées suicidaires, troubles alimentaires. Conseils : parler · petites réussites · musique. Aide : 116 111.',
-          bausteine: [
-            {
-              art: 'clip',
-              clip: { titel: 'Ich bin nichts wert – so steigerst du dein Selbstwertgefühl', kanal: 'BUBBLES · vidéo en allemand', url: 'https://www.youtube.com/watch?v=XZzcGOxqBy8', dauer: 'SEULEMENT 02:42 à 04:42 (2 min)', frage: 'Qu’est-ce qui aide quand on a peu confiance en soi ?' },
-              vorher: [{ f: 'Qu’est-ce qui compte le plus dans ce que tu penses de toi ?', kreuz: ['les notes', 'ce que disent les autres', 'ce que je pense moi-même'], unter: true }, { f: 'Tu te rabaisses souvent dans ta tête ?', kreuz: ['souvent', 'parfois', 'rarement'] }],
-              dabei: ['Conseil 1 du clip :', 'Conseil 2 du clip :', 'Conseil 3 du clip :'],
-              nachher: [{ f: 'Quel conseil essaies-tu cette semaine ?', linien: 1 }, { f: 'Quel conseil aide Yusuf ?', linien: 1 }],
-            },
-            { art: 'reden', x: ['D’où ça vient qu’on ait parfois si peu confiance en soi ?'] },
-          ],
-        },
       ],
     },
     {
       stationen: [
         {
-          titel: 'La grande ronde : le marché des forces', zeit: '25 min', wie: 'tous', icon: 'building-store',
-          leitung: 'Découper les cartes avant. Participer et veiller à ce que personne ne reparte les mains vides – vous aussi, vous recevez des cartes.',
+          titel: 'Pause', zeit: '5 min', wie: 'tous', icon: 'coffee',
+          leitung: 'Vraiment faire une pause – vous aussi.',
+          bausteine: [{ art: 'text', x: ['Se lever, boire, ouvrir la fenêtre. Ensuite, on continue.'] }],
+        },
+        {
+          titel: 'La grande ronde : le marché des forces', zeit: '30 min', wie: 'tous', icon: 'building-store',
+          leitung: 'Découper les cartes avant (modèle à copier, imprimé deux fois). Participer et veiller à ce que personne ne reparte les mains vides – vous aussi, vous recevez des cartes.',
           bausteine: [
             {
               art: 'aktion',
               ziel: 'Voir des forces chez les autres – et les leur dire.',
-              material: 'les 24 cartes forces de la page suivante (à découper), une table comme marché',
+              material: 'les cartes forces (l’animateur les apporte), des stylos, une table comme marché',
               schritte: [
                 'Toutes les cartes sont posées face visible sur la table.',
                 'Choisis pour chaque personne du groupe une carte qui lui va.',
-                'Va la lui donner – avec la phrase : « Celle-là te va, parce que … »',
+                'Écris au dos le « parce que … » – trois mots suffisent. Puis va la lui donner : « Celle-là te va, parce que … »',
                 'Chaque personne pose ses cartes devant elle. Laquelle était une surprise ?',
               ],
               regeln: ['Les cartes sont seulement offertes, jamais rendues. Un « merci » suffit.', 'Personne ne repart les mains vides.'],
@@ -479,7 +438,7 @@ const kannst: Stunde = {
           titel: 'Matériel : 24 forces', zeit: '', wie: 'pour la station 5', icon: 'scissors', fort: true,
           bausteine: [
             {
-              art: 'karten', wort: true, spalten: 4, hoehe: 30, hinweis: 'Découpe le long des pointillés. Les cartes vides sont pour les forces qui manquent.',
+              art: 'karten', wort: true, spalten: 4, hoehe: 30, hinweis: 'Imprimer deux fois (48 cartes), découper le long des pointillés. Les cartes vides sont pour les forces qui manquent.',
               karten: [
                 { t: 'fidèle' }, { t: 'courage' }, { t: 'drôle' }, { t: 'patience' },
                 { t: 'franchise' }, { t: 'serviable' }, { t: 'créativité' }, { t: 'tenace' },
@@ -496,14 +455,17 @@ const kannst: Stunde = {
     {
       stationen: [
         {
-          titel: 'Pour toi : mon arbre', zeit: '10 min', wie: 'solo', icon: 'tree',
-          leitung: 'Travail en silence. Qui ne veut pas écrire dessine. On ne montre rien.',
+          titel: 'Mon dossier, page 2', zeit: '10 min', wie: 'solo', icon: 'folder',
+          leitung: 'Travail en silence. Dire : « Ce dossier est à toi. Personne ne le ramasse. » Préparer de la colle.',
           bausteine: [
-            { art: 'text', x: ['Un arbre tient debout parce qu’en bas, quelque chose le tient. N’écris que ce que tu veux partager.'] },
-            { art: 'fragen', fragen: [
-              { f: 'Mon arbre :', satz: ['Les fruits – ce dont je suis fier ou fière :', 'Le tronc – ce que je sais faire :', 'Les racines – ce qui me tient (des personnes, des endroits, de la musique, des animaux …) :'] },
-              { f: 'Qui veut le dessine. Tordu, c’est permis.', feld: 50 },
-            ] },
+            { art: 'text', x: ['Le dossier de Yusuf était incomplet. Le tien aussi – jusqu’à maintenant. **Colle tes trois cartes préférées.** Écris à côté le « parce que … » du dos.'] },
+            { art: 'fragen', fragen: [{ f: 'Colle ici – trois cartes côte à côte :', feld: 34 }] },
+            {
+              art: 'akte', titel: 'Dossier · page 2', kopf: 'Mon dossier', stempel: 'plus complet',
+              eintraege: ['Carte 1 – parce que …', 'Carte 2 – parce que …', 'Carte 3 – parce que …', 'Ce que personne n’a vu :'],
+              daneben: { titel: 'Pour finir', punkte: ['Ajoute une force que personne n’a vue.', 'Colorie le tampon.'] },
+              fragen: [{ f: 'Quelle carte tu ne te serais jamais donnée toi-même ?', linien: 1 }],
+            },
           ],
         },
         {
