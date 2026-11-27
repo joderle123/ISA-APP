@@ -18,8 +18,9 @@ export function mechaniken(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
   const taste = (codes, f) => halte((e) => { if (codes.includes(e.code)) { e.preventDefault(); e.stopPropagation(); f(e.code); } });
   // Zeitbalken: läuft rückwärts; Rückgabe { stopp, rest }
   const zeitBalken = (el, sek, fertig) => {
-    const t0 = performance.now(), ges = sek * 1000; let an = true, halt = 0;
-    const lauf = () => { if (!an) return; const r = Math.max(0, 1 - (performance.now() - t0 - halt) / ges); el.style.transform = 'scaleX(' + r + ')'; el.classList.toggle('knapp', r < 0.3); if (r <= 0) { an = false; fertig(); return; } requestAnimationFrame(lauf); };
+    const t0 = performance.now(), ges = sek * 1000; let an = true, halt = 0, letzt = t0;
+    // hängt das Gerät (langsames iPad, Bild wird gerechnet), läuft die Zeit nicht weiter
+    const lauf = () => { if (!an) return; const j = performance.now(); if (j - letzt > 250) halt += j - letzt - 50; letzt = j; const r = Math.max(0, 1 - (performance.now() - t0 - halt) / ges); el.style.transform = 'scaleX(' + r + ')'; el.classList.toggle('knapp', r < 0.3); if (r <= 0) { an = false; fertig(); return; } requestAnimationFrame(lauf); };
     requestAnimationFrame(lauf);
     return { stopp: () => { an = false; }, rest: () => Math.max(0, ges - (performance.now() - t0 - halt)) / 1000, warte: (ms) => { halt += ms; } };
   };
