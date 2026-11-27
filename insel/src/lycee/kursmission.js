@@ -285,7 +285,9 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
         (k.frei && k.frei.length ? k.frei.map((f) => '<p class="km-gs-warum">⏱ ' + esc(f.titel) + ': bei ' + esc(f.besucht.join(', ') || 'niemandem') + (f.verpasst.length ? ' · verpasst: ' + esc(f.verpasst.join(', ')) : '') + '</p>').join('') : '') +
         (k.blick && k.blick.length ? k.blick.map((b) => '<p class="km-gs-warum">👁 ' + esc(b.titel) + ': bemerkt ' + b.bemerkt + ' von ' + b.wichtig + ' wichtigen Signalen' + (b.uebersehen && b.uebersehen.length ? ' · übersehen: ' + esc(b.uebersehen.join(' ')) : '') + '</p>').join('') : '') +
         (k.tank && k.tank.length ? '<p class="km-gs-warum">⛽ Tank-Blick: ' + k.tank.map((t) => esc(t.wer) + ' – getippt ' + esc(TANKNAME[t.tipp] || t.tipp) + (t.richtig ? ' ✓' : ' (leer war: ' + esc(TANKNAME[t.leer] || t.leer) + ')')).join(' · ') + '</p>' : '') +
-        (k.pult ? '<p class="km-gs-zahl">🎛 Steuerpult: höchstens ' + k.pult.max + ' von 10' + (k.pult.rot ? ', ' + k.pult.rot + '× auf Rot' : '') + (k.pult.hilfen && k.pult.hilfen.length ? ' · geholfen: ' + esc([...new Set(k.pult.hilfen)].map((h) => ({ atmen: 'Atmen', abstand: 'Abstand', gedanke: 'Gedanken prüfen' })[h] || h).join(', ')) : k.pult.rot ? ' · nichts dagegen getan' : '') + '</p>' : '') +
+        (k.pult ? '<p class="km-gs-zahl">🔴 Rot-Modus: ' + (k.pult.rot ? k.pult.rot + '× auf Rot' : 'nie auf Rot') + (k.pult.hilfen && k.pult.hilfen.length ? ' · geholfen: ' + esc([...new Set(k.pult.hilfen)].map((h) => ({ atmen: 'Atmen', abstand: 'Abstand', gedanke: 'Gedanken prüfen' })[h] || h).join(', ')) : k.pult.rot ? ' · nichts dagegen getan' : '') + '</p>' : '') +
+        (k.such && k.such.length ? '<p class="km-gs-warum">🔎 Suchbild: ' + k.such.map((x) => esc(x.frage) + ' – ' + x.gefunden + ' von ' + x.von + ' gefunden' + (x.falsch ? ', ' + x.falsch + '× falsch getippt' : '')).join(' · ') + '</p>' : '') +
+        (k.verdacht ? '<p class="km-gs-warum">📌 Verdachts-Wand: getippt auf ' + esc(k.verdacht.wahl) + (k.verdacht.spuren ? ' · Spuren: ' + esc(k.verdacht.spuren) : '') + '</p>' : '') +
         (k.versuche.length ? '<p class="km-gs-hak">🔁 Hängen geblieben: ' + k.versuche.map(versuchText).map(esc).join(' · ') + '</p>' : '') +
         '<p class="km-gs-frage">💬 ' + esc(k.frage) + '</p></details>').join('') + '</div>';
   }
@@ -301,7 +303,9 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
       ...((k.frei || []).map((f) => f.titel + ': bei ' + (f.besucht.join(', ') || 'niemandem') + (f.verpasst.length ? ', verpasst: ' + f.verpasst.join(', ') : ''))),
       ...((k.blick || []).map((b) => 'Hinschauen (' + b.titel + '): ' + b.bemerkt + ' von ' + b.wichtig + ' bemerkt' + (b.uebersehen && b.uebersehen.length ? ', übersehen: ' + b.uebersehen.join(' ') : ''))),
       ...((k.tank || []).map((t) => 'Tank-Blick ' + t.wer + ': getippt ' + (TANKNAME[t.tipp] || t.tipp) + (t.richtig ? ' (stimmt)' : ', leer war ' + (TANKNAME[t.leer] || t.leer)))),
-      ...(k.pult ? ['Steuerpult: höchstens ' + k.pult.max + '/10' + (k.pult.rot ? ', ' + k.pult.rot + '× Rot' : '') + (k.pult.hilfen && k.pult.hilfen.length ? ', geholfen: ' + [...new Set(k.pult.hilfen)].join(', ') : '')] : []),
+      ...(k.pult ? ['Rot-Modus: ' + (k.pult.rot ? k.pult.rot + '× Rot' : 'nie Rot') + (k.pult.hilfen && k.pult.hilfen.length ? ', geholfen: ' + [...new Set(k.pult.hilfen)].join(', ') : '')] : []),
+      ...((k.such || []).map((x) => 'Suchbild: ' + x.frage + ' – ' + x.gefunden + ' von ' + x.von)),
+      ...(k.verdacht ? ['Verdachts-Wand: ' + k.verdacht.wahl + (k.verdacht.spuren ? ' (Spuren: ' + k.verdacht.spuren + ')' : '')] : []),
       ...(k.anzeige ? [k.anzeige] : []), ...(k.versuche.length ? ['Hängen geblieben: ' + k.versuche.map(versuchText).join(' · ')] : []),
       'Frage: ' + k.frage]),
   ].join('\n');

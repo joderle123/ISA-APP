@@ -385,7 +385,8 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
       handyTeil = new THREE.Group(); handyTeil.name = 'handy';
       const koerper = new THREE.Mesh(new THREE.BoxGeometry(0.072, 0.145, 0.01), new THREE.MeshLambertMaterial({ color: '#1d2230' }));
       const schirm = new THREE.Mesh(new THREE.PlaneGeometry(0.062, 0.128), new THREE.MeshBasicMaterial({ color: '#a9d4ff' })); schirm.position.z = 0.0056;
-      handyTeil.add(koerper, schirm);
+      const glanz = new THREE.Sprite(handyGlanzMat()); glanz.name = 'handyGlanz'; glanz.scale.set(0.36, 0.36, 1); glanz.position.z = 0.02; glanz.visible = false; glanz.renderOrder = 15;   // nur im Foto: Bildschirmlicht, damit man Handys erkennt
+      handyTeil.add(koerper, schirm, glanz);
       group.add(handyTeil); group.updateWorldMatrix(true, false); const sk = new THREE.Vector3(); group.getWorldScale(sk); handyTeil.scale.setScalar(1 / (sk.x || 1));   // im Modell: wird mit der Figur ausgeblendet
     }
     if (!handyTeil) return;
@@ -574,6 +575,17 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
 export const SITZ = { ober: -1.45, unter: 1.5, tief: -0.42 };
 
 // Namensschild über dem Kopf (Sprite mit Leinwand), blendet nach Entfernung aus
+// Bildschirmlicht eines Handys (weicher, heller Fleck) – wird nur im Foto aus der Welt eingeschaltet
+let _glanzMat = null;
+function handyGlanzMat() {
+  if (_glanzMat) return _glanzMat;
+  const cv = document.createElement('canvas'); cv.width = cv.height = 64; const g = cv.getContext('2d');
+  const r = g.createRadialGradient(32, 32, 2, 32, 32, 32); r.addColorStop(0, 'rgba(225,245,255,1)'); r.addColorStop(0.35, 'rgba(150,215,255,0.75)'); r.addColorStop(1, 'rgba(120,200,255,0)');
+  g.fillStyle = r; g.fillRect(0, 0, 64, 64);
+  const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace;
+  _glanzMat = new THREE.SpriteMaterial({ map: t, transparent: true, depthWrite: false, toneMapped: false });
+  return _glanzMat;
+}
 export function namensschild(text, farbe = '#2b3a55') {
   const cv = document.createElement('canvas'); cv.width = 512; cv.height = 128;
   const x = cv.getContext('2d');
@@ -583,7 +595,7 @@ export function namensschild(text, farbe = '#2b3a55') {
   x.fillStyle = farbe; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(text, 256, 66);
   const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace;
   const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: t, depthWrite: false, transparent: true, toneMapped: false }));
-  s.scale.set(1.2, 0.3, 1); s.position.y = 2.05; s.renderOrder = 20;
+  s.scale.set(1.2, 0.3, 1); s.position.y = 2.05; s.renderOrder = 20; s.userData.namensschild = true;   // im Foto aus der Welt ausgeblendet
   return s;
 }
 function rund(x, a, b, w, h, r) { x.beginPath(); x.moveTo(a + r, b); x.arcTo(a + w, b, a + w, b + h, r); x.arcTo(a + w, b + h, a, b + h, r); x.arcTo(a, b + h, a, b, r); x.arcTo(a, b, a + w, b, r); x.closePath(); }

@@ -2252,7 +2252,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       '<p class="sz-info">Du hast den Ball. Tippe auf den, um den gerade niemand steht. Du hast nur einen Moment.</p>' +
       '<canvas width="520" height="300"></canvas><div class="sz-stand"></div></div>');
     const cv = k.querySelector('canvas'), x = cv.getContext('2d'), stand = k.querySelector('.sz-stand');
-    let runde = 0, gute = 0, abgefangen = 0, zuLang = 0, wir = 4, sie = 5, phase = 'zeig', t = 0, frei = -1, pos = [], gegner = [], text = '', textT = 0, fertig = false, warten = false;
+    let runde = 0, gute = 0, abgefangen = 0, zuLang = 0, wir = 4, sie = 5, fehlerVon = '', phase = 'zeig', t = 0, frei = -1, pos = [], gegner = [], text = '', textT = 0, fertig = false, warten = false;
     const ich = { x: 70, y: 150 };
     cv.__st = () => ({ runde, frei, phase, pos: pos.map((p) => [p.x, p.y]) });   // nur für Tests
     const zufall = (a, b) => a + Math.random() * (b - a);
@@ -2260,26 +2260,27 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       runde++; t = 0; phase = 'spiel';
       const letzte = runde === R;
       pos = T.map((p, i) => ({ ...p, x: zufall(170, 480), y: 62 + i * 46 + zufall(-9, 9) }));
-      frei = letzte && def.letzter ? Math.max(0, T.findIndex((p) => p.id === def.letzter)) : Math.floor(Math.random() * T.length);
+      // Letzter Angriff: Wer bisher alles richtig gelesen hat, spielt zum Müdesten aus der eigenen Aufstellung – der Ball rutscht durch (Folge der Aufstellung).
+      frei = letzte && def.letzter && !fehlerVon ? Math.max(0, T.findIndex((p) => p.id === def.letzter)) : Math.floor(Math.random() * T.length);
       gegner = pos.map((p, i) => (i === frei ? { x: Math.min(500, p.x + zufall(70, 110) * (p.x > 330 ? -1 : 1)), y: Math.max(52, Math.min(270, p.y + zufall(-50, 50))) } : { x: p.x + zufall(-16, 16), y: p.y + zufall(-16, 16) }));
-      text = letzte ? 'Letzter Angriff. Noch 20 Sekunden. 6 : 6.' : 'Angriff ' + runde + ' von ' + R; textT = 1.4;
+      text = letzte ? 'Letzter Angriff. Noch 20 Sekunden. ' + wir + ' : ' + sie + '.' : 'Angriff ' + runde + ' von ' + R; textT = 1.4;
     };
     const zeitMax = () => 2.2 * zeitFaktor();
     const wahl = (i) => {
       if (phase !== 'spiel' || fertig) return;
       phase = 'aus'; const letzte = runde === R;
       if (i === frei) {
-        if (letzte && def.letzter) { text = T[i].name + ' ist frei … der Ball kommt … und rutscht ihm durch die Hände.'; sie++; }
-        else { gute++; if (Math.random() < 0.75) { wir++; text = 'Pass zu ' + T[i].name + ' – Tor!'; } else text = 'Pass zu ' + T[i].name + ' – knapp vorbei.'; }
-      } else { abgefangen++; if (Math.random() < 0.6) sie++; text = 'Abgefangen. ' + T[i].name + ' war gedeckt.'; }
+        if (letzte && def.letzter && !fehlerVon) { text = T[i].name + ' ist frei … der Ball kommt … und rutscht ihm durch die Hände.'; sie++; fehlerVon = T[i].id; }
+        else { gute++; wir++; text = 'Pass zu ' + T[i].name + ' – Tor!'; }
+      } else { abgefangen++; sie++; fehlerVon = T[i].id; text = 'Abgefangen. ' + T[i].name + ' war gedeckt.'; }
       textT = 2.2; weiter();
     };
     const weiter = () => { warten = true; setTimeout(() => { warten = false; if (runde >= R) ende(); else neueRunde(); }, letzteRunde() ? 2600 : 1500); };
     const letzteRunde = () => runde >= R;
     const ende = () => {
-      if (fertig) return; fertig = true; if (wir >= sie) sie = wir + 1;   // knapp verloren – wie im Konzept
+      if (fertig) return; fertig = true;   // ehrlicher Spielstand: jeder gute Pass ein Tor, jeder Fehler ein Gegentor
       text = 'Abpfiff. ' + wir + ' : ' + sie + '.'; textT = 3;
-      setTimeout(() => { loesche(); ui.ebeneZu(); ok({ gute, abgefangen, zuLang, stand: [wir, sie], letzter: def.letzter || T[frei].id }); }, 2200);
+      setTimeout(() => { loesche(); ui.ebeneZu(); ok({ gute, abgefangen, zuLang, stand: [wir, sie], letzter: fehlerVon || def.letzter || T[frei].id }); }, 2200);
     };
     cv.addEventListener('pointerdown', (e) => {
       const r = cv.getBoundingClientRect(), sx = (e.clientX - r.left) * (520 / r.width), sy = (e.clientY - r.top) * (300 / r.height);

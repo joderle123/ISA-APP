@@ -95,6 +95,9 @@ export function createTiere({ scene, steuerung }) {
   return {
     kabelWeg(id) { if (kabel[id]) { kabel[id].visible = false; } },
     kabelSync(liste = []) { for (const id of Object.keys(kabel)) kabel[id].visible = !liste.includes(id); },
+    // Gerd landet gezielt (z. B. auf dem Kopf von jemandem, der schläft) und bleibt sitzen, bis gerdLos()
+    gerdAuf(x, y, z) { const d = tauben.find((q) => q.gerd); if (!d) return; const nach = new THREE.Vector3(x, y, z); d.zustand = 'sitz'; d.sitz = { von: nach.clone().add(new THREE.Vector3(5, 3.5, 3)), nach, t: 0 }; },
+    gerdLos() { const d = tauben.find((q) => q.gerd); if (d && d.zustand === 'sitz') { d.zustand = 'flug'; d.flugZeit = 0; d.v.set(1.5, 3.2, 1.2); } },
     alleAuf() { for (const d of tauben) if (!d.gerd) { d.zustand = 'flug'; d.flugZeit = 0; d.v.set((Math.random() - 0.5) * 4, 3.5 + Math.random(), (Math.random() - 0.5) * 4); } },
     update(dt, t, { night = 0, onGerd } = {}) {
       { const w = t * 0.18; ente.position.set(-8 + Math.cos(w) * 2.05, 0.6 + Math.sin(t * 2) * 0.012, 18 + Math.sin(w) * 2.05); ente.rotation.y = -w; }
@@ -136,6 +139,14 @@ export function createTiere({ scene, steuerung }) {
       const p = steuerung.pos;
       for (const d of tauben) {
         const g = d.g, dx = g.position.x - p.x, dz = g.position.z - p.z, abst = Math.hypot(dx, dz);
+        if (d.zustand === 'sitz') {   // gezielter Anflug, dann sitzen und picken
+          const s = d.sitz; s.t = Math.min(1, s.t + dt / 1.5);
+          g.position.lerpVectors(s.von, s.nach, 1 - (1 - s.t) * (1 - s.t)); g.position.y += Math.sin(s.t * Math.PI) * 0.8;
+          g.rotation.y = s.t < 1 ? Math.atan2(s.nach.x - s.von.x, s.nach.z - s.von.z) : g.rotation.y;
+          d.fl.forEach((f, i) => { f.rotation.z = s.t < 1 ? Math.sin(t * 22) * 0.9 * (i ? -1 : 1) : 0; });
+          d.pick += dt; d.kopf.rotation.x = s.t < 1 ? 0 : Math.max(0, Math.sin(d.pick * 5)) * 0.7 * (Math.sin(d.pick * 0.6) > 0.2 ? 1 : 0);
+          continue;
+        }
         if (d.zustand === 'boden') {
           if (abst < 2.6 && !d.gerd) {   // erschrecken: auffliegen, weg vom Spieler
             d.zustand = 'flug'; d.flugZeit = 0; const n = abst || 1;

@@ -66,15 +66,47 @@ export function createUI({ root, input, speech }) {
   };
   // Steuerpult (Baustein 3): p = { g: 'Scham', w: 0–10 } | null. Grün bis 3, Gelb 4–6, Rot ab 7 (dann sind ruhige Antworten zu).
   let pultAlt = null;
+  // Anspannung ohne Zahl (Rot-Modus): Ein roter Rand pulsiert wie ein Herzschlag, auf Rot wackelt der Text leicht und die
+  // ruhigen Antworten verschwimmen. Gelb: leiser oranger Rand. Grün: nichts. (pultEl bleibt für alte Teile, wird nicht mehr gezeigt.)
+  const rotRand = el('div', 'ly-rotrand'); rotRand.setAttribute('aria-hidden', 'true'); document.body.appendChild(rotRand);
   ui.pult = (p) => {
-    if (!p) { pultEl.hidden = true; pultAlt = null; return; }
+    pultEl.hidden = true;
+    if (!p) { rotRand.className = 'ly-rotrand'; document.body.classList.remove('ly-puls-gelb', 'ly-puls-rot'); pultAlt = null; return; }
     const w = Math.max(0, Math.min(10, Math.round(p.w))), zone = w >= 7 ? 'rot' : w >= 4 ? 'gelb' : 'gruen';
-    pultEl.hidden = false; pultEl.className = 'ly-pult ' + zone;
-    pultEl.innerHTML = '<small>Am Steuer</small><b>' + esc(p.g || 'Gefühl') + '</b><div class="ly-pult-balken"><i style="left:' + (w * 10) + '%"></i></div><span>' + w + ' von 10 · ' + (zone === 'rot' ? 'Rot' : zone === 'gelb' ? 'Gelb' : 'Grün') + '</span>';
-    pultEl.setAttribute('aria-label', 'Am Steuer: ' + (p.g || '') + ', ' + w + ' von 10');
-    if (pultAlt != null && w !== pultAlt) { pultEl.classList.remove('puls'); void pultEl.offsetWidth; pultEl.classList.add('puls'); }
+    rotRand.className = 'ly-rotrand an ' + zone; rotRand.style.setProperty('--st', (w / 10).toFixed(2));
+    document.body.classList.toggle('ly-puls-gelb', zone === 'gelb'); document.body.classList.toggle('ly-puls-rot', zone === 'rot');
+    if (pultAlt != null && w > pultAlt) { rotRand.classList.remove('hoch'); void rotRand.offsetWidth; rotRand.classList.add('hoch'); }
     pultAlt = w;
   };
+  ui.pultZone = () => (document.body.classList.contains('ly-puls-rot') ? 'rot' : document.body.classList.contains('ly-puls-gelb') ? 'gelb' : 'gruen');
+  // Kurz atmen, mitten in der Szene: Halten = einatmen (mind. 1,5 s), loslassen = lang ausatmen (mind. 2,5 s). n Atemzüge.
+  ui.atemKurz = (n = 2) => new Promise((ok) => {
+    const k = el('div', 'ly-atemkurz hud-interactive'); document.body.appendChild(k);
+    k.innerHTML = '<button type="button" class="ly-ak-kreis"><b>Halten</b></button><p>Halten = einatmen. Loslassen = lang ausatmen.</p><div class="ly-ak-n"></div>';
+    const kreis = k.querySelector('.ly-ak-kreis'), lbl = kreis.querySelector('b'), nEl = k.querySelector('.ly-ak-n');
+    let gut = 0, ein = 0, aus = 0, fertig = false, tm = 0;
+    const zeig = () => { nEl.textContent = '●'.repeat(gut) + '○'.repeat(Math.max(0, n - gut)); };
+    const ende = () => { if (fertig) return; fertig = true; clearTimeout(tm); document.removeEventListener('keydown', ab, true); document.removeEventListener('keyup', auf, true); k.classList.add('weg'); setTimeout(() => k.remove(), 300); ok(); };
+    let gezaehlt = true;   // ein Atemzug zählt genau einmal – auch wenn der Zeitgeber auf langsamen Geräten spät dran ist
+    const zaehlen = () => { if (gezaehlt) return; gezaehlt = true; clearTimeout(tm); kreis.classList.remove('aus'); gut++; zeig(); if (gut >= n) ende(); else lbl.textContent = 'Und wieder halten'; };
+    const runter = () => {
+      if (fertig || ein) return; const j = performance.now();
+      if (aus && j - aus < 2500) { lbl.textContent = 'Länger ausatmen …'; return; }
+      if (aus) zaehlen(); if (fertig) return;
+      ein = j; aus = 0; clearTimeout(tm); kreis.classList.add('ein'); lbl.textContent = 'Einatmen …';
+    };
+    const hoch = () => {
+      if (fertig || !ein) return; const d = performance.now() - ein; ein = 0; kreis.classList.remove('ein');
+      if (d < 1500) { lbl.textContent = 'Länger halten'; return; }
+      aus = performance.now(); gezaehlt = false; lbl.textContent = 'Ausatmen … lang'; kreis.classList.add('aus');
+      tm = setTimeout(zaehlen, 2500);
+    };
+    kreis.addEventListener('pointerdown', (e) => { e.preventDefault(); runter(); }); kreis.addEventListener('pointerup', hoch); kreis.addEventListener('pointerleave', hoch);
+    const ab = (e) => { if (['Space', 'KeyE', 'Enter'].includes(e.code)) { e.preventDefault(); e.stopPropagation(); if (!e.repeat) runter(); } };
+    const auf = (e) => { if (['Space', 'KeyE', 'Enter'].includes(e.code)) { e.preventDefault(); e.stopPropagation(); hoch(); } };
+    document.addEventListener('keydown', ab, true); document.addEventListener('keyup', auf, true);
+    zeig();
+  });
   // Handy, das jemand hinhält (Baustein 4): echtes Foto aus der Spielwelt, Text, Umfrage mit Stimmen, die live steigen.
   // h = { wer, bild (dataURL), text, umfrage: { a, b, pa (Prozent a), stimmen, live } } | null
   let handyUhr = 0;
@@ -398,7 +430,7 @@ export function createUI({ root, input, speech }) {
     // opts.gesperrt: { i: Grund } (Steuerpult auf Rot) · opts.tags: { i: Hinweis } (z. B. „Weil du hingeschaut hast.“) · opts.extra: [{ id, t }] → { extra: id }
     const zu = opts.gesperrt || {}, tg = opts.tags || {};
     dialog.querySelector('.ly-d-optionen').innerHTML = wahlReihe.map((i, pos) => '<button type="button" data-i="' + i + '"' + (zu[i] ? ' class="zu" aria-disabled="true"' : '') + '><kbd>' + (pos + 1) + '</kbd><span>' + esc(optionen[i]) +
-      (zu[i] ? '<small class="ly-d-sperre">🔒 ' + esc(zu[i]) + '</small>' : tg[i] ? '<small class="ly-d-neu">👁 ' + esc(tg[i]) + '</small>' : '') + '</span></button>').join('') +
+      (zu[i] ? '<small class="ly-d-sperre">🫁 ' + esc(zu[i]) + '</small>' : tg[i] ? '<small class="ly-d-neu' + (/^📎/.test(tg[i]) ? ' beweis' : '') + '">' + (/^📎/.test(tg[i]) ? '' : '👁 ') + esc(tg[i]) + '</small>' : '') + '</span></button>').join('') +
       (opts.extra && opts.extra.length ? '<div class="ly-d-extra">' + opts.extra.map((x) => '<button type="button" class="ly-btn" data-x="' + esc(x.id) + '">' + esc(x.t) + '</button>').join('') + '</div>' : '');
     wahlFn = (i) => { if (i < 0 || i >= optionen.length || zu[i]) return; wahlFn = null; ok(i); };
     dialog.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => wahlFn && wahlFn(+b.dataset.i); });
