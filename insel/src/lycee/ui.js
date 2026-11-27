@@ -83,7 +83,7 @@ export function createUI({ root, input, speech }) {
     if (!h) { handyKarte.hidden = true; handyKarte.innerHTML = ''; return; }
     const u = h.umfrage;
     handyKarte.innerHTML = '<div class="ly-hk-kopf"><b>' + esc(h.wer || '') + '</b><span>' + esc(h.wann || 'gerade eben') + '</span></div>' +
-      (h.bild ? '<img alt="' + esc(h.alt || 'Foto') + '" src="' + h.bild + '">' : '<div class="ly-hk-leer">📷</div>') +
+      (h.bild ? (h.streifen ? '<span class="ly-hk-bildrahmen"><img alt="' + esc(h.alt || 'Foto') + '" src="' + h.bild + '"><i class="ly-hk-streifen"></i></span>' : '<img alt="' + esc(h.alt || 'Foto') + '" src="' + h.bild + '">') : '<div class="ly-hk-leer">📷</div>') +
       '<div class="ly-hk-text">' + esc(h.text || '') + '</div>' +
       (u ? '<div class="ly-hk-umfrage"><div class="ly-hk-bar a"><i></i><span>' + esc(u.a) + ' <b></b></span></div><div class="ly-hk-bar b"><i></i><span>' + esc(u.b) + ' <b></b></span></div><small>' + (u.live ? '<em>● live</em> ' : '') + '<span class="n"></span> Stimmen</small></div>' : '');
     handyKarte.hidden = false;

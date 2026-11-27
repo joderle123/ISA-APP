@@ -1508,3 +1508,13 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-frei ul { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 2px 12px; font-size: 13px; }
 .ly-frei li.ja { color: #17806f; font-weight: 700; }
 .ly-frei li.weg { color: var(--leise); text-decoration: line-through; }
+/* Kapitel 3: Aufstellung (einmal tippen = hinschauen, zweimal = aufstellen), Wegweiser */
+.sz-wand button.fokus { box-shadow: 0 0 0 3px #f2b134; }
+.sz-wand button.an { background: var(--f); color: #fff; }
+.sz-wand button.an i { background: #fff; color: var(--f); }
+.sz-blick-text:empty { display: none; }
+.sz-weg .sz-steuer button { font-style: italic; }
+/* Kapitel 3: der helle Streifen unten links (eine Hülle oder ein Finger vor der Linse) – Spur zum Account */
+.ly-hk-bildrahmen { position: relative; display: block; }
+.ly-hk-bildrahmen img { display: block; width: 100%; }
+.ly-hk-streifen { position: absolute; left: 0; bottom: 0; width: 16%; height: 30%; background: linear-gradient(60deg, rgba(255,255,255,.92), rgba(255,255,255,.35) 70%, rgba(255,255,255,0)); filter: blur(3px); border-top-right-radius: 40%; pointer-events: none; }

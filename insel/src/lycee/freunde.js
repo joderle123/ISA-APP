@@ -29,6 +29,7 @@ export const CHARAKTER = {
   ayla: { typ: 'Die Musikerin', hobby: 'Bass in einer Band', mag: 'Musik, kleine Runden', eig: ['musikalisch', 'Bandname offen'] },
   luca: { typ: 'Der Harte', hobby: 'Kochen (heimlich)', mag: 'Respekt, gutes Essen', eig: ['rebellisch', 'stolz', 'kocht gut'] },
   kenan: { typ: 'Der Handwerker', hobby: 'Holz, Werkstatt', mag: 'Genauigkeit, Ehrlichkeit', eig: ['handwerklich', 'rebellisch'] },
+  manon: { typ: 'Die Neue', hobby: 'Zeichnen, Wörter sammeln', mag: 'Geduld, Leute, die langsam reden', eig: ['neugierig', 'mutig'] },
   dario: { typ: 'Der Treue', hobby: 'Handy, Fußball', mag: 'seine Leute', eig: ['loyal', 'witzig'] },
 };
 export const GLEICHALTRIGE = Object.keys(CHARAKTER);

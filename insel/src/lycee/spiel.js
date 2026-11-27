@@ -38,7 +38,7 @@ import landungOgg from './toene/landung.ogg';
 import pfostenOgg from './toene/pfosten.ogg';   // „Rotating Bicycle Bell“, opengameart.org, CC0
 import { createZufall } from './zufall.js';
 // Das Schuljahr vergeht: Monat auf der Zeitkarte (die Kapitel liegen Wochen auseinander, nicht direkt hintereinander)
-const MONAT = { 1: 'September', 2: 'November', 3: 'Dezember', 4: 'Dezember', 5: 'Januar', 6: 'Januar', 7: 'Juni', 8: 'Juni', 9: 'Juli', 10: 'Juli' };   // Kalender der Storyline 7e
+const MONAT = { 1: 'September', 2: 'November', 3: 'November', 4: 'Dezember', 5: 'Januar', 6: 'Januar', 7: 'Juni', 8: 'Juni', 9: 'Juli', 10: 'Juli' };   // Kalender der Storyline 7e
 import { createInteraktionen } from './interaktion.js';
 import { createKicker3d } from './kicker3d.js';
 import { createBillard } from './billard.js';
@@ -77,7 +77,7 @@ if (!(LEKTIONEN.francais || []).length) LEKTIONEN.francais = FR_LEKTIONEN;   // 
 import { tunN2, ORTE_N2, RUECKBLICK_N2 } from './story/kapitel2.js';
 import { tunN1, RUECKBLICK_N1 } from './story/kapitel1.js';
 import { fotoSpeichern, fotosLaden, fotosLoeschen } from './fotoablage.js';
-import { tunN3, ORTE_N3 } from './story/kapitel3.js';
+import { tunN3, ORTE_N3, RUECKBLICK_N3 } from './story/kapitel3.js';
 import { tunN4 } from './story/kapitel4.js';
 import { tunN5 } from './story/kapitel5.js';
 import { tunN6 } from './story/kapitel6.js';
@@ -1459,8 +1459,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       }
     }
   }
+  const dbgG = (t) => { try { if (window.__gdbg) window.__gdbg.push(t + ' @' + (S && S.schrittId)); } catch (e) { /* nur Test */ } };
   async function gespraech(zeilen) {
-    if (imGespraech) return;
+    if (imGespraech) { dbgG('G-übersprungen ' + JSON.stringify((zeilen || [])[0] || '').slice(0, 50)); return; }
+    dbgG('G ' + JSON.stringify((zeilen || [])[0] || '').slice(0, 50));
     imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
     try { await spiele(zeilen); } finally {
       ui.dialogZu(); ui.handyBild(null); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; steuerung.gegenSchuss = false; gegenueber = null; if (sprichtJetzt && leute[sprichtJetzt] && leute[sprichtJetzt].f.redet) leute[sprichtJetzt].f.redet(false); sprichtJetzt = null; if (spieler && spieler.redet) spieler.redet(false); sperreBis = performance.now() + 350; sichern();
@@ -1485,8 +1487,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const TUN = {
     kurzRaus: async () => { if (ui.atem) await ui.atem(); else await ui.kurzRaus(); },
     tt3d: async (pa) => { ui.dialogZu(); if (ttSpiel) await ttSpiel(pa); },   // Tischtennis aus einem Gespräch heraus
-    // Handschlag aus einem Gespräch heraus ({ tu: 'handschlag', mit: 'dario' }): startet, sobald das Gespräch zu ist
-    handschlag: (pa) => { const x = pa && leute[pa.id]; if (!x) return; (async () => { for (let i = 0; i < 80 && (imGespraech || ui.ebeneArt()); i++) await new Promise((r) => setTimeout(r, 250)); await handschlagMit(x); })(); },
+    // Handschlag aus einem Gespräch heraus ({ tu: 'handschlag', mit: 'dario' }): startet direkt, wenn genau dieses Gespräch zu ist –
+    // nicht später mitten in einem anderen und nur, wenn die Person noch in der Nähe steht (sonst wartet das Spiel auf jemanden, der weg ist)
+    handschlag: (pa) => { const x = pa && leute[pa.id]; if (!x) return;
+      const los = async () => { for (let i = 0; i < 40 && ui.ebeneArt(); i++) await new Promise((r) => setTimeout(r, 250));
+        if (!ui.ebeneArt() && x.f.group.visible && steuerung.pos.distanceTo(x.f.group.position) < 5) await handschlagMit(x); };
+      if (imGespraech) { const vorher = danach; danach = async () => { if (vorher) await vorher(); await los(); }; } else los(); },
     vertragPlakat: () => { vertragPlakat(); },   // in der SePAS: direkt die Atem-Übung (Kreis)
     sepasBesuch: () => { S.merke.sepasBesuch = (S.merke.sepasBesuch || 0) + 1; sichern(); },
     ...tunN1({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
@@ -1845,7 +1851,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     },
     milaAbschied: () => ((S.herz.mila || 0) >= 2 ? GESPRAECHE.milaAbschied_ja : []),
     kapitelEnde: async () => {
-      busFaehrt = -1;
+      busFaehrt = -1; ui.dialogZu();   // der letzte Satz bleibt nicht hinter dem Kapitelende stehen
       await new Promise((r) => setTimeout(r, 1200));
       const kap = SCHRITTE[S.schritt].kap, weiterIdx = SCHRITTE.some((x) => x.kap === kap + 1) ? kapStart(kap + 1) : -1, startIdx = kapStart(kap);
       S.kapitelFertig = Math.max(S.kapitelFertig || 0, kap);
@@ -1855,7 +1861,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       audio.play('unlock'); setTimeout(() => audio.play('chime'), 350);
       const woche = chronik(kap, S.merke); S.chronik = { ...(S.chronik || {}), [kap]: woche }; sichern();
       const bilder = (RUECKBLICK[kap] ? RUECKBLICK[kap](S.merke, S) : []).map((b) => ({ ...b, url: fotoHolen(b.id) })).filter((b) => b.url);
-      const wahl = await ui.ende({ ...bilanz(), kap, chronik: woche, bilder, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Die erste Woche', 2: 'Die Liste', 3: 'Von links unten', 4: 'Die Woche vor den Ferien', 5: 'Die Admin-Woche', 6: 'Die Sprachnachricht', 7: 'Wer geblieben ist', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' })[kap] || KAPITEL[kap],
+      const wahl = await ui.ende({ ...bilanz(), kap, chronik: woche, bilder, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Die erste Woche', 2: 'Die Liste', 3: 'Unter der Wut', 4: 'Die Woche vor den Ferien', 5: 'Die Admin-Woche', 6: 'Die Sprachnachricht', 7: 'Wer geblieben ist', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' })[kap] || KAPITEL[kap],
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '',
         // Haken fürs nächste Kapitel (kein Spoiler, nur die Frage)
         frage: (() => { const sit = Object.entries(SZENEN).find(([id]) => S.merke['sitKap_' + id] === kap && S.merke['sit_' + id]); return sit ? (REFLEXION[kap] ? REFLEXION[kap] + ' · ' : '') + 'Diese Woche: ' + sit[1].titel[1] + '. ' + sit[1].frage : REFLEXION[kap] || ''; })(), vorschau: weiterIdx >= 0 ? ({ 1: 'Eine Liste. Fünf Plätze. Wer steht drauf?', 2: 'Ein Satz über Mila. Und ein heller Streifen, unten links.',
@@ -2249,7 +2255,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     ui.freiUhr({ titel: L.def.titel || 'Freie Zeit', rest: L.rest, faeden: Object.entries(L.def.faeden).filter(([id, f]) => L.besucht[id] || t >= (f.ab || 0)).map(([id, f]) => ({ label: f.label || id, besucht: !!L.besucht[id], vorbei: !L.besucht[id] && f.bis != null && t > f.bis })) });
   }
   async function freiFaden(id) {
-    const L = freiLauf; if (!L || L.ende) return false;
+    const L = freiLauf; if (!L || L.ende || imGespraech) return false;   // läuft schon ein Gespräch, geht der Faden nicht verloren
     const f = freiOffen().find((x) => x.id === id); if (!f) return false;
     L.besucht[id] = true; S.merke['frei_' + L.st.id + '_' + id] = true; sichern(); freiZeigen();
     for (const g of [].concat(f.gespraech)) await gespraech(typeof g === 'string' ? GESPRAECHE[g] : g);
@@ -2280,7 +2286,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   const FOTOS = {};   // Fotos aus der Welt (dataURL), für später: Handy-Karte, Rückblick
   fotosLaden(platz).then((f) => { for (const [k, v] of Object.entries(f)) if (!FOTOS[k]) FOTOS[k] = v; });   // für Lehrer-Ansicht schon vor dem Weiterspielen
-  const RUECKBLICK = { 1: RUECKBLICK_N1, 2: RUECKBLICK_N2 };   // Rückblick in Bildern je Kapitel: (merke) => [{ id, titel, text }]
+  const RUECKBLICK = { 1: RUECKBLICK_N1, 2: RUECKBLICK_N2, 3: RUECKBLICK_N3 };   // Rückblick in Bildern je Kapitel: (merke) => [{ id, titel, text }]
   const fotoHolen = (id) => FOTOS[id] || (() => { try { return sessionStorage.getItem('lycee.foto.' + id) || ''; } catch (e) { return ''; } })();
   const bemerkt = (k) => [].concat(k).every((x) => !!(S.bemerkt || {})[x]);
   const fotoMerken = (id, url) => { if (!url) return; FOTOS[id] = url; try { sessionStorage.setItem('lycee.foto.' + id, url); } catch (e) { /* voll */ } fotoSpeichern(platz, id, url); };   // auch dauerhaft (IndexedDB, nur auf dem Gerät)
@@ -2327,7 +2333,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       return url;
     } catch (e) { return ''; }
   }
-  const SZ_UI = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich', werkzeug: 'werkzeugKarte', werkbank: 'werkbank', steckbrief: 'steckbrief' };
+  const SZ_UI = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich', werkzeug: 'werkzeugKarte', werkbank: 'werkbank', steckbrief: 'steckbrief', weg: 'wegweiser', aufstellung: 'aufstellung', pass: 'passSpiel' };
   // Prüfungen gegen Durchklicken (nur Skill-Szenen). Rückgabe null = gemacht; sonst { sy, t, tipp } für „Noch mal“.
   const PRUEF = {
     atem: (r) => (r.gut < 2 ? { sy: '🫁', t: 'Das war noch kein ruhiges Atmen.', tipp: 'Halte, bis der Kreis groß ist (zwei, drei Sekunden). Dann loslassen und lange ausatmen – länger als das Einatmen. Erst dann wieder halten.' } : null),
@@ -2454,12 +2460,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   // Reflexionsfrage am Kapitelende (eine offene Frage, kein richtig/falsch – auch als Einstieg fürs Klassengespräch)
   const REFLEXION = { 1: 'Was hat dir am ersten Tag geholfen, dich ein bisschen sicherer zu fühlen?', 2: 'Was kannst du gut – auch wenn es keiner sieht?',
-    3: 'Woran merkst du bei anderen, wie es ihnen geht, ohne dass sie es sagen?', 4: 'Was hilft dir, wenn du „bei Rot“ bist?',
+    3: 'Was war bei Yusuf gemischt – und was bei dir? Woran hast du es gemerkt?', 4: 'Was hilft dir, wenn du „bei Rot“ bist?',
     5: 'Welcher Satz über dich selbst ist laut – und stimmt er wirklich?', 6: 'Wann hast du zuletzt klar Stopp gesagt? Wie war das?',
     7: 'Was hättest du gebraucht, um in der Kantine aufzustehen?', 8: 'Was prüfst du, bevor du etwas teilst?',
     9: 'Was lädt deinen Akku wirklich auf?', 10: 'Was nimmst du aus diesem Jahr mit?' };
   // Inhaltshinweise je Kapitel (wie in großen Spielen): kurz, sachlich, mit Weg nach draußen
-  const INHALT = { 2: 'Eine Ranking-Liste, Auslachen im Klassenchat.', 3: 'Bloßstellen mit Fotos, Gerüchte über jemanden.', 4: 'Prüfungsstress, eine Panikattacke, ein gefälschter Screenshot.',
+  const INHALT = { 2: 'Eine Ranking-Liste, Auslachen im Klassenchat.', 3: 'Ein Wutausbruch, Schubsen, ein bloßstellendes Foto im Klassenchat.', 4: 'Prüfungsstress, eine Panikattacke, ein gefälschter Screenshot.',
     5: 'Verdacht gegen dich, Gerüchte, harte Gedanken über sich selbst.', 6: 'Filmen ohne Erlaubnis, Rauswurf aus dem Klassenchat.', 7: 'Gruppendruck, Mobbing in der Kantine.',
     8: 'Ein KI-Fake-Video über eine Lehrerin.', 9: 'Schlafmangel, ein schweres Geheimnis, ein Freund in einer Krise.', 10: 'Geständnis, Entschuldigungen, Abschied.' };
   // Dauer-Anzeige einer Woche (Anspannung 0–100 in Kapitel 4, Akku in Kapitel 9): gilt bis zum Kapitelende
@@ -3009,7 +3015,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const id = x.id, H = HANDSCHLAEGE[id];
     S.handschlag = S.handschlag || {};
     const st = S.handschlag[id] = S.handschlag[id] || {};
-    imGespraech = true; gegenueber = x; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); hsPartner = null; ui.hsKnopf && ui.hsKnopf(null);
+    dbgG('HS ' + x.id); imGespraech = true; gegenueber = x; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); hsPartner = null; ui.hsKnopf && ui.hsKnopf(null);
     const name = LEUTE[id].name;
     try {
       hs.start(spieler, x);
@@ -3745,7 +3751,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   });
   async function sitGespraech(fn, gp) {
     if (imGespraech) return;
-    imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); if (gp) steuerung.fokus = gp;
+    dbgG('SIT'); imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); if (gp) steuerung.fokus = gp;
     try { await fn(); } finally {
       ui.dialogZu(); ui.handyBild(null); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; steuerung.gegenSchuss = false; if (spieler && spieler.redet) spieler.redet(false); sperreBis = performance.now() + 900; sichern(); sitSichtbarkeit();
     }
@@ -3842,7 +3848,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       try { await zufall.tu(); } finally { ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 500; } return; }
     // Minispiele in der Welt (eigene Steuerung, enden bei einem Gespräch): nicht als Gespräch behandeln – sonst enden sie sofort
     if (['skate', 'volley', 'elfmeter', 'dosen', 'kicker', 'billard', 'schneemann', 'schneeSetzen'].includes(i.tu)) { ui.hinweis(null); await ia.tu(i); sperreBis = performance.now() + 500; return; }
-    imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); vib(12);
+    dbgG('IA ' + i.tu); imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); vib(12);
     try { await ia.tu(i); } finally { imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 350; }
   }
 
@@ -4160,7 +4166,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Kapitel-Vorspann: Kamerafahrt über die Schule zur Tageszeit des ersten Schritts (ui.vorspann zeigt Titel) ----------
   const VORSPANN = {
     1: 'Neue Schule. Neue Leute. Und ein Account, der alles sieht.', 2: 'Eine Liste. Fünf Plätze. Und jemand, den du kennst, steht ganz oben.',
-    3: 'Dezember. Ein Satz über Mila. Und ein heller Streifen, unten links.', 4: 'Die letzte Woche vor den Ferien. Ein Test. Eine Kiste voller Handys.',
+    3: 'Eine Neue. Ein Turnier. Und einer, der dauernd zur Uhr schaut.', 4: 'Die letzte Woche vor den Ferien. Ein Test. Eine Kiste voller Handys.',
     5: 'Januar. Alle glauben, du bist der Account. Eine prüft das.', 6: 'Sieben Sekunden Sprachnachricht. Und eine Abstimmung über dich.',
     7: 'Juni. Fünf Monate später. Wer ist geblieben?', 8: 'Ein Video von Mme Tidderich. Ihre Stimme. Ihr Gesicht. Nicht echt.',
     9: 'Juli. 4:12 Uhr. Eine Nachricht von Dario. „bitte“.', 10: 'Letzte Woche. Sommerfest. Freitag, 15:00. Alle Namen.',

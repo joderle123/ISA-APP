@@ -976,10 +976,11 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
   // ---------- Mischpult (Kurs E10: gemischte Gefühle, 0–10) ----------
   // def: { wo, ereignis, gefuehle: [ids], vergleich: { wer: { name, farbe }, werte: { id: n }, satz } } → { werte, staerkstes, gemischt }
   ui.mischpult = (def) => new Promise((ok) => {
+    const G = { ...GEF, ...(def.extra || {}) };   // z. B. Scham (Kapitel 3) – nur in dieser Szene
     const ids = def.gefuehle || Object.keys(GEF), werte = Object.fromEntries(ids.map((id) => [id, 0]));
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>Mischpult</b></div>' +
       '<div class="sz-fall" style="--f:#2b3a55"><p>' + esc(ersetze(def.ereignis)) + '</p></div><p class="sz-info">Oft sind mehrere Gefühle gleichzeitig da. Das ist normal. Was ist alles da? Schieb jeden Regler von 0 bis 10.</p>' +
-      '<div class="sz-mischpult">' + ids.map((id) => '<label style="--f:' + GEF[id][1] + '"><span>' + GEF[id][2] + '</span><input type="range" min="0" max="10" step="1" value="0" data-g="' + id + '"><b data-z="' + id + '">0</b><small>' + GEF[id][0] + '</small><i class="sz-fremd" data-f="' + id + '"></i></label>').join('') + '</div>' +
+      '<div class="sz-mischpult">' + ids.map((id) => '<label style="--f:' + G[id][1] + '"><span>' + G[id][2] + '</span><input type="range" min="0" max="10" step="1" value="0" data-g="' + id + '"><b data-z="' + id + '">0</b><small>' + G[id][0] + '</small><i class="sz-fremd" data-f="' + id + '"></i></label>').join('') + '</div>' +
       '<div class="sz-karten"><button type="button" class="sz-weiter" data-a="w">So ist es <kbd>E</kbd></button></div></div>');
     k.querySelectorAll('[data-g]').forEach((r) => { r.addEventListener('keydown', (e) => e.stopPropagation()); r.oninput = () => { werte[r.dataset.g] = +r.value; k.querySelector('[data-z="' + r.dataset.g + '"]').textContent = r.value; }; });
     // −/+ für Finger (senkrechte Regler sind auf Handys schwer zu treffen)
@@ -2098,6 +2099,181 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       await warte(900);
       weiterKnopf(karten, { saetze, text: saetze.join(' ') }, ok, '<div class="sz-sys">Verschlossen. Du bekommst ihn in der 6ème zurück.</div>');
     })();
+  });
+
+  // ---------- Wegweiser (Français, Kapitel 3): Manon lotsen. Sie tut genau, was du sagst – auch wenn es falsch ist. ----------
+  // Plan als Gitter: Gang mit zwei Kreuzungen, Räume an den Enden. Ansagen nur auf Französisch (vorher 20 Sekunden Theorie).
+  // def: { wer: { name, farbe }, ziel: 'salle', wo } → { angekommen, umwege, ansagen, falschRaum: [...] }
+  ui.wegweiser = (def) => new Promise((ok) => {
+    const W = def.wer || { name: 'Manon', farbe: '#e07b39' };
+    const k = ui.ebeneAuf('szene', '<div class="sz sz-lotsen sz-weg"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Français') + ' · Wegweiser</span><b>' + esc(W.name) + ' lotsen</b></div>' +
+      '<p class="sz-info">' + esc(W.name) + ' steht vor dem Sekretariat. Sie muss in die Salle 1.04. Sag ihr den Weg – auf Französisch. Sie geht bis zur nächsten Kreuzung.</p>' +
+      '<canvas width="520" height="300"></canvas>' +
+      '<div class="sz-steuer ly-d-optionen"><button type="button" data-k="g">⬅ à gauche</button><button type="button" data-k="t">⬆ tout droit</button><button type="button" data-k="d">à droite ➡</button><button type="button" data-k="u">↩ demi-tour</button></div><div class="sz-stand"></div></div>');
+    const cv = k.querySelector('canvas'), x = cv.getContext('2d'), stand = k.querySelector('.sz-stand');
+    // Gitter 13 × 7, Zelle 40 px. Gang in Reihe 3, Querwege in Spalte 4 und 8.
+    const Z = 40, OX = 0, OY = 10;
+    const RAUM = { '1,3': ['Secrétariat', 'start'], '4,1': ['CDI', 'cdi'], '4,5': ['WC', 'wc'], '8,1': ['Salle 1.04', 'salle'], '8,5': ['Cantine', 'cantine'], '11,3': ['Escalier', 'escalier'] };
+    const geh = (cx, cy) => (cy === 3 && cx >= 1 && cx <= 11) || ((cx === 4 || cx === 8) && cy >= 1 && cy <= 5);
+    const DIR = [[1, 0], [0, 1], [-1, 0], [0, -1]];   // Osten, Süden, Westen, Norden
+    let mx = 1, my = 3, ri = 0, ziehX = mx, ziehY = my, laeuft = null, fertig = false, sagt = 'Bonjour ! Je vais où ?', sT = 2.4, ansagen = 0, umwege = 0;
+    const falsch = []; const kreuzung = (cx, cy) => DIR.filter(([dx, dy]) => geh(cx + dx, cy + dy)).length > 2;
+    cv.__st = () => ({ mx, my, ri, fertig, laeuft: !!laeuft });   // nur für Tests
+    const sprech = (t) => { sagt = t; sT = 2.2; };
+    const SAETZE = { cdi: 'C’est le CDI ? Des livres…', wc: 'Euh… ce sont les toilettes.', cantine: 'La cantine ? Il est 8 heures…', escalier: 'L’escalier ? On monte ?', start: 'Le secrétariat. Encore.' };
+    const schluss = (ja) => { if (fertig) return; fertig = true; setTimeout(() => { loesche(); ui.ebeneZu(); ok({ angekommen: ja, umwege, ansagen, falschRaum: falsch }); }, 1600); };
+    // Weg bis zur nächsten Kreuzung, einem Raum oder einer Wand
+    const weg = () => {
+      const pfad = []; let cx = mx, cy = my;
+      for (let i = 0; i < 12; i++) {
+        const nx = cx + DIR[ri][0], ny = cy + DIR[ri][1];
+        if (!geh(nx, ny)) break;
+        cx = nx; cy = ny; pfad.push([cx, cy]);
+        if (RAUM[cx + ',' + cy] || kreuzung(cx, cy)) break;
+      }
+      return pfad;
+    };
+    const befehl = (b) => {
+      if (fertig || laeuft) return;
+      ansagen++;
+      if (b === 'g') ri = (ri + 3) % 4; else if (b === 'd') ri = (ri + 1) % 4; else if (b === 'u') ri = (ri + 2) % 4;
+      const p = weg();
+      if (!p.length) { sprech(b === 't' ? 'Euh… il y a un mur.' : 'Par là ? C’est un mur.'); umwege++; return; }
+      sprech(b === 'g' ? 'À gauche. D’accord.' : b === 'd' ? 'À droite. D’accord.' : b === 'u' ? 'Demi-tour. Okay.' : 'Tout droit…');
+      laeuft = { pfad: p, i: 0, t: 0 };
+    };
+    k.querySelectorAll('[data-k]').forEach((b) => { b.onclick = () => befehl(b.dataset.k); });
+    halte((e) => { const m = { ArrowLeft: 'g', KeyA: 'g', ArrowUp: 't', KeyW: 't', ArrowRight: 'd', KeyD: 'd', ArrowDown: 'u', KeyS: 'u', KeyE: 't' }[e.code]; if (m) { e.preventDefault(); e.stopPropagation(); befehl(m); } });
+    let last = performance.now(), zeit = 0;
+    const draw = (now) => {
+      const dt = Math.min(0.1, (now - last) / 1000); last = now; zeit += dt;
+      if (laeuft && !fertig) {
+        laeuft.t += dt * 2.6;
+        const [zx, zy] = laeuft.pfad[laeuft.i]; const fx = laeuft.i ? laeuft.pfad[laeuft.i - 1][0] : mx, fy = laeuft.i ? laeuft.pfad[laeuft.i - 1][1] : my;
+        const a = Math.min(1, laeuft.t); ziehX = fx + (zx - fx) * a; ziehY = fy + (zy - fy) * a;
+        if (laeuft.t >= 1) {
+          laeuft.t = 0; laeuft.i++;
+          if (laeuft.i >= laeuft.pfad.length) {
+            [mx, my] = laeuft.pfad[laeuft.pfad.length - 1]; ziehX = mx; ziehY = my; laeuft = null;
+            const r = RAUM[mx + ',' + my];
+            if (r && r[1] === (def.ziel || 'salle')) { sprech('Salle 1.04 ! Merci !'); schluss(true); }
+            else if (r) { umwege++; if (!falsch.includes(r[1])) falsch.push(r[1]); sprech(SAETZE[r[1]] || 'Ici ?'); }
+            else sprech('Et maintenant ?');
+          }
+        }
+      }
+      if (!fertig && zeit > 70 * zeitFaktor()) { sprech('Je demande à quelqu’un d’autre. Merci quand même.'); schluss(false); }
+      x.fillStyle = '#e9e4da'; x.fillRect(0, 0, 520, 300);
+      for (let cy = 0; cy < 7; cy++) for (let cx = 0; cx < 13; cx++) if (geh(cx, cy)) { x.fillStyle = '#ffffff'; x.fillRect(OX + cx * Z + 2, OY + cy * Z + 2, Z - 4, Z - 4); }
+      for (const [key, [name]] of Object.entries(RAUM)) {
+        const [cx, cy] = key.split(',').map(Number);
+        x.fillStyle = name === 'Salle 1.04' ? '#ffd98a' : '#cfd8e6'; x.fillRect(OX + cx * Z + 2, OY + cy * Z + 2, Z - 4, Z - 4);
+        x.fillStyle = '#1b1d26'; x.font = 'bold 11px system-ui'; const w = x.measureText(name).width;
+        const ty = cy === 1 ? OY + cy * Z - 2 : cy === 5 ? OY + (cy + 1) * Z + 11 : OY + cy * Z - 4;
+        x.fillText(name, Math.min(518 - w, Math.max(2, OX + cx * Z + Z / 2 - w / 2)), ty);
+      }
+      const px = OX + ziehX * Z + Z / 2, py = OY + ziehY * Z + Z / 2;
+      x.save(); x.translate(px, py); x.rotate(ri * Math.PI / 2);
+      x.fillStyle = W.farbe; x.beginPath(); x.arc(0, 0, 12, 0, 7); x.fill();
+      x.fillStyle = '#fff'; x.beginPath(); x.moveTo(16, 0); x.lineTo(8, -5); x.lineTo(8, 5); x.fill(); x.restore();
+      if (sT > 0) { sT -= dt; x.font = 'bold 14px system-ui'; const w = x.measureText(sagt).width + 16; const bx = Math.min(520 - w - 4, Math.max(4, px - w / 2)); const by = Math.max(2, py - 44);
+        x.fillStyle = 'rgba(255,255,255,.95)'; x.fillRect(bx, by, w, 24); x.strokeStyle = W.farbe; x.lineWidth = 2; x.strokeRect(bx, by, w, 24); x.fillStyle = '#1b1d26'; x.fillText(sagt, bx + 8, by + 17); }
+      stand.textContent = 'Ansagen: ' + ansagen + ' · Umwege: ' + umwege;
+      if (!fertig || sT > 0) requestAnimationFrame(draw);
+    };
+    requestAnimationFrame(draw);
+  });
+
+  // ---------- Aufstellung (Sport, Kapitel 3): Zehn stehen an der Wand, du stellst fünf auf. Wer übrig bleibt, merkt es sich. ----------
+  // def: { wo, leute: [{ id, name, farbe, info, blick? }], anzahl: 5 } → { team: [ids], uebrig: [ids], angeschaut: [ids] }
+  ui.aufstellung = (def) => new Promise((ok) => {
+    const N = def.anzahl || 5, team = [], angeschaut = [];
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Turnhalle') + '</span><b>Aufstellung</b></div>' +
+      '<p class="sz-info">' + (def.leute.length === 9 ? 'Neun' : def.leute.length) + ' warten an der Wand. Du spielst selbst mit und stellst ' + N + ' dazu. Einmal tippen: genauer hinschauen. Zweimal: aufstellen.</p><div class="sz-wand"></div><div class="sz-blick-text sz-sys"></div><div class="sz-teams"><div><b>Deine Fünf</b><span data-t="ich"></span></div></div><div class="sz-karten"></div></div>');
+    const wand = k.querySelector('.sz-wand'), blick = k.querySelector('.sz-blick-text'), karten = k.querySelector('.sz-karten');
+    let fokus = null;
+    const zeig = () => {
+      wand.innerHTML = def.leute.map((p) => '<button type="button" data-p="' + p.id + '" style="--f:' + p.farbe + '" class="' + (team.includes(p.id) ? 'an' : '') + (fokus === p.id ? ' fokus' : '') + '"><i>' + esc(p.name[0]) + '</i><span>' + esc(p.name) + '</span><small>' + (team.includes(p.id) ? '✓ aufgestellt' : '') + '</small></button>').join('');
+      k.querySelector('[data-t="ich"]').textContent = team.map((id) => def.leute.find((p) => p.id === id).name).join(', ') || '–';
+      wand.querySelectorAll('[data-p]').forEach((b) => { b.onclick = () => tipp(b.dataset.p); });
+      karten.innerHTML = team.length === N ? '<button type="button" class="sz-weiter" data-a="w">Aufstellung steht <kbd>E</kbd></button>' : '';
+      const w = karten.querySelector('[data-a="w"]'); if (w) w.onclick = fertig;
+    };
+    const tipp = (id) => {
+      const p = def.leute.find((q) => q.id === id);
+      if (team.includes(id)) { team.splice(team.indexOf(id), 1); fokus = id; blick.textContent = p.name + ' geht zurück an die Wand.'; zeig(); return; }
+      if (fokus !== id) { fokus = id; if (!angeschaut.includes(id)) angeschaut.push(id); blick.textContent = p.name + ': ' + (p.blick || p.info || 'wartet.'); zeig(); return; }
+      if (team.length >= N) { blick.textContent = 'Fünf stehen schon. Nimm erst jemanden raus.'; return; }
+      team.push(id); fokus = null; blick.textContent = p.name + ' kommt nach vorne.'; zeig();
+    };
+    const fertig = () => { if (team.length !== N) return; loesche(); ui.ebeneZu(); ok({ team: team.slice(), uebrig: def.leute.map((p) => p.id).filter((id) => !team.includes(id)), angeschaut }); };
+    halte((e) => { if ((e.code === 'KeyE' || e.code === 'Enter') && team.length === N) { e.preventDefault(); e.stopPropagation(); fertig(); } });
+    zeig();
+  });
+
+  // ---------- Pass-Spiel (Hallenturnier, Kapitel 3): Wer steht frei? Hinschauen unter Zeitdruck. ----------
+  // Runden: der Ball ist bei dir, zwei Sekunden, die Gegner decken – tippe auf den, der frei ist. Am Ende der letzte Pass.
+  // def: { wo, team: [{ id, name, farbe }], letzter: id (wer den letzten Pass nicht fängt), runden: 6 } → { gute, abgefangen, zuLang, stand: [a, b], letzter }
+  ui.passSpiel = (def) => new Promise((ok) => {
+    const T = def.team, R = def.runden || 6;
+    const k = ui.ebeneAuf('szene', '<div class="sz sz-lotsen"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Turnhalle') + ' · 7P2 gegen 7P1</span><b>Wer steht frei?</b></div>' +
+      '<p class="sz-info">Du hast den Ball. Tippe auf den, um den gerade niemand steht. Du hast nur einen Moment.</p>' +
+      '<canvas width="520" height="300"></canvas><div class="sz-stand"></div></div>');
+    const cv = k.querySelector('canvas'), x = cv.getContext('2d'), stand = k.querySelector('.sz-stand');
+    let runde = 0, gute = 0, abgefangen = 0, zuLang = 0, wir = 4, sie = 5, phase = 'zeig', t = 0, frei = -1, pos = [], gegner = [], text = '', textT = 0, fertig = false, warten = false;
+    const ich = { x: 70, y: 150 };
+    cv.__st = () => ({ runde, frei, phase, pos: pos.map((p) => [p.x, p.y]) });   // nur für Tests
+    const zufall = (a, b) => a + Math.random() * (b - a);
+    const neueRunde = () => {
+      runde++; t = 0; phase = 'spiel';
+      const letzte = runde === R;
+      pos = T.map((p, i) => ({ ...p, x: zufall(170, 480), y: 62 + i * 46 + zufall(-9, 9) }));
+      frei = letzte && def.letzter ? Math.max(0, T.findIndex((p) => p.id === def.letzter)) : Math.floor(Math.random() * T.length);
+      gegner = pos.map((p, i) => (i === frei ? { x: Math.min(500, p.x + zufall(70, 110) * (p.x > 330 ? -1 : 1)), y: Math.max(52, Math.min(270, p.y + zufall(-50, 50))) } : { x: p.x + zufall(-16, 16), y: p.y + zufall(-16, 16) }));
+      text = letzte ? 'Letzter Angriff. Noch 20 Sekunden. 6 : 6.' : 'Angriff ' + runde + ' von ' + R; textT = 1.4;
+    };
+    const zeitMax = () => 2.2 * zeitFaktor();
+    const wahl = (i) => {
+      if (phase !== 'spiel' || fertig) return;
+      phase = 'aus'; const letzte = runde === R;
+      if (i === frei) {
+        if (letzte && def.letzter) { text = T[i].name + ' ist frei … der Ball kommt … und rutscht ihm durch die Hände.'; sie++; }
+        else { gute++; if (Math.random() < 0.75) { wir++; text = 'Pass zu ' + T[i].name + ' – Tor!'; } else text = 'Pass zu ' + T[i].name + ' – knapp vorbei.'; }
+      } else { abgefangen++; if (Math.random() < 0.6) sie++; text = 'Abgefangen. ' + T[i].name + ' war gedeckt.'; }
+      textT = 2.2; weiter();
+    };
+    const weiter = () => { warten = true; setTimeout(() => { warten = false; if (runde >= R) ende(); else neueRunde(); }, letzteRunde() ? 2600 : 1500); };
+    const letzteRunde = () => runde >= R;
+    const ende = () => {
+      if (fertig) return; fertig = true; if (wir >= sie) sie = wir + 1;   // knapp verloren – wie im Konzept
+      text = 'Abpfiff. ' + wir + ' : ' + sie + '.'; textT = 3;
+      setTimeout(() => { loesche(); ui.ebeneZu(); ok({ gute, abgefangen, zuLang, stand: [wir, sie], letzter: def.letzter || T[frei].id }); }, 2200);
+    };
+    cv.addEventListener('pointerdown', (e) => {
+      const r = cv.getBoundingClientRect(), sx = (e.clientX - r.left) * (520 / r.width), sy = (e.clientY - r.top) * (300 / r.height);
+      let best = -1, bd = 40; pos.forEach((p, i) => { const d = Math.hypot(p.x - sx, p.y - sy); if (d < bd) { bd = d; best = i; } });
+      if (best >= 0) wahl(best);
+    });
+    halte((e) => { const n = { Digit1: 0, Digit2: 1, Digit3: 2, Digit4: 3, Digit5: 4 }[e.code]; if (n != null) { e.preventDefault(); e.stopPropagation(); wahl(n); } });
+    let last = performance.now();
+    const draw = (now) => {
+      const dt = Math.min(0.1, (now - last) / 1000); last = now;
+      if (phase === 'spiel' && !warten) { t += dt; if (t > zeitMax()) { phase = 'aus'; zuLang++; text = 'Zu lange gewartet. Ballverlust.'; textT = 1.8; if (Math.random() < 0.5) sie++; weiter(); } }
+      x.fillStyle = '#d9b47c'; x.fillRect(0, 0, 520, 300);
+      x.strokeStyle = 'rgba(255,255,255,.75)'; x.lineWidth = 2; x.strokeRect(10, 10, 500, 280); x.beginPath(); x.moveTo(260, 10); x.lineTo(260, 290); x.stroke(); x.beginPath(); x.arc(260, 150, 40, 0, 7); x.stroke();
+      x.fillStyle = '#fff'; x.fillRect(504, 120, 6, 60);
+      for (const g of gegner) { x.fillStyle = '#7a8090'; x.beginPath(); x.arc(g.x, g.y, 12, 0, 7); x.fill(); }
+      pos.forEach((p, i) => { x.fillStyle = p.farbe; x.beginPath(); x.arc(p.x, p.y, 14, 0, 7); x.fill(); x.fillStyle = '#fff'; x.font = 'bold 12px system-ui'; x.fillText(p.name[0], p.x - 4, p.y + 4);
+        x.fillStyle = '#1b1d26'; x.font = '11px system-ui'; x.fillText((i + 1) + ' ' + p.name, p.x - 18, p.y + 28); });
+      x.fillStyle = '#3f78b8'; x.beginPath(); x.arc(ich.x, ich.y, 15, 0, 7); x.fill(); x.fillStyle = '#e9734a'; x.beginPath(); x.arc(ich.x + 14, ich.y - 10, 7, 0, 7); x.fill();
+      x.fillStyle = '#fff'; x.font = 'bold 12px system-ui'; x.fillText('Du', ich.x - 8, ich.y + 4);
+      if (phase === 'spiel') { const rest = Math.max(0, 1 - t / zeitMax()); x.fillStyle = rest > 0.35 ? '#3fa66b' : '#d6452f'; x.fillRect(10, 292, 500 * rest, 6); }
+      x.fillStyle = 'rgba(27,29,38,.82)'; x.fillRect(200, 14, 120, 26); x.fillStyle = '#fff'; x.font = 'bold 15px system-ui'; x.fillText('7P2 ' + wir + ' : ' + sie + ' 7P1', 208, 32);
+      if (textT > 0) { textT -= dt; x.font = 'bold 14px system-ui'; const w = Math.min(500, x.measureText(text).width + 16); x.fillStyle = 'rgba(255,255,255,.95)'; x.fillRect(260 - w / 2, 250, w, 26); x.fillStyle = '#1b1d26'; x.fillText(text, 260 - w / 2 + 8, 268, 484); }
+      stand.textContent = 'Gute Pässe: ' + gute + ' · abgefangen: ' + abgefangen;
+      if (!fertig || textT > 0) requestAnimationFrame(draw);
+    };
+    setTimeout(neueRunde, 900); requestAnimationFrame(draw);
   });
 
   return ui;

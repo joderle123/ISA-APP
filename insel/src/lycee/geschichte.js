@@ -37,6 +37,7 @@ export const LEUTE = {
   ben: { hoehe: 1.76, name: 'Ben', modell: 'menschen', stil: 'Beach', haut: '#f1c7a2', haar: '#d9b36a', oben: '#ffd166', unten: '#4f88c8', schuhe: '#ffffff', farbe: '#d9a21b' },
   chiara: { hoehe: 1.63, name: 'Chiara', modell: 'frauen', stil: 'Suit', haut: '#eec09a', haar: '#5a3a24', oben: '#3fa66b', unten: '#2f3a4a', schuhe: '#2b2b2b', farbe: '#3fa66b' },
   yusuf: { hoehe: 1.69, name: 'Yusuf', modell: 'menschen', stil: 'Casual', haut: '#9b6a45', haar: '#1b1410', oben: '#5fa0d0', unten: '#2d3748', schuhe: '#f2f2f2', farbe: '#5fa0d0' },
+  manon: { hoehe: 1.57, name: 'Manon', modell: 'frauen', stil: 'Casual', haut: '#d9a07a', haar: '#2b1d14', oben: '#e07b39', unten: '#3a3f4b', schuhe: '#f2f2f2', farbe: '#e07b39' },
   kremer: { hoehe: 1.65, reich: 3.4, name: 'Frau Kremer', modell: 'frauen', stil: 'Worker', haut: '#f0c9a8', haar: '#a0522d', oben: '#ffffff', unten: '#4a4f5c', schuhe: '#ffffff', farbe: '#2f4f45', erwachsen: true },
   luca: { hoehe: 1.74, kopf: 'cap', kopfFarbe: '#2b2b33', name: 'Luca', modell: 'menschen', stil: 'Casual2', haut: '#e8bf9a', haar: '#2b1d14', oben: '#7b8794', unten: '#3a3f4b', schuhe: '#2b2b2b', farbe: '#7b8794' },
   fahrer: { hoehe: 1.78, kopf: 'cap', kopfFarbe: '#2fb8a8', name: 'Busfahrer', modell: 'menschen', stil: 'Worker', haut: '#d8a982', haar: '#5a5a5a', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#2b2b2b', farbe: '#2fb8a8', erwachsen: true },
@@ -387,7 +388,7 @@ SCHRITTE.push(...SCHRITTE_N1, ...SCHRITTE_N2, ...SCHRITTE_N3, ...SCHRITTE_N4, ..
 Object.assign(GESPRAECHE, GESPRAECHE_N1, GESPRAECHE_N2, GESPRAECHE_N3, GESPRAECHE_N4, GESPRAECHE_N5, GESPRAECHE_N6, GESPRAECHE_N7, GESPRAECHE_N8, GESPRAECHE_N9, GESPRAECHE_N10, GESPRAECHE_NG);
 // Kapitel heißen nach der Geschichte, nicht nach dem Kurs-Modul (Rückmeldung 24.11.: Lernen soll man nicht merken).
 // Welches Modul dazu passt, steht in KAPITEL_MODUL (für die Lehrperson und das Stunden-Fenster).
-Object.assign(KAPITEL, { 1: 'Das Foto', 2: 'Die Liste', 3: 'Von links unten', 4: '8:34', 5: 'Admin', 6: 'Die Sprachnachricht', 7: 'Wer bleibt?', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' });
+Object.assign(KAPITEL, { 1: 'Das Foto', 2: 'Die Liste', 3: 'Unter der Wut', 4: '8:34', 5: 'Admin', 6: 'Die Sprachnachricht', 7: 'Wer bleibt?', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' });
 export const KAPITEL_MODUL = { 1: 'Ankommen', 2: 'Wer bin ich?', 3: 'Gefühle verstehen', 4: 'Gefühle regulieren', 5: 'Meine Gedanken', 6: 'Kommunikation und Grenzen', 7: 'Wenn es schwierig wird', 8: 'Digitale Welt', 9: 'Gesund und stark', 10: 'Abschluss' };
 Object.assign(STAERKEN, {
   humor: STAERKEN.humor || { name: 'Humor', text: 'Du hast die Lage mit einem Witz entspannt.' },
