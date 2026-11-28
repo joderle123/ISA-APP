@@ -44,7 +44,7 @@ function baustein(o) {
   return null;
 }
 
-export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', haut, haar, oben, unten, schuhe, hoehe = 1.72, frisur = null, kopf = null, kopfFarbe = null, brille = null, brilleArt = null, ruecken = null, rueckenFarbe = null } = {}) {
+export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', haut, haar, oben, unten, schuhe, hoehe = 1.72, frisur = null, kopf = null, kopfFarbe = null, brille = null, brilleArt = null, ruecken = null, rueckenFarbe = null, winter = null } = {}) {
   if (!cache.has(modell)) cache.set(modell, new Promise((ok, nein) => new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parse(puffer(DATEN[modell]), '', ok, nein)));
   const gltf = await cache.get(modell);
   const mat = getMaterial(veil);
@@ -59,15 +59,23 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   });
   // nur der gewählte Stil (je Teil anderer Stil möglich: stil = { Head, Body, Legs, Feet })
   const will = (t) => (typeof stil === 'string' ? stil : (stil[t] || stil.alle));
+  // winter = { Body: 'Casual', Legs: 'Punk' }: diese Teile zusätzlich laden (versteckt) – f.saison(true) zieht sie an (Pulli, lange Hose im Schnee)
+  if (winter) {   // nur Teile tauschen, die es im Modell wirklich gibt (sonst bliebe nur der Kopf)
+    const da = new Set(teile.filter((t) => t.bau).map((t) => t.bau.stil + '|' + t.bau.teil));
+    winter = Object.fromEntries(Object.entries(winter).filter(([teil, st]) => da.has(st + '|' + teil) && st !== will(teil)));
+    if (!Object.keys(winter).length) winter = null;
+  }
   for (let i = teile.length - 1; i >= 0; i--) {
     const t = teile[i];
-    if (!t.bau || t.bau.stil !== will(t.bau.teil)) { if (t.mesh.parent) t.mesh.parent.remove(t.mesh); teile.splice(i, 1); }
+    if (t.bau && winter && winter[t.bau.teil] && winter[t.bau.teil] !== will(t.bau.teil) && t.bau.stil === winter[t.bau.teil]) { t.alt = true; continue; }
+    if (!t.bau || t.bau.stil !== will(t.bau.teil)) { if (t.mesh.parent) t.mesh.parent.remove(t.mesh); teile.splice(i, 1); continue; }
+    if (winter && winter[t.bau.teil] && winter[t.bau.teil] !== will(t.bau.teil)) t.sommer = true;
   }
   // Hauptstoff je Teil = Material mit den meisten Eckpunkten (ohne Haut, Haar, Augen)
   const haupt = {};
   for (const t of teile) {
     if (/^Skin/.test(t.name) || HAAR.test(t.name) || t.name === 'Eye') continue;
-    const n = t.mesh.geometry.attributes.position.count, k = t.bau.teil;
+    const n = t.mesh.geometry.attributes.position.count, k = (t.alt ? 'w|' : '') + t.bau.teil;
     if (!haupt[k] || n > haupt[k].n) haupt[k] = { name: t.name, n, mesh: t.mesh };
   }
   const ziel = { Body: oben, Legs: unten, Feet: schuhe };
@@ -78,7 +86,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
     else if (t.name === 'Skin_Darker' && haut) c = new THREE.Color(haut).multiplyScalar(0.82);
     else if (HAAR.test(t.name) && haar) c = new THREE.Color(haar);
     else if (t.name === 'Eye') c = new THREE.Color('#1b1d26');
-    else if (ziel[t.bau.teil] && haupt[t.bau.teil] && haupt[t.bau.teil].mesh === t.mesh) c = new THREE.Color(ziel[t.bau.teil]);
+    else if (ziel[t.bau.teil] && haupt[(t.alt ? 'w|' : '') + t.bau.teil] && haupt[(t.alt ? 'w|' : '') + t.bau.teil].mesh === t.mesh) c = new THREE.Color(ziel[t.bau.teil]);
     else c = t.farbe.clone().multiplyScalar(1.5);
     const col = new Float32Array(n * 3); for (let i = 0; i < n; i++) { col[i * 3] = c.r; col[i * 3 + 1] = c.g; col[i * 3 + 2] = c.b; }
     g.setAttribute('color', new THREE.BufferAttribute(col, 3));
@@ -161,9 +169,11 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
     const sicht = teile.filter((t) => t.mesh.visible && t.mesh.isSkinnedMesh && !Object.keys(t.mesh.geometry.morphAttributes || {}).length);
     const gleich = (a, b) => a.elements.every((v, i) => Math.abs(v - b.elements[i]) < 1e-4 * Math.max(1, Math.abs(v)));
     const gruppen = [];
+    const satz = (t) => (t.alt ? 'w' : t.sommer ? 's' : '');   // Winter-/Sommer-Kleidung je eigenes Netz (umschaltbar)
     for (const t of sicht) {
       let g = null;
       for (const gr of gruppen) {
+        if (satz(gr.leit) !== satz(t)) continue;
         const idx = gr.idx, ib = gr.leit.mesh.skeleton.boneInverses;
         if (t.mesh.skeleton.bones.every((b, k) => idx.has(b) && gleich(ib[idx.get(b)], t.mesh.skeleton.boneInverses[k])) && gleich(gr.leit.mesh.bindMatrix, t.mesh.bindMatrix)) { g = gr; break; }
       }
@@ -191,7 +201,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
       const ein = mergeGeometries(geos); if (!gepackt) geos.forEach((g) => g.dispose());   // gepackt: teilen sich die Puffer mit dem Original
       if (!ein) continue;
       const leit = gr.leit.mesh, m = new THREE.SkinnedMesh(ein, mat);
-      m.name = 'figur'; m.castShadow = true; m.receiveShadow = false;
+      m.name = 'figur'; m.castShadow = true; m.receiveShadow = false; if (satz(gr.leit)) m.userData.saison = satz(gr.leit);
       leit.parent.add(m); m.position.copy(leit.position); m.quaternion.copy(leit.quaternion); m.scale.copy(leit.scale);
       m.bind(leit.skeleton, leit.bindMatrix.clone());
       huelle.updateMatrixWorld(true);
@@ -496,8 +506,13 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
     huelle.getWorldQuaternion(_kq); _rt.set(1, 0, 0).applyQuaternion(_kq);
     drehe(NACKEN, 0.4); drehe(KOPF, NACKEN ? 0.6 : 1);
   };
+  const saison = (w) => {
+    for (const t of teile) { if (t.alt) t.mesh.visible = !!w; else if (t.sommer) t.mesh.visible = !w; }
+    huelle.traverse((o) => { if (o.userData && o.userData.saison) o.visible = o.userData.saison === 'w' ? !!w : !w; });
+  };
+  saison(false);
   return {
-    group: huelle, mixer, namen: Object.keys(aktionen),
+    group: huelle, mixer, namen: Object.keys(aktionen), saison, hatWinter: !!winter,
     spiele(name, { einmal = false, tempo = 1, blende = 0.25 } = {}) {
       const a = aktionen[name] || aktionen.Idle;
       if (!a) return;

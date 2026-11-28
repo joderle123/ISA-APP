@@ -660,3 +660,44 @@ Fehler bekommen eine faire Folge UND eine zweite Chance; überall, wo jemand blo
   - K2: Keine Strafe mehr für Linas Weg: Chiara wird knapp Klassensprecherin.
 - **Deine Woche:** Höchstens sechs Kernzeilen, Skill-Momente zuerst, der Rest unter „Alle Sätze“. Das gilt beim Kind am Kapitelende und in der Lehrer-Ansicht. Die Gesprächsfragen K1–K4 sind kürzer, die Lehrer-Kurzzeile zeigt „Rot-Zeile: Kopf“.
 - **Neutral:** Kein Geschlecht für die Spielfigur („Beschützen, ja?“, „Wer ist das mit dem Kreis?“, „Petze.“). Abzeichen und Entdeckungen springen nicht mehr mitten in Szenen auf.
+
+## 28.11. – Fehler beim Kapitelwechsel behoben · Kapitel 5 „Admin“ neu nach Gesamtkonzept
+- **Kapitelwechsel:** Endete ein Kapitel in einem Gespräch (z. B. Dario am Freitag), sprang das Spiel nach „Weiter: Kapitel …“ einen Schritt zu weit.
+  Die erste Szene des neuen Kapitels fehlte (K2: Dario an der Haltestelle und „Drei Dinge – probiert?“; ebenso vor K5). Auch „Kapitel nochmal
+  spielen“ übersprang die erste Szene. Behoben an einer Stelle (spiel.js: `gespraechDannWeiter`, Zähler `kapEndeNr`). Ein Durchlauf K1 → K2 bestätigt es.
+- **Suchbild:** Nach dem letzten Fund zählen weitere Tipps nicht mehr („4 / 3“ ist weg).
+- **Kapitel 5 „Admin“ (Heft #04 Gedanken):** vor dem Bau als Entwurf von einem Fach-Panel und einem Jugend-Panel geprüft, dann umgebaut.
+  - Werkzeug **📷 Kamera-Check**: Ein Gedanke erscheint als Blase über der Figur. 📷 = Standbild prüfen: zuerst „Echt: …“ (auch wenn es schlimm ist),
+    dann zählen, was eine Kamera sieht. Eine Kamera sieht Verhalten, keine Gedanken. Vorhersagen prüft keine Kamera (Eisbahn: kleiner Schritt, dann schauen).
+  - **Zurückspulen** an der Tür: zwei Durchläufe. Die anderen tun beide Male dasselbe, anders sind nur Blick und Tun (kein Vorwurf an Betroffene).
+  - **Culture générale** (Mme Rantini): Ausschnitt mit Zoom, Taube-Test (Pässe zählen, Gerd läuft durchs Bild), das Foto von 8:34 als zweite Chance
+    (grünes Schild im Glas), Bürgerkunde: Fotos von anderen posten ist nicht erlaubt – auch nicht als Beweis.
+  - **Abstimmung im Chat:** Stimmen mit Namen, die Blase kommt von selbst, der Kamera-Check findet eine ungelesene Nachricht (Ayla) und schaltet
+    „Ayla und ich: Nein.“ frei. Immer vier Knöpfe (Schreiben · Privat · Herr Kuedes · Raus) – Hilfe liegt nie hinter einem Gedanken. Screenshot an
+    Herrn Kuedes beendet die Umfrage vor dem Rauswurf; sonst kommt Mme Tidderich danach, mit einem Satz unter vier Augen. „Beweis posten“: erst die
+    Belohnung, dann „Wer war draußen?“ und zehn Sekunden, um es Herrn Kuedes zu geben. Chiaras Sicht danach.
+  - **Spaß:** Eis-Rennen gegen Yusuf, Gerd als Running Gag (Zählung am Ende), Schneemann mit Jo.
+  - **Freitag:** Busfenster – den alten Satz wegwischen, den eigenen Beweis hinschreiben. Er bleibt privat und taucht in K6/K7/K10 auf.
+  - **Fäden aus K1–K4:** Darios „zu viel“ (Herr Kuedes redet in allen Wegen mit ihm), Chiaras Versprechen, Mme Lenning „wir zwei“, Noah unter Verdacht,
+    Jos leeres Blatt, Kenan am Glas, Yusufs Bruder, Manon.
+  - **Lehrer-Ansicht:** Kernzeilen „selbst geprüft“, Hilfe geholt, Tablet, Abstimmung, Folge, Satz; Hinweis ⚠, wenn die Umfrage über das Kind selbst ging.
+  - Spielstände im alten Kapitel 5 beginnen das neue Kapitel 5 von vorn.
+- **Nach dem ersten Testlauf K5:**
+  - Chat-Knöpfe hatten kein Symbol („undefined“).
+  - „Noah war’s nicht.“, „Nein“ drücken und „Ich glaub dir.“ zählen jetzt als eigene Ergebnisse, nicht mehr als „Abgewartet“.
+  - Die Zahlen aus dem Kamera-Check stehen echt in Chronik und Rückblick.
+  - Hilfe-Nummer: Ein Erwachsener sagt sie im Lesesaal, statt eines Toasts am Freitag.
+  - Belehrende Sätze gestrichen. Lehrpersonen handeln: „Ich hab die Umfrage gesehen. Sie ist jetzt zu.“ – „Den Account hab ich gemeldet.“
+  - Ende passt zu K6: Dario schreibt „montag zeig ich dir was. eine sprachnachricht. von jo.“ (7 Sekunden in K6).
+  - Neu: Ben fragt kurz vor der Umfrage privat. Wer ehrlich antwortet – auch „Weiß ich nicht.“ –, ändert Bens Stimme. Damit funktionieren die Ben-Rückgriffe in K6, K7 und K10 wieder.
+  - Eis-Rennen: Yusuf ist etwas schneller (12 s pro Runde).
+- **K5 Runde 1 mit Fach- und Jugend-Panel** (Arbeitslisten im Notizordner):
+  - **Gestrichen:** die Culture-générale-Stunde („Unterricht im Spiel über Unterricht“), Milas Tablet (fast das gestrichene Sortieren) und die Satzwahl im Busfenster.
+  - **Neu „Unter dem Tisch“:** Jos Ausschnitt „beweis 👀“ → ganzes Foto → Suchbild unter Zeitdruck. Mme Rantini kommt durch die Reihe: Weitersuchen kostet Milas Handy bis zur Pause, Mila spricht es am Mittwoch an.
+  - **Neu „Stille Post“:** Vier Screenshots, und man sucht, wo zuerst etwas dazukommt. Lous private Frage hat eine Folge im Chat („hab’s nur gehört“ oder „{name} sagt das auch“).
+  - **Neu „Hinter dem Beschlag“:** Klar wird nur, was man selbst angeschaut hat. Danach geht das Foto an Dario, an Noah oder bleibt privat. Zum Schluss das kleine 📷 ohne Hilfe.
+  - **Folgen:** Tür-Gedanke, Hof, Schneemann, Dario schreiben und die Eisbahn haben jetzt Folgen. Das Lob auf der Eisbahn kommt erst nach dem Rennen, die Vorhersage wird danach geprüft.
+  - **Halt:** Wer selbst Ziel ist, bekommt einen Satz von Erwachsenen, und die Erwachsenen kommen vor Chiaras Sicht. SePAS wird genannt.
+  - **Chronik:** „Von selbst geprüft“ zählt nur Freiwilliges. Die Gesprächsfrage ist kürzer und enthält Chiaras Satz.
+  - **Fehler:** Systemzeilen im Chat zeigten „undefined“. Das Standbild an der Haltestelle war grau, weil die Kamera im Kopf der Figur stand.
+- **Winterkleidung (K4–K6):** Figuren mit Top, Shorts oder bauchfreiem Oberteil tragen im Schnee Teile aus einem langen Stil. Der Kopf bleibt gleich. Geprüft mit einer Galerie aller Stile (Männer: Beach, Casual-Shorts, Punk; Frauen: Adventurer, Formal, Punk). Getauscht wird nur, was es im Modell gibt. Winter- und Sommerteile sind eigene Netze, die sich umschalten lassen.

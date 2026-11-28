@@ -55,36 +55,51 @@ export function mechaniken(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
   // Rückgabe: { gefunden: [id], falsch: [id], daneben: n, zeitUm, alle, sek }
   ui.suchbild = (def) => new Promise((ok) => {
     const ziele = (def.ziele || []).filter((z) => z && z.x != null && z.x >= -0.02 && z.x <= 1.02 && z.y >= -0.02 && z.y <= 1.02);
-    const richtige = ziele.filter((z) => z.richtig !== false), finde = Math.min(def.finde || richtige.length, richtige.length);
+    // Kapitel 5 (Kamera-Check): def.echt = was wirklich ist (zuerst, auch wenn es schlimm ist) · Ziele mit bonus: true (Gerd) zählen nicht mit
+    // · def.wackel: auf Rot wackelt das Bild – erst ★ atmen, dann wird es scharf · def.ergebnis: Satz am Ende, {n} = Anzahl gefunden (Zahl knallt rein)
+    const richtige = ziele.filter((z) => z.richtig !== false && !z.bonus), finde = Math.min(def.finde || richtige.length, richtige.length), bonusGef = [];
     const k = ui.ebeneAuf('szene', '<div class="sz mv-such"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Schnappschuss') + '</span><b>📸 Standbild</b></div>' +
-      '<div class="mv-frage">' + esc(ersetze(def.frage)) + (finde > 1 ? ' <small>(' + finde + ')</small>' : '') + '</div><div class="mv-zeit"><i></i></div>' +
+      (def.echt ? '<div class="mv-echt">📷 Echt: ' + esc(ersetze(def.echt)) + '</div>' : '') + '<div class="mv-frage">' + esc(ersetze(def.frage)) + (finde > 1 ? ' <small>(' + finde + ')</small>' : '') + '</div><div class="mv-zeit"><i></i></div>' +
       '<div class="mv-bild"><img alt="Standbild aus dem Spiel" src="' + (def.bildUrl || '') + '" draggable="false">' + (def.streifen ? '<i class="ly-hk-streifen"></i>' : '') + (def.gruen ? '<i class="ly-hk-gruen"></i>' : '') +
-        (def.kreis ? '<i class="ly-hk-kreis" style="left:' + (+(def.kreis.x) || 50) + '%;top:' + (+(def.kreis.y) || 50) + '%;--r:' + (+(def.kreis.r) || 15) + '%"></i>' : '') + '<div class="mv-marken"></div><div class="mv-blitz"></div></div>' +
+        (def.kreis ? '<i class="ly-hk-kreis" style="left:' + (+(def.kreis.x) || 50) + '%;top:' + (+(def.kreis.y) || 50) + '%;--r:' + (+(def.kreis.r) || 15) + '%"></i>' : '') + '<div class="mv-marken"></div><div class="mv-blitz"></div>' + (def.wackel ? '<button type="button" class="mv-wackel-knopf">★ Erst atmen</button>' : '') + '</div>' +
       '<div class="mv-unten"><span class="mv-stand">0 / ' + finde + '</span><span class="mv-tipp">Tipp aufs Bild.</span></div><div class="sz-karten mv-knopf"></div></div>');
     const bild = k.querySelector('.mv-bild'), marken = k.querySelector('.mv-marken'), stand = k.querySelector('.mv-stand'), tipp = k.querySelector('.mv-tipp');
-    bild.dataset.ziele = JSON.stringify(ziele.map((z) => [z.id, +z.x.toFixed(3), +z.y.toFixed(3), z.richtig !== false]));   // für den Testlauf
+    bild.dataset.ziele = JSON.stringify(ziele.map((z) => [z.id, +z.x.toFixed(3), +z.y.toFixed(3), z.richtig !== false && !z.bonus, !!z.bonus]));   // für den Testlauf
     const gefunden = [], falsch = []; let daneben = 0, sperre = 0, aus = false; const t0 = performance.now();
     const marke = (z, art, txt) => { marken.insertAdjacentHTML('beforeend', '<span class="mv-marke ' + art + '" style="left:' + (z.x * 100) + '%;top:' + (z.y * 100) + '%;--r:' + ((z.r || 0.075) * 100) + '%">' + (txt ? '<em>' + esc(ersetze(txt)) + '</em>' : '') + '</span>'); };
-    const zb = zeitBalken(k.querySelector('.mv-zeit i'), (def.zeit || 12) * zeitFaktor(), () => fertig(true));
+    let zb = { stopp() {}, rest: () => 0 };
+    const zeitStart = () => { zb = zeitBalken(k.querySelector('.mv-zeit i'), (def.zeit || 12) * zeitFaktor(), () => fertig(true)); };
+    if (def.wackel) {   // Kopf-Werkzeug auf Rot: erst der Körper (★), dann der Kopf – wie im Heft #03
+      bild.classList.add('wackelt'); tipp.textContent = 'Zu wackelig. Erst atmen.';
+      const wk = k.querySelector('.mv-wackel-knopf');
+      wk.onclick = async (e) => { e.stopPropagation(); if (wk.disabled) return; wk.disabled = true;
+        for (const t of ['Ein …', 'und aus …', 'aus …', 'aus.']) { wk.textContent = t; await new Promise((r) => setTimeout(r, 900)); }
+        wk.remove(); bild.classList.remove('wackelt'); tipp.textContent = 'Tipp aufs Bild.'; zeitStart(); };
+    } else zeitStart();
     const fertig = (zeitUm) => {
       if (aus) return; aus = true; zb.stopp(); bild.classList.add('aus');
       for (const z of richtige) if (!gefunden.includes(z.id)) marke(z, 'verpasst', z.t);
       const n = gefunden.length;
-      tipp.textContent = n >= finde ? (def.gut || 'Alles gefunden.') : zeitUm ? 'Zeit um. ' + (def.verpasst || 'Gelb: das hast du nicht gesehen.') : '';
+      const echteZahl = def.zahl != null ? def.zahl : n;
+      tipp.textContent = def.ergebnis ? ersetze(String(def.ergebnis).replace('{n}', echteZahl)) + (def.zahl != null && n < def.zahl ? ' Gelb: die hast du nicht gesehen.' : '') : n >= finde ? (def.gut || 'Alles gefunden.') : zeitUm ? 'Zeit um. ' + (def.verpasst || 'Gelb: das hast du nicht gesehen.') : '';
       stand.textContent = n + ' / ' + finde;
+      if (def.ergebnis) { bild.insertAdjacentHTML('beforeend', '<div class="mv-zahl">' + echteZahl + '</div>'); ton('pling'); }
       const kn = k.querySelector('.mv-knopf');
       kn.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
-      let zuA = false; const zu = () => { if (zuA) return; zuA = true; loesche(); ui.ebeneZu(); ok({ gefunden, falsch, daneben, zeitUm: !!zeitUm, alle: n >= finde, sek: Math.round((performance.now() - t0) / 100) / 10 }); };
+      let zuA = false; const zu = () => { if (zuA) return; zuA = true; loesche(); ui.ebeneZu(); ok({ gefunden, falsch, daneben, zeitUm: !!zeitUm, alle: n >= finde, bonus: bonusGef, sek: Math.round((performance.now() - t0) / 100) / 10 }); };
       kn.querySelector('[data-a="w"]').onclick = zu;
       setTimeout(() => { if (!zuA) taste(['KeyE', 'Enter'], zu); }, 400);
     };
     bild.addEventListener('pointerdown', (e) => {
-      if (aus) return; e.preventDefault();
+      if (aus || gefunden.length >= finde || bild.classList.contains('wackelt')) return; e.preventDefault();   // alles gefunden: weitere Tipps zählen nicht mehr (sonst „4 / 3“)
       const r = bild.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height, asp = r.height / r.width;
       if (performance.now() < sperre) { tipp.textContent = 'Nicht raten. Schau hin.'; return; }
       let best = null, bd = 1e9;
       for (const z of ziele) { const d = Math.hypot(z.x - x, (z.y - y) * asp); if (d < (z.r || 0.075) * 1.15 && d < bd) { best = z; bd = d; } }
-      if (best && best.richtig !== false) {
+      if (best && best.bonus) {   // Gerd: zählt nicht zum Auftrag, aber wer ihn sieht, sieht ihn
+        if (bonusGef.includes(best.id)) return;
+        bonusGef.push(best.id); marke(best, 'gerd', best.t || '🐦 Gerd!'); ton('klatsch'); tipp.textContent = '🐦 ' + ersetze(best.kurz || 'Gerd!');
+      } else if (best && best.richtig !== false) {
         if (gefunden.includes(best.id)) return;
         gefunden.push(best.id); marke(best, 'ja', best.t); ton('pling'); stand.textContent = gefunden.length + ' / ' + finde; tipp.textContent = '✓ ' + ersetze(best.kurz || best.t || 'Gefunden.');
         if (gefunden.length >= finde) setTimeout(() => fertig(false), 700);
@@ -128,9 +143,12 @@ export function mechaniken(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
   // ---------- Währenddessen ----------
   // def: { bildUrl, ort, t, ms } → Promise
   ui.schnitt = (def) => new Promise((ok) => {
-    const k = ui.ebeneAuf('schnitt', '<div class="mv-schnitt">' + (def.bildUrl ? '<img alt="' + esc(def.t || def.ort) + '" src="' + def.bildUrl + '">' : '') +
-      '<div class="mv-sch-ort">Währenddessen · ' + esc(def.ort || '') + '</div>' + (def.t ? '<div class="mv-sch-text">' + esc(ersetze(def.t)) + '</div>' : '') + '</div>');
+    // def.kopf: eigene Überschrift statt „Währenddessen“ (Kapitel 5: „📷 Ausschnitt“) · def.zoom: { x, y, s } – erst ganz nah, dann zoomt das Bild auf
+    const k = ui.ebeneAuf('schnitt', '<div class="mv-schnitt' + (def.zoom ? ' mv-zoom' : '') + '">' + (def.bildUrl ? '<img alt="' + esc(def.t || def.ort) + '" src="' + def.bildUrl + '"' +
+      (def.zoom ? ' style="transform-origin:' + (def.zoom.x * 100) + '% ' + (def.zoom.y * 100) + '%;transform:scale(' + (def.zoom.s || 3) + ')"' : '') + '>' : '') +
+      '<div class="mv-sch-ort">' + (def.kopf != null ? esc(ersetze(def.kopf)) : 'Währenddessen · ' + esc(def.ort || '')) + '</div>' + (def.t ? '<div class="mv-sch-text">' + esc(ersetze(def.t)) + '</div>' : '') + '</div>');
     let aus = false; const ende = () => { if (aus) return; aus = true; loesche(); ui.ebeneZu(); ok(); };
+    if (def.zoom) { const im = k.querySelector('img'); if (im) setTimeout(() => { im.style.transition = 'transform 1.6s ease-in-out'; im.style.transform = 'scale(1)'; const tx = k.querySelector('.mv-sch-text'); if (tx && def.tWeit) tx.textContent = ersetze(def.tWeit); }, def.zoom.nach || 2600); }
     setTimeout(ende, def.ms || 4300);
     setTimeout(() => { if (aus) return; k.onclick = ende; taste(['KeyE', 'Enter', 'Space'], ende); }, 900);
   });

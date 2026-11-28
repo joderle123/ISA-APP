@@ -72,6 +72,7 @@ import { createSteuerung } from './steuerung.js';
 import { createUI } from './ui.js';
 import { situationen } from './situation.js';
 import { mechaniken } from './mechanik.js';
+import { mechanikenK5 } from './mechanik5.js';
 import { FACHLEHRER, PERSONAL } from './story/personal.js';
 import { FR_LEKTIONEN } from './story/fachstunden.js';
 if (!(LEKTIONEN.francais || []).length) LEKTIONEN.francais = FR_LEKTIONEN;   // Französisch fürs Spiel (handgeschrieben, story/fachstunden.js)
@@ -80,7 +81,7 @@ import { tunN1, RUECKBLICK_N1 } from './story/kapitel1.js';
 import { fotoSpeichern, fotosLaden, fotosLoeschen } from './fotoablage.js';
 import { tunN3, ORTE_N3, RUECKBLICK_N3 } from './story/kapitel3.js';
 import { tunN4, ORTE_N4, RUECKBLICK_N4 } from './story/kapitel4.js';
-import { tunN5 } from './story/kapitel5.js';
+import { tunN5, ORTE_N5, RUECKBLICK_N5 } from './story/kapitel5.js';
 import { tunN6 } from './story/kapitel6.js';
 import { tunN7 } from './story/kapitel7.js';
 import { tunN8 } from './story/kapitel8.js';
@@ -210,7 +211,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const welt = baueWelt({ material, materialInnen, materialLaub });
   // Nächster echter Sitz (Stuhl, Bank, Kübelrand): Figuren sitzen AUF etwas – mit dessen Höhe und Richtung
   const sitzSuche = (x, z, r = 1.3) => { let best = null, bd = r; for (const q of welt.sitze || []) { const d = Math.hypot(q.x - x, q.z - z); if (d < bd) { bd = d; best = q; } } return best; };
-  Object.assign(welt.orte, ORTE2, ORTE3, ORTE4, ORTE6, ORTE_N3, ORTE_UMLAND, ORTE_N2, ORTE_N4);
+  Object.assign(welt.orte, ORTE2, ORTE3, ORTE4, ORTE6, ORTE_N3, ORTE_UMLAND, ORTE_N2, ORTE_N4, ORTE_N5);
   let paket = ladePaket();   // Aufgaben der Lehrperson (Phase 2) oder Grundaufgaben
   scene.add(welt.gruppe);
   const sky = createSky({ scene, renderer: rr.renderer, audio, quality: { ...q, shadowSize: Math.min(q.shadowSize || 0, 2048), shadowSpan: 28 }, events });
@@ -231,8 +232,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
 
   await schritt(0.6, 'Die Klasse kommt …');
   const ui = createUI({ root, input, speech });
-  situationen(ui, { name: () => 'Du', ersetze: (t) => ersetze(t), speech });
+  situationen(ui, { name: () => 'Du', ersetze: (t) => ersetze(t), speech, ton: (a) => ton(a) });
   mechaniken(ui, { ersetze: (t) => ersetze(t), ton: (a) => ton(a) });
+  mechanikenK5(ui, { ersetze: (t) => ersetze(t), ton: (a) => ton(a) });
   installSkillsRaum(ui, { vorlesen: (t) => { try { if (speech && speech.available) speech.speak(t, { interrupt: true }); } catch (e) { /* keine Stimme */ } }, ton: (a) => { try { audio.play(a === 'pling' ? 'chime' : 'click'); } catch (e) { /* Ton */ } } });
   // Ton und Vorlesen für alle Situations-Spiele an einer Stelle: Klick auf Karten, Sprechblasen, Stempel, neue Karten
   (() => {
@@ -288,11 +290,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   let S = lies();
   // Neue Geschichte (v2): alte Spielstände starten beim neuen Kapitel 1 – Freundschaften, Jetons, Dinge, Aussehen bleiben
   const neuStart = (x) => {
+    // Kapitel 5 wurde neu gebaut (Gesamtkonzept): Wer mitten im alten Kapitel 5 stand, beginnt es neu – die alten Szenen gibt es nicht mehr
+    if (x && !x.k5v2) { if (/^k5_/.test(x.schrittId || '')) { x.schrittId = 'k5_morgen'; x.fertig = false; } x.k5v2 = true; }
     // Spielstand merkt sich den Schritt auch beim Namen: kommen Schritte dazu oder fallen weg, stimmt die Nummer trotzdem
     if (x && x.schrittId) { const j = SCHRITTE.findIndex((s) => s.id === x.schrittId); if (j >= 0) x.schritt = j; }
     if (x && (x.v || 1) < 2) { Object.assign(x, { v: 2, schritt: 0, fertig: false, kapitelFertig: 0, bingo: {}, gefragt: [], szenen: {} }); } return x; };
   neuStart(S);
-  const neuerStand = (name, figur) => ({ v: 2, name, figur, schritt: 0, herz: {}, staerken: {}, merke: {}, entdeckt: [], stundenplan: false, bingo: {}, gefragt: [], fertig: false });
+  const neuerStand = (name, figur) => ({ v: 2, k5v2: true, name, figur, schritt: 0, herz: {}, staerken: {}, merke: {}, entdeckt: [], stundenplan: false, bingo: {}, gefragt: [], fertig: false });
   // Schul-Pass: neue Abzeichen beim Speichern prüfen (Toast + Ton, nie mehr als drei auf einmal anzeigen)
   // Abzeichen nie mitten in einer Szene (nicht nach dem Mitlachen, nicht nach einem Verdacht): erst, wenn das Gespräch vorbei ist
   let passSpaeter = 0, ruheBis = 0;   // ruheBis: nach einem Szenenwechsel ein paar Sekunden keine Abzeichen/Entdeckungen (Jugend-Kritik: mitten im Streit)
@@ -323,7 +327,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   async function person(id) {
     if (leute[id]) return leute[id];
     const def = LEUTE[id];
-    const f = await ladePerson(veil, def);
+    const f = await ladePerson(veil, mitWinter(def));
+    if (f.saison && winterAn) f.saison(true);
     const schild = namensschild(def.name, def.farbe); f.group.add(schild); f.group.add(fussSchatten());
     scene.add(f.group);
     zubehoer(f, id);
@@ -355,6 +360,26 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     feste = Object.values(leute).filter((p) => p.f.group.visible).map((p) => ({ x: p.pos.x, z: p.pos.z, r: 0.3 })).concat(klassenBankHind());
     steuerung.hindernisse = feste.concat(statisten.map((x) => x.h));
   }
+
+  // ---------- Winterkleidung (Jugend-Kritik: „Top und kurze Hose im Schnee“) ----------
+  // Je Modell und Stil: welche Teile im Winter (Kap. 4–6) aus einem anderen Stil kommen. Der Kopf bleibt – man erkennt alle wieder.
+  // Geprüft mit einer Galerie aller Stile (28.11.): Beach = Top, Shorts, barfuß · Casual (Männer) = Shorts · Punk = ärmellos ·
+  // Frauen: Adventurer = Shorts, Formal = Top und Rock, Punk = bauchfrei.
+  const WINTER_STIL = {
+    menschen: { Beach: { Body: 'Casual2', Legs: 'Casual2', Feet: 'Casual2' }, Casual: { Legs: 'Casual2' }, Punk: { Body: 'Casual2' } },
+    frauen: { Adventurer: { Legs: 'Casual' }, Formal: { Body: 'Suit', Legs: 'Suit', Feet: 'Suit' }, Punk: { Body: 'Casual' } },
+  };
+  const mitWinter = (d) => {
+    const st = typeof d.stil === 'string' ? d.stil : null, w = st && (WINTER_STIL[d.modell || 'menschen'] || {})[st];
+    return w ? { ...d, winter: w } : d;
+  };
+  let winterAn = false;
+  const winterKleidung = (an) => {
+    winterAn = !!an;
+    for (const p of Object.values(leute)) if (p && p.f && p.f.saison) p.f.saison(winterAn);
+    for (const x of statisten) if (x.f && x.f.saison) x.f.saison(winterAn);
+    if (spieler && spieler.saison) spieler.saison(winterAn);
+  };
 
   // ---------- Statisten: andere Schülerinnen und Schüler, die über Hof und Gang laufen (nur Kulisse) ----------
   let feste = [];
@@ -443,7 +468,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   let brett = null;
   async function statistenLaden() {
     for (const d of STATISTEN) {
-      const f = await ladePerson(veil, d);
+      const f = await ladePerson(veil, mitWinter(d));
+      if (f.saison && winterAn) f.saison(true);
       f.group.add(fussSchatten()); scene.add(f.group);
       if (d.stamm) { const sg = STAMM.find((q) => q.id === d.stamm); if (sg) f.group.add(namensschild(sg.name, sg.farbe)); }
       if (d.sitPerson && !SIT_LEUTE[d.sitPerson].stumm) { const sl = SIT_LEUTE[d.sitPerson]; f.group.add(namensschild(sl.name, sl.farbe)); }
@@ -1049,7 +1075,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   async function spielerFigur(i) {
     tiere.kabelSync((S && S.merke && S.merke.kabel) || []);
     if (spieler) { scene.remove(spieler.group); }
-    spieler = await ladePerson(veil, { ...(FIGUREN[i] || FIGUREN[0]), ...((S && S.aussehen) || {}), ...garderobeLook() });   // Aussehen aus dem Spind-Spiegel, darüber Belohnungen aus der Garderobe
+    spieler = await ladePerson(veil, mitWinter({ ...(FIGUREN[i] || FIGUREN[0]), ...((S && S.aussehen) || {}), ...garderobeLook() }));
+    if (spieler.saison && winterAn) spieler.saison(true);   // Aussehen aus dem Spind-Spiegel, darüber Belohnungen aus der Garderobe
     spieler.group.add(fussSchatten()); scene.add(spieler.group); steuerung.figur = spieler; steuerung.sitzSuche = sitzSuche;
     spieler.spiele('Idle');
     anhaengerDran(); tierDran(); spurDran();
@@ -1279,6 +1306,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
 
   // ---------- Gespräche ----------
+  // kapEndeNr: zählt Kapitelenden. Endet ein Kapitel MITTEN in einem Gespräch (z. B. Dario am Freitag), startet danach schon das neue
+  // Kapitel – wer nach dem Gespräch noch „naechster()“ ruft, darf dann nicht ein zweites Mal weiterschalten (sonst fehlt die erste Szene).
+  let kapEndeNr = 0;
   let imGespraech = false, sperreBis = 0, danach = null;   // nach einem Gespräch kurz kein neues (Echtzeit, auch auf langsamen Geräten)
   const gesperrt = () => performance.now() < sperreBis;
   const TOUCH = (() => { try { return matchMedia('(pointer: coarse)').matches; } catch (e) { return false; } })();   // iPad: keine Tasten-Tipps
@@ -1919,7 +1949,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     },
     milaAbschied: () => ((S.herz.mila || 0) >= 2 ? GESPRAECHE.milaAbschied_ja : []),
     kapitelEnde: async () => {
-      busFaehrt = -1; ui.dialogZu();   // der letzte Satz bleibt nicht hinter dem Kapitelende stehen
+      kapEndeNr++; busFaehrt = -1; ui.dialogZu();   // der letzte Satz bleibt nicht hinter dem Kapitelende stehen
       await new Promise((r) => setTimeout(r, 1200));
       const kap = SCHRITTE[S.schritt].kap, weiterIdx = SCHRITTE.some((x) => x.kap === kap + 1) ? kapStart(kap + 1) : -1, startIdx = kapStart(kap);
       S.kapitelFertig = Math.max(S.kapitelFertig || 0, kap);
@@ -1933,7 +1963,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '',
         // Haken fürs nächste Kapitel (kein Spoiler, nur die Frage)
         frage: (() => { const sit = Object.entries(SZENEN).find(([id]) => S.merke['sitKap_' + id] === kap && S.merke['sit_' + id]); return sit ? (REFLEXION[kap] ? REFLEXION[kap] + ' · ' : '') + 'Diese Woche: ' + sit[1].titel[1] + '. ' + sit[1].frage : REFLEXION[kap] || ''; })(), vorschau: weiterIdx >= 0 ? ({ 1: 'Eine Liste. Fünf Plätze. Wer steht drauf?', 2: 'Eine Neue. Ein Turnier. Und einer, der dauernd zur Uhr schaut.',
-          3: 'Mittwoch, 8:34. Ein Test. Ein Blitz an der Tür.', 4: 'Alle glauben, du bist der Account. Eine prüft das.',
+          3: 'Mittwoch, 8:34. Ein Test. Ein Blitz an der Tür.', 4: 'Nach den Ferien: eine Umfrage. Dein Name steht drin.',
           5: 'Eine Sprachnachricht. Sieben Sekunden. Jos Stimme.', 6: 'Fünf Monate später. Wer ist geblieben?',
           7: 'Ein Video von Mme Tidderich. Ihre Stimme. Ihr Gesicht.', 8: 'Ein Armband. Wie auf der Zeichnung.',
           9: 'Sommerfest. Freitag. 15:00. Alle Namen.' })[kap] || '' : '' });
@@ -2241,7 +2271,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (neu.length) { zeigeBingo(); ui.toast('✓ Bingo-Feld: ' + BINGO.filter((b) => neu.includes(b.id)).map((b) => b.text).join(', ')); }
     else if (g.felder.length && id !== 'noah') ui.toast('Diese Felder hast du schon.');
     sichern();
-    if (BINGO.every((b) => S.bingo[b.id])) { ui.bingo(null); await gespraech(GESPRAECHE.bingoFertig); naechster(); }
+    if (BINGO.every((b) => S.bingo[b.id])) { ui.bingo(null); await gespraechDannWeiter(GESPRAECHE.bingoFertig); }
   }
 
   // ---------- Schritte ----------
@@ -2289,7 +2319,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (Array.isArray(def.runden)) def = { ...def, runden: def.runden.map((r) => { r = bildFeld(r); return r && r.detail ? { ...r, detail: bildFeld(r.detail) } : r; }) };
     if (Array.isArray(def.orte)) def = { ...def, orte: def.orte.map(bildFeld) };
     // Suchbild: Foto aus der Welt + Ziele an Figuren/Punkten → Bildkoordinaten
-    if (def.foto && Array.isArray(def.ziele)) {
+    // def.gespeichertZuerst: ein Foto aus einem früheren Kapitel nehmen (bildId), nur wenn es fehlt, neu aus der Welt (foto)
+    if (def.foto && Array.isArray(def.ziele) && !(def.gespeichertZuerst && def.bildUrl)) {
       const pk = {};
       for (const z of def.ziele) {
         if (z.x != null) continue;
@@ -2386,7 +2417,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   const FOTOS = {};   // Fotos aus der Welt (dataURL), für später: Handy-Karte, Rückblick
   fotosLaden(platz).then((f) => { for (const [k, v] of Object.entries(f)) if (!FOTOS[k]) FOTOS[k] = v; });   // für Lehrer-Ansicht schon vor dem Weiterspielen
-  const RUECKBLICK = { 1: RUECKBLICK_N1, 2: RUECKBLICK_N2, 3: RUECKBLICK_N3, 4: RUECKBLICK_N4 };   // Rückblick in Bildern je Kapitel: (merke) => [{ id, titel, text }]
+  const RUECKBLICK = { 1: RUECKBLICK_N1, 2: RUECKBLICK_N2, 3: RUECKBLICK_N3, 4: RUECKBLICK_N4, 5: RUECKBLICK_N5 };   // Rückblick in Bildern je Kapitel: (merke) => [{ id, titel, text }]
   const fotoHolen = (id) => FOTOS[id] || (() => { try { return sessionStorage.getItem('lycee.foto.' + id) || ''; } catch (e) { return ''; } })();
   const bemerkt = (k) => [].concat(k).every((x) => !!(S.bemerkt || {})[x]);
   const fotoMerken = (id, url) => { if (!url) return; FOTOS[id] = url; try { sessionStorage.setItem('lycee.foto.' + id, url); } catch (e) { /* voll */ } fotoSpeichern(platz, id, url); };   // auch dauerhaft (IndexedDB, nur auf dem Gerät)
@@ -2444,7 +2475,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       return url;
     } catch (e) { return ''; }
   }
-  const SZ_UI = { rutsche: 'rutsche', hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich', werkzeug: 'werkzeugKarte', werkbank: 'werkbank', steckbrief: 'steckbrief', weg: 'wegweiser', aufstellung: 'aufstellung', pass: 'passSpiel', schneeball: 'schneeball', voraus: 'vorausblende', suchbild: 'suchbild', orte: 'ortWahl', stoerung: 'stoerung', schnitt: 'schnitt', verdacht: 'verdachtWand' };
+  const SZ_UI = { rutsche: 'rutsche', hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich', werkzeug: 'werkzeugKarte', werkbank: 'werkbank', steckbrief: 'steckbrief', weg: 'wegweiser', aufstellung: 'aufstellung', pass: 'passSpiel', schneeball: 'schneeball', voraus: 'vorausblende', suchbild: 'suchbild', orte: 'ortWahl', stoerung: 'stoerung', schnitt: 'schnitt', verdacht: 'verdachtWand', blase: 'kopfBlase', taube: 'taubeTest', eisrennen: 'eisRennen', fenster: 'busfenster' };
   // Prüfungen gegen Durchklicken (nur Skill-Szenen). Rückgabe null = gemacht; sonst { sy, t, tipp } für „Noch mal“.
   const PRUEF = {
     atem: (r) => (r.gut < 2 ? { sy: '🫁', t: 'Das war noch kein ruhiges Atmen.', tipp: 'Halte, bis der Kreis groß ist (zwei, drei Sekunden). Dann loslassen und lange ausatmen – länger als das Einatmen. Erst dann wieder halten.' } : null),
@@ -2586,12 +2617,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Reflexionsfrage am Kapitelende (eine offene Frage, kein richtig/falsch – auch als Einstieg fürs Klassengespräch)
   const REFLEXION = { 1: 'Was hat dir am ersten Tag geholfen, dich ein bisschen sicherer zu fühlen?', 2: 'Was kannst du gut – auch wenn es keiner sieht?',
     3: 'Was war unter Yusufs Wut? Und unter deiner?', 4: 'Was hilft dir, wenn du „bei Rot“ bist?',
-    5: 'Welcher Satz über dich selbst ist laut – und stimmt er wirklich?', 6: 'Wann hast du zuletzt klar Stopp gesagt? Wie war das?',
+    5: 'Welcher Gedanke war laut – und was hätte eine Kamera gesehen?', 6: 'Wann hast du zuletzt klar Stopp gesagt? Wie war das?',
     7: 'Was hättest du gebraucht, um in der Kantine aufzustehen?', 8: 'Was prüfst du, bevor du etwas teilst?',
     9: 'Was lädt deinen Akku wirklich auf?', 10: 'Was nimmst du aus diesem Jahr mit?' };
   // Inhaltshinweise je Kapitel (wie in großen Spielen): kurz, sachlich, mit Weg nach draußen
   const INHALT = { 1: 'Ein Foto von dir wird gepostet und bewertet.', 2: 'Eine Ranking-Liste, Auslachen im Klassenchat.', 3: 'Jemand rastet aus. Schubsen. Ein fieses Foto im Chat.', 4: 'Test-Stress. Ein fieses Foto. Falscher Verdacht.',
-    5: 'Verdacht gegen dich, Gerüchte, harte Gedanken über sich selbst.', 6: 'Filmen ohne Erlaubnis, Rauswurf aus dem Klassenchat.', 7: 'Gruppendruck, Mobbing in der Kantine.',
+    5: 'Eine Umfrage im Klassenchat: Wer ist der Admin? Verdacht, Rauswurf aus dem Chat.', 6: 'Filmen ohne Erlaubnis, Rauswurf aus dem Klassenchat.', 7: 'Gruppendruck, Mobbing in der Kantine.',
     8: 'Ein KI-Fake-Video über eine Lehrerin.', 9: 'Schlafmangel, ein schweres Geheimnis, ein Freund in einer Krise.', 10: 'Geständnis, Entschuldigungen, Abschied.' };
   // Dauer-Anzeige einer Woche (Anspannung 0–100 in Kapitel 4, Akku in Kapitel 9): gilt bis zum Kapitelende
   function setzeAnzeige(art, wert, plus) {
@@ -2648,6 +2679,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (st.fertig && st.fertig.nachStart && S.schritt === i) { S.fertig = true; setTimeout(() => { if (S.schritt === i) naechster(); }, 60); }
     }
   }
+  // Gespräch, danach der nächste Schritt – außer das Gespräch hat das Kapitel beendet (dann läuft schon das nächste Kapitel)
+  async function gespraechDannWeiter(zeilen) { const k0 = kapEndeNr; await gespraech(zeilen); if (kapEndeNr === k0) await naechster(); }
   async function naechster() {
     let i = S.schritt + 1;
     while (i < SCHRITTE.length && !imHauptweg(SCHRITTE[i])) i++;   // Szenen nur nach bestimmten Entscheidungen; Unterricht nur, wenn eingeschaltet
@@ -2659,12 +2692,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (freiLauf && await freiFaden(id)) return;
     const st = SCHRITTE[S.schritt];
     const f = st && !S.fertig ? st.fertig : null;
-    if (f && f.reden === id) { await gespraech(GESPRAECHE[f.gespraech]); await naechster(); return; }
+    if (f && f.reden === id) { await gespraechDannWeiter(GESPRAECHE[f.gespraech]); return; }
     if (st && st.id === 'bingo' && GESPRAECHE['bingo_' + id]) { await bingoFrage(id); return; }
     if (f && f.eins) {
       if (st.id === 'pause' && id === 'mila' && !S.merke.pauseMila) { S.merke.pauseMila = true; await gespraech(GESPRAECHE.mila); await nachPause(); return; }
       if (st.id === 'pause' && (id === 'ben' || id === 'yusuf') && !S.merke.pauseKorb) { S.merke.pauseKorb = true; await gespraech(GESPRAECHE.freiwurf); await gespraech(GESPRAECHE.freiwurfDanach); await nachPause(); return; }
-      if (st.id === 'tisch' && GESPRAECHE['tisch_' + id] && f.eins.includes(id)) { S.merke.tisch = id; await gespraech(GESPRAECHE['tisch_' + id]); await naechster(); return; }
+      if (st.id === 'tisch' && GESPRAECHE['tisch_' + id] && f.eins.includes(id)) { S.merke.tisch = id; await gespraechDannWeiter(GESPRAECHE['tisch_' + id]); return; }
     }
     // Lernstation: Mme Laurent außerhalb der Geschichte
     if (id === 'laurent') {
@@ -4273,7 +4306,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   function saisonTick(dt) {
     tuer104Tick(dt);
     const kap = (S && SCHRITTE[S.schritt] && SCHRITTE[S.schritt].kap) || 1;
-    if (kap !== dekoKap && req.saison) { dekoKap = kap; try { if (natur && natur.saison) natur.saison((DEKO_KAP.winter || []).includes(kap) ? 'winter' : kap >= 2 && (DEKO_KAP.herbst || []).includes(kap) ? 'herbst' : ''); } catch (e) { /* nur Farbe */ } eisbahnZeigen((DEKO_KAP.winter || []).includes(kap)); try { if (welt.winterBoden) welt.winterBoden((DEKO_KAP.winter || []).includes(kap)); } catch (e) { /* nur Boden */ } laubAn = (DEKO_KAP.herbst || []).includes(kap); fruehlingAn = (DEKO_KAP.fruehling || []).includes(kap); sommerAn = (DEKO_KAP.sommer || []).includes(kap); eiswagen.visible = sommerAn; extraNeu(); if (S && S.merke && S.merke.schneemannBau) schneemann.wiederherstellen(S.merke.schneemannBau); for (const [k, m] of Object.entries(req.saison)) m.visible = (DEKO_KAP[k] || []).includes(kap); try { zeitungNeu(kap); } catch (e) { /* Zeitung */ } }
+    if (kap !== dekoKap && req.saison) { dekoKap = kap; try { if (natur && natur.saison) natur.saison((DEKO_KAP.winter || []).includes(kap) ? 'winter' : kap >= 2 && (DEKO_KAP.herbst || []).includes(kap) ? 'herbst' : ''); } catch (e) { /* nur Farbe */ } eisbahnZeigen((DEKO_KAP.winter || []).includes(kap)); try { winterKleidung((DEKO_KAP.winter || []).includes(kap)); } catch (e) { /* nur Kleidung */ } try { if (welt.winterBoden) welt.winterBoden((DEKO_KAP.winter || []).includes(kap)); } catch (e) { /* nur Boden */ } laubAn = (DEKO_KAP.herbst || []).includes(kap); fruehlingAn = (DEKO_KAP.fruehling || []).includes(kap); sommerAn = (DEKO_KAP.sommer || []).includes(kap); eiswagen.visible = sommerAn; extraNeu(); if (S && S.merke && S.merke.schneemannBau) schneemann.wiederherstellen(S.merke.schneemannBau); for (const [k, m] of Object.entries(req.saison)) m.visible = (DEKO_KAP[k] || []).includes(kap); try { zeitungNeu(kap); } catch (e) { /* Zeitung */ } }
     const art = kap === 2 || kap === 3 ? 'laub' : kap >= 4 && kap <= 6 ? 'schnee' : null, A = art && SAISON[art];
     const draussen = !welt.raumBei(steuerung.pos.x, steuerung.pos.z);
     const ziel = laeuft && A && draussen && !(sky.night > 0.5) && regenJetzt < 0.1 ? 0.9 : 0;
@@ -4603,7 +4636,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (probe) probeSchritt(dt, p);
     if (!imGespraech && !startet && !steuerung.brett && st && !S.fertig && st.fertig.ort) {
       const o = welt.orte[st.fertig.ort];
-      if (Math.hypot(o.x - p.x, o.z - p.z) < st.fertig.r) { const g = GESPRAECHE[st.fertig.gespraech]; gespraech(g).then(() => { if (g.some((z) => z && z.tu === 'kapitelEnde')) return; naechster(); }); }
+      if (Math.hypot(o.x - p.x, o.z - p.z) < st.fertig.r) { gespraechDannWeiter(GESPRAECHE[st.fertig.gespraech]); }
     }
     // Entdeckungen
     geheimT -= dt;
@@ -4673,6 +4706,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   window.LYCEE = {
     get zustand() { return S; }, get schritt() { return SCHRITTE[S ? S.schritt : 0].id; }, get imGespraech() { return imGespraech; },
     welt, steuerung, leute, sky, camera, scene, req, ui, rr, km,
+    ladePerson: (d) => ladePerson(veil, mitWinter(d)), winterKleidung,   // Test: Figuren und Winterkleidung ansehen
     springe: async (i) => { await starteSchritt(typeof i === 'number' ? i : SCHRITTE.findIndex((s) => s.id === i), true); },
     sitProbe: (id) => situationProbieren({ situation: id, name: 'Sam', figur: 0 }),   // Test: Situation wie „Für Lehrpersonen“ starten
     freiZeit: (t) => { if (freiLauf) freiLauf.rest = Math.max(0.05, freiLauf.dauer - t); },   // Test: im freien Moment vorspulen

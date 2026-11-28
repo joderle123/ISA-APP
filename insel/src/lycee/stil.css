@@ -1699,3 +1699,54 @@ body.ly-puls-rot .mv-bild img { animation: mv-unruhig 1.6s ease-in-out infinite;
 .ly-e-mehr, .km-mehr { margin: .3em 0 .6em; }
 .ly-e-mehr > summary, .km-mehr > summary { cursor: pointer; font-weight: 700; font-size: .92em; opacity: .85; padding: .25em 0; }
 .ly-e-mehr ul, .km-mehr ul { opacity: .85; }
+
+/* ---------- Kapitel 5 „Admin“: Kamera-Check, Zurückspulen, Taube-Test, Eis-Rennen, Busfenster, Umfrage im Chat ---------- */
+.ly-ebene[data-art="blase"], .ly-ebene[data-art="spulen"] { background: transparent; backdrop-filter: none; place-items: start center; padding-top: 9vh; }
+.ly-ebene[data-art="blase"] .ly-karte, .ly-ebene[data-art="spulen"] .ly-karte { background: transparent; box-shadow: none; padding: 0; overflow: visible; }
+.k5-blase-wrap { display: grid; justify-items: center; gap: 12px; animation: k5-auf .35s ease-out both; }
+.k5-blase { position: relative; display: flex; align-items: center; gap: 10px; max-width: min(560px, 92vw); padding: 16px 24px; border-radius: 28px; background: #fff; box-shadow: 0 10px 30px rgba(20, 30, 50, .28); font-size: 26px; font-weight: 900; color: #1f2a3d; }
+.k5-blase::after { content: ''; position: absolute; left: 50%; bottom: -18px; width: 18px; height: 18px; border-radius: 50%; background: #fff; box-shadow: 0 6px 14px rgba(20, 30, 50, .2); transform: translateX(-50%); }
+.k5-b-icon { font-size: 26px; }
+.k5-kamera { display: inline-flex; align-items: center; gap: 8px; min-width: 64px; min-height: 64px; justify-content: center; padding: 10px 18px; border: 0; border-radius: 999px; background: #2b3a55; color: #fff; font-size: 30px; font-weight: 900; cursor: pointer; box-shadow: 0 6px 18px rgba(20, 30, 50, .3); }
+.k5-kamera span { font-size: 18px; }
+.gefuehrt .k5-kamera { animation: k5-puls 1.2s ease-in-out infinite; }
+.klein .k5-kamera { min-width: 48px; min-height: 48px; font-size: 22px; opacity: .85; }
+.klein .k5-blase { font-size: 20px; padding: 10px 18px; }
+.k5-b-hinweis { margin: 0; padding: 6px 12px; border-radius: 12px; background: rgba(255, 250, 240, .92); font-weight: 800; color: #2b3a55; }
+.k5-b-zeit { width: 200px; height: 6px; border-radius: 6px; background: rgba(255, 255, 255, .5); overflow: hidden; }
+.k5-b-zeit i { display: block; height: 100%; background: #2b3a55; transform-origin: left; }
+@keyframes k5-puls { 50% { transform: scale(1.08); box-shadow: 0 0 0 10px rgba(43, 58, 85, .18); } }
+@keyframes k5-auf { from { opacity: 0; transform: translateY(-12px) scale(.96); } }
+.k5-spul { position: fixed; inset: 0; display: grid; place-content: center; justify-items: center; gap: 8px; background: rgba(15, 20, 30, .55); color: #fff; font-weight: 900; animation: k5-flacker .18s steps(2) infinite; }
+.k5-spul b { font-size: 90px; line-height: 1; } .k5-spul span { font-size: 24px; } .k5-sp-zeit { font: 700 18px ui-monospace, monospace; opacity: .8; }
+.k5-sp-streifen { position: absolute; inset: 0; background: repeating-linear-gradient(0deg, rgba(255, 255, 255, .07) 0 2px, transparent 2px 6px); animation: k5-streifen .4s linear infinite; pointer-events: none; }
+@keyframes k5-flacker { 50% { filter: brightness(1.25) contrast(1.1); } }
+@keyframes k5-streifen { to { transform: translateY(-12px); } }
+.mv-echt { margin: 0 0 6px; padding: 8px 12px; border-radius: 12px; background: #fdecea; color: #8a1c1c; font-weight: 800; }
+.mv-zahl { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 110px; font-weight: 900; color: #fff; text-shadow: 0 6px 24px rgba(0, 0, 0, .55); animation: k5-knall .5s cubic-bezier(.2, 1.6, .4, 1) both; pointer-events: none; }
+@keyframes k5-knall { from { transform: translate(-50%, -50%) scale(.2); opacity: 0; } }
+.mv-bild.wackelt img { filter: blur(5px); animation: k5-wackel .25s ease-in-out infinite; }
+@keyframes k5-wackel { 25% { transform: translate(-4px, 2px) rotate(-.6deg); } 75% { transform: translate(4px, -2px) rotate(.6deg); } }
+.mv-wackel-knopf { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 14px 26px; border: 0; border-radius: 999px; background: #ffcf3a; color: #1f2a3d; font-size: 22px; font-weight: 900; cursor: pointer; z-index: 3; }
+.mv-marke.gerd { border-color: #9aa4b2; border-style: dotted; }
+.k5-taube canvas, .k5-eis canvas, .k5-fenster canvas { width: 100%; max-width: 600px; display: block; margin: 0 auto; border-radius: 14px; touch-action: none; }
+.k5-t-knopf, .k5-e-knopf, .k5-f-knopf { justify-content: center; }
+.k5-e-stand { text-align: center; font-weight: 900; font-size: 18px; margin: 6px 0; }
+.k5-umf { min-width: 72%; }
+.k5-umf > span { display: block; margin: 2px 0 6px; }
+.k5-umf em { display: block; margin-top: 4px; font-size: 12px; font-style: normal; color: #6b7280; }
+.k5-u-opt { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 0 8px; margin: 4px 0; padding: 6px 10px; border-radius: 10px; background: #eef1f6; overflow: hidden; }
+.k5-u-opt i { position: absolute; inset: 0 auto 0 0; background: rgba(46, 111, 216, .2); transition: width .5s ease-out; }
+.k5-u-opt span, .k5-u-opt b, .k5-u-opt small { position: relative; }
+.k5-u-opt small { grid-column: 1 / -1; font-size: 12px; font-weight: 600; color: #4a5568; }
+.k5-chat-blase { position: absolute; inset: 0; z-index: 5; display: grid; place-content: center; justify-items: center; gap: 14px; padding: 16px; background: rgba(233, 237, 243, .9); animation: k5-auf .3s ease-out both; }
+.sz-handy { position: relative; }
+.k5-cb-knoepfe { display: flex; gap: 14px; align-items: center; justify-content: center; }
+.k5-check { display: grid; gap: 8px; width: min(380px, 86vw); padding: 16px; border-radius: 18px; background: #fff; box-shadow: 0 8px 24px rgba(20, 30, 50, .2); }
+.k5-c-titel { font-size: 18px; }
+.k5-c-zeile { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 6px 10px; border-radius: 10px; background: #f3f5f9; animation: k5-auf .3s ease-out both; }
+.k5-c-zeile b { font-size: 22px; } .k5-c-zeile:first-of-type { background: #fdecea; color: #8a1c1c; } .k5-c-zeile:first-of-type b { font-size: 16px; text-align: right; }
+.k5-c-ungelesen { padding: 10px; border: 2px dashed #2e6fd8; border-radius: 12px; background: #eef4ff; font-weight: 800; cursor: pointer; }
+.k5-c-privat { padding: 10px 12px; border-radius: 12px; background: #eef4ff; font-weight: 700; }
+.k5-c-kopf { margin: 2px 0 0; font-weight: 800; color: #2b3a55; }
+.mv-zoom { overflow: hidden; } .mv-zoom img { display: block; }

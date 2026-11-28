@@ -143,7 +143,7 @@ const stimmen = (m) => {
 };
 const ABSTIMMUNG = (m) => {
   const { wer } = stimmen(m);
-  const satz = m.k5SatzManche ? 'Manche glauben es. Nicht alle.' : m.k5SatzMittwoch ? 'Heute ist Freitag. Mehr weiß ich nicht.' : 'Ich weiß, was ich gemacht hab. Und was nicht.';
+  const satz = m.k5Satz ? m.k5Satz : m.k5SatzManche ? 'Manche glauben es. Nicht alle.' : m.k5SatzMittwoch ? 'Heute ist Freitag. Mehr weiß ich nicht.' : 'Ich weiß, was ich gemacht hab. Und was nicht.';
   const n = [
     { nach: 0.4, wer: 'Chiara', text: 'abstimmung. soll {name} in der gruppe bleiben, bis es geklärt ist?' },
     { nach: 1.6, system: true, text: '🗳️ ja = bleiben · nein = raus' },

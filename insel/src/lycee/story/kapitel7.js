@@ -305,7 +305,7 @@ export const tunN7 = (c) => ({
   // Februar bis Mai: vier Karten, je ein Satz – je nach deinen Freundschaften. Dein Satz aus Kapitel 5 klebt am Spiegel.
   n7_monate: () => {
     const m = c.S.merke, fuer = m.k6Fuer || [];
-    const satz = m.k5SatzManche ? 'Manche glauben es. Nicht alle.' : m.k5SatzMittwoch ? 'Heute ist Mittwoch. Mehr weiß ich nicht.' : m.k5SatzWissen ? 'Ich weiß, was ich gemacht hab. Und was nicht.' : null;
+    const satz = m.k5Satz ? m.k5Satz : m.k5SatzManche ? 'Manche glauben es. Nicht alle.' : m.k5SatzMittwoch ? 'Heute ist Mittwoch. Mehr weiß ich nicht.' : m.k5SatzWissen ? 'Ich weiß, was ich gemacht hab. Und was nicht.' : null;
     return [
       { blende: 'Februar' },
       ['erzaehler', fuer.includes('noah') || m.k4NoahVerteidigt || m.manonListeFalsch ? 'Februar. Noah hält dir einen Platz frei. Jeden Tag.' : 'Februar. Du isst meistens allein. Mit Kopfhörern.'],

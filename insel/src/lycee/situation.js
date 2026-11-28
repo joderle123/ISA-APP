@@ -8,7 +8,7 @@ const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': 
 const warte = (ms) => new Promise((ok) => setTimeout(ok, ms));
 const STIMME = { kopf: ['Kopf', '#5f7d9e'], bauch: ['Bauch', '#b0784a'], stolz: ['Stolz', '#b5485d'] };
 
-export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech = null } = {}) {
+export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech = null, ton = () => {} } = {}) {
   const tasten = new Set();
   const halte = (f) => { const h = (e) => f(e); document.addEventListener('keydown', h, true); tasten.add(h); return h; };
   const loesche = () => { tasten.forEach((h) => document.removeEventListener('keydown', h, true)); tasten.clear(); };
@@ -100,6 +100,15 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     chatErklaert(true);
     const verlauf = k.querySelector('.sz-verlauf'), tippt = k.querySelector('.ly-h-tippt'), leiste = k.querySelector('.sz-aktionen'), neuChip = k.querySelector('.sz-neu');
     const flags = {}, gemacht = [], schlange = [];
+    // Kapitel 5: Umfrage im Chat ({ umfrage: { frage, optionen: [{ id, t }] } }) – Stimmen kommen als eigene Einträge ({ stimme: { opt, wer } }),
+    // mit Namen unter dem Balken. Die Blase (def.blase) hält den Chat an: ein Gedanke, 📷 prüfen oder weiter.
+    let umf = null, blaseDa = false;
+    const umfZeig = () => {
+      if (!umf || !umf.el) return; const ges = umf.opts.reduce((a, o) => a + o.namen.length, 0) || 1;
+      umf.el.querySelector('.k5-u-opts').innerHTML = umf.opts.map((o) => '<div class="k5-u-opt"><i style="width:' + Math.round(o.namen.length / ges * 100) + '%"></i><span>' + esc(ersetze(o.t)) + '</span><b>' + o.namen.length + '</b>' +
+        (o.namen.length ? '<small>' + esc(o.namen.slice(-4).join(', ') + (o.namen.length > 4 ? ' +' + (o.namen.length - 4) : '')) + '</small>' : '') + '</div>').join('');
+    };
+    const stimmen = (id) => (umf ? (umf.opts.find((o) => o.id === id) || { namen: [] }).namen.length : 0);
     let ersteDa = false;   // Knöpfe erst, wenn die erste Nachricht von jemandem da ist (sonst „Gelesen“ vor der Nachricht)
     let t = 0, zu = false, endet = false, lacher = 0, letzt = performance.now(), wahlOffen = false, pause = false, wartBis = 0;
     // Lesetempo: die nächste Nachricht kommt frühestens, wenn man die vorige lesen konnte (langsame Leser mitgedacht)
@@ -115,8 +124,22 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     def.nachrichten.forEach((n) => plan(n, 0));
     const lach = [];   // Nachrichten mit wachsenden Reaktionen
     const zeig = (n) => {
+      if (n.stimme) {   // eine Stimme: kein eigener Eintrag, nur der Balken wächst (Name sichtbar)
+        if (umf) { const o = umf.opts.find((x) => x.id === n.stimme.opt); if (o && !umf.opts.some((x) => x.namen.includes(ersetze(n.stimme.wer)))) { o.namen.push(ersetze(n.stimme.wer)); umfZeig(); ton && ton('klick'); } }
+        if (n.setzt) { flags[n.setzt] = true; leisteNeu(); }
+        return;
+      }
+      if (n.umfrage) {
+        const warUnten2 = unten();
+        verlauf.insertAdjacentHTML('beforeend', '<div class="ly-h-msg k5-umf"><b>' + esc(n.wer || '') + '</b><span>📊 ' + esc(ersetze(n.umfrage.frage)) + '</span><div class="k5-u-opts"></div><em>Umfrage · ' + esc(n.umfrage.info || 'Namen sichtbar') + '</em></div>');
+        umf = { opts: n.umfrage.optionen.map((o) => ({ ...o, namen: [] })), el: verlauf.lastElementChild }; umfZeig();
+        if (warUnten2) verlauf.scrollTop = verlauf.scrollHeight; else neuChip.hidden = false;
+        wartBis = t + lesedauer({ text: n.umfrage.frage }); if (!ersteDa) { ersteDa = true; leisteNeu(); }
+        if (n.setzt) { flags[n.setzt] = true; leisteNeu(); }
+        return;
+      }
       const ich = n.ich;
-      const html = n.system ? '<div class="ly-h-sys">' + esc(ersetze(n.text)) + '</div>'
+      const html = n.system ? '<div class="ly-h-sys">' + esc(ersetze(typeof n.system === 'string' ? n.system : n.text)) + '</div>'
         : '<div class="ly-h-msg' + (ich ? ' ich' : '') + '"><b>' + esc(ich ? 'Du' : n.wer) + '</b>' + (n.bildUrl ? '<div class="ly-h-bild sz-foto mit-bild"><img alt="' + esc(ersetze(n.bild || 'Foto')) + '" src="' + n.bildUrl + '"></div>' : n.bild ? '<div class="ly-h-bild sz-foto">📷 ' + esc(ersetze(n.bild)) + '</div>' : '') + '<span>' + esc(ersetze(n.text)) + '</span>' +
           (n.lacher ? '<i class="ly-h-reakt" data-l="' + lach.length + '">😂 ' + n.lacher.start + '</i>' : '') + '</div>';
       const warUnten = unten() || ich;
@@ -149,7 +172,9 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       if (zu || endet || !a) return;
       if (a.wahl) {
         wahlOffen = true;
-        leiste.innerHTML = a.wahl.map((w, i) => '<button type="button" data-w="' + i + '"><kbd>' + (i + 1) + '</kbd><span>' + esc(ersetze(w.t)) + '</span></button>').join('') + '<button type="button" data-w="-1"><kbd>✕</kbd><span>Doch nicht</span></button>';
+        // Unterpunkte mit Bedingung (w.wenn / w.wennNicht: Chat-Flags) – Kapitel 5: „Ayla und ich: Nein.“ erst nach dem Kamera-Check
+        const sichtbar = a.wahl.map((w, i) => [w, i]).filter(([w]) => (!w.wenn || flags[w.wenn]) && (!w.wennNicht || !flags[w.wennNicht]));
+        leiste.innerHTML = sichtbar.map(([w, i], n) => '<button type="button" data-w="' + i + '"><kbd>' + (n + 1) + '</kbd><span>' + esc(ersetze(w.t)) + '</span></button>').join('') + '<button type="button" data-w="-1"><kbd>✕</kbd><span>Doch nicht</span></button>';
         leiste.querySelectorAll('[data-w]').forEach((b) => { b.onclick = () => { wahlOffen = false; const i = +b.dataset.w; if (i >= 0) ausfuehren(a, { id: i, ...a.wahl[i] }); leisteNeu(); }; });
         return;
       }
@@ -157,7 +182,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     };
     const fertig = () => {
       if (zu) return; zu = true; loesche();
-      ui.ebeneZu(); ok({ flags, aktionen: gemacht, lacher: lach.reduce((s, l) => s + Math.round(l.n), 0), ich: lacher });
+      ui.ebeneZu(); ok({ flags, aktionen: gemacht, lacher: lach.reduce((s, l) => s + Math.round(l.n), 0), ich: lacher, stimmen: umf ? Object.fromEntries(umf.opts.map((o) => [o.id, o.namen.length])) : null, gesehen: gesehenJetzt() });
     };
     // E = schneller (nächste Nachricht sofort; am Ende: weiter). Nur Esc oder der Knopf legen das Handy weg – sonst
     // würde, wer aus Gewohnheit E drückt, still eine Entscheidung verlieren.
@@ -173,6 +198,28 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     const pauseUm = (an) => { pause = an; k.firstChild.classList.toggle('pausiert', pause); if (pk) pk.textContent = pause ? '▶ Weiter' : '⏸ Pause'; };
     if (pk) pk.onclick = () => pauseUm(!pause);
     leisteNeu();
+    const gesehenJetzt = () => Math.min(def.gesehenMax || def.mitglieder || 19, Math.round(3 + t * 0.6));
+    // Kopf-Blase im Chat: der Chat steht. 📷 = Kamera-Check (erst was echt ist, dann die Zahlen, dann eine ungelesene Nachricht)
+    const blaseZeigen = () => {
+      const B = def.blase; pauseUm(true);
+      const box = document.createElement('div'); box.className = 'k5-chat-blase';
+      box.innerHTML = '<div class="k5-blase"><span class="k5-b-icon">💭</span><b>' + esc(ersetze(B.t)) + '</b></div><div class="k5-cb-knoepfe"><button type="button" class="k5-kamera" data-b="c" aria-label="Kamera-Check">📷</button><button type="button" class="ly-link" data-b="w">Weiter</button></div>';
+      k.querySelector('.sz-handy').appendChild(box);
+      const zu = () => { box.remove(); pauseUm(false); leisteNeu(); };
+      box.querySelector('[data-b="w"]').onclick = () => { flags.blaseWeiter = true; zu(); };
+      box.querySelector('[data-b="c"]').onclick = () => {
+        flags.geprueft = true; ton && ton('kamera');
+        const ja = stimmen(B.ja || 'ja'), nein = stimmen(B.nein || 'nein'), gs = gesehenJetzt(), still = Math.max(0, gs - ja - nein - stimmen('weiss'));
+        flags.pruefZahlen = { ja, gs, still };
+        const zeilen = [['📷 Echt', ersetze(B.echt || '')], ['🗳 Ja', String(ja)], ['👁 Gesehen', String(gs)], ['🤐 Nichts gedrückt', String(still)]];
+        box.innerHTML = '<div class="k5-check"><b class="k5-c-titel">📷 Kamera-Check</b>' + zeilen.map(([a, b], i) => '<div class="k5-c-zeile" style="animation-delay:' + (i * 0.35) + 's"><small>' + esc(a) + '</small><b>' + esc(b) + '</b></div>').join('') +
+          (B.ungelesen ? '<button type="button" class="k5-c-ungelesen" data-b="u">✉️ 1 ungelesen · ' + esc(B.ungelesen.wer) + ' (privat)</button>' : '') + '<p class="k5-c-kopf">' + esc(ersetze(B.kopf || 'Was sie denken, sieht keine Kamera.')) + '</p>' +
+          '<div class="k5-cb-knoepfe"><button type="button" class="sz-weiter" data-b="w">Weiter <kbd>E</kbd></button></div></div>';
+        const u = box.querySelector('[data-b="u"]');
+        if (u) u.onclick = () => { flags[B.ungelesen.setzt || 'ungelesenGelesen'] = true; u.outerHTML = '<div class="k5-c-privat"><b>' + esc(B.ungelesen.wer) + '</b> ' + esc(ersetze(B.ungelesen.t)) + '</div>'; ton && ton('pling'); leisteNeu(); };
+        box.querySelector('[data-b="w"]').onclick = zu;
+      };
+    };
     let tipptBis = 0, beginn = performance.now();
     const loop = () => {
       if (zu) return;
@@ -191,7 +238,8 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
         schlange.shift(); zeig(m); leisteNeu();
       }
       for (const l of lach) { if (l.stopp && [].concat(l.stopp).some((f) => flags[f])) continue; l.n += l.proSek * dt * (1 + lacher); if (l.el) l.el.textContent = '😂 ' + Math.round(l.n); }
-      k.querySelector('.sz-uhr').textContent = (klingel ? '🔔 ' + Math.max(0, Math.ceil(klingel - t)) + ' s · ' : '') + 'gesehen von ' + Math.min(def.mitglieder || 19, Math.round(3 + t * 0.6));
+      k.querySelector('.sz-uhr').textContent = (klingel ? '🔔 ' + Math.max(0, Math.ceil(klingel - t)) + ' s · ' : '') + 'gesehen von ' + gesehenJetzt();
+      if (def.blase && !blaseDa && t >= def.blase.ab && !endet) { blaseDa = true; blaseZeigen(); }
       if (klingel && t >= klingel) { flags.klingel = true; fertig(); return; }
       if (!klingel && t > dauer && !schlange.length && t >= wartBis + 1.5) { fertig(); return; }   // die letzte Nachricht noch lesen lassen
       requestAnimationFrame(loop);
@@ -1078,8 +1126,10 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
         else { serie = 0; sys = 'Hm. Andere würden das zu „' + F.find((f) => f.id === ziele[0]).t + '“ legen.'; pop(k, '🤨'); }
         if (id == null) serie = 0;
         faecher.innerHTML = '';
-        rede.innerHTML = '<div class="sz-sys">' + esc(sys) + '</div>' + (c.sagt ? blaseHtml(c.wer, c.sagt) : '');
-        await warte(lesezeit(sys, c.sagt || ''));
+        // c.falsch: eigene Antwort der Figur, wenn die Karte im falschen Fach landet (Kapitel 5: Mila „Das hätte eine Kamera gesehen. Bleibt.“)
+        const falschGelegt = id != null && ziele && !ziele.includes(id), sagtJetzt = falschGelegt && c.falsch ? c.falsch : c.sagt;
+        rede.innerHTML = '<div class="sz-sys">' + esc(sys) + '</div>' + (sagtJetzt ? blaseHtml(c.wer, sagtJetzt) : '');
+        await warte(lesezeit(sys, sagtJetzt || ''));
         rede.innerHTML = '';
       }
       karte.textContent = ''; zahl.textContent = '';

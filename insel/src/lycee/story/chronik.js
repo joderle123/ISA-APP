@@ -168,13 +168,37 @@ const KAP = {
     (() => { const t = eins(m, [['k4DarioWoher', 'Du: „Du wusstest es schon Montag.“'], ['k4DarioDa', 'Du bist einfach neben ihm stehen geblieben.'], ['k4DarioFrage', 'Du hast gefragt, was „zu viel“ heißt.']]); return t ? 'Dario am Freitag: „Das mit 8:34 … das war zu viel.“ ' + t : null; })(),
     ];
   },
-  5: (m) => [
-    eins(m, [['tuerAngst', 'Vor der Tür hast du gedacht: „Alle wissen es.“'], ['tuerKlar', 'Vor der Tür hast du gedacht: „Die reden über den Screenshot. Nicht unbedingt über mich.“'], ['tuerWut', 'Vor der Tür hast du gedacht: „Die können mich alle mal.“']]),
-    eins(m, [['spurGebaut', 'Mit Mila hast du gezeigt: Der Screenshot ist gebaut.'], ['spurLowkey', 'Mit Mila hast du ein Wort gefunden: „lowkey“.']]),
-    eins(m, [['k5BenBeschuldigt', 'Ben hast du beschuldigt.'], ['k5BenGefragt', 'Ben hast du offen gefragt. Die Spur führt zur Ecke.'], ['k5BenGemieden', 'Ben bist du aus dem Weg gegangen.']]),
-    eins(m, [['k5SatzManche', 'Dein Satz für die Woche: „Manche glauben es. Nicht alle.“'], ['k5SatzWissen', 'Dein Satz für die Woche: „Ich weiß, was ich gemacht hab. Und was nicht.“'], ['k5SatzMittwoch', 'Dein Satz für die Woche: „Heute ist Mittwoch. Mehr weiß ich nicht.“']]),
-    eins(m, [['k5Kuedes', 'Du bist zu Herrn Kuedes gegangen.'], ['k5Tidderich', 'Du bist zu Mme Tidderich gegangen.'], ['k5Warten', 'Du hast mit Mila gewartet, bis ihr mehr wisst.'], ['k5Niemand', 'Du hast keinem Erwachsenen etwas gesagt.']]),
-  ],
+  5: (m) => {
+    // Kapitel 5 „Admin“ (Heft #04): Kamera-Check – erst was echt ist, dann der Kopf. Kern: freiwillig geprüft? Hilfe geholt? Was im Fenster klar wurde.
+    const frei = [m.k5Geprueft ? 'Chat' : null, m.k5EisGeprueft ? 'Eisbahn' : null, m.k5FreitagGeprueft ? 'Freitag (ohne Hilfe)' : null].filter(Boolean);
+    const tat = eins(m, [['k5ChatKuedes', 'Screenshot an Herrn Kuedes. Er kam, bevor jemand rausflog.'], ['k5ChatChiara', 'Chiara privat: „Stopp das.“ Sie hat die Umfrage beendet.'],
+      ['k5ChatZuZweit', 'Mit Ayla: „Nein.“ Die Umfrage war vorbei.'], ['k5ChatGepostet', 'Das Foto gepostet: „Es ist von draußen.“ Die Umfrage kippte. Dann: „Wer war draußen?“'],
+      ['k5ChatVerteidigt', 'Geschrieben: „' + (m.k5ZielDu ? 'Ich' : 'Noah') + ' war’s nicht.“ Danach kamen drei Ja-Stimmen dazu.'], ['k5ChatNein', '„Nein“ gedrückt – mit deinem Namen.'], ['k5ChatGeglaubt', 'Noah privat: „Ich glaub dir.“'],
+      ['k5ChatVerlassen', 'Den Chat verlassen.'], ['k5ChatStumm', 'Stumm geschaltet, Handy weg.'], ['k5ChatAbgewartet', 'Abgewartet.']]);
+    const lou = eins(m, [['k5LouGefragt', 'Lou privat: „Woher weißt du das?“ – im Chat schrieb Lou dann „hab’s nur gehört“.'], ['k5LouKlar', 'Lou privat: „Klar.“ – im Chat stand dann dein Name: „… sagt das auch 😎“.'],
+      ['k5LouKeineAhnung', 'Lou privat: „Keine Ahnung.“'], ['k5LouNein', 'Lou privat: „Nein. War ich nicht.“'], ['k5LouStill', 'Lou privat: nicht geantwortet.']]);
+    return [
+      K(1, m.k5CheckTuer ? 'Vor der Tür: „Alle denken, ich bin’s.“ Kamera-Check: 2 haben wirklich geschaut' + (m.k5TuerZahl != null && m.k5TuerZahl < 2 ? ' (selbst gefunden: ' + m.k5TuerZahl + ').' : '.') + (m.k5TuerMal ? ' Zweiter Gedanke: „Die können mich mal.“' : m.k5TuerUmfrage ? ' Zweiter Gedanke: „Nur ’ne blöde Umfrage.“' : '') : null),
+      K(2, eins(m, [['k5DarioKuedes', 'Dario hatte „zu viel“ gesagt und war weg. Du hast es Herrn Kuedes gesagt.'], ['k5DarioGeschrieben', 'Du hast Dario geschrieben. Herr Kuedes hat trotzdem nachgefragt.'], ['k5DarioNichts', 'Darios Platz war leer. Herr Kuedes hat selbst nachgefragt.']])),
+      K(3, (m.k5PostLou ? 'Stille Post: erkannt, wo zuerst etwas dazukam (bei Lou). ' : m.k5PostSpaet ? 'Stille Post: zu spät erkannt, wo etwas dazukam. ' : '') + (lou || '') || null),
+      K(4, tat ? 'Bei der Abstimmung: ' + (m.k5Geprueft ? 'erst geprüft (' + (m.k5PruefZahlen ? m.k5PruefZahlen.ja + ' Ja, ' + m.k5PruefZahlen.gs + ' gesehen' : 'ein paar Ja, viele nur gesehen') + (m.k5Ayla ? ', Ayla war nicht dafür' : '') + '). ' : 'nicht geprüft. ') + tat : null),
+      K(5, eins(m, [['k5NoahLasst', 'Als sie Noah „Admin!“ nachriefen, hast du gesagt: „Lasst ihn.“ Im Chat hieß es dann: „admin-freund 👀“.'], ['k5NoahDaneben', 'Als sie Noah „Admin!“ nachriefen, hast du dich neben ihn gestellt.'], ['k5AdminWeg', 'Als sie Noah „Admin!“ nachriefen, bist du weitergegangen.']])
+        || (m.k5Rausgeflogen === 'du' ? 'Du bist aus dem Chat geflogen. Mme Tidderich hat mit dir geredet. Ayla hat dich zurückgeholt.' : m.k5Rausgeflogen === 'noah' ? 'Noah ist aus dem Chat geflogen.' + (m.k5NoahGeholt ? ' Auf der Eisbahn hast du ihn vom Rand geholt.' : '') : null)),
+      K(6, m.k5FensterGesehen != null ? 'Im Busfenster wurde klar, was du selbst gesehen hast: ' + m.k5FensterGesehen + ' von 4. Der Rest blieb beschlagen.' + (m.k5FreitagGeprueft ? ' Am Ende: „Jo lästert über mich.“ – selbst geprüft: „Noch nicht gehört.“' : '') : null),
+      eins(m, [['k5BenGefragt', m.k5ZielDu ? 'Ben hat privat gefragt, ob du der Admin bist. Du hast geantwortet. Er hat nicht Ja gedrückt.' : 'Ben hat privat gefragt, ob Noah es war. Du: „Weiß ich nicht.“ Er hat nicht Ja gedrückt.'], ['k5BenGeruecht', 'Ben hat privat gefragt, ob Noah es war. Du: „Bestimmt.“ Er hat Ja gedrückt.'], ['k5BenGemieden', 'Ben hat dir privat geschrieben. Du hast nicht geantwortet.']]),
+      frei.length ? '📷 Von selbst geprüft: ' + frei.join(' · ') + '.' : '📷 Von selbst geprüft: nichts (nur die geführten Checks).',
+      m.k5Rausgeflogen === 'noah' && (m.k5NoahLasst || m.k5NoahDaneben || m.k5AdminWeg) ? 'Noah ist aus dem Chat geflogen.' + (m.k5NoahGeholt ? ' Auf der Eisbahn hast du ihn vom Rand geholt.' : '') : m.k5NoahGeholt && !m.k5Rausgeflogen ? 'Auf der Eisbahn hast du Noah vom Rand geholt.' : null,
+      eins(m, [['k5MilaSorry', 'Milas Handy lag wegen dir bei Mme Rantini. Du: „Sorry. Meine Schuld.“'], ['k5MilaLohnt', 'Milas Handy lag wegen dir bei Mme Rantini. Du: „Hat sich gelohnt.“']]),
+      eins(m, [['k5Losgelassen', 'Auf der Eisbahn hast du losgelassen.'], ['k5Bande', 'Auf der Eisbahn bist du an der Bande gefahren.']]),
+      eins(m, [['k5DarioAdminFrage', 'Dario am Freitag: „Weißt du, wer der Admin ist?“ – „Nein.“ Zu schnell.'], ['k5DarioBesser', 'Dario am Freitag: „Geht’s dir besser?“ – „Bisschen.“'], ['k5DarioStehen', 'Am Freitag hast du einfach neben Dario gestanden.']]),
+      eins(m, [['k5FensterDario', 'Das Fenster-Foto ging an Dario. Er: „meiner wär: zu viel.“'], ['k5FensterNoah', 'Das Fenster-Foto ging an Noah. Er: „meiner: alle starren.“']]),
+      eins(m, [['k5ChiaraVersprechen', 'Chiara hat dich an dein Versprechen erinnert. Du hast es gleich eingelöst.'], ['k5ChiaraMorgen', 'Chiara hat dich an dein Versprechen erinnert. Du: „Morgen.“'], ['k5ChiaraHof', 'Chiara hast du gefragt, was sie tippt. „Ich will nicht die Nächste sein.“']]),
+      eins(m, [['k5JoSorry', 'Bei Jo hast du dich wegen dem Testblatt entschuldigt.'], ['k5Schneemann', 'Mit Jo hast du den Schneemann gebaut. In der Umfrage hat er nicht Ja gedrückt.']]),
+      eins(m, [['k5ManonEis', 'Manon war mit auf der Eisbahn. Du hast ihr die Bande gezeigt.'], ['k5ManonEingeladen', 'Manon hast du zur Eisbahn eingeladen.'], ['k5ManonErklaert', 'Manon hast du erklärt, was „Admin“ heißt.']]),
+      eins(m, [['k5YusufSorry', 'Yusuf hast du gesagt: „Das mit deinem Bruder: sorry.“ – „Hat gedauert. Aber okay.“']]),
+      eins(m, [['k5KenanGejagt', 'Nach deinem Post hieß es: „Kenan war draußen.“ Jo hat ein Foto von Kenan geteilt.'], ['k5KenanGeschuetzt', 'Nach deinem Post hieß es: „Wer war draußen?“ Du hast es schnell Herrn Kuedes gegeben.']]),
+    ];
+  },
   6: (m) => [
     eins(m, [['k6Datei', 'Du hast Dario gedrängt. Er hat dir die Datei geschickt.'], ['k6DarioGeschuetzt', 'Du hast Dario nicht gedrängt.']]),
     eins(m, [['k6JoVerstanden', 'Jo hast du nachgefragt statt ausgefragt. Er hat alles erzählt.'], ['k6JoGehoert', 'Jo hat dir einen Teil erzählt.'], ['k6JoZu', 'Jo hat dichtgemacht.']]),
@@ -259,6 +283,12 @@ export const SKILLKURZ = {
     m.k4Gefuehlt30 ? '✋ gefühlt: 2' : m.k4Gefuehlt60 ? '✋ gefühlt: 6' : m.k4Gefuehlt80 ? '✋ gefühlt: 10' : null,
     m.k4NaechstMaeppchen || m.k4NaechstTisch || m.k4NaechstKopf ? '📝 nächster Test: Zettel bereit' : m.k4NaechstOffen ? '📝 nächster Test: offen' : null,
   ],
+  5: (m) => [
+    '📷 von selbst: ' + ([m.k5Geprueft ? 'Chat' : null, m.k5EisGeprueft ? 'Eis' : null, m.k5FreitagGeprueft ? 'Freitag' : null].filter(Boolean).join(' · ') || '–'),
+    m.k5LouGefragt ? '🗣 nachgefragt (Lou)' : m.k5LouKlar ? '🗣 Gerücht bestätigt (Lou)' : null,
+    m.k5ChatKuedes || m.k5DarioKuedes ? '🙋 Hilfe geholt: ' + [m.k5DarioKuedes ? 'Dario' : null, m.k5ChatKuedes ? 'Chat' : null].filter(Boolean).join(' + ') : '🙋 keine Hilfe geholt',
+    m.k5Rausgeflogen === 'du' ? '⚠ Die Umfrage ging über das Kind selbst. Kurz unter vier Augen nachfragen.' : m.k5ZielDu ? '⚠ Die Umfrage ging über das Kind selbst. Kurz unter vier Augen nachfragen.' : null,
+  ],
 };
 
 // Zusatzfrage je nach Weg (wird an die Gesprächsfrage gehängt)
@@ -266,6 +296,8 @@ export const GESPRAECH_ZUSATZ = {
   1: (m) => (m.erzaehltNiemand ? '(Lieber einzeln:) Wem würdest du so eine Nachricht zeigen?' : m.fotoMitgelacht ? '(Lieber einzeln:) Jo schrieb: „Sogar du hast gelacht. Also ist es ok.“ Stimmt das?'
     : m.abgestimmt ? 'Mila sagt: „Cool oder cringe – beides ist mitmachen.“ Warum zählt auch „cool“?' : m.k1KenanNichts || m.k1KenanKomisch ? 'Kenan hat nicht gefragt, ob er dich fotografieren darf. Welcher kurze Satz geht da?' : ''),
   3: (m) => (m.k3LeiterRasend || m.k3Zurueck ? '(Lieber einzeln:) Was bremst dich, bevor es knallt?' : m.k3BruderVerraten || m.k3Uebersetzt || m.k3BusPeur || m.k3SommerGeholfen ? 'Du wusstest vom Bruder. Wer durfte das wissen – und wann?' : m.k3SignalWeiss ? 'Wo merkst du Wut zuerst? (Nur für dich: Hals, Bauch, Hände …?)' : ''),
+  5: (m) => (m.k5ZielDu || m.k5Rausgeflogen === 'du' ? '(Lieber einzeln:) Die Umfrage im Spiel ging über dich. Wie war das?' : m.k5ChatAbgewartet || m.k5ChatStumm ? 'Was hätte gefehlt, damit du etwas tust?' : m.k5ChatGepostet ? 'Du hattest den Beweis. Wohin gehört er – Chat oder Erwachsene?'
+    : m.k5ChatVerteidigt || m.k5ChatNein ? 'Allein geschrieben – danach kamen drei Ja. Was hätte zu zweit geändert?' : m.k5LouKlar ? 'Ein Wort („Klar.“) – und du standest im Chat. Wie schnell geht das?' : ''),
   4: (m) => (m.k4Explodiert ? '(Lieber einzeln:) Was bremst dich nächstes Mal früher?' : m.k4Niemand || (m.k4Plan && !m.k4Plan.zu) ? '(Lieber einzeln:) Wer aus der Schule kommt auf Zeile drei?' : m.k4ZaehlenRot || m.k4ParkenRot ? 'Was geht bei dir, wenn der Kopf zu ist?' : ''),
   2: (m) => (m.k2BusNichts ? '(Lieber einzeln:) Dein Satz stand in der Story. Wem würdest du das zeigen?' : m.k2DarioSahBeweis ? '(Lieber einzeln:) Dario hat bei dir einen Beweis gesehen. Stimmt er?' : m.listeGelacht ? 'Was hat dir das Mitlachen gegeben – und was eine Stunde später?' : m.gegenlisteGepostet ? 'Noah: „Jetzt bin ich auf zwei Listen.“ War die nette Liste nett?' : ''),
 };
@@ -276,7 +308,7 @@ export const GESPRAECH = {
   2: 'Dario fragt: „Und ich? Was kann ich?“ Was hättest du gesagt – und woran sieht man es? Dann zu zweit: A sagt eine Sache, die A kann. B hakt einmal nach („Welche?“ · „Wie war das?“). Tauschen. „Weiter.“ gilt. Still: Wem sag ich diese Woche eine Stärke? Woran hab ich sie gesehen?',
   3: 'Yusuf schreit: „Was glotzt ihr alle so?!“ Was war drunter – und woran hätte man es sehen können? Auf drei zeigt jede Person, wo sie Wut zuerst merkt (Faust = sag ich nicht). Still auf einen Zettel: Mein lauter Satz … – drunter war …',
   4: 'Auf drei zeigen alle gleichzeitig Finger: Wie hoch warst du beim Foto? (Mila: sieben.) Passt die Farbe im Rückblick dazu? Nur Daumen. Dann sammeln: Was hilft im Test, ohne dass es einer merkt? Still auf einen Zettel: Bei Rot hilft mir … – mein Zettel liegt …',
-  5: 'Welcher Gedanke hat sich wie eine Tatsache angefühlt? Was hat die Kamera wirklich gezeigt?',
+  5: 'Gerd hasst keinen. Gerd hat Hunger. – „Zeigen oder fühlen?“: Finger auf den Tisch = hätte eine Kamera gesehen · Hand aufs Herz = Gefühl oder Gerücht. Sätze: „Gesehen von 9.“ · „Alle wissen, wer’s war.“ · „Chiara hat eine Umfrage gestartet.“ (Kamera – und trotzdem nicht okay) · „Jemand lacht, als ich reinkomme.“ · „Noah hat das Foto gemacht.“ Dann Chiaras Satz: „Wenn ich nichts mache, bin ich die Nächste.“ – Stimmt das? Still auf einen Zettel: Wenn ich „alle“ denke, zähl ich nach – wo? Niemand liest vor. Wenn es echt fies ist: Screenshot, zu einer Lehrperson oder ins SePAS.',
   6: 'Warum kann man fair abstimmen und trotzdem unfair sein?',
   7: 'Was hat es gekostet, sich zu Noah zu setzen? Was hat es gekostet, sitzen zu bleiben?',
   8: 'Woran hast du den Fake erkannt? Was hat Teilen „zum Prüfen“ trotzdem gemacht?',

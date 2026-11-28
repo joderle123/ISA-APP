@@ -92,7 +92,7 @@ const RUECKEN = (m) => ({
       { t: 'Du hast die Spur gefunden. Den Winkel, die Uhrzeit, alles.', konkret: true, antwort: 'Das ist präzise. Das hebe ich auf.' },
       { t: 'Du bist schlau.', antwort: '(nickt) Danke.' } ] },
     { wer: F.ben, karten: [
-      { t: m.k5BenGefragt ? 'Du hast im Januar dein Handy gezeigt, als ich gefragt hab. Ehrlich.' : 'Du bringst immer Kekse mit. Für alle.', konkret: true, antwort: '(schaut weg) … Danke. Echt.' },
+      { t: m.k5BenGefragt ? 'Im Januar hab ich dich was gefragt. Du warst ehrlich.' : 'Du bringst immer Kekse mit. Für alle.', konkret: true, antwort: '(schaut weg) … Danke. Echt.' },
       { t: 'Du bist lustig.', antwort: 'Weiß ich. Trotzdem danke.' } ] },
     { wer: F.dario, karten: [
       { t: 'Du hast es Herrn Kuedes gesagt. Das war mutiger als alles.', konkret: true, antwort: '(lange Pause) … Danke. Echt.' },
@@ -368,7 +368,7 @@ export const tunN10 = (c) => ({
   },
   n10_kartenWahl: () => {
     const m = c.S.merke;
-    const satz = m.k5SatzManche ? 'Manche glauben es. Nicht alle.' : m.k5SatzMittwoch ? 'Heute ist Mittwoch. Mehr weiß ich nicht.' : m.k5SatzWissen ? 'Ich weiß, was ich gemacht hab. Und was nicht.' : null;
+    const satz = m.k5Satz ? m.k5Satz : m.k5SatzManche ? 'Manche glauben es. Nicht alle.' : m.k5SatzMittwoch ? 'Heute ist Mittwoch. Mehr weiß ich nicht.' : m.k5SatzWissen ? 'Ich weiß, was ich gemacht hab. Und was nicht.' : null;
     return [{ wahl: [
       ...(satz ? [{ t: '„' + satz + '“ (dein Satz vom Januar)', merke: 'k10KarteJanuar', dann: [] }] : []),
       { t: '„Ich hab zugeschaut. Nächstes Jahr nicht mehr.“', merke: 'k10KarteZuschauen', dann: [] },
@@ -380,7 +380,7 @@ export const tunN10 = (c) => ({
     const opt = [
       { id: 'noah', t: '(Bei Noah.)', antwort: [['noah', 'Okay.']], immer: true },
       { id: 'mila', t: '(Bei Mila.)', antwort: [['mila', 'Notiert.']], immer: true },
-      { id: 'ben', t: '(Bei Ben.)', antwort: [['ben', 'Passt.']], wenn: m.k5BenBeschuldigt || m.k5BenGemieden },
+      { id: 'ben', t: '(Bei Ben.)', antwort: [['ben', 'Passt.']], wenn: m.k5BenBeschuldigt || m.k5BenGemieden || m.k5BenGeruecht },
       { id: 'jo', t: '(Bei Jo.)', antwort: [['jo', '… Danke.']], wenn: m.k6DateiGepostet || m.k8JoReingelegt },
     ].filter((o) => o.immer || o.wenn);
     const saetze = ['„Das war nicht okay. Ich lösch es.“', '„Ich hab zugeschaut. Das tut mir leid.“', '„Ich hab mitgemacht. Ich mach das nicht mehr.“', '„Ich wollte dazugehören. Das war es nicht wert.“', '(Nur löschen. Nichts sagen.)'];
