@@ -737,7 +737,7 @@ export const tunN2 = (c) => ({
     z.push(...n.slice(0, 2));
     // Foto/Video von Noah: eine zweite Chance im Vorbeigehen (klein, ohne Publikum)
     if ((m.turmFoto || m.k2NoahImBild) && n.length) z.push({ wahl: [
-      { t: m.turmFoto ? '„Sorry. Wegen dem Foto.“' : '„Sorry. Wegen dem Video.“', merke: 'k2NoahSorryBild', staerke: 'ehrlich', herz: { noah: 1 }, dann: [['noah', '(bleibt kurz stehen) … Okay.']] },
+      { t: m.turmFoto && m.k2NoahImBild ? '„Sorry. Foto und Video.“' : m.turmFoto ? '„Sorry. Wegen dem Foto.“' : '„Sorry. Wegen dem Video.“', merke: 'k2NoahSorryBild', staerke: 'ehrlich', herz: { noah: 1 }, dann: [['noah', '(bleibt kurz stehen) … Okay.']] },
       { t: '(Nichts sagen.)', dann: [] },
     ] });
     if (!n.length) z.push(['dario', '(neben dir) Noahs Platz in der Kantine war leer. Seit Dienstag.']);

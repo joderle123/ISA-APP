@@ -1688,4 +1688,4 @@ body.ly-puls-rot .mv-bild img { animation: mv-unruhig 1.6s ease-in-out infinite;
 .sz-info.sz-info-an { color: #b3261e; }
 .sz-t-ereignis.sz-t-rot { background: #fde2e1; color: #7a1f1a; font-weight: 700; }
 .sz-t-skills.sz-t-hinweis button { box-shadow: 0 0 0 3px #e0574f; }
-.km-gs-kurz { margin: .4em 0 .5em; padding: .45em .7em; border-radius: 10px; background: #eef6f4; color: #1f4d45; font-weight: 600; font-size: .92em; }
+.km-gs-kurz { margin: 6px 0 8px !important; padding: 7px 12px; border-radius: 12px; background: #1d3a36; border: 1px solid #3f8f80; color: #d6f5ee !important; font-weight: 600; font-size: 15px !important; line-height: 1.5; }
