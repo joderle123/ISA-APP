@@ -1355,16 +1355,19 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         await ui.sprich({ ...sprecher(wer), text: ersetze(text) });
         if (redner) { const [a, tp] = haltungAnim(redner); redner.f.spiele(a, { tempo: tp, blende: 0.4 }); }
       } else if (z.wahl) {
-        const opt = z.wahl.filter((w) => (!w.wenn || w.wenn(S.merke, S)) && (!w.bemerkt || bemerkt(w.bemerkt)) && (!w.ohne || !bemerkt(w.ohne)) && (!w.beweis || beweisDa(w.beweis)));   // ohne: nur, wenn das NICHT bemerkt wurde   // manche Antworten gibt es nur nach früheren Entscheidungen – oder nur, wenn man hingeschaut hat
+        const filtern = () => z.wahl.filter((w) => (!w.wenn || w.wenn(S.merke, S)) && (!w.bemerkt || bemerkt(w.bemerkt)) && (!w.ohne || !bemerkt(w.ohne)) && (!w.beweis || beweisDa(w.beweis)));
+        let opt = filtern();   // ohne: nur, wenn das NICHT bemerkt wurde   // manche Antworten gibt es nur nach früheren Entscheidungen – oder nur, wenn man hingeschaut hat
         // Reihenfolge mischen, wenn eine Antwort eine Stärke zeigt – sonst wäre „die erste ist die gute“ zu leicht
-        const ord = opt.map((_, k) => k);
-        if (opt.some((w) => w.staerke) && !z.fest) for (let k = ord.length - 1; k > 0; k--) { const r = Math.floor(Math.random() * (k + 1)); [ord[k], ord[r]] = [ord[r], ord[k]]; }
+        const mischen = () => { const o = opt.map((_, k) => k);
+          if (opt.some((w) => w.staerke) && !z.fest) for (let k = o.length - 1; k > 0; k--) { const r = Math.floor(Math.random() * (k + 1)); [o[k], o[r]] = [o[r], o[k]]; }
+          return o; };
+        let ord = mischen();
         // Steuerpult auf Rot: ruhige Antworten (ruhig: true) sind zu, bis man runterkommt (Atmen, Abstand, Gedanken prüfen)
         let i; const versucht = {};
         for (;;) {
           const rot = pultRot(), gesperrt = {}, tags = {};
           const rh = z.rotHilfe || null;   // eigene Hilfe für diesen Moment (z. B. K1: „Stopp.“ statt Atmen)
-          ord.forEach((k, pos) => { if (rot && opt[k].ruhig) gesperrt[pos] = (rh && rh.sperre) || 'Zu aufgewühlt. Erst atmen.'; else if (opt[k].beweis) tags[pos] = '📎 ' + (opt[k].weil || beweisText(opt[k].beweis) || 'Beweis'); else if (opt[k].bemerkt) tags[pos] = opt[k].weil || 'Weil du hingeschaut hast.'; });
+          ord.forEach((k, pos) => { if (rot && opt[k].ruhig) gesperrt[pos] = (rh && rh.sperre) || 'Zu viel. Erst atmen.'; else if (opt[k].beweis) tags[pos] = '📎 ' + (opt[k].weil || beweisText(opt[k].beweis) || 'Beweis'); else if (opt[k].bemerkt) tags[pos] = opt[k].weil || 'Weil du hingeschaut hast.'; });
           const extra = Object.keys(gesperrt).length ? (rh ? [rh] : PULT_HILFEN).filter((h) => !versucht[h.id]) : [];
           if (extra.length && rh && rh.toast) ui.toast('<b>🔴 Rot</b><span>' + esc(rh.toast) + '</span>', 'ly-t-ent');
           else if (extra.length && !S.merke.rotErklaert) { S.merke.rotErklaert = true; sichern(); ui.toast('<b>🔴 Rot</b><span>' + ((S.pult && S.pult.g && S.pult.g !== 'Ruhe' && ((SCHRITTE[S.schritt] || {}).kap || 1) >= 3) ? S.pult.g + ' am Steuer. ' : 'Zu viel. ') + 'Erst atmen (🫁).</span>', 'ly-t-ent'); }
@@ -1378,6 +1381,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
               if (rh.dann) await spiele(rh.dann);
               pultSetzen({ plus: -(rh.minus || 3) });
             } else await pultHilfe(r.extra);
+            // Nach dem Runterkommen neu prüfen, welche Antworten jetzt passen (z. B. ★ folgt der Farbe: Rot → Gelb)
+            { const neu = filtern(); if (neu.length !== opt.length || neu.some((w, k) => w !== opt[k])) { opt = neu; ord = mischen(); } }
             continue;
           }
           i = r; break;
@@ -2269,7 +2274,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       minus = j === 1 ? 2 : 0;
       if (!minus) ui.toast('<b>🧠 Der Gedanke bleibt laut</b><span>Prüf ihn noch mal: Was weißt du wirklich?</span>');
     }
-    if (minus) { l.hilfen.push(id); if (id === 'atmen') S.merke['rotGeatmet' + kap] = true; pultSetzen({ plus: -minus }); }   // Erholung auf Rot: für Rückblick und Chronik
+    if (minus) { l.hilfen.push(id); if (id === 'atmen') { S.merke['rotGeatmet' + kap] = true; S.merke.rotAtemT = Date.now(); } pultSetzen({ plus: -minus }); }   // Erholung auf Rot: für Rückblick und Chronik
   }
   // Hinschauen (Baustein 2): was man bemerkt hat, öffnet später Antworten (bemerkt: 'key')
   // Chat-Nachrichten mit bildId bekommen das echte Foto (bildUrl); ohne Foto bleibt die Beschreibung
@@ -2468,7 +2473,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     hitze: 'Jemand provoziert dich. Oben steht die Hitze. Jede Antwort macht sie heißer oder kühler. Wähl, bevor die Zeit um ist. Nichts sagen ist auch eine Antwort.',
     feed: 'Du wischst durch einen Feed. Was du likest – und wo du länger hinschaust –, bekommst du öfter. Am Ende siehst du, woraus dein Feed geworden ist.',
     akku: 'Ein Tag von morgens bis nachts. Jede Entscheidung lädt deinen Akku – oder zieht ihn leer. Am Ende siehst du, wie voll du in den nächsten Morgen startest.',
-    test: 'Tipp die richtige Antwort. Gedanken tauchen auf. Unten steht, was dir hilft. Bei Rot verschwimmt alles.',
+    test: 'Bei Rot: unten tippen, was hilft. Dann rechnen. Gedanken tauchen auf – du kannst sie parken.',
     koffer: 'Pack deinen Skills-Koffer: aus jedem Fach bis zu zwei Skills. Dann wählst du drei für die Notfallkarte – für Momente auf Rot.',
     zonen: 'Wo stehst du auf der Linie? Grün, Gelb oder Rot? Tipp auf die Linie. Dann wettest du, wo die meisten aus der Klasse stehen.',
     bohnen: 'Du hast fünf Bohnen. Leg sie zu den Sätzen, die du von dir kennst. Niemand sieht, wer was gelegt hat.',
@@ -2580,7 +2585,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   // Reflexionsfrage am Kapitelende (eine offene Frage, kein richtig/falsch – auch als Einstieg fürs Klassengespräch)
   const REFLEXION = { 1: 'Was hat dir am ersten Tag geholfen, dich ein bisschen sicherer zu fühlen?', 2: 'Was kannst du gut – auch wenn es keiner sieht?',
-    3: 'Was war bei Yusuf gemischt – und was bei dir? Woran hast du es gemerkt?', 4: 'Was hilft dir, wenn du „bei Rot“ bist?',
+    3: 'Was war unter Yusufs Wut? Und unter deiner?', 4: 'Was hilft dir, wenn du „bei Rot“ bist?',
     5: 'Welcher Satz über dich selbst ist laut – und stimmt er wirklich?', 6: 'Wann hast du zuletzt klar Stopp gesagt? Wie war das?',
     7: 'Was hättest du gebraucht, um in der Kantine aufzustehen?', 8: 'Was prüfst du, bevor du etwas teilst?',
     9: 'Was lädt deinen Akku wirklich auf?', 10: 'Was nimmst du aus diesem Jahr mit?' };
@@ -2614,7 +2619,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (st.kap !== vorher.kap) await vorspann(st);
       const b = besteFreunde()[0];
       if (b && st.kap !== vorher.kap) setTimeout(() => ui.toastLeise('<b>' + LEUTE[b].name + ' (' + stufe(S.freund[b]) + ')</b><span>„' + (FREUND_GRUSS[b] || 'Da bist du ja.') + '“</span>', 'ly-t-herz'), 2500);
-      if (st.kap !== vorher.kap && INHALT[st.kap]) ui.toast('<b>ℹ️ In diesem Kapitel</b><span>' + INHALT[st.kap] + ' Wenn es zu viel wird: ☰ → Kurz raus.</span>');
+      if (st.kap !== vorher.kap && INHALT[st.kap]) ui.toast('<b>ℹ️ In diesem Kapitel</b><span>' + INHALT[st.kap] + ' Wenn es zu viel wird: ⏸ → Kurz raus.</span>');
     }
     sky.time.setTimeOfDay(st.uhr); ui.uhr(st.uhr, st.tag); uhrenStellen(st.uhr, st.kap);
     // Schulklingel, wenn am selben Tag eine neue Stunde/Pause beginnt
@@ -3619,12 +3624,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   kmApi.geschichteBericht = () => {
     if (!S) return null;
     const ch = S.chronik || {}, fertigBis = Math.min(10, Math.max(S.kapitelFertig || 0, ...Object.keys(ch).map(Number), 0));
-    const bis = Math.min(10, Math.max(fertigBis, ...Object.keys(S.versuche || {}).map(Number)));
+    // Auch das laufende Kapitel („bisher“): wer in der Stunde nicht fertig wird, liefert der Lehrperson trotzdem etwas
+    const jetztK = S.fertig ? 0 : kapJetzt();
+    const bis = Math.min(10, Math.max(fertigBis, jetztK, ...Object.keys(S.versuche || {}).map(Number)));
     const VW = { anspannung: 'Anspannung', akku: 'Akku' };
     const kapitel = [];
     for (let k = 1; k <= bis; k++) {
       const a = (S.merke.anzeigeVerlauf || {})[k];
-      kapitel.push({ kap: k, titel: KAPITEL[k] || '', thema: KAPITEL_MODUL[k] || '', saetze: k <= fertigBis ? ch[k] || chronik(k, S.merke) : [], gespielt: k <= fertigBis, frage: (GESPRAECH[k] || REFLEXION[k] || '') + (GESPRAECH_ZUSATZ[k] && S.merke && GESPRAECH_ZUSATZ[k](S.merke) ? ' ' + GESPRAECH_ZUSATZ[k](S.merke) : ''),
+      kapitel.push({ kap: k, titel: KAPITEL[k] || '', thema: KAPITEL_MODUL[k] || '', saetze: k <= fertigBis ? ch[k] || chronik(k, S.merke) : k === jetztK ? chronik(k, S.merke) : [], gespielt: k <= fertigBis, bisher: k > fertigBis && k === jetztK, frage: (GESPRAECH[k] || REFLEXION[k] || '') + (GESPRAECH_ZUSATZ[k] && S.merke && GESPRAECH_ZUSATZ[k](S.merke) ? ' ' + GESPRAECH_ZUSATZ[k](S.merke) : ''),
         anzeige: a ? VW[a.art] + (a.art === 'akku' ? ': am wenigsten ' + a.min + ', am Ende ' + a.ende : ': höchstens ' + a.max + ', am Ende ' + a.ende) + ' (von 100)' : '',
         versuche: Object.entries((S.versuche || {})[k] || {}).map(([t, v]) => ({ t, n: typeof v === 'object' ? v.n : v, ok: typeof v === 'object' ? v.ok !== false : true })),
         gruende: (S.gruende || {})[k] || [], partner: (S.partnerLog || {})[k] || [],
@@ -3891,7 +3898,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   let sitLaeuft = false;
   async function sitStart(id) {
     if (sitLaeuft) return; sitLaeuft = true; ui.pauseImDialog = true;
-    if (!S.merke.sitPauseTipp) { S.merke.sitPauseTipp = true; ui.toast('<b>⏸ Kurz raus geht immer</b><span>Wenn es zu viel wird: P drücken. Auch mitten im Gespräch.</span>'); }
+    if (!S.merke.sitPauseTipp) { S.merke.sitPauseTipp = true; ui.toast('<b>⏸ Kurz raus geht immer</b><span>Wenn es zu viel wird: ⏸ tippen (oder P). Auch mitten im Gespräch.</span>'); }
     try {
       await sitGespraech(async () => {
         const a = sitApi(), kap = (SCHRITTE[S.schritt] || {}).kap || 1;
@@ -4649,7 +4656,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const ort = welt.orte[(st.start && st.start.teleport) || (S.schritt ? 'halle' : 'busAnkunft')];
     const pause = !neu && S.zuletzt ? Date.now() - S.zuletzt : 0;
     if (neu && abKap > 1) await vorspann(st);   // Einstieg über die Kapitelwahl: mit Vorspann
-    if (neu && st && INHALT[st.kap || 1]) ui.toast('<b>ℹ️ In diesem Kapitel</b><span>' + INHALT[st.kap || 1] + ' Wenn es zu viel wird: ☰ → Kurz raus.</span>');
+    if (neu && st && INHALT[st.kap || 1]) ui.toast('<b>ℹ️ In diesem Kapitel</b><span>' + INHALT[st.kap || 1] + ' Wenn es zu viel wird: ⏸ → Kurz raus.</span>');
     await starteSchritt(S.schritt, neu ? true : false);
     if (!neu && ort) steuerung.teleport(ort.x, ort.z, ort.yaw);
     // Länger nicht gespielt (Unterricht ist oft eine Woche später): kurzer Rückblick, wo man steht

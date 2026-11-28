@@ -1037,6 +1037,7 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-lesbar .ly-dialog,.ly-lesbar .ly-d-optionen button,.ly-lesbar .ly-ebene{line-height:1.6;font-family:Verdana,Tahoma,system-ui,sans-serif}
 .ly-e-frage{margin:.8em 0;padding:.7em .9em;border-radius:12px;background:rgba(95,160,208,.12);border-left:4px solid #5fa0d0;text-align:left}
 .ly-e-frage b{display:block;font-size:.85em;margin-bottom:.25em;opacity:.8}
+.ly-e-hilfe{margin:.6em 0 .2em;font-size:.82em;opacity:.75;text-align:center}
 
 /* Einstellungen: deckend, in Gruppen, „Fertig“ bleibt sichtbar (auch auf dem Handy) */
 .ly-karte:has(.ly-einst) { background: #fffaf3; max-height: calc(100dvh - 32px); overflow: auto; overscroll-behavior: contain; }

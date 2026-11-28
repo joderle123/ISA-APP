@@ -304,7 +304,7 @@ await bild('13-leiter');
 await page.keyboard.press('Escape');
 await page.keyboard.press('KeyP'); await page.waitForSelector('.ly-k-raus');
 await page.click('.ly-k-raus [data-w="sinne"]');
-check('„Kurz raus“ (P): 5-4-3-2-1 startet', /5 Dinge/.test(await page.textContent('.ly-k-raus')));
+check('„Kurz raus“ (P): Drei Dinge suchen startet', /drei Dinge/.test(await page.textContent('.ly-k-raus')));
 await page.keyboard.press('Escape'); await page.waitForTimeout(300);
 check('„Kurz raus“ mit Escape geschlossen', !(await page.isVisible('.ly-k-raus')));
 // Lernstation außerhalb der Geschichte: die eigene Aufgabe kommt dran (noch nicht gelöst)

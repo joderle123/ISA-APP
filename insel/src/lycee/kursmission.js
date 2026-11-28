@@ -270,13 +270,13 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
     if (!b || !b.kapitel.length) return '<h3 class="km-h3">📖 Geschichte „@annexe.cam“</h3><p class="km-leer">Noch kein Kapitel fertig.' + (b && b.laeuft ? ' Gerade in Kapitel ' + b.laeuft + '.' : '') + '</p>';
     const kopf = [b.freunde.length ? 'Am nächsten: ' + b.freunde.join(', ') : '', b.staerken.length ? 'Stärken: ' + b.staerken.join(', ') : '',
       b.ende ? 'Ende: ' + b.ende : (b.laeuft ? 'Gerade in Kapitel ' + b.laeuft : ''), b.zuZweit ? 'Zu zweit: ' + b.zuZweit : '', b.neben.length ? 'Nebengeschichten: ' + b.neben.length + ' von ' + b.nebenVon : ''].filter(Boolean);
-    const gespielt = b.kapitel.filter((k) => k.gespielt), letztes = (gespielt[gespielt.length - 1] || b.kapitel[0]).kap;
+    const gespielt = b.kapitel.filter((k) => k.gespielt), letztes = (b.kapitel.find((k) => k.bisher) || gespielt[gespielt.length - 1] || b.kapitel[0]).kap;
     const haken = b.kapitel.reduce((n, k) => n + k.versuche.filter((v) => !v.ok).length, 0);
     return '<h3 class="km-h3">📖 Geschichte „@annexe.cam“ · ' + gespielt.length + ' von 10 Kapiteln</h3>' +
       (haken ? '<p class="km-gs-hak">⚠️ ' + haken + '× nach drei Versuchen nicht geschafft – unten markiert. Gut zum Nachbesprechen.</p>' : '') +
       (kopf.length ? '<p class="km-leer">' + kopf.map(esc).join(' · ') + '</p>' : '') +
       (lehrer ? '<p class="km-leer">Tipp: Ein Kapitel aufklappen, die Sätze gemeinsam lesen, dann die Frage stellen. Es gibt kein richtig oder falsch – nur Folgen.</p>' : '') +
-      '<div class="km-gesch">' + b.kapitel.map((k) => '<details' + (k.kap === letztes ? ' open' : '') + '><summary><span class="km-heft">K' + k.kap + '</span><b>' + esc(k.titel) + '</b><small>' + esc(k.thema) + '</small></summary>' +
+      '<div class="km-gesch">' + b.kapitel.map((k) => '<details' + (k.kap === letztes ? ' open' : '') + '><summary><span class="km-heft">K' + k.kap + '</span><b>' + esc(k.titel) + '</b><small>' + esc(k.thema) + (k.bisher ? ' · läuft noch – bisher' : '') + '</small></summary>' +
         (k.bilder && k.bilder.length ? '<div class="km-bilder">' + k.bilder.map((x) => '<figure' + (x.auch ? ' class="auch"' : '') + '><img src="' + esc(x.url) + '" alt="' + esc(x.titel) + '"><figcaption><b>' + esc(x.titel) + '</b>' + (x.text ? ' ' + esc(x.text) : '') + '</figcaption></figure>').join('') + '</div>' : '') +
         (k.saetze.length ? '<ul>' + k.saetze.map((t) => '<li>' + esc(t) + '</li>').join('') + '</ul>' : '<p class="km-leer">' + (k.gespielt ? 'Keine großen Entscheidungen gemerkt.' : 'Kapitel noch nicht gespielt – nur die Skills-Stunde.') + '</p>') +
         (k.partner && k.partner.length ? k.partner.map((p) => '<p class="km-gs-warum">👥 ' + (p.einig ? 'Einig: ' + esc(zit(p.gemeinsam)) : 'Uneinig (' + esc(zit(p.a)) + ' / ' + esc(zit(p.b)) + ') – gemeinsam: ' + esc(zit(p.gemeinsam))) + '</p>').join('') : '') +
@@ -297,7 +297,7 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
     ...(b.freunde.length ? ['Am nächsten: ' + b.freunde.join(', ')] : []), ...(b.staerken.length ? ['Stärken: ' + b.staerken.join(', ')] : []),
     ...(b.ende ? ['Ende: ' + b.ende] : []),
     ...b.kapitel.flatMap((k) => ['', 'Kapitel ' + k.kap + ' „' + k.titel + '“ (' + k.thema + ')', ...k.saetze.map((t) => '– ' + t),
-      ...(k.gespielt ? [] : ['(Kapitel noch nicht gespielt)']),
+      ...(k.gespielt ? [] : [k.bisher ? '(Kapitel läuft noch – das ist der Stand bisher)' : '(Kapitel noch nicht gespielt)']),
       ...((k.partner || []).map((p) => 'Zu zweit: ' + (p.einig ? 'einig – ' + zit(p.gemeinsam) : 'uneinig (' + zit(p.a) + ' / ' + zit(p.b) + '), gemeinsam: ' + zit(p.gemeinsam)))),
       ...((k.gruende || []).map((g) => 'Warum ' + zit(g.t) + '? ' + g.grund)),
       ...((k.frei || []).map((f) => f.titel + ': bei ' + (f.besucht.join(', ') || 'niemandem') + (f.verpasst.length ? ', verpasst: ' + f.verpasst.join(', ') : ''))),

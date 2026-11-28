@@ -572,3 +572,40 @@ Fehler bekommen eine faire Folge UND eine zweite Chance; überall, wo jemand blo
   geparkten Gedanken ab · Chronik: Plan im Test benutzt (x-mal), gefühlt vs. gemessen ohne Zahl · neue Gesprächsfrage.
 - Nach dem Testlauf: Der Hinweis „🖐 Drei Dinge suchen“ kommt sofort (als leise Meldung wäre er in der langen Szene verfallen) ·
   Noah geht am Freitag nicht „nach der Stunde“, sondern steigt an der Haltestelle nicht ein und geht zurück zu Herrn Kuedes.
+
+### Serie 3, Runde 2 – Lernwirkung (Panel: Schulpsychologie, Sozialpädagogik, SEL-Fortbildung, zwei Jugendliche)
+- Spiel-Kern: Nach dem Runterkommen auf Rot werden die Antworten neu geprüft (★ im Ampelplan springt nach dem Atmen auf die
+  Gelb-Zeile) · Hinweise zeigen auf ⏸ (Kurz raus), nicht auf ☰ · „Kurz raus“ heißt jetzt „🖐 Drei Dinge suchen“ (danach freiwillig
+  weiter: 5-4-3-2-1 wie im Heft #00), Lexikon gleich · Kapitelende: eine Zeile „SePAS · 116 111“ · Lehrer-Ansicht zeigt auch das
+  laufende Kapitel („läuft noch – bisher“).
+- K1: Wo-probierst-du’s-Plan für „Drei Dinge“ (Bus/Pause/Bett/weiß nicht), K2-Bus löst „im Bus“ ein · Rafa: wer abgestimmt hat,
+  kann „Eine war meine. Sorry.“ sagen (statt Witz) · Tidderich: „Hilfe holen ist kein Petzen, Jo.“ · Kuedes- und Dario-Pfad nach
+  der DM mit „Das liegt nicht an dir.“ · neue Gesprächsfrage (Finger 1–4: was hilft, wenn alle schauen?), Zusätze neu sortiert.
+- K2: zweiter Interview-Versuch geht bis zum Ende („So geht Nachfragen.“) · „Du hast gelacht. … Nein.“ sagt den Grund · Treppe:
+  späte Entschuldigung („Spät. Aber okay.“) · „Hab keinen.“ → Dario nennt einen Beweis, den er gesehen hat · Liste-Satz auch an der
+  Kantinentür · „Hilfe holen ist kein Petzen“ (Mila/Ayla) · Chronik ohne „Folge:“, Steckbrief „genau“ ohne Schuld.
+- K3: Erwachsene fragen nach der Schulter · Wort-Leiter: „Und sonst, nicht nur heute: Wo zuerst?“ + „Achte mal drauf. Bis Montag.“ ·
+  Rückblick zeigt die eigenen Leiter-Antworten · Freitag: 📎 „Darum die Uhr?“ als späte zweite Chance · „Die Schule hat Mama
+  angerufen. Jetzt gibt’s einen Plan für Mittwoch.“ · Chronik: genannte Stufe vs. gemessen Rot · Frage mit dem Satz, den alle hören.
+- K4: Frühwarnung beim Foto mit dem eigenen Signal aus K3 (🫁 in 2,5 s → Wellen starten auf Gelb) · Vorausblende ohne Probe:
+  „Noch mal durchspielen?“ · Karte „Ausprobiert“ nur, wenn probiert · Rückblick „Erst Rot. Du hast geatmet. Dann …“, „Gespickt hast
+  du nicht.“ · Lenning sagt auch dem stillen Kind „Nicht du.“ und erklärt das leere Blatt · Zettel nach oben legen · nach dem
+  Ausraster: Mila mit SePAS-Satz und Tausch-Angebot · Parken zählt als Plan · neue Gesprächsfrage (alle zeigen gleichzeitig Finger).
+
+### Serie 3, Runde 3 – Lernwirkung für Kinder, die schwach lesen und schnell klicken
+- K1: Vertrag als Handy-Karte genau bei Jos Frage (⏭ „Weiter.“ · ✋ „Stopp.“ · Keine Fotos.) · Plakat- und Mila-Satz kürzer
+  („beides ist mitmachen“) · Rot-Moment aufgeräumt (ein Text statt vier, ✋ statt 🫁 beim Stopp) · Tidderich sofort: „Das liegt nicht
+  an dir.“ · ruhige zweite Probe „Jetzt ist es still. Such drei Dinge.“ für alle, die um 13:31 nicht alle fanden · Plan mit Symbolen,
+  „❔ Weiß noch nicht.“ zuerst · Rückblick zeigt den eigenen Plan und den Halt-Satz · Rafa wird für alle aufgelöst (Kuedes/Tidderich).
+- K2: „Frag nach. Zum Beispiel: „Welche?““ · Nachhak-Karte als Toast · „Ist mir egal“: erst das Zeichen (Handy, Liste), dann der Satz ·
+  kürzere Liste-/Atelier-Zeilen · Bank-Toast sagt den Grund · Kenan fragt in K2, ob das Foto weg soll · Jo fragt nach der langen
+  Geschichte: „Weiter.“ geht wieder · Bus: der Plan löst aus („Im Bus. Hab ich mir vorgenommen.“), neu „🙋 Montag Herrn Kuedes zeigen“ ·
+  „Hab keinen.“ mit halbem Beleg: „Das ist ein Anfang.“ · Dario: „Und ich? Was kann ich?“ (Stärke weitergeben, Heft #01).
+- K3: Körpersignal per Körper-Karte antippen (statt Liste, kein 1-1-1) · Störung sagt „Körper“ statt „Hals“ (nicht vorsagen) ·
+  „Und unter der Wut?“, „Weiß nicht.“ zuerst, nach dem Zurückschreien: „Dein Satz … Und drunter?“ · Toast „🔎 Unter der Wut: Angst.“ ·
+  Bus-Einsteiger bekommen Yusufs „war nicht deine schuld“ per Chat · Bleib-bis-Schluss: „Ich hab’s Frau Sommer gesagt.“ · Kantine:
+  „Melden geht. Ohne Namen.“ · Kind und Lehrperson sehen passende Fragen.
+- K4: Zettel zeigt die eigene Probe („– probiert“ / „– auf Rot weg“) · Plan-Karte bekommt ein Bild (erscheint im Rückblick) · ★-Toast
+  zuerst · Frühwarnung zeigt Wirkung („Früh gemerkt. Das bremst.“) bzw. „Zu spät gemerkt.“ · nicht dreimal Atmen hintereinander ·
+  „Zwei Finger“ statt drei · Lenning sagt „Nicht du“ auch im Foto-Weg, Erklärung ab 70 · nach „Schleimer“: Mila „Gut, dass du gegangen
+  bist.“ · Gefilmt-Toast: „Sag es Herrn Kuedes.“ · Chronik: Plan und Parken getrennt, Muster „gefühlt niedriger als gemessen“.

@@ -455,7 +455,7 @@ export function createUI({ root, input, speech }) {
     // opts.gesperrt: { i: Grund } (Steuerpult auf Rot) · opts.tags: { i: Hinweis } (z. B. „Weil du hingeschaut hast.“) · opts.extra: [{ id, t }] → { extra: id }
     const zu = opts.gesperrt || {}, tg = opts.tags || {};
     dialog.querySelector('.ly-d-optionen').innerHTML = wahlReihe.map((i, pos) => '<button type="button" data-i="' + i + '"' + (zu[i] ? ' class="zu" aria-disabled="true"' : '') + '><kbd>' + (pos + 1) + '</kbd><span>' + esc(optionen[i]) +
-      (zu[i] ? '<small class="ly-d-sperre">🫁 ' + esc(zu[i]) + '</small>' : tg[i] ? '<small class="ly-d-neu' + (/^📎/.test(tg[i]) ? ' beweis' : '') + '">' + (/^📎/.test(tg[i]) ? '' : '👁 ') + esc(tg[i]) + '</small>' : '') + '</span></button>').join('') +
+      (zu[i] ? '<small class="ly-d-sperre">' + (/Stopp/.test(zu[i]) ? '✋ ' : '🫁 ') + esc(zu[i]) + '</small>' : tg[i] ? '<small class="ly-d-neu' + (/^📎/.test(tg[i]) ? ' beweis' : '') + '">' + (/^📎/.test(tg[i]) ? '' : '👁 ') + esc(tg[i]) + '</small>' : '') + '</span></button>').join('') +
       (opts.extra && opts.extra.length ? '<div class="ly-d-extra">' + opts.extra.map((x) => '<button type="button" class="ly-btn" data-x="' + esc(x.id) + '">' + esc(x.t) + '</button>').join('') + '</div>' : '');
     wahlFn = (i) => { if (i < 0 || i >= optionen.length || zu[i]) return; wahlFn = null; ok(i); };
     dialog.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => wahlFn && wahlFn(+b.dataset.i); });
@@ -620,7 +620,9 @@ export function createUI({ root, input, speech }) {
       (brief ? '<div class="ly-e-brief"><span class="ly-j-name" style="--f:' + esc(brief.farbe) + '">' + esc(brief.von) + '</span> schreibt dir: „' + esc(brief.text) + '“</div>' : '') + freundesKreis(freunde) + '<div class="ly-e-spalten"><section><h3>Menschen</h3><ul class="ly-j-leute">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + '</span><span class="ly-herzen">' + '♥'.repeat(Math.max(0, Math.min(5, l.herz))) + '<i>' + '♥'.repeat(5 - Math.max(0, Math.min(5, l.herz))) + '</i></span></li>').join('') + '</ul></section>' +
       '<section><h3>Deine Stärken heute</h3><ul class="ly-j-staerken">' + (staerken.length ? staerken.map((s) => '<li><b>' + esc(s.name) + '</b><small>' + esc(s.text) + '</small></li>').join('') : '<li><small>Heute nix Besonderes. Passiert.</small></li>') + '</ul>' +
       '<p class="ly-leer">Entdeckt: ' + entdeckt + ' von ' + gesamt + ' Orten</p></section></div>' +
-      (weiter ? '' : '<p class="ly-e-weiter">Das nächste Kapitel kommt bald.</p>') + (frage ? '<div class="ly-e-frage"><b>💭 Zum Nachdenken – oder fürs Gespräch in der Klasse</b><span>' + esc(frage) + '</span></div>' : '') + (vorschau ? '<div class="ly-e-vorschau"><b>Nächstes Mal</b><span>' + esc(vorschau) + '</span></div>' : '') + '<div class="ly-t-knoepfe">' +
+      (weiter ? '' : '<p class="ly-e-weiter">Das nächste Kapitel kommt bald.</p>') + (frage ? '<div class="ly-e-frage"><b>💭 Zum Nachdenken – oder fürs Gespräch in der Klasse</b><span>' + esc(frage) + '</span></div>' : '') +
+      // Eine Zeile Halt am Ende jedes Kapitels: das Spiel erzählt Schweres – echte Hilfe gibt es echt
+      '<p class="ly-e-hilfe">Ist dir so etwas echt passiert? SePAS in der Schule · Kanner- a Jugendtelefon 116 111 (gratis, anonym)</p>' + (vorschau ? '<div class="ly-e-vorschau"><b>Nächstes Mal</b><span>' + esc(vorschau) + '</span></div>' : '') + '<div class="ly-t-knoepfe">' +
       (weiter ? '<button type="button" class="ly-btn ly-primaer" data-a="weiter">' + esc(weiter) + '</button>' : '<button type="button" class="ly-btn ly-primaer" data-a="frei">Weiter herumlaufen</button>') +
       '<button type="button" class="ly-btn" data-a="neu">Kapitel nochmal spielen</button></div>');
     k.querySelectorAll('[data-a]').forEach((b) => { b.onclick = () => { ebeneZu(); ok(b.dataset.a); }; });
@@ -1353,7 +1355,7 @@ export function createUI({ root, input, speech }) {
     ['Stopp', 'Ein klares Nein. Gilt immer. Ruhig und klar kommt es am besten an.'],
     ['Wenn-dann-Plan', '„Wenn das passiert, dann mache ich das.“ So klappen kleine Vorhaben viel öfter.'],
     ['Bodyscan', 'Von den Füßen bis zum Kopf spüren, wie es dem Körper geht. Hilft, ruhig zu werden.'],
-    ['5-4-3-2-1', '5 Dinge sehen, 4 hören, 3 spüren, 2 Farben, 1 Atemzug. Holt dich ins Hier zurück.'],
+    ['Drei Dinge suchen', 'Drei Dinge anschauen, die einfach da sind. Wer mag, macht weiter: 5 sehen, 4 spüren, 3 hören, 2 riechen, 1 Atemzug (5-4-3-2-1). Holt dich ins Hier zurück.'],
     ['Cringe', 'Jugendwort: peinlich, zum Fremdschämen.'],
     ['Lowkey', 'Jugendwort: ein bisschen, heimlich, „eigentlich schon“.'],
     ['116 111', 'Kanner- a Jugendtelefon. Anonym und gratis. Echt, nicht im Spiel.'],
@@ -1376,14 +1378,15 @@ export function createUI({ root, input, speech }) {
     k.querySelector('[data-a="w"]').onclick = ebeneZu;
   };
   ui.kurzRaus = () => new Promise((ok) => {
-    const SINNE = ['Schau dich um. Finde 5 Dinge, die du siehst.', 'Hör hin. 4 Geräusche, ganz egal welche.', 'Spür 3 Dinge: Füße am Boden, Stuhl, Ärmel.', '2 Farben im Raum, die dir gefallen.', 'Ein Atemzug. Ganz langsam aus.'];
+    // Drei Dinge suchen = der Anfang von 5-4-3-2-1 (Heft #00: 5 sehen, 4 spüren, 3 hören, 2 riechen). Nach den drei Dingen darf man aufhören.
+    const SINNE = ['Such drei Dinge, die du siehst. Etwas Buntes. Etwas Graues. Ein Schild.', 'Noch zwei mehr. Dann sind es fünf.', 'Spür 4 Dinge: Füße am Boden, Stuhl, Ärmel, deine Hände.', 'Hör hin. 3 Geräusche, ganz egal welche.', 'Riech 2 Dinge. Oder such 2 Farben, die dir gefallen.', 'Ein Atemzug. Ganz langsam aus.'];
     let zu = false;
     const ende = () => { if (zu) return; zu = true; ui.rausZu = null; ebeneZu(); ok(); };
     ui.rausZu = ende;
     const start = () => {
       const k = ebeneAuf('raus', '<div class="ly-t-kicker">Kurz raus</div><h2>Kurze Pause.</h2><p class="ly-leer">Was hilft dir gerade?</p><div class="ly-d-optionen">' +
         '<button type="button" data-w="atem"><kbd>1</kbd><span>Atmen mit dem Kreis</span></button>' +
-        '<button type="button" data-w="sinne"><kbd>2</kbd><span>5-4-3-2-1: zurück ins Hier</span></button>' +
+        '<button type="button" data-w="sinne"><kbd>2</kbd><span>🖐 Drei Dinge suchen</span></button>' +
         (ui.bodyscanFrei && ui.bodyscanFrei() ? '<button type="button" data-w="scan"><kbd>🧍</kbd><span>Bodyscan: Füße bis Kopf</span></button>' : '') +
         '<button type="button" data-w="zu"><kbd>3</kbd><span>Zurück ins Spiel</span></button>' +
         '<button type="button" data-w="ziel"><kbd>📍</kbd><span>Was soll ich gerade tun?</span></button>' +
@@ -1404,8 +1407,10 @@ export function createUI({ root, input, speech }) {
     };
     const sinne = (i) => {
       if (i >= SINNE.length) { start(); return; }
-      const k = ebeneAuf('raus', '<div class="ly-t-kicker">5-4-3-2-1</div><h2>' + esc(SINNE[i]) + '</h2><p class="ly-leer">Lass dir Zeit. Das Spiel läuft nicht weg.</p><button type="button" class="ly-btn ly-primaer" data-a="w">Weiter</button>');
-      k.querySelector('[data-a]').onclick = () => sinne(i + 1);
+      const k = ebeneAuf('raus', '<div class="ly-t-kicker">' + (i === 0 ? '🖐 Drei Dinge suchen' : '5-4-3-2-1 · alle Sinne') + '</div><h2>' + esc(SINNE[i]) + '</h2><p class="ly-leer">Lass dir Zeit. Das Spiel läuft nicht weg.</p>' +
+        (i === 0 ? '<button type="button" class="ly-btn ly-primaer" data-a="ok">Geht wieder</button><button type="button" class="ly-btn" data-a="w">Weiter: alle Sinne</button>' : '<button type="button" class="ly-btn ly-primaer" data-a="w">Weiter</button>'));
+      k.querySelector('[data-a="w"]').onclick = () => sinne(i + 1);
+      const okB = k.querySelector('[data-a="ok"]'); if (okB) okB.onclick = () => start();
     };
     // Bodyscan (aus Kap. 9): geführt, Schritt für Schritt – freigeschaltet, sobald man ihn in der Aula gemacht hat.
     const SCAN = ['Füße. Spür den Boden. Drück die Zehen kurz rein. Loslassen.', 'Beine. Schwer oder leicht? Beides ist okay.', 'Bauch. Eine Hand drauf. Er hebt sich beim Einatmen.',
