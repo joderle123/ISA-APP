@@ -1449,6 +1449,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       if (ende) return;
       let t = fest || def.gedanken[Math.floor(Math.random() * def.gedanken.length)];
       const da = [...ged.querySelectorAll('.sz-gedanke:not(.weg)')].map((x) => x.textContent);
+      if (da.length >= 4) { if (!extra) setTimeout(() => gedanke(), 2500); return; }   // nie mehr als vier Blasen auf einmal
       if (fest && da.filter((d) => d === t).length >= 2) return;   // auch Rückkehrer: nie mehr als zwei gleiche auf einmal
       if (!fest) {   // höchstens zweimal derselbe Gedanke auf einmal
         const frei = def.gedanken.filter((g) => da.filter((d) => d === g).length < 2);
@@ -1463,7 +1464,10 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
         // Ohne Parkschein: wegdrücken – und er kommt doppelt zurück (der blaue Elefant).
         if (def.parkschein && puls < 70) { geparkt++; gedankenWeg++; el.classList.add('weg', 'geparkt'); puls = Math.max(5, puls - 4); const pk = k.querySelector('.sz-t-park span'); if (pk) pk.textContent = geparkt; zeigPuls(); setTimeout(() => el.remove(), 600); return; }
         gedankenWeg++; el.classList.add('weg'); puls = Math.max(5, puls - 2); zeigPuls(); setTimeout(() => el.remove(), 600);
-        if (def.elefant) { zurueck++; fuss.innerHTML = '<div class="sz-sys">' + esc(def.parkschein ? 'Auf Rot geht Parken nicht. Er kommt zurück.' : 'Weggedrückt … er kommt zurück. Doppelt.') + '</div>'; setTimeout(() => { if (ende) return; gedanke(t, true); gedanke(t, true); }, 1400); }
+        // Parkschein für alle (Heft #03): Wer ihn nicht im Plan hatte, findet ihn nach dem zweiten „doppelt“ am Blattrand
+        const parkNeu = def.elefant && def.parkFuerAlle && !def.parkschein && zurueck >= 1;
+        if (parkNeu) { def.parkschein = true; k.querySelector('.sz-t-skills') && k.querySelector('.sz-t-skills').insertAdjacentHTML('afterend', '<div class="sz-t-park">🅿️ Am Blattrand: <b>nach dem Test</b> <span>0</span></div>'); }
+        if (def.elefant) { zurueck++; fuss.innerHTML = '<div class="sz-sys">' + esc(parkNeu ? 'Wegdrücken geht nicht. Am Blattrand steht: „nach dem Test“. Tipp ihn an – dann wartet er.' : def.parkschein ? 'Auf Rot geht Parken nicht. Er kommt zurück.' : 'Weggedrückt … er kommt zurück. Doppelt.') + '</div>'; setTimeout(() => { if (ende) return; gedanke(t, true); gedanke(t, true); }, 1400); }
       };
       ged.appendChild(el); puls = Math.min(100, puls + 5); zeigPuls();
       setTimeout(() => { if (el.isConnected) el.remove(); }, 6000);
@@ -1510,10 +1514,10 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       '<div class="sz-bühne"></div><div class="sz-karten"><button type="button" class="sz-atem-knopf">Halten zum Einatmen <kbd>Leertaste</kbd></button></div></div>');
     const ich = k.querySelector('.sz-atem-ich'), er = k.querySelector('.sz-atem-er'), zEl = k.querySelector('.sz-atem-z'), bühne = k.querySelector('.sz-bühne'), knopf = k.querySelector('.sz-atem-knopf'), karten = k.querySelector('.sz-karten');
     let zahl = def.start || 95, gut = 0, runden = 0, ein = null, aus = null, groesse = 0.3, ende = false; const gesagt = new Set();
-    const zeig = () => { zEl.textContent = Math.round(zahl); zEl.style.color = ZONE(zahl)[2]; };
+    const zeig = () => { zEl.textContent = def.allein ? '●' : Math.round(zahl); zEl.style.color = ZONE(zahl)[2]; };   // eigenes Atmen: keine Zahl (die schätzt man selbst)
     const sag = () => { for (const [g, t] of Object.entries(def.saetze || {}).sort((a, b) => b[0] - a[0])) if (zahl <= +g && !gesagt.has(g)) { gesagt.add(g); bühne.innerHTML = blaseHtml(w, t); break; } };
     const runter = () => { if (ende || ein) return; const jetzt = performance.now(); if (aus) { const d = (jetzt - aus) / 1000; runden++; const passt = d >= 3 && d <= 8; const einD = aus - (ein0 || aus); const einOk = einD >= 1800 && einD <= 6000;
-        if (passt && einOk) { gut++; zahl = Math.max(def.ziel || 35, zahl - 12); bühne.insertAdjacentHTML('afterbegin', '<div class="sz-sys">' + (w.name === 'Du' ? 'Ruhig. Genau so.' : 'Ruhig. ' + esc(w.name) + ' atmet mit.') + '</div>'); }
+        if (passt && einOk) { gut++; zahl = Math.max(def.ziel || 35, zahl - 12); if (gut === 1 || w.name !== 'Du') bühne.insertAdjacentHTML('afterbegin', '<div class="sz-sys">' + (w.name === 'Du' ? 'Genau so.' : 'Ruhig. ' + esc(w.name) + ' atmet mit.') + '</div>'); }
         else { zahl = Math.max(def.ziel || 35, zahl - 3); bühne.insertAdjacentHTML('afterbegin', '<div class="sz-sys">' + (einD < 1800 ? 'Ruhig weiter. Normal einatmen.' : d < 3 ? 'Das Ausatmen darf länger sein.' : 'Nicht zu lange warten.') + '</div>'); }
         while (bühne.children.length > 2) bühne.lastChild.remove();
         zeig(); sag(); if (zahl <= (def.ziel || 35) || runden >= 8) return fertig(); }
@@ -1534,7 +1538,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       er.style.transform = 'scale(' + (0.75 + 0.2 * Math.sin(t * tempo * 2)).toFixed(3) + ')';
       requestAnimationFrame(anim);
     };
-    function fertig() { if (ende) return; ende = true; loesche(); document.removeEventListener('keyup', los, true); weiterKnopf(karten, { zahl: Math.round(zahl), gut, runden }, ok, '<div class="sz-sys">' + (def.allein ? 'Du bist bei ' + Math.round(zahl) + '. ' + (gut >= 3 ? 'Ein. Und aus. Länger aus. Es geht.' : 'Langsam wird es besser.') : esc(w.name) + ' ist bei ' + Math.round(zahl) + '. ' + (gut >= 3 ? 'Ihr habt zusammen runtergeatmet.' : 'Langsam wird es besser.')) + '</div>'); }
+    function fertig() { if (ende) return; ende = true; loesche(); document.removeEventListener('keyup', los, true); weiterKnopf(karten, { zahl: Math.round(zahl), gut, runden }, ok, '<div class="sz-sys">' + (def.allein ? (gut >= 3 ? 'Länger aus als ein. Es geht.' : 'Noch nicht ganz. Aber es wird.') : esc(w.name) + ' ist bei ' + Math.round(zahl) + '. ' + (gut >= 3 ? 'Ihr habt zusammen runtergeatmet.' : 'Langsam wird es besser.')) + '</div>'); }
     zeig(); sag(); anim();
   });
 

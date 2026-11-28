@@ -546,7 +546,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   let vertragMesh = null;
   function vertragPlakat() {
     const m = S && S.merke; if (!m || !m.vertragGewaehlt) { if (vertragMesh) vertragMesh.visible = false; return; }
-    const regeln = ['Lachen ja. Auslachen nein.', '„Weiter.“ heißt: weiter.', 'Was hier gesagt wird, bleibt hier – außer bei Gefahr.', 'Regel 6: Nichts von hier in Chats. Keine Fotos.'];   // wie im Heft #00
+    const regeln = ['Lachen ja. Auslachen nein.', '„Weiter.“ – keiner fragt nach.', 'Was hier gesagt wird, bleibt hier – außer bei Gefahr.', 'Regel 6: Nichts von hier in Chats. Keine Fotos.'];   // wie im Heft #00
     const schluessel = regeln[3];
     if (vertragMesh && vertragMesh.userData.k === schluessel) { vertragMesh.visible = true; return; }
     const c = document.createElement('canvas'); c.width = 512; c.height = 400; const g = c.getContext('2d');
@@ -1092,12 +1092,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     else gdUmbau = true;
     ton('pling'); sichern();
   }
+  let schwerBis = 0;
   function garderobePruefen(dt) {
     if (gdUmbau && spieler && steuerung.frei && !steuerung.kameraAus && !imGespraech && !fahrt && !steuerung.sitzt) {
       gdUmbau = false; const p = steuerung.pos.clone(), y = spieler.group.rotation.y;
       spielerFigur(S.figur).then(() => { if (spieler) { spieler.group.position.copy(p); spieler.group.rotation.y = y; } });
     }
-    gdUhr -= dt; if (gdUhr > 0 || !S || !S.merke || S.schritt < 2 || imGespraech || performance.now() < sperreBis + 8000 || ui.ebeneArt()) return; gdUhr = 2;   // Belohnungen nur beim freien Herumlaufen, nicht zwischen zwei schweren Szenen
+    gdUhr -= dt; if (gdUhr > 0 || !S || !S.merke || S.schritt < 2 || imGespraech || performance.now() < sperreBis + 8000 || performance.now() < schwerBis || ui.ebeneArt()) return; gdUhr = 2;   // Belohnungen nur beim freien Herumlaufen, nicht zwischen zwei schweren Szenen
     const G = gd(), lvJetzt = levelVon(S.jetonsGesamt || 0).level;
     let verz = 0;   // Level-Up-Karte zuerst, die Karten für neue Teile danach (nicht übereinander)
     if (lvJetzt > (G.level || 1)) { G.level = lvJetzt; ui.belohnung({ sy: '⭐', name: 'Dorf-Level ' + lvJetzt + '!', art: 'Level-Up', knopf: 'Garderobe öffnen', onKnopf: () => ui.onGarderobe && ui.onGarderobe() }); ton('melodie2'); sichern(); verz = 7400; }
@@ -1362,11 +1363,23 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         let i; const versucht = {};
         for (;;) {
           const rot = pultRot(), gesperrt = {}, tags = {};
-          ord.forEach((k, pos) => { if (rot && opt[k].ruhig) gesperrt[pos] = 'Zu aufgewühlt. Erst atmen.'; else if (opt[k].beweis) tags[pos] = '📎 ' + (opt[k].weil || beweisText(opt[k].beweis) || 'Beweis'); else if (opt[k].bemerkt) tags[pos] = opt[k].weil || 'Weil du hingeschaut hast.'; });
-          const extra = Object.keys(gesperrt).length ? PULT_HILFEN.filter((h) => !versucht[h.id]) : [];
-          if (extra.length && !S.merke.rotErklaert) { S.merke.rotErklaert = true; sichern(); ui.toast('<b>🔴 Rot</b><span>' + ((S.pult && S.pult.g && S.pult.g !== 'Ruhe' && ((SCHRITTE[S.schritt] || {}).kap || 1) >= 3) ? S.pult.g + ' am Steuer. ' : 'Zu viel. ') + 'Erst atmen (🫁).</span>', 'ly-t-ent'); }
+          const rh = z.rotHilfe || null;   // eigene Hilfe für diesen Moment (z. B. K1: „Stopp.“ statt Atmen)
+          ord.forEach((k, pos) => { if (rot && opt[k].ruhig) gesperrt[pos] = (rh && rh.sperre) || 'Zu aufgewühlt. Erst atmen.'; else if (opt[k].beweis) tags[pos] = '📎 ' + (opt[k].weil || beweisText(opt[k].beweis) || 'Beweis'); else if (opt[k].bemerkt) tags[pos] = opt[k].weil || 'Weil du hingeschaut hast.'; });
+          const extra = Object.keys(gesperrt).length ? (rh ? [rh] : PULT_HILFEN).filter((h) => !versucht[h.id]) : [];
+          if (extra.length && rh && rh.toast) ui.toast('<b>🔴 Rot</b><span>' + esc(rh.toast) + '</span>', 'ly-t-ent');
+          else if (extra.length && !S.merke.rotErklaert) { S.merke.rotErklaert = true; sichern(); ui.toast('<b>🔴 Rot</b><span>' + ((S.pult && S.pult.g && S.pult.g !== 'Ruhe' && ((SCHRITTE[S.schritt] || {}).kap || 1) >= 3) ? S.pult.g + ' am Steuer. ' : 'Zu viel. ') + 'Erst atmen (🫁).</span>', 'ly-t-ent'); }
           const r = partnerAn() && z.warum && !extra.length ? await partnerWahl(opt, ord) : await ui.waehle(ord.map((k) => ersetze(opt[k].t)), '', { fest: !!z.fest, gesperrt, tags, extra });
-          if (r && typeof r === 'object' && r.extra) { versucht[r.extra] = true; await pultHilfe(r.extra); continue; }
+          if (r && typeof r === 'object' && r.extra) {
+            versucht[r.extra] = true;
+            if (rh && r.extra === rh.id) {   // eigene Hilfe: kurze Szene, dann runter
+              ui.dialogZu(); if (rh.merke) S.merke[rh.merke] = true;
+              const kap = (SCHRITTE[S.schritt] || {}).kap || 1, l = (S.pultLog = S.pultLog || {})[kap] = (S.pultLog[kap] || { max: 0, rot: 0, hilfen: [] });
+              l.hilfen.push(rh.id); sichern();
+              if (rh.dann) await spiele(rh.dann);
+              pultSetzen({ plus: -(rh.minus || 3) });
+            } else await pultHilfe(r.extra);
+            continue;
+          }
           i = r; break;
         }
         vib(10);
@@ -2235,7 +2248,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const pultRot = () => !!(S.pult && S.pult.kap === ((SCHRITTE[S.schritt] || {}).kap || 1) && S.pult.w >= 7);
   function pultSetzen(p) {
     const kap = (SCHRITTE[S.schritt] || {}).kap || 1;
-    if (!p) { S.pult = null; ui.pult(null); sichern(); return; }
+    if (!p) { if (S.pult) schwerBis = performance.now() + 90000; S.pult = null; ui.pult(null); sichern(); return; }   // nach einem schweren Moment: 90 s keine Belohnungs-Karten
     const alt = S.pult && S.pult.kap === kap ? S.pult : { g: p.g || 'Ruhe', w: 2, kap };
     S.pult = { g: p.g || alt.g, w: Math.max(0, Math.min(10, p.w != null ? p.w : alt.w + (p.plus || 0))), kap };
     const L = S.pultLog = S.pultLog || {}, l = L[kap] = L[kap] || { max: 0, rot: 0, hilfen: [] };
@@ -2572,7 +2585,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     7: 'Was hättest du gebraucht, um in der Kantine aufzustehen?', 8: 'Was prüfst du, bevor du etwas teilst?',
     9: 'Was lädt deinen Akku wirklich auf?', 10: 'Was nimmst du aus diesem Jahr mit?' };
   // Inhaltshinweise je Kapitel (wie in großen Spielen): kurz, sachlich, mit Weg nach draußen
-  const INHALT = { 2: 'Eine Ranking-Liste, Auslachen im Klassenchat.', 3: 'Jemand rastet aus. Schubsen. Ein fieses Foto im Chat.', 4: 'Test-Stress. Ein fieses Foto. Falscher Verdacht.',
+  const INHALT = { 1: 'Ein Foto von dir wird gepostet und bewertet.', 2: 'Eine Ranking-Liste, Auslachen im Klassenchat.', 3: 'Jemand rastet aus. Schubsen. Ein fieses Foto im Chat.', 4: 'Test-Stress. Ein fieses Foto. Falscher Verdacht.',
     5: 'Verdacht gegen dich, Gerüchte, harte Gedanken über sich selbst.', 6: 'Filmen ohne Erlaubnis, Rauswurf aus dem Klassenchat.', 7: 'Gruppendruck, Mobbing in der Kantine.',
     8: 'Ein KI-Fake-Video über eine Lehrerin.', 9: 'Schlafmangel, ein schweres Geheimnis, ein Freund in einer Krise.', 10: 'Geständnis, Entschuldigungen, Abschied.' };
   // Dauer-Anzeige einer Woche (Anspannung 0–100 in Kapitel 4, Akku in Kapitel 9): gilt bis zum Kapitelende
@@ -4014,7 +4027,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   let sommerAn = false;   // Kapitel 9–10: Eiswagen
   // Schnitzeljagd (schatzsuche.js): Lina schickt ab Kapitel 2 den ersten Hinweis aufs Handy; Rätsel stehen unter dem Auftrag
   const jagd = createSchatzsuche({ scene });
-  let jagdUhr = 0, jagdInit = false;
+  let jagdUhr = 0, jagdInit = false, jagdStill = false;
   function jagdAnzeige() {
     const j = S && S.merke && S.merke.jagd;
     if (!j || j.fertig) { ui.neben && ui.neben(null); jagd.zeige(null); return; }
@@ -4028,12 +4041,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const j = S.merke.jagd, lina = (LEUTE.lina && LEUTE.lina.name) || 'Lina';
     if (!j) {   // Start: ab Kapitel 2, in freier Zeit, nicht während eines Botengangs oder Gesprächs
       jagdUhr += dt;
-      if (jagdUhr < 45 || imGespraech || ui.ebeneArt() || foto || botengang.aktiv() || ((SCHRITTE[S.schritt] || {}).kap || 1) < 2) return;
+      if (jagdUhr < 45 || imGespraech || ui.ebeneArt() || foto || botengang.aktiv() || S.pult || !steuerung.frei || performance.now() < sperreBis + 15000 || performance.now() < schwerBis || ((SCHRITTE[S.schritt] || {}).kap || 1) < 2) return;   // nur in wirklich freier Zeit, nie zwischen zwei Szenen
       S.merke.jagd = { i: 0, zeit: 0, tipp: false, fertig: false };
       (S.merke.nachrichten = S.merke.nachrichten || []).push([lina, 'Ich hab Zettel im Dorf versteckt. Schnitzeljagd! 🗺️'], [lina, 'Hinweis 1: ' + JAGD[0].raetsel]);
       nachrichtenRein(); sichern(); jagdAnzeige(); return;
     }
-    if (j.fertig || imGespraech) return;
+    // Im Rot-Modus (Steuerpult an) verschwindet die Anzeige – sie kommt danach wieder
+    const still = !!S.pult; if (still !== jagdStill) { jagdStill = still; if (still) ui.neben && ui.neben(null); else jagdAnzeige(); }
+    if (j.fertig || imGespraech || still) return;
     j.zeit = (j.zeit || 0) + dt;
     if (!j.tipp && j.zeit > TIPP_NACH && !ui.ebeneArt()) { j.tipp = true; ui.toastLeise('<b>📱 ' + lina + '</b><span>Tipp: bei ' + JAGD[j.i].ort + '. Schau auf die Karte (M).</span>'); sichern(); jagdAnzeige(); }
     const p = steuerung.pos, r = jagdFund(j, p.x, p.z);
@@ -4634,6 +4649,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const ort = welt.orte[(st.start && st.start.teleport) || (S.schritt ? 'halle' : 'busAnkunft')];
     const pause = !neu && S.zuletzt ? Date.now() - S.zuletzt : 0;
     if (neu && abKap > 1) await vorspann(st);   // Einstieg über die Kapitelwahl: mit Vorspann
+    if (neu && st && INHALT[st.kap || 1]) ui.toast('<b>ℹ️ In diesem Kapitel</b><span>' + INHALT[st.kap || 1] + ' Wenn es zu viel wird: ☰ → Kurz raus.</span>');
     await starteSchritt(S.schritt, neu ? true : false);
     if (!neu && ort) steuerung.teleport(ort.x, ort.z, ort.yaw);
     // Länger nicht gespielt (Unterricht ist oft eine Woche später): kurzer Rückblick, wo man steht

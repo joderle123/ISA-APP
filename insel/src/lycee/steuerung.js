@@ -205,6 +205,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
   // Körper neigt sich in Kurven und beim Anlaufen (wie in großen Third-Person-Spielen)
   let neigZ = 0, neigX = 0, yawAlt = null, tempoAlt = 0;
   let blickPause = 9, vorX = 0, vorZ = 0;
+  const seiteFuer = { f: null, sg: 1 };
   s.onSchritt = null;
   function kamera(dt, sofort) {
     if (s.kameraAus) return;   // Minispiel (Basketball) führt die Kamera selbst
@@ -217,9 +218,16 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
     if (s.fokus) {
       // Schuss/Gegenschuss: beide Kameras auf derselben Seite der Blickachse (180°-Regel), harter Schnitt beim Wechsel
       const f = s.fokus;
+      // Seite der Schulter: bevorzugt rechts; steht dort eine Wand dicht dahinter, einmal auf die andere Seite wechseln
+      // (pro Gegenüber gemerkt, damit die Kamera nicht hin- und herspringt)
+      if (seiteFuer.f !== f) {
+        _o.set(pos.x, 1.6, pos.z);
+        const a0 = Math.atan2(f.x - pos.x, f.z - pos.z), frei = (sg) => { const w = a0 + Math.PI * 0.72 * sg; _d.set(Math.sin(w), 0.06, Math.cos(w)).normalize(); return strahl(_o, _d, 2.4); };
+        const r = frei(1); seiteFuer.f = f; seiteFuer.sg = r >= 1.4 ? 1 : (frei(-1) > r + 0.3 ? -1 : 1);
+      }
       let gs = !!s.gegenSchuss;
       if (gs) {   // Gegenschuss nur, wenn hinter dem Gegenüber Platz ist – sonst normale Einstellung
-        const a2 = Math.atan2(pos.x - f.x, pos.z - f.z) - Math.PI * 0.72;
+        const a2 = Math.atan2(pos.x - f.x, pos.z - f.z) - Math.PI * 0.72 * seiteFuer.sg;
         _o.set(f.x, 1.6, f.z); _d.set(Math.sin(a2), 0.06, Math.cos(a2)).normalize();
         if (strahl(_o, _d, 2.4) < 1.8) gs = false;
         else { _o.y = 2.2; if (strahl(_o, _d, 2.4) < 1.8) gs = false; }   // auch kein Dach direkt darüber
@@ -228,7 +236,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
       const von = gs ? f : pos, zu = gs ? pos : f;
       const mx = (von.x + zu.x) / 2, mz = (von.z + zu.z) / 2;
       const ang = Math.atan2(zu.x - von.x, zu.z - von.z);
-      const seit = ang + Math.PI * 0.72 * (gs ? -1 : 1);
+      const seit = ang + Math.PI * 0.72 * (gs ? -1 : 1) * seiteFuer.sg;
       _o.set(von.x, 1.6, von.z); _d.set(Math.sin(seit), 0.06, Math.cos(seit)).normalize();
       const weit = Math.max(0.7, Math.min(2.4, strahl(_o, _d, 2.4) - 0.2));   // nicht durch Wände filmen
       _ziel.set(von.x + Math.sin(seit) * weit, Math.min(decke - 0.35, 1.75), von.z + Math.cos(seit) * weit);
@@ -237,7 +245,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
       schnitt = letzterSchuss !== null && letzterSchuss !== gs;
       letzterSchuss = gs;
     } else {
-      letzterSchuss = null;
+      letzterSchuss = null; seiteFuer.f = null;
       const ziel = innen ? Math.min(c.ziel, 3.6) : c.ziel;
       const pitch = innen ? Math.min(c.pitch, 0.42) : c.pitch;
       _o.set(pos.x, 1.45, pos.z);

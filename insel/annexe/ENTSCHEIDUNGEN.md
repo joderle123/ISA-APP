@@ -521,3 +521,32 @@ Je Kapitel drei schwache Szenen gestrichen und neu gebaut, Wahlen ohne Folgen be
 - Skills (freiwillig, K3): „Die Angst-Familie“ → „Die Wort-Leiter: von leise bis laut“ wie im Heft #02 (besorgt – nervös –
   ängstlich – panisch; genervt – gereizt – sauer – wütend – rasend; Wörter von zu Hause; Verzweiflung als Sicherheits-Karte mit
   SePAS und 116 111) · sechs Grundgefühle wie im Heft: Langeweile statt Überraschung.
+
+### Serie 2, Runde 5 (letzte Runde, Jugend-Panel + „Vor dem Einsatz in der Klasse“)
+- Motor: Rot-Modus kann pro Moment eine eigene Hilfe haben (K1: „✋ Stopp.“ statt Atem-Kreis – Heft #00: Stopp gilt sofort) ·
+  Inhaltshinweis jetzt auch für Kapitel 1 · nach einem schweren Moment 90 s keine Belohnungs-Karten · Linas Schnitzeljagd startet
+  nur in wirklich freier Zeit und verschwindet im Rot-Modus · eigenes Atmen zeigt keine Zahl mehr (die schätzt man selbst) ·
+  „Genau so.“ nur beim ersten guten Atemzug · Test: höchstens vier Gedanken-Blasen gleichzeitig; nach dem zweiten „doppelt“
+  steht für alle am Blattrand „nach dem Test“ (Parkschein) · Gesprächskamera wechselt die Schulter, wenn dahinter eine Wand ist ·
+  Schneefall gut sichtbar.
+- K1: Kenans Galerie-Stopp gestrichen → Kenan zeigt sein „bestes Foto“: du, von unten, ohne gefragt zu werden („Lösch das. Bitte.“
+  wirkt – Kenan löscht) · Brunnen: kein Gruß-Menü, der Klick ist die Wahl (hochschauen = Mütze; bei Lina bleiben = ihre Skizze) ·
+  23:07: wie du fragst, entscheidet, was zurückkommt („wer bist du?“ → verlässt den Chat; „was hast du gesehen?“ → „die treppe.
+  eine hand. ein handy.“; „alles ok bei dir?“ → „nein. aber danke, dass du fragst.“) · Ben-Tisch mit Wahl („Hör auf, Jo.“ → Jo
+  schreibt abends nichts über dich) · Kantine 12 s · Ben „hab nur weitergeleitet.“ – Mila „das ist teilen, ben.“ · Mila zeigt
+  aufs Plakat (Regel 6) · Skills: Regeln 1–5 selbst gemacht, Regel 6 steht schon da · Chronik: nichts behaupten, was man nicht
+  gesehen hat (stumm geschaltet), Spuren in einer Zeile, Pause und Rafa in einem Satz.
+- K2: Darios Armband wird nicht mehr erzählt, man muss rüberschauen · „Beweis?“ repariert: Beleg nur, wenn er wirklich passiert
+  ist; Dario prüft, ob Beleg und Stärke zusammenpassen („Das ist nicht Zuhören. Das ist Mut. Auch gut.“; „Erst gelacht. Dann
+  gesucht. Zählt halb.“); nie ein Menü mit nur einem Knopf · Bus: jeder Satz von der Haltestelle kann in der Story landen ·
+  Dario hat gehört, was du Luca gesagt hast · Mitlachen bei der Liste gibt erst etwas (Jo: Faust) und kostet eine Stunde später ·
+  Schrank-Zweig ohne Widersprüche · Währenddessen mit Bild, Rückblick zeigt genau das Gespielte · Zusatzfragen für K2.
+- K3: Französisch „neben Jo“ → Wettlauf im Klassenchat (Manon fragt, Jo tippt schon) · „Frau Sommer holen“ geht auch auf Rot und
+  wirkt, wenn man sagt, was man weiß („Er muss um vier weg.“) · Bug „Löscht das.“ behoben + „📩 Chiara: Schreibst du mit?“ (zu
+  zweit bleibt der Zähler stehen) · Warum-Karte im Gang → Wort-Leiter („Wie sauer warst du?“ – „Und drunter?“; die Figur sagt die
+  eigene Stufe) · Korb-Beweis „Du hast gesagt: sofort weg.“ zählt · Bus: Yusuf wird unterbrochen, wer bleibt, hört den ganzen Satz ·
+  Yusufs Dank als Nachricht im Bus · Rückblick und Chronik korrigiert.
+- K4: Montag ohne Blitz (den kennt man erst Mittwoch) · Welle 3 gestrichen → „Wer kommt?“: die Person vom Ampelplan sieht den
+  Kreis und kommt (bei „niemand“: Mila später „Ich hätte dich geholt.“) · Atmen kein Umweg mehr (gut geatmet = früher durch) ·
+  Mila zeigt Finger statt „0 bis 100“ · „Montag hast du’s gesagt, Jo.“ ohne Stärke; Freitag fragt Ben „War’s Jo?“ · Testkarte
+  „Nach den Ferien: zu zweit.“ · Chiaras Sicht mit Rahmen · „Dein Zettel“ heißt jetzt „Dein Ampelplan“.
