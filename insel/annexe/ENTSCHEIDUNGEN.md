@@ -609,3 +609,24 @@ Fehler bekommen eine faire Folge UND eine zweite Chance; überall, wo jemand blo
   zuerst · Frühwarnung zeigt Wirkung („Früh gemerkt. Das bremst.“) bzw. „Zu spät gemerkt.“ · nicht dreimal Atmen hintereinander ·
   „Zwei Finger“ statt drei · Lenning sagt „Nicht du“ auch im Foto-Weg, Erklärung ab 70 · nach „Schleimer“: Mila „Gut, dass du gegangen
   bist.“ · Gefilmt-Toast: „Sag es Herrn Kuedes.“ · Chronik: Plan und Parken getrennt, Muster „gefühlt niedriger als gemessen“.
+
+### Serie 3, Runde 4 – Transfer: Skills kommen wieder, ein kleiner Schritt in die echte Woche
+- K1: „In diesem Kapitel“ (⏸ → Kurz raus) jetzt auch in K1, nach der Vorausblende · im Rot-Moment nur noch der Stopp-Rat (kein
+  zweiter „Erst atmen“-Toast) · ⏭ auf dem „Weiter.“-Knopf (passt zur Vertragskarte) · „Zurück geht nicht.“ gestrichen (Mila reicht) ·
+  Rafa: „Ich kümmere mich.“ für alle ohne SePAS-Gang · zweite Chance am Dienstag im Gang („Eine Stimme war meine. Sorry.“) · Noah
+  privat nach dem Mitlachen: „Sorry. Ich hab mitgelacht.“ → „ok. gut, dass du’s sagst.“ · Halt für die Nacht in allen Wegen:
+  „Kommt nachts was: Screenshot. Dann zeig’s mir.“ · Plan mit Auslöser („Zu laut? Drei Dinge …“), ❔ zuletzt · Chronik: drei Dinge
+  auch beim Mitlachen, Dienstag-Probe, Jo-Nachricht nur, wenn gesehen, Melden/Screenshot getrennt · Frage mit „6 mitlachen“.
+- K2: Dario-Stärke mit Beweis („Beweis?“ → „Du wusstest meinen Satz noch.“) · Notiz am Ende: „Jemandem eine Stärke sagen. Mit Beweis.
+  Wem?“ · Bus: „Wie am ersten Tag. Drei Dinge?“ für alle mit K1-Erfahrung · Toast „💬 Nachgehakt“ am Turm · Freitag: „Sorry. Wegen dem
+  Foto/Video.“ · Chronik: Nachhaken sofort, Zitat korrigiert, Bus-Schweigen mit „(Lieber einzeln:)“ · neue Frage: Stärke + Nachhaken
+  zu zweit, Zettel „Ich kann ___. Beweis: ___.“
+- K3: Körper-Karte fragt einmal nach, statt still „Weiß nicht“ zu zählen · Signal passt zur Person (Lina Bauch, Noah Brust, Mila
+  Hände) · Wenn-dann mit Wann: „Achte mal drauf. Wann?“ (⚽/🏫/🎮/❔), „Montag frag ich.“ · Kantine: „Herr Kuedes hilft auch.“ ·
+  Yusuf losgeschickt: Frau Sommer hilft sichtbar, Yusuf schreibt „bin da. pünktlich. danke“ · Chronik + „(Lieber einzeln:) Was bremst
+  dich, bevor es knallt?“ bei Rasend/Zurückschreien.
+- K4: Montag fragt die Person aus K3 nach („Und? Dein Signal. Im Sport?“) · ohne Signal aus K3: Körper-Karte nach der Vorausblende ·
+  Test: beim ersten Rot „Dein Zettel liegt unten. Tipp ihn an.“ (Leiste leuchtet) · „Jo lacht am lautesten. Und drunter?“ vor Jos
+  Sicht, danach „🔎 Unter dem Lachen: ein leeres Blatt“ (Wiederkehr aus K3) · Freitag vor der Klasse: zweite Signal-Probe („Wie am
+  Mittwoch.“) · Ende: „Nächster Test. Mein Zettel liegt …“ (🎒/📄/🧠/❔) · Chronik: Plan beim Foto statt im Test benutzt, keine
+  Doppelzeile, „gefühlt niedriger“ auch bei sechs Fingern, Zeile-drei-Frage, wenn auf dem Plan niemand steht.

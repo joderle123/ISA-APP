@@ -1137,9 +1137,11 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       Object.entries(ZONEN).map(([id, [n, x, y]]) => '<button type="button" data-z="' + id + '" style="left:' + x + '%;top:' + y + '%"><span>' + esc(n) + '</span></button>').join('') + '<div class="sz-k-fremd"></div></div>' +
       '<div class="sz-bühne"></div><div class="sz-karten"><button type="button" class="sz-weiter" data-a="w">Zeigen <kbd>E</kbd></button></div></div>');
     k.querySelectorAll('[data-z]').forEach((b) => { b.onclick = () => { const z = b.dataset.z; if (an.has(z)) an.delete(z); else an.add(z); b.classList.toggle('an', an.has(z)); }; });
-    let phase = 0;
+    let phase = 0, leerGefragt = false;
     const weiter = () => {
       if (phase === 0) {
+        // Erster Druck ohne Tipp: nicht still „Weiß nicht“ zählen – einmal freundlich fragen (schnelle Klicker)
+        if (!an.size && !leerGefragt) { leerGefragt = true; const i = k.querySelector('.sz-info'); if (i) { i.textContent = 'Tipp eine Stelle an. Oder „Weiß nicht“.'; i.classList.add('sz-info-an'); } return; }
         phase = 1; loesche();
         if (!an.size) { an.add('nirgends'); k.querySelector('[data-z="nirgends"]').classList.add('an'); }
         k.querySelectorAll('[data-z]').forEach((b) => { b.disabled = true; });
@@ -1147,7 +1149,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
         (def.vergleich || []).forEach((v, i) => v.zonen.forEach((z) => { const Z = ZONEN[z]; if (Z) fremd.insertAdjacentHTML('beforeend', '<i style="--f:' + esc(v.wer.farbe) + ';left:calc(' + Z[1] + '% + ' + (18 + i * 14) + 'px);top:' + Z[2] + '%">' + esc(v.wer.name[0]) + '</i>'); }));
         k.querySelector('.sz-bühne').innerHTML = (def.vergleich || []).map((v) => blaseHtml(v.wer, v.satz)).join('');
         const gleich = (def.vergleich || []).filter((v) => v.zonen.some((z) => an.has(z))).map((v) => v.wer.name);
-        weiterKnopf(k.querySelector('.sz-karten'), { zonen: [...an] }, ok, '<div class="sz-sys">' + esc(gleich.length ? 'Gleiche Stelle wie du: ' + gleich.join(', ') + '.' : 'Bei allen woanders. Jeder Körper meldet sich anders.') + '</div>');
+        weiterKnopf(k.querySelector('.sz-karten'), { zonen: [...an] }, ok, '<div class="sz-sys">' + esc(an.has('nirgends') && an.size === 1 ? 'Weiß nicht ist okay. Achte mal drauf, wo es anfängt.' : gleich.length ? 'Gleiche Stelle wie du: ' + gleich.join(', ') + '.' : (!(def.vergleich || []).length ? 'Merk dir die Stelle. Sie meldet sich wieder.' : ((def.vergleich || []).length === 1 ? 'Bei ' + def.vergleich[0].wer.name + ' woanders.' : 'Bei den anderen woanders.') + ' Jeder Körper meldet sich anders.')) + '</div>');
       }
     };
     k.querySelector('[data-a="w"]').onclick = weiter;
@@ -1413,8 +1415,12 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       setTimeout(() => el.remove(), (e.blick ? 4200 : 3200) * zeitFaktor());
     };
     // keine Zahl (Heft #03: die Zahl schätzt man selbst) – nur Farbe und Wort
+    let rotGezeigt = false;
     const zeigPuls = () => { const Z = ZONE(puls); pulsF.style.width = puls + '%'; pulsF.style.background = Z[2]; pulsZ.textContent = Z[1]; pulsZ.style.color = Z[2]; max = Math.max(max, puls);
-      feld.classList.toggle('verschwommen', puls >= 70 && puls < 90); feld.classList.toggle('blackout', puls >= 90); };
+      feld.classList.toggle('verschwommen', puls >= 70 && puls < 90); feld.classList.toggle('blackout', puls >= 90);
+      // Beim ersten Rot einmal zeigen, wo der eigene Plan liegt (schnelle Klicker übersehen die Leiste unten)
+      if (puls >= 70 && !rotGezeigt && def.rotTipp) { rotGezeigt = true; const el = document.createElement('div'); el.className = 'sz-t-ereignis sz-t-rot'; el.innerHTML = '<span>' + esc(ersetze(def.rotTipp)) + '</span>'; feld.before(el); sk.classList.add('sz-t-hinweis');
+        setTimeout(() => { el.remove(); sk.classList.remove('sz-t-hinweis'); }, 4000 * zeitFaktor()); } };
     const aufgabe = () => {
       if (n >= def.aufgaben.length) {
         if (!def.uhr) return fertig();

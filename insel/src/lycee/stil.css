@@ -1685,3 +1685,7 @@ body.ly-puls-rot .mv-bild img { animation: mv-unruhig 1.6s ease-in-out infinite;
 .sz-t-park b { color: #1d4f9a; } .sz-t-park span { display: inline-block; min-width: 1.4em; text-align: center; background: #1d4f9a; color: #fff; border-radius: 6px; margin-left: 4px; }
 .sz-gedanke.geparkt { background: #e8f1ff !important; color: #1d4f9a !important; transform: translateY(120px) scale(.5) !important; opacity: 0; transition: transform .55s ease, opacity .55s ease; }
 .sz-auf-zeit { margin: 4px 0 8px; }
+.sz-info.sz-info-an { color: #b3261e; }
+.sz-t-ereignis.sz-t-rot { background: #fde2e1; color: #7a1f1a; font-weight: 700; }
+.sz-t-skills.sz-t-hinweis button { box-shadow: 0 0 0 3px #e0574f; }
+.km-gs-kurz { margin: .4em 0 .5em; padding: .45em .7em; border-radius: 10px; background: #eef6f4; color: #1f4d45; font-weight: 600; font-size: .92em; }

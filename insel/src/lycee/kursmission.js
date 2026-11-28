@@ -278,6 +278,7 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
       (lehrer ? '<p class="km-leer">Tipp: Ein Kapitel aufklappen, die Sätze gemeinsam lesen, dann die Frage stellen. Es gibt kein richtig oder falsch – nur Folgen.</p>' : '') +
       '<div class="km-gesch">' + b.kapitel.map((k) => '<details' + (k.kap === letztes ? ' open' : '') + '><summary><span class="km-heft">K' + k.kap + '</span><b>' + esc(k.titel) + '</b><small>' + esc(k.thema) + (k.bisher ? ' · läuft noch – bisher' : '') + '</small></summary>' +
         (k.bilder && k.bilder.length ? '<div class="km-bilder">' + k.bilder.map((x) => '<figure' + (x.auch ? ' class="auch"' : '') + '><img src="' + esc(x.url) + '" alt="' + esc(x.titel) + '"><figcaption><b>' + esc(x.titel) + '</b>' + (x.text ? ' ' + esc(x.text) : '') + '</figcaption></figure>').join('') + '</div>' : '') +
+        (k.kurz && k.kurz.length ? '<p class="km-gs-kurz">' + k.kurz.map(esc).join(' · ') + '</p>' : '') +
         (k.saetze.length ? '<ul>' + k.saetze.map((t) => '<li>' + esc(t) + '</li>').join('') + '</ul>' : '<p class="km-leer">' + (k.gespielt ? 'Keine großen Entscheidungen gemerkt.' : 'Kapitel noch nicht gespielt – nur die Skills-Stunde.') + '</p>') +
         (k.partner && k.partner.length ? k.partner.map((p) => '<p class="km-gs-warum">👥 ' + (p.einig ? 'Einig: ' + esc(zit(p.gemeinsam)) : 'Uneinig (' + esc(zit(p.a)) + ' / ' + esc(zit(p.b)) + ') – gemeinsam: ' + esc(zit(p.gemeinsam))) + '</p>').join('') : '') +
         (k.gruende && k.gruende.length ? k.gruende.map((g) => '<p class="km-gs-warum">🧭 Warum ' + esc(zit(g.t)) + '? <b>' + esc(g.grund) + '</b></p>').join('') : '') +
@@ -296,7 +297,7 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
     'Annexe – Geschichte „@annexe.cam“' + (name ? ' · ' + name : '') + ' · ' + b.kapitel.filter((k) => k.gespielt).length + ' von 10 Kapiteln',
     ...(b.freunde.length ? ['Am nächsten: ' + b.freunde.join(', ')] : []), ...(b.staerken.length ? ['Stärken: ' + b.staerken.join(', ')] : []),
     ...(b.ende ? ['Ende: ' + b.ende] : []),
-    ...b.kapitel.flatMap((k) => ['', 'Kapitel ' + k.kap + ' „' + k.titel + '“ (' + k.thema + ')', ...k.saetze.map((t) => '– ' + t),
+    ...b.kapitel.flatMap((k) => ['', 'Kapitel ' + k.kap + ' „' + k.titel + '“ (' + k.thema + ')', ...(k.kurz && k.kurz.length ? ['Auf einen Blick: ' + k.kurz.join(' · ')] : []), ...k.saetze.map((t) => '– ' + t),
       ...(k.gespielt ? [] : [k.bisher ? '(Kapitel läuft noch – das ist der Stand bisher)' : '(Kapitel noch nicht gespielt)']),
       ...((k.partner || []).map((p) => 'Zu zweit: ' + (p.einig ? 'einig – ' + zit(p.gemeinsam) : 'uneinig (' + zit(p.a) + ' / ' + zit(p.b) + '), gemeinsam: ' + zit(p.gemeinsam)))),
       ...((k.gruende || []).map((g) => 'Warum ' + zit(g.t) + '? ' + g.grund)),

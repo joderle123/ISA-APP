@@ -353,6 +353,7 @@ export const GESPRAECHE_N3 = {
     { handy: { wer: 'Klassenchat 7P2', wann: 'vor 4 Min.', fotoId: 'k3Yusuf', streifen: true, alt: 'Yusuf vor der Halle, Mund offen, von unten fotografiert', text: '„yusuf nach dem turnier 😂 achtung bissig“ · weitergeleitet', zaehler: { start: 23, wort: 'Reaktionen' } } },
     ['jo', 'Wer hat das gemacht? Das ist so gut.'],
     ['mila', '(ernst) Das ist nicht gut. Melden geht. Ohne Namen.'],
+    ['mila', 'Herr Kuedes hilft auch.'],
     { handy: null },
     // Zwei Tische weiter steht Yusuf auf. Mensch oder Chat – beides gleichzeitig geht nicht.
     ['erzaehler', 'Zwei Tische weiter steht Yusuf auf. Sein Tablett bleibt stehen.'],
@@ -448,6 +449,7 @@ export const tunN3 = (c) => ({
   n3_leiter: () => {
     const m = c.S.merke, wer = m.linaVertraut || m.k1BeiLina ? 'lina' : m.listeBeiNoah || m.noahRausGefragt ? 'noah' : 'mila';
     const EIGEN = { lina: '(leise) Ich war erschrocken. Nicht sauer. Erschrocken.', noah: 'Ich war ängstlich. Laute Stimmen. Ich hasse das.', mila: 'Ich war erst genervt. Beim Schreien hatte ich Angst.' };
+    const SIG = { lina: ['bauch', 'Bauch'], noah: ['brust', 'Brust'], mila: ['haende', 'Hände'] }[wer]; m.k3Frager = wer;
     const hoch = ((c.S.pultLog || {})[3] || {}).max >= 7; m.k3GemessenRot = hoch;
     return [[wer, '(später, leise) Wie sauer warst du? Vorhin.'],
       { fest: true, wahl: [
@@ -462,12 +464,18 @@ export const tunN3 = (c) => ({
         { t: '„Scham.“', merke: 'k3DrunterScham', dann: [] }, { t: '„Nichts.“', merke: 'k3DrunterNichts', dann: [] },
       ] },
       [wer, EIGEN[wer]],
-      [wer, 'Wo merkst du Wut zuerst? Bei mir: Hände.'],
+      [wer, 'Wo merkst du so was zuerst? Bei mir: ' + SIG[1] + '.'],
       { szene: 'koerper', id: 'k3Signal', pruefe: false,
-        def: { wo: 'Nur für dich', frage: 'Wo merkst du Wut zuerst? Tipp an.', vergleich: [{ wer: F[wer], zonen: ['haende'], satz: 'Bei mir: Hände.' }] },
+        def: { wo: 'Nur für dich', frage: 'Wo merkst du Wut zuerst? Tipp an.', vergleich: [{ wer: F[wer], zonen: [SIG[0]], satz: 'Bei mir: ' + SIG[1] + '.' }] },
         ausgang: (r, x) => { const z = (r && r.zonen) || [], k = { hals: 'k3SignalHals', bauch: 'k3SignalBauch', haende: 'k3SignalHaende', kopf: 'k3SignalKopf', brust: 'k3SignalBrust', beine: 'k3SignalBeine' }[z[0]];
           x[k || 'k3SignalWeiss'] = true; return 'ok'; }, folgen: { ok: {} } },
-      [wer, 'Achte mal drauf. Bis Montag.']];
+      [wer, 'Achte mal drauf. Wann?'],
+      { fest: true, wahl: [
+        { t: '❔ Weiß noch nicht.', merke: 'k3AchtenOffen', dann: [[wer, 'Okay. Vielleicht merkst du es einfach.']] },
+        { t: '⚽ Im Sport.', merke: 'k3AchtenSport', dann: [[wer, 'Gut. Montag frag ich.']] },
+        { t: '🏫 In der Pause.', merke: 'k3AchtenPause', dann: [[wer, 'Gut. Montag frag ich.']] },
+        { t: '🎮 Beim Zocken.', merke: 'k3AchtenZocken', dann: [[wer, '(grinst) Da merk ich’s auch. Montag frag ich.']] },
+      ] }];
   },
   // Währenddessen: wer nicht bei Yusuf war, sieht ihn – sonst Manon allein am Rand
   n3_waehrenddessen: () => (c.S.merke.pause3Yusuf || c.S.merke.pause3ZuYusuf
@@ -610,8 +618,10 @@ export const tunN3 = (c) => ({
     if (m.k3Zurueck) m.yusufMeidet = true;   // bis Kapitel 6
     if (m.k3Uhr) c.ui.toast('<b>🔎 Unter der Wut</b><span>Angst. Um seinen Bruder.</span>', 'ly-t-ent');
     if (m.k3YusufGeschickt) {
-      if (m.k3Gewonnen) { m.k3Finale = 'verloren'; z.push(['jo', 'Finale zu viert? Wegen dem?'], ['erzaehler', 'Finale zu viert. 4 : 9. Um vier steht Yusuf am Schultor.']); }
-      else z.push(['sommer', '(nickt) Gut, dass du es sagst. Er soll gehen.'], ['erzaehler', 'Um vier steht Yusuf am Schultor. Pünktlich.']);
+      // Halt für Kinder mit ähnlicher Last: Erwachsene helfen sichtbar, Yusuf meldet sich
+      if (m.k3Gewonnen) { m.k3Finale = 'verloren'; z.push(['jo', 'Finale zu viert? Wegen dem?'], ['erzaehler', 'Finale zu viert. 4 : 9.'], ['sommer', '(später, zu dir) Gut, dass du es gesagt hast. Ich ruf seine Mama an.']); }
+      else z.push(['sommer', '(nickt) Gut, dass du es sagst. Er soll gehen.']);
+      z.push({ handy: { wer: 'Yusuf', wann: '16:01', text: 'bin da. pünktlich. danke' } }, ['erzaehler', 'Um vier steht Yusuf am Schultor. Pünktlich.'], { handy: null });
     } else if (m.k3YusufGehalten) {
       if (m.k3Gewonnen) { m.k3Finale = 'gewonnen'; z.push(['erzaehler', 'Finale. Yusuf spielt wie verrückt. 8 : 6. Ihr holt den Pokal.'], ['jo', 'POKAL! Wir haben den POKAL!']); }
       else z.push(['erzaehler', 'Siegerehrung um halb vier. Yusuf steht ganz hinten und schaut nur auf die Uhr.']);

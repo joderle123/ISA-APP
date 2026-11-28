@@ -86,7 +86,7 @@ import { tunN7 } from './story/kapitel7.js';
 import { tunN8 } from './story/kapitel8.js';
 import { tunN9 } from './story/kapitel9.js';
 import { tunN10 } from './story/kapitel10.js';
-import { chronik, GESPRAECH, GESPRAECH_ZUSATZ } from './story/chronik.js';
+import { chronik, GESPRAECH, GESPRAECH_ZUSATZ, SKILLKURZ } from './story/chronik.js';
 import { createKorbSpiel } from './korb3d.js';
 import { baerAnhaenger } from './anhaenger.js';
 import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL, KAPITEL_MODUL } from './geschichte.js';
@@ -1370,7 +1370,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
           ord.forEach((k, pos) => { if (rot && opt[k].ruhig) gesperrt[pos] = (rh && rh.sperre) || 'Zu viel. Erst atmen.'; else if (opt[k].beweis) tags[pos] = '📎 ' + (opt[k].weil || beweisText(opt[k].beweis) || 'Beweis'); else if (opt[k].bemerkt) tags[pos] = opt[k].weil || 'Weil du hingeschaut hast.'; });
           const extra = Object.keys(gesperrt).length ? (rh ? [rh] : PULT_HILFEN).filter((h) => !versucht[h.id]) : [];
           if (extra.length && rh && rh.toast) ui.toast('<b>🔴 Rot</b><span>' + esc(rh.toast) + '</span>', 'ly-t-ent');
-          else if (extra.length && !S.merke.rotErklaert) { S.merke.rotErklaert = true; sichern(); ui.toast('<b>🔴 Rot</b><span>' + ((S.pult && S.pult.g && S.pult.g !== 'Ruhe' && ((SCHRITTE[S.schritt] || {}).kap || 1) >= 3) ? S.pult.g + ' am Steuer. ' : 'Zu viel. ') + 'Erst atmen (🫁).</span>', 'ly-t-ent'); }
+          else if (extra.length && !rh && !S.merke.rotErklaert) { S.merke.rotErklaert = true; sichern(); ui.toast('<b>🔴 Rot</b><span>' + ((S.pult && S.pult.g && S.pult.g !== 'Ruhe' && ((SCHRITTE[S.schritt] || {}).kap || 1) >= 3) ? S.pult.g + ' am Steuer. ' : 'Zu viel. ') + 'Erst atmen (🫁).</span>', 'ly-t-ent'); }
           const r = partnerAn() && z.warum && !extra.length ? await partnerWahl(opt, ord) : await ui.waehle(ord.map((k) => ersetze(opt[k].t)), '', { fest: !!z.fest, gesperrt, tags, extra });
           if (r && typeof r === 'object' && r.extra) {
             versucht[r.extra] = true;
@@ -3632,6 +3632,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     for (let k = 1; k <= bis; k++) {
       const a = (S.merke.anzeigeVerlauf || {})[k];
       kapitel.push({ kap: k, titel: KAPITEL[k] || '', thema: KAPITEL_MODUL[k] || '', saetze: k <= fertigBis ? ch[k] || chronik(k, S.merke) : k === jetztK ? chronik(k, S.merke) : [], gespielt: k <= fertigBis, bisher: k > fertigBis && k === jetztK, frage: (GESPRAECH[k] || REFLEXION[k] || '') + (GESPRAECH_ZUSATZ[k] && S.merke && GESPRAECH_ZUSATZ[k](S.merke) ? ' ' + GESPRAECH_ZUSATZ[k](S.merke) : ''),
+        kurz: SKILLKURZ[k] && (k <= fertigBis || k === jetztK) ? SKILLKURZ[k](S.merke).filter(Boolean) : [],
         anzeige: a ? VW[a.art] + (a.art === 'akku' ? ': am wenigsten ' + a.min + ', am Ende ' + a.ende : ': höchstens ' + a.max + ', am Ende ' + a.ende) + ' (von 100)' : '',
         versuche: Object.entries((S.versuche || {})[k] || {}).map(([t, v]) => ({ t, n: typeof v === 'object' ? v.n : v, ok: typeof v === 'object' ? v.ok !== false : true })),
         gruende: (S.gruende || {})[k] || [], partner: (S.partnerLog || {})[k] || [],
@@ -4656,7 +4657,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const ort = welt.orte[(st.start && st.start.teleport) || (S.schritt ? 'halle' : 'busAnkunft')];
     const pause = !neu && S.zuletzt ? Date.now() - S.zuletzt : 0;
     if (neu && abKap > 1) await vorspann(st);   // Einstieg über die Kapitelwahl: mit Vorspann
-    if (neu && st && INHALT[st.kap || 1]) ui.toast('<b>ℹ️ In diesem Kapitel</b><span>' + INHALT[st.kap || 1] + ' Wenn es zu viel wird: ⏸ → Kurz raus.</span>');
+    if (neu && st && INHALT[st.kap || 1] && (st.kap || 1) !== 1) ui.toast('<b>ℹ️ In diesem Kapitel</b><span>' + INHALT[st.kap || 1] + ' Wenn es zu viel wird: ⏸ → Kurz raus.</span>');
     await starteSchritt(S.schritt, neu ? true : false);
     if (!neu && ort) steuerung.teleport(ort.x, ort.z, ort.yaw);
     // Länger nicht gespielt (Unterricht ist oft eine Woche später): kurzer Rückblick, wo man steht
