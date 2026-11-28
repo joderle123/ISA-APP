@@ -1350,7 +1350,8 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       '<div class="sz-karten ly-d-optionen"></div></div>');
     const fill = k.querySelector('.sz-mut i'), karten = k.querySelector('.sz-karten');
     const alle = []; let mut = 0, aus = false, gezeigt = -1;
-    const t0 = performance.now(), ms = (def.dauer || 5) * 1000 * (ui.ruhig ? 1.4 : 1);
+    // def.rec: Sekunden Video (Kapitel 6) – die Beschriftung zählt live mit. def.warte: so lange steht der Balken, damit man erst lesen kann
+    const t0 = performance.now() + (def.warte || 0) * 1000 * (ui.ruhig ? 1.4 : 1), ms = (def.dauer || 5) * 1000 * (ui.ruhig ? 1.4 : 1), recEl = k.querySelector('.sz-mut span');
     const zeig = () => {
       const offen = def.stufen.filter((st) => st.ab <= mut + 1e-6);
       if (offen.length === gezeigt) return; gezeigt = offen.length;
@@ -1360,7 +1361,9 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     };
     const ende = (i) => { if (aus || !alle[i]) return; aus = true; loesche(); ui.ebeneZu(); ok({ key: alle[i].key, mut: Math.round(mut * 100) }); };
     halte((e) => { const m = /^Digit([1-9])$/.exec(e.code); if (m) { e.preventDefault(); e.stopPropagation(); ende(+m[1] - 1); } });
-    const tick = () => { if (aus) return; mut = Math.min(1, (performance.now() - t0) / ms); fill.style.width = (mut * 100).toFixed(1) + '%'; zeig(); if (mut < 1) requestAnimationFrame(tick); };
+    const tick = () => { if (aus) return; mut = Math.max(0, Math.min(1, (performance.now() - t0) / ms)); fill.style.width = (mut * 100).toFixed(1) + '%';
+      if (def.rec && recEl) recEl.textContent = '🔴 0:' + String(Math.round(mut * def.rec)).padStart(2, '0');
+      zeig(); if (mut < 1) requestAnimationFrame(tick); };
     zeig(); requestAnimationFrame(tick);
   });
 

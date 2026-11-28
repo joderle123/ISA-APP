@@ -760,3 +760,13 @@ Fehler bekommen eine faire Folge UND eine zweite Chance; überall, wo jemand blo
   - **Neu Freitag:** „Okay. Lösch ich.“ auf Milas Nein (stoppt die eigene Weiterleitung). Wer Dario nicht gedrängt hat: Dario löscht es in der Ecke. Hilfe-Satz für alle.
   - **Neu Ende:** Samstag 20:14, das Video kommt wieder – Screenshot und stumm, anschauen, „Lösch das.“ oder weiterleiten. Kein Lob.
   - **Lehrer-Ansicht:** Kernzeilen, Kopfzeile, Zusatzfragen, Finger-Runde als Gesprächsfrage.
+- **K6 Runde 2 (Fach- und Jugend-Panel):**
+  - **Gestrichen:** der Fakten-Chat am Dienstag (Kopie von K5), Chiaras Regeln am Donnerstag, der Kuedes-Vortrag nach dem Video, „Lösch dich“ in der Wort-Schere
+    (kann als Aufforderung zum Suizid gelesen werden).
+  - **Neu Dienstag:** Jo fragt, ob er „hinten links“ in seiner Erklärung nennen darf – Einverständnis von der anderen Seite.
+  - **Neu Donnerstag:** „Display weg“ – Mila dreht ihr Handy weg; fragen, schauen, „alles gut?“ oder daneben sitzen. Milas Handy ist eine Grenze.
+  - **Neu Freitag:** echte Wort-Schere im Chat (Giftwörter wegtippen), „Okay. Lösch ich.“ als eigener Knopf, Büro mit „Wer, wann?“ statt Vortrag
+    (was du mitbringst, entscheidet die Uhr). Mila erzählt, was Herr Kuedes gesagt hat, wenn du draußen wartest.
+  - **Neu Samstag:** danach still der eigene Stopp-Plan (Handy · Spitzname · Drängeln · Online).
+  - **Mittwoch:** Aufnahme mit Live-Zähler, startet nach dem Lesen, 16 s – auch schwache Leser können früh stoppen.
+  - **Allgemein:** Nebenmeldungen warten, bis keine Story-Szene offen ist.

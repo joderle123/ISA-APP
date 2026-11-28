@@ -659,7 +659,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!nq || !nq.length) return;
     S.merke.nachrichten = []; S.merke.handyLog = (S.merke.handyLog || []).concat(nq.map(([von, t]) => [von, t, tagLabel()])).slice(-40);
     S.merke.handyNeu = (S.merke.handyNeu || 0) + nq.length; ui.handyNeu && ui.handyNeu(S.merke.handyNeu);
-    nq.forEach(([von, t], i) => setTimeout(() => ui.toastLeise('<b>📱 ' + von + '</b><span>' + t + '</span>'), 3500 + i * 2600)); sichern();
+    nq.forEach(([von, t], i) => setTimeout(() => leiseWennFrei('<b>📱 ' + von + '</b><span>' + t + '</span>'), 3500 + i * 2600)); sichern();
+  }
+  // Nebenmeldungen nie mitten in eine Story-Szene (Jugend-Panel K6 R2: „Wette am Spielplatz ⚡“ mitten in Milas Nein) – warten, bis frei
+  function leiseWennFrei(html, n = 0) {
+    let besetzt = false; try { besetzt = imGespraech || !!ui.ebeneArt(); } catch (e) { besetzt = false; }
+    if (besetzt && n < 150) { setTimeout(() => leiseWennFrei(html, n + 1), 2000); return; }
+    ui.toastLeise(html);
   }
   // Situationen: wer ist gerade da (Kapitel, Schalter „Schwierige Situationen“, was schon passiert ist)
   const risikoAn = () => !ui.einstellungen || ui.einstellungen().risiko !== false;

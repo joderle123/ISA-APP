@@ -77,19 +77,42 @@ export function mechanikenK6(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
       let tt = ab; (def.helfer || []).forEach((h) => { tt += 1.1; plan({ nach: 0, wer: h.wer, text: h.text, tu: () => { if (!helferDa.includes(h.id)) helferDa.push(h.id); } }, t + tt); });
       return tt;
     };
+    // Gift drin: tom lacht, alle wollen das Video sehen. Gift raus: die mitziehen, die dir diese Woche vertraut haben.
+    const sauberSenden = (text) => {
+      flags.kommentar = true; lacherAn = false; zeig({ ich: true, text }); G[0].v = Math.min(G[0].n, G[0].v + 1.5);
+      plan({ nach: 1.4, wer: P.wer, text: 'chill. ist doch nur ein video' }, t);
+      const ende = helferLos(2.2), n = (def.helfer || []).length;
+      if (n >= 2) { plan({ nach: 0, wer: P.wer, text: 'ok ok 🙄' }, t + ende + 1.2); plan({ nach: 0, system: P.wer + ' hat das Video gelöscht.', tu: () => geloescht('tom') }, t + ende + 2); }
+      else plan({ nach: 0, wer: P.wer, text: 'ihr seid so empfindlich 😂' }, t + ende + 1.2);
+    };
+    const giftSenden = (text) => {
+      flags.lucaBeleidigt = true; zeig({ ich: true, text }); G[0].v = Math.min(G[0].n, G[0].v + 3); lacher += 4;
+      plan({ nach: 1.2, wer: P.wer, text: 'sagt hinten links 😂' }, t); plan({ nach: 2.4, wer: 'sami.lu', text: 'drama 🍿 wer hat das video, ich will’s sehen' }, t);
+    };
+    const SCHERE = { teile: [{ t: 'Typisch Luca.', gift: true }, { t: 'IMMER so ekelhaft.', gift: true }, { t: 'Löscht das!' }], wunsch: ['Sie hat Nein gesagt.', 'Nicht vor allen.'] };
+    const schere = () => {
+      sheet = true; const weg = new Set(); let w = -1;
+      const zeichne = () => {
+        leiste.innerHTML = '<p class="k6-sheet">✂️ Dein Entwurf. Tipp an, was raus soll. Dann ein Wunsch dazu.</p><div class="k6-schere">' +
+          SCHERE.teile.map((x, i) => '<button type="button" data-s="' + i + '"' + (weg.has(i) ? ' class="weg"' : '') + '>' + esc(x.t) + '</button>').join('') + '</div><div class="k6-schere k6-wunsch">' +
+          SCHERE.wunsch.map((x, i) => '<button type="button" data-u="' + i + '"' + (w === i ? ' class="an"' : '') + '>+ ' + esc(x) + '</button>').join('') + '</div>' +
+          '<button type="button" class="k6-los" data-x="senden"><kbd>↵</kbd><span>Senden</span></button><button type="button" data-x="zurueck"><kbd>✕</kbd><span>Doch nicht</span></button>';
+        leiste.querySelectorAll('[data-s]').forEach((b) => { b.onclick = () => { const i = +b.dataset.s; if (weg.has(i)) weg.delete(i); else weg.add(i); ton('klick'); zeichne(); }; });
+        leiste.querySelectorAll('[data-u]').forEach((b) => { b.onclick = () => { const i = +b.dataset.u; w = w === i ? -1 : i; zeichne(); }; });
+        leiste.querySelector('[data-x="zurueck"]').onclick = () => { sheet = false; leisteNeu(); };
+        leiste.querySelector('[data-x="senden"]').onclick = () => {
+          const rest = SCHERE.teile.filter((_, i) => !weg.has(i)), text = [...rest.map((x) => x.t), ...(w >= 0 ? [SCHERE.wunsch[w]] : [])].join(' ');
+          if (!text) { sheet = false; leisteNeu(); return; }
+          sheet = false; gemacht.add('schreiben:0'); flags.schere = true;
+          if (rest.some((x) => x.gift)) giftSenden(text.toLowerCase()); else { flags.schereSauber = true; sauberSenden(text.toLowerCase()); }
+          leisteNeu();
+        };
+      };
+      zeichne();
+    };
     const A = [
       { id: 'schreiben', sy: '✍️', t: 'Schreiben', wahl: () => [
-        { t: '„Löscht das. Sie hat Nein gesagt.“', tu: () => {
-          flags.kommentar = true; lacherAn = false; zeig({ ich: true, text: 'löscht das. sie hat nein gesagt.' }); G[0].v = Math.min(G[0].n, G[0].v + 1.5);
-          plan({ nach: 1.4, wer: P.wer, text: 'chill. ist doch nur ein video' }, t);
-          const ende = helferLos(2.2), n = (def.helfer || []).length;
-          if (n >= 2) { plan({ nach: 0, wer: P.wer, text: 'ok ok 🙄' }, t + ende + 1.2); plan({ nach: 0, system: P.wer + ' hat das Video gelöscht.', tu: () => geloescht('tom') }, t + ende + 2); }
-          else plan({ nach: 0, wer: P.wer, text: 'ihr seid so empfindlich 😂' }, t + ende + 1.2);
-        } },
-        { t: '„Luca ist so ekelhaft.“', tu: () => {
-          flags.lucaBeleidigt = true; zeig({ ich: true, text: 'luca ist so ekelhaft.' }); G[0].v = Math.min(G[0].n, G[0].v + 3); lacher += 4;
-          plan({ nach: 1.2, wer: P.wer, text: 'sagt hinten links 😂' }, t); plan({ nach: 2.4, wer: 'sami.lu', text: 'drama 🍿 wer hat das video, ich will’s sehen' }, t);
-        } },
+        { t: '✂️ Selbst schreiben …', schere: true, tu: () => schere() },
         { t: '„@Mila alles okay?“', tu: () => {
           flags.oeffentlichMila = true; zeig({ ich: true, text: '@Mila alles okay?' }); G[0].v = Math.min(G[0].n, G[0].v + 2);
           plan({ nach: 1.6, wer: 'unbekannt_09', text: 'mila ist eh online 👀' }, t); plan({ nach: 3.2, privat: 'Mila', text: 'bitte nicht im chat.', setzt: 'milaNein' }, t);
@@ -131,14 +154,14 @@ export function mechanikenK6(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
           flags.lucaDm = true; zeig({ privat: 'Luca', ich: true, text: 'lösch das. sofort.' });
           plan({ nach: 2.4, privat: 'Luca', text: 'lol nein 😂' }, t); plan({ nach: 3.8, privat: 'Luca', text: 'ist mein video' }, t);
         } },
-        // Fach-Panel K6 R1: Auf Milas Nein gibt es ein „Okay“ – mit Wirkung (die eigene Weiterleitung ist weg; was schon in U14 ist, läuft weiter)
-        ...(flags.milaNein && (flags.geteilt || flags.anMila || flags.oeffentlichMila) ? [{ t: 'Mila: „Okay. Lösch ich.“', tu: () => {
-          flags.okayMila = true; zeig({ privat: 'Mila', ich: true, text: 'okay. lösch ich.' });
-          if (flags.geteilt && G[1].aktiv) { G[1].aktiv = false; wegNeu(); zeig({ system: 'Deine Weiterleitung in „' + G[1].t + '“ ist gelöscht.' }); }
-          else zeig({ system: 'Gelöscht.' });
-          plan({ nach: 2, privat: 'Mila', text: 'danke.' }, t);
-        } }] : []),
       ] },
+      // Auf Milas Nein: „Okay“ – mit Wirkung (die eigene Weiterleitung ist weg; was schon in U14 ist, läuft weiter)
+      { id: 'okay', sy: '👌', t: 'Mila: „Okay. Lösch ich.“', wenn: 'milaNein', tu: () => {
+        flags.okayMila = true; zeig({ privat: 'Mila', ich: true, text: 'okay. lösch ich.' });
+        if (flags.geteilt && G[1].aktiv) { G[1].aktiv = false; wegNeu(); zeig({ system: 'Deine Weiterleitung in „' + G[1].t + '“ ist gelöscht.' }); }
+        else zeig({ system: 'Gelöscht.' });
+        plan({ nach: 2, privat: 'Mila', text: 'danke.' }, t);
+      } },
       { id: 'mitMila', sy: '🚶', t: 'Mit Mila zu Herrn Kuedes', wenn: 'milaWill', ende: true, tu: () => {
         flags.mitMila = true; zeig({ system: 'Du steckst das Handy ein. Mila steht schon auf.' }); quelleStopp();
       } },
@@ -153,13 +176,14 @@ export function mechanikenK6(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
     const aktion = (a) => {
       if (zu || endet || !a) return;
       if (a.ende) { gemacht.add(a.id); a.tu(); endet = true; schlange.length = 0; leisteNeu(); setTimeout(fertig, 1400); return; }
+      if (!a.wahl) { gemacht.add(a.id); a.tu(); leisteNeu(); return; }
       const opts = a.wahl().map((w, i) => ({ ...w, i })).filter((w) => !gemacht.has(a.id + ':' + w.i));
       if (!opts.length) { gemacht.add(a.id); leisteNeu(); return; }
       sheet = true;   // Auswahl offen: die Uhr steht (wer langsam liest, verliert nichts)
       leiste.innerHTML = '<p class="k6-sheet">' + esc(a.sy + ' ' + a.t) + '</p>' + opts.map((w, n) => '<button type="button" data-w="' + w.i + '"><kbd>' + (n + 1) + '</kbd><span>' + esc(ersetze(w.t)) + '</span></button>').join('') + '<button type="button" data-w="-1"><kbd>✕</kbd><span>Doch nicht</span></button>';
       leiste.querySelectorAll('[data-w]').forEach((b) => { b.onclick = () => {
         sheet = false; const i = +b.dataset.w;
-        if (i >= 0) { gemacht.add(a.id + ':' + i); const w = a.wahl()[i]; w.tu(); if (a.wahl().every((_, j) => gemacht.has(a.id + ':' + j))) gemacht.add(a.id); }
+        if (i >= 0) { const w = a.wahl()[i]; if (!w.schere) gemacht.add(a.id + ':' + i); w.tu(); if (w.schere) return; if (a.wahl().every((_, j) => gemacht.has(a.id + ':' + j))) gemacht.add(a.id); }
         leisteNeu();
       }; });
     };

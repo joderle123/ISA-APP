@@ -301,7 +301,8 @@ export const tunN9 = (c) => ({
     return [];
   },
   n9_sprung: () => { c.S.merke.spurSprung = true; c.ui.toast('<b>🔎 Der Kratzer</b><span>Unten links. Auf jedem Foto bis Dezember.</span>', 'ly-t-ent'); return []; },
-  n9_datei: () => (c.S.merke.k6Datei ? [['dario', 'Die Sprachnachricht im Januar. Das war das Einzige, was ich mich getraut hab.']] : []),
+  n9_datei: () => (!c.S.merke.k6Datei ? [] : c.S.merke.k6DarioGesagt ? [['dario', 'Herr Kuedes wusste, dass die Sprachnachricht von mir war. … War okay. Er hat mich nicht reingeritten.']]
+    : c.S.merke.k6DarioGeheim ? [['dario', 'Du hast keinem gesagt, von wem die Sprachnachricht war. Ich weiß das.']] : [['dario', 'Die Sprachnachricht im Januar. Das war das Einzige, was ich mich getraut hab.']]),
   n9_nik: () => (c.S.merke.k9Gegangen ? [['nik', '(zu Dario) Du siehst aus wie nach einer Nachtschicht, Bub.']] : [['nik', 'Ihr zwei seht aus wie nach einer Nachtschicht.']]),
   n9_mittag: () => ((c.S.merke.k9NichtVersprochen || c.S.merke.k9Gegangen) ? [
     { blende: 'Montag · 12:10' },

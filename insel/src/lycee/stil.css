@@ -1770,6 +1770,11 @@ body.ly-puls-rot .mv-bild img { animation: mv-unruhig 1.6s ease-in-out infinite;
 .k6-video .sz-aktionen button { flex: 1 1 46%; min-width: 46%; padding: 7px 10px; }
 .k6-sheet { flex-basis: 100%; margin: 0 0 2px; font-weight: 900; font-size: 13px; color: #6b7280; }
 .k6-los { background: #2b3a55 !important; color: #fff; }
+.k6-schere { display: flex; flex-wrap: wrap; gap: 6px; flex-basis: 100%; margin: 2px 0 6px; }
+.k6-schere button { flex: 0 1 auto !important; font-weight: 800; }
+.k6-schere button.weg { text-decoration: line-through; opacity: .45; }
+.k6-schere.k6-wunsch button { background: #eef6f1; border-color: #3fa66b; }
+.k6-schere.k6-wunsch button.an { background: #3fa66b; color: #fff; }
 /* Kapitel 5: Störung im Chat (Mme Tidderich in der Tür) */
 .k5-stoer { display: grid; gap: 10px; width: min(380px, 86vw); padding: 16px; border-radius: 18px; background: #fff; box-shadow: 0 8px 24px rgba(20, 30, 50, .25); }
 .k5-stoer > b { font-size: 18px; line-height: 1.3; }

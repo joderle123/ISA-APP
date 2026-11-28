@@ -216,28 +216,40 @@ const KAP = {
     // Kapitel 6 „Die Sprachnachricht“ (Heft #05 Grenzen): Nein hören, fragen bevor man hilft, ein Stopp für sich selbst.
     const H = (m.k6Helfer || []).filter((id) => id !== 'ayla').map((id) => id[0].toUpperCase() + id.slice(1));
     const L = m.k6Weggeschaut || (m.k6Mut != null && m.k6Mut >= 70) ? '0:40' : m.k6Mut != null && m.k6Mut >= 35 ? '0:25' : '0:10';
-    const tat = !m.k6Video ? null : m.k6VMitMila ? 'Du hast Mila gefragt, was sie braucht, und bist mit ihr zu Herrn Kuedes.'
-      : m.k6VGeteilt ? 'Du hast es weitergeleitet: „Luca ist fies!“' + (m.k6VOkayMila ? ' Nach Milas „bitte nicht“: „Okay. Lösch ich.“' : '') : m.k6VAnMila ? 'Du hast es Mila geschickt: „Hast du das gesehen?“'
-      : m.k6VKommentar ? 'Du hast geschrieben: „Löscht das. Sie hat Nein gesagt.“' + (H.length ? ' Mitgezogen: ' + H.join(', ') + '.' : ' Außer Ayla zog keiner mit.')
-      : (m.k6VChiara || m.k6VApp || m.k6VNoahGefragt) ? 'Du hast es gemeldet.' : m.k6VGefragt ? 'Du hast Mila privat gefragt, was sie braucht.'
-      : 'Du hast nichts gemacht.' + (m.k6VAngesehen ? ' Angesehen hast du es.' : '');
+    // Fach-Panel K6 R2: nie „nichts gemacht“, wenn das Kind etwas getan hat (Screenshot, Luca privat, „@Mila“, Wort-Schere)
+    const tat = !m.k6Video ? null : (m.k6VMitMila ? 'Du hast Mila gefragt, was sie braucht, und bist mit ihr zu Herrn Kuedes.'
+      : m.k6VGeteilt ? 'Du hast es weitergeleitet: „Luca ist fies!“' : m.k6VAnMila ? 'Du hast es Mila geschickt: „Hast du das gesehen?“'
+      : m.k6VKommentar ? (m.k6VSchere ? 'Du hast die Giftwörter weggeschnitten und geschrieben: „Löscht das.“' : 'Du hast geschrieben: „Löscht das. Sie hat Nein gesagt.“') + (H.length ? ' Mitgezogen: ' + H.join(', ') + '.' : ' Außer Ayla zog keiner mit.')
+      : m.k6VLucaBeleidigt ? 'Du hast geschrieben – mit Giftwörtern („Typisch Luca …“). Danach wollten alle das Video sehen.'
+      : m.k6VOeffentlichMila ? 'Du hast vor allen geschrieben: „@Mila alles okay?“' : (m.k6VChiara || m.k6VApp || m.k6VNoahGefragt) ? 'Du hast es gemeldet.'
+      : m.k6VGefragt ? 'Du hast Mila privat gefragt, was sie braucht.' : m.k6VBeleg ? 'Du hast einen Screenshot für Herrn Kuedes gemacht.'
+      : m.k6VLucaDm ? 'Du hast Luca privat geschrieben: „Lösch das.“' : 'Du hast nichts gemacht.' + (m.k6VAngesehen ? ' Angesehen hast du es.' : ''))
+      + (m.k6VOkayMila ? ' Auf Milas „bitte nicht“: „Okay. Lösch ich.“' : '');
     return [
-      K(1, eins(m, [['k6Datei', 'Montag: Du hast Dario gedrängt. Er hat dir die Datei geschickt – und dich nicht mehr angeschaut.'], ['k6DarioGeschuetzt', 'Montag: Du hast Dario nicht gedrängt. Am Freitag hielt er die Ecke sauber.']])),
+      K(1, eins(m, [['k6Datei', 'Montag: Du hast Dario gedrängt. Er hat dir die Datei geschickt – und dich nicht mehr angeschaut.'], ['k6DarioGeschuetzt', 'Montag: Du hast Dario nicht gedrängt. Am Freitag schrieb er dir: „kommt nicht in die ecke.“']])),
       m.k6JoGeprueft ? '📷 Jos Sprachnachricht selbst geprüft: eine Idee, kein „Ich war’s“.' : null,
       eins(m, [['k6JoVerstanden', 'Jo hast du nachgefragt statt ausgefragt. Er hat alles erzählt.'], ['k6JoGehoert', 'Jo hat dir einen Teil erzählt.'], ['k6JoZu', 'Jo hat dichtgemacht.']]),
-      K(2, eins(m, [['k6DateiGepostet', 'Dienstag: Jos Sprachnachricht hast du in den Klassenchat gestellt. Ohne ihn zu fragen.'], ['k6JoSelbst', 'Dienstag: Du hast Jo gebeten, es selbst zu schreiben.'],
-        ['k6KuedesDatei', m.k6Datei ? 'Dienstag: Mit der Sprachnachricht bist du zu Herrn Kuedes gegangen.' : 'Dienstag: Du bist zu Herrn Kuedes gegangen – mit dem, was Jo dir erzählt hat.'], ['k6NurMila', 'Dienstag: Du hast es nur Mila gesagt.']])),
+      K(2, eins(m, [['k6DateiGepostet', 'Dienstag: Jos Sprachnachricht hast du in den Klassenchat gestellt. Ohne ihn zu fragen. Jo: „Das ist meine Stimme.“'],
+        ['k6JoMitName', 'Dienstag: Jo fragte, ob er „hinten links“ schreiben darf. Du: „Ja. Mit meinem Namen.“'], ['k6JoOhneName', 'Dienstag: Jo fragte, ob er „hinten links“ schreiben darf. Du: „Ja. Aber ohne mich.“'],
+        ['k6JoSelbst', 'Dienstag: Du hast Jo gebeten, es selbst zu schreiben.'],
+        ['k6KuedesDatei', (m.k6Datei ? 'Dienstag: Mit der Sprachnachricht bist du zu Herrn Kuedes gegangen.' : 'Dienstag: Du bist zu Herrn Kuedes gegangen.') + (m.k6DarioGesagt ? ' Du hast gesagt, dass sie von Dario ist.' : m.k6DarioGeheim ? ' Von wem sie ist, hast du nicht gesagt.' : '')],
+        ['k6NurMila', 'Dienstag: Du hast es nur Mila gesagt.'], ['k6BeweisStill', 'Dienstag: Jo saß allein. Du hast nichts getan.']])),
       K(3, (() => { const t = eins(m, [['k6Stopp', 'Mittwoch, Luca filmt Mila: Du hast Stopp gesagt.'], ['k6Linse', 'Mittwoch, Luca filmt Mila: Du hast dich vor die Linse gestellt.'], ['k6Kenan', 'Mittwoch, Luca filmt Mila: Du hast Kenan angesprochen.'],
         ['k6Rantini', 'Mittwoch, Luca filmt Mila: Du hast Mme Rantini geholt.'], ['k6Komm', 'Mittwoch, Luca filmt Mila: „Komm?“ – Hand hingehalten.'], ['k6Arm', 'Mittwoch, Luca filmt Mila: am Arm weggezogen. Ohne zu fragen.'], ['k6Weggeschaut', 'Mittwoch, Luca filmt Mila: Du hast weggeschaut.']]);
-        const n = eins(m, [['k6NeinKlar', ' Mila: „War mein Nein zu leise?“ – „Dein Nein war klar.“'], ['k6NeinIgnoriert', ' Mila: „War mein Nein zu leise?“ – „Luca hat’s ignoriert.“'], ['k6NeinLeise', ' Mila: „War mein Nein zu leise?“ – „Bisschen leise vielleicht.“']]) || '';
+        const n = eins(m, [['k6NeinKlar', ' Mila: „War mein Nein zu leise?“ – „Dein Nein war klar.“'], ['k6NeinIgnoriert', ' Mila: „War mein Nein zu leise?“ – „Luca hat’s ignoriert.“'], ['k6NeinLeise', ' Mila: „War mein Nein zu leise?“ – „Bisschen leise vielleicht.“'], ['k6NeinStill', ' Mila: „War mein Nein zu leise?“ – du hast nichts gesagt.']]) || '';
         return t ? t + ' Das Video: ' + L + '.' + n : null; })()),
-      K(4, eins(m, [['k6MilaNein', 'Donnerstag, als Mila: „Nein. Lösch es. Jetzt.“'], ['k6MilaLassMal', 'Donnerstag, als Mila: „haha lass mal“ – am Freitag hieß es „sie fand’s selbst lustig“.'], ['k6MilaScreen', 'Donnerstag, als Mila: Screenshot gemacht.'], ['k6MilaStill', 'Donnerstag, als Mila: nicht geantwortet.']])),
+      K(4, (() => { const t = eins(m, [['k6MilaNein', 'Donnerstag, als Mila: „Nein. Lösch es. Jetzt.“'], ['k6MilaLassMal', 'Donnerstag, als Mila: „haha lass mal“ – am Freitag hieß es „sie fand’s selbst lustig“.'], ['k6MilaScreen', 'Donnerstag, als Mila: Screenshot gemacht.'], ['k6MilaStill', 'Donnerstag, als Mila: nicht geantwortet.']]);
+        const d = eins(m, [['k6DoGefragt', ' Danach, als du selbst: „Willst du’s mir zeigen?“ – sie hat es gezeigt.'], ['k6DoGeschaut', ' Danach aufs Display geschaut. Mila: „Frag halt.“'], ['k6DoAllesGut', ' Danach: „Alles gut?“ – „ok.“ Das Handy blieb weggedreht.'], ['k6DoSitzen', ' Danach einfach neben ihr gesessen.']]) || '';
+        return t ? t + d : null; })()),
       eins(m, [['k6RegelVideo', 'Chiaras Chat-Regeln. Dein Vorschlag: „Keine Videos ohne Ja.“'], ['k6RegelUmfrage', 'Chiaras Chat-Regeln. Du: „Keine Umfragen über Leute.“ Sie: „Das war meine Umfrage.“'], ['k6RegelNein', 'Chiaras Chat-Regeln. Du: „Regeln helfen da nicht.“']]),
       K(5, tat ? '📹 Freitag: Lucas Video von Mila ging herum. ' + tat + (m.k6Gesehen ? ' 👁 ' + m.k6Gesehen + (m.k6VGeteilt ? '.' : ' (mit Weiterleiten: um die 70).') : '') : null),
       m.k6Video ? 'Was Mila wollte: dass es weg ist. Ohne Kommentare.' : null,
+      eins(m, [['k6WerBeleg', 'Bei Herrn Kuedes („wer, wann?“): dein Screenshot. Um 12:31 war das Video weg.'], ['k6WerTom', 'Bei Herrn Kuedes („wer, wann?“): „tom hat’s gepostet.“'], ['k6WerLuca', 'Bei Herrn Kuedes („wer, wann?“): „Luca hat gefilmt.“'], ['k6WerWeiss', 'Bei Herrn Kuedes („wer, wann?“): „Weiß ich nicht genau.“ Es dauerte bis 13:30.']]),
       eins(m, [['k6MilaGefragtSpaet', 'Danach auf der Mauer: „Was brauchst du?“ Du bist mit Mila zu Herrn Kuedes.'], ['k6MilaOkay', 'Danach auf der Mauer: „Nächstes Mal: frag mich kurz. Okay?“ – „Okay.“'], ['k6MilaSorry', 'Danach auf der Mauer: „Sorry. Ich wollte helfen.“ Mila: „Drauf bin ich.“'],
         ['k6MilaKleingeredet', 'Danach auf der Mauer: „Ist doch nicht so schlimm.“ Mila: „Für dich nicht.“'], ['k6MilaDaneben', 'Danach hast du dich neben Mila gesetzt. Ohne etwas zu sagen.']]),
-      K(6, eins(m, [['k6SaScreen', 'Samstag, 20:14, das Video kam wieder: 📸 Screenshot, dann stumm.'], ['k6SaLoesch', 'Samstag, 20:14, das Video kam wieder: „Lösch das. Sie wollte nicht.“'], ['k6SaAngesehen', 'Samstag, 20:14, das Video kam wieder. Du hast es angesehen.'], ['k6SaAyla', 'Samstag, 20:14, das Video kam wieder. Du hast es Ayla weitergeleitet.']])),
+      K(6, (() => { const t = eins(m, [['k6SaScreen', 'Samstag, 20:14, das Video kam wieder: 📸 Screenshot, dann stumm.'], ['k6SaLoesch', 'Samstag, 20:14, das Video kam wieder: „Lösch das. Sie wollte nicht.“'], ['k6SaAngesehen', 'Samstag, 20:14, das Video kam wieder. Du hast es angesehen.'], ['k6SaAyla', 'Samstag, 20:14, das Video kam wieder. Du hast es Ayla weitergeleitet.']]);
+        const p = eins(m, [['k6PlanHandy', ' Dein Stopp diese Woche: „Wenn wer mein Handy nimmt.“'], ['k6PlanName', ' Dein Stopp diese Woche: „Bei einem Spitznamen.“'], ['k6PlanDraengeln', ' Dein Stopp diese Woche: „Wenn wer drängelt.“'], ['k6PlanOnline', ' Dein Stopp diese Woche: „Online.“']]) || '';
+        return t ? t + p : null; })()),
     ];
   },
   7: (m) => [
@@ -330,12 +342,12 @@ export const SKILLKURZ = {
     m.k5AlleTuer ? '📝 „alle“: an der Tür' : m.k5AlleChat ? '📝 „alle“: im Chat' : m.k5AlleLachen ? '📝 „alle“: wenn einer lacht' : m.k5AlleNicht ? '📝 „alle“: sag ich nicht' : null,
   ],
   6: (m) => [
-    m.k6Linse ? '⚠ Das Kind ist selbst im Video (vor die Linse gestellt). Kurz unter vier Augen nachfragen.' : null,
     m.k6Weggeschaut ? '✋ Mi: weggeschaut' : m.k6Stopp ? '✋ Mi: Stopp gesagt' : m.k6Komm ? '✋ Mi: „Komm?“' : m.k6Rantini ? '✋ Mi: Hilfe geholt' : m.k6Arm ? '✋ Mi: am Arm gezogen' : m.k6Linse ? '✋ Mi: vor die Linse' : null,
+    m.k6MilaLassMal ? '🪜 Do: „haha lass mal“' : m.k6MilaNein ? '🪜 Do: klar Nein' : m.k6MilaScreen ? '🪜 Do: Screenshot' : m.k6MilaStill ? '🪜 Do: still' : null,
     m.k6VGefragt ? '🙋 Mila gefragt: sofort' : m.k6MilaGefragtSpaet ? '🙋 Mila gefragt: spät' : '🙋 Mila nicht gefragt',
     m.k6Gesehen != null ? '👁 ' + m.k6Gesehen : null,
     m.k6VOkayMila || m.k6MilaOkay ? '👌 „Okay“ auf Milas Nein' : null,
-    m.k6StoppFoto ? '🛑 Stopp-Satz: Fotos' : m.k6StoppUmarmen ? '🛑 Stopp-Satz: Umarmen' : m.k6StoppAllen ? '🛑 Stopp-Satz: nicht vor allen' : null,
+    m.k6PlanHandy ? '📝 Stopp: Handy' : m.k6PlanName ? '📝 Stopp: Spitzname' : m.k6PlanDraengeln ? '📝 Stopp: drängeln' : m.k6PlanOnline ? '📝 Stopp: online' : m.k6StoppFoto ? '🛑 Stopp-Satz: Fotos' : m.k6StoppUmarmen ? '🛑 Stopp-Satz: Umarmen' : m.k6StoppAllen ? '🛑 Stopp-Satz: nicht vor allen' : null,
     m.k6SaScreen ? '📸 Sa: Screenshot + stumm' : m.k6SaLoesch ? '🗣 Sa: „Lösch das.“' : m.k6SaAngesehen ? '👁 Sa: angesehen' : m.k6SaAyla ? '↗️ Sa: weitergeleitet' : null,
   ],
 };
@@ -348,7 +360,7 @@ export const GESPRAECH_ZUSATZ = {
   5: (m) => (m.k5ZielDu || m.k5Rausgeflogen === 'du' ? '(Lieber einzeln:) Die Umfrage im Spiel ging über dich. Wie war das?' : m.k5ChatAbgewartet || m.k5ChatStumm ? 'Was hätte gefehlt, damit du etwas tust?' : m.k5ChatGepostet ? 'Du hattest den Beweis. Wohin gehört er – Chat oder Erwachsene?'
     : m.k5ChatVerteidigt || m.k5ChatNein ? 'Wer hätte mitgemacht – und woher hättest du’s gewusst?' : m.k5LouKlar || m.k5BenGeruecht ? 'Ein Wort privat – und es zählt im Chat. Wie schnell geht das?' : m.k5LouStill ? 'Lou hat dein Schweigen als „Ja“ gelesen. Ist Schweigen ein Ja?' : ''),
   4: (m) => (m.k4Explodiert ? '(Lieber einzeln:) Was bremst dich nächstes Mal früher?' : m.k4Niemand || (m.k4Plan && !m.k4Plan.zu) ? '(Lieber einzeln:) Wer aus der Schule kommt auf Zeile drei?' : m.k4ZaehlenRot || m.k4ParkenRot ? 'Was geht bei dir, wenn der Kopf zu ist?' : ''),
-  6: (m) => (m.k6Linse ? '(Lieber einzeln:) Du warst selbst im Video. Wie war das?' : m.k6VGeteilt ? '(Lieber einzeln:) „Luca ist fies!“ – und trotzdem um die 70. Wie kommt das?' : m.k6Weggeschaut ? 'Am Mittwoch hat keiner gestoppt. Erstarren passiert. Was hätte dir geholfen?' : m.k6SaAngesehen ? 'Samstag kam es wieder. Was hilft, nicht draufzutippen?' : ''),
+  6: (m) => (m.k6NeinLeise ? '(Lieber einzeln:) Kann ein Nein zu leise sein?' : m.k6MilaLassMal ? 'Warum schreibt man „haha lass mal“, wenn man „Hör auf“ meint?' : m.k6VGeteilt ? '(Lieber einzeln:) „Luca ist fies!“ – und trotzdem um die 70. Wie kommt das?' : m.k6Weggeschaut ? 'Am Mittwoch hat keiner gestoppt. Erstarren passiert. Was hätte dir geholfen?' : m.k6SaAngesehen ? 'Samstag kam es wieder. Was hilft, nicht draufzutippen?' : ''),
   2: (m) => (m.k2BusNichts ? '(Lieber einzeln:) Dein Satz stand in der Story. Wem würdest du das zeigen?' : m.k2DarioSahBeweis ? '(Lieber einzeln:) Dario hat bei dir einen Beweis gesehen. Stimmt er?' : m.listeGelacht ? 'Was hat dir das Mitlachen gegeben – und was eine Stunde später?' : m.gegenlisteGepostet ? 'Noah: „Jetzt bin ich auf zwei Listen.“ War die nette Liste nett?' : ''),
 };
 
@@ -359,7 +371,7 @@ export const GESPRAECH = {
   3: 'Yusuf schreit: „Was glotzt ihr alle so?!“ Was war drunter – und woran hätte man es sehen können? Auf drei zeigt jede Person, wo sie Wut zuerst merkt (Faust = sag ich nicht). Still auf einen Zettel: Mein lauter Satz … – drunter war …',
   4: 'Auf drei zeigen alle gleichzeitig Finger: Wie hoch warst du beim Foto? (Mila: sieben.) Passt die Farbe im Rückblick dazu? Nur Daumen. Dann sammeln: Was hilft im Test, ohne dass es einer merkt? Still auf einen Zettel: Bei Rot hilft mir … – mein Zettel liegt …',
   5: 'Ben schreibt privat: „War er’s?“ Du weißt es nicht. Zu zweit: A fragt wie Ben, B antwortet ohne Gerücht („Weiß ich nicht.“ · „Woher weißt du das?“ · „Hab ich nicht gesehen.“). Tauschen. Dann drei Sätze aus dem Spiel, drei Gesten (Finger auf den Tisch = sieht eine Kamera · Hand aufs Herz = Gefühl · Hand an den Mund = jemand sagt das): „Gesehen von 9.“ · „lina hat ihn gesehen 👀“ · „Das tut weh.“ Chiara: „Wenn ich nichts mache, bin ich die Nächste.“ – Stimmt das? Still für dich: Wo denkst du am ehesten „alle“? Wenn es echt fies ist: Screenshot, zu einer Lehrperson oder ins SePAS.',
-  6: 'Auf drei zeigen alle Finger: Was hast du am Freitag zuerst gemacht? 1 geteilt · 2 geschrieben · 3 gemeldet · 4 Mila gefragt · 5 nichts. Wo blieb das 👁 am kleinsten? Mila sagt: „Nächstes Mal: frag mich kurz.“ Was darf man ohne Fragen tun (nicht teilen, melden) – und was nicht (über sie schreiben, für sie entscheiden)? Still für dich: Mein Stopp-Satz diese Woche. Wer erstarrt, ist nicht schuld.',
+  6: 'Samstag, 20:14 – das Video ist wieder da. Auf drei zeigen alle Finger: 1 Screenshot und stumm · 2 anschauen · 3 „Lösch das.“ · 4 weiterleiten. Was macht jede Zahl mit dem 👁? Zu zweit: Wofür brauche ich Milas Ja – wofür nicht? Still auf einen Zettel: Wem zeig ich so einen Screenshot? Wer erstarrt, ist nicht schuld.',
   7: 'Was hat es gekostet, sich zu Noah zu setzen? Was hat es gekostet, sitzen zu bleiben?',
   8: 'Woran hast du den Fake erkannt? Was hat Teilen „zum Prüfen“ trotzdem gemacht?',
   9: 'Welches Geheimnis darf man brechen? Woran merkst du es?',
