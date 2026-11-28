@@ -293,14 +293,15 @@ export function createUI({ root, input, speech }) {
   // Beginnt ein Gespräch, gehen sichtbare Nebenbei-Meldungen sofort weg (sie stören nicht beim Lesen)
   ui.leiseWeg = () => { toastBox.querySelectorAll('.ly-t-leise:not(.fest)').forEach((x) => { x.classList.add('weg'); setTimeout(() => x.remove(), 600); }); };
   ui.toastLeise = (t, art = '') => {
-    leiseQ.push([t, art]);
+    leiseQ.push([t, art, performance.now()]);
     if (leiseT) return;
     leiseT = setInterval(() => {
       let b = false; try { b = !!ui.beschaeftigt() || !ebene.hidden; } catch (e) { b = false; }
       const jetzt = performance.now();
       if (b) { leiseFrei = jetzt + 4000; return; }
       if (jetzt < leiseFrei) return;
-      const n = leiseQ.shift(); if (n) { ui.toast(n[0], (n[1] ? n[1] + ' ' : '') + 'ly-t-leise'); leiseFrei = jetzt + 2600; }
+      let n = leiseQ.shift(); while (n && jetzt - n[2] > 25000) n = leiseQ.shift();   // Veraltetes nicht mehr zeigen (z. B. „Spind 117“ mitten in einer schweren Szene)
+      if (n) { ui.toast(n[0], (n[1] ? n[1] + " " : "") + "ly-t-leise"); leiseFrei = jetzt + 2600; }
       if (!leiseQ.length) { clearInterval(leiseT); leiseT = null; }
     }, 400);
   };

@@ -100,6 +100,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     chatErklaert(true);
     const verlauf = k.querySelector('.sz-verlauf'), tippt = k.querySelector('.ly-h-tippt'), leiste = k.querySelector('.sz-aktionen'), neuChip = k.querySelector('.sz-neu');
     const flags = {}, gemacht = [], schlange = [];
+    let ersteDa = false;   // Knöpfe erst, wenn die erste Nachricht von jemandem da ist (sonst „Gelesen“ vor der Nachricht)
     let t = 0, zu = false, endet = false, lacher = 0, letzt = performance.now(), wahlOffen = false, pause = false, wartBis = 0;
     // Lesetempo: die nächste Nachricht kommt frühestens, wenn man die vorige lesen konnte (langsame Leser mitgedacht)
     const lesedauer = (n) => (0.9 + String(ersetze(n.text || '')).split(/\s+/).filter(Boolean).length * 0.3 + (n.bild ? 1.2 : 0)) * (ui.ruhig ? 1.4 : 1) * (ui.einstellungen && ui.einstellungen().text !== 'normal' ? 1.2 : 1);
@@ -121,14 +122,14 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       const warUnten = unten() || ich;
       verlauf.insertAdjacentHTML('beforeend', html);
       if (warUnten) verlauf.scrollTop = verlauf.scrollHeight; else neuChip.hidden = false;
-      if (!n.system && !ich) wartBis = t + lesedauer(n);
+      if (!n.system && !ich) { wartBis = t + lesedauer(n); if (!ersteDa) { ersteDa = true; leisteNeu(); } }
       if (n.lacher) lach.push({ ...n.lacher, n: n.lacher.start, el: verlauf.querySelector('[data-l="' + (lach.length) + '"]') });
       if (n.setzt) { flags[n.setzt] = true; leisteNeu(); }
     };
     const leisteNeu = () => {
       if (wahlOffen) return;
       if (endet) { leiste.innerHTML = ''; return; }
-      leiste.innerHTML = def.aktionen.filter((a) => !gemacht.includes(a.id) && (!a.ab || t >= a.ab) && (!a.wenn || flags[a.wenn]) && (!a.wennNicht || !flags[a.wennNicht])).map((a) => '<button type="button" data-ak="' + a.id + '"><kbd>' + a.symbol + '</kbd><span>' + esc(a.t) + '</span></button>').join('');
+      leiste.innerHTML = def.aktionen.filter((a) => !gemacht.includes(a.id) && (a.ab ? t >= a.ab : (ersteDa || a.sofort)) && (!a.wenn || flags[a.wenn]) && (!a.wennNicht || !flags[a.wennNicht])).map((a) => '<button type="button" data-ak="' + a.id + '"><kbd>' + a.symbol + '</kbd><span>' + esc(a.t) + '</span></button>').join('');
       leiste.querySelectorAll('[data-ak]').forEach((b) => { b.onclick = () => aktion(def.aktionen.find((a) => a.id === b.dataset.ak)); });
     };
     const ausfuehren = (a, w) => {
@@ -1447,8 +1448,9 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     const gedanke = (fest, extra) => {
       if (ende) return;
       let t = fest || def.gedanken[Math.floor(Math.random() * def.gedanken.length)];
+      const da = [...ged.querySelectorAll('.sz-gedanke:not(.weg)')].map((x) => x.textContent);
+      if (fest && da.filter((d) => d === t).length >= 2) return;   // auch Rückkehrer: nie mehr als zwei gleiche auf einmal
       if (!fest) {   // höchstens zweimal derselbe Gedanke auf einmal
-        const da = [...ged.querySelectorAll('.sz-gedanke:not(.weg)')].map((x) => x.textContent);
         const frei = def.gedanken.filter((g) => da.filter((d) => d === g).length < 2);
         if (!frei.length) { setTimeout(() => gedanke(), 2500); return; }
         if (!frei.includes(t)) t = frei[Math.floor(Math.random() * frei.length)];
@@ -1511,7 +1513,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     const zeig = () => { zEl.textContent = Math.round(zahl); zEl.style.color = ZONE(zahl)[2]; };
     const sag = () => { for (const [g, t] of Object.entries(def.saetze || {}).sort((a, b) => b[0] - a[0])) if (zahl <= +g && !gesagt.has(g)) { gesagt.add(g); bühne.innerHTML = blaseHtml(w, t); break; } };
     const runter = () => { if (ende || ein) return; const jetzt = performance.now(); if (aus) { const d = (jetzt - aus) / 1000; runden++; const passt = d >= 3 && d <= 8; const einD = aus - (ein0 || aus); const einOk = einD >= 1800 && einD <= 6000;
-        if (passt && einOk) { gut++; zahl = Math.max(def.ziel || 35, zahl - 12); bühne.insertAdjacentHTML('afterbegin', '<div class="sz-sys">Ruhig. ' + esc(w.name) + ' atmet mit.</div>'); }
+        if (passt && einOk) { gut++; zahl = Math.max(def.ziel || 35, zahl - 12); bühne.insertAdjacentHTML('afterbegin', '<div class="sz-sys">' + (w.name === 'Du' ? 'Ruhig. Genau so.' : 'Ruhig. ' + esc(w.name) + ' atmet mit.') + '</div>'); }
         else { zahl = Math.max(def.ziel || 35, zahl - 3); bühne.insertAdjacentHTML('afterbegin', '<div class="sz-sys">' + (einD < 1800 ? 'Ruhig weiter. Normal einatmen.' : d < 3 ? 'Das Ausatmen darf länger sein.' : 'Nicht zu lange warten.') + '</div>'); }
         while (bühne.children.length > 2) bühne.lastChild.remove();
         zeig(); sag(); if (zahl <= (def.ziel || 35) || runden >= 8) return fertig(); }
@@ -2167,7 +2169,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
   ui.wegweiser = (def) => new Promise((ok) => {
     const W = def.wer || { name: 'Manon', farbe: '#e07b39' };
     const k = ui.ebeneAuf('szene', '<div class="sz sz-lotsen sz-weg"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Français') + ' · Wegweiser</span><b>' + esc(W.name) + ' lotsen</b></div>' +
-      '<p class="sz-info">' + esc(W.name) + ' steht vor dem Sekretariat. Sie muss in die Salle 1.04. Sag ihr den Weg – auf Französisch. Sie geht bis zur nächsten Kreuzung.</p>' +
+      '<p class="sz-info">' + esc(def.info || (W.name + ' steht vor dem Sekretariat. Sie muss in die Salle 1.04. Sag ihr den Weg – auf Französisch. Sie geht bis zur nächsten Kreuzung.')) + '</p>' +
       '<canvas width="520" height="300"></canvas>' +
       '<div class="sz-steuer ly-d-optionen"><button type="button" data-k="g">⬅ à gauche</button><button type="button" data-k="t">⬆ tout droit</button><button type="button" data-k="d">à droite ➡</button><button type="button" data-k="u">↩ demi-tour</button></div><div class="sz-stand"></div></div>');
     const cv = k.querySelector('canvas'), x = cv.getContext('2d'), stand = k.querySelector('.sz-stand');
@@ -2420,12 +2422,13 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     cv.__st = () => ({ koepfe: koepfe.map((q) => [q.x, q.y - 22 * q.auf, q.auf > 0.6]), warn: !!angriff && !angriff.fertig, t, fertig });   // nur für Tests
     const zufall = (a, b) => a + Math.random() * (b - a);
     const schutz = (def.schutz || []).slice(); let bank = 0, serie = 0;   // wer neben dir steht, fängt je einen Ball ab
+    let rufDa = false, rufBtn = null, rufBis = 0, rufGenutzt = false, offen = 0;   // def.ruf: mitten im Spiel jemanden reinholen – kostet kurz die Deckung
     const werfen = (sx, sy) => {
       if (fertig || duck > 0 || bank > 0) return;
       let ziel = -1, bd = 42; koepfe.forEach((q, i) => { const d = Math.hypot(q.x - sx, q.y - 22 * q.auf - sy); if (d < bd) { bd = d; ziel = i; } });
       wuerfe++; baelle.push({ x0: 260, y0: 286, x1: sx, y1: sy, t: 0, dauer: 0.38, wer: 'ich', ziel });
     };
-    const ducken = () => { if (fertig) return; duck = 0.75; if (angriff && !angriff.fertig && angriff.t < angriff.dauer) { angriff.fertig = true; ausgewichen++; text = 'Weggeduckt! Der Ball zischt über dich.'; textT = 1.3; } };
+    const ducken = () => { if (fertig) return; duck = 0.75; if (offen <= 0 && angriff && !angriff.fertig && angriff.t < angriff.dauer) { angriff.fertig = true; ausgewichen++; text = 'Weggeduckt! Der Ball zischt über dich.'; textT = 1.3; } };
     duckKnopf.addEventListener('pointerdown', (e) => { e.preventDefault(); ducken(); });
     cv.addEventListener('pointerdown', (e) => { const r = cv.getBoundingClientRect(); werfen((e.clientX - r.left) * (520 / r.width), (e.clientY - r.top) * (300 / r.height)); });
     halte((e) => { if (e.code === 'Space') { e.preventDefault(); e.stopPropagation(); if (!e.repeat) ducken(); } });
@@ -2440,8 +2443,18 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
         for (const q of koepfe) q.auf = q.bis > t ? Math.min(1, q.auf + dt * 6) : Math.max(0, q.auf - dt * 5);
         // die 7P1 wirft auf dich (mit Warnung)
         if (bank > 0) { bank -= dt; if (bank <= 0) { text = 'Wieder dabei!'; textT = 1; } }
+        offen = Math.max(0, offen - dt);
+        if (def.ruf && !rufDa && t >= (def.ruf.bei || 10) * zeitFaktor()) {
+          rufDa = true; rufBis = t + (def.ruf.dauer || 4) * zeitFaktor(); text = def.ruf.t; textT = (def.ruf.dauer || 4) * zeitFaktor();
+          rufBtn = document.createElement('button'); rufBtn.type = 'button'; rufBtn.className = 'sz-ruf'; rufBtn.textContent = def.ruf.knopf || 'Hier!';
+          k.querySelector('.sz-karten').appendChild(rufBtn);
+          rufBtn.addEventListener('pointerdown', (e) => { e.preventDefault(); if (rufGenutzt || fertig) return; rufGenutzt = true; rufBtn.remove(); rufBtn = null; offen = 3 * zeitFaktor();
+            text = def.ruf.danach || 'Er rennt rüber. Du stehst kurz ohne Deckung.'; textT = 1.8; if (def.team && def.ruf.wer) def.team.push(def.ruf.wer);
+            angriff = { t: 0, dauer: 0.7, fertig: false, x: 260, von: '' }; });
+        }
+        if (rufBtn && t > rufBis) { rufBtn.remove(); rufBtn = null; sie += 2; text = def.ruf.sonst || 'Keiner ruft ihn.'; textT = 1.8; }
         if (!angriff || angriff.fertig && angriff.t > angriff.dauer + 0.8) { if (Math.random() < dt * (0.75 + (def.gegen ? 0.35 : 0))) angriff = { t: 0, dauer: 0.95 * zeitFaktor(), fertig: false, x: zufall(150, 370), von: def.gegen && Math.random() < 0.4 ? def.gegen : '' }; }
-        if (angriff) { angriff.t += dt; if (!angriff.fertig && angriff.t >= angriff.dauer) { angriff.fertig = true; if (duck > 0) { ausgewichen++; text = 'Weggeduckt!'; } else { if (schutz.length && !angriff.von) { const w = schutz.shift(); ausgewichen++; text = w + ' fängt den Ball für dich ab.'; } else { getroffen++; sie++; splat = 0.9; serie++; text = angriff.von ? angriff.von + ' trifft dich. Hart. Von der Seite.' : 'Treffer! Schnee im Kragen.'; if (serie >= 3) { serie = 0; bank = 10 * zeitFaktor(); text = 'Dreimal erwischt. Zehn Sekunden Bank.'; } } } textT = 1.2; } }
+        if (angriff) { angriff.t += dt; if (!angriff.fertig && angriff.t >= angriff.dauer) { angriff.fertig = true; if (duck > 0 && offen <= 0) { ausgewichen++; text = 'Weggeduckt!'; } else { if (schutz.length && !angriff.von && offen <= 0) { const w = schutz.shift(); ausgewichen++; text = w + ' fängt den Ball für dich ab.'; } else { getroffen++; sie++; splat = 0.9; serie++; text = angriff.von ? angriff.von + ' trifft dich. Hart. Von der Seite.' : 'Treffer! Schnee im Kragen.'; if (serie >= 3) { serie = 0; bank = 10 * zeitFaktor(); text = 'Dreimal erwischt. Zehn Sekunden Bank.'; } } } textT = 1.2; } }
         // Mitspieler werfen ab und zu
         if (Math.random() < dt * 0.45 && def.team && def.team.length) { const m = def.team[Math.floor(Math.random() * def.team.length)], ziel = Math.floor(Math.random() * 3); baelle.push({ x0: zufall(60, 460), y0: 282, x1: koepfe[ziel].x + zufall(-8, 8), y1: 74, t: 0, dauer: 0.5, wer: m.name, ziel }); }
         // Die 7P1 trifft auch deine Leute – sonst steht es am Ende 47 : 0 (Jugend-Kritik: zu leicht)
@@ -2452,7 +2465,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
             if (q && q.auf > 0.55) { q.bis = t; if (b.wer === 'ich') { treffer++; wir++; text = 'Treffer! ' + q.g.name + ' taucht ab.'; textT = 1.1; } else if (Math.random() < 0.5) { wir++; text = b.wer + ' trifft ' + q.g.name + '.'; textT = 1.1; } } }
         }
         while (baelle.length && baelle[0].aus && baelle[0].t > baelle[0].dauer + 0.3) baelle.shift();
-        if (t >= ZEIT) { fertig = true; text = 'Es klingelt. ' + wir + ' : ' + sie + (wir >= sie ? '. Alle sind nass. Alle grinsen.' : '. Verloren. Nass sind trotzdem alle.'); textT = 3; setTimeout(() => { loesche(); ui.ebeneZu(); ok({ treffer, getroffen, ausgewichen, wuerfe, stand: [wir, sie] }); }, 2400); }
+        if (t >= ZEIT) { fertig = true; text = 'Es klingelt. ' + wir + ' : ' + sie + (wir >= sie ? '. Alle sind nass. Alle grinsen.' : '. Verloren. Nass sind trotzdem alle.'); textT = 3; setTimeout(() => { loesche(); ui.ebeneZu(); if (rufBtn) rufBtn.remove(); ok({ treffer, getroffen, ausgewichen, wuerfe, stand: [wir, sie], ruf: rufGenutzt, rufDa }); }, 2400); }
       }
       // Bild: Himmel, Hof mit Schnee, drei Wälle
       x.fillStyle = '#dfe9f3'; x.fillRect(0, 0, 520, 300); x.fillStyle = '#f7fbff'; x.fillRect(0, 120, 520, 180);

@@ -49,7 +49,7 @@ export async function baueNatur({ welt, scene, veil, windZeit, wenig = false }) 
     const wind = art === 'laub' ? WIND(baum ? 0.022 : 0.05) : null;
     veil.patch(m, { key: 'natur-' + key, ramp: art === 'laub' ? 'laub' : 'props', uniforms: wind ? { uWind: windZeit } : undefined, vertex: wind || undefined });
     matCache.set(key, m);
-    if (art === 'laub') laubMats.push({ m, baum, nadel: /Pine/i.test(q.name + ' ' + modell), farbe: m.color.clone() });
+    if (art === 'laub') laubMats.push({ m, baum, nadel: /Pine/i.test(q.name + ' ' + modell), blume: /Flower/i.test(q.name + ' ' + modell), farbe: m.color.clone() });
     return m;
   };
   // Plätze je Modell sammeln, dünnere Bodendecker bei wenig Leistung
@@ -109,7 +109,7 @@ export async function baueNatur({ welt, scene, veil, windZeit, wenig = false }) 
     for (const x of laubMats) {
       x.m.color.copy(x.farbe); x.m.visible = true;
       if (x.m.emissive) x.m.emissive.setRGB(0, 0, 0);
-      if (art === 'winter' && x.baum && !x.nadel) { x.m.visible = false; x.m.needsUpdate = true; continue; }   // Dezember: Laubbäume kahl (Jugend-Kritik: „Laub im Schnee“)
+      if (art === 'winter' && ((x.baum && !x.nadel) || x.blume)) { x.m.visible = false; x.m.needsUpdate = true; continue; }   // Dezember: Laubbäume kahl, keine Blumen (Jugend-Kritik: „Laub im Schnee“)
       if (art === 'herbst' && !x.nadel) x.m.color.multiply(new THREE.Color(x.baum ? 0xffb066 : 0xf2d49a));
       if (art === 'winter') {
         if (x.nadel) { if (x.m.emissive) x.m.emissive.setRGB(0.09, 0.1, 0.12); }

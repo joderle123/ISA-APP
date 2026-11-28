@@ -51,6 +51,30 @@ export function rasen(wdh = [1, 1]) {
   return textur(c, wdh);
 }
 
+// Schneedecke (Dezember, K4–K6): Weiß mit bläulichen Mulden, Glitzer und ein paar Halmen, die herausschauen. Eine Kachel = 6 × 6 m.
+export function schneeDecke(wdh = [1, 1]) {
+  const N = 512, c = leinwand(N), g = c.getContext('2d'), r = zufall(19);
+  g.fillStyle = '#eef2f6'; g.fillRect(0, 0, N, N);
+  for (let i = 0; i < 180; i++) { g.fillStyle = r() < 0.6 ? 'rgba(196,210,228,0.28)' : 'rgba(255,255,255,0.5)'; g.beginPath(); g.ellipse(r() * N, r() * N, 10 + r() * 46, 6 + r() * 22, r() * Math.PI, 0, Math.PI * 2); g.fill(); }
+  g.lineWidth = 1.1;
+  for (let i = 0; i < 260; i++) {
+    const x = r() * N, y = r() * N, l = 2 + r() * 4, a = -Math.PI / 2 + (r() - 0.5) * 0.8;
+    g.strokeStyle = r() < 0.5 ? 'rgba(104,128,92,0.55)' : 'rgba(150,140,110,0.5)';
+    g.beginPath(); g.moveTo(x, y); g.lineTo(x + Math.cos(a) * l, y + Math.sin(a) * l); g.stroke();
+  }
+  for (let i = 0; i < 900; i++) { g.fillStyle = r() < 0.5 ? 'rgba(255,255,255,0.9)' : 'rgba(170,190,215,0.35)'; g.fillRect(r() * N, r() * N, 1.4, 1.4); }
+  return textur(c, wdh);
+}
+
+// Eine vorhandene Bodentextur „verschneit“ (Winter): heller Schleier, Flecken, Fugen schimmern durch
+export function verschneit(map) {
+  const src = map.image, c = leinwand(src.width), g = c.getContext('2d'), r = zufall(23), N = src.width;
+  g.drawImage(src, 0, 0, N, N);
+  g.fillStyle = 'rgba(236,241,247,0.62)'; g.fillRect(0, 0, N, N);
+  for (let i = 0; i < 140; i++) { g.fillStyle = r() < 0.6 ? 'rgba(250,252,255,0.55)' : 'rgba(205,216,230,0.25)'; g.beginPath(); g.ellipse(r() * N, r() * N, 8 + r() * 40, 5 + r() * 18, r() * Math.PI, 0, Math.PI * 2); g.fill(); }
+  const t = textur(c, [1, 1]); t.repeat.copy(map.repeat); return t;
+}
+
 // Asphalt: dunkles Grau mit hellen und dunklen Körnern. Eine Kachel = 4 × 4 m.
 export function asphalt(wdh = [1, 1]) {
   const N = 512, c = leinwand(N), g = c.getContext('2d'), r = zufall(5);

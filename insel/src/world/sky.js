@@ -383,6 +383,34 @@ export function createSky({ scene, renderer, audio, quality, events }) {
   rain.renderOrder = 13;
   scene.add(rain);
 
+  // Schneefall (Flocken relativ zur Kamera, langsam, seitlich treibend) – wird von außen gesteuert (uAmt, uTime, uCam)
+  const snowN = Math.round(700 * (quality.particles || 1));
+  const snowPos = new Float32Array(snowN * 3);
+  for (let i = 0; i < snowN; i++) snowPos.set([(rnd() - 0.5) * 50, rnd() * 30, (rnd() - 0.5) * 50], i * 3);
+  const snowGeo = new THREE.BufferGeometry();
+  snowGeo.setAttribute('position', new THREE.BufferAttribute(snowPos, 3));
+  const snow = new THREE.Points(snowGeo, new THREE.ShaderMaterial({
+    uniforms: { uTime: { value: 0 }, uCam: { value: new THREE.Vector3() }, uAmt: { value: 0 } }, transparent: true, depthWrite: false,
+    vertexShader: /* glsl */`
+      uniform float uTime; uniform vec3 uCam; varying float vA;
+      void main() {
+        vec3 p = position; float ph = position.x * 0.37 + position.z * 0.21;
+        p.y = mod(p.y - uTime * 1.6, 30.0) - 8.0;
+        p.x += sin(uTime * 0.7 + ph) * 0.8; p.z += cos(uTime * 0.5 + ph) * 0.6;
+        vec4 mv = viewMatrix * vec4(uCam + p, 1.0);
+        vA = 1.0 - smoothstep(14.0, 24.0, length(p.xz));
+        gl_PointSize = clamp(42.0 / max(0.5, -mv.z), 1.5, 9.0);
+        gl_Position = projectionMatrix * mv;
+      }`,
+    fragmentShader: /* glsl */`
+      uniform float uAmt; varying float vA;
+      void main() { vec2 c = gl_PointCoord - 0.5; float d = dot(c, c); if (d > 0.25) discard; gl_FragColor = vec4(1.0, 1.0, 1.0, (1.0 - d * 4.0) * 0.85 * vA * uAmt); }`,
+  }));
+  snow.frustumCulled = false;
+  snow.visible = false;
+  snow.renderOrder = 13;
+  scene.add(snow);
+
   // ---- Zeit ----
   const time = {
     hour: 16.8,
@@ -529,7 +557,7 @@ export function createSky({ scene, renderer, audio, quality, events }) {
   applyClouds();
 
   const sky = {
-    dome, sun, hemi, clouds, storm, rain, time, colors, sunDir, moonDir, lightDir, grade, cloudMat, stormMat,
+    dome, sun, hemi, clouds, storm, rain, snow, time, colors, sunDir, moonDir, lightDir, grade, cloudMat, stormMat,
     get night() { return state.night; },
     get golden() { return state.golden; },
     // Materialien der Wolken an den Schleier-Patch hängen (Rampe „wolke“, kein Schleier, Nebel gedeckelt)

@@ -103,10 +103,12 @@ export function mechaniken(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
   // def: { titel, info, orte: [{ id, name, wer, sy, bildUrl }] } → { ort }
   ui.ortWahl = (def) => new Promise((ok) => {
     const k = ui.ebeneAuf('szene', '<div class="sz mv-orte"><div class="sz-kopf"><span class="sz-wo">' + esc(def.titel || 'Pause') + '</span><b>Wo bist du?</b></div>' +
-      '<p class="sz-info">' + esc(ersetze(def.info || 'Du kannst nur an einem Ort sein.')) + '</p><div class="mv-o-gitter">' +
+      '<p class="sz-info">' + esc(ersetze(def.info || 'Du kannst nur an einem Ort sein.')) + '</p>' + (def.zeit ? '<div class="mv-zeit"><i></i></div>' : '') + '<div class="mv-o-gitter">' +
       def.orte.map((o, j) => '<button type="button" class="mv-o-karte" data-i="' + j + '"><span class="mv-o-bild">' + (o.bildUrl ? '<img alt="' + esc(o.name) + '" src="' + o.bildUrl + '">' : '<span class="sy">' + esc(o.sy || '📍') + '</span>') + '<em>● live</em></span>' +
         '<span class="mv-o-text"><kbd>' + (j + 1) + '</kbd><b>' + esc((o.sy ? o.sy + ' ' : '') + o.name) + '</b><small>' + esc(ersetze(o.wer || '')) + '</small></span></button>').join('') + '</div></div>');
-    let aus = false; const ende = (j) => { if (aus || j < 0 || j >= def.orte.length) return; aus = true; loesche(); k.querySelectorAll('.mv-o-karte').forEach((b, x) => b.classList.toggle(x === j ? 'gewaehlt' : 'weg', true)); ton('klick'); setTimeout(() => { ui.ebeneZu(); ok({ ort: def.orte[j].id }); }, 650); };
+    let aus = false, zeitUm = false, zb = null; const ende = (j) => { if (aus || j < 0 || j >= def.orte.length) return; aus = true; if (zb) zb.stopp(); loesche(); k.querySelectorAll('.mv-o-karte').forEach((b, x) => b.classList.toggle(x === j ? 'gewaehlt' : 'weg', true)); ton('klick'); setTimeout(() => { ui.ebeneZu(); ok({ ort: def.orte[j].id, zeitUm }); }, 650); };
+    // zeit: wer zu lange zögert, landet dort, wo man gerufen wird (zeitOrt) – nicht entscheiden ist auch eine Entscheidung
+    if (def.zeit) zb = zeitBalken(k.querySelector('.mv-zeit i'), def.zeit * zeitFaktor(), () => { zeitUm = true; ende(Math.max(0, def.orte.findIndex((o) => o.id === def.zeitOrt))); });
     k.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => ende(+b.dataset.i); });
     taste(['Digit1', 'Digit2', 'Digit3', 'Digit4', 'Numpad1', 'Numpad2', 'Numpad3', 'Numpad4'], (c) => ende(+c.slice(-1) - 1));
   });

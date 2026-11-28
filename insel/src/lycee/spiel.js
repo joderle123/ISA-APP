@@ -86,7 +86,7 @@ import { tunN7 } from './story/kapitel7.js';
 import { tunN8 } from './story/kapitel8.js';
 import { tunN9 } from './story/kapitel9.js';
 import { tunN10 } from './story/kapitel10.js';
-import { chronik, GESPRAECH } from './story/chronik.js';
+import { chronik, GESPRAECH, GESPRAECH_ZUSATZ } from './story/chronik.js';
 import { createKorbSpiel } from './korb3d.js';
 import { baerAnhaenger } from './anhaenger.js';
 import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL, KAPITEL_MODUL } from './geschichte.js';
@@ -546,7 +546,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   let vertragMesh = null;
   function vertragPlakat() {
     const m = S && S.merke; if (!m || !m.vertragGewaehlt) { if (vertragMesh) vertragMesh.visible = false; return; }
-    const regeln = ['Stopp gilt sofort.', 'Ausreden lassen.', 'Was hier gesagt wird, bleibt hier – außer bei Gefahr.', m.vertragFoto ? 'Kein Foto ohne Fragen.' : m.vertragEssen ? 'Niemand isst allein.' : 'Handys in der Stunde in die Kiste.'];
+    const regeln = ['Lachen ja. Auslachen nein.', '„Weiter.“ heißt: weiter.', 'Was hier gesagt wird, bleibt hier – außer bei Gefahr.', 'Regel 6: Nichts von hier in Chats. Keine Fotos.'];   // wie im Heft #00
     const schluessel = regeln[3];
     if (vertragMesh && vertragMesh.userData.k === schluessel) { vertragMesh.visible = true; return; }
     const c = document.createElement('canvas'); c.width = 512; c.height = 400; const g = c.getContext('2d');
@@ -1097,7 +1097,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       gdUmbau = false; const p = steuerung.pos.clone(), y = spieler.group.rotation.y;
       spielerFigur(S.figur).then(() => { if (spieler) { spieler.group.position.copy(p); spieler.group.rotation.y = y; } });
     }
-    gdUhr -= dt; if (gdUhr > 0 || !S || !S.merke || S.schritt < 2 || imGespraech) return; gdUhr = 2;
+    gdUhr -= dt; if (gdUhr > 0 || !S || !S.merke || S.schritt < 2 || imGespraech || performance.now() < sperreBis + 8000 || ui.ebeneArt()) return; gdUhr = 2;   // Belohnungen nur beim freien Herumlaufen, nicht zwischen zwei schweren Szenen
     const G = gd(), lvJetzt = levelVon(S.jetonsGesamt || 0).level;
     let verz = 0;   // Level-Up-Karte zuerst, die Karten für neue Teile danach (nicht übereinander)
     if (lvJetzt > (G.level || 1)) { G.level = lvJetzt; ui.belohnung({ sy: '⭐', name: 'Dorf-Level ' + lvJetzt + '!', art: 'Level-Up', knopf: 'Garderobe öffnen', onKnopf: () => ui.onGarderobe && ui.onGarderobe() }); ton('melodie2'); sichern(); verz = 7400; }
@@ -3611,7 +3611,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const kapitel = [];
     for (let k = 1; k <= bis; k++) {
       const a = (S.merke.anzeigeVerlauf || {})[k];
-      kapitel.push({ kap: k, titel: KAPITEL[k] || '', thema: KAPITEL_MODUL[k] || '', saetze: k <= fertigBis ? ch[k] || chronik(k, S.merke) : [], gespielt: k <= fertigBis, frage: GESPRAECH[k] || REFLEXION[k] || '',
+      kapitel.push({ kap: k, titel: KAPITEL[k] || '', thema: KAPITEL_MODUL[k] || '', saetze: k <= fertigBis ? ch[k] || chronik(k, S.merke) : [], gespielt: k <= fertigBis, frage: (GESPRAECH[k] || REFLEXION[k] || '') + (GESPRAECH_ZUSATZ[k] && S.merke && GESPRAECH_ZUSATZ[k](S.merke) ? ' ' + GESPRAECH_ZUSATZ[k](S.merke) : ''),
         anzeige: a ? VW[a.art] + (a.art === 'akku' ? ': am wenigsten ' + a.min + ', am Ende ' + a.ende : ': höchstens ' + a.max + ', am Ende ' + a.ende) + ' (von 100)' : '',
         versuche: Object.entries((S.versuche || {})[k] || {}).map(([t, v]) => ({ t, n: typeof v === 'object' ? v.n : v, ok: typeof v === 'object' ? v.ok !== false : true })),
         gruende: (S.gruende || {})[k] || [], partner: (S.partnerLog || {})[k] || [],
@@ -4249,7 +4249,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   function saisonTick(dt) {
     tuer104Tick(dt);
     const kap = (S && SCHRITTE[S.schritt] && SCHRITTE[S.schritt].kap) || 1;
-    if (kap !== dekoKap && req.saison) { dekoKap = kap; try { if (natur && natur.saison) natur.saison((DEKO_KAP.winter || []).includes(kap) ? 'winter' : kap >= 2 && (DEKO_KAP.herbst || []).includes(kap) ? 'herbst' : ''); } catch (e) { /* nur Farbe */ } eisbahnZeigen((DEKO_KAP.winter || []).includes(kap)); laubAn = (DEKO_KAP.herbst || []).includes(kap); fruehlingAn = (DEKO_KAP.fruehling || []).includes(kap); sommerAn = (DEKO_KAP.sommer || []).includes(kap); eiswagen.visible = sommerAn; extraNeu(); if (S && S.merke && S.merke.schneemannBau) schneemann.wiederherstellen(S.merke.schneemannBau); for (const [k, m] of Object.entries(req.saison)) m.visible = (DEKO_KAP[k] || []).includes(kap); try { zeitungNeu(kap); } catch (e) { /* Zeitung */ } }
+    if (kap !== dekoKap && req.saison) { dekoKap = kap; try { if (natur && natur.saison) natur.saison((DEKO_KAP.winter || []).includes(kap) ? 'winter' : kap >= 2 && (DEKO_KAP.herbst || []).includes(kap) ? 'herbst' : ''); } catch (e) { /* nur Farbe */ } eisbahnZeigen((DEKO_KAP.winter || []).includes(kap)); try { if (welt.winterBoden) welt.winterBoden((DEKO_KAP.winter || []).includes(kap)); } catch (e) { /* nur Boden */ } laubAn = (DEKO_KAP.herbst || []).includes(kap); fruehlingAn = (DEKO_KAP.fruehling || []).includes(kap); sommerAn = (DEKO_KAP.sommer || []).includes(kap); eiswagen.visible = sommerAn; extraNeu(); if (S && S.merke && S.merke.schneemannBau) schneemann.wiederherstellen(S.merke.schneemannBau); for (const [k, m] of Object.entries(req.saison)) m.visible = (DEKO_KAP[k] || []).includes(kap); try { zeitungNeu(kap); } catch (e) { /* Zeitung */ } }
     const art = kap === 2 || kap === 3 ? 'laub' : kap >= 4 && kap <= 6 ? 'schnee' : null, A = art && SAISON[art];
     const draussen = !welt.raumBei(steuerung.pos.x, steuerung.pos.z);
     const ziel = laeuft && A && draussen && !(sky.night > 0.5) && regenJetzt < 0.1 ? 0.9 : 0;
@@ -4368,6 +4368,17 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // trüber Himmel: weniger Sonne, weniger Füll-Licht (die Szene wird grauer, nicht dunkel)
     if (sky.sun && sky.sun.isLight) sky.sun.intensity *= 1 - 0.5 * regenJetzt;
     sky.hemi.intensity *= 1 - 0.15 * regenJetzt; fuellLicht.intensity *= 1 - 0.6 * regenJetzt;
+  }
+  // Schneefall: nur, wenn es in der Geschichte schneit (K4 Freitag, Schneeballschlacht) – drinnen nicht
+  const SCHNEE = new Set(['k4_schnee']);
+  let schneeJetzt = 0;
+  function schneeTick(dt) {
+    if (!sky.snow) return;
+    const st = S && SCHRITTE[S.schritt], ziel = laeuft && st && SCHNEE.has(st.id) && !S.fertig ? 1 : 0;
+    schneeJetzt += (ziel - schneeJetzt) * Math.min(1, dt * 0.5);
+    if (schneeJetzt < 0.01) { sky.snow.visible = false; return; }
+    const drin = !!welt.raumBei(steuerung.pos.x, steuerung.pos.z), u = sky.snow.material.uniforms;
+    u.uAmt.value = drin ? 0 : schneeJetzt; sky.snow.visible = !drin; u.uTime.value = performance.now() / 1000; u.uCam.value.copy(camera.position);
   }
   const loop = createLoop({ render: () => { if (ui.taktRuhe) { if (ui.ebeneArt && ui.ebeneArt() === 'szene') return; ui.taktRuhe = false; } if (ui.ebeneArt && ['spiel', 'szene', 'journal', 'handy', 'raus', 'ende', 'laden', 'skills', 'karte'].includes(ui.ebeneArt()) && (ruheN++ % 20)) return; rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light }); } });
   loop.add(() => input.beginFrame(), { order: -100, always: true });
@@ -4581,7 +4592,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
     ui.update();
   }, { order: -10, always: true });
-  loop.add((dt, t) => { camera.updateMatrixWorld(); sky.update(dt, t, camera, steuerung.pos, veil); sky.cloudMat.emissiveIntensity = 0.62; fuellLicht.intensity = 0.95 * Math.max(0, Math.min(1, sky.sunDir.y * 3)); regenTick(dt); veil.update(dt, t); }, { order: 0, always: true });   // Wolken heller: keine dunklen Unterseiten
+  loop.add((dt, t) => { camera.updateMatrixWorld(); sky.update(dt, t, camera, steuerung.pos, veil); sky.cloudMat.emissiveIntensity = 0.62; fuellLicht.intensity = 0.95 * Math.max(0, Math.min(1, sky.sunDir.y * 3)); regenTick(dt); schneeTick(dt); veil.update(dt, t); }, { order: 0, always: true });   // Wolken heller: keine dunklen Unterseiten
   loop.add(() => input.endFrame(), { order: 100, always: true });
   loop.start();
 

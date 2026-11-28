@@ -45,10 +45,10 @@ export const SCHRITTE_N1 = [
     start: { teleport: 'eingangHof' },
     leute: { kaya: [2, 14, Math.PI], noah: [4, 13, -1.6], mila: [-1.6, 13.4, 1.4], ben: [3.2, 16.2, -2.4], lina: [-0.6, 16.4, 2.6], jo: [5.6, 15.4, -2], ayla: [-2.6, 15.8, 1.9] },
     fertig: { reden: 'kaya', gespraech: 'n1_blind' } },
-  { id: 'kantine', kap: 1, tag: 'Montag', uhr: 12.17, titel: 'Mittag', ziel: 'Hol dir ein Essen an der Ausgabe.', marker: 'kremer',
-    start: { teleport: 'kantineTuer' },
+  { id: 'kantine', kap: 1, tag: 'Montag', uhr: 12.17, titel: 'Mittag', ziel: 'Kantine. Tablett in der Hand.', marker: null,
+    start: { teleport: 'kantineAusgabe', gespraech: 'n1_kantine' },
     leute: KANTINE,
-    fertig: { ort: 'kantineAusgabe', r: 1.8, gespraech: 'n1_kantine' } },
+    fertig: { nachStart: true } },
   { id: 'tisch', kap: 1, tag: 'Montag', uhr: 12.25, titel: 'Wohin setzen?', ziel: 'Tablett in der Hand. Wohin?', marker: null,
     start: { gespraech: 'n1_tisch' },
     leute: KANTINE,
@@ -89,7 +89,8 @@ const TISCH_NOAH = [
   { tu: 'gegessen' },
 ];
 const TISCH_BEN = [
-  ['ben', '(schaut hoch) Oh. {Hl}. Setz dich.'],
+  { wenn: (m) => !!m.tischGerufen, dann: [['ben', '(winkt vom Fenster) {Hl}! Hier! Komm schon!'], ['erzaehler', 'Du hast zu lange geschaut. Jetzt sitzt du bei Ben und Jo.']],
+    sonst: [['ben', '(schaut hoch) Oh. {Hl}. Setz dich.']] },
   ['jo', '(ohne aufzusehen) Der Kleine von der Bank hat schon dreihundert Stimmen.'],
   { tu: 'n1_tischBen' },
   { tu: 'gegessen' },
@@ -97,17 +98,20 @@ const TISCH_BEN = [
 // Der vierte Tisch: die 7P1. Kenans Galerie – zwölf Mal Gerd. Eins fehlt. Eine Spur ist noch kein Beweis.
 const TISCH_P1 = [
   ['kenan', '(schiebt dir sein Handy hin) Guck. Gerd. Den ganzen Vormittag. Gerd ist ein Star.'],
-  { handy: { wer: 'Kenans Galerie · heute', wann: '12:16', chat: [{ wer: '10:01', t: '🐦 Gerd auf der Mauer' }, { wer: '10:03', t: '🐦 Gerd, unscharf' }, { wer: '10:07', t: '🐦 Gerd am Brunnen' }, { wer: '10:09', t: '🐦 Gerd, von hinten' }] } },
-  { wahl: [
-    { t: '„Zeig das von 10:05.“', merke: 'k1Kenan1005', staerke: 'lesen',
-      dann: [{ handy: null }, ['kenan', '(zieht das Handy weg) Hab ich gelöscht. War unscharf.'], ['dario', '(schaut auf sein Tablett)'],
-        { beweis: 'k1Kenan', t: 'Kenans Galerie: Fotos von 10:01 bis 10:09. Das von 10:05 fehlt. „Gelöscht. War unscharf.“' }, { verdacht: 'kenan', spur: 'Das Foto von 10:05 hat er gelöscht. Sagt er.' }] },
-    { t: '„Schöne Taube.“', herz: { kenan: 1 }, merke: 'k1KenanStolz', dann: [['kenan', '(stolz, scrollt weiter) Oder? Und hier, und hier –'],
-      { handy: { wer: 'Kenans Galerie · heute', wann: '12:17', chat: [{ wer: '10:03', t: '🐦 Gerd, unscharf' }, { wer: '10:05', t: '▒▒ gelöscht' }, { wer: '10:07', t: '🐦 Gerd am Brunnen' }] } },
-      ['kenan', '(zieht das Handy weg) Das war nix.'], { handy: null },
-      { beweis: 'k1Kenan', t: 'Kenans Galerie: um 10:05 ein Foto gelöscht. „Das war nix.“' }, { verdacht: 'kenan', spur: 'Um 10:05 ein Foto gelöscht.' }] },
-    { t: '(Essen.)', dann: [{ handy: null }, ['dario', '(isst, ohne aufzuschauen)']] },
-  ] },
+  ['erzaehler', 'Er wischt schnell durch die Galerie. Taube. Taube. Taube.'],
+  { szene: 'stoerung', id: 'k1KenanWisch', pruefe: false,
+    def: { bild: { wer: 'kenan', von: [0.6, 1.3, 0.7], auf: [0, 0.95, 0], fov: 40 }, t: 'Taube. Taube. Dazwischen ganz kurz: ein schwarzes Bild. Schon weiter.', hin: '✋ Stopp!', bleib: 'Weiterwischen', zeit: 2.2 },
+    ausgang: (r) => (r.hin ? 'stopp' : 'weiter'),
+    folgen: {
+      stopp: { merke: 'k1KenanStopp', staerke: 'lesen', dann: [
+        { handy: { wer: 'Kenans Galerie · heute', wann: '12:17', chat: [{ wer: '10:03', t: '🐦 Gerd, unscharf' }, { wer: '10:05', t: '⬛ schwarz' }, { wer: '10:07', t: '🐦 Gerd am Brunnen' }] } },
+        { beweis: 'k1Kenan', t: 'Kenans Galerie: um 10:05 ein schwarzes Bild zwischen den Tauben.' },
+        { wahl: [
+          { t: '📎 „Und das schwarze da?“', beweis: 'k1Kenan', merke: 'k1Kenan1005', dann: [{ handy: null }, ['kenan', '(zieht das Handy weg) Das war nix.'], ['dario', '(schaut auf sein Tablett)'], { verdacht: 'kenan', spur: 'Um 10:05 ein schwarzes Bild in der Galerie. „Das war nix.“' }] },
+          { t: '(Nichts sagen.)', dann: [{ handy: null }, ['kenan', '(wischt weiter) Und hier: Gerd von hinten.']] },
+        ] }] },
+      weiter: { dann: [['kenan', 'Und Gerd von hinten. Der Beste.'], ['dario', '(isst, ohne aufzuschauen)']] },
+    } },
   { tu: 'n1_tischP1' },
   { tu: 'gegessen' },
 ];
@@ -134,10 +138,17 @@ export const RUECKBLICK_N1 = (m) => [
   { id: 'haltestelleKlick', titel: 'Drei Handys', text: 'Dario, Lina, Kenan. Einer hat fotografiert.' },
   m.duPausePlatz ? { id: 'duPause', titel: '10:05 · Dein Platz', text: (PAUSE_SATZ[m.duPausePlatz] || '') + ' Genau dieses Bild hat @annexe.cam gepostet.' } : null,
   { id: 'auchPause', titel: 'Währenddessen', text: m.rafaGeholfen ? 'Noah am Zaun. Die ganze Pause allein.' : 'Rafa am Brunnen. Allein mit dem Foto.', auch: true },
-  { id: 'hofAlle', titel: '13:31 · Dein Foto', text: m.k1Geerdet ? 'Alle am Handy. Du hast drei Dinge gesucht. Keine Menschen. Dann ging es.' : 'Alle am Handy. Alles hat gerauscht.' },
+  { id: 'hofAlle', titel: '13:31 · Dein Foto', text: m.fotoMitgelacht ? 'Alle am Handy. Du hast mitgelacht.' : m.k1Geerdet ? 'Alle am Handy. Du hast drei Dinge gesucht. Dann ging es.' : 'Alle am Handy. Alles hat gerauscht.' },
   { id: 'duAbend', titel: '15:30 · Haltestelle', text: 'Der Bus nach Hause.' },
 ].filter(Boolean);
 
+// Was aus der privaten Nachricht wurde (dieselben Merker wie früher: abend… für Noah/Mila/Dario, ben… für Ben)
+const abendPrivat = (r, m) => {
+  const v = PRIVAT_VON(m); m.abendVon = v;
+  const a = r.flags.p_okay ? 'Okay' : r.flags.p_frage ? 'Frage' : r.flags.p_klar ? 'Klar' : r.flags.privatDa ? (r.flags.gruppe ? 'Gruppe' : 'Gelesen') : 'Still';
+  if (v === 'ben') m[{ Okay: 'benVerziehen', Frage: 'benGefragt1', Klar: 'benKlar', Gelesen: 'benGelesen', Gruppe: 'benGelesen', Still: 'benNichtGeantwortet' }[a]] = true;
+  else m['abend' + a] = true;
+};
 // ---------- Live-Chat Montagabend: Ben leitet weiter ----------
 const POST_TABLETT = (m) => ({
   titel: '7P2', mitglieder: 21, dauer: 30,
@@ -146,72 +157,48 @@ const POST_TABLETT = (m) => ({
     { nach: 1.4, wer: '@annexe.cam', bild: PAUSE_BILD[m.duPausePlatz] || PAUSE_BILD.allein, bildId: 'duPause', text: 'neu hier. cool oder cringe? 👀', lacher: { start: 3, proSek: 0.35, stopp: ['klar', 'gemeldet'] } },
     ...(m.joWeiter ? [] : [{ nach: 3.6, wer: 'Jo', text: '58% cringe gerade' }]),
     ...(m.fotoTidderich ? [{ nach: 4.6, wer: 'Ayla', text: 'tidderich hat heute was von „fotos ohne fragen“ gesagt. zufall?' }] : []),
-    ...(m.fotoMitgelacht ? [{ nach: 4.2, wer: 'Jo', text: 'sogar {name} hat gelacht 😂 also ist es ok' }, { nach: 5.0, wer: 'Ben', text: 'siehste. nur spaß' }] : []),
-    { nach: 5.6, wer: 'Mila', text: 'ben. lösch das.' },
+    ...(m.fotoMitgelacht ? [{ nach: 4.2, wer: 'Jo', text: 'sogar {name} hat gelacht 😂 also ist es ok', setzt: 'joLacht' }, { nach: 5.0, wer: 'Ben', text: 'siehste. nur spaß' }] : []),
+    { nach: 5.6, wer: 'Mila', text: 'ben. regel 6. lösch das.' },
+    ...PRIVAT_BANNER(m),
     { nach: 7.2, system: true, text: 'gesehen von 17' },
-    ...(m.joWeiter ? [] : m.abgestimmt ? [{ nach: 9.4, wer: 'Jo', text: 'heut früh der von der haltestelle. jetzt hinten links' }] : [{ nach: 9.4, wer: 'Jo', text: 'ist nur ein klick' }]),
+    ...(m.joWeiter ? [] : m.abgestimmt ? [{ nach: 9.4, wer: 'Jo', text: 'erst der kleine. jetzt hinten links' }] : [{ nach: 9.4, wer: 'Jo', text: 'ist nur ein klick' }]),
     { nach: 12.5, system: true, text: 'Ben hat eine Nachricht gelöscht.' },
     { nach: 14.5, wer: 'Ayla', text: 'wer macht diesen account überhaupt', wennNicht: 'stumm' },
     { nach: 22, system: true, text: 'gesehen von 19' },
   ],
   aktionen: [
-    { id: 'schreiben', t: 'Schreiben', symbol: '💬', wahl: [
+    { id: 'schreiben', t: 'In die Gruppe', symbol: '💬', wennNicht: 'privat', ...(m.fotoMitgelacht ? { wenn: 'joLacht' } : {}), wahl: [
       ...(m.fotoMitgelacht ? [
-        { t: '„War nicht okay.“', setzt: ['klar', 'lachenZurueck'], ich: 'war nicht okay. auch mein lachen nicht.', folgen: [{ nach: 1.6, wer: 'Mila', text: 'ok. danke.' }, { nach: 3, wer: 'Jo', text: '…' }] },
-        { t: '„Ja. Nur Spaß.“', setzt: ['witz', 'nurSpass'], ich: 'ja. nur spaß.', folgen: [{ nach: 1.2, wer: 'Jo', text: 'siehste 😂' }] },
+        { t: '„War nicht okay.“', setzt: ['gruppe', 'klar', 'lachenZurueck'], ich: 'war nicht okay. auch mein lachen nicht.', folgen: [{ nach: 1.6, wer: 'Mila', text: 'ok. danke.' }, { nach: 3, wer: 'Jo', text: '…' }] },
+        { t: '„Ja. Nur Spaß.“', setzt: ['gruppe', 'witz', 'nurSpass'], ich: 'ja. nur spaß.', folgen: [{ nach: 1.2, wer: 'Jo', text: 'siehste 😂' }] },
       ] : [
-        { t: '„Bitte löscht das.“', setzt: 'klar', ich: 'bitte löscht das', folgen: [{ nach: 1.4, wer: 'Ayla', text: 'ok. hab ich nicht geteilt' }] },
-        { t: '„haha. schlechtes foto.“', setzt: 'witz', ich: 'haha. schlechtes foto.', folgen: [{ nach: 1.2, wer: 'Jo', text: 'ok das ist gut 😂' }] },
+        { t: '„Bitte löscht das.“', setzt: ['gruppe', 'klar'], ich: 'bitte löscht das', folgen: [{ nach: 1.4, wer: 'Ayla', text: 'ok. hab ich nicht geteilt' }] },
+        { t: '„haha. schlechtes foto.“', setzt: ['gruppe', 'witz'], ich: 'haha. schlechtes foto.', folgen: [{ nach: 1.2, wer: 'Jo', text: 'ok das ist gut 😂' }] },
       ]),
-      { t: '„Wer ist @annexe.cam?“', setzt: 'frage', ich: 'wer ist annexe.cam?', folgen: [{ nach: 1.6, wer: 'Jo', text: 'keiner weiß das. das ist ja der witz' }] },
-    ] },
+      { t: '„Wer ist @annexe.cam?“', setzt: ['gruppe', 'frage'], ich: 'wer ist annexe.cam?', folgen: [{ nach: 1.6, wer: 'Jo', text: 'keiner weiß das. das ist ja der witz' }] },
+      { t: '„Ben. Du sagtest: nicht geteilt.“', setzt: ['gruppe', 'klar', 'luege'], ich: 'ben. du hast gesagt, du hast es nicht geteilt.', folgen: [{ nach: 1.8, wer: 'Ben', text: 'ok. hab gelogen. sorry.' }] },
+    ].slice(0, 4) },
+    ...PRIVAT_AKTION(m),
     { id: 'beweis', t: 'Screenshot', symbol: '📸', setzt: 'beweis', sys: 'Screenshot gespeichert. 19:31.' },
     { id: 'melden', t: 'Beitrag melden', symbol: '🚩', setzt: 'gemeldet', sys: 'Meldung eingegangen.' },
     { id: 'stumm', t: 'Stummschalten', symbol: '🔕', setzt: 'stumm', sys: 'Stumm. Das Handy liegt still. Du nicht.', ende: true },
   ],
 });
 
-// Zwei Minuten später, privat: Wer dir schreibt, hängt davon ab, wo du mittags gesessen hast.
-const PRIVAT = (m) => (m.kantineNoah ? PRIVAT_NOAH : m.kantineMila ? PRIVAT_MILA : m.kantineP1 ? PRIVAT_DARIO : BEN_SORRY(m));
-const PRIVAT_NOAH = { titel: 'Noah', mitglieder: 2, dauer: 30,
-  nachrichten: [{ nach: 0.6, wer: 'Noah', text: 'ich hab nicht abgestimmt.' }, { nach: 4.5, wer: 'Noah', text: 'nur dass du’s weißt.' }],
-  aktionen: [{ id: 'antwort', t: 'Antworten', symbol: '💬', wahl: [
-    { t: '„Danke.“', setzt: ['geantwortet', 'okay'], ich: 'danke', folgen: [{ nach: 1.2, wer: 'Noah', text: '👍' }] },
-    { t: '„Warum sagst du mir das?“', setzt: ['geantwortet', 'frage'], ich: 'warum sagst du mir das?', folgen: [{ nach: 2, wer: 'Noah', text: 'mich hat letztes jahr auch einer fotografiert. beim essen.' }] },
-    { t: '„Gute Nacht.“', setzt: ['geantwortet', 'klar'], ich: 'gute nacht', folgen: [{ nach: 1.2, wer: 'Noah', text: 'gn' }] },
-  ] }, { id: 'gelesen', t: 'Auf „gelesen“ lassen', symbol: '👀', setzt: 'ignoriert', sys: 'Gelesen 19:34', ende: true }] };
-const PRIVAT_MILA = { titel: 'Mila', mitglieder: 2, dauer: 30,
-  nachrichten: [{ nach: 0.6, wer: 'Mila', text: 'regen. 10 std. hilft auch nachts.' }, { nach: 3.4, system: true, text: 'Mila hat eine Audiodatei geschickt. regen_10h.mp3' }],
-  aktionen: [{ id: 'antwort', t: 'Antworten', symbol: '💬', wahl: [
-    { t: '„Danke. Probier ich.“', setzt: ['geantwortet', 'okay'], ich: 'danke. probier ich', folgen: [{ nach: 1.4, wer: 'Mila', text: 'lauter als du denkst. leiser als der chat.' }] },
-    { t: '„Warum schickst du mir das?“', setzt: ['geantwortet', 'frage'], ich: 'warum schickst du mir das?', folgen: [{ nach: 2, wer: 'Mila', text: 'du hast heute mittag ausgesehen wie ich letztes jahr.' }] },
-    { t: '„Gute Nacht.“', setzt: ['geantwortet', 'klar'], ich: 'gute nacht', folgen: [{ nach: 1.2, wer: 'Mila', text: '🌧️' }] },
-  ] }, { id: 'gelesen', t: 'Auf „gelesen“ lassen', symbol: '👀', setzt: 'ignoriert', sys: 'Gelesen 19:34', ende: true }] };
-const PRIVAT_DARIO = { titel: 'Dario', mitglieder: 2, dauer: 30,
-  nachrichten: [{ nach: 0.6, wer: 'Dario', text: 'dein foto. geht vorbei. schlaf.' }],
-  aktionen: [{ id: 'antwort', t: 'Antworten', symbol: '💬', wahl: [
-    { t: '„Woher hast du meine Nummer?“', setzt: ['geantwortet', 'frage'], ich: 'woher hast du meine nummer?', folgen: [{ nach: 2.2, wer: 'Dario', text: 'ben schickt nummern rum.' }] },
-    { t: '„Warum schreibst du mir?“', setzt: ['geantwortet', 'klar'], ich: 'warum schreibst du mir?', folgen: [{ nach: 2.4, wer: 'Dario', text: 'du sahst aus, als würdest du heute nicht schlafen.' }] },
-    { t: '„Gute Nacht.“', setzt: ['geantwortet', 'okay'], ich: 'gute nacht', folgen: [{ nach: 1.2, wer: 'Dario', text: 'nacht.' }] },
-  ] }, { id: 'gelesen', t: 'Auf „gelesen“ lassen', symbol: '👀', setzt: 'ignoriert', sys: 'Gelesen 19:34', ende: true }] };
-// Ben privat (wer mittags bei Ben saß). Wer sein Display gesehen hat (📎), kann es sagen.
-const BEN_SORRY = (m) => ({
-  titel: 'Ben', mitglieder: 2, dauer: 30,
-  nachrichten: [
-    { nach: 0.6, wer: 'Ben', text: 'sorry. hab nicht nachgedacht. echt.' },
-    { nach: 8.5, system: true, text: 'Ben tippt …', wennNicht: 'geantwortet' },
-  ],
-  aktionen: [
-    { id: 'antwort', t: 'Antworten', symbol: '💬', wahl: [
-      { t: '„Schon okay.“', setzt: ['geantwortet', 'okay'], ich: 'schon okay', folgen: [{ nach: 1.2, wer: 'Ben', text: 'danke. nächstes mal denk ich erst' }] },
-      { t: '„Warum leitest du so was weiter?“', setzt: ['geantwortet', 'frage'], ich: 'warum leitest du so was weiter?', folgen: [{ nach: 1.8, wer: 'Ben', text: 'weiß nicht. alle machen das. ich hab nicht gedacht, dass du es bist' }] },
-      { t: '„Nicht okay. Aber danke.“', setzt: ['geantwortet', 'klar'], ich: 'nicht okay. aber danke dass du schreibst', folgen: [{ nach: 1.4, wer: 'Ben', text: 'ja. fair' }] },
-      { t: '„Du hast gesagt: nicht geteilt.“', setzt: ['geantwortet', 'klar', 'luege'], ich: 'du hast gesagt, du hast es nicht geteilt', folgen: [{ nach: 1.6, wer: 'Ben', text: 'ja. hab gelogen. sorry.' }] },
-    ] },
-    { id: 'gelesen', t: 'Auf „gelesen“ lassen', symbol: '👀', setzt: 'ignoriert', sys: 'Gelesen 19:34', ende: true },
-  ],
-});
-
+// Abends, mitten im Klassenchat: oben rutscht die private Nachricht von der Person vom Mittagstisch rein.
+// Ein Daumen: Wer privat antwortet, schreibt nicht mehr in die Gruppe – und umgekehrt. Wer zögert, hat es nur „gelesen“.
+const PRIVAT_VON = (m) => (m.kantineNoah ? 'noah' : m.kantineMila ? 'mila' : m.kantineP1 ? 'dario' : 'ben');
+const PRIVAT_TEXT = (m) => ({ noah: m.fotoMitgelacht ? 'ich hab nicht abgestimmt. und nicht gelacht.' : 'ich hab nicht abgestimmt.', mila: m.fotoMitgelacht ? '' : 'regen. 10 std. hilft auch nachts.', dario: 'dein foto. geht vorbei. schlaf.', ben: 'sorry. hab nicht nachgedacht. echt.' }[PRIVAT_VON(m)]);
+const PRIVAT_NAME = { noah: 'Noah', mila: 'Mila', dario: 'Dario', ben: 'Ben' };
+const PRIVAT_BANNER = (m) => (PRIVAT_TEXT(m) ? [{ nach: 6.6, system: true, text: '📩 ' + PRIVAT_NAME[PRIVAT_VON(m)] + ', privat: „' + PRIVAT_TEXT(m) + '“', setzt: 'privatDa' }] : []);
+const PRIVAT_ANTWORTEN = {
+  noah: [['„Danke.“', 'okay', 'danke', '👍'], ['„Warum sagst du mir das?“', 'frage', 'warum sagst du mir das?', 'mich hat letztes jahr auch einer fotografiert. beim essen.'], ['„Gute Nacht.“', 'klar', 'gute nacht', 'gn']],
+  mila: [['„Danke. Probier ich.“', 'okay', 'danke. probier ich', 'lauter als du denkst. leiser als der chat.'], ['„Warum schickst du mir das?“', 'frage', 'warum schickst du mir das?', 'du hast heute mittag ausgesehen wie ich letztes jahr.'], ['„Gute Nacht.“', 'klar', 'gute nacht', '🌧️']],
+  dario: [['„Woher hast du meine Nummer?“', 'frage', 'woher hast du meine nummer?', 'ben schickt nummern rum.'], ['„Warum schreibst du mir?“', 'klar', 'warum schreibst du mir?', 'du sahst aus, als würdest du heute nicht schlafen.'], ['„Gute Nacht.“', 'okay', 'gute nacht', 'nacht.']],
+  ben: [['„Schon okay.“', 'okay', 'schon okay', 'danke. nächstes mal denk ich erst'], ['„Warum leitest du so was weiter?“', 'frage', 'warum leitest du so was weiter?', 'weiß nicht. alle machen das. ich hab nicht gedacht, dass du es bist'], ['„Nicht okay. Aber danke.“', 'klar', 'nicht okay. aber danke dass du schreibst', 'ja. fair']],
+};
+const PRIVAT_AKTION = (m) => { const v = PRIVAT_VON(m), n = PRIVAT_NAME[v]; if (!PRIVAT_TEXT(m)) return [];
+  return [{ id: 'privat', t: n + ' antworten', symbol: '📩', wenn: 'privatDa', wennNicht: 'gruppe', wahl: PRIVAT_ANTWORTEN[v].map(([t, art, ich, zurueck]) => ({ t, setzt: ['privat', 'p_' + art], sys: '📩 an ' + n + ': ' + ich, folgen: [{ nach: 1.6, system: true, text: '📩 ' + n + ': ' + zurueck }] })) }]; };
 // ---------- 23:07: die unbekannte Nummer (Lina). Sechs Sekunden, dann gelöscht. ----------
 const NUMMER = {
   titel: '+352 6•• ••• •41', mitglieder: 2, dauer: 20,
@@ -437,8 +424,9 @@ export const GESPRAECHE_N1 = {
     { tu: 'spindFrei' },
     ['ben', '(dreht sich um) Moien. Ben. Nummer? Für den Klassenchat.'],
     // Ein Spitzname ist ein Etikett. Wer klebt es? (Ben speichert „{name} 7P2“ – die Spur für Kapitel 5 bleibt)
-    { handy: { wer: 'Bens Handy', wann: 'jetzt', chat: [{ wer: 'Neuer Kontakt', t: '{name} 7P2' }, { wer: 'Ben → Klassenchat 7P2', t: 'neu: …', ich: true }] } },
-    ['ben', '(tippt schon) Hinten links. Merkt man sich besser.'],
+    ['ben', '(tippt) {name}, 7P2. Gespeichert.'],
+    { handy: { wer: 'Bens Handy', wann: 'jetzt', chat: [{ wer: 'Neuer Kontakt', t: '{name} 7P2' }] } },
+    ['ben', 'Im Klassenchat sag ich: hinten links. Merkt man sich besser.'],
     { wahl: [
       { t: '„{name} reicht.“', herz: { ben: 1 }, merke: 'nameStattLinks', staerke: 'klar', dann: [['ben', '(löscht es, tippt neu) „{name}“. Okay. Passt.']] },
       { t: '„Hinten links passt.“', merke: 'hintenLinksOk', dann: [['ben', '(grinst) Hinten links. Easy.']] },
@@ -492,22 +480,21 @@ export const GESPRAECHE_N1 = {
   ],
   // ---------- Kantine ----------
   n1_kantine: [
-    ['erzaehler', 'Kantine. Es riecht nach Pasta. Die Schlange ist lang.'],
-    ['kremer', 'Suppe oder Pasta? … Hier.'],
+    ['erzaehler', 'Kantine. Pasta. Das Tablett ist schwer. Die Tische laufen voll.'],
     { tu: 'tablett' },
-    { wenn: (m) => m.duPausePlatz === 'handy', dann: [['ben', '(vom Fenster) {hl}! Hier!']] },
   ],
   // Wohin setzen? Drei Plätze, drei Live-Bilder. Erst danach: was Noah gesehen hat.
   n1_tisch: [
     { szene: 'orte', id: 'tischOrt', pruefe: false,
-      def: { titel: 'Kantine · 12:15', info: 'Tablett in der Hand. Vier Tische. Wohin?',
+      // Acht Sekunden: Wer zögert, wird gerufen – und sitzt dann bei Ben und Jo. Nicht entscheiden ist auch eine Entscheidung.
+      def: { titel: 'Kantine · 12:15', info: 'Tablett in der Hand. Die Plätze gehen weg. Wohin?', zeit: 8, zeitOrt: 'ben',
         orte: [
           { id: 'noah', sy: '📐', name: 'Noah', wer: 'Allein in der Ecke. Zeichnet etwas.', bild: { wer: 'noah', von: [1.5, 1.45, 0.9], auf: [0, 0.95, 0], fov: 46 } },
           { id: 'ben', sy: '📱', name: 'Ben und Jo', wer: 'Am Fenster. Lachen übers Handy.', bild: { wer: 'ben', von: [-1.9, 1.4, 0.6], auf: [0, 0.95, 0.5], fov: 50 } },
           { id: 'mila', sy: '🎧', name: 'Mila', wer: 'Kopfhörer drin. Neben ihr ist frei.', bild: { wer: 'mila', von: [-1.7, 1.25, 0.7], auf: [0, 0.8, 0], fov: 48 } },
           { id: 'p1', sy: '🕶️', name: '7P1 · Dario und Kenan', wer: 'Kenan scrollt durch Fotos. Dario isst.', bild: { wer: 'kenan', von: [1.7, 1.4, 0.8], auf: [0, 0.9, 0.4], fov: 48 } },
         ] },
-      ausgang: (r) => r.ort,
+      ausgang: (r, m) => { if (r.zeitUm) m.tischGerufen = true; return r.ort; },
       folgen: { noah: { dann: TISCH_NOAH }, ben: { dann: TISCH_BEN }, mila: { dann: TISCH_MILA }, p1: { dann: TISCH_P1 } } },
     { sicht: (m) => ({ wer: 'noah', name: 'Noah', auf: 'du', gedanken: NOAH_SIEHT(m) }) },
   ],
@@ -524,9 +511,9 @@ export const GESPRAECHE_N1 = {
     { handy: null },
     // 5-4-3-2-1 (Heft #00) als Moment: drei Dinge, keine Menschen. Jeder Treffer macht den roten Rand blasser.
     { szene: 'suchbild', id: 'such2', bildId: 'hofAlle', pruefe: false,
-      def: { wo: 'Hof · 13:31', frage: 'Alles rauscht. Tipp drei Dinge. Keine Menschen.', zeit: 12, finde: 3,
+      def: { wo: 'Hof · 13:31', frage: 'Alle lachen. Such drei Dinge, die nicht lachen.', zeit: 12, finde: 3,
         foto: { von: [0, 1.62, 3.4], auf: [0.4, 1.3, 13], fov: 56 },
-        gut: 'Drei Dinge. Das Summen wird leiser.', verpasst: 'Gelb: Dinge, die einfach da sind.',
+        gut: 'Drei Dinge. Das Summen wird leiser.', verpasst: 'Gelb: Die waren die ganze Zeit da.',
         ziele: [
           { id: 'wimpel', wo: [3.0, 4.2, 15.25], r: 0.08, t: 'Bunte Wimpel.', kurz: 'Wimpel. Bunt. Sie flattern.' },
           { id: 'mast', wo: [-6.0, 2.6, 16.5], r: 0.07, t: 'Ein grauer Mast.', kurz: 'Ein Mast. Grau. Er steht einfach da.' },
@@ -566,7 +553,7 @@ export const GESPRAECHE_N1 = {
     { blende: 'Montag · 19:30' },
     ['erzaehler', 'Dein Handy summt. Der Klassenchat.'],
     { szene: 'chat', id: 'postTablett', def: (m) => POST_TABLETT(m),
-      ausgang: (r, m) => { if (r.flags.beweis) m.postScreenshot = true; if (r.flags.lachenZurueck) m.lachenZurueck = true; if (r.flags.nurSpass) m.nurSpass = true; return r.flags.klar ? 'klar' : r.flags.witz ? 'witz' : r.flags.frage ? 'frage' : r.flags.gemeldet ? 'gemeldet' : r.flags.stumm ? 'stumm' : 'still'; },
+      ausgang: (r, m) => { if (r.flags.beweis) m.postScreenshot = true; if (r.flags.lachenZurueck) m.lachenZurueck = true; if (r.flags.nurSpass) m.nurSpass = true; if (r.flags.luege) m.benLuegeAngesprochen = true; abendPrivat(r, m); return r.flags.klar ? 'klar' : r.flags.witz ? 'witz' : r.flags.frage ? 'frage' : r.flags.gemeldet ? 'gemeldet' : r.flags.stumm ? 'stumm' : 'still'; },
       folgen: {
         klar: { staerke: 'klar', herz: { mila: 1, ayla: 1 }, merke: 'postKlar' },
         witz: { staerke: 'humor', herz: { jo: 1 }, merke: 'postWitz' },
@@ -574,18 +561,6 @@ export const GESPRAECHE_N1 = {
         gemeldet: { staerke: 'hilfe', merke: 'postGemeldet' },
         stumm: { merke: 'postStumm' },
         still: { merke: 'postStill' },
-      } },
-    ['erzaehler', 'Zwei Minuten später. Privat.'],
-    { szene: 'chat', id: 'benSorry', def: (m) => PRIVAT(m),
-      ausgang: (r, m) => { if (r.flags.luege) m.benLuegeAngesprochen = true; m.abendVon = m.kantineNoah ? 'noah' : m.kantineMila ? 'mila' : m.kantineP1 ? 'dario' : 'ben';
-        const a = r.flags.okay ? 'okay' : r.flags.frage ? 'frage' : r.flags.klar ? 'klar' : r.flags.ignoriert ? 'ignoriert' : 'still'; return m.abendVon === 'ben' ? a : 'p_' + a; },
-      folgen: {
-        okay: { herz: { ben: 2 }, merke: 'benVerziehen' },
-        frage: { staerke: 'zuhoeren', herz: { ben: 1 }, merke: 'benGefragt1' },
-        klar: { staerke: 'klar', herz: { ben: 1 }, merke: 'benKlar' },
-        ignoriert: { merke: 'benGelesen' },
-        still: { merke: 'benNichtGeantwortet' },
-        p_okay: { merke: 'abendOkay' }, p_frage: { staerke: 'zuhoeren', merke: 'abendFrage' }, p_klar: { merke: 'abendKlar' }, p_ignoriert: { merke: 'abendGelesen' }, p_still: { merke: 'abendStill' },
       } },
     { blende: 'Montag · 23:07' },
     ['erzaehler', 'Dein Handy leuchtet. Eine Nummer, die du nicht kennst.'],
@@ -783,7 +758,7 @@ export const tunN1 = (c) => ({
   // Nach den drei Dingen: wer vom Mittag neben dir steht
   n1_daneben: () => { const m = c.S.merke;
     return m.kantineNoah ? [['erzaehler', 'Noah steht neben dir. Er sagt nichts. Er geht auch nicht weg.']] : m.kantineMila ? [['mila', m.milaGefragt1 ? '(hält dir einen Hörer hin) Regen?' : '(hält dir einen Hörer hin, ohne was zu sagen)']]
-      : m.kantineP1 ? [['erzaehler', 'Dario steht neben dir. Als Einziger hat er kein Handy in der Hand.'], { beweis: 'k1DarioOhne', t: '13:31: Alle am Handy. Dario nicht.' }, { verdacht: 'dario', spur: '13:31: als Einziger ohne Handy. Als wüsste er, was kommt.' }]
+      : m.kantineP1 ? [['erzaehler', 'Dario steht neben dir. Als Einziger hat er kein Handy in der Hand.'], { beweis: 'k1DarioOhne', t: '13:31: Alle am Handy. Dario nicht.' }, { verdacht: 'dario', spur: '13:31: kein Handy. Schaut zu dir.' }]
       : m.tisch === 'ben' || m.kantineBen ? [['ben', '(lacht) … (hört auf.)']] : []; },
   n1_joSchule: () => { c.S.merke.joSchuleGesehen = true; c.S.bemerkt = { ...(c.S.bemerkt || {}), joVierteSchule: true }; return []; },
   n1_freiwurf: async () => { const t = await c.ui.freiwurf(); c.S.merke.freiwurf = t; return t >= 3 ? [['yusuf', t + ' von 5. Okay. Du darfst wiederkommen.']] : [['yusuf', t + ' von 5. (grinst) Bälle holen. Da hinten.']]; },

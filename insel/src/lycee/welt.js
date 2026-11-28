@@ -4,7 +4,7 @@
 // Maße in Metern: x nach Osten, z nach Süden, y nach oben. Ein Stockwerk ist innen 3,6 m hoch; begehbar ist das Erdgeschoss.
 // Rückgabe: { gruppe, kasten (Kollision, Liste {x0,x1,z0,z1,y1}), raeume, raumBei(x,z), orte, schilder, plaetze (Möbel) }
 import * as THREE from 'three';
-import { pflaster, rasen, asphalt, flaeche, fliesen as fliesenTex, dielen, sportParkett } from './texturen.js';
+import { pflaster, rasen, schneeDecke, verschneit, asphalt, flaeche, fliesen as fliesenTex, dielen, sportParkett } from './texturen.js';
 import { baueCampus, baueCampus2, ORTE_CAMPUS, ORTE_CAMPUS2 } from './campus.js';
 import { baueDetails } from './details.js';
 import { baueEinrichtung } from './einrichtung.js';
@@ -742,11 +742,20 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
   for (const m of extras) gruppe.add(m);
   // Gemalte Oberflächen: Verbundpflaster auf Hof und Wegen, Rasen, Asphalt (texturen.js)
   const tP = pflaster(), tR = rasen(), tA = asphalt();
-  gruppe.add(flaeche(tR, -110, 110, -120, 80, 0.003, 6, { wolken: true }));
+  const rasenM = flaeche(tR, -110, 110, -120, 80, 0.003, 6, { wolken: true }); gruppe.add(rasenM);
+  let schneeT = null; const rasenT = rasenM.material.map;
+  const winterBoden = (an) => {   // Dezember: Rasen unter Schnee (Jugend-Kritik: „Schneeballschlacht auf grünem Gras“)
+    if (an && !schneeT) { schneeT = schneeDecke(); schneeT.repeat.copy(rasenT.repeat); }
+    const t = an ? schneeT : rasenT; if (rasenM.material.map !== t) { rasenM.material.map = t; rasenM.material.needsUpdate = true; }
+    for (const m of pflM) {   // Hof und Wege: leicht verschneit
+      m.userData.sommer = m.userData.sommer || m.material.map;
+      if (an && !m.userData.winter) m.userData.winter = verschneit(m.userData.sommer);
+      const tt = an ? m.userData.winter : m.userData.sommer; if (m.material.map !== tt) { m.material.map = tt; m.material.needsUpdate = true; }
+    }
+  };
   gruppe.add(flaeche(tA, -110, 110, 44, 52, 0.021, 4, { wolken: true }));
-  gruppe.add(flaeche(tP, -46, 46, -2, 40.5, 0.0615, 8, { wolken: true }));
-  gruppe.add(flaeche(tP, 46, 62, -4, 2, 0.0615, 8));
-  gruppe.add(flaeche(tP, -62, -46, -4, 2, 0.0615, 8));
+  const pflM = [flaeche(tP, -46, 46, -2, 40.5, 0.0615, 8, { wolken: true }), flaeche(tP, 46, 62, -4, 2, 0.0615, 8), flaeche(tP, -62, -46, -4, 2, 0.0615, 8)];
+  for (const m of pflM) gruppe.add(m);
   const tD = dielen(), tS = sportParkett(), fl = {}, bl = [];
   for (const b of boeden) {
     const x0 = Math.min(b.x0, b.x1), x1 = Math.max(b.x0, b.x1), z0 = Math.min(b.z0, b.z1), z1 = Math.max(b.z0, b.z1);
@@ -767,7 +776,7 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
   }
   for (const x of [-23.2, -22, -20.8]) B.sitze.push({ x, z: 41.85, rot: 0, bank: true });   // Bushaltestelle
   const raumBei = (x, z) => raeume.find((r) => x > r.x0 && x < r.x1 && z > r.z0 && z < r.z1) || null;
-  return { gruppe, kasten: B.kasten, alleKaesten: B.alle, sitze: B.sitze, raeume, raumBei, orte, plaetze, schilder };
+  return { gruppe, kasten: B.kasten, alleKaesten: B.alle, sitze: B.sitze, raeume, raumBei, orte, plaetze, schilder, winterBoden };
 }
 
 // Bücherregal: von a0 bis a1 längs x (achse 1/-1 = Rückwand im Norden/Süden, z = Wandlinie) oder längs z (s = 0: x = a0, z von z bis a2)

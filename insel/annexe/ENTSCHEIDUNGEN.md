@@ -475,3 +475,49 @@ Je Kapitel drei schwache Szenen gestrichen und neu gebaut, Wahlen ohne Folgen be
   am Tagesanfang · K2: Steckbrief → „Ein Satz für die Zeitung“ (die Liste verdreht genau deinen Satz) · Gegenliste: „Noah suchen“
   hat eine eigene Folge · Dario „War nicht lustig.“ → @annexe.cam antwortet eine Minute später · Reinschauen = 📎 · Jo fragt am
   Freitag nach der „langen Geschichte“.
+
+## 27.11.2026 – Serie 2 · Runde 4 (Jugend-Panel K3/K4)
+- Welt: Im Dezember (K4–K6) liegt Schnee auf dem Rasen, Blumen sind weg. Test: auch zurückkehrende Gedanken höchstens zweimal
+  gleichzeitig; 8:31 erscheint nicht mehr bei 8:30. Atem-Übung: „Ruhig. Genau so.“ statt „Du atmet mit.“
+- K3: Tor ohne Sabli-Rede → man lotst Manon selbst („Salut ! Je te montre.“ startet den Wegweiser) · „Frag Mme Sabli.“ oder
+  Weitergehen: Manon sitzt neben Jo, Jo übersetzt die Liste („Il est bizarre.“), man hat keine Wahl mehr (wer weitergeht: sie kommt
+  zu spät, die Klasse lacht) · Pause „Eure Bank“ (dritte Ben-zockt-Szene) → „An der Mauer“: Yusufs kleiner Bruder ruft „Sag ihm:
+  Mittwoch um vier!“ → 📎 „Um vier. Dein Bruder.“ im Gang; „Mach ich.“ ohne es zu sagen hat am Freitag eine Folge · „Frau Sommer
+  holen“ auch ruhig (das 🔒 verrät nicht mehr die eine Lösung) · Jos „Warum?“ → „Was war bei dir los? Im Gang.“ (Wut / Wut – drunter
+  Angst / drunter Scham / weiß nicht: der eigene Deckel) · Kantine: Yusufs Handy-Karte, 📎 „Der Streifen. Darios Hülle.“ oder 📎
+  „„Bissig“ – das sagt Kenan.“; „Erst muss das weg.“ wirkt im Chat (Chiara schreibt „Stimmt.“) · Freitag: Lenning-Durchsage raus;
+  Einsteigen = Platz neben Manon, sie fragt, was „bissig“ heißt (Méchant / Fâché. Très fâché. / 📎 Il avait peur. – ohne das
+  Geheimnis zu verraten) · Grundschule nur nach Fragen, Dazwischenstellen oder „Sorry.“ · Manons Ankommen wird erst am Freitag gezählt.
+- K4: Jos Satz kommt Montag in Mathe vor allen („{Hl} schreibt eh ab.“), keine Jo-Störung mehr in der Pause; beim Foto gibt es
+  dafür ohne 📎 Blitz die ruhige Antwort „Montag hast du’s gesagt, Jo.“ · Dario: Handy-Karte „Fahrplan“, 📎 nur, wenn man fragt ·
+  Herr Kuedes an der Tür nur, wenn er auf dem Zettel steht · Ayla raus aus dem Hof-Gerede (eine Zeile von Jo oder Chiara) ·
+  Milas „Warum?“ mitten in der Welle → nach Jos Sicht: „Wie hoch warst du vorhin? Von 0 bis 100.“ (Chronik: gefühlt vs. gemessen)
+  · Freitag vorne: Testkarte bleibt offen, bei < 4 bietet Mme Lenning Üben zu zweit an; Parkschein für alle, die geparkt haben
+  („Wer war um 8:34 am Glas?“ → „Ich frag Herrn Kuedes.“); Chiara steht mit ihrem Blatt daneben · „Zwei Plätze am Wall“ gestrichen
+  → Jos Platz folgt aus seinem Blatt (zurückgegeben: hinter eurem Wall; ausgelacht: wirft für die 7P1 auf dich; sonst steht er ohne
+  Wall und mitten im Spiel kommt „📣 Jo! Hier!“ – kostet kurz die Deckung) · Noah fängt einen Ball, wenn du ihn verteidigt hast ·
+  Freitag 15:40 nur Dario; wer Lina den Zettel beobachten ließ, bekommt ihre Nachricht neben Dario (wegdrehen / zeigen / fragen) ·
+  Gelb ab 30 wie im Heft · Chronik ohne Doppel; Gesprächsfrage: „Als das Foto kam: Wie hoch warst du, von 0 bis 100? Was hat dich
+  runtergebracht – und was hätte geholfen?“
+- Motor (Panel K1/K2, Runde 4): Chat-Knöpfe erst, wenn die erste Nachricht da ist (kein „Gelesen“ vor der Nachricht) · leise
+  Meldungen, die älter als 25 s sind, fallen weg (kein „Spind 117“ mitten in einer schweren Szene) · Belohnungs-Karten nur beim
+  freien Herumlaufen, nicht zwischen zwei Szenen · Ort-Wahl kann eine Uhr haben (wer zögert, landet dort, wo gerufen wird) ·
+  Plakat im Saal = Heft-Regeln („Lachen ja. Auslachen nein.“ · „Weiter.“ · Regel 6: Nichts von hier in Chats. Keine Fotos.).
+- K1: Kantine ohne Laufweg und ohne „Suppe oder Pasta“ → acht Sekunden mit Tablett; wer zögert, wird von Ben gerufen · Kenans
+  Galerie: kein „gelöscht“ mehr – man muss im richtigen Moment „✋ Stopp!“ tippen, dann sieht man das schwarze Bild um 10:05 ·
+  Abend: EIN Chat – mitten im Klassenchat rutscht die private Nachricht vom Mittagstisch oben rein; ein Daumen: privat antworten
+  oder in die Gruppe schreiben (nach dem Mitlachen schreibt Noah „und nicht gelacht.“, Mila schreibt gar nicht) · „Ben. Du sagtest:
+  nicht geteilt.“ jetzt vor allen in der Gruppe · Bens Kontakt „{name} 7P2“ und sein „hinten links“ widersprechen sich nicht mehr ·
+  13:31: „Alle lachen. Such drei Dinge, die nicht lachen.“ · Lehrer-Ansicht in Tagesreihenfolge, ohne Widersprüche; bei Mitlachen
+  Zusatzfrage „Jo schrieb: ‚Sogar du hast gelacht. Also ist es ok.‘ Stimmt das?“
+- K2: Milas Warum-Karte gestrichen → „Mila geht allein“ (sie zeigt Mme Tidderich die Liste; mittags: „Wer hat gepetzt?“ – Jo schaut
+  Mila an) · Jo erinnert an „Nur Spaß“ aus K1 · Währenddessen zeigt den Ort, den du verlassen hast · Noah lädt nach dem Nachhaken
+  ins Jugendhaus ein (sonst holt Ben dich zum „Turm-Foto“) · Freitag: „Beweis?“ – Dario will einen Beweis für deine Stärke aus
+  deiner eigenen Woche (Noah/Treppe · Bank zwei/42 · Chiara/Stapel · „Hab keinen.“) · „nicht lustig? okay.“ kommt erst im Bus –
+  Dario UND Lina haben es gehört (Spur bei beiden; 📎 „Schon wieder dein Satz.“) · „Den Strich kennst du“ nur, wenn man ins Heft
+  gesehen hat · Becker-Moral nur einmal · Nouvelle fragt Noah, bevor der Turm in die Zeitung kommt · Lehrer-Ansicht in
+  Wochenreihenfolge, falsche Sätze korrigiert.
+- Welt: Schneefall bei der Schneeballschlacht, Hof und Wege im Winter leicht verschneit.
+- Skills (freiwillig, K3): „Die Angst-Familie“ → „Die Wort-Leiter: von leise bis laut“ wie im Heft #02 (besorgt – nervös –
+  ängstlich – panisch; genervt – gereizt – sauer – wütend – rasend; Wörter von zu Hause; Verzweiflung als Sicherheits-Karte mit
+  SePAS und 116 111) · sechs Grundgefühle wie im Heft: Langeweile statt Überraschung.
