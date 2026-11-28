@@ -177,7 +177,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     const loop = () => {
       if (zu) return;
       const jetzt = performance.now(), roh = jetzt - letzt, dt = Math.min(0.25, roh / 1000); letzt = jetzt;
-      if (pause) { beginn += roh; requestAnimationFrame(loop); return; }   // Pause: die Uhr steht ganz, nichts kommt dazu
+      if (pause || (wahlOffen && def.wahlHaelt)) { beginn += roh; requestAnimationFrame(loop); return; }   // Pause (oder: Schreib-Menü offen bei def.wahlHaelt): die Uhr steht ganz
       t = (jetzt - beginn) / 1000;   // echte Uhr, auch auf langsamen Geräten
       if (steh && t >= stehAb && gestanden < steh) { const d = Math.min(dt, steh - gestanden); gestanden += d; beginn += d * 1000; t = (jetzt - beginn) / 1000; k.firstChild.classList.add('steht'); } else if (gestanden) k.firstChild.classList.remove('steht');
       schlange.sort((a, b) => a.at - b.at);

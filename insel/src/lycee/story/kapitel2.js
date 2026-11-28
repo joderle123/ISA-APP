@@ -274,8 +274,14 @@ export const GESPRAECHE_N2 = {
             ] }] },
           { t: '„Nächste Frage.“', dann: [['noah', 'Okay.']] },
         ] }] },
-      { t: '„Nächste Frage.“', dann: [['noah', '(nickt) Hm.']] },
-      { t: '„Bist du eher der Stille?“', dann: [['noah', '(zuckt mit den Schultern) Sieht man doch.']] },
+      { t: '„Nächste Frage.“', dann: [['noah', '(nickt) Hm.'], ['nouvelle', '(im Vorbeigehen) Ein Wort, und schon weiter? Frag nach.'], { wahl: [
+        { t: '„Welche?“', staerke: 'zuhoeren', merke: ['noahOffen1', 'k2ZweiterVersuch'], dann: [['noah', '(schaut kurz hoch) Die kleinen. Die man steckt. Ich mess alles genau.']] },
+        { t: '„Nächste Frage.“', dann: [['noah', 'Hm.']] },
+      ] }] },
+      { t: '„Bist du eher der Stille?“', merke: 'k2JaNeinFrage', dann: [['noah', '(zuckt mit den Schultern) Sieht man doch.'], ['nouvelle', '(im Vorbeigehen) Das war Ja oder Nein. Noch eine?'], { wahl: [
+        { t: '„Welche?“', staerke: 'zuhoeren', merke: ['noahOffen1', 'k2ZweiterVersuch'], dann: [['noah', '(schaut kurz hoch) Die kleinen. Die man steckt. Ich mess alles genau.']] },
+        { t: '„Nächste Frage.“', dann: [['noah', 'Hm.']] },
+      ] }] },
     ] },
     { foto: 'steckbriefNoah', wer: 'noah', von: [-1.35, 1.12, 0.12], auf: [0, 1.02, 0], fov: 34, w: 300, h: 360 },
     ['erzaehler', 'Klick. Mme Nouvelle macht das Foto. Noah lächelt nicht.'],
@@ -283,7 +289,7 @@ export const GESPRAECHE_N2 = {
     { wahl: [
       { t: '„Noah: still.“', merke: 'steckbriefStill', dann: [['noah', '(leise) Ich bin nicht immer still.']] },
       { t: '„Noah misst alles genau.“', wenn: (m) => !!m.noahOffen1, merke: 'steckbriefGenau', herz: { noah: 1 }, dann: [['noah', '(nickt kurz) … Stimmt.']] },
-      { t: '„Noah baut einen Turm.“', wenn: (m) => !!m.noahOffen3, merke: 'steckbriefTurm', herz: { noah: -2 }, dann: [['noah', '(wird blass) Das hab ich nur dir gesagt.'], ['nouvelle', '(liest) Darf das so rein, Noah?'], ['noah', '(schaut weg) … Egal.']] },
+      { t: '„Noah baut einen Turm.“', wenn: (m) => !!m.noahOffen3, merke: 'steckbriefTurm', herz: { noah: -2 }, dann: [['noah', '(wird blass) Das hab ich nur dir gesagt.'], ['nouvelle', '(liest) Darf das so rein, Noah?'], ['noah', '(schaut weg) … Egal.'], ['nouvelle', '(streicht den Satz) Egal ist kein Ja. Ich lass es weg.'], ['ben', '(hinter dir, hat mitgelesen) Ein Turm? Echt jetzt?']] },
       { t: '„Schreib du, Noah.“', merke: 'steckbriefSelbst', herz: { noah: 2 }, dann: [['noah', '(schreibt. Langsam.) „Ich bau Sachen. Genau.“']] },
     ] },
     ['erzaehler', 'Die Steckbriefe hängen jetzt an der Wand. Mit Fotos. Neben dem Klassenvertrag.'],
@@ -467,7 +473,7 @@ export const GESPRAECHE_N2 = {
     ['ben', '(lacht) Platz vier! Die Taube!'],
     { foto: 'k2Noah', wer: 'noah', von: [-1.4, 1.5, 0.55], auf: [0, 1.45, 0], fov: 34 },
     ['erzaehler', 'Fünf Meter weiter liest Noah seinen Namen. Er lacht kurz mit. Dann nicht mehr.'],
-    { wenn: (m) => !!m.steckbriefTurm, dann: [['erzaehler', 'Das mit dem Turm hat Noah nur dir erzählt. Es stand auf deinem Steckbrief. Mit Foto.']], sonst: [{ wenn: (m) => !!m.steckbriefSelbst, dann: [['noah', '(leise, zu dir) Meinen Satz haben sie nicht.']] }] },
+    { wenn: (m) => !!m.steckbriefTurm, dann: [['erzaehler', 'Das mit dem Turm hat Noah nur dir erzählt. Es stand auf deinem Zettel. Ben hat mitgelesen.']], sonst: [{ wenn: (m) => !!m.steckbriefSelbst, dann: [['noah', '(leise, zu dir) Meinen Satz haben sie nicht.']] }] },
     { wenn: (m) => !!m.nurSpass, dann: [['jo', '(grinst zu dir) Nur Spaß, oder? Hast du gesagt.']] },
     { fest: true, wahl: [
       { t: '„Komm, wir gehen rein.“', staerke: 'einbeziehen', herz: { noah: 2 }, merke: 'listeBeiNoah', dann: [
@@ -483,7 +489,7 @@ export const GESPRAECHE_N2 = {
         ['erzaehler', 'Noah steckt das Handy weg. Er steht ein bisschen gerader.']] },
       { t: '(Screenshot. Zu Mme Tidderich.)', staerke: 'mut', herz: { noah: 1, jo: -1, ben: -1 }, merke: 'listeGemeldet', dann: [
         ['erzaehler', 'Mme Tidderich schaut lange auf dein Display.'],
-        ['hoffmann', 'Danke. Das war richtig. Bis morgen bleiben alle Handys im Schrank.'],
+        ['hoffmann', 'Danke. Das war richtig. Bis morgen bleiben alle Handys im Schrank.'], ['hoffmann', '(laut, für alle) Wer auf so einer Liste steht, hat nichts falsch gemacht.'],
         ['jo', '(später, laut im Gang) Wer war das? Wer hat gepetzt?'],
         ['erzaehler', 'Keiner sagt etwas. Ben schaut dich an. Nur kurz.']] },
       { t: '(Bei den Lachenden bleiben.)', herz: { ben: 1, jo: 1, noah: -2 }, merke: 'listeGelacht',
@@ -497,6 +503,8 @@ export const GESPRAECHE_N2 = {
       { t: '„Willst du kurz raus?“', staerke: 'zuhoeren', herz: { noah: 2 }, merke: 'noahRausGefragt', dann: [{ wenn: (m) => !!m.listeGelacht, dann: [['noah', '(schaut dich an) Mit dir? … Nein.']], sonst: [['noah', '(leise) … Ja. Treppe hinterm CDI.'], ['erzaehler', 'Ihr sitzt da. Bis es klingelt.']] }] },
       { t: '„Mir ist es nicht egal.“', herz: { noah: 1 }, merke: 'noahNichtEgal', dann: [['noah', '(schaut kurz hoch) … Okay.']] },
       { t: '„Dann ist ja gut.“', merke: 'noahEgalGeglaubt', dann: [['erzaehler', 'Er nickt. Dann geht er. Schneller als nötig.']] },
+      // Fehler → zweite Chance: wer mitgelacht hat, kann es sagen (kein Zwang, keine Belohnung – nur ein anderer Satz von Noah)
+      { t: '„Sorry. Ich hab mitgelacht.“', wenn: (m) => !!m.listeGelacht, merke: 'k2Entschuldigt', herz: { noah: 1 }, dann: [['noah', '(bleibt stehen) … Hab ich gesehen.'], ['noah', '(leiser) Gut, dass du’s sagst.']] },
     ] },
   ],
   // Dienstag 12:10 (Fable, Schlüsselszene K2): Bens Gegenliste (Entscheidung B)
@@ -531,7 +539,7 @@ export const GESPRAECHE_N2 = {
       { t: '(Zuschauen. Nichts sagen.)', staerke: 'warten', herz: { noah: 1 }, dann: [['erzaehler', 'Zehn Minuten. Er baut. Du schaust. Das Ruhigste seit Montag.']] },
     ] },
     ['ben', '(kommt rein, das Handy schon oben) Noah! Ein Foto vom Turm. Dann sehen alle, was du kannst.'],
-    { wenn: (m) => !!m.steckbriefTurm, dann: [['noah', 'Seit Dienstag weiß es eh jeder. Stand ja im Steckbrief.']] },
+    { wenn: (m) => !!m.steckbriefTurm, dann: [['noah', 'Seit Dienstag weiß es eh jeder. Stand ja auf deinem Zettel.']] },
     ['noah', 'Dann ist es deren Witz.'],
     { fest: true, wahl: [
       { t: '„Ben. Er will nicht.“', staerke: 'klar', herz: { noah: 2, ben: -1 }, merke: 'turmGeschuetzt', dann: [['ben', '(lässt das Handy sinken) … Okay. Sorry, Noah.']] },
@@ -583,6 +591,7 @@ export const GESPRAECHE_N2 = {
       { verdacht: 'dario', spur: 'Hat deinen Satz gehört. Saß im Bus.' }, { verdacht: 'lina', spur: 'Hat deinen Satz gehört. Saß im Bus.' },
       { wahl: [
         { t: '📎 „Schon wieder dein Satz.“', beweis: 'k1DarioSatz', merke: 'darioSatz2', dann: [{ handy: null }, ['dario', '(dreht sich um. Blass.) Siehst du. Der klaut.']] },
+        { t: '🖐 (Drei Dinge suchen.)', merke: 'k2DreiDinge', staerke: 'ruhig', dann: [{ handy: null }, ['du', '(denkt) Die Stange. Gelb. Kaugummi am Fenster. Regen. … Okay.']] },
         { t: '(Nichts sagen.)', dann: [{ handy: null }] },
       ] },
       { wenn: (m) => !!m.darioListeNein, dann: [['erzaehler', 'Dein Handy summt noch mal. Mila: „fand ich auch nicht.“']] }] },
@@ -606,7 +615,7 @@ export const GESPRAECHE_N2 = {
 
 // Rückblick in Bildern (Gesamtkonzept K2): Steckbrief, Bank zwei, Noahs Moment, „Das war auch“, eure Bank
 export const RUECKBLICK_N2 = (m) => [
-  { id: 'steckbriefNoah', titel: 'Der Steckbrief', text: m.steckbriefTurm ? 'Noahs Foto. Darunter stand, was er nur dir gesagt hat.' : m.steckbriefSelbst ? 'Noahs Foto. Darunter sein eigener Satz: „Ich bau Sachen. Genau.“' : m.steckbriefGenau ? 'Noahs Foto. Darunter: „misst alles genau“.' : 'Noahs Foto. Darunter: „still“.' },
+  { id: 'steckbriefNoah', titel: 'Der Steckbrief', text: m.steckbriefTurm ? 'Noahs Foto. Den Satz über den Turm hat Mme Nouvelle gestrichen. Ben hatte ihn schon gelesen.' : m.steckbriefSelbst ? 'Noahs Foto. Darunter sein eigener Satz: „Ich bau Sachen. Genau.“' : m.steckbriefGenau ? 'Noahs Foto. Darunter: „misst alles genau“.' : 'Noahs Foto. Darunter: „still“.' },
   { id: 'k2Werkbank', titel: 'Bank zwei', text: m.atelierNoah ? 'Noah hat gemessen. Zweiundvierzig.' : m.atelierJo ? 'Jo hat gemessen. Fünfundvierzig.' : 'Zweimal messen, einmal sägen.' },
   { id: 'k2Noah', titel: 'Dienstag, 10:03', text: 'Noah liest seinen Namen. Platz eins.' + (m.listeTankNoah ? ' Dann sagst du laut: „Ohne Noah würde die Bank wackeln.“' : '') },
   m.k2WKeins ? null : m.k2WBild ? { id: m.k2WBild, titel: 'Währenddessen', text: m.k2WText, auch: true }
@@ -641,7 +650,7 @@ export const tunN2 = (c) => ({
   },
   // Foto der Bank für den Rückblick – erst, wenn alle sitzen (nach den hin-Zeilen im Gespräch: kurz später)
   n2_bankFoto: () => { setTimeout(() => c.foto && c.foto('k2Bank', { von: [-3.4, 1.55, 23.6], auf: [-2.0, 0.6, 27.6], fov: 42 }), 900); },
-  n2_nummer: () => (c.S.merke.nummerBlockiert ? [['erzaehler', 'Die Nummer von damals ist blockiert. Manchmal denkst du trotzdem an sie.']]
+  n2_nummer: () => (c.S.merke.nummerBlockiert ? [['erzaehler', 'Die Nummer von damals ist blockiert. Still.']]
     : [['erzaehler', 'Die Nummer von damals: still.']]),
   n2_gegenlisteFolge: () => {
     const m = c.S.merke;
@@ -650,6 +659,8 @@ export const tunN2 = (c) => ({
     if (m.gegenlisteNoahSuchen) {
       m.gegenlistePost = true; m.liste_jo = true; m.liste_ben = true;
       const summt = m.listeGemeldet || m.milaGemeldet ? 'Dann kommt Ben die Treppe hoch. Sein zweites Handy in der Hand. Gepostet.' : 'Dann summen beide Handys. Ben hat gepostet.';
+      if (m.listeGelacht && m.k2Entschuldigt) return [['erzaehler', 'Du findest Noah auf der Treppe hinter dem CDI. Er rückt ein Stück. ' + summt],
+        ['noah', '(schaut aufs Handy, dann zu dir) Du hast sorry gesagt. Bleib.']];
       if (m.listeGelacht) return [['erzaehler', 'Du findest Noah auf der Treppe hinter dem CDI. Er steht auf, als du kommst. ' + summt],
         ['noah', '(im Weggehen) Erst lachen. Dann suchen.']];
       return [['erzaehler', 'Du findest Noah auf der Treppe hinter dem CDI. Ihr sitzt. ' + summt],
@@ -680,29 +691,45 @@ export const tunN2 = (c) => ({
     const m = c.S.merke, z = [];
     if (m.joLange) z.push(['jo', '(im Vorbeigehen) Und? Die lange Geschichte? … Montag.']);
     if (m.turmGeschuetzt && m.turmAendern) z.push(['noah', '(im Vorbeigehen) Das Dach ist drauf. Die Uhr sitzt jetzt richtig.']);
-    z.push(m.k2NoahImBild ? ['noah', '(im Vorbeigehen, leise) Ich bin in Lucas Story. Hinten. Wieder.']
-      : m.turmGeschuetzt ? (m.turmAendern ? ['noah', '(dreht sich noch mal um) Danke. Für Mittwoch.'] : ['noah', '(im Vorbeigehen) Das Dach ist drauf.']) : m.turmFoto ? ['noah', '(im Vorbeigehen) Ich geh nicht mehr hin. Ins Jugendhaus.']
-      : m.listeBeiNoah || m.noahRausGefragt ? ['noah', '(im Vorbeigehen) Treppe hinterm CDI. Montag wieder?'] : m.noahNichtEgal ? ['noah', '(im Vorbeigehen, leise) Mir auch nicht mehr. Egal, mein ich.'] : ['dario', '(neben dir) Noahs Platz in der Kantine war leer. Seit Dienstag.']);
+    // Noah sagt höchstens zwei Sätze – zuerst, was am direktesten zu deiner Wahl gehört
+    const n = [];
+    if (m.noahEgalGeglaubt) n.push(['noah', '(im Vorbeigehen, leise) Dienstag. „Ist mir egal.“ … War’s nicht.']);
+    if (m.turmFoto) n.push(['noah', (n.length ? '' : '(im Vorbeigehen) ') + 'Ich geh nicht mehr hin. Ins Jugendhaus.']);
+    else if (m.turmGeschuetzt) n.push(m.turmAendern ? ['noah', '(dreht sich noch mal um) Danke. Für Mittwoch.'] : ['noah', '(im Vorbeigehen) Das Dach ist drauf.']);
+    if (m.k2NoahImBild) n.push(['noah', (n.length ? '' : '(im Vorbeigehen, leise) ') + 'Ich bin in Lucas Story. Hinten. Wieder.']);
+    if (m.listeBeiNoah || m.noahRausGefragt) n.push(['noah', '(im Vorbeigehen) Treppe hinterm CDI. Montag wieder?']);
+    else if (m.noahNichtEgal) n.push(['noah', '(im Vorbeigehen, leise) Mir auch nicht mehr. Egal, mein ich.']);
+    z.push(...n.slice(0, 2));
+    if (!n.length) z.push(['dario', '(neben dir) Noahs Platz in der Kantine war leer. Seit Dienstag.']);
+    // Rückzug ohne Halt gibt es nicht: Noah holt sich Hilfe (vorgemacht, nicht gepredigt)
+    if (!n.length || m.turmFoto || m.noahEgalGeglaubt) { m.k2NoahKuedes = true; z.push(['erzaehler', 'Noah steigt nicht ein. Er geht zurück ins Gebäude. Hoch zu Herrn Kuedes.']); }
     return z;
   },
   n2_milaAllein: () => { c.S.merke.milaGemeldet = true;
     return [{ szene: 'schnitt', pruefe: false, def: { ort: 'Saal 1.04', t: 'Mila zeigt Mme Tidderich die Liste. Allein.' } }]; },
   n2_beweisFrage: () => {
     const m = c.S.merke, beh = m.selbstZuhoeren ? 'zuhoeren' : m.selbstMerken ? 'merken' : m.selbstLachen ? 'lachen' : null;
-    const W = { zuhoeren: 'Zuhören', merken: 'Merken', lachen: 'Lachen', helfen: 'Helfen' };
-    const SIEHT = { zuhoeren: 'Du bleibst, wenn’s eng wird.', merken: 'Du merkst dir, was andere vergessen.', lachen: 'Du bringst Leute zum Lachen, wenn’s schwer ist.', helfen: 'Du hilfst, wenn alle nur gaffen.' };
-    const ST = { zuhoeren: 'zuhoeren', merken: 'klar', lachen: 'humor', helfen: 'einbeziehen' };
+    const W = { zuhoeren: 'Zuhören', merken: 'Merken', lachen: 'Lachen', helfen: 'Helfen', mut: 'Mut' };
+    const SIEHT = { zuhoeren: 'Du bleibst, wenn’s eng wird.', merken: 'Du merkst dir, was andere vergessen.', lachen: 'Du bringst Leute zum Lachen, wenn’s schwer ist.', helfen: 'Du hilfst, wenn alle nur gaffen.', mut: 'Du sagst Nein, wenn alle Ja sagen.' };
+    const ST = { zuhoeren: 'zuhoeren', merken: 'klar', lachen: 'humor', helfen: 'einbeziehen', mut: 'mut' };
     const frage = beh ? '(rutscht ein Stück) Montag hast du gesagt: „' + W[beh] + '.“ Beweis?' : '(rutscht ein Stück) Montag wusstest du nicht, was du kannst. Und jetzt?';
     const treppe = !!(m.noahRausGefragt || m.gegenlisteNoahSuchen);
-    const belege = [
-      (treppe || m.listeBeiNoah) && { id: 'Noah', t: treppe ? '📎 Noah. Treppe, Dienstag.' : '📎 Noah. Dienstag, mit rein.', art: 'zuhoeren', halb: !!m.listeGelacht },
-      (m.bankGerade || m.noahMassGefragt || m.atelierPlan) && { id: 'Bank', t: '📎 Bank zwei. Zweiundvierzig.', art: 'merken' },
+    const alle = [
+      (treppe || m.listeBeiNoah) && { id: 'Noah', t: treppe ? '📎 Noah. Treppe, Dienstag.' : '📎 Noah. Dienstag, mit rein.', art: 'zuhoeren',
+        halb: m.listeGelacht && !m.k2Entschuldigt ? 'Erst gelacht. Dann gesucht.' : m.noahEgalGeglaubt ? 'Mit rein, ja. Dann: „Dann ist ja gut.“' : m.gegenlisteGepostet ? 'Und dann die Gegenliste gepostet.' : '',
+        ganz: m.listeGelacht && m.k2Entschuldigt ? 'Erst gelacht. Dann sorry gesagt. … Zählt.' : '' },
+      (m.bankGerade || m.noahMassGefragt || m.atelierPlan) && { id: 'Bank', t: '📎 Bank zwei. Zweiundvierzig.', art: m.noahMassGefragt ? 'zuhoeren' : 'merken' },
+      (m.turmGeschuetzt || m.lucaWiderspruch) && { id: 'Mut', t: m.turmGeschuetzt ? '📎 Der Turm. Kein Foto.' : '📎 Luca. Ich hab widersprochen.', art: 'mut' },
       (m.chiaraSicher || m.chiaraGeholfen) && { id: 'Chiara', t: '📎 Chiara. Der Stapel.', art: 'helfen' },
       m.rafaWitz && { id: 'Rafa', t: '📎 Rafa. Er hat gelacht.', art: 'lachen' },
-    ].filter(Boolean).slice(0, 3);
+    ].filter(Boolean);
+    // Höchstens drei Belege – ein passender ist immer dabei, wenn es einen gibt (Reihenfolge bleibt, damit nichts verraten wird)
+    let belege = alle.slice(0, 3);
+    const passt = beh && alle.find((b) => b.art === beh);
+    if (passt && !belege.includes(passt)) belege = [...belege.slice(0, 2), passt];
     // Kein Beleg: kein Menü mit einem Knopf – die Antwort ist klar
     if (!belege.length) { m.staerkeOhne = true; return [['dario', frage], ['du', 'Hab keinen.'], ['dario', 'Dann such einen. Nächste Woche.']]; }
-    const reakt = (b) => (b.halb ? [['dario', '(schaut dich lange an) Erst gelacht. Dann gesucht. … Zählt halb.']]
+    const reakt = (b) => (b.halb ? [['dario', '(schaut dich lange an) ' + b.halb + ' … Zählt halb.']] : b.ganz ? [['dario', '(schaut dich lange an) ' + b.ganz]]
       : !beh ? [['dario', '(nickt) Dann weiß ich’s jetzt. ' + SIEHT[b.art]]]
       : b.art === beh ? [['dario', '(nickt) Okay. Glaub ich dir.']]
       : [['dario', 'Das ist nicht ' + W[beh] + '. Das ist ' + W[b.art] + '. Auch gut.']]);

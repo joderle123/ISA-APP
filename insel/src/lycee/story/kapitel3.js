@@ -89,13 +89,13 @@ const UEBRIG_SATZ = { noah: '(schaut kurz hoch) … Echt?', lina: '(steckt das H
 // Die alte Liste aus Kapitel 2, angepinnt im Klassenchat (Manon wurde gerade hinzugefügt)
 // Französisch, Platz neben Jo: Manon fragt im Klassenchat nach der alten Liste. Jo tippt schon. Wer zuerst erklärt, macht das Bild von Noah.
 const MANON_CHAT = {
-  titel: '7P2', mitglieder: 22, dauer: 14, info: 'Manon fragt im Klassenchat. Jo tippt schon.',
+  titel: '7P2', mitglieder: 22, dauer: 16, info: 'Manon fragt im Klassenchat. Jo tippt schon.',
   nachrichten: [
     { nach: 0.6, wer: 'Manon', text: 'c’est quoi la liste ? noah il ne parle jamais ?' },
     { nach: 1.8, system: true, text: 'Jo tippt …', wennNicht: 'erklaert' },
-    { nach: 7.0, wer: 'Jo', text: 'il est bizarre 😂', wennNicht: 'erklaert', setzt: 'joZuerst' },
-    { nach: 8.6, wer: 'Manon', text: 'ah. bizarre.', wennNicht: 'erklaert' },
-    { nach: 11.0, system: true, text: 'Mme Sabli schaut zu euch.' },
+    { nach: 9.0, wer: 'Jo', text: 'il est bizarre 😂', wennNicht: 'erklaert', setzt: 'joZuerst' },
+    { nach: 10.6, wer: 'Manon', text: 'ah. bizarre.', wennNicht: 'erklaert' },
+    { nach: 13.0, system: true, text: 'Mme Sabli schaut zu euch.' },
   ],
   aktionen: [
     { id: 'antwort', t: 'Antworten', symbol: '💬', wennNicht: 'joZuerst', wahl: [
@@ -328,7 +328,8 @@ export const GESPRAECHE_N3 = {
           ['erzaehler', 'Im Büro sitzt ihr nebeneinander und schaut an verschiedene Wände.'],
           ['hoffmann', 'Yusuf, du bleibst heute bis halb fünf. {name}, du gehst zurück in die Halle.'],
           ['erzaehler', 'Yusuf sagt nichts. Er schaut auf die Uhr an der Wand. Dann auf seine Schuhe.']] },
-      { t: '„Musst du weg?“', wenn: (m) => !m.k3ZaunVersprochen && !m.yusufMussWeg, ruhig: true, staerke: 'lesen', merke: 'k3Uhr', herz: { yusuf: 2 }, dann: GANG_UHR },
+      { t: '„Musst du weg?“', wenn: (m) => !m.k3ZaunVersprochen && !m.yusufMussWeg && !m.k3UhrGesehen, ruhig: true, staerke: 'lesen', merke: 'k3Uhr', herz: { yusuf: 2 }, dann: GANG_UHR },
+      { t: '📎 „Musst du weg? Die Uhr.“', beweis: 'k3Uhr', wenn: (m) => !m.k3ZaunVersprochen && !m.yusufMussWeg && !!m.k3UhrGesehen, ruhig: true, staerke: 'lesen', merke: 'k3Uhr', herz: { yusuf: 2 }, dann: [['yusuf', '(stockt) … Du hast das gesehen?'], ...GANG_UHR] },
       { t: '📎 „Du hast gesagt: sofort weg.“', beweis: 'k3MussWeg', wenn: (m) => !m.k3ZaunVersprochen, ruhig: true, staerke: 'lesen', merke: 'k3Uhr', herz: { yusuf: 2 }, dann: [['yusuf', '(stockt) Das hast du dir gemerkt?'], ...GANG_UHR] },
       { t: '📎 „Um vier. Dein Bruder.“', beweis: 'k3Vier', ruhig: true, staerke: 'lesen', merke: 'k3Uhr', herz: { yusuf: 2 }, dann: [['yusuf', '(stockt) Der Kleine hat’s dir gesagt?'], ...GANG_UHR] },
       { t: '(Dazwischenstellen.)', merke: 'k3Dazwischen', herz: { yusuf: -1 },
@@ -375,11 +376,11 @@ export const GESPRAECHE_N3 = {
     ['erzaehler', 'Der Zähler läuft. Du kannst eine Nachricht schreiben. Eine.'],
     { wahl: [
       { t: '„Löscht das.“', staerke: 'mut', herz: { yusuf: 1, jo: -1 }, merke: 'k3ChatStopp',
-        dann: [{ wenn: (m) => !!m.k3ErstWeg, dann: [['erzaehler', 'Yusuf steht hinter dir. Chiara sieht ihn. Sie schreibt: „Stimmt.“'], ['yusuf', '(zehn Minuten später, im Chat) Foto ist weg.']],
+        dann: [{ wenn: (m) => !!m.k3ErstWeg, dann: [{ tu: 'n3_zaehlerStopp' }, ['erzaehler', 'Yusuf steht hinter dir. Chiara sieht ihn. Sie schreibt: „Stimmt.“'], ['yusuf', '(zehn Minuten später, im Chat) Foto ist weg.']],
           sonst: [{ wenn: (m) => !!m.k3YusufHinterher, dann: [['erzaehler', 'Zu spät. Unter deiner Nachricht: noch zehn Lacher. Keiner schreibt „Stimmt.“'], ['yusuf', '(abends, im Chat) Foto ist weg. Hat lange gedauert.']],
-            sonst: [['erzaehler', 'Drei Minuten nichts. Dann Chiara: „Stimmt.“ Dann Noah: „👍“.'], ['yusuf', '(eine Stunde später, im Chat) Foto ist weg.']] }] }] },
+            sonst: [{ tu: 'n3_zaehlerStopp' }, ['erzaehler', 'Drei Minuten nichts. Dann Chiara: „Stimmt.“ Dann Noah: „👍“. Der Zähler bleibt stehen.'], ['yusuf', '(eine Stunde später, im Chat) Foto ist weg.']] }] }] },
       { t: '📩 Chiara: „Schreibst du mit?“', staerke: 'einbeziehen', herz: { yusuf: 1, chiara: 1 }, merke: ['k3ChatStopp', 'k3ChiaraMit'],
-        dann: [['chiara', '(liest. Nickt dir über den Tisch zu.) Du zuerst.'], ['erzaehler', '„Löscht das.“ Zwei Sekunden später Chiara: „Stimmt. Löscht das.“ Der Zähler bleibt stehen.'], ['yusuf', '(eine halbe Stunde später, im Chat) Foto ist weg.']] },
+        dann: [['chiara', '(liest. Nickt dir über den Tisch zu.) Du zuerst.'], { tu: 'n3_zaehlerStopp' }, ['erzaehler', '„Löscht das.“ Zwei Sekunden später Chiara: „Stimmt. Löscht das.“ Der Zähler bleibt stehen.'], ['yusuf', '(eine halbe Stunde später, im Chat) Foto ist weg.']] },
       { t: '„Er hatte einen Grund.“', wenn: (m) => !m.k3Uhr, merke: 'k3ChatGrund', herz: { yusuf: 1 },
         dann: [['jo', '(tippt sofort) Welchen denn? 😂 Erzähl!'], { tu: 'n3_grundDruck' }] },
       { t: '📎 „Sein Bruder wartete allein!“', beweis: 'k3Bruder', merke: 'k3BruderVerraten', herz: { yusuf: -3 }, dann: [{ tu: 'n3_bruderFalle' }] },
@@ -409,7 +410,7 @@ export const RUECKBLICK_N3 = (m) => {
     { id: 'k3Manon', titel: 'Am Tor', text: m.manonHallo ? 'Manon mit ihrem Zettel. Du hast ihr den Weg gezeigt.' : m.manonVorbei ? 'Manon mit ihrem Zettel. Du bist vorbeigegangen.' : 'Manon mit ihrem Zettel. Du hast sie zu Mme Sabli geschickt.' },
     { id: 'k3Halle', titel: 'Deine Aufstellung', text: (m.k3Team || []).map((id) => F[id] ? F[id].name : id).join(', ') + (m.k3Uebrig && m.k3Uebrig.length ? '. An der Wand blieben: ' + m.k3Uebrig.map((id) => F[id] ? F[id].name : id).join(', ') + '.' : '.') },
     { id: 'k3Yusuf', titel: 'Im Gang', text: m.k3Uhr ? 'Yusuf, rot vor Wut. Darunter: Angst um seinen kleinen Bruder.' : 'Yusuf, rot vor Wut. Alle haben nur die Wut gesehen.' },
-    { id: 'k3Pult', titel: 'Du, in dem Moment', text: (m.k3HalsFrueh ? 'Heiß im Hals. Du hast sofort geatmet. ' : 'Rot. ') + (m.k3Uhr ? 'Dann hast du gefragt.' : m.k3Zurueck ? 'Du hast zurückgeschrien.' : m.k3Sommer ? 'Dann hast du Frau Sommer geholt.' : m.k3Dazwischen ? 'Du hast dich dazwischengestellt.' : 'Alle haben geschaut.') },
+    { id: 'k3Pult', titel: 'Du, in dem Moment', text: (m.k3HalsFrueh ? 'Heiß im Hals. Du hast sofort geatmet. ' : m.rotGeatmet3 ? 'Erst Rot. Dann hast du geatmet. ' : 'Rot. ') + (m.k3Uhr ? 'Dann hast du gefragt.' : m.k3Zurueck ? 'Du hast zurückgeschrien.' : m.k3Sommer ? 'Dann hast du Frau Sommer geholt.' : m.k3Dazwischen ? 'Du hast dich dazwischengestellt.' : 'Alle haben geschaut.') },
     !m.k3Uhr ? { id: 'auchUhr3', titel: 'Das war auch', text: 'Über der Hallentür hing eine Uhr. Yusuf hat dauernd hingeschaut. Schon am Montag am Korb.', auch: true } : null,
     { id: 'k3ManonPause', titel: 'Manon am Freitag', text: (m.k3Eingestiegen ? 'Im Bus saß sie neben dir. Mit dem Foto und einem Wort, das sie nicht kannte.' : n >= 3 ? 'Sie steht mitten im Hof. Mit Chiara und Ayla.' : n >= 1 ? 'Sie geht allein zum Bus. Das Wörterbuch unterm Arm.' : 'Sie steht noch am Rand. Mit dem Wörterbuch.') },
   ].filter(Boolean);
@@ -434,29 +435,38 @@ export const tunN3 = (c) => ({
   n3_sommer: () => {
     const m = c.S.merke, weiss = !!(m.k3ZaunVersprochen || m.yusufMussWeg);
     const start = [['sommer', '(kommt aus der Halle) Was ist hier los?']];
-    if (weiss) { m.k3SommerGeholfen = true; return [...start, ['du', 'Er muss um vier weg. Sein Bruder.'], ['sommer', '(schaut Yusuf an) Stimmt das?'], ['yusuf', '(nickt. Ganz kurz.)'], ['sommer', 'Dann geh. Ich ruf deine Mama an.']]; }
+    if (weiss) { m.k3SommerGeholfen = true; return [...start, m.k3ZaunVersprochen ? ['du', 'Er muss um vier weg. Sein Bruder.'] : ['du', 'Er hat gesagt, er muss sofort weg.'], ['sommer', '(schaut Yusuf an) Stimmt das?'], m.k3ZaunVersprochen ? ['yusuf', '(nickt. Ganz kurz.)'] : ['yusuf', '(leise) Mein Bruder. Um vier.'], ['sommer', 'Dann geh. Ich ruf deine Mama an.']]; }
     return [...start, ['du', 'Weiß nicht. Er ist so rot.'], ['sommer', 'Yusuf, mit mir. Jetzt.'], ['yusuf', 'Aber ich muss –'], ['sommer', 'Du bleibst heute bis halb fünf.'], ['erzaehler', 'Yusuf schaut zur Uhr. 14:46. Er sagt nichts mehr.']];
   },
   // Später fragt jemand nach DEINER Wut (Wort-Leiter, Heft #02) – und sagt die eigene Stufe
   n3_leiter: () => {
     const m = c.S.merke, wer = m.linaVertraut || m.k1BeiLina ? 'lina' : m.listeBeiNoah || m.noahRausGefragt ? 'noah' : 'mila';
     const EIGEN = { lina: '(leise) Ich war erschrocken. Nicht sauer. Erschrocken.', noah: 'Ich war ängstlich. Laute Stimmen. Ich hasse das.', mila: 'Ich war nur genervt. Bis er geschrien hat. Dann: Angst.' };
+    const hoch = ((c.S.pultLog || {})[3] || {}).max >= 7;
     return [[wer, '(später, leise) Wie sauer warst du? Vorhin.'],
       { fest: true, wahl: [
         { t: '„Genervt.“', merke: 'k3LeiterGenervt', dann: [] }, { t: '„Sauer.“', merke: 'k3LeiterSauer', dann: [] },
         { t: '„Wütend.“', merke: 'k3LeiterWuetend', dann: [] }, { t: '„Rasend.“', merke: 'k3LeiterRasend', dann: [] },
       ] },
+      // Rückmeldung ohne richtig/falsch: nur, was der Körper gezeigt hat
+      { wenn: (x) => hoch && !!(x.k3LeiterGenervt || x.k3LeiterSauer), dann: [[wer, '(schaut dich an) Hm. Dein Gesicht war knallrot.']] },
       [wer, 'Und drunter?'],
       { fest: true, wahl: [
         { t: '„Angst.“', merke: 'k3DrunterAngst', dann: [] }, { t: '„Scham.“', merke: 'k3DrunterScham', dann: [] },
         { t: '„Nichts.“', merke: 'k3DrunterNichts', dann: [] }, { t: '„Weiß nicht.“', merke: 'k3DrunterWeiss', dann: [] },
       ] },
-      [wer, EIGEN[wer]]];
+      [wer, EIGEN[wer]],
+      [wer, 'Wo merkst du’s zuerst? Bei mir: Hände.'],
+      { fest: true, wahl: [
+        { t: '„Hals.“', merke: 'k3SignalHals', dann: [] }, { t: '„Bauch.“', merke: 'k3SignalBauch', dann: [] },
+        { t: '„Hände.“', merke: 'k3SignalHaende', dann: [] }, { t: '„Weiß nicht.“', merke: 'k3SignalWeiss', dann: [] },
+      ] }];
   },
   // Währenddessen: wer nicht bei Yusuf war, sieht ihn – sonst Manon allein am Rand
   n3_waehrenddessen: () => (c.S.merke.pause3Yusuf || c.S.merke.pause3ZuYusuf
     ? [{ szene: 'schnitt', pruefe: false, def: { bild: 'k3ManonPause', ort: 'Am Rand', t: 'Manon. Das Wörterbuch offen. Keiner spricht sie an.' } }]
     : [{ foto: 'auchYusuf3', wer: 'yusuf', von: [-3.6, 2.1, -3.2], auf: [0, 1.5, 0], fov: 50 }, { szene: 'schnitt', pruefe: false, def: { bild: 'auchYusuf3', ort: 'Korb', t: 'Yusuf. Nach jedem Wurf ein Blick aufs Handy. Auf die Uhrzeit.' } }, { tu: 'n3_uhrGesehen' }]),
+  n3_zaehlerStopp: () => { if (c.ui.zaehlerStopp) c.ui.zaehlerStopp(); return []; },
   n3_uhrGesehen: () => { c.S.merke.k3UhrGesehen = true; return [{ beweis: 'k3Uhr', t: 'Yusuf schaut nach jedem Wurf auf die Uhrzeit.' }]; },
   // Freitag am Bus: Yusuf kommt zu DIR. Sein erster Satz hängt davon ab, was im Gang und im Chat passiert ist.
   // Mittendrin ruft Manon – wer hingeht, verpasst Yusufs Ende.
@@ -474,11 +484,12 @@ export const tunN3 = (c) => ({
     } else if ((m.k3Sommer && !m.k3SommerGeholfen) || m.k3Zurueck) {
       auf = ['yusuf', 'Halb fünf. Er hat geweint.'];
       wahl = { wahl: [
-        { t: '„Ich wusste das nicht.“', merke: 'k3NichtGewusst', dann: [['yusuf', 'Keiner wusste es. Keiner hat gefragt.']] },
+        { t: '„Ich wusste das nicht.“', merke: 'k3NichtGewusst', dann: [['yusuf', 'Keiner wusste es. Ich hab’s keinem gesagt.']] },
         { t: '„Sorry. Echt.“', merke: 'k3Sorry', herz: { yusuf: 1 }, dann: [['yusuf', '(nickt kurz) … Okay.']] },
         { t: '„Du hast angefangen.“', wenn: (x) => !!x.k3Zurueck, merke: 'k3Angefangen', herz: { yusuf: -1 }, dann: [['yusuf', 'Ja. Hab ich.'], ['erzaehler', 'Er geht.']] },
-        { t: '„Es sollte aufhören.“', wenn: (x) => !!x.k3Sommer, merke: 'k3Aufhoeren', dann: [['yusuf', 'Hat es ja. Für dich.']] },
+        { t: '„Es sollte aufhören.“', wenn: (x) => !!x.k3Sommer, merke: 'k3Aufhoeren', dann: [['yusuf', '(zuckt mit den Schultern) Ja. Frau Sommer hätte fragen sollen.']] },
       ] };
+      schluss.push({ wenn: (x) => !x.k3Angefangen, dann: [['yusuf', '(leiser) War nicht deine Schuld. Ich hab geschrien.']] });
     } else if (m.k3Uhr || m.k3SommerGeholfen) {
       auf = m.k3Uhr ? ['yusuf', '(die Hände in den Taschen) Das im Gang … sorry.'] : ['yusuf', '(die Hände in den Taschen) Das im Gang … sorry. Frau Sommer hat Mama angerufen. Danke.'];
       wahl = { wahl: [
@@ -500,7 +511,7 @@ export const tunN3 = (c) => ({
     if (m.k3ErstWeg && m.k3ChatNichts) chat.push(['yusuf', 'Du hast gesagt: erst weg. Dann hast du weitergescrollt.']);
     if (m.k3DarioGenannt) chat.push(['yusuf', 'Dario schwört, er war’s nicht. Das Handy war nicht bei ihm.']);
     else if (m.k3KenanGenannt) chat.push(['yusuf', 'Kenan sagt, „bissig“ sagen alle. Er hat nur gelacht.']);
-    if (m.k3ZaunVersprochen && !m.k3Uhr) chat.push(['yusuf', 'Mein Bruder sagt, du solltest mir was sagen. Um vier.']);
+    if (m.k3ZaunVersprochen && !m.k3Uhr && !m.k3SommerGeholfen) chat.push(['yusuf', 'Mein Bruder sagt, du solltest mir was sagen. Um vier.']);
     // Wer gefragt, sich dazwischengestellt oder sich entschuldigt hat: Yusuf nimmt dich mit zur Grundschule
     const grundschule = { wenn: (x) => !x.k3BruderVerraten && !!(x.k3Uhr || x.k3SommerGeholfen || x.k3Dazwischen || x.k3Sorry), dann: [['yusuf', 'Ich muss zur Grundschule. Kommst du mit?'], { wahl: [
       { t: '„Klar.“', merke: 'k3Mitgegangen', herz: { yusuf: 1 }, dann: [{ szene: 'schnitt', pruefe: false, def: { ort: 'Grundschule · 16:00', t: 'Ein kleiner Junge mit einem viel zu großen Ranzen rennt auf Yusuf zu. Pünktlich.' } }, ['yusuf', '(fängt ihn auf) Sag Hallo. Das ist {name}.']] },
@@ -519,7 +530,8 @@ export const tunN3 = (c) => ({
     const m = c.S.merke;
     return [{ blende: 'Freitag · 15:42 · im Bus' },
       ['erzaehler', 'Frei ist nur der Platz neben Manon. Sie hält dir ihr Handy hin.'],
-      { handy: { wer: 'Manons Handy · Klassenchat', wann: 'heute', fotoId: 'k3Yusuf', streifen: true, alt: 'Yusuf vor der Halle, Mund offen, von unten fotografiert', text: '„yusuf nach dem turnier 😂 achtung bissig“' } },
+      { handy: { wer: 'Manons Handy · Klassenchat', wann: 'heute', fotoId: 'k3Yusuf', streifen: true, alt: 'Yusuf vor der Halle, Mund offen, von unten fotografiert', text: '„yusuf nach dem turnier 😂 achtung bissig“',
+        ...(m.k3BruderVerraten ? { chat: [{ ich: true, t: 'sein bruder wartete allein!' }] } : {}) } },
       ['manon', '„Bissig“ … c’est quoi ?'],
       { wahl: [
         { t: '„Méchant.“', merke: 'k3BusMechant', dann: [['manon', '(nickt langsam) Méchant. D’accord.'], ['erzaehler', 'Sie schreibt es in ihr Wörterbuch. Neben Yusufs Namen.']] },
@@ -529,6 +541,11 @@ export const tunN3 = (c) => ({
       ] },
       { handy: null },
       ['erzaehler', 'Durchs Fenster: Yusuf steht noch an der Haltestelle. Er schaut dem Bus nach.'],
+      // Nach der Bruder-Falle: eine zweite Chance, leise, privat (keine Belohnung – nur ein „ok.“)
+      ...(m.k3BruderVerraten ? [['du', '(denkt) Unter dem Foto: dein Satz. Über seinen Bruder.'], { wahl: [
+        { t: '📩 „Sorry. War nicht meins.“', merke: 'k3VerratEingesehen', herz: { yusuf: 1 }, dann: [{ handy: { wer: 'Yusuf · privat', wann: 'jetzt', chat: [{ ich: true, t: 'sorry. das mit deinem bruder war nicht meins.' }, { wer: 'yusuf', t: 'ok.' }] } }, { handy: null }] },
+        { t: '(Nicht schreiben.)', merke: 'k3VerratStill', dann: [] },
+      ] }] : []),
       ...(m.k3ChatStopp && !m.k3BruderVerraten ? [{ handy: { wer: 'Yusuf', wann: 'jetzt', chat: [{ wer: 'yusuf', t: 'das mit „löscht das“. danke' }] } }, { handy: null }] : [])];
   },
   n3_wort: () => { const m = c.S.merke; m.woerter = (m.woerter || 0) + 1; return []; },

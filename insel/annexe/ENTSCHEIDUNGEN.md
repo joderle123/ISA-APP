@@ -550,3 +550,25 @@ Je Kapitel drei schwache Szenen gestrichen und neu gebaut, Wahlen ohne Folgen be
   Kreis und kommt (bei „niemand“: Mila später „Ich hätte dich geholt.“) · Atmen kein Umweg mehr (gut geatmet = früher durch) ·
   Mila zeigt Finger statt „0 bis 100“ · „Montag hast du’s gesagt, Jo.“ ohne Stärke; Freitag fragt Ben „War’s Jo?“ · Testkarte
   „Nach den Ferien: zu zweit.“ · Chiaras Sicht mit Rahmen · „Dein Zettel“ heißt jetzt „Dein Ampelplan“.
+
+### Serie 3, Runde 1 – Lernwirkung (Panel: Schulpsychologin, Sozialpädagoge, SEL-Lehrerin, zwei Jugendliche)
+Frage: Lernt ein Kind etwas, das es nächste Woche anders machen lässt? Prinzip: zeigen → selbst tun → Rückmeldung → auf sich beziehen;
+Fehler bekommen eine faire Folge UND eine zweite Chance; überall, wo jemand bloßgestellt wird, sagt ein Erwachsener „Das liegt nicht an dir“.
+- K1: Plakat (mit „Weiter.“/„Stopp.“) hängt jetzt VOR Jos Frage, Mme Tidderich zeigt darauf · Rafa: „Achtundachtzig Stimmen. Eine
+  davon ist deine.“ · „Drei Dinge suchen“ bekommt Namen und Ort (Hinweis + Rückblick „geht auch im Bus“), in K2 im Bus wieder ·
+  23:07: Uhr steht, solange man tippt; „wer bist du?“ wird nicht mehr bestraft · wer die DM niemandem zeigt: Herr Kuedes am
+  Dienstag „Das liegt nicht an dir.“ · neue Gesprächsfrage (Meinungsfrage auf Abstand) + Zusatzfragen.
+- K2: Steckbrief: Mme Nouvelle gibt Rückmeldung („Frag nach.“ / „Das war Ja oder Nein.“) und einen zweiten Versuch · „Egal ist
+  kein Ja.“ (Nouvelle streicht den Turm-Satz; Ben hat schon mitgelesen) · nach dem Mitlachen: „Sorry. Ich hab mitgelacht.“ →
+  andere Folgen (Treppe, Darios Beweis zählt ganz) · „Ist mir egal“ wird am Freitag hörbar · Dario prüft genauer (Mut als
+  Stärke, Gegenbelege) · Noah holt sich Hilfe (Herr Kuedes) · Tidderich: „Wer auf so einer Liste steht, hat nichts falsch gemacht.“
+- K3: Zähler bleibt wirklich stehen, wenn andere mitziehen · „Musst du weg?“ mit 📎 Uhr · Frau Sommer: man sagt nur, was man weiß ·
+  Hilfe holen wird nicht schlechtgemacht; Yusuf: „War nicht deine Schuld. Ich hab geschrien.“ · Wort-Leiter mit Körper-Spiegel
+  („Dein Gesicht war knallrot.“) + „Wo merkst du’s zuerst?“ → steht in K4 oben auf dem Ampelplan · Bruder-Falle: im Bus kann man
+  Yusuf schreiben („Sorry. War nicht meins.“) · Erholung auf Rot (geatmet) steht in Rückblick und Chronik · Manon-Chat langsamer.
+- K4: ★ folgt der Farbe wie im Test: auf Rot die Rot-Zeile, sonst die Gelb-Zeile; Kopf-Werkzeuge wirken auf Gelb, rutschen auf
+  Rot weg (mit Warum) und danach wird 🫁 angeboten · Mila spiegelt („Still ist oft Gelb.“) und bietet an, den Zettel zu tauschen
+  (Rot-Zeile oder „Schreib dich drauf.“) · Mme Lenning: „Wer so ein Foto macht, ist schuld. Nicht du.“ · Parkschein holt auch den
+  geparkten Gedanken ab · Chronik: Plan im Test benutzt (x-mal), gefühlt vs. gemessen ohne Zahl · neue Gesprächsfrage.
+- Nach dem Testlauf: Der Hinweis „🖐 Drei Dinge suchen“ kommt sofort (als leise Meldung wäre er in der langen Szene verfallen) ·
+  Noah geht am Freitag nicht „nach der Stunde“, sondern steigt an der Haltestelle nicht ein und geht zurück zu Herrn Kuedes.

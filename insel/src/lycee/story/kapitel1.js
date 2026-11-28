@@ -143,7 +143,7 @@ export const RUECKBLICK_N1 = (m) => [
   { id: 'haltestelleKlick', titel: 'Drei Handys', text: 'Dario, Lina, Kenan. Einer hat fotografiert.' },
   m.duPausePlatz ? { id: 'duPause', titel: '10:05 · Dein Platz', text: (PAUSE_SATZ[m.duPausePlatz] || '') + ' Genau dieses Bild hat @annexe.cam gepostet.' } : null,
   { id: 'auchPause', titel: 'Währenddessen', text: m.rafaGeholfen ? 'Noah am Zaun. Die ganze Pause allein.' : 'Rafa am Brunnen. Allein mit dem Foto.', auch: true },
-  { id: 'hofAlle', titel: '13:31 · Dein Foto', text: m.fotoMitgelacht ? 'Alle am Handy. Du hast mitgelacht.' : m.k1Stopp ? 'Alle am Handy. Du hast „Stopp.“ gesagt.' : m.k1Geerdet ? 'Alle am Handy. Du hast drei Dinge gesucht. Danach warst du ruhiger.' : 'Alle am Handy. Alles hat gerauscht.' },
+  { id: 'hofAlle', titel: '13:31 · Dein Foto', text: m.fotoMitgelacht ? 'Alle am Handy. Du hast mitgelacht.' : m.k1Stopp ? 'Alle am Handy. Du hast „Stopp.“ gesagt.' : m.k1Geerdet ? 'Alle am Handy. Du hast drei Dinge gesucht. Danach warst du ruhiger. Das geht immer – auch im Bus.' : 'Alle am Handy. Alles hat gerauscht.' },
   { id: 'duAbend', titel: '15:30 · Haltestelle', text: 'Der Bus nach Hause.' },
 ].filter(Boolean);
 
@@ -207,7 +207,7 @@ const PRIVAT_AKTION = (m) => { const v = PRIVAT_VON(m), n = PRIVAT_NAME[v]; if (
   return [{ id: 'privat', t: n + ' antworten', symbol: '📩', wenn: 'privatDa', wennNicht: 'gruppe', wahl: PRIVAT_ANTWORTEN[v].map(([t, art, ich, zurueck]) => ({ t, setzt: ['privat', 'p_' + art], sys: '📩 an ' + n + ': ' + ich, folgen: [{ nach: 1.6, system: true, text: '📩 ' + n + ': ' + zurueck }] })) }]; };
 // ---------- 23:07: die unbekannte Nummer (Lina). Sechs Sekunden, dann gelöscht. ----------
 const NUMMER = {
-  titel: '+352 6•• ••• •41', mitglieder: 2, dauer: 20,
+  titel: '+352 6•• ••• •41', mitglieder: 2, dauer: 20, wahlHaelt: true,
   nachrichten: [
     { nach: 0.8, wer: 'Unbekannt', text: 'ich hab gesehen, wer das foto gemacht hat' },
     { nach: 6.8, system: true, text: 'Diese Nachricht wurde gelöscht.', setzt: 'geloescht' },
@@ -215,7 +215,7 @@ const NUMMER = {
   aktionen: [
     { id: 'beweis', t: 'Screenshot', symbol: '📸', wennNicht: 'geloescht', setzt: 'beweis', sys: 'Screenshot gespeichert. 23:07.' },
     { id: 'antwort', t: 'Schreiben', symbol: '💬', wahl: [
-      { t: '„wer bist du?“', setzt: ['geschrieben', 'fordernd'], ich: 'wer bist du?', folgen: [{ nach: 1.4, system: true, text: '✓✓ gesehen' }, { nach: 3.2, system: true, text: 'Unbekannt hat den Chat verlassen.' }] },
+      { t: '„wer bist du?“', setzt: ['geschrieben', 'fordernd'], ich: 'wer bist du?', folgen: [{ nach: 1.4, system: true, text: '✓✓ gesehen' }, { nach: 3.2, wer: 'Unbekannt', text: 'kann ich nicht sagen. sorry.' }] },
       { t: '„was hast du gesehen?“', setzt: ['geschrieben', 'frage'], ich: 'was hast du gesehen?', folgen: [{ nach: 1.4, system: true, text: '✓✓ gesehen' }, { nach: 3.6, wer: 'Unbekannt', text: 'die treppe. eine hand. ein handy.' }, { nach: 8.0, system: true, text: 'Diese Nachricht wurde gelöscht.' }] },
       { t: '„alles ok bei dir?“', setzt: ['geschrieben', 'sanft'], ich: 'alles ok bei dir?', folgen: [{ nach: 1.4, system: true, text: '✓✓ gesehen' }, { nach: 3.4, wer: 'Unbekannt', text: 'nein. aber danke, dass du fragst.' }] },
     ] },
@@ -249,6 +249,7 @@ const RAFA_HIN = [
   { handy: { wer: '@annexe.cam', wann: 'vor 2 Std.', fotoId: 'rafaBank', alt: 'Ein kleiner Junge schläft an der Haltestelle. Mund offen.',
     text: 'neu in der 5e. eingepennt 😴 cool oder cringe?', umfrage: { a: 'cringe', b: 'cool', pa: 71, stimmen: 88, live: true } } },
   ['rafa', 'Mit offenem Mund. Einundsiebzig Prozent.'],
+  { wenn: (m) => !!m.abgestimmt, dann: [['erzaehler', 'Achtundachtzig Stimmen. Eine davon ist deine.']] },
   { wahl: [
     { t: '„Das ist nicht okay.“', staerke: 'klar', herz: { rafa: 1 }, merke: ['rafaGeholfen', 'rafaKlar'], dann: [['rafa', 'Sagt sich leicht.'], ['erzaehler', 'Aber er steckt das Handy weg.']] },
     { t: '„Komm. Zu Herrn Kuedes.“', staerke: 'hilfe', herz: { rafa: 2 }, merke: ['rafaGeholfen', 'rafaKuedes'], dann: [['rafa', '(schluckt) Kommst du mit rein?'], ['erzaehler', 'Ihr geht zusammen zum SePAS. Herr Kuedes hört zu. Dann macht er die Tür zu.'], ['kaya', 'Danke, dass ihr kommt. Ich kümmere mich. Ohne Namen.']] },
@@ -427,6 +428,9 @@ export const GESPRAECHE_N1 = {
     ['hoffmann', 'Hinten links ist frei. Neben der Tür.'],
     { wenn: (m, S) => !S.stundenplan, dann: [{ tu: 'stundenplan' }] },
     { tu: 'spindFrei' },
+    { tu: 'n1_vertragStill' },
+    { tu: 'vertragPlakat' },
+    ['hoffmann', '(zeigt aufs Plakat an der Wand) Unser Vertrag. Zwei Wörter gelten hier sofort: „Weiter.“ und „Stopp.“'],
     ['ben', '(dreht sich um) Moien. Ben. Nummer? Für den Klassenchat.'],
     // Ein Spitzname ist ein Etikett. Wer klebt es? (Ben speichert „{name} 7P2“ – die Spur für Kapitel 5 bleibt)
     ['ben', '(tippt) {name}, 7P2. Gespeichert.'],
@@ -461,8 +465,6 @@ export const GESPRAECHE_N1 = {
       { t: '„Geht dich nix an.“', merke: 'joAbgeblockt', dann: [['jo', '(hebt die Hände) War nur ’ne Frage.']] },
       { t: '„Lange Geschichte.“', merke: 'joLange', dann: [['jo', 'Hab Zeit. Bis Freitag.']] },
     ] },
-    { tu: 'n1_vertragStill' },
-    { tu: 'vertragPlakat' },
     { tu: 'n1_deutschRest' },
   ],
   // ---------- 10:00 Große Pause: vier Orte, du gehst an einen ----------
@@ -529,6 +531,7 @@ export const GESPRAECHE_N1 = {
       ausgang: (r, m) => { const n = (r.gefunden || []).length; m.k1Dinge = n; return n >= 3 ? 'drei' : n >= 1 ? 'teil' : 'nicht'; },
       folgen: { drei: { merke: 'k1Geerdet', staerke: 'ruhig', dann: [{ pult: { plus: -5 } }, ['erzaehler', 'Drei Dinge. Das Summen wird leiser. Du stehst noch da.']] },
         teil: { dann: [{ pult: { plus: -2 } }] }, nicht: { dann: [['erzaehler', 'Alles verschwimmt. Gesichter, Handys, dein Foto.']] } } },
+    { tu: 'n1_dingeTipp' },
     { tu: 'n1_daneben' },
     // Rot-Modus: ruhige Antworten sind zu. Ein Wort geht immer: „Stopp.“ (Heft #00 – Stopp gilt sofort). Hilfe holen geht immer.
     { rotHilfe: { id: 'stopp', t: '✋ „Stopp.“', merke: 'k1Stopp', minus: 4, sperre: 'Zu viel. Ein Wort geht: „Stopp.“', toast: 'Zu viel für ganze Sätze. Ein Wort geht immer: „Stopp.“',
@@ -594,10 +597,12 @@ export const GESPRAECHE_N1 = {
     { wenn: (m) => !!m.dmZeigen, dann: [
       ['erzaehler', 'Du willst es jemandem zeigen. Wem?'],
       { wahl: [
-        { t: 'Mme Tidderich.', staerke: 'hilfe', merke: 'erzaehltTidderich', dann: [{ blende: 'Dienstag · 7:40' }, ['hoffmann', '(liest lange) Danke. Ab heute gibt es vorne eine Handy-Kiste. Und ich rede mit der Direktion.']] },
+        { t: 'Mme Tidderich.', staerke: 'hilfe', merke: 'erzaehltTidderich', dann: [{ blende: 'Dienstag · 7:40' }, ['hoffmann', '(liest lange) Danke. Das liegt nicht an dir.'], ['hoffmann', 'Ab heute gibt es vorne eine Handy-Kiste. Und ich rede mit der Direktion.']] },
         { t: 'Herrn Kuedes (SePAS).', staerke: 'hilfe', merke: 'erzaehltKuedes', dann: [{ blende: 'Dienstag · 7:40' }, ['kaya', '(liest) Zeig es mir nur. Nicht weiterschicken. … Und: Schläfst du?']] },
         { t: 'Dario. Direkt fragen.', merke: 'erzaehltDario', dann: [{ blende: 'Dienstag · 7:40' }, ['dario', '(liest „morgen ist wer anders dran“) Hab ich gestern gesagt. … Der klaut meine Sätze.'], { beweis: 'k1DarioSatz', t: '@annexe.cam schreibt Darios Satz: „morgen ist wer anders dran“.' }] },
-      ] }], sonst: [{ tu: 'n1_niemand' }, ['erzaehler', 'Das Handy bleibt aus. Morgen ist ein neuer Tag.']] },
+      ] }], sonst: [{ tu: 'n1_niemand' }, ['erzaehler', 'Das Handy bleibt aus.'],
+      // Halt auch ohne Melden: ein Erwachsener hat es gesehen – und sagt, wessen Schuld es nicht ist
+      { blende: 'Dienstag · 7:40' }, ['kaya', '(im Gang, leise) Ich hab das Foto gesehen. Das liegt nicht an dir.'], ['kaya', 'Meine Tür ist offen. Auch einfach so.']] },
     { tu: 'kapitelEnde' },
   ],
   // Fachstunde (nur, wenn eingeschaltet – sonst freiwillig über 🎟 → Stunden)
@@ -758,6 +763,8 @@ export const tunN1 = (c) => ({
   n1_tischMila: () => { c.S.merke.kantineMila = true; c.S.merke.tisch = 'mila'; return []; },
   n1_vertragStill: () => { c.S.merke.vertragGewaehlt = true; return []; },   // Plakat: drei Regeln + Handy-Kiste (keine Abstimmung mehr)
   n1_niemand: () => { c.S.merke.erzaehltNiemand = true; return []; },
+  // 5-4-3-2-1 bekommt einen Namen und einen Ort: drei Dinge suchen geht immer – auch ohne Spiel (☰ → Kurz raus)
+  n1_dingeTipp: () => { const t = '<b>🖐 Drei Dinge suchen</b><span>Geht immer. Auch im Bus. Im Spiel: ☰ → Kurz raus.</span>'; c.ui.toast(t, 'ly-t-ent'); return []; },
   n1_chiaraKurz: () => { c.S.merke.chiaraKurz = true; return []; },
   n1_chiaraMorgen: () => { c.S.merke.chiaraMorgen = true; return []; },
   n1_benKorb: () => { c.S.merke.benKorbMorgen = true; return []; },

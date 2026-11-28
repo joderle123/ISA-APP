@@ -110,6 +110,8 @@ export function createUI({ root, input, speech }) {
   // Handy, das jemand hinhält (Baustein 4): echtes Foto aus der Spielwelt, Text, Umfrage mit Stimmen, die live steigen.
   // h = { wer, bild (dataURL), text, umfrage: { a, b, pa (Prozent a), stimmen, live } } | null
   let handyUhr = 0;
+  // Zähler anhalten (z. B. wenn jemand „Löscht das.“ schreibt und andere mitziehen): Zahl bleibt, ● live verschwindet
+  ui.zaehlerStopp = () => { clearInterval(handyUhr); const em = handyKarte.querySelector('.ly-hk-zaehler em'); if (em) em.remove(); };
   ui.handyBild = (h) => {
     clearInterval(handyUhr);
     if (!h) { handyKarte.hidden = true; handyKarte.innerHTML = ''; return; }

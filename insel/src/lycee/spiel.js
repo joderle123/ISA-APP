@@ -546,8 +546,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   let vertragMesh = null;
   function vertragPlakat() {
     const m = S && S.merke; if (!m || !m.vertragGewaehlt) { if (vertragMesh) vertragMesh.visible = false; return; }
-    const regeln = ['Lachen ja. Auslachen nein.', '„Weiter.“ – keiner fragt nach.', 'Was hier gesagt wird, bleibt hier – außer bei Gefahr.', 'Regel 6: Nichts von hier in Chats. Keine Fotos.'];   // wie im Heft #00
-    const schluessel = regeln[3];
+    const regeln = ['Lachen ja. Auslachen nein.', '„Weiter.“ oder „Stopp.“ – gilt sofort. Keiner fragt nach.', 'Was hier gesagt wird, bleibt hier – außer bei Gefahr.', 'Regel 6: Nichts von hier in Chats. Keine Fotos.'];   // wie im Heft #00
+    const schluessel = regeln.join('|');
     if (vertragMesh && vertragMesh.userData.k === schluessel) { vertragMesh.visible = true; return; }
     const c = document.createElement('canvas'); c.width = 512; c.height = 400; const g = c.getContext('2d');
     g.fillStyle = '#f6f1e3'; g.fillRect(0, 0, 512, 400); g.strokeStyle = '#c9b98f'; g.lineWidth = 6; g.strokeRect(3, 3, 506, 394);
@@ -1355,7 +1355,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         await ui.sprich({ ...sprecher(wer), text: ersetze(text) });
         if (redner) { const [a, tp] = haltungAnim(redner); redner.f.spiele(a, { tempo: tp, blende: 0.4 }); }
       } else if (z.wahl) {
-        const opt = z.wahl.filter((w) => (!w.wenn || w.wenn(S.merke)) && (!w.bemerkt || bemerkt(w.bemerkt)) && (!w.ohne || !bemerkt(w.ohne)) && (!w.beweis || beweisDa(w.beweis)));   // ohne: nur, wenn das NICHT bemerkt wurde   // manche Antworten gibt es nur nach früheren Entscheidungen – oder nur, wenn man hingeschaut hat
+        const opt = z.wahl.filter((w) => (!w.wenn || w.wenn(S.merke, S)) && (!w.bemerkt || bemerkt(w.bemerkt)) && (!w.ohne || !bemerkt(w.ohne)) && (!w.beweis || beweisDa(w.beweis)));   // ohne: nur, wenn das NICHT bemerkt wurde   // manche Antworten gibt es nur nach früheren Entscheidungen – oder nur, wenn man hingeschaut hat
         // Reihenfolge mischen, wenn eine Antwort eine Stärke zeigt – sonst wäre „die erste ist die gute“ zu leicht
         const ord = opt.map((_, k) => k);
         if (opt.some((w) => w.staerke) && !z.fest) for (let k = ord.length - 1; k > 0; k--) { const r = Math.floor(Math.random() * (k + 1)); [ord[k], ord[r]] = [ord[r], ord[k]]; }
@@ -2269,7 +2269,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       minus = j === 1 ? 2 : 0;
       if (!minus) ui.toast('<b>🧠 Der Gedanke bleibt laut</b><span>Prüf ihn noch mal: Was weißt du wirklich?</span>');
     }
-    if (minus) { l.hilfen.push(id); pultSetzen({ plus: -minus }); }
+    if (minus) { l.hilfen.push(id); if (id === 'atmen') S.merke['rotGeatmet' + kap] = true; pultSetzen({ plus: -minus }); }   // Erholung auf Rot: für Rückblick und Chronik
   }
   // Hinschauen (Baustein 2): was man bemerkt hat, öffnet später Antworten (bemerkt: 'key')
   // Chat-Nachrichten mit bildId bekommen das echte Foto (bildUrl); ohne Foto bleibt die Beschreibung
