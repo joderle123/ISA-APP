@@ -736,3 +736,27 @@ Fehler bekommen eine faire Folge UND eine zweite Chance; überall, wo jemand blo
   - **Selbst prüfen (Fach E2):** Nach dem 📷 zählt bzw. benennt das Kind selbst („Wie viele haben reagiert?“ · „Was sieht die Kamera?“). Gefühl in den Tür-Schnitten (Bauch zu / Kiefer fest / Schultern locker).
   - **Fair:** Mme Rantini nimmt das Handy bei „Beweis für was?“ und bei 👀. Eisbahn: „Noch nicht ohne Bande. Eine Runde ging.“ K7: kleines 📷 „Alle sind drin. Nur ich nicht.“
   - **Lehrer-Ansicht:** chronologisch; „Beweis für was?“ und Noah als Kernzeilen; „Geht so.“, Bens Ja ohne Antwort, Manon dazu.
+- **K5 Runde 4 (Fach- und Jugend-Panel):**
+  - **Gestrichen:** das Standbild mit Gerd und den Krümeln (Bank), das Standbild „Wer schaut dich an?“ (Tür), Linas ungefragter Satz im CDI, die Zähl-Quizze
+    „Alle / Sechs / Zwei“ und „Was sieht die Kamera?“, die Gerd-Zählung im Rückblick, der Ersatzsatz „Wenn ich ‚alle‘ denke …“.
+  - **Neu an der Bank:** Nik: „Er hat aufs Handy geschaut. Dann war er weg.“ Erster, geführter Kamera-Check: „Der geht mir aus dem Weg.“ → „Handy. Dann weg.“ · „Wegen dir? Sieht keine Kamera.“
+  - **Neu an der Tür:** Störung „Hinten lacht jemand.“ – „Was ist so lustig?“ (Bens Katze) · „(Zu Mila setzen.)“ · „(Kapuze auf.)“ (Mila klärt es am Mittwoch auf).
+  - **Neu im CDI:** Lou schreibt und wartet (6 s): „(Zu Lina rüber.)“ – erst dann sagt Lina „nur auf dem Gang“ = verdientes 📎 · „Klar.“ · „(Nicht antworten.)“ / zu langsam:
+    Lou „ok. dann ja 👍“ – Schweigen wird als Ja gelesen. Die Kette bleibt hart: „noah war auf dem gang. sicher 👀“.
+  - **Chat-Ergebnis für alle (Fach E3):** Wer im Chat nicht geprüft hat, sieht danach den Endstand mit Namen. Kopf-Blase „Alle glauben’s.“ → 📷: Zahlen, 📢 „nur gehört“,
+    Aylas ungelesene Nachricht. Noah zählt am Freitag genau die Namen, die wirklich Ja gedrückt haben. 📎 nur, was man selbst gesehen hat.
+  - **Wiedergutmachen (Fach E2):** Wer „Bestimmt.“, „Klar.“ oder 👀 gedrückt hat, hört es von Noah: „Stimmt. War falsch. Sorry.“ · „War nicht so gemeint.“ · (Nichts).
+  - **Spott:** drei Gesten auf der Karte (📷 Ein Satz. Nicht okay · 📢 Einer hat geschrieben · ❤️ Tut weh? Darf es.). Erwachsene (wer gerade im Raum ist): „Das liegt an Jo. Nicht an dir.“
+    Am Freitag auf der Eisbahn: Jo „Musste zu … War blöd.“
+  - **Transfer (Fach E1):** im Bus fragt Mila „wann denkst du ‚alle‘?“ (An der Tür · Im Chat · Wenn einer lacht · Sag ich nicht). Das steht in K7 klein unter dem Spiegel-Satz.
+  - **„Geht so.“** wird nachgefragt: Freitag auf dem Weg zum Parkplatz, Herr Kuedes „Und heute?“. In der Lehrer-Ansicht ganz oben mit ⚠.
+  - **Klein:** Ferien-Umfrage in Stimmen statt Prozent, Yusuf fährt schneller, Störungen 5 s, BEE SECURE in der Hilfe-Zeile am Kapitelende.
+- **K6 Runde 1 (Fach- und Jugend-Panel):**
+  - **Gestrichen:** Mme Tidderichs Rede am Donnerstag, Würfel und Stein, „Laut. Oder?“, das Ende „38 neue Nachrichten“ („Weil du es so willst.“), der Ich-Botschaft-Bauplan
+    (widerspricht Heft #05), der Stopp-Satz reihum vor allen, Lucas zweites „lowkey“.
+  - **Neu Donnerstag:** 20 Sekunden durch Milas Augen. Luca will das Video posten; du antwortest als Mila. Am Freitag sagt Herr Kuedes, an wem es liegt:
+    „‚haha lass mal‘ ist kein Ja. Schuld hat, wer postet.“
+  - **Neu Mittwoch:** alle Wege sofort; die Zeit macht das Video länger. Danach „War mein Nein zu leise?“.
+  - **Neu Freitag:** „Okay. Lösch ich.“ auf Milas Nein (stoppt die eigene Weiterleitung). Wer Dario nicht gedrängt hat: Dario löscht es in der Ecke. Hilfe-Satz für alle.
+  - **Neu Ende:** Samstag 20:14, das Video kommt wieder – Screenshot und stumm, anschauen, „Lösch das.“ oder weiterleiten. Kein Lob.
+  - **Lehrer-Ansicht:** Kernzeilen, Kopfzeile, Zusatzfragen, Finger-Runde als Gesprächsfrage.

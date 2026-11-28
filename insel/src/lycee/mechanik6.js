@@ -38,6 +38,8 @@ export function mechanikenK6(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
     const zeig = (n) => {
       if (n.wennNicht && [].concat(n.wennNicht).some((f) => flags[f])) return;
       if (n.wenn && ![].concat(n.wenn).every((f) => flags[f])) return;
+      if (n.wennDa && !(G.find((x) => x.id === n.wennDa) || {}).da) return;   // nur, wenn das Video dort schon angekommen ist
+      if (n.stoppGruppe) { const g = G.find((x) => x.id === n.stoppGruppe); if (g) { g.aktiv = false; wegNeu(); } }
       if (n.gruppe) { const g = G.find((x) => x.id === n.gruppe), i = G.indexOf(g); if (!g || g.da || !G[i - 1].da || !G[i - 1].aktiv) return; g.da = true; g.v = 1; ton('pling'); wegNeu(); }
       if (n.tu) n.tu();
       if (n.setzt) [].concat(n.setzt).forEach((f) => { flags[f] = true; });
@@ -90,25 +92,25 @@ export function mechanikenK6(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
         } },
         { t: '„@Mila alles okay?“', tu: () => {
           flags.oeffentlichMila = true; zeig({ ich: true, text: '@Mila alles okay?' }); G[0].v = Math.min(G[0].n, G[0].v + 2);
-          plan({ nach: 1.6, wer: 'unbekannt_09', text: 'mila ist eh online 👀' }, t); plan({ nach: 3.2, privat: 'Mila', text: 'bitte nicht im chat.' }, t);
+          plan({ nach: 1.6, wer: 'unbekannt_09', text: 'mila ist eh online 👀' }, t); plan({ nach: 3.2, privat: 'Mila', text: 'bitte nicht im chat.', setzt: 'milaNein' }, t);
         } },
       ] },
       { id: 'teilen', sy: '↗️', t: 'Teilen', wennNicht: 'milaWill', wahl: () => [
         { t: 'Ecke 🔥: „Luca ist fies!“', tu: () => {
           flags.geteilt = true; const e = G[1]; zeig({ system: 'Du hast das Video weitergeleitet: ' + e.t });
           if (!e.da) { e.da = true; e.v = 0; } e.aktiv = true; e.v = Math.min(e.n, e.v + 6); wegNeu(); ton('pling');
-          plan({ nach: 2.8, privat: 'Mila', text: '{name}?? bitte nicht.' }, t);
+          plan({ nach: 2.8, privat: 'Mila', text: '{name}?? bitte nicht.', setzt: 'milaNein' }, t);
         } },
         { t: 'An Mila: „Hast du das gesehen?“', tu: () => {
           flags.anMila = true; zeig({ system: 'An Mila geschickt.' });
-          plan({ nach: 2.4, privat: 'Mila', text: 'ja.' }, t); plan({ nach: 4.2, privat: 'Mila', text: 'jetzt hab ich’s zweimal.' }, t);
+          plan({ nach: 2.4, privat: 'Mila', text: 'ja.' }, t); plan({ nach: 4.2, privat: 'Mila', text: 'jetzt hab ich’s zweimal.', setzt: 'milaNein' }, t);
         } },
       ] },
       { id: 'melden', sy: '🚩', t: 'Melden', wahl: () => [
         { t: 'An Chiara (Admin)', tu: () => {
           flags.chiara = true; zeig({ system: '🚩 An Chiara gemeldet.' });
-          if (def.regel) { plan({ nach: 1.8, wer: 'Chiara', text: 'regel 2.' }, t); plan({ nach: 2.6, system: 'Chiara hat das Video gelöscht.', tu: () => geloescht('chiara') }, t); }
-          else { plan({ nach: 2.2, wer: 'Chiara', text: 'ist das so schlimm? 🤔' }, t); plan({ nach: flags.noahHilft || flags.kommentar ? 6 : 10, wer: 'Chiara', text: 'ok. gelöscht.', tu: () => geloescht('chiara') }, t); }
+          if (def.regel) { plan({ nach: 1.8, wer: 'Chiara', text: 'regel 2.', wennNicht: 'geloescht' }, t); plan({ nach: 2.6, system: 'Chiara hat das Video gelöscht.', wennNicht: 'geloescht', tu: () => geloescht('chiara') }, t); }
+          else { plan({ nach: 2.2, wer: 'Chiara', text: 'ist das so schlimm? 🤔', wennNicht: 'geloescht' }, t); plan({ nach: flags.noahHilft || flags.kommentar ? 6 : 10, wer: 'Chiara', text: 'ok. gelöscht.', wennNicht: 'geloescht', tu: () => geloescht('chiara') }, t); }
         } },
         { t: 'In der App: „Ohne Einverständnis“', tu: () => { flags.app = true; zeig({ system: '🚩 Gemeldet. Danke. Wir prüfen das.' }); } },
         { t: '📸 Screenshot für Herrn Kuedes', tu: () => { flags.beleg = true; ton('kamera'); zeig({ system: '📸 Screenshot gespeichert. Nur für dich.' }); } },
@@ -122,13 +124,20 @@ export function mechanikenK6(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
           flags.noahGefragt = true; zeig({ privat: 'Noah', ich: true, text: 'hilfst du mit?' });
           plan({ nach: 2, privat: 'Noah', text: 'ja. ich meld es bei chiara.' }, t);
           plan({ nach: 3.6, system: '🚩 Noah hat das Video gemeldet.', setzt: 'noahHilft', tu: () => { if (!helferDa.includes('noah')) helferDa.push('noah'); } }, t);
-          if (def.regel) { plan({ nach: 5, wer: 'Chiara', text: 'regel 2.' }, t); plan({ nach: 5.8, system: 'Chiara hat das Video gelöscht.', tu: () => geloescht('noah') }, t); }
-          else plan({ nach: 6.2, wer: 'Chiara', text: 'noah auch? ok …' }, t);
+          if (def.regel) { plan({ nach: 5, wer: 'Chiara', text: 'regel 2.', wennNicht: 'geloescht' }, t); plan({ nach: 5.8, system: 'Chiara hat das Video gelöscht.', wennNicht: 'geloescht', tu: () => geloescht('noah') }, t); }
+          else plan({ nach: 6.2, wer: 'Chiara', text: 'noah auch? ok …', wennNicht: 'geloescht' }, t);
         } },
         { t: 'Luca: „Lösch das. Sofort.“', tu: () => {
           flags.lucaDm = true; zeig({ privat: 'Luca', ich: true, text: 'lösch das. sofort.' });
           plan({ nach: 2.4, privat: 'Luca', text: 'lol nein 😂' }, t); plan({ nach: 3.8, privat: 'Luca', text: 'ist mein video' }, t);
         } },
+        // Fach-Panel K6 R1: Auf Milas Nein gibt es ein „Okay“ – mit Wirkung (die eigene Weiterleitung ist weg; was schon in U14 ist, läuft weiter)
+        ...(flags.milaNein && (flags.geteilt || flags.anMila || flags.oeffentlichMila) ? [{ t: 'Mila: „Okay. Lösch ich.“', tu: () => {
+          flags.okayMila = true; zeig({ privat: 'Mila', ich: true, text: 'okay. lösch ich.' });
+          if (flags.geteilt && G[1].aktiv) { G[1].aktiv = false; wegNeu(); zeig({ system: 'Deine Weiterleitung in „' + G[1].t + '“ ist gelöscht.' }); }
+          else zeig({ system: 'Gelöscht.' });
+          plan({ nach: 2, privat: 'Mila', text: 'danke.' }, t);
+        } }] : []),
       ] },
       { id: 'mitMila', sy: '🚶', t: 'Mit Mila zu Herrn Kuedes', wenn: 'milaWill', ende: true, tu: () => {
         flags.mitMila = true; zeig({ system: 'Du steckst das Handy ein. Mila steht schon auf.' }); quelleStopp();

@@ -309,14 +309,17 @@ export const tunN7 = (c) => ({
     return [
       { blende: 'Februar' },
       ['erzaehler', fuer.includes('noah') || m.k4NoahVerteidigt || m.manonListeFalsch ? 'Februar. Noah hält dir einen Platz frei. Jeden Tag.' : 'Februar. Du isst meistens allein. Mit Kopfhörern.'],
+      // Kapitel 6, Samstag: wer den Screenshot gemacht hat, hört, was daraus wurde
+      ...(m.k6SaScreen ? [['kaya', '(im Gang, kurz) Dein Screenshot vom Samstag: Der Account ist gesperrt. Danke.']] : []),
       { blende: 'März' },
       ['erzaehler', fuer.includes('ben') || m.k5BenGefragt ? 'März. Ben winkt. Von weitem.' : 'März. Ben schaut weg, wenn du kommst.'],
       ['erzaehler', 'Dazwischen gründet Luca eine große Gruppe. „Ecke 2.0“. Du bist nicht drin.'],
       // Der Wenn-dann-Plan aus Kapitel 5 wird gebraucht: der Auslöser kommt, das kleine 📷 auch (Fach-Panel K5 R3)
       { szene: 'blase', id: 'k7BlaseEcke', pruefe: false, def: { t: 'Alle sind drin. Nur ich nicht.', stufe: 'klein', zeit: 5 },
         ausgang: (r, mm) => { mm.k7EckeGeprueft = !!(r && r.geprueft); return mm.k7EckeGeprueft ? 'ja' : 'nein'; },
-        folgen: { ja: { dann: [['du', '(denkt) Nachzählen. Mila: nicht drin. Noah: nicht drin. Ayla: auch nicht.']] }, nein: { dann: [] } } },
-      ...(satz ? [['erzaehler', 'Auf deinem Spiegel klebt ein Zettel: „' + satz + '“']] : []),
+        folgen: { ja: { dann: [['du', m.k5AlleChat ? '(denkt) Im Chat. Da zähl ich nach. Mila, Noah, Ayla: auch nicht drin.' : '(denkt) Nachzählen. Mila: nicht drin. Noah: nicht drin. Ayla: auch nicht.']] }, nein: { dann: [] } } },
+      // Fach-Panel K5 R4 (E1): wo das Kind „alle“ denkt (Mila, Freitag im Bus) steht klein unter dem Satz
+      ...(satz ? [['erzaehler', 'Auf deinem Spiegel klebt ein Zettel: „' + satz + '“' + (m.k5AlleTuer ? ' Darunter, klein: „An der Tür: nachzählen.“' : m.k5AlleChat ? ' Darunter, klein: „Im Chat: nachzählen.“' : m.k5AlleLachen ? ' Darunter, klein: „Wenn einer lacht: nachzählen.“' : '')]] : []),
       { blende: 'April' },
       ['erzaehler', fuer.includes('mila') || m.k6Stopp || m.k6Komm ? 'April. Mila zeigt dir die erste Seite vom Würfel.' : 'April. Mila sitzt im CDI. Allein. Wie immer.'],
       { blende: 'Mai' },

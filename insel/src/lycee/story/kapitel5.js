@@ -23,20 +23,18 @@ export const ORTE_N5 = { eisbahn: { x: 40.2, z: 118.8, yaw: Math.PI / 2 } };
 export const zielDu5 = (m) => (m.k5ZielDu != null ? !!m.k5ZielDu : ['explodiert', 'worte', 'atmenWorte'].includes(m.k4HochTat) || !!m.k4Explodiert);
 const chiaraSicher = (m) => !!(m.chiaraGestaerkt || m.chiaraFuesse || m.k4SpaeterAbgefragt || m.k5ChiaraVersprechen || m.k5ChiaraHof);
 const beweisDa5 = (m) => !!(m.k5Schild || m.spurGruen);
+// Wer im Chat wirklich Ja gedrückt hat (Namen aus der Umfrage; ältere Spielstände: aus den Entscheidungen geschätzt)
+const ZW5 = ['Keiner', 'Einer', 'Zwei', 'Drei', 'Vier', 'Fünf', 'Sechs', 'Sieben', 'Acht', 'Neun'];
+const jaListe5 = (m) => (m.k5ChatNamen && Array.isArray(m.k5ChatNamen.ja) ? m.k5ChatNamen.ja.filter(Boolean)
+  : m.k5ChatGesehen != null ? []   // Chat gespielt, aber die Umfrage kam nie an (sofort gestoppt): niemand hat Ja gedrückt
+  : [m.k5Schneemann ? null : 'Jo', m.k5LouGefragt || m.k5LouLina ? null : 'Lou', m.k5BenGefragt ? null : 'Ben', 'Tim', ...(m.k5Verteidigt ? ['Pit', 'Elena', 'Tom'] : [])].filter(Boolean));
 // Blick von der Tür in Saal 1.04 (beide Durchläufe gleich – anders sind nur dein Blick und dein Tun)
 const TUER_BODEN = { von: [-20.7, 1.55, -17.9], auf: [-20.7, 0.0, -19.3], fov: 50 };
 const TUER_KLASSE = { von: [-20.6, 1.62, -18.0], auf: [-20.3, 0.95, -24.0], fov: 72 };   // ein Schritt hinter der Tür: der Türflügel verdeckt nichts
 
-// Stille Post (Mittwoch): ein gesehener Satz wird in vier Screenshots zum „Beweis“. Wo kommt zuerst etwas dazu, das keiner gesehen hat? (bei Lou)
 // Was im Chat um 13:12 ankommt (dreimal weitergeleitet). Mit 📎 von Lina wird es kleiner, mit „Klar.“ größer.
 const KETTE = (m) => { const w = zielDu5(m) ? '{name}' : 'noah';
-  return m.k5LouKlar ? w + ' hat das foto gemacht. sogar {name} sagt das. sicher.' : m.k5LouLina ? w + ' war auf dem gang?? lina sagt nur gang' : m.k5LouGefragt ? w + ' war draußen. sicher.' : w + ' ist der admin. sicher.'; };
-const STILLE_POST = (m) => { const w = zielDu5(m) ? '{name}' : 'noah', du = zielDu5(m);
-  // Was du Lou sagst, wandert weiter: „Klar.“ wird zu „sogar {name}“, „Woher?“ wird zu „hab’s gehört“ – und das fällt unterwegs weg
-  const lou = m.k5LouKlar ? w + ' war beim foto draußen. {name} sagt das auch' : m.k5LouGefragt ? w + ' war draußen. hab ich gehört' : m.k5LouNein && du ? '{name} sagt nein. naja 👀' : w + ' war beim foto draußen';
-  const pit = m.k5LouKlar ? w + ' hat das foto gemacht. sogar {name} sagt das' : m.k5LouGefragt ? w + ' war draußen' : w + ' hat das foto gemacht';
-  return [{ wer: 'Lina · Mo', t: w + ' war um halb neun auf dem gang. hab ich gesehen' }, { wer: 'Lou → Pit · 12:43', t: lou },
-    { wer: 'Pit → Jo · 12:58', t: pit }, { wer: 'Jo → 7P2 · 13:12', t: w + ' ist der admin. sicher.' }]; };
+  return m.k5LouKlar ? w + ' hat das foto gemacht. sogar {name} sagt das. sicher.' : m.k5LouLina ? w + ' war auf dem gang. sicher 👀' : m.k5LouGefragt ? w + ' war draußen. sicher.' : w + ' ist der admin. sicher.'; };
 
 export const SCHRITTE_N5 = [
   // 1 · Montag 7:25: Schnee. Darios Platz ist leer. Die Ferien-Umfrage. Gerd und der erste, geführte Kamera-Check.
@@ -79,12 +77,12 @@ export const SCHRITTE_N5 = [
   // 7 · Freitag 16:00: Eisbahn auf dem Marktplatz. Loslassen, Rennen gegen Yusuf, wer am Rand steht.
   { id: 'k5_eis', kap: 5, tag: 'Freitag', uhr: 16.0, titel: 'Eisbahn', ziel: 'Marktplatz. Die Eisbahn leuchtet.', marker: null,
     start: { teleport: 'eisbahn', gespraech: 'n5_eis' },
-    leute: { ayla: [43.2, 117.6, -1.6], yusuf: [43.4, 119.9, -1.4], noah: [47.2, 123.9, Math.PI], manon: [40.8, 116.3, 0.8] },
+    leute: { ayla: [43.2, 117.6, -1.6], yusuf: [43.4, 119.9, -1.4], noah: [47.2, 123.9, Math.PI], manon: [40.8, 116.3, 0.8], jo: [40.4, 121.6, 1.4] },
     fertig: { nachStart: true } },
   // 8 · Freitag 17:00: Haltestelle. Darios Sicht von gegenüber. Busfenster: der neue Satz. Jos Sprachnachricht.
   { id: 'k5_freitag', kap: 5, tag: 'Freitag', uhr: 17.0, titel: 'Der neue Satz', ziel: 'Haltestelle. Es wird dunkel. Gegenüber steht jemand.', marker: 'dario',
     start: { teleport: 'busAnkunft', gespraech: 'n5_freitagStart' },
-    leute: { dario: [-19.0, 48.6, Math.PI], noah: [-22.0, 41.6, -1.6, 'sitzt'], fahrer: [-11.2, 44.6, -Math.PI / 2] },
+    leute: { dario: [-19.0, 48.6, Math.PI], noah: [-22.0, 41.6, -1.6, 'sitzt'], fahrer: [-11.2, 44.6, -Math.PI / 2], kaya: [-3.4, 33.4, 2.6] },
     fertig: { reden: 'dario', gespraech: 'n5_freitag' } },
 ];
 
@@ -118,7 +116,7 @@ const UMFRAGE = (m) => {
       { system: du ? 'Chiara hat dich aus der Gruppe entfernt.' : 'Chiara hat Noah aus der Gruppe entfernt.', nach: 22, wennNicht: 'zu', setzt: 'raus' },
     ],
     // Mme Tidderich in der Tür (Jugend-Panel R3): Entscheidung statt Vortrag. Zeit um = sofort hinlegen.
-    stoerung: { ab: 15.5, zeit: 4, standard: 'hin', wennNicht: ['zu', 'verlassen', 'stumm'], t: 'Mme Tidderich steht in der Tür. „Handys auf den Tisch.“',
+    stoerung: { ab: 15.5, zeit: 5, standard: 'hin', wennNicht: ['zu', 'verlassen', 'stumm'], t: 'Mme Tidderich steht in der Tür. „Handys auf den Tisch.“',
       optionen: [
         { id: 'screen', t: '📸 Screenshot. Dann hinlegen.', setzt: ['tidScreen', 'zu'], sys: '📸 Screenshot gespeichert.', ende: true },
         { id: 'hin', t: '(Sofort hinlegen.)', setzt: 'tidHin', sys: 'Du legst das Handy hin.', ende: true },
@@ -170,19 +168,12 @@ export const GESPRAECHE_N5 = {
     { foto: 'k5Bank', von: [-18.4, 1.5, 44.6], auf: [-22.0, 0.6, 41.6], fov: 50 },
     { tu: 'n5_ferienUmfrage' },
     ['nik', '(von der Bank) Moien. Dein Kollege war schon da. Mit dem Brett.'],
-    ['nik', 'Dann ist er wieder gegangen. Ganz schnell.'],
-    { gerd: [-15.95, 0.17, 41.95] },   // auf dem Gehweg (der liegt höher als die Straße)
-    ['erzaehler', 'Gerd landet vor dir. Er pickt. An deinem Schuh.'],
-    { szene: 'blase', id: 'k5BlaseBank', pruefe: false, def: { t: 'Nicht mal die Taube mag mich.', stufe: 'gefuehrt' },
-      ausgang: () => 'ja', folgen: { ja: { dann: [] } } },
-    { szene: 'suchbild', id: 'k5CheckBank', pruefe: false,
-      def: { wo: 'Haltestelle · 7:27', echt: 'Gerd pickt an deinem Schuh.', frage: 'Was hätte eine Kamera gesehen? Tipp drauf.', zeit: 14, finde: 1,
-        foto: { von: [-17.0, 1.0, 40.8], auf: [-15.75, 0.12, 42.15], fov: 38 },   // von vorn auf Schuh und Gerd (vorher stand die Kamera im Kopf der Spielfigur)
-        ergebnis: 'Kopf: „mag mich nicht“. Kamera: Krümel.',
-        ziele: [{ id: 'kruemel', wo: [-15.95, 0.32, 41.95], r: 0.14, t: 'Gerd pickt Krümel. Vom Brötchen.', kurz: 'Krümel am Schuh.' }] },
-      ausgang: (r, m) => { m.k5GerdDa = (m.k5GerdDa || 0) + 1; if ((r.gefunden || []).includes('kruemel')) m.k5GerdGesehen = (m.k5GerdGesehen || 0) + 1; m.k5CheckBank = true; return 'ja'; },
-      folgen: { ja: { dann: [['nik', '(lacht) Gerd hasst keinen. Gerd hat Hunger.']] } } },
-    { gerd: null },
+    ['nik', 'Er hat aufs Handy geschaut. Dann war er weg. Ganz schnell.'],
+    // Der erste, geführte Kamera-Check (Jugend-Panel R4: statt Taube und Krümel – ein Gedanke, den man wirklich hat)
+    { szene: 'blase', id: 'k5BlaseBank', pruefe: false, def: { t: 'Der geht mir aus dem Weg.', stufe: 'gefuehrt' },
+      ausgang: () => 'ja', folgen: { ja: { dann: [
+        { handy: { wer: '📷 Kamera-Check', wann: '7:27', chat: [{ wer: 'Echt', t: 'Handy. Dann weg.' }, { wer: 'Wegen dir?', t: 'Sieht keine Kamera.' }] } },
+        ['du', '(denkt) Handy. Dann weg. Mehr weiß ich nicht.'], { handy: null }] } } },
     // Faden: Darios „zu viel“ (K4). Ein Erwachsener nimmt es ernst – in allen Wegen.
     { wenn: (m) => !!(m.k4DarioFrage || m.k4DarioDa || m.k4DarioWoher), dann: [['du', '(denkt) „Zu viel“, hat Dario vor den Ferien gesagt.']],
       sonst: [['du', '(denkt) Dario sitzt sonst immer hier.']] },
@@ -218,28 +209,17 @@ export const GESPRAECHE_N5 = {
       { t: '„Nur ’ne blöde Umfrage.“', merke: 'k5TuerUmfrage', dann: [
         { szene: 'schnitt', pruefe: false, def: { kopf: '2 · „Nur ’ne blöde Umfrage.“', bild: TUER_KLASSE, t: 'Schultern locker. Kopf hoch. Du gehst ganz normal rein.', ms: 4600 } }] },
     ] },
-    ['du', '(denkt) Moment. Wer hat wirklich geschaut?'],
-    { gerd: [-25.4, 0.12, -21.2] },
-    { szene: 'suchbild', id: 'k5CheckTuer', pruefe: false,
-      def: (m) => ({ wo: 'Saal 1.04 · 7:58', echt: zielDu5(m) ? 'Dein Name steht oben in einer Umfrage. Das ist nicht okay.' : 'Dein Name steht in einer Umfrage. Das ist nicht okay.',
-        frage: 'Wer schaut dich wirklich an?', zeit: 16, finde: 2, foto: TUER_KLASSE, wackel: zielDu5(m), zahl: 2,
-        ergebnis: '{n} schauen. Was sie denken, sieht keine Kamera.',
-        ziele: [
-          { id: 'jo', wer: 'jo', hoehe: 1.15, t: 'Jo schaut. Er grinst.', kurz: 'Jo schaut.' },
-          { id: 'mila', wer: 'mila', hoehe: 1.15, t: 'Mila schaut. Sie winkt.', kurz: 'Mila winkt.' },
-          { id: 'ben', wer: 'ben', hoehe: 1.1, richtig: false, t: 'Ben schaut aufs Handy. Ein Katzenvideo.' },
-          { id: 'chiara', wer: 'chiara', hoehe: 1.1, richtig: false, t: 'Chiara liest Karteikarten.' },
-          { id: 'yusuf', wer: 'yusuf', hoehe: 1.1, richtig: false, t: 'Yusuf redet mit Ayla.' },
-          { id: 'lina', wer: 'lina', hoehe: 1.1, richtig: false, t: 'Lina schreibt.' },
-          { id: 'noah', wer: 'noah', hoehe: 1.1, richtig: false, t: 'Noah schaut aus dem Fenster.' },
-          { id: 'gerd', wo: [-25.4, 0.3, -21.2], bonus: true, r: 0.1, kurz: 'Gerd. Im Klassenzimmer?!' },
-        ] }),
-      ausgang: (r, m) => { m.k5TuerZahl = (r.gefunden || []).length; m.k5TuerGefunden = r.gefunden || []; m.k5CheckTuer = true; m.k5GerdDa = (m.k5GerdDa || 0) + 1; if ((r.bonus || []).length) m.k5GerdGesehen = (m.k5GerdGesehen || 0) + 1; return 'ja'; },
-      folgen: { ja: { dann: [] } } },
-    { gerd: null },
     { wenn: (m) => !!m.k5TuerMal, dann: [['jo', 'Uuh. Guten Morgen auch.'], ['mila', 'Laut. Aber hier ist frei.']], sonst: [['mila', 'Hier. Neben mir ist frei.']] },
-    ['ben', '(lacht aufs Handy, zeigt Yusuf) Die Katze! Schon wieder.'],
-    ['du', '(denkt) Das Lachen vorhin. Das war die Katze.'],
+    // Jugend-Panel R4: statt Standbild „Wer schaut?“ – das Lachen kommt wieder. Was machst du damit? (Fragen = prüfen, ohne dass es so heißt)
+    { szene: 'stoerung', id: 'k5Lachen', pruefe: false,
+      def: { t: 'Hinten lacht jemand. Laut.', zeit: 5, standard: 'kapuze',
+        optionen: [{ id: 'frage', t: '„Was ist so lustig?“' }, { id: 'mila', t: '(Zu Mila setzen.)' }, { id: 'kapuze', t: '(Kapuze auf.)' }] },
+      ausgang: (r) => r.wahl || 'kapuze',
+      folgen: {
+        frage: { merke: 'k5LachenFrage', staerke: 'klar', dann: [['ben', '(dreht sein Handy zu dir) Die Katze! Schon wieder.'], ['du', '(denkt) Eine Katze. Nicht ich.']] },
+        mila: { merke: 'k5LachenMila', dann: [['mila', '(nickt nach hinten) Bens Katze. Schon wieder.']] },
+        kapuze: { merke: 'k5LachenKapuze', dann: [['erzaehler', 'Du ziehst die Kapuze tief. Das Lachen hört nicht auf.']] },
+      } },
     // Halt am Montag: ein Erwachsener hat die Umfrage gesehen
     ['hoffmann', 'Moien. Kurz, bevor wir anfangen.'],
     ['hoffmann', 'Die Umfrage von Sonntag habe ich gesehen. Die zählt hier nicht.'],
@@ -255,15 +235,11 @@ export const GESPRAECHE_N5 = {
     { handy: { wer: '7P2 🏫', wann: '8:09', chat: [{ wer: 'Jo', t: 'beweis 👀' }, { wer: 'Jo', t: '📷 Ein Kopf. Unscharf.' }, { wer: 'Lou', t: '👀' }, { wer: 'Pit', t: '😂' }, { wer: '7P2', t: 'gesehen von 6' }] } },
     { szene: 'blase', id: 'k5BlaseBeweis', pruefe: false, def: { t: 'Jetzt glauben’s alle.', stufe: 'frei', zeit: 6 },
       ausgang: (r, m) => { m.k5BeweisGeprueft = !!(r && r.geprueft); return m.k5BeweisGeprueft ? 'ja' : 'nein'; },
-      folgen: { ja: { dann: [['du', '(denkt) Zählen. Wie viele haben reagiert?'],
-        { fest: true, wahl: [
-          { t: 'Alle.', dann: [['du', '(denkt) Das sagt der Kopf.']] },
-          { t: 'Sechs.', dann: [['du', '(denkt) Sechs haben es gesehen. Reagiert hat weniger.']] },
-          { t: 'Zwei.', merke: 'k5BeweisBenannt', dann: [] },
-        ] },
-        { handy: { wer: '📷 Kamera-Check', wann: '8:09', chat: [{ wer: 'Echt', t: '2 Reaktionen. 6 gesehen.' }, { wer: 'Geglaubt?', t: 'Steht nirgends.' }, { wer: 'Wessen Kopf?', t: 'Steht auch nirgends.' }] } }] }, nein: { dann: [] } } },
+      folgen: { ja: { dann: [
+        { handy: { wer: '📷 Kamera-Check', wann: '8:09', chat: [{ wer: 'Echt', t: '2 Reaktionen. 6 gesehen.' }, { wer: 'Geglaubt?', t: 'Steht nirgends.' }, { wer: 'Wer ist das?', t: 'Sieht man nicht.' }] } },
+        { handy: null }] }, nein: { dann: [] } } },
     { szene: 'stoerung', id: 'k5Rantini', pruefe: false,
-      def: { t: 'Mme Rantini kommt durch die Reihe. Noch zwei Tische.', zeit: 4, standard: 'weg',
+      def: { t: 'Mme Rantini kommt durch die Reihe. Noch zwei Tische.', zeit: 5, standard: 'weg',
         optionen: [{ id: 'frage', t: '„Beweis für was?“' }, { id: 'augen', t: '👀 drücken.' }, { id: 'weg', t: '(Handy weg.)' }] },
       ausgang: (r) => r.wahl || 'weg',
       folgen: {
@@ -332,10 +308,9 @@ export const GESPRAECHE_N5 = {
 
   // 5 · Mittwoch 12:30: Milas Tablet
   n5_cdi: [
-    { wenn: (m) => zielDu5(m), dann: [['mila', 'Die Umfrage über dich am Sonntag: nicht okay. Nur damit du’s weißt.']] },
-    { wenn: (m) => zielDu5(m), dann: [['lina', '(schaut von ihrem Buch hoch) Ich hab dich am Montag nur auf dem Gang gesehen. Halb neun. Mehr nicht.']],
-      sonst: [['lina', '(schaut von ihrem Buch hoch) Ich hab Noah am Montag nur auf dem Gang gesehen. Halb neun. Mehr nicht.']] },
-    { beweis: 'k5LinaGang', t: 'Lina hat nur gesehen: auf dem Gang, halb neun. Mehr nicht.' },
+    { wenn: (m) => !!m.k5LachenKapuze, dann: [['mila', '(schiebt dir den Stuhl hin) Das Lachen am Montag? Bens Katze. Nur damit du’s weißt.']],
+      sonst: [['mila', '(schiebt dir den Stuhl hin) Hier. Ruhiger als im Lesesaal.']] },
+    { wenn: (m) => zielDu5(m), dann: [['mila', 'Die Umfrage über dich am Sonntag: nicht okay.']] },
     ['erzaehler', 'Dein Handy summt. Lou. Privat.'],
     { tu: 'n5_louFragt' },
     { tu: 'n5_cdiDanach' },
@@ -350,7 +325,7 @@ export const GESPRAECHE_N5 = {
     { foto: 'k5Lesesaal', von: [14.0, 1.7, -56.4], auf: [12.0, 0.9, -60.6], fov: 60 },
     { szene: 'chat', id: 'k5Umfrage', pruefe: false, def: (m) => UMFRAGE(m),
       ausgang: (r, m) => {
-        const f = r.flags || {}; m.k5Geprueft = !!f.geprueft; m.k5PruefZahlen = f.pruefZahlen || null; m.k5Ayla = !!f.ayla; m.k5ChatStimmen = r.stimmen || null;
+        const f = r.flags || {}; m.k5ChatNamen = r.namen || null; m.k5ChatGesehen = r.gesehen || null; m.k5Geprueft = !!f.geprueft; m.k5PruefZahlen = f.pruefZahlen || null; m.k5Ayla = !!f.ayla; m.k5ChatStimmen = r.stimmen || null;
         if (f.noahGeglaubt) m.k5NoahGeglaubt = true; if (f.tidScreen) m.k5TidScreen = true; if (f.tidHin) m.k5TidHin = true; if (f.tidWeiter) m.k5TidWeiter = true; if (f.nein) m.k5NeinGedrueckt = true; if (f.verteidigt) m.k5Verteidigt = true; if (f.aylaDanke) m.k5AylaDanke = true;
         if (f.chiaraStopp || f.chiaraNein) m.k5ChiaraGefragt = true; if (f.chiaraNein) m.k5ChiaraNein = true; if (f.kuedesSpuren) m.k5KuedesSpuren = true;
         if (f.kenanSicher) m.k5KenanGeschuetzt = true; if (f.kenanGejagt) m.k5KenanGejagt = true; m.k5ChatZitate = { lou: !!f.louZitat, lina: !!f.linaZitat, augen: !!f.augenZitat, tasche: !!f.taschenZitat, freund: !!f.freundZitat };
@@ -401,7 +376,7 @@ export const GESPRAECHE_N5 = {
       { t: '(Loslassen. Probieren.)', merke: 'k5Losgelassen', staerke: 'mut', dann: [] },
       { t: '(Erst an der Bande.)', merke: 'k5Bande', dann: [['ayla', 'Auch gut. Hand an die Bande.']] },
     ] },
-    { szene: 'eisrennen', id: 'k5Rennen', pruefe: false, def: (m) => ({ gegner: { name: 'Yusuf', farbe: '#2e86de' }, vorsichtig: !!m.k5Bande }),
+    { szene: 'eisrennen', id: 'k5Rennen', pruefe: false, def: (m) => ({ gegner: { name: 'Yusuf', farbe: '#2e86de' }, vorsichtig: !!m.k5Bande, runde: m.k5Bande ? 11 : 9 }),
       ausgang: (r, m) => { m.k5RennenSieg = !!r.gewonnen; m.k5RennenGefallen = r.gefallen || 0; m.k5RennenSek = r.sek ? Math.round(r.sek * 10) / 10 : null; return r.gewonnen ? 'sieg' : 'nicht'; },
       folgen: {
         sieg: { dann: [['yusuf', 'Was?! Revanche. Nächste Woche.'], ['erzaehler', 'Yusuf baut den Schneemann fertig. Mit Mütze.']] },
@@ -417,6 +392,13 @@ export const GESPRAECHE_N5 = {
 
   // 8 · Freitag 17:00: Haltestelle
   n5_freitagStart: [
+    // „Geht so.“ vom Mittwoch wird nicht vergessen (Jugend-Panel R4): Herr Kuedes fragt nach – im Vorbeigehen, nicht im Büro
+    { wenn: (m) => !!m.k5GehtSo, dann: [{ hin: { kaya: 'du' } }, ['kaya', '(auf dem Weg zum Parkplatz) Mittwoch hast du „geht so“ gesagt. Und heute?'],
+      { wahl: [
+        { t: '„Besser.“', merke: 'k5GehtSoBesser', dann: [['kaya', 'Gut. Die Tür bleibt offen.']] },
+        { t: '„Immer noch geht so.“', merke: 'k5GehtSoNoch', dann: [['kaya', 'Danke, dass du’s sagst. Montag, zehn Minuten. Ich hol dich.']] },
+        { t: '(Schultern zucken.)', merke: 'k5GehtSoZucken', dann: [['kaya', 'Okay. Ich frag Montag wieder.']] },
+      ] }, { hin: { kaya: [-3.4, 33.4, 2.6] } }] },
     { tu: 'n5_noahBank' },
     { sicht: { wer: 'dario', auf: 'du', gedanken: ['Gegenüber. Hände in den Ärmeln.', 'Ich weiß, dass du’s nicht warst.'] } },
     ['erzaehler', 'Auf der anderen Straßenseite: Dario. Er schaut rüber.'],
@@ -428,7 +410,7 @@ export const GESPRAECHE_N5 = {
     { wenn: (m) => !!m.k5DarioKuedes, dann: [['dario', '(schaut dich kurz an) Du hast es Herrn Kuedes gesagt, oder? … Danke.']] },
     { wenn: (m) => !!m.k5DarioGeschrieben, dann: [['dario', 'Du hast mir geschrieben. Ich hab’s gelöscht. Sorry.']] },
     { wahl: [
-      { t: '„Geht’s dir besser?“', merke: 'k5DarioBesser', herz: { dario: 1 }, dann: [['dario', 'Bisschen. … Frag nicht weiter. Okay?'], ['du', 'Okay.']] },
+      { t: '„Geht’s dir besser?“', merke: 'k5DarioBesser', herz: { dario: 1 }, dann: [['dario', 'Bisschen. … Frag nicht weiter. Okay?'], ['du', 'Okay.'], ['du', '(denkt) Herr Kuedes weiß Bescheid.']] },
       { t: '(Neben ihm stehen.)', merke: 'k5DarioStehen', herz: { dario: 1 }, dann: [['erzaehler', 'Ihr steht da. Euer Atem macht Wölkchen.']] },
       { t: '„Weißt du, wer der Admin ist?“', merke: 'k5DarioAdminFrage', dann: [['dario', '(schaut auf die Straße) Nein. … Der Bus kommt.'], { verdacht: 'dario', spur: 'Freitag: „Nein.“ Blick auf die Straße.' }] },
     ] },
@@ -436,16 +418,11 @@ export const GESPRAECHE_N5 = {
     ['dario', '(nickt zur Straße) Dein Bus. Geh. Meiner kommt später.'],
     { blende: 'Im Bus · 17:04' },
     { handy: (m) => ({ wer: 'Dario', wann: '17:09', chat: [{ wer: 'Dario', t: (m.k5DarioAdminFrage ? 'vergiss die frage. ' : m.k5DarioBesser ? 'danke fürs fragen. ' : '') + 'montag zeig ich dir was. eine sprachnachricht. von jo.' }] }) },
-    { handy: null },
     // Das kleine 📷 – ohne Hilfe. Nur hier zeigt sich, ob der Check von selbst kommt.
     { szene: 'blase', id: 'k5BlaseJo', pruefe: false, def: { t: 'Jo lästert über mich.', stufe: 'klein', zeit: 5 },
       ausgang: (r, m) => { m.k5FreitagGeprueft = !!(r && r.geprueft); return m.k5FreitagGeprueft ? 'ja' : 'nein'; },
-      folgen: { ja: { dann: [['du', '(denkt) Was sieht die Kamera?'],
-        { fest: true, wahl: [
-          { t: 'Eine Nachricht. Nicht gehört.', merke: 'k5FreitagBenannt', dann: [] },
-          { t: 'Jo lästert.', dann: [['du', '(denkt) Das sagt der Kopf. Echt: eine Nachricht. Noch nicht gehört.']] },
-          { t: 'Dario will Ärger.', dann: [['du', '(denkt) Das sagt der Kopf. Echt: eine Nachricht. Noch nicht gehört.']] },
-        ] }] }, nein: { dann: [] } } },
+      folgen: { ja: { dann: [{ handy: { wer: '📷 Kamera-Check', wann: '17:09', chat: [{ wer: 'Echt', t: 'Eine Nachricht. Noch nicht gehört.' }, { wer: 'Lästert er?', t: 'Weiß keiner. Noch nicht.' }] } }] }, nein: { dann: [] } } },
+    ['du', '(denkt) Wen frag ich? Oder warten?'],
     // Die Lücke im Kopf will gefüllt werden – wie man fragt, hat einen Preis (Heft #04, Stunde 1: Wen könnte ich fragen?)
     { fest: true, wahl: [
       { t: 'Dario: „Was ist drauf?“', merke: 'k5HoerenDario', dann: [{ handy: { wer: 'Dario', wann: '17:10', chat: [{ wer: 'Du', t: 'was ist drauf?' }, { wer: 'Dario', t: 'nicht im chat. montag.' }] } }, { handy: null }] },
@@ -454,8 +431,18 @@ export const GESPRAECHE_N5 = {
       { t: '„Montag. Erst hören.“', merke: 'k5HoerenMontag', staerke: 'ruhig', dann: [['erzaehler', 'Du atmest gegen die Scheibe. Sie beschlägt. Du schreibst nichts hinein.']] },
       { t: '(Handy weg.)', merke: 'k5HoerenWeg', dann: [['erzaehler', 'Du steckst das Handy in die Jacke.']] },
     ] },
+    { handy: null },
     { tu: 'n5_satz' },
     ['du', '(denkt) „von jo“. Montag.'],
+    // Fach-Panel R4 (E1): der Schritt ins eigene Leben – Mila zeigt sich zuerst, „Sag ich nicht“ schützt. Kommt in K7 am Spiegel wieder.
+    { handy: { wer: 'Mila', wann: '17:15', chat: [{ wer: 'Mila', t: 'ehrlich: ich denk jeden morgen an der tür, alle starren 🙃' }, { wer: 'Mila', t: 'wann denkst du „alle“?' }] } },
+    { wahl: [
+      { t: '„An der Tür.“', merke: 'k5AlleTuer', dann: [{ handy: { wer: 'Mila', wann: '17:16', chat: [{ wer: 'Mila', t: 'geht mir auch so 🙃 bleibt unter uns.' }] } }] },
+      { t: '„Im Chat.“', merke: 'k5AlleChat', dann: [{ handy: { wer: 'Mila', wann: '17:16', chat: [{ wer: 'Mila', t: 'ok. bleibt unter uns.' }] } }] },
+      { t: '„Wenn einer lacht.“', merke: 'k5AlleLachen', dann: [{ handy: { wer: 'Mila', wann: '17:16', chat: [{ wer: 'Mila', t: 'ok. bleibt unter uns.' }] } }] },
+      { t: '„Sag ich nicht.“', merke: 'k5AlleNicht', dann: [{ handy: { wer: 'Mila', wann: '17:16', chat: [{ wer: 'Mila', t: 'fair 🤐' }] } }] },
+    ] },
+    { handy: null },
     { tu: 'kapitelEnde' },
   ],
 };
@@ -463,12 +450,11 @@ export const GESPRAECHE_N5 = {
 // ---------- Rückblick in Bildern (Kapitelende, Lehrer-Ansicht) ----------
 export const RUECKBLICK_N5 = (m) => [
   { id: 'k5Bank', titel: 'Die leere Bank', text: 'Darios Platz war leer. ' + (m.k5DarioKuedes ? 'Du hast es Herrn Kuedes gesagt.' : 'Herr Kuedes hat selbst nachgefragt.') },
-  { id: 'k5Tuer', titel: 'Die Tür', text: '„Alle denken, ich bin’s.“ ' + (m.k5TuerMal ? 'Zweiter Gedanke: „Die können mich mal.“ ' : m.k5TuerUmfrage ? 'Zweiter Gedanke: „Nur ’ne blöde Umfrage.“ ' : '') + 'Kamera: 2 haben geschaut.' },
+  { id: 'k5Tuer', titel: 'Die Tür', text: '„Alle denken, ich bin’s.“ ' + (m.k5TuerMal ? 'Zweiter Gedanke: „Die können mich mal.“ ' : m.k5TuerUmfrage ? 'Zweiter Gedanke: „Nur ’ne blöde Umfrage.“ ' : '') + (m.k5LachenFrage ? 'Das Lachen? Gefragt: Bens Katze.' : m.k5LachenMila ? 'Zu Mila gesetzt. Das Lachen: Bens Katze.' : 'Kapuze auf. Das Lachen war Bens Katze.') },
   { id: 'k5Hof', titel: 'Admin!', text: m.pause5Noah ? (m.k5NoahLasst ? 'Du hast gesagt: „Lasst ihn.“' : m.k5NoahDaneben ? 'Du hast dich neben Noah gestellt.' : m.k5AdminWeg ? 'Du warst da. Dann bist du weitergegangen.' : 'Du warst bei Noah.') : m.pause5Chiara ? 'Du warst bei Chiara. „wer glaubt, es ist …“ – gelöscht.' : m.pause5Jo ? (m.k5Schneemann ? 'Du hast mit Jo den Schneemann gebaut.' : 'Du warst bei Jo. Er hat gescrollt.') : m.pause5Manon ? (m.k5ManonErklaert ? 'Du hast Manon erklärt, was „Admin“ heißt.' : 'Manon hat gefragt, was „Admin“ heißt.') : 'Pause im Schnee.' },
-  { id: 'k5Lesesaal', titel: 'gesehen von ' + (m.k5PruefZahlen ? m.k5PruefZahlen.gs : 9), text: (m.k5Geprueft ? 'Geprüft: ' + (m.k5PruefZahlen ? m.k5PruefZahlen.ja + ' Ja, ' + m.k5PruefZahlen.gs + ' gesehen. ' : 'ein paar Ja, viele nur gesehen. ') : '') + (m.k5ChatKuedes ? 'Screenshot an Herrn Kuedes. Er kam, bevor jemand rausflog.' : m.k5ChatChiara ? 'Du hast Chiara geschrieben. Sie hat aufgehört.' : m.k5ChatZuZweit ? 'Ayla und du: Nein. Die Umfrage war vorbei.' : m.k5ChatGepostet ? 'Du hast das Foto gepostet. Dann hieß es: „Wer war draußen?“' : m.k5ChatVerteidigt ? 'Du hast geschrieben: „' + (m.k5ZielDu ? 'Ich' : 'Noah') + ' war’s nicht.“ Danach drei Ja. ' + (m.k5BenGeruecht ? 'Bens Ja kam nach deinem „Bestimmt.“ Die danach nicht.' : 'Allein gegen Jo ist schwer.') : m.k5ChatNein ? '„Nein“ gedrückt – mit deinem Namen.' : m.k5ChatGeglaubt ? 'Noah privat: „Ich glaub dir.“ Die Umfrage lief weiter.' : m.k5ChatVerlassen ? 'Du bist rausgegangen.' : 'Die Umfrage lief bis zum Ende.') },
+  { id: 'k5Lesesaal', titel: 'gesehen von ' + (m.k5PruefZahlen ? m.k5PruefZahlen.gs : m.k5ChatGesehen || 9), text: (m.k5Geprueft ? 'Geprüft: ' + (m.k5PruefZahlen ? m.k5PruefZahlen.ja + ' Ja, ' + m.k5PruefZahlen.gs + ' gesehen. ' : 'ein paar Ja, viele nur gesehen. ') : '') + (m.k5ChatKuedes ? 'Screenshot an Herrn Kuedes. Er kam, bevor jemand rausflog.' : m.k5ChatChiara ? 'Du hast Chiara geschrieben. Sie hat aufgehört.' : m.k5ChatZuZweit ? 'Ayla und du: Nein. Die Umfrage war vorbei.' : m.k5ChatGepostet ? 'Du hast das Foto gepostet. Dann hieß es: „Wer war draußen?“' : m.k5ChatVerteidigt ? 'Du hast geschrieben: „' + (m.k5ZielDu ? 'Ich' : 'Noah') + ' war’s nicht.“ Danach drei Ja. ' + (m.k5BenGeruecht ? 'Bens Ja kam nach deinem „Bestimmt.“ Die danach nicht.' : 'Allein gegen Jo ist schwer.') : m.k5ChatNein ? '„Nein“ gedrückt – mit deinem Namen.' : m.k5ChatGeglaubt ? 'Noah privat: „Ich glaub dir.“ Die Umfrage lief weiter.' : m.k5ChatVerlassen ? 'Du bist rausgegangen.' : 'Die Umfrage lief bis zum Ende.') },
   { id: 'k5Chiara', titel: 'Das war auch', text: 'Chiara. Daumen auf „Umfrage starten“. „Wenn ich nichts mache, bin ich die Nächste.“', auch: true },
-  { id: 'k5Eis', titel: m.k5Losgelassen ? 'Ohne Bande' : 'An der Bande', text: (m.k5Losgelassen ? 'Losgelassen. ' : 'An der Bande gefahren. ') + (m.k5EisGeprueft ? ((m.k5RennenGefallen || 0) > 0 ? 'Geprüft: gelacht hat keiner. ' : m.k5RennenSieg ? 'Geprüft: kein Glück – eine ganze Runde. ' : 'Geprüft: eine Runde ging. ') : '') + (m.k5NoahGeholt ? 'Noah hast du vom Rand geholt.' : m.k5RennenSieg ? 'Rennen gegen Yusuf: gewonnen.' : 'Yusuf war schneller.')
-    + ((m.k5GerdDa || 0) ? ' 🐦 Gerd war ' + m.k5GerdDa + '-mal im Bild. Gesehen: ' + (m.k5GerdGesehen || 0) + '.' : '') },
+  { id: 'k5Eis', titel: m.k5Losgelassen ? 'Ohne Bande' : 'An der Bande', text: (m.k5Losgelassen ? 'Losgelassen. ' : 'An der Bande gefahren. ') + (m.k5EisGeprueft ? ((m.k5RennenGefallen || 0) > 0 ? 'Geprüft: gelacht hat keiner. ' : m.k5RennenSieg ? 'Geprüft: kein Glück – eine ganze Runde. ' : 'Geprüft: eine Runde ging. ') : '') + (m.k5NoahGeholt ? 'Noah hast du vom Rand geholt.' : m.k5RennenSieg ? 'Rennen gegen Yusuf: gewonnen.' : m.k5Bande && !(m.k5RennenGefallen > 0) ? 'Eine Runde an der Bande. Ohne Sturz.' : 'Yusuf war schneller.') },
 ];
 
 // ---------- TUN für Kapitel 5 (in spiel.js eingehängt: tunN5) ----------
@@ -480,7 +466,7 @@ export const tunN5 = (c) => {
     // Die Ferien-Umfrage in Stimmen (nicht Prozent): Wer ist der Admin?
     n5_ferienUmfrage: () => {
       const du = zielDu5(M());
-      return [{ handy: { wer: '@annexe.cam', wann: 'Sonntag, 21:00', text: 'wer ist der admin? 🤔', umfrage: du ? { a: c.S.name || 'du', b: 'noah', pa: 55, stimmen: 20 } : { a: 'noah', b: c.S.name || 'du', pa: 55, stimmen: 20 } } },
+      return [{ handy: { wer: '@annexe.cam', wann: 'Sonntag, 21:00', text: 'wer ist der admin? 🤔', umfrage: du ? { a: c.S.name || 'du', b: 'noah', pa: 55, stimmen: 20, inStimmen: true } : { a: 'noah', b: c.S.name || 'du', pa: 55, stimmen: 20, inStimmen: true } } },
         ['erzaehler', du ? 'Elf Stimmen für dich. Neun für Noah. Abgestimmt haben Leute, die du kennst.' : 'Elf Stimmen für Noah. Neun für dich. Abgestimmt haben Leute, die du kennst.'],
         { handy: null }];
     },
@@ -499,28 +485,33 @@ export const tunN5 = (c) => {
         ] },
         { handy: null }];
     },
-    // Mittwoch: Lou fragt privat. Was du antwortest, steht nachher im Klassenchat.
+    // Mittwoch: Lou fragt privat – und wartet (Jugend-Panel R4). Wer zu Lina rübergeht, holt sich das 📎 selbst. Schweigen liest Lou als Ja.
     n5_louFragt: () => {
       const du = zielDu5(M()), lou = (t, w) => ({ handy: { wer: 'Lou (privat)', wann: w || '12:42', chat: [{ wer: 'Lou', t }] } });
-      return [lou(du ? 'sag ehrlich. warst du draußen? 👀' : 'stimmt doch mit noah, oder?', '12:41'),
-        { wahl: du ? [
-          { t: '📎 „Lina sagt: nur Gang.“', beweis: 'k5LinaGang', merke: 'k5LouLina', staerke: 'klar', dann: [lou('oh. ok. dann weiß ich nix')] },
-          { t: '„Woher hast du das?“', merke: 'k5LouGefragt', staerke: 'klar', dann: [lou('hab’s gehört. in der pause')] },
-          { t: '„Nein. War ich nicht.“', merke: 'k5LouNein', dann: [lou('ok ok')] },
-          { t: '(Nicht antworten.)', merke: 'k5LouStill', dann: [] },
-        ] : [
-          { t: '📎 „Lina sagt: nur Gang.“', beweis: 'k5LinaGang', merke: 'k5LouLina', staerke: 'klar', dann: [lou('oh. ok. dann weiß ich nix')] },
-          { t: '„Woher weißt du das?“', merke: 'k5LouGefragt', staerke: 'klar', dann: [lou('hab’s gehört. in der pause')] },
-          { t: '„Klar.“', merke: 'k5LouKlar', dann: [lou('wusst ich’s 😎')] },
-          { t: '(Nicht antworten.)', merke: 'k5LouStill', dann: [] },
-        ] },
+      return [lou(du ? 'sag ehrlich. warst du draußen? lina hat dich gesehen 👀' : 'stimmt doch mit noah? lina hat ihn gesehen 👀', '12:41'),
+        { szene: 'stoerung', id: 'k5LouTippt', pruefe: false,
+          def: { t: 'Lou tippt … und wartet auf deine Antwort.', zeit: 6, standard: 'still',
+            optionen: [{ id: 'lina', t: '(Zu Lina rüber.)' }, du ? { id: 'nein', t: '„Nein. War ich nicht.“' } : { id: 'klar', t: '„Klar.“' }, { id: 'still', t: '(Nicht antworten.)' }] },
+          ausgang: (r) => (r.zeitUm ? 'zeit' : r.wahl || 'still'),
+          folgen: {
+            lina: { merke: 'k5ZuLina', dann: [{ handy: null }, ['lina', du ? '(schaut von ihrem Buch hoch) Gesehen? Dich, auf dem Gang. Halb neun. Mehr nicht.' : '(schaut von ihrem Buch hoch) Gesehen? Noah, auf dem Gang. Halb neun. Mehr nicht.'],
+              { beweis: 'k5LinaGang', t: 'Lina hat nur gesehen: auf dem Gang, halb neun. Mehr nicht.' },
+              { fest: true, wahl: [
+                { t: '📎 „Lina sagt: nur Gang.“', beweis: 'k5LinaGang', merke: 'k5LouLina', staerke: 'klar', dann: [lou('oh. ok. dann weiß ich nix', '12:43')] },
+                { t: du ? '„Woher hast du das?“' : '„Woher weißt du das?“', merke: 'k5LouGefragt', staerke: 'klar', dann: [lou('hab’s gehört. in der pause', '12:43'), ['du', '(denkt) 📢 Gehört. Nicht gesehen.']] },
+              ] }] },
+            klar: { merke: 'k5LouKlar', dann: [lou('wusst ich’s 😎')] },
+            nein: { merke: 'k5LouNein', dann: [lou('ok ok')] },
+            still: { merke: 'k5LouStill', dann: [lou('ok. dann ja 👍')] },
+            zeit: { merke: ['k5LouStill', 'k5LouZeitUm'], dann: [lou('ok. dann ja 👍')] },
+          } },
         { handy: null }];
     },
     n5_spulen: async () => { await c.ui.zurueckspulen({ t: 'Zurück. Gleiche Tür.' }); return []; },
     // Ein Erwachsener fragt selbst nach (Dario) – auch wer nichts gesagt hat, bekommt eine zweite Chance
     n5_kuedesFragt: () => [
       { blende: 'Schultür · 7:52' },
-      ['kaya', '(an der Tür) Moien. Hast du Dario heute gesehen? Mir fiel vor den Ferien was auf.'],
+      ['kaya', '(an der Tür) Moien. Hast du Dario heute gesehen? Er war vor den Ferien so still.'],
       { wahl: [
         { t: '„Er hat ‚zu viel‘ gesagt.“', merke: ['k5DarioKuedes', 'k5Kuedes', 'k5DarioAufNachfrage'], dann: [['kaya', 'Danke. Ich red heute mit ihm. Du musst nichts weiter tun.']] },
         { t: '„Nein.“', merke: 'k5DarioNein', dann: [['kaya', 'Okay. Ich schau nach ihm.']] },
@@ -542,7 +533,7 @@ export const tunN5 = (c) => {
       const m = M();
       return [{ wahl: [
         { t: '„Lasst ihn.“', merke: 'k5NoahLasst', staerke: 'mut', herz: { noah: 2 }, dann: [['luca', 'Uuh. Admin-Freund.'], ['ben', '(lässt den Schneeball fallen) … Okay. War nur Spaß.'], ['noah', '(leise) Danke.']] },
-        { t: '(Neben Noah stellen.)', merke: 'k5NoahDaneben', herz: { noah: 2 }, dann: [['erzaehler', 'Du stehst einfach da. Der nächste Schneeball fliegt nicht.'], ['noah', '(schaut dich kurz an)']] },
+        { t: '(Neben Noah stellen.)', merke: 'k5NoahDaneben', herz: { noah: 2 }, dann: [['erzaehler', 'Du stehst einfach da. Der nächste Schneeball fliegt nicht.'], ['du', '(denkt) „Bin ich dran?“ Keiner wirft.'], ['noah', '(schaut dich kurz an)']] },
         ...(m.k4NoahVerdacht ? [{ t: '„Sorry wegen Mittwoch.“', merke: 'k5NoahSorry', herz: { noah: 2 }, dann: [['noah', '(lange still) … Okay. Hm.'], ['luca', 'Oh, jetzt Freunde?']] }] : []),
         { t: '(Doch weggehen.)', merke: 'k5AdminWeg', dann: [['du', '(denkt) Nicht heute.']] },
       ] }];
@@ -588,7 +579,7 @@ export const tunN5 = (c) => {
     },
     // Nach der Abstimmung: Chiaras Sicht, ein Erwachsener (Kuedes vorher, sonst Tidderich danach), unter vier Augen, Hilfe-Nummern
     n5_nachChat: () => {
-      const m = M(), raus = m.k5Rausgeflogen, z = [];
+      const m = M(), raus = m.k5Rausgeflogen, du = zielDu5(m), z = [];
       if ((m.k5ChatStumm || m.k5TidHin) && raus) z.push(['erzaehler', 'Später, auf dem Handy: „Chiara hat ' + (raus === 'du' ? 'dich' : 'Noah') + ' aus der Gruppe entfernt.“']);
       // Ein Wort privat zählt im Chat – wer Lous Zeile verpasst hat, bekommt sie von Mila (Folge immer sichtbar)
       const gs = m.k5ChatZitate || {}, vonMir = [
@@ -596,12 +587,22 @@ export const tunN5 = (c) => {
       if (vonMir.length) z.push({ handy: { wer: 'Mila · privat', wann: '13:41', chat: [{ wer: 'Mila', t: 'hast du das gesehen?' }, ...vonMir.map((v) => ({ wer: v.wer + ' (7P2)', t: v.t }))] } },
         ['du', '(denkt) Das kam von mir. Ein Wort.'], { handy: null });
       if (m.k5BeweisFrage && !gs.lina) z.push({ handy: { wer: 'Lina · privat', wann: '13:41', chat: [{ wer: 'Lina', t: 'hab im chat geschrieben dass du montag gefragt hast. beweis für was. 👍' }] } }, { handy: null });
-      if (!m.k5Geprueft) z.push({ handy: { wer: 'Ayla · privat', wann: '13:38 · ungelesen', chat: [{ wer: 'Ayla', t: 'bin nicht dafür. weiß nicht was schreiben.' }] } }, ['du', '(denkt) Die war die ganze Zeit da. Ungelesen.'], { handy: null });
+      // Fach-Panel R4 (E3): Wer im Chat nicht geprüft hat, sieht den Endstand – mit Namen. Dann kommt der Kopf. Aylas Nachricht gibt es nur mit 📷.
+      const N = m.k5ChatNamen, ZW = ['Keiner', 'Einer', 'Zwei', 'Drei', 'Vier', 'Fünf', 'Sechs', 'Sieben', 'Acht', 'Neun'];
+      if (!m.k5Geprueft && N && (N.ja || []).length) {
+        const ja = N.ja, nein = N.nein || [], weiss = N.weiss || [], gsn = Math.max(m.k5ChatGesehen || 0, ja.length + nein.length + weiss.length);
+        z.push({ handy: { wer: '7P2 🏫 · Umfrage', wann: '13:40', chat: [{ wer: 'Ja · ' + ja.length, t: ja.join(', ') },
+          ...(nein.length ? [{ wer: 'Nein · ' + nein.length, t: nein.join(', ') }] : []), ...(weiss.length ? [{ wer: 'Weiß nicht · ' + weiss.length, t: weiss.join(', ') }] : []), { wer: '7P2', t: 'gesehen von ' + gsn }] } },
+          { szene: 'blase', id: 'k5BlaseNach', pruefe: false, def: { t: du ? 'Alle sind gegen mich.' : 'Alle glauben’s.', stufe: 'frei', zeit: 6 },
+            ausgang: (r, mm) => { const g = !!(r && r.geprueft); mm.k5NachGeprueft = g; if (g) { mm.k5Ayla = true; mm.k5PruefZahlen = { ja: ja.length, gs: gsn }; } return g ? 'ja' : 'nein'; },
+            folgen: { ja: { dann: [{ handy: { wer: '📷 Kamera-Check', wann: '13:40', chat: [{ wer: 'Echt', t: ja.length + ' Ja. ' + gsn + ' gesehen.' }, { wer: '📢 Nur gehört', t: m.k5LouGefragt || m.k5LouLina ? 'Jo' : 'Lou, Jo' }, { wer: 'Ayla · ungelesen', t: 'bin nicht dafür. weiß nicht was schreiben.' }] } },
+              ['du', '(denkt) ' + (ZW[ja.length] || ja.length) + ' von ' + gsn + '. Nicht alle.'], { handy: null }] }, nein: { dann: [{ handy: null }] } } });
+      }
       const chiaraSicht = [{ foto: 'k5Chiara', von: [11.15, 1.35, -59.3], auf: [11.15, 1.0, -60.65], fov: 42 },
         { sicht: { wer: 'chiara', auf: 'du', gedanken: ['Mittwoch, 13:29. Mein Daumen über „Umfrage starten“.', 'Wenn ich nichts mache, bin ich die Nächste.'] } }];
       if (raus !== 'du') z.push(...chiaraSicht);
       if (m.k5ChatKuedes) {
-        z.push({ hin: { kaya: [14.0, -56.2, Math.PI] } }, ['kaya', '(in der Tür) Die Umfrage ist zu. Ich hab sie gesehen.'], ['kaya', zielDu5(m) ? '(leise, zu dir) Danke für den Screenshot. Du musst nichts beweisen.' : '(leise, zu dir) Danke für den Screenshot. Ab hier kümmere ich mich.']);
+        z.push({ hin: { kaya: [14.0, -56.2, Math.PI] } }, ['kaya', '(in der Tür) Die Umfrage ist zu. Ich hab sie gesehen.'], ['kaya', du ? '(leise, zu dir) Danke für den Screenshot. Du musst nichts beweisen.' : '(leise, zu dir) Danke für den Screenshot. Ab hier kümmere ich mich.']);
         if (m.k5KuedesSpuren) z.push(['kaya', 'Die Spuren nehm ich mit zur Direktion.']);
       } else {
         z.push({ hin: { hoffmann: [14.0, -56.2, Math.PI] } });
@@ -613,32 +614,37 @@ export const tunN5 = (c) => {
         if (raus === 'du') z.push(['hoffmann', '(leise) {name}, kommst du kurz? Du musst nichts beweisen.'], { handy: { wer: '7P2 🏫', wann: '14:20', chat: [{ wer: '7P2', t: 'Ayla hat dich wieder hinzugefügt.' }] } }, { handy: null });
         if (raus === 'noah') z.push(['hoffmann', '(leise) Noah, kommst du kurz mit?'], ['erzaehler', 'Um 14:20 holt Ayla Noah zurück in den Chat.']);
         if (m.k5ChatGepostet && !m.k5KenanGeschuetzt) z.push(['hoffmann', 'Und das Foto von 8:34 ist jetzt überall. Mit der ganzen Klasse drauf.'], ['hoffmann', '(zu dir) Gut hingeschaut. Falscher Ort. Gib’s mir nächstes Mal.']);
-        if (m.k5ChatVerlassen) z.push(['kaya', '(später, im Gang) Gut, dass du raus bist. Alles okay?'], { wahl: [
+        if (m.k5ChatVerlassen) z.push(['kaya', '(später, im Gang) Mila hat mir den Chat gezeigt. Alles okay?'], { wahl: [
           { t: '„Ja.“', dann: [['kaya', 'Gut. Wenn sich das ändert: Du weißt, wo ich bin.']] },
           { t: '„Geht so.“', merke: 'k5GehtSo', dann: [['kaya', 'Okay. Ich bin bis vier im Büro.']] },
         ] }, ['mila', '(schreibt dir) Ich schick dir, was wichtig ist.']);
       }
-      if (m.k5Verteidigt && zielDu5(m)) z.push([m.k5ChatKuedes ? 'kaya' : 'hoffmann', '(leise, zu dir) Dass du’s geschrieben hast: in Ordnung. Die Ja-Stimmen liegen nicht an dir.']);
+      if (m.k5Verteidigt && du) z.push([m.k5ChatKuedes ? 'kaya' : 'hoffmann', '(leise, zu dir) Dass du’s geschrieben hast: in Ordnung. Die Ja-Stimmen liegen nicht an dir.']);
       if (raus === 'du') z.push(...chiaraSicht);
       if (m.k5ChiaraNein) z.push(['erzaehler', 'Chiara schaut nicht zu dir rüber. Ihr Bein wippt.']);
-      // Spott über dich (wegen „Die können mich mal.“ oder „Lasst ihn.“): Mila zeigt ihr Handy – nicht weiterleiten. Prüfen heißt nicht wegreden.
-      const spott = [m.k5TuerMal ? 'der mit der lauten tasche 😂' : null, m.k5NoahLasst && !zielDu5(m) ? '{name} = admin-freund 👀' : null].filter(Boolean);
-      if (spott.length) z.push(['mila', '(dreht ihr Handy zu dir) Das stand im Chat. Über dich.'], { handy: { wer: 'Milas Handy · 7P2', wann: '13:35', chat: spott.map((t) => ({ wer: 'Jo', t })) } },
-        { szene: 'blase', id: 'k5BlaseSpott', pruefe: false, def: { t: 'Jetzt lachen alle über mich.', stufe: 'frei', zeit: 6 },
-          ausgang: (r, mm) => { mm.k5SpottGeprueft = !!(r && r.geprueft); return mm.k5SpottGeprueft ? 'ja' : 'nein'; },
-          folgen: { ja: { dann: [{ handy: { wer: '📷 Kamera-Check', wann: '13:35', chat: [{ wer: 'Echt', t: 'Jo. ' + (spott.length > 1 ? 'Zwei Sätze.' : 'Ein Satz.') + ' Über dich.' }, { wer: 'Alle?', t: 'Einer hat geschrieben.' }, { wer: 'Okay?', t: 'Nein. Nicht okay.' }] } },
-            ['du', '(denkt) Stimmt. Und es ist nicht okay.']] }, nein: { dann: [] } } },
-        { handy: null },
-        { fest: true, wahl: [
-          { t: '📸 An Herrn Kuedes.', merke: 'k5SpottKuedes', staerke: 'hilfe', dann: [m.k5ChatKuedes ? ['erzaehler', 'Herr Kuedes schreibt zurück: „Hab ich gesehen. Das kläre ich mit Jo.“'] : ['erzaehler', 'Herr Kuedes schreibt zurück: „Danke. Das kläre ich mit Jo. Du musst nichts weiter tun.“']] },
-          { t: 'Mila soll’s schicken.', merke: 'k5SpottMila', dann: [['mila', 'Mach ich. Du musst nicht.']] },
-          { t: '(Erst mal nichts.)', merke: 'k5SpottNichts', dann: [['mila', 'Okay. Ich heb den Screenshot auf. Falls du ihn brauchst.']] },
-        ] });
+      // Spott über dich (wegen „Die können mich mal.“ oder „Lasst ihn.“): Mila zeigt ihr Handy. Drei Gesten (Heft #04) – und ein Erwachsener sagt, an wem es liegt.
+      const spott = [m.k5TuerMal ? 'der mit der lauten tasche 😂' : null, m.k5NoahLasst && !du ? '{name} = admin-freund 👀' : null].filter(Boolean);
+      if (spott.length) {
+        const wer = m.k5ChatKuedes ? 'kaya' : 'hoffmann', hilfe = [[wer, '(schaut lange auf das Handy) Das kläre ich mit Jo. Heute.'], [wer, 'Das liegt an Jo. Nicht an dir.']];
+        z.push({ handy: { wer: 'Milas Handy · 7P2', wann: '13:35', chat: spott.map((t) => ({ wer: 'Jo', t })) } }, ['mila', '(dreht ihr Handy zu dir) Das stand im Chat. Über dich.'],
+          { szene: 'blase', id: 'k5BlaseSpott', pruefe: false, def: { t: 'Jetzt lachen alle über mich.', stufe: 'frei', zeit: 6 },
+            ausgang: (r, mm) => { mm.k5SpottGeprueft = !!(r && r.geprueft); return mm.k5SpottGeprueft ? 'ja' : 'nein'; },
+            folgen: { ja: { dann: [{ handy: { wer: '📷 Kamera-Check', wann: '13:35', chat: [{ wer: '📷 Echt', t: 'Jo. ' + (spott.length > 1 ? 'Zwei Sätze' : 'Ein Satz') + '. Über dich. Nicht okay.' }, { wer: '📢 Alle?', t: 'Einer hat geschrieben.' }, { wer: '❤️ Tut weh?', t: 'Darf es.' }] } },
+              ['du', '(denkt) Einer. Trotzdem nicht okay.']] }, nein: { dann: [] } } },
+          { handy: null },
+          { fest: true, wahl: [
+            { t: m.k5ChatKuedes ? '📸 Herrn Kuedes zeigen.' : '📸 Mme Tidderich zeigen.', merke: 'k5SpottKuedes', staerke: 'hilfe', dann: hilfe },
+            { t: '(Mila soll’s zeigen.)', merke: 'k5SpottMila', dann: [['mila', 'Mach ich. Du musst nicht.'], ...hilfe] },
+            { t: '(Erst mal nichts.)', merke: 'k5SpottNichts', dann: [['mila', 'Okay. Ich heb den Screenshot auf. Das liegt an Jo, nicht an dir.']] },
+          ] });
+      }
       return z;
     },
     // Eisbahn: wer am Rand steht · Yusufs Bruder · Manon
     n5_eisRand: () => {
       const m = M(), z = [];
+      // Folge vom Spott (gezeigt statt geschluckt): Jo musste zu einem Erwachsenen. Kein großes Sorry – aber ein kleines.
+      if (m.k5SpottKuedes || m.k5SpottMila) z.push(['jo', '(bremst neben dir) Musste zu ' + (m.k5ChatKuedes ? 'Herrn Kuedes' : 'Mme Tidderich') + '. Wegen ' + (m.k5TuerMal ? 'der Tasche' : '„Admin-Freund“') + '.'], ['jo', '(schaut weg) War blöd.']);
       z.push(['erzaehler', m.k5Rausgeflogen === 'noah' ? 'Am Rand, an der Bande: Noah. Seit Mittwoch ist er still.' : 'Am Rand, an der Bande: Noah. Allein.']);
       z.push({ wahl: [
         { t: '„Komm. Eine Runde.“', merke: 'k5NoahGeholt', staerke: 'mut', herz: { noah: 3 }, dann: [['noah', '(zögert) … Nur langsam.'], ['erzaehler', 'Ihr fahrt eine Runde. Langsam. Noah lacht einmal. Kurz.'], ['noah', '(an der Bande) Dachte, alle starren. Waren zwei.']] },
@@ -655,36 +661,42 @@ export const tunN5 = (c) => {
       ] });
       return z;
     },
-    // Freitag: 20 Sekunden durch die Augen der Person, die rausgeflogen ist
     // Freitag: Noah auf der Bank. Was du diese Woche selbst geprüft hast, wird zum 📎 – für jemand anderen (Heft #04, Stunde 1: für die anderen).
+    // Fach-Panel R4: Noah zählt genau die Namen, die im Chat Ja gedrückt haben (E3) · wer ein Gerücht bestätigt hat, kann es hier geradebiegen (E2).
     n5_noahBank: () => {
-      const m = M(), du = zielDu5(m), zw = ['', 'Einer', 'Zwei', 'Drei', 'Vier', 'Fünf', 'Sechs', 'Sieben', 'Acht'];
-      let ja = [m.k5Schneemann ? null : 'Jo', m.k5LouGefragt || m.k5LouLina ? null : 'Lou', m.k5BenGefragt ? null : 'Ben', 'Tim', ...(m.k5Verteidigt ? ['Pit', 'Elena', 'Tom'] : [])].filter(Boolean);
-      if (m.k5ChatStimmen && m.k5ChatStimmen.ja != null && m.k5ChatStimmen.ja > 0) ja = ja.slice(0, m.k5ChatStimmen.ja);
-      const n = Math.max(1, ja.length), satz = (zw[n] || n) + (n === 1 ? ' ist nicht alle.' : ' sind nicht alle.');
-      const zaehlt = [['noah', '(zählt an den Fingern) ' + ja.join('. ') + '. … ' + (zw[n] || n) + '.'], ['noah', '(leise) ' + satz]];
+      const m = M(), du = zielDu5(m), ja = jaListe5(m), n = ja.length, nein = (m.k5ChatNamen && m.k5ChatNamen.nein) || [];
+      const satz = n ? (ZW5[n] || n) + (n === 1 ? ' ist nicht alle.' : ' sind nicht alle.') : 'Gedacht: alle. Gedrückt: keiner.';
+      const zaehlt = n ? [['noah', '(zählt an den Fingern) ' + ja.join('. ') + '. … ' + (ZW5[n] || n) + '.'],
+        ...(m.k5Verteidigt && ['Pit', 'Elena', 'Tom'].every((x) => ja.includes(x)) ? [['noah', 'Drei kamen erst nach Jos Spruch.']] : []), ['noah', '(leise) ' + satz]]
+        : [['noah', '(schaut aufs Handy) Ja gedrückt hat … keiner. Die Umfrage war zu, bevor sie losging.'], ['noah', '(leise) ' + satz]];
       const opt = [
-        { t: '📎 „Ayla war nicht dafür.“', merke: 'k5NoahAyla', dann: [['noah', 'Ayla? … Echt?'], ...zaehlt] },
-        ...(m.k5Geprueft && m.k5PruefZahlen ? [{ t: '📎 „' + m.k5PruefZahlen.ja + ' Ja. ' + m.k5PruefZahlen.gs + ' gesehen.“', merke: 'k5NoahZahlen', dann: zaehlt }] : m.k5BeweisFrage ? [{ t: '📎 „Yusuf hat Nein gedrückt.“', merke: 'k5NoahYusuf', dann: [['noah', 'Yusuf?'], ...zaehlt] }] : []),
+        ...(m.k5Ayla ? [{ t: '📎 „Ayla war nicht dafür.“', merke: 'k5NoahAyla', dann: [['noah', 'Ayla? … Echt?'], ...zaehlt, ['noah', du ? 'Schreib ihr. Das hilft.' : '(holt sein Handy raus) Ich schreib ihr.']] }] : []),
+        ...(m.k5PruefZahlen ? [{ t: '📎 „' + m.k5PruefZahlen.ja + ' Ja. ' + m.k5PruefZahlen.gs + ' gesehen.“', merke: 'k5NoahZahlen', dann: zaehlt }]
+          : nein.includes('Yusuf') ? [{ t: '📎 „Yusuf hat Nein gedrückt.“', merke: 'k5NoahYusuf', dann: [['noah', 'Yusuf?'], ...zaehlt, ['noah', du ? 'Yusuf. Hätte ich nicht gedacht.' : 'Montag nick ich ihm zu.']] }] : []),
         { t: '„Alle? Wer genau?“', merke: 'k5NoahWerGenau', dann: zaehlt },
-        { t: '(Nichts sagen.)', merke: 'k5NoahStill', dann: [['noah', '(nickt) Hm.']] },
+        { t: '(Nichts sagen.)', merke: 'k5NoahStill', dann: [['erzaehler', 'Ihr sitzt still. Dann zählt Noah. Allein.'], ...zaehlt] },
       ];
+      // Wiedergutmachen (nur wenn es Noah getroffen hat): Schuld will reparieren – „Sorry, Noah.“ (skills-j1: Scham oder Schuld)
+      const vorwurf = du ? null : m.k5BenGeruecht ? 'Ben sagt, du hast „bestimmt“ geschrieben.' : m.k5LouKlar ? 'Lou sagt, du hast „klar“ geschrieben.' : m.k5BeweisAugen ? 'Dein Name stand unter 👀.' : null;
       return [['erzaehler', 'Freitag, 17:00. Haltestelle. Es wird dunkel. Auf der Bank: Noah.'],
         ...(m.k5NoahGewunken ? [['noah', 'Du hast gewunken. Auf dem Eis.']] : m.k5NoahGeholt ? [['noah', 'Die Runde vorhin. Danke.']] : []),
         ...(m.k5Verteidigt && !du ? [['noah', 'Einer hat geschrieben: „noah war’s nicht.“ … Das warst du.']] : []),
+        ...(vorwurf ? [['noah', '(ohne dich anzuschauen) ' + vorwurf], { fest: true, wahl: [
+          { t: '„Stimmt. War falsch. Sorry.“', merke: 'k5NoahGutgemacht', staerke: 'mut', herz: { noah: 2 }, dann: [['noah', '(lange still) … Okay. Danke, dass du’s sagst.']] },
+          { t: '„War nicht so gemeint.“', merke: 'k5NoahNichtGemeint', dann: [['noah', 'Kam aber so an.']] },
+          { t: '(Nichts sagen.)', merke: 'k5NoahSchweigen', dann: [['noah', 'Hm.']] },
+        ] }] : []),
         ['noah', du ? 'Die ganze Klasse denkt, du warst’s. Oder?' : m.k5Rausgeflogen === 'noah' ? 'Seit Mittwoch schreibt mir keiner. Die ganze Klasse denkt, ich war’s.' : 'Die ganze Klasse denkt, ich war’s.'],
         { fest: true, wahl: opt },
         { tu: 'n5_noahSatz' }];
     },
     n5_noahSatz: () => {
-      const m = M();
-      if (m.k5NoahStill) return [];
-      const zw = ['', 'Einer', 'Zwei', 'Drei', 'Vier', 'Fünf', 'Sechs', 'Sieben', 'Acht'];
-      let ja = [m.k5Schneemann ? null : 'Jo', m.k5LouGefragt || m.k5LouLina ? null : 'Lou', m.k5BenGefragt ? null : 'Ben', 'Tim', ...(m.k5Verteidigt ? ['Pit', 'Elena', 'Tom'] : [])].filter(Boolean);
-      if (m.k5ChatStimmen && m.k5ChatStimmen.ja != null && m.k5ChatStimmen.ja > 0) ja = ja.slice(0, m.k5ChatStimmen.ja);
-      const n = Math.max(1, ja.length); m.k5NoahGezaehlt = true; m.k5SatzNoah = (zw[n] || n) + (n === 1 ? ' ist nicht alle.' : ' sind nicht alle.');
+      const m = M(), n = jaListe5(m).length;
+      m.k5NoahGezaehlt = !m.k5NoahStill;
+      m.k5SatzNoah = n ? (ZW5[n] || n) + (n === 1 ? ' ist nicht alle.' : ' sind nicht alle.') : 'Gedacht: alle. Gedrückt: keiner.';
       return [];
     },
+    // Freitag: 20 Sekunden durch die Augen der Person, die rausgeflogen ist
     n5_sichtRaus: () => {
       const m = M();
       if (m.k5Rausgeflogen !== 'noah') return [];
@@ -693,7 +705,7 @@ export const tunN5 = (c) => {
     // Satz der Woche (klebt in K7 am Spiegel, kommt in K10 als „dein Satz vom Januar“): was du mit Noah nachgezählt hast
     n5_satz: () => {
       const m = M();
-      m.k5Satz = m.k5SatzNoah || 'Wenn ich ‚alle‘ denke, zähl ich nach.';
+      m.k5Satz = m.k5SatzNoah || 'Nicht alle.';
       m.k5SatzAlt = 'Alle denken, ich bin’s.';
       return [];
     },

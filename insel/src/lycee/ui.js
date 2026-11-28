@@ -129,8 +129,8 @@ export function createUI({ root, input, speech }) {
     if (!u) return;
     let n = u.stimmen || 20, pa = u.pa || 50;
     const zeig = () => { const qa = Math.round(pa), qb = 100 - qa;
-      handyKarte.querySelector('.a i').style.width = qa + '%'; handyKarte.querySelector('.a b').textContent = qa + ' %';
-      handyKarte.querySelector('.b i').style.width = qb + '%'; handyKarte.querySelector('.b b').textContent = qb + ' %';
+      handyKarte.querySelector('.a i').style.width = qa + '%'; handyKarte.querySelector('.a b').textContent = u.inStimmen ? Math.round(n * qa / 100) : qa + ' %';
+      handyKarte.querySelector('.b i').style.width = qb + '%'; handyKarte.querySelector('.b b').textContent = u.inStimmen ? n - Math.round(n * qa / 100) : qb + ' %';
       handyKarte.querySelector('.n').textContent = n; };
     zeig();
     if (u.live) handyUhr = setInterval(() => { n += 1 + (Math.random() < 0.4 ? 1 : 0); pa = Math.max(5, Math.min(95, pa + (Math.random() - 0.35) * 1.6)); zeig(); }, 1400);
@@ -628,7 +628,7 @@ export function createUI({ root, input, speech }) {
       '<p class="ly-leer">Entdeckt: ' + entdeckt + ' von ' + gesamt + ' Orten</p></section></div>' +
       (weiter ? '' : '<p class="ly-e-weiter">Das nächste Kapitel kommt bald.</p>') + (frage ? '<div class="ly-e-frage"><b>💭 Zum Nachdenken – oder fürs Gespräch in der Klasse</b><span>' + esc(frage) + '</span></div>' : '') +
       // Eine Zeile Halt am Ende jedes Kapitels: das Spiel erzählt Schweres – echte Hilfe gibt es echt
-      '<p class="ly-e-hilfe">Ist dir so etwas echt passiert? SePAS in der Schule · Kanner- a Jugendtelefon 116 111 (gratis, anonym)</p>' + (vorschau ? '<div class="ly-e-vorschau"><b>Nächstes Mal</b><span>' + esc(vorschau) + '</span></div>' : '') + '<div class="ly-t-knoepfe">' +
+      '<p class="ly-e-hilfe">Ist dir so etwas echt passiert? SePAS in der Schule · Kanner- a Jugendtelefon 116 111 (gratis, anonym) · Online: BEE SECURE 8002 1234</p>' + (vorschau ? '<div class="ly-e-vorschau"><b>Nächstes Mal</b><span>' + esc(vorschau) + '</span></div>' : '') + '<div class="ly-t-knoepfe">' +
       (weiter ? '<button type="button" class="ly-btn ly-primaer" data-a="weiter">' + esc(weiter) + '</button>' : '<button type="button" class="ly-btn ly-primaer" data-a="frei">Weiter herumlaufen</button>') +
       '<button type="button" class="ly-btn" data-a="neu">Kapitel nochmal spielen</button></div>');
     k.querySelectorAll('[data-a]').forEach((b) => { b.onclick = () => { ebeneZu(); ok(b.dataset.a); }; });

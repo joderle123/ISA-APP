@@ -182,7 +182,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     };
     const fertig = () => {
       if (zu) return; zu = true; loesche();
-      ui.ebeneZu(); ok({ flags, aktionen: gemacht, lacher: lach.reduce((s, l) => s + Math.round(l.n), 0), ich: lacher, stimmen: umf ? Object.fromEntries(umf.opts.map((o) => [o.id, o.namen.length])) : null, gesehen: gesehenJetzt() });
+      ui.ebeneZu(); ok({ flags, aktionen: gemacht, lacher: lach.reduce((s, l) => s + Math.round(l.n), 0), ich: lacher, stimmen: umf ? Object.fromEntries(umf.opts.map((o) => [o.id, o.namen.length])) : null, namen: umf ? Object.fromEntries(umf.opts.map((o) => [o.id, o.namen.slice()])) : null, gesehen: gesehenJetzt() });
     };
     // E = schneller (nächste Nachricht sofort; am Ende: weiter). Nur Esc oder der Knopf legen das Handy weg – sonst
     // würde, wer aus Gewohnheit E drückt, still eine Entscheidung verlieren.
@@ -1345,7 +1345,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
   ui.mutBalken = (def) => new Promise((ok) => {
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>' + esc(def.titel || 'Hinschauen') + '</b></div>' +
       '<div class="sz-fall" style="--f:#2b3a55"><p>' + esc(ersetze(def.situation || '')) + '</p></div>' +
-      '<div class="sz-mut"><span>Mut</span><div><i></i></div></div><p class="sz-info">' + esc(def.info || 'Der Balken füllt sich, solange du hinschaust.') + '</p>' +
+      '<div class="sz-mut"><span>' + esc(def.balken || 'Mut') + '</span><div><i></i></div></div><p class="sz-info">' + esc(def.info || 'Der Balken füllt sich, solange du hinschaust.') + '</p>' +
       '<div class="sz-karten ly-d-optionen"></div></div>');
     const fill = k.querySelector('.sz-mut i'), karten = k.querySelector('.sz-karten');
     const alle = []; let mut = 0, aus = false, gezeigt = -1;
