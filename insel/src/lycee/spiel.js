@@ -86,7 +86,7 @@ import { tunN7 } from './story/kapitel7.js';
 import { tunN8 } from './story/kapitel8.js';
 import { tunN9 } from './story/kapitel9.js';
 import { tunN10 } from './story/kapitel10.js';
-import { chronik, GESPRAECH, GESPRAECH_ZUSATZ, SKILLKURZ } from './story/chronik.js';
+import { chronik, chronikKern, GESPRAECH, GESPRAECH_ZUSATZ, SKILLKURZ } from './story/chronik.js';
 import { createKorbSpiel } from './korb3d.js';
 import { baerAnhaenger } from './anhaenger.js';
 import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL, KAPITEL_MODUL } from './geschichte.js';
@@ -295,8 +295,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const neuerStand = (name, figur) => ({ v: 2, name, figur, schritt: 0, herz: {}, staerken: {}, merke: {}, entdeckt: [], stundenplan: false, bingo: {}, gefragt: [], fertig: false });
   // Schul-Pass: neue Abzeichen beim Speichern prüfen (Toast + Ton, nie mehr als drei auf einmal anzeigen)
   // Abzeichen nie mitten in einer Szene (nicht nach dem Mitlachen, nicht nach einem Verdacht): erst, wenn das Gespräch vorbei ist
-  let passSpaeter = 0;
-  const imG = () => { try { return imGespraech; } catch (e) { return false; } };   // imGespraech steht weiter unten (let)
+  let passSpaeter = 0, ruheBis = 0;   // ruheBis: nach einem Szenenwechsel ein paar Sekunden keine Abzeichen/Entdeckungen (Jugend-Kritik: mitten im Streit)
+  const imG = () => { try { return imGespraech || startet || Date.now() < ruheBis; } catch (e) { return false; } };   // imGespraech/startet stehen weiter unten (let)
   const passPruefen = () => { if (imG()) { if (!passSpaeter) passSpaeter = setInterval(() => { if (!imG()) { clearInterval(passSpaeter); passSpaeter = 0; passPruefen(); } }, 1500); return; }
     const neu = neuePassAbzeichen(S); neu.slice(0, 3).forEach((x) => ui.toastLeise('<b>🏅 ' + x.sy + ' ' + x.t + '</b><span>Neues Abzeichen im Schul-Pass.</span>', 'ly-t-ent')); };
   // Speichern sichtbar machen (AAA: „gespeichert“-Zeichen), aber gedrosselt – höchstens alle 20 s ein kleines Häkchen
@@ -1929,7 +1929,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       audio.play('unlock'); setTimeout(() => audio.play('chime'), 350);
       const woche = chronik(kap, S.merke); S.chronik = { ...(S.chronik || {}), [kap]: woche }; sichern();
       const bilder = (RUECKBLICK[kap] ? RUECKBLICK[kap](S.merke, S) : []).map((b) => ({ ...b, url: fotoHolen(b.id) })).filter((b) => b.url);
-      const wahl = await ui.ende({ ...bilanz(), kap, chronik: woche, bilder, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Das Foto', 2: 'Die Liste', 3: 'Unter der Wut', 4: '8:34', 5: 'Die Admin-Woche', 6: 'Die Sprachnachricht', 7: 'Wer geblieben ist', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' })[kap] || KAPITEL[kap],
+      const wahl = await ui.ende({ ...bilanz(), kap, chronik: woche, kern: chronikKern(kap, S.merke), bilder, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Das Foto', 2: 'Die Liste', 3: 'Unter der Wut', 4: '8:34', 5: 'Die Admin-Woche', 6: 'Die Sprachnachricht', 7: 'Wer geblieben ist', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' })[kap] || KAPITEL[kap],
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '',
         // Haken fürs nächste Kapitel (kein Spoiler, nur die Frage)
         frage: (() => { const sit = Object.entries(SZENEN).find(([id]) => S.merke['sitKap_' + id] === kap && S.merke['sit_' + id]); return sit ? (REFLEXION[kap] ? REFLEXION[kap] + ' · ' : '') + 'Diese Woche: ' + sit[1].titel[1] + '. ' + sit[1].frage : REFLEXION[kap] || ''; })(), vorschau: weiterIdx >= 0 ? ({ 1: 'Eine Liste. Fünf Plätze. Wer steht drauf?', 2: 'Eine Neue. Ein Turnier. Und einer, der dauernd zur Uhr schaut.',
@@ -2604,8 +2604,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     sichern();
   }
   async function starteSchritt(i, mitStart) {
-    startet = true;
-    try { await starteSchrittJetzt(i, mitStart); } finally { startet = false; }
+    startet = true; ruheBis = Date.now() + 8000;
+    try { await starteSchrittJetzt(i, mitStart); } finally { startet = false; ruheBis = Math.max(ruheBis, Date.now() + 6000); }
   }
   async function starteSchrittJetzt(i, mitStart) {
     const vorher = SCHRITTE[S.schritt];
@@ -3633,6 +3633,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const a = (S.merke.anzeigeVerlauf || {})[k];
       kapitel.push({ kap: k, titel: KAPITEL[k] || '', thema: KAPITEL_MODUL[k] || '', saetze: k <= fertigBis ? ch[k] || chronik(k, S.merke) : k === jetztK ? chronik(k, S.merke) : [], gespielt: k <= fertigBis, bisher: k > fertigBis && k === jetztK, frage: (GESPRAECH[k] || REFLEXION[k] || '') + (GESPRAECH_ZUSATZ[k] && S.merke && GESPRAECH_ZUSATZ[k](S.merke) ? ' ' + GESPRAECH_ZUSATZ[k](S.merke) : ''),
         kurz: SKILLKURZ[k] && (k <= fertigBis || k === jetztK) ? SKILLKURZ[k](S.merke).filter(Boolean) : [],
+        kern: k <= fertigBis || k === jetztK ? chronikKern(k, S.merke) : [],
         anzeige: a ? VW[a.art] + (a.art === 'akku' ? ': am wenigsten ' + a.min + ', am Ende ' + a.ende : ': höchstens ' + a.max + ', am Ende ' + a.ende) + ' (von 100)' : '',
         versuche: Object.entries((S.versuche || {})[k] || {}).map(([t, v]) => ({ t, n: typeof v === 'object' ? v.n : v, ok: typeof v === 'object' ? v.ok !== false : true })),
         gruende: (S.gruende || {})[k] || [], partner: (S.partnerLog || {})[k] || [],
@@ -4606,7 +4607,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
     // Entdeckungen
     geheimT -= dt;
-    if (geheimT <= 0 && !imGespraech) {
+    if (geheimT <= 0 && !imGespraech && !startet && Date.now() > ruheBis) {
       geheimT = 0.3;
       for (const g of GEHEIMNISSE) if (!S.entdeckt.includes(g.id) && Math.hypot(g.x - p.x, g.z - p.z) < g.r) {
         S.entdeckt.push(g.id); sichern();

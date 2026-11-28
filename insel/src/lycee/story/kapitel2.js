@@ -352,7 +352,7 @@ export const GESPRAECHE_N2 = {
   n2_freitagHof: [
     // Die Klassensprecher-Wahl vom Montag: Wer Chiara Mut gemacht hat, sieht, was daraus wird
     { wenn: (m) => !!(m.chiaraSicher || m.chiaraGefragt || m.chiaraGeholfen), dann: [['chiara', '(im Vorbeigehen, strahlend) Klassensprecherin. Ich. Vierzehn Stimmen!']],
-      sonst: [['jo', '(ruft über den Hof) Klassensprecher Jo! Pizza gibt’s trotzdem nicht.']] },
+      sonst: [['chiara', '(im Vorbeigehen) Klassensprecherin. Knapp. Elf zu zehn.']] },
     ['erzaehler', 'Freitag, 15:40. Der Hof leert sich.'],
     { tu: 'n2_bankFoto' },
     { wenn: (m) => !!m.bankWackelt, dann: [
@@ -542,7 +542,10 @@ export const GESPRAECHE_N2 = {
       { t: '(Zuschauen. Nichts sagen.)', staerke: 'warten', herz: { noah: 1 }, dann: [['erzaehler', 'Zehn Minuten. Er baut. Du schaust. Das Ruhigste seit Montag.']] },
     ] },
     ['ben', '(kommt rein, das Handy schon oben) Noah! Ein Foto vom Turm. Dann sehen alle, was du kannst.'],
-    { wenn: (m) => !!m.steckbriefTurm, dann: [['noah', 'Seit Dienstag weiß es eh jeder. Stand ja auf deinem Zettel.']] },
+    { wenn: (m) => !!m.steckbriefTurm, dann: [['noah', 'Seit Dienstag weiß es eh jeder. Stand ja auf deinem Zettel.'], { wahl: [
+      { t: '„Sorry. Das war deins.“', merke: 'k2TurmSorry', staerke: 'ehrlich', herz: { noah: 1 }, dann: [['noah', '(schaut kurz hoch) … Okay.']] },
+      { t: '(Nichts sagen.)', dann: [] },
+    ] }] },
     ['noah', 'Dann ist es deren Witz.'],
     { fest: true, wahl: [
       { t: '„Ben. Er will nicht.“', staerke: 'klar', herz: { noah: 2, ben: -1 }, merke: 'turmGeschuetzt', dann: [['ben', '(lässt das Handy sinken) … Okay. Sorry, Noah.']] },
@@ -581,10 +584,13 @@ export const GESPRAECHE_N2 = {
     { tu: 'n2_noahFreitag' },
     // „Stärke mit Beweis“ (Heft #01): Montag hast du gesagt, was du kannst. Freitag will Dario einen Beweis – aus deiner eigenen Woche.
     { tu: 'n2_beweisFrage' },
+    { wenn: (m) => !!(m.selbstZuhoeren || m.selbstMerken || m.selbstLachen), dann: [{ beweis: 'k2DarioWeiss', t: 'Dario wusste noch genau, was du am Montag gesagt hast.' }] },
     // Heft #01, Woche: eine Stärke auch jemand anderem sagen – Dario dreht die Frage um
     ['dario', '(leiser) Und ich? Was kann ich?'],
     { wahl: [
-      { t: '„Du merkst dir alles.“', merke: 'k2StaerkeDario', staerke: 'zuhoeren', herz: { dario: 1 }, dann: [['dario', '(still) … Beweis?'], { fest: true, wahl: [
+      { t: '„Du merkst dir alles.“', beweis: 'k2DarioWeiss', weil: 'Er wusste deinen Satz vom Montag.', merke: ['k2StaerkeDario', 'k2DarioMitBeweis'], staerke: 'zuhoeren', herz: { dario: 2 },
+        dann: [['du', 'Du merkst dir alles. Meinen Satz vom Montag wusstest du noch.'], ['dario', '(still) … Mit Beweis. Das hat noch keiner gesagt.']] },
+      { t: '„Du merkst dir alles.“', wenn: (m) => !(m.selbstZuhoeren || m.selbstMerken || m.selbstLachen), merke: 'k2StaerkeDario', staerke: 'zuhoeren', herz: { dario: 1 }, dann: [['dario', '(still) … Beweis?'], { fest: true, wahl: [
         { t: '„Du wusstest meinen Satz noch.“', merke: 'k2DarioMitBeweis', dann: [['dario', '(still) … Mit Beweis. Das hat noch keiner gesagt.']] },
         { t: '„Ist halt so.“', dann: [['dario', 'Hm. Glaub ich dir. Bisschen.']] },
       ] }] },
@@ -613,11 +619,34 @@ export const GESPRAECHE_N2 = {
       { wenn: (m) => !!m.k1DingeBus, dann: [['du', '(denkt) Im Bus. Hab ich mir vorgenommen. Drei Dinge?']], sonst: [{ wenn: (m) => !!(m.k1Geerdet || m.k1RuhigGeklappt || m.k1DingePause || m.k1DingeBett), dann: [['du', '(denkt) Zu viel. Wie am ersten Tag. Drei Dinge?']], sonst: [['du', '(denkt) Zu viel. Drei Dinge?']] }] },
       { wahl: [
         { t: '📎 „Schon wieder dein Satz.“', beweis: 'k1DarioSatz', merke: 'darioSatz2', dann: [{ handy: null }, ['dario', '(dreht sich um. Blass.) Siehst du. Der klaut.']] },
-        { t: '🖐 (Drei Dinge suchen.)', merke: 'k2DreiDinge', staerke: 'ruhig', dann: [{ handy: null }, ['du', '(denkt) Die Stange. Gelb. Kaugummi am Fenster. Regen. … Okay.']] },
+        { t: '🖐 (Drei Dinge suchen.)', dann: [{ handy: null }, { hin: { lina: [-31.5, 48.2, 0, 'steht'], dario: [-32.2, 48.0, 0, 'steht'] } },
+          { szene: 'suchbild', id: 'k2Bus', bildId: 'k2BusFenster', pruefe: false,
+            def: { wo: 'Blick aus dem Bus · 15:58', frage: 'Dein Satz in der Story. Such drei Dinge draußen.', zeit: 12, finde: 3,
+              foto: { von: [-27.8, 2.3, 46.6], auf: [-20.6, 1.3, 42.4], fov: 50 },
+              gut: 'Drei Dinge. Wie am ersten Tag.', verpasst: 'Gelb: Die waren die ganze Zeit da.',
+              ziele: [
+                { id: 'schild', wo: [-18.2, 2.2, 43.3], r: 0.08, t: 'Das Schild. Arrêt · Annexe.', kurz: 'Das Schild. Türkis.' },
+                { id: 'pfosten', wo: [-18.4, 1.5, 41.3], r: 0.07, t: 'Ein Pfosten. Grau.', kurz: 'Der Pfosten. Grau.' },
+                { id: 'dach', wo: [-21.5, 2.68, 43.35], r: 0.08, t: 'Das Dach. Regen tropft runter.', kurz: 'Das Dach. Tropfen.' },
+                { id: 'glas', wo: [-24.5, 1.9, 41.2], r: 0.09, t: 'Die Glaswand. Ein Kratzer.', kurz: 'Die Glaswand.' },
+              ] },
+            ausgang: (r, m) => { const n = (r.gefunden || []).length; m.k2DingeBus = n; return n >= 3 ? 'drei' : n >= 1 ? 'teil' : 'nicht'; },
+            folgen: { drei: { merke: 'k2DreiDinge', staerke: 'ruhig', dann: [['du', '(denkt) Drei Dinge. … Okay. Leiser.']] },
+              teil: { merke: 'k2DreiDingeTeil', dann: [['du', '(denkt) Nicht alle. Aber leiser als vorhin.']] },
+              nicht: { merke: 'k2DreiDingeTeil', dann: [['du', '(denkt) Zu schnell. Nächstes Mal langsamer.']] } } }] },
         { t: '🙋 (Montag Herrn Kuedes zeigen.)', merke: 'k2KuedesZeigen', staerke: 'hilfe', dann: [{ handy: null }, ['du', '(denkt) Montag. Herr Kuedes. Ich zeig’s ihm.']] },
         { t: '(Nichts sagen.)', merke: 'k2BusNichts', dann: [{ handy: null }] },
       ] },
-      { wenn: (m) => !!m.darioListeNein, dann: [['erzaehler', 'Dein Handy summt noch mal. Mila: „fand ich auch nicht.“']] }] },
+      { wenn: (m) => !!m.darioListeNein, dann: [['erzaehler', 'Dein Handy summt noch mal. Mila: „fand ich auch nicht.“']] },
+      { wenn: (m) => !m.k2KuedesZeigen, dann: [['du', '(denkt) Kommt noch was: Screenshot. Montag zeigen.']] }] },
+    // Plan direkt nach Darios Moment (vor dem Krimi-Schluss): eine Stärke auch jemand anderem sagen
+    { wenn: (m) => !!(m.k2StaerkeDario || m.k2StaerkeDarioFragen), dann: [['du', '(denkt) Dario hat sich gefreut. Wem noch?']], sonst: [['du', '(denkt) Was kann jemand anders gut? Wem sag ich’s?']] },
+    { handy: { wer: 'Notiz', wann: 'Freitag', text: '💬 Jemandem eine Stärke sagen. Mit Beweis. Wem?' } },
+    { fest: true, wahl: [
+      { t: '👥 Jemand aus der Klasse.', merke: 'k2SagenKlasse', dann: [] }, { t: '🏀 Jemand im Training.', merke: 'k2SagenTraining', dann: [] },
+      { t: '💬 Per Nachricht.', merke: 'k2SagenNachricht', dann: [] }, { t: '❔ Weiß noch nicht.', merke: 'k2SagenOffen', dann: [] },
+    ] },
+    { handy: null },
     // Was du Luca gesagt hast, hat einer gehört
     { wenn: (m) => !!m.lucaWiderspruch && !m.k2DarioSahBeweis, dann: [['dario', '(beim Aussteigen) Hab gehört, was du Luca gesagt hast. … Mutig.']],
       sonst: [{ wenn: (m) => !!m.lucaMitgelacht, dann: [['dario', '(beim Aussteigen) „Die Taube war gut.“ Hast du Luca gesagt. Hab’s gehört.']] }] },
@@ -632,12 +661,6 @@ export const GESPRAECHE_N2 = {
     { wenn: (m) => !!(m.heftReingeschaut || m.k1BeiLina || (m.linaVertraut && m.fotoLina)), dann: [['erzaehler', 'Den Strich kennst du. Vom Brunnen.']] },
     { tu: 'n2_zeichnung' },
     { szene: 'verdacht', id: 'wand2', pruefe: false, def: { titel: 'Verdachts-Wand · Freitag', frage: 'Wer steckt hinter @annexe.cam? Nur Spuren zählen.', leute: ['dario', 'lina', 'kenan'], offen: 'Noch zu früh.' }, ausgang: (r) => r.wahl, folgen: {} },
-    { handy: { wer: 'Notiz', wann: 'Freitag', text: '💬 Jemandem eine Stärke sagen. Mit Beweis. Wem?' } },
-    { fest: true, wahl: [
-      { t: '👥 Jemand aus der Klasse.', merke: 'k2SagenKlasse', dann: [] }, { t: '🏀 Jemand im Training.', merke: 'k2SagenTraining', dann: [] },
-      { t: '💬 Per Nachricht.', merke: 'k2SagenNachricht', dann: [] }, { t: '❔ Weiß noch nicht.', merke: 'k2SagenOffen', dann: [] },
-    ] },
-    { handy: null },
     { tu: 'kapitelEnde' },
   ],
 };
@@ -679,18 +702,24 @@ export const tunN2 = (c) => ({
   },
   // Foto der Bank für den Rückblick – erst, wenn alle sitzen (nach den hin-Zeilen im Gespräch: kurz später)
   n2_bankFoto: () => { setTimeout(() => c.foto && c.foto('k2Bank', { von: [-3.4, 1.55, 23.6], auf: [-2.0, 0.6, 27.6], fov: 42 }), 900); },
-  n2_nummer: () => (c.S.merke.nummerBlockiert ? [['erzaehler', 'Die Nummer von damals ist blockiert. Still.']]
-    : [['erzaehler', 'Die Nummer von damals: still.']]),
+  // Runde 5: statt „Die Nummer von damals“ die einzige Frage nach dem echten Leben – den Plan aus Kapitel 1 (ohne Lob, ohne Tadel)
+  n2_nummer: () => { const m = c.S.merke;
+    if (m.k1Dinge == null && !(m.k1DingeBus || m.k1DingePause || m.k1DingeBett || m.k1DingeOffen)) return [];
+    return [['du', '(denkt) Drei Dinge. Letzte Woche vorgenommen. Probiert?'], { fest: true, wahl: [
+      { t: 'Ja. Einmal.', merke: 'k2DingeProbiert', dann: [['du', '(denkt) Einmal ist einmal.']] },
+      { t: 'Nicht dran gedacht.', merke: 'k2DingeVergessen', dann: [['du', '(denkt) Normal. Vielleicht heute im Bus.']] },
+      { t: 'Hat nicht geklappt.', merke: 'k2DingeNichtGeklappt', dann: [['du', '(denkt) Dann kleiner. Ein Ding reicht für den Anfang.']] },
+    ] }]; },
   n2_gegenlisteFolge: () => {
     const m = c.S.merke;
     if (m.gegenlisteNoahGefragt) return [['ben', '(liest mit) „bitte nicht. auch keine nette.“ … Okay. Dann eben nicht.'], ['erzaehler', 'Er löscht den Entwurf. Er isst nicht mehr weiter.']];
     if (m.gegenlisteGeloescht) return [['ben', 'Ey! … (atmet aus) Vielleicht besser so.']];
     if (m.gegenlisteNoahSuchen) {
       m.gegenlistePost = true; m.liste_jo = true; m.liste_ben = true;
-      const summt = m.listeGemeldet || m.milaGemeldet ? 'Dann kommt Ben die Treppe hoch. Sein zweites Handy in der Hand. Gepostet.' : 'Dann summen beide Handys. Ben hat gepostet.';
+      const summt = m.listeGemeldet || m.milaGemeldet ? 'Ben kommt die Treppe hoch. Gepostet.' : 'Beide Handys summen. Ben hat gepostet.';
       if (m.listeGelacht && m.k2Entschuldigt) return [['erzaehler', 'Du findest Noah auf der Treppe hinter dem CDI. Er rückt ein Stück. ' + summt],
         ['noah', '(schaut aufs Handy, dann zu dir) Du hast sorry gesagt. Bleib.']];
-      if (m.listeGelacht) return [['erzaehler', 'Du findest Noah auf der Treppe hinter dem CDI. Er steht auf, als du kommst. ' + summt],
+      if (m.listeGelacht) return [['erzaehler', 'Treppe hinter dem CDI. Noah steht auf, als du kommst. ' + summt],
         { wahl: [
           { t: '„Sorry. Ich hab mitgelacht.“', merke: ['k2Entschuldigt', 'k2SorrySpaet'], herz: { noah: 1 }, dann: [['noah', '(bleibt stehen) … Spät. Aber okay.'], ['erzaehler', 'Er setzt sich wieder. Eine Stufe weiter unten.']] },
           { t: '(Nichts sagen.)', dann: [['noah', '(im Weggehen) Erst lachen. Dann suchen.']] },
@@ -721,7 +750,7 @@ export const tunN2 = (c) => ({
   // Freitag: was die Woche bei Noah hinterlassen hat (Liste, Turm, Lucas Video) – er sagt es im Vorbeigehen
   n2_noahFreitag: () => {
     const m = c.S.merke, z = [];
-    if (m.joLange) z.push(['jo', '(im Vorbeigehen) Und? Die lange Geschichte?'], { wahl: [
+    if (m.joLange || m.joAbgeblockt) z.push(['jo', m.joLange ? '(im Vorbeigehen) Und? Die lange Geschichte?' : '(im Vorbeigehen) Und? Warum P?'], { wahl: [
       { t: '⏭ „Weiter.“', merke: 'k2JoWeiter', dann: [['jo', '(grinst) Okay. Weiter.']] },
       { t: '„Montag.“', dann: [['jo', 'Montag. Ich merk’s mir.']] },
     ] });
@@ -732,12 +761,13 @@ export const tunN2 = (c) => ({
     if (m.turmFoto) n.push(['noah', (n.length ? '' : '(im Vorbeigehen) ') + 'Ich geh nicht mehr hin. Ins Jugendhaus.']);
     else if (m.turmGeschuetzt) n.push(m.turmAendern ? ['noah', '(dreht sich noch mal um) Danke. Für Mittwoch.'] : ['noah', '(im Vorbeigehen) Das Dach ist drauf.']);
     if (m.k2NoahImBild) n.push(['noah', (n.length ? '' : '(im Vorbeigehen, leise) ') + 'Ich bin in Lucas Story. Hinten. Wieder.']);
+    else if (m.gegenlisteGepostet && n.length < 2) n.push(['noah', (n.length ? '' : '(im Vorbeigehen, leise) ') + 'Jetzt bin ich auf zwei Listen.']);
     if (m.listeBeiNoah || m.noahRausGefragt) n.push(['noah', '(im Vorbeigehen) Treppe hinterm CDI. Montag wieder?']);
     else if (m.noahNichtEgal) n.push(['noah', '(im Vorbeigehen, leise) Mir auch nicht mehr. Egal, mein ich.']);
     z.push(...n.slice(0, 2));
     // Foto/Video von Noah: eine zweite Chance im Vorbeigehen (klein, ohne Publikum)
-    if ((m.turmFoto || m.k2NoahImBild) && n.length) z.push({ wahl: [
-      { t: m.turmFoto && m.k2NoahImBild ? '„Sorry. Foto und Video.“' : m.turmFoto ? '„Sorry. Wegen dem Foto.“' : '„Sorry. Wegen dem Video.“', merke: 'k2NoahSorryBild', staerke: 'ehrlich', herz: { noah: 1 }, dann: [['noah', '(bleibt kurz stehen) … Okay.']] },
+    if ((m.turmFoto || m.k2NoahImBild || m.gegenlisteGepostet) && n.length) z.push({ wahl: [
+      { t: m.turmFoto && m.k2NoahImBild ? '„Sorry. Foto und Video.“' : m.turmFoto ? '„Sorry. Wegen dem Foto.“' : m.k2NoahImBild ? '„Sorry. Wegen dem Video.“' : '„Sorry. Die Gegenliste.“', merke: 'k2NoahSorryBild', staerke: 'ehrlich', herz: { noah: 1 }, dann: [['noah', '(bleibt kurz stehen) … Okay.']] },
       { t: '(Nichts sagen.)', dann: [] },
     ] });
     if (!n.length) z.push(['dario', '(neben dir) Noahs Platz in der Kantine war leer. Seit Dienstag.']);

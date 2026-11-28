@@ -454,10 +454,13 @@ export function createUI({ root, input, speech }) {
     if (!ui.festeReihenfolge && !opts.fest) for (let i = wahlReihe.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const t = wahlReihe[i]; wahlReihe[i] = wahlReihe[j]; wahlReihe[j] = t; }
     // opts.gesperrt: { i: Grund } (Steuerpult auf Rot) · opts.tags: { i: Hinweis } (z. B. „Weil du hingeschaut hast.“) · opts.extra: [{ id, t }] → { extra: id }
     const zu = opts.gesperrt || {}, tg = opts.tags || {};
-    dialog.querySelector('.ly-d-optionen').innerHTML = wahlReihe.map((i, pos) => '<button type="button" data-i="' + i + '"' + (zu[i] ? ' class="zu" aria-disabled="true"' : '') + '><kbd>' + (pos + 1) + '</kbd><span>' + esc(optionen[i]) +
+    // Rot: die Hilfe (✋/🫁) steht auf dem Platz der gesperrten Antwort – so bleiben es höchstens vier Knöpfe; die Antwort bleibt klein sichtbar (🔒)
+    const rest = (opts.extra || []).slice(), ersatz = {};
+    for (const i of wahlReihe) if (zu[i] && rest.length) ersatz[i] = rest.shift();
+    dialog.querySelector('.ly-d-optionen').innerHTML = wahlReihe.map((i, pos) => ersatz[i] ? '<button type="button" class="hilfe" data-x="' + esc(ersatz[i].id) + '"><kbd>' + (pos + 1) + '</kbd><span>' + esc(ersatz[i].t) + '<small class="ly-d-sperre">🔒 ' + esc(optionen[i]) + ' – geht gleich wieder</small></span></button>' : '<button type="button" data-i="' + i + '"' + (zu[i] ? ' class="zu" aria-disabled="true"' : '') + '><kbd>' + (pos + 1) + '</kbd><span>' + esc(optionen[i]) +
       (zu[i] ? '<small class="ly-d-sperre">' + (/Stopp/.test(zu[i]) ? '✋ ' : '🫁 ') + esc(zu[i]) + '</small>' : tg[i] ? '<small class="ly-d-neu' + (/^📎/.test(tg[i]) ? ' beweis' : '') + '">' + (/^📎/.test(tg[i]) ? '' : '👁 ') + esc(tg[i]) + '</small>' : '') + '</span></button>').join('') +
-      (opts.extra && opts.extra.length ? '<div class="ly-d-extra">' + opts.extra.map((x) => '<button type="button" class="ly-btn" data-x="' + esc(x.id) + '">' + esc(x.t) + '</button>').join('') + '</div>' : '');
-    wahlFn = (i) => { if (i < 0 || i >= optionen.length || zu[i]) return; wahlFn = null; ok(i); };
+      (rest.length ? '<div class="ly-d-extra">' + rest.map((x) => '<button type="button" class="ly-btn" data-x="' + esc(x.id) + '">' + esc(x.t) + '</button>').join('') + '</div>' : '');
+    wahlFn = (i) => { if (i < 0 || i >= optionen.length) return; if (zu[i]) { if (ersatz[i]) { wahlFn = null; ok({ extra: ersatz[i].id }); } return; } wahlFn = null; ok(i); };
     dialog.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => wahlFn && wahlFn(+b.dataset.i); });
     dialog.querySelectorAll('[data-x]').forEach((b) => { b.onclick = () => { if (!wahlFn) return; wahlFn = null; ok({ extra: b.dataset.x }); }; });
     const b0 = dialog.querySelector('[data-i]'); if (b0) setTimeout(() => { try { b0.focus({ preventScroll: true }); } catch (e) { /* egal */ } }, 30);
@@ -611,12 +614,15 @@ export function createUI({ root, input, speech }) {
    if (ersterStart) { einstSpeichern(); setTimeout(() => einstPanel(zeigeTitel), 750); } else zeigeTitel();   // nach dem Ausblenden des Ladebilds
   });
 
-  ui.ende = ({ leute, freunde = null, brief = null, staerken, entdeckt, gesamt, kap = 1, ueberschrift = 'Geschafft', weiter = '', vorschau = '', frage = '', chronik = [], bilder = [] }) => new Promise((ok) => {
+  ui.ende = ({ leute, freunde = null, brief = null, staerken, entdeckt, gesamt, kap = 1, ueberschrift = 'Geschafft', weiter = '', vorschau = '', frage = '', chronik = [], kern = [], bilder = [] }) => new Promise((ok) => {
     const konfetti = ui.wenigBewegung ? '' : '<div class="ly-konfetti" aria-hidden="true">' + Array.from({ length: 24 }, (_, n) => '<i style="left:' + ((n * 41) % 100) + '%;--d:' + (n % 6) * 0.18 + 's;--f:' + ['#e9734a', '#2fb8a8', '#f2b134', '#5fa0d0', '#e85d75', '#8a7bc8'][n % 6] + ';--r:' + (n * 37 % 360) + 'deg"></i>').join('') + '</div>';
     const k = ebeneAuf('ende', konfetti + '<div class="ly-e-stempel">Kapitel ' + kap + ' ✓</div><h2>' + esc(ueberschrift) + '</h2>' +
       // Rückblick in Bildern: echte Bilder aus dem eigenen Spiel – Grundlage fürs Gespräch mit der Lehrperson
       (bilder.length ? '<div class="ly-e-bilder"><h3>Rückblick in Bildern</h3><div class="ly-e-bild-reihe">' + bilder.map((b, n) => '<figure class="ly-e-bild' + (b.auch ? ' ly-e-auch' : '') + '"><img src="' + esc(b.url) + '" alt="' + esc(b.titel) + '"><figcaption><b>' + (n + 1) + ' · ' + esc(b.titel) + '</b>' + (b.text ? '<small>' + esc(b.text) + '</small>' : '') + '</figcaption></figure>').join('') + '</div></div>' : '') +
-      (chronik.length ? '<div class="ly-e-chronik"><h3>' + (kap === 1 ? 'Dein Montag' : 'Deine Woche') + ' – was du entschieden hast</h3><ul>' + chronik.map((t) => '<li>' + esc(t) + '</li>').join('') + '</ul></div>' : '') +
+      // Schwache Leser: höchstens sechs Kernzeilen, der Rest aufklappbar
+      (chronik.length ? (() => { const k = kern.length && kern.length < chronik.length ? kern : chronik, rest = k === chronik ? [] : chronik.filter((t) => !kern.includes(t));
+        return '<div class="ly-e-chronik"><h3>' + (kap === 1 ? 'Dein Montag' : 'Deine Woche') + ' – was du entschieden hast</h3><ul>' + k.map((t) => '<li>' + esc(t) + '</li>').join('') + '</ul>' +
+          (rest.length ? '<details class="ly-e-mehr"><summary>Alle Sätze (' + chronik.length + ')</summary><ul>' + rest.map((t) => '<li>' + esc(t) + '</li>').join('') + '</ul></details>' : '') + '</div>'; })() : '') +
       (brief ? '<div class="ly-e-brief"><span class="ly-j-name" style="--f:' + esc(brief.farbe) + '">' + esc(brief.von) + '</span> schreibt dir: „' + esc(brief.text) + '“</div>' : '') + freundesKreis(freunde) + '<div class="ly-e-spalten"><section><h3>Menschen</h3><ul class="ly-j-leute">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + '</span><span class="ly-herzen">' + '♥'.repeat(Math.max(0, Math.min(5, l.herz))) + '<i>' + '♥'.repeat(5 - Math.max(0, Math.min(5, l.herz))) + '</i></span></li>').join('') + '</ul></section>' +
       '<section><h3>Deine Stärken heute</h3><ul class="ly-j-staerken">' + (staerken.length ? staerken.map((s) => '<li><b>' + esc(s.name) + '</b><small>' + esc(s.text) + '</small></li>').join('') : '<li><small>Heute nix Besonderes. Passiert.</small></li>') + '</ul>' +
       '<p class="ly-leer">Entdeckt: ' + entdeckt + ' von ' + gesamt + ' Orten</p></section></div>' +

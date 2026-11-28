@@ -155,7 +155,7 @@ export const GESPRAECHE_N3 = {
           nichts: { merke: 'manonListeNichts' }, jo: { merke: 'manonListeJo' } } },
       { wenn: (m) => !!m.manonListeJo, dann: [['erzaehler', 'Zwei Reihen hinter Jo legt Noah den Stift weg.']],
         sonst: [{ wenn: (m) => !!m.manonListeNoah, dann: [['manon', '(dreht sich zu Noah um, leise) Pardon … la liste ?'], ['noah', '(überrascht) … Alt. Gemein. Egal.']] }] },
-      ['sabli', 'Handys weg. Alle.'],
+      ['sabli', 'Handys weg. Alle. Jo, du bleibst nachher.'],
     ], sonst: [
       ['erzaehler', 'Mme Sabli schreibt an die Tafel. Manon schiebt dir unter dem Tisch ihr Handy hin.'],
       ['manon', '(flüstert) Ils m’ont mise dans le groupe de la classe. Regarde.'],
@@ -235,7 +235,7 @@ export const GESPRAECHE_N3 = {
     { beweis: 'k3Bissig', t: 'Kenan (7P1) nennt Yusuf „den Bissigen“.' },
     ['erzaehler', 'Zwei aus der 7P1 lachen. Dario nicht. Er schaut auf sein Handy.'],
     { wahl: [
-      { t: '„Lass Yusuf da raus.“', staerke: 'klar', merke: 'k3SkateYusuf', dann: [['kenan', 'Uh. Ein Beschützer.'], ['dario', '(schaut kurz hoch. Zu dir.)']] },
+      { t: '„Lass Yusuf da raus.“', staerke: 'klar', merke: 'k3SkateYusuf', dann: [['kenan', 'Uh. Beschützen, ja?'], ['dario', '(schaut kurz hoch. Zu dir.)']] },
       { t: '(Mitlachen.)', merke: 'k3SkateGelacht', dann: [['kenan', 'Siehst du. Mit dir kann man reden.']] },
       { t: '(Nichts sagen.)', dann: [['kenan', '(zuckt mit den Schultern) War nur Spaß.']] },
     ] },
@@ -289,11 +289,11 @@ export const GESPRAECHE_N3 = {
     { wenn: (m) => !!(m.manonListeGeglaubt || m.manonListeJo), dann: [['jo', '(grinst) Guck. Manon sitzt schon ganz weit weg von Noah. Die checkt das.']] },
     { wenn: (m) => !!(m.benSelbst || m.benFuerIhn), dann: [['ben', '(gähnt, zu Yusuf) Samstag, zehn Uhr. Korb. Wieder?'], ['yusuf', '(nickt kurz)']] },
     { wenn: (m) => m.manonPauseAngebot && !m.pause3Manon, dann: [['manon', '(an dir vorbei, leise) Lundi. Pause. J’ai attendu.']] },
-    ['sommer', '(zieht einen Zettel) {name}. Du stellst auf. Fünf Leute. Schnell.'],
+    ['sommer', '(liest vom Zettel) Erste Hälfte: Yusuf, Ben, Jo, Mila, Chiara. Und {name}.'],
+    ['sommer', 'Zur Halbzeit wird getauscht. Alle spielen.'],
     // Kapitel 1, Sport: „Wer führt, trägt.“ Wer Yusuf gut geführt hat, den will er im Team. Wer sein Stopp übergangen hat, den nicht.
     { wenn: (m) => m.sportGut && !m.sportStoppIgnoriert, dann: [['yusuf', '(leise) Weißt du noch? Die Hütchen. Ich vertrau dir.']] },
     { wenn: (m) => m.sportJoStopp || m.sportNoahHand, dann: [['erzaehler', 'Noah schaut kurz hoch. Zu dir. Er hat die Sache mit der Hand nicht vergessen.']] },
-    { szene: 'aufstellung', id: 'k3Aufstellung', def: () => ({ wo: 'Turnhalle · 7P2', leute: WAND(), anzahl: 5, schnell: true, zeit: 10 }), ausgang: () => 'ok', folgen: { ok: {} } },
     { tu: 'n3_aufstellung' },
     { tu: 'n3_uebrig' },
     ['sommer', 'Anpfiff!'],
@@ -309,14 +309,14 @@ export const GESPRAECHE_N3 = {
     { tu: 'n3_gangStart' },
     { foto: 'k3Yusuf', von: [42.6, 0.55, 0.2], auf: [45.6, 1.35, -3.4], fov: 26 },
     { foto: 'auchUhr3', von: [45.4, 1.6, -2.6], auf: [46.0, 4.0, -5.8], fov: 40 },
-    { wenn: (m) => !!m.k3Letzter, dann: [['yusuf', '(zu dir) Und du! Wer stellt denn so auf?! Was glotzt ihr alle so?!']], sonst: [['yusuf', '(zu dir) Und du! Was glotzt ihr alle so?!']] },
+    ['yusuf', '(zu dir) Und du! Was glotzt ihr alle so?!'],
     { foto: 'k3Pult', wer: 'du', von: [0.9, 1.6, 1.4], auf: [0, 1.4, 0], fov: 38 },
     // Das erste Körper-Signal (Heft #02, Stunde 3): Wer es in zwei Sekunden merkt und atmet, bleibt auf Gelb. Wer zu spät ist, landet auf Rot.
     { pult: { g: 'Wut', w: 5 } },
     { szene: 'stoerung', id: 'k3Hals', pruefe: false,
       def: { bild: 'k3Pult', t: 'Dein Körper wird heiß. Jetzt.', hin: '🫁 Atmen', bleib: 'Zurückstarren', zeit: 2.5 },
       ausgang: (r) => (r.hin ? 'frueh' : 'spaet'),
-      folgen: { frueh: { merke: 'k3HalsFrueh', staerke: 'atmen', dann: [{ pult: { w: 6 } }, ['erzaehler', 'Ein Atemzug. Heiß ist es noch. Aber du kannst denken.']] },
+      folgen: { frueh: { merke: 'k3HalsFrueh', staerke: 'atmen', dann: [{ pult: { w: 6 } }, ['du', '(denkt) Heiß. Atmen. Und drunter?']] },
         spaet: { dann: [{ pult: { w: 8 } }, ['erzaehler', 'Zu spät. Alle schauen. Auf ihn. Auf dich.']] } } },
     // Folge von Montag: Wer an der Skate-Ecke mitgelacht hat, hat es jetzt schwerer (zweimal atmen)
     { wenn: (m) => !!m.k3SkateGelacht, dann: [['yusuf', 'Du lachst doch mit Kenan. Am Montag. Hab ich gesehen.'], { pult: { plus: 3 } }] },
@@ -412,7 +412,7 @@ export const RUECKBLICK_N3 = (m) => {
   const n = m.manonAngekommen || 0;
   return [
     { id: 'k3Manon', titel: 'Am Tor', text: m.manonHallo ? 'Manon mit ihrem Zettel. Du hast ihr den Weg gezeigt.' : m.manonVorbei ? 'Manon mit ihrem Zettel. Du bist vorbeigegangen.' : 'Manon mit ihrem Zettel. Du hast sie zu Mme Sabli geschickt.' },
-    { id: 'k3Halle', titel: 'Deine Aufstellung', text: (m.k3Team || []).map((id) => F[id] ? F[id].name : id).join(', ') + (m.k3Uebrig && m.k3Uebrig.length ? '. An der Wand blieben: ' + m.k3Uebrig.map((id) => F[id] ? F[id].name : id).join(', ') + '.' : '.') },
+    { id: 'k3Halle', titel: 'Die Aufstellung', text: (m.k3Team || []).map((id) => F[id] ? F[id].name : id).join(', ') + (m.k3Uebrig && m.k3Uebrig.length ? '. An der Wand blieben: ' + m.k3Uebrig.map((id) => F[id] ? F[id].name : id).join(', ') + '.' : '.') },
     { id: 'k3Yusuf', titel: 'Im Gang', text: m.k3Uhr ? 'Yusuf, rot vor Wut. Darunter: Angst um seinen kleinen Bruder.' : m.k3UhrSpaet ? 'Yusuf, rot vor Wut. Am Freitag hast du nach der Uhr gefragt. Darunter: sein Bruder.' : 'Yusuf, rot vor Wut. Alle haben nur die Wut gesehen.' },
     { id: 'k3Pult', titel: 'Du, in dem Moment', text: (m.k3HalsFrueh ? 'Heiß. Du hast sofort geatmet. ' : m.rotGeatmet3 ? 'Erst Rot. Dann hast du geatmet. ' : 'Rot. ') + (m.k3Uhr ? 'Dann hast du gefragt.' : m.k3Zurueck ? 'Du hast zurückgeschrien.' : m.k3Sommer ? 'Dann hast du Frau Sommer geholt.' : m.k3Dazwischen ? 'Du hast dich dazwischengestellt.' : 'Alle haben geschaut.')
       + (() => { const a = m.k3LeiterGenervt ? 'genervt' : m.k3LeiterSauer ? 'sauer' : m.k3LeiterWuetend ? 'wütend' : m.k3LeiterRasend ? 'rasend' : ''; if (!a) return '';
@@ -458,12 +458,12 @@ export const tunN3 = (c) => ({
       ] },
       // Rückmeldung ohne richtig/falsch: nur, was der Körper gezeigt hat
       { wenn: (x) => hoch && !!(x.k3LeiterGenervt || x.k3LeiterSauer), dann: [[wer, '(schaut dich an) Hm. Dein Gesicht war knallrot.']] },
-      { wenn: (x) => !!x.k3Zurueck, dann: [[wer, 'Dein Satz: „Schrei mich nicht an!“ Und drunter?']], sonst: [[wer, 'Und unter der Wut?']] },
+      [wer, EIGEN[wer]],
+      { wenn: (x) => !!x.k3Zurueck, dann: [[wer, 'Dein Satz: „Schrei mich nicht an!“ Und bei dir? Drunter?']], sonst: [[wer, 'Und bei dir? Drunter?']] },
       { fest: true, wahl: [
         { t: '„Weiß nicht.“', merke: 'k3DrunterWeiss', dann: [] }, { t: '„Angst.“', merke: 'k3DrunterAngst', dann: [] },
         { t: '„Scham.“', merke: 'k3DrunterScham', dann: [] }, { t: '„Nichts.“', merke: 'k3DrunterNichts', dann: [] },
       ] },
-      [wer, EIGEN[wer]],
       [wer, 'Wo merkst du so was zuerst? Bei mir: ' + SIG[1] + '.'],
       { szene: 'koerper', id: 'k3Signal', pruefe: false,
         def: { wo: 'Nur für dich', frage: 'Wo merkst du Wut zuerst? Tipp an.', vergleich: [{ wer: F[wer], zonen: [SIG[0]], satz: 'Bei mir: ' + SIG[1] + '.' }] },
@@ -471,7 +471,7 @@ export const tunN3 = (c) => ({
           x[k || 'k3SignalWeiss'] = true; return 'ok'; }, folgen: { ok: {} } },
       [wer, 'Achte mal drauf. Wann?'],
       { fest: true, wahl: [
-        { t: '❔ Weiß noch nicht.', merke: 'k3AchtenOffen', dann: [[wer, 'Okay. Vielleicht merkst du es einfach.']] },
+        { t: '❔ Weiß noch nicht.', merke: 'k3AchtenOffen', dann: [[wer, 'Okay. Montag frag ich trotzdem.']] },
         { t: '⚽ Im Sport.', merke: 'k3AchtenSport', dann: [[wer, 'Gut. Montag frag ich.']] },
         { t: '🏫 In der Pause.', merke: 'k3AchtenPause', dann: [[wer, 'Gut. Montag frag ich.']] },
         { t: '🎮 Beim Zocken.', merke: 'k3AchtenZocken', dann: [[wer, '(grinst) Da merk ich’s auch. Montag frag ich.']] },
@@ -566,20 +566,19 @@ export const tunN3 = (c) => ({
       // Wer einsteigt, verpasst Yusufs Freitag – der Halt kommt trotzdem an (nicht deine Schuld, Erwachsene haben einen Plan)
       ...(() => { const halb = !m.k3BruderVerraten && ((m.k3Sommer && !m.k3SommerGeholfen) || m.k3Zurueck);
         const chat = [...(m.k3ChatStopp && !m.k3BruderVerraten ? [{ wer: 'yusuf', t: 'das mit „löscht das“. danke' }] : []),
-          ...(halb ? [{ wer: 'yusuf', t: 'war nicht deine schuld. ich hab geschrien.' }, { wer: 'yusuf', t: 'die schule hat jetzt einen plan für mittwoch.' }] : [])];
+          ...(halb ? [{ wer: 'yusuf', t: 'war nicht deine schuld. ich hab geschrien.' }, { wer: 'yusuf', t: 'die schule hat jetzt einen plan für mittwoch.' }] : []),
+          ...(!halb && m.k3YusufGehalten && !m.k3BruderVerraten ? [{ wer: 'yusuf', t: 'hab’s frau sommer gesagt. mittwochs darf ich früher.' }] : [])];
         if (halb) m.k3HaltBus = true;
         return chat.length ? [{ handy: { wer: 'Yusuf', wann: 'jetzt', chat } }, { handy: null }] : []; })()];
   },
   n3_wort: () => { const m = c.S.merke; m.woerter = (m.woerter || 0) + 1; return []; },
   // Aufstellung: wer zuerst, wer an der Wand bleibt
   n3_aufstellung: () => {
-    const S = c.S, m = S.merke, r = (S.sz && S.sz.k3Aufstellung) || { team: [], uebrig: [] };
-    const team = r.team || [], uebrig = r.uebrig || [];
+    // Runde 5: Frau Sommer stellt auf (fester Zettel). Wen du holst, merkt sich Kapitel 6 jetzt über „übrig“ (n3_uebrig).
+    const m = c.S.merke, team = ['yusuf', 'ben', 'jo', 'mila', 'chiara'], uebrig = ['noah', 'lina', 'manon', 'ayla'];
     m.k3Team = team; m.k3Uebrig = uebrig; m.k3Letzter = null; m.k3UebrigId = null; m.k3UebrigHin = false; m.k3UebrigBlieb = false;
-    const erste = team[0]; if (erste && ['yusuf', 'ben', 'noah', 'lina'].includes(erste)) m['wahl' + erste[0].toUpperCase() + erste.slice(1)] = true;   // Kapitel 6 erinnert sich
     const zeilen = [];
     if (team.includes('ben') && !m.benWach) zeilen.push(['ben', '(gähnt) Ich bin da. Ich bin voll da.']);
-    if (uebrig.includes('yusuf')) zeilen.push(['yusuf', '(zu laut) Echt jetzt? Ich bin der Schnellste hier.']);
     return zeilen;
   },
   // „Übrig“: Beim Anpfiff ruft einer quer durch die Halle. Hingehen kostet den ersten Angriff – und zur Halbzeit wird wirklich getauscht.
@@ -590,9 +589,9 @@ export const tunN3 = (c) => ({
     const ruf = (m.k3Team || []).includes('jo') && id !== 'jo' ? ['jo', '(laut, quer durch die Halle) ' + name + ' wie immer übrig! 😂'] : ['kenan', '(von der 7P1-Seite) Ey! ' + name + ' wie immer übrig!'];
     return [ruf, { szene: 'stoerung', id: 'k3Uebrig', pruefe: false,
       def: { bild: { wer: id, von: [1.4, 1.6, 2.0], auf: [0, 1.2, 0], fov: 44 }, t: name + ' steht allein an der Wand. Ein paar lachen.', hin: 'Zu ' + name, bleib: 'Anpfiff abwarten', zeit: 6 },
-      ausgang: (r) => (r.hin ? 'hin' : 'bleib'),
+      ausgang: (r, x) => { if (r.hin && ['noah', 'lina'].includes(id)) x['wahl' + id[0].toUpperCase() + id.slice(1)] = true; return r.hin ? 'hin' : 'bleib'; },   // Kapitel 6 erinnert sich
       folgen: { hin: { merke: 'k3UebrigHin', herz: { [id]: 2 }, dann: [['du', 'Nimm meinen Platz. Erste Hälfte.'], [id, UEBRIG_SATZ[id] || 'Okay.'], ['erzaehler', 'Du setzt dich auf die Bank. Die Halle schaut kurz. Dann nicht mehr.']] },
-        bleib: { merke: 'k3UebrigBlieb', dann: [['erzaehler', name + ' setzt sich auf die Bank. Ganz ans Ende.']] } } }];
+        bleib: { merke: 'k3UebrigBlieb', dann: [['erzaehler', name + ' setzt sich auf die Bank. Ganz ans Ende.'], ['sommer', '(laut) ' + name + ', zweite Hälfte bist du drin. Fest.']] } } }];
   },
   n3_spielEnde: () => {
     const m = c.S.merke, st = m.k3Stand || '', id = m.k3Letzter, wer = id && F[id] ? F[id].name : '';

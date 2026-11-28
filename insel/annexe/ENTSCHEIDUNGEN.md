@@ -630,3 +630,33 @@ Fehler bekommen eine faire Folge UND eine zweite Chance; überall, wo jemand blo
   Sicht, danach „🔎 Unter dem Lachen: ein leeres Blatt“ (Wiederkehr aus K3) · Freitag vor der Klasse: zweite Signal-Probe („Wie am
   Mittwoch.“) · Ende: „Nächster Test. Mein Zettel liegt …“ (🎒/📄/🧠/❔) · Chronik: Plan beim Foto statt im Test benutzt, keine
   Doppelzeile, „gefühlt niedriger“ auch bei sechs Fingern, Zeile-drei-Frage, wenn auf dem Plan niemand steht.
+
+### Serie 3, Runde 5 – Abschluss-Check: was bleibt, schwächste Szene ersetzen, kürzere Woche, Halt überall
+- **Regel der Auftraggeberin angewandt:** Schwache Szenen werden nicht verbessert, sondern ersetzt.
+  - K1: Der Nacht-Chat mit der unbekannten Nummer ist weg; es bleibt eine Karte ohne Wahl. Grund: dritter Handy-Bildschirm in Folge, Druck ohne Skill. Linas Faden bleibt.
+  - K3: Die Aufstellung „9 Namen in 10 Sekunden“ ist weg; Frau Sommer liest das Team vor. Die echte Entscheidung („übrig“) bleibt.
+  - K4: Die Wahl „Zettel nach oben“ und die Parkschein-Täterfrage am Freitag sind weg.
+- **Rot-Modus:** Die Hilfe (✋/🫁) steht auf dem Platz der gesperrten Antwort. So sind es höchstens vier Knöpfe; die gesperrte Antwort bleibt klein mit 🔒 sichtbar („geht gleich wieder“).
+- **Üben statt lesen:**
+  - K2-Bus ist ein echtes Suchbild (drei Dinge, der Ort aus dem K1-Plan).
+  - Zu Beginn von K2 die Frage „Drei Dinge – probiert?“.
+  - Darios Stärke mit 📎-Beweis in einem Zug; danach sofort der Plan „Wem noch?“.
+- **Vorbild vor dem Selbst-Tun (K3):** Mila sagt ihr Gefühl zuerst, dann „Und bei dir? Drunter?“.
+- **Kernsätze als eigene Gedanken:**
+  - K3: „(denkt) Heiß. Atmen. Und drunter?“
+  - K4: „(denkt) Zahlen weg. Auf Rot: erst Körper.“
+- **K4 Ampelplan:**
+  - Nach dem Atmen bleibt der Plan (★) erreichbar.
+  - Die zweite Signal-Probe ist leichter, wenn man am Mittwoch zu spät war.
+  - Milas Tausch gilt auch für ein Kopf-Werkzeug auf der Rot-Zeile.
+- **Halt:**
+  - K1: Nacht-Satz auf allen Wegen; Mila schreibt auch nach dem Mitlachen.
+  - K2: „Kommt noch was: Screenshot. Montag zeigen.“
+  - K3: Mme Sabli nach der Liste; Frau Sommer zu „übrig“; Yusuf-Chat im Bleib-Weg.
+  - K4: Lenning zu Noah-Verdacht, Jos Blatt und Chiara; „Zu viel“ darf man sagen (SePAS/116 111).
+- **Zweite Chancen:**
+  - K1: Rafa auch nach 😂.
+  - K2: Turm-Satz „Sorry. Das war deins.“, „Sorry. Die Gegenliste.“, „Weiter“ auch nach „Geht dich nix an“.
+  - K2: Keine Strafe mehr für Linas Weg: Chiara wird knapp Klassensprecherin.
+- **Deine Woche:** Höchstens sechs Kernzeilen, Skill-Momente zuerst, der Rest unter „Alle Sätze“. Das gilt beim Kind am Kapitelende und in der Lehrer-Ansicht. Die Gesprächsfragen K1–K4 sind kürzer, die Lehrer-Kurzzeile zeigt „Rot-Zeile: Kopf“.
+- **Neutral:** Kein Geschlecht für die Spielfigur („Beschützen, ja?“, „Wer ist das mit dem Kreis?“, „Petze.“). Abzeichen und Entdeckungen springen nicht mehr mitten in Szenen auf.

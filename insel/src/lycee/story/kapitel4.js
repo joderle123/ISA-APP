@@ -141,7 +141,7 @@ const TOOL4 = {
   zaehlen: { t: '🔢 Rückwärts zählen.', dann: () => [{ tu: 'n4_zaehlenRot' }] }, parken: { t: '🅿️ Gedanken parken.', dann: () => [{ tu: 'n4_parkenRot' }] },
 };
 const wJetzt = (S) => (S && S.pult && S.pult.w) || 0;
-const zeileJetzt = (m, S) => (wJetzt(S) >= 7 ? planRot(m) : ((m.k4Plan && m.k4Plan.gelb) || planRot(m)));
+const zeileJetzt = (m, S) => (wJetzt(S) >= 7 || ((m.k4Plan && m.k4Plan.gelb) === 'atmen' && planRot(m) && planRot(m) !== 'atmen' && !!m.rotAtemT && Date.now() - m.rotAtemT < 45000) ? planRot(m) : ((m.k4Plan && m.k4Plan.gelb) || planRot(m)));
 const kopfZu = (m, S) => wJetzt(S) >= 7 && !!m.k4KopfRutscht && !!(WERKZEUGE4[zeileJetzt(m, S)] || {}).kopf;
 // Gerade erst geatmet (Rot-Hilfe): nicht gleich noch eine Atem-Übung anbieten – sonst dreimal Atmen in zwei Minuten
 const ebenGeatmet = (m) => !!m.rotAtemT && Date.now() - m.rotAtemT < 45000;
@@ -325,7 +325,7 @@ export const GESPRAECHE_N4 = {
     // Welle 2: Luca und Kenan von der Skate-Ecke
     { wenn: (m) => !m.k4WellenEnde, dann: [
       { hin: { luca: [-0.6, 16.4, 2.6], kenan: [0.8, 17.2, 3.0] } },
-      ['luca', '(von hinten, laut) Ey, 7P2! Ist das der Spicker? Mit dem Kreis?'],
+      ['luca', '(von hinten, laut) Ey, 7P2! Wer ist das mit dem Kreis?'],
       ['kenan', '(grinst) Wie viele Punkte hast du geklaut?'],
       ['luca', 'Respekt. Bei Lenning.'],
       { tu: 'n4_welle' },
@@ -356,9 +356,10 @@ export const GESPRAECHE_N4 = {
     ] },
     { wenn: (m) => !!m.k4Niemand, dann: [['mila', '(leise) Ich hätte dich geholt. Wusste nicht, ob du willst.'], ['mila', 'Oben ist das SePAS. Die Tür ist offen.']] },
     { wenn: (m) => !!m.k4Explodiert, dann: [['mila', '(leise) Das mit Jos Handy. Das war Rot. Dafür gibt’s den Zettel.'], ['mila', 'Oben ist das SePAS. Die Tür ist offen.']] },
-    { wenn: (m) => !!(m.k4ZaehlenRot || m.k4ParkenRot || m.k4Niemand || m.k4Explodiert), dann: [['mila', 'Willst du was tauschen? Auf deinem Zettel.'], { wahl: [
-      { t: '„Rot: Kälte.“', wenn: (m) => !!(m.k4ZaehlenRot || m.k4ParkenRot || m.k4Explodiert) && (m.k4Plan || {}).rot !== 'kalt', merke: ['k4PlanGetauscht', 'k4PlanGeaendert'], dann: [{ tu: 'n4_rot_kalt' }, { tu: 'n4_planKarte' }, ['mila', 'Probier’s Freitag. Zählt nur, wenn’s bei dir wirkt.']] },
-      { t: '„Rot: 4 ein, 8 aus.“', wenn: (m) => !!(m.k4ZaehlenRot || m.k4ParkenRot || m.k4Explodiert) && (m.k4Plan || {}).rot !== 'atmen', merke: ['k4PlanGetauscht', 'k4PlanGeaendert'], dann: [{ tu: 'n4_rot_atmen' }, { tu: 'n4_planKarte' }, ['mila', 'Probier’s Freitag. Zählt nur, wenn’s bei dir wirkt.']] },
+    { wenn: (m) => !!(m.k4PlanKopfRot && !m.k4ZaehlenRot && !m.k4ParkenRot), dann: [['mila', 'Rot: was für den Kopf? Bei mir rutscht das weg.']] },
+    { wenn: (m) => !!(m.k4ZaehlenRot || m.k4ParkenRot || m.k4Niemand || m.k4Explodiert || m.k4PlanKopfRot), dann: [['mila', 'Willst du was tauschen? Auf deinem Zettel.'], { wahl: [
+      { t: '„Rot: Kälte.“', wenn: (m) => !!(m.k4ZaehlenRot || m.k4ParkenRot || m.k4Explodiert || m.k4PlanKopfRot) && (m.k4Plan || {}).rot !== 'kalt', merke: ['k4PlanGetauscht', 'k4PlanGeaendert'], dann: [{ tu: 'n4_rot_kalt' }, { tu: 'n4_planKarte' }, ['mila', 'Probier’s Freitag. Zählt nur, wenn’s bei dir wirkt.']] },
+      { t: '„Rot: 4 ein, 8 aus.“', wenn: (m) => !!(m.k4ZaehlenRot || m.k4ParkenRot || m.k4Explodiert || m.k4PlanKopfRot) && (m.k4Plan || {}).rot !== 'atmen', merke: ['k4PlanGetauscht', 'k4PlanGeaendert'], dann: [{ tu: 'n4_rot_atmen' }, { tu: 'n4_planKarte' }, ['mila', 'Probier’s Freitag. Zählt nur, wenn’s bei dir wirkt.']] },
       { t: '„Schreib dich drauf.“', wenn: (m) => !!m.k4Niemand, merke: ['k4PlanGetauscht', 'k4MilaDrauf'], dann: [{ tu: 'n4_zu_mila' }, { tu: 'n4_planKarte' }, ['mila', '(schreibt „Mila“ in deine Ecke) So.']] },
       { t: '(Lassen.)', merke: 'k4PlanGelassen', dann: [['mila', 'Okay. Dein Zettel.']] },
     ] }] },
@@ -389,7 +390,7 @@ export const GESPRAECHE_N4 = {
       ausgang: (r) => (r.hin ? 'hin' : 'bleib'),
       folgen: { hin: { dann: [{ wahl: [
           { t: '„Gib’s ihm zurück.“', merke: 'k4JoBlattZurueck', herz: { jo: 2 }, staerke: 'mut', dann: [['ben', 'War nur Spaß.'], ['erzaehler', 'Ben gibt es zurück. Jo steckt es weg. Er schaut dich kurz an.']] },
-          { t: '„Eins? Echt?“', merke: 'k4JoBlattGelacht', herz: { jo: -2 }, dann: [['jo', '(reißt das Blatt zurück) Halt die Klappe.'], ['erzaehler', 'Ein paar lachen. Diesmal über Jo.']] },
+          { t: '„Eins? Echt?“', merke: 'k4JoBlattGelacht', herz: { jo: -2 }, dann: [['jo', '(reißt das Blatt zurück) Halt die Klappe.'], ['erzaehler', 'Ein paar lachen. Diesmal über Jo.'], ['lenning', '(laut) Schluss. Noten sind privat.']] },
         ] }] },
         bleib: { merke: 'k4JoBlattWeg', dann: [['lenning', '(laut) Ben. Zurück. Sofort.'], ['erzaehler', 'Jo hat sein Blatt wieder. Er schaut weg.']] } } },
     ['ben', 'Genug Zahlen. SCHNEE!'],
@@ -430,6 +431,7 @@ export const GESPRAECHE_N4 = {
       { t: '„Was heißt ‚zu viel‘?“', merke: 'k4DarioFrage', dann: [['dario', 'Nichts. Vergiss es. … Schöne Ferien.'], ['erzaehler', 'Er setzt sich ganz nach hinten. Er schaut die ganze Fahrt aus dem Fenster.']] },
       { t: '(Neben ihm stehen bleiben. Nichts fragen.)', merke: 'k4DarioDa', herz: { dario: 1 }, dann: [['erzaehler', 'Ihr steht da. Euer Atem macht Wölkchen. Seine werden langsamer.'], ['dario', '(leise) Danke.']] },
     ] },
+    { tu: 'n4_zuVielToast' },
     ['du', '(denkt) Nächster Test. Mein Zettel liegt …'],
     { fest: true, wahl: [
       { t: '❔ Weiß noch nicht.', merke: 'k4NaechstOffen', dann: [] }, { t: '🎒 Im Mäppchen.', merke: 'k4NaechstMaeppchen', dann: [] },
@@ -482,6 +484,7 @@ export const tunN4 = (c) => {
       const rot = [...new Set([...probiert, 'atmen', 'kalt', 'zaehlen'])].slice(0, 3);
       const sig = SIGNAL4(m);
       return [['erzaehler', 'Noch ist Montag. Dein Herz klopft trotzdem. Du nimmst einen kleinen Zettel.'],
+        ...(m.k4VorausKopfRot ? [['du', '(denkt) Eben sind die Zahlen weggerutscht. Auf Rot: erst Körper.']] : []),
         // Ohne Signal aus K3: jetzt finden – die Vorausblende wird zum Körper-Moment
         ...(sig ? [] : [{ szene: 'koerper', id: 'k4SignalKarte', pruefe: false, def: { wo: 'Nur für dich', frage: 'Eben im Test: Wo hast du es zuerst gemerkt?', vergleich: [] },
           ausgang: (r, x) => { const z = (r && r.zonen) || []; x.k4SignalZone = { hals: 'Hals', bauch: 'Bauch', haende: 'Hände', kopf: 'Kopf', brust: 'Brust', beine: 'Beine' }[z[0]] || ''; return 'ok'; }, folgen: { ok: {} } }]),
@@ -542,7 +545,8 @@ export const tunN4 = (c) => {
         folgen: { frueh: { merke: 'k4SignalFrueh', staerke: 'atmen', dann: [{ pult: { plus: -2 } }, { tu: 'n4_fruehToast' }, ['erzaehler', 'Ein Atemzug. Früh. Bevor es kippt.']] },
           spaet: { dann: [['du', '(denkt) Zu spät gemerkt. Jetzt rauscht es.']] } } }];
     },
-    n4_drunterToast: () => { c.ui.toast('<b>🔎 Unter dem Lachen</b><span>Ein leeres Blatt. Drei von acht.</span>', 'ly-t-ent'); return []; },
+    n4_zuVielToast: () => { c.ui.toast('<b>💬 „Zu viel“</b><span>Darf man sagen. Herr Kuedes (SePAS) – oder 116 111, auch in den Ferien.</span>', 'ly-t-ent'); return []; },
+    n4_drunterToast: () => { c.ui.toast('<b>🔎 Unter dem Lachen</b><span>Jos Blatt ist fast leer. Lachen lenkt ab.</span>', 'ly-t-ent'); return []; },
     n4_signalZeile: () => {
       const m = M(), sig = SIGNAL4(m);
       if (!sig) return [];
@@ -562,7 +566,7 @@ export const tunN4 = (c) => {
     // Freitag, vor der Klasse: das Signal meldet sich ein zweites Mal (Milas „Probier’s Freitag“) – ohne Strafe, wenn es zu spät ist
     n4_signal2: () => {
       const m = M();
-      return [{ szene: 'stoerung', id: 'k4Signal2', pruefe: false, def: { t: SIGTEXT(SIGNAL4(m)), hin: '🫁 Atmen', bleib: 'Einfach gehen', zeit: 2.5 },
+      return [{ szene: 'stoerung', id: 'k4Signal2', pruefe: false, def: { t: SIGTEXT(SIGNAL4(m)), hin: '🫁 Atmen', bleib: 'Einfach gehen', zeit: m.k4SignalFrueh ? 2.5 : 4 },
         ausgang: (r) => (r.hin ? 'frueh' : 'spaet'),
         folgen: { frueh: { merke: 'k4Signal2Frueh', dann: [{ tu: 'n4_frueh2Toast' }, ['du', '(atmet einmal aus. Dann los.)']] },
           spaet: { dann: [['du', '(denkt) Wieder spät gemerkt. Aber gemerkt.']] } } }];
@@ -632,10 +636,10 @@ export const tunN4 = (c) => {
     // Kopf-Werkzeug: auf Gelb wirkt es, auf Rot rutscht es weg – und die Rückmeldung sagt, warum (die Farbe), nicht „bringt nichts“
     n4_zaehlenRot: () => { const m = M(), n = m.k4Welle || 1;
       if (W() < 7) { m.k4KopfGelb = true; const z = [['erzaehler', 'Hundert, dreiundneunzig, sechsundachtzig … Jo wird leiser. Dein Plan.'], { pult: { plus: -2 } }]; if (n >= 2) { m.k4Ruhig = true; ende(); z.push(['erzaehler', 'Du zählst weiter. Bis es klingelt.']); } return z; }
-      m.k4ZaehlenRot = true; m.k4KopfRutscht = true; return [['erzaehler', 'Zahlen rutschen weg. Auf Rot: erst Körper.'], { pult: { plus: 1 } }]; },
+      m.k4ZaehlenRot = true; m.k4KopfRutscht = true; return [['du', '(denkt) Zahlen weg. Auf Rot: erst Körper.'], { pult: { plus: 1 } }]; },
     n4_parkenRot: () => { const m = M(), n = m.k4Welle || 1;
       if (W() < 7) { m.k4KopfGelb = true; const z = [['erzaehler', '„Nach der Pause.“ Der Gedanke wartet am Rand. Dein Plan.'], { pult: { plus: -2 } }]; if (n >= 2) { m.k4Ruhig = true; ende(); z.push(['erzaehler', 'Er wartet. Bis es klingelt.']); } return z; }
-      m.k4ParkenRot = true; m.k4KopfRutscht = true; return [['erzaehler', 'Parken? Der Gedanke steht mitten im Hof. Auf Rot kommt der Kopf nicht ran. Erst der Körper.'], { pult: { plus: 1 } }]; },
+      m.k4ParkenRot = true; m.k4KopfRutscht = true; return [['du', '(denkt) Parken geht nicht. Auf Rot: erst Körper.'], { pult: { plus: 1 } }]; },
     n4_kenan: () => {
       const m = M(), z = [['kenan', '(kurz ganz still) … Ich war aufm Klo. Wie die halbe Schule.']];
       if (m.spurZettel) { m.spurZettelKenan = true; z.push(['erzaehler', 'Gelb. Wie der Zettel mit dem Loch am Montag. An genau dieser Tür.']); }
@@ -645,7 +649,7 @@ export const tunN4 = (c) => {
     n4_lenning: () => {
       const m = M(); m.k4LenningGeholt = true; ende();
       return [['erzaehler', 'Du gehst quer über den Hof. Zu Mme Lenning. Sie hat Aufsicht.'], ['du', 'Da ist ein Foto von mir. Aus dem Test. Da steht, ich spicke. Ich hab nicht gespickt.'],
-        ['lenning', '(schaut lange aufs Handy) … Danke, dass du zu mir kommst. Ich schau mir deinen Test genau an. Heute noch.'], ['jo', '(von hinten, laut) Schleimer.'],
+        ['lenning', '(schaut lange aufs Handy) … Danke, dass du zu mir kommst. Ich schau mir deinen Test genau an. Heute noch.'], ['jo', '(von hinten, laut) Petze.'],
         ['lenning', '(dreht sich um) Handys. Alle. In die Kiste. Bis zum Ende der Pause.'], ['erzaehler', 'Stöhnen. Zwölf Handys in einer Kiste. Ein paar schauen dich an, als wärst du schuld.'], ['mila', '(leise, im Vorbeigehen) Gut, dass du gegangen bist.'], { pult: { plus: -2 } }];
     },
     n4_wellenSchluss: () => {
@@ -687,10 +691,8 @@ export const tunN4 = (c) => {
       z.push({ handy: { wer: 'Dein Test', wann: 'Freitag', text: r + ' von 8' + (r >= 6 ? ' · „Gut gemacht.“' : r >= 4 ? ' · „Da geht noch mehr.“' : ' · „Nach den Ferien: zu zweit.“') } },
         ['erzaehler', 'Du faltest das Blatt auf. ' + r + ' von 8.'], { handy: null });
       // Plan im Test nicht benutzt: kein Vorwurf – ein Wenn-dann für nächstes Mal (Heft #03: Plan prüfen, eine Karte tauschen)
-      if (m.k4Plan && m.k4Plan.rot && !m.k4TestSkills && !(m.k4Geparkt || 0)) z.push(['du', '(denkt) Mein Zettel lag unter dem Blatt. Benutzt hab ich ihn nicht.'], { wahl: [
-        { t: '(Zettel nach oben legen.)', merke: 'k4ZettelOben', dann: [['erzaehler', 'Nächstes Mal liegt er oben. Da, wo du hinschaust.']] },
-        { t: '(Lassen.)', merke: 'k4ZettelUnten', dann: [] },
-      ] });
+      if (m.k4Plan && m.k4Plan.rot && !m.k4TestSkills && !(m.k4Geparkt || 0)) z.push(['du', '(denkt) Mein Zettel lag unter dem Blatt. Benutzt hab ich ihn nicht.']);
+      if (m.k4NoahVerdacht) z.push(['lenning', '(laut, zu allen) Noah saß um 8:34 im Saal. Ich weiß das. Schluss mit dem Gerede.']);
       // Wer am Mittwoch Jo genannt hat: Ben fragt nach – war es Jo? (Gesagt ist nicht gemacht.)
       if (m.k4JoMontag) z.push(['ben', '(leise) War’s Jo? Das Foto?'], { wahl: [
         { t: '„Weiß ich nicht.“', merke: 'k4JoNichtBeschuldigt', staerke: 'lesen', dann: [['ben', 'Hm. Jo saß um 8:34 im Saal. Wie wir alle.']] },
@@ -698,18 +700,15 @@ export const tunN4 = (c) => {
       ] });
       // Parkschein (Heft #03): „nach dem Test“ ist jetzt. Wer geparkt hat, holt ihn ab – mit der Frage, die seitdem wartet.
       if ((m.k4Geparkt || 0) > 0 && r >= 4) z.push(['du', '(denkt) Geparkt im Test: „Ich kann das eh nicht.“ – ' + r + ' von 8.']);
-      if ((m.k4Geparkt || 0) > 0) z.push(['du', '(denkt) Parkschein: „Nach dem Test.“ Das ist jetzt.'], { wahl: [
-        { t: '„Wer war um 8:34 am Glas?“', merke: 'k4ParkscheinAbgeholt', staerke: 'hilfe', dann: [['lenning', '(schaut dich lange an) Gute Frage. Ich frag Herrn Kuedes.']] },
-        { t: '(Nicht fragen.)', merke: 'k4ParkscheinLiegen', dann: [['du', '(denkt) Später. Vielleicht.']] },
-      ] });
       // Chiara steht mit ihrem Blatt neben Mme Lenning
       if (m.chiaraSpaeter) z.push({ hin: { chiara: [0.4, 5.2, Math.PI] } }, ['chiara', '(hält dir ihr Blatt hin) Drei von acht. Du hast „später“ gesagt.'], { wahl: [
         { t: '„Sorry. Hab’s vergessen.“', merke: 'k4SpaeterSorry', dann: [['chiara', 'Ja. Hab ich gemerkt.']] },
         { t: '„Nach den Ferien. Versprochen.“', merke: 'k4SpaeterVersprochen', dann: [['chiara', 'Mal sehen.']] },
         { t: '(Karte nehmen. Abfragen.)', merke: 'k4SpaeterAbgefragt', herz: { chiara: 2 }, dann: [['du', 'Sechs mal vier?'], ['chiara', 'Vierundzwanzig. … Jetzt weiß ich’s.']] },
       ] });
-      else if (m.chiaraGestaerkt || m.chiaraFuesse) z.push({ hin: { chiara: [0.4, 5.2, Math.PI] } }, ['chiara', 'Fünf von acht. Danke. Für Montag.'], ['chiara', '(gibt dir eine Karteikarte) Für dich. „Füße in den Boden.“']);
+      else if (m.chiaraGestaerkt || m.chiaraFuesse) z.push({ hin: { chiara: [0.4, 5.2, Math.PI] } }, ['chiara', 'Fünf von acht. Danke. Für Montag.'], ['chiara', '(gibt dir eine Karteikarte) Für dich. ' + (m.chiaraGestaerkt ? '„Die dritte kommt.“' : '„Füße in den Boden.“')]);
       else z.push({ hin: { chiara: [0.4, 5.2, Math.PI] } }, ['erzaehler', 'Neben dir: Chiara. Ihr Blatt hält sie mit der Schrift nach unten.'], { sicht: () => ({ wer: 'chiara', auf: 'du', gedanken: ['Mittwoch, 8:27. Aufgabe drei. Rechteck, sechs mal vier.', 'Die Zahlen schwimmen. Die Sechs sieht aus wie eine Acht.', 'Nichts. Ich schreib irgendwas hin. Hauptsache, da steht was.'] }) });
+      if (!m.chiaraSpaeter && !(m.chiaraGestaerkt || m.chiaraFuesse)) z.push(['lenning', '(leise) Chiara, nach den Ferien: wir zwei.']);
       return z;
     },
     n4_joMontag: () => { const m = M();

@@ -1689,3 +1689,13 @@ body.ly-puls-rot .mv-bild img { animation: mv-unruhig 1.6s ease-in-out infinite;
 .sz-t-ereignis.sz-t-rot { background: #fde2e1; color: #7a1f1a; font-weight: 700; }
 .sz-t-skills.sz-t-hinweis button { box-shadow: 0 0 0 3px #e0574f; }
 .km-gs-kurz { margin: 6px 0 8px !important; padding: 7px 12px; border-radius: 12px; background: #1d3a36; border: 1px solid #3f8f80; color: #d6f5ee !important; font-weight: 600; font-size: 15px !important; line-height: 1.5; }
+
+/* Rot: Hilfe auf dem Platz der gesperrten Antwort */
+.ly-d-optionen button.hilfe { background: #17806f; color: #fff; border-color: #17806f; }
+.ly-d-optionen button.hilfe kbd { background: rgba(255,255,255,.2); color: #fff; }
+.ly-d-optionen button.hilfe small.ly-d-sperre { color: #ffe3dc; font-weight: 600; }
+
+/* Kernzeilen + Rest aufklappbar (Kapitelende und Lehrer-Ansicht) */
+.ly-e-mehr, .km-mehr { margin: .3em 0 .6em; }
+.ly-e-mehr > summary, .km-mehr > summary { cursor: pointer; font-weight: 700; font-size: .92em; opacity: .85; padding: .25em 0; }
+.ly-e-mehr ul, .km-mehr ul { opacity: .85; }
