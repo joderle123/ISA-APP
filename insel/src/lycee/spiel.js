@@ -1464,7 +1464,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         ton(z.ton);
       } else if ('gerd' in z) {   // { gerd: 'rafa' | [x, y, z] | null } – Gerd landet (auf dem Kopf von …) oder fliegt weg
         if (!z.gerd) tiere.gerdLos();
-        else { const p = typeof z.gerd === 'string' && leute[z.gerd] ? leute[z.gerd].f.group.position : null; const q = p ? [p.x + (z.dx || 0), (z.hoehe || 1.32), p.z + (z.dz || 0)] : z.gerd; if (q && q.length === 3) { tiere.gerdAuf(q[0], q[1], q[2]); await new Promise((r) => setTimeout(r, 1700)); } }
+        else { const p = typeof z.gerd === 'string' && leute[z.gerd] ? leute[z.gerd].f.group.position : null; const q = p ? [p.x + (z.dx || 0), (z.hoehe || 1.32), p.z + (z.dz || 0)] : z.gerd; if (q && q.length === 3) { tiere.gerdAuf(q[0], q[1], q[2]); const g0 = Date.now(); await new Promise((r) => setTimeout(r, 1200)); while (!tiere.gerdGelandet() && Date.now() - g0 < 2500) await new Promise((r) => setTimeout(r, 100)); tiere.gerdLanden(); /* Gerd sitzt jetzt sicher – Fotos danach zeigen ihn */ } }
       } else if (z.verdacht) {   // { verdacht: 'dario', spur: 'Handy in der Hand, 7:25' } – Verdachts-Wand
         spurMerken(z.verdacht, ersetze(z.spur || ''), z.still);
       } else if (z.beweis) {   // { beweis: 'id', t: '…' } – 📎 in die Galerie
@@ -4706,7 +4706,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   window.LYCEE = {
     get zustand() { return S; }, get schritt() { return SCHRITTE[S ? S.schritt : 0].id; }, get imGespraech() { return imGespraech; },
     welt, steuerung, leute, sky, camera, scene, req, ui, rr, km,
-    ladePerson: (d) => ladePerson(veil, mitWinter(d)), winterKleidung,   // Test: Figuren und Winterkleidung ansehen
+    ladePerson: (d) => ladePerson(veil, mitWinter(d)), winterKleidung, get gerd() { return tiere.gerdInfo; },   // Test: Figuren und Winterkleidung ansehen
     springe: async (i) => { await starteSchritt(typeof i === 'number' ? i : SCHRITTE.findIndex((s) => s.id === i), true); },
     sitProbe: (id) => situationProbieren({ situation: id, name: 'Sam', figur: 0 }),   // Test: Situation wie „Für Lehrpersonen“ starten
     freiZeit: (t) => { if (freiLauf) freiLauf.rest = Math.max(0.05, freiLauf.dauer - t); },   // Test: im freien Moment vorspulen

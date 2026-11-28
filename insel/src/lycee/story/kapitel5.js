@@ -162,7 +162,7 @@ export const GESPRAECHE_N5 = {
     { tu: 'n5_ferienUmfrage' },
     ['nik', '(von der Bank) Moien. Dein Kollege war schon da. Mit dem Brett.'],
     ['nik', 'Dann ist er wieder gegangen. Ganz schnell.'],
-    { gerd: [-15.95, 0.05, 41.95] },
+    { gerd: [-15.95, 0.17, 41.95] },   // auf dem Gehweg (der liegt höher als die Straße)
     ['erzaehler', 'Gerd landet vor dir. Er pickt. An deinem Schuh.'],
     { szene: 'blase', id: 'k5BlaseBank', pruefe: false, def: { t: 'Die Taube hasst mich.', stufe: 'gefuehrt' },
       ausgang: () => 'ja', folgen: { ja: { dann: [] } } },
@@ -170,7 +170,7 @@ export const GESPRAECHE_N5 = {
       def: { wo: 'Haltestelle · 7:27', echt: 'Gerd pickt an deinem Schuh.', frage: 'Was hätte eine Kamera gesehen? Tipp drauf.', zeit: 14, finde: 1,
         foto: { von: [-17.0, 1.0, 40.8], auf: [-15.75, 0.12, 42.15], fov: 38 },   // von vorn auf Schuh und Gerd (vorher stand die Kamera im Kopf der Spielfigur)
         ergebnis: 'Kopf: „hasst mich“. Kamera: Krümel.',
-        ziele: [{ id: 'kruemel', wo: [-15.8, 0.03, 42.08], r: 0.12, t: 'Krümel. Vom Brötchen.', kurz: 'Krümel am Schuh.' }] },
+        ziele: [{ id: 'kruemel', wo: [-15.95, 0.32, 41.95], r: 0.14, t: 'Gerd pickt Krümel. Vom Brötchen.', kurz: 'Krümel am Schuh.' }] },
       ausgang: (r, m) => { m.k5GerdDa = (m.k5GerdDa || 0) + 1; m.k5GerdGesehen = (m.k5GerdGesehen || 0) + 1; m.k5CheckBank = true; return 'ja'; },
       folgen: { ja: { dann: [['nik', '(lacht) Gerd hasst keinen. Gerd hat Hunger.']] } } },
     { gerd: null },
@@ -209,7 +209,7 @@ export const GESPRAECHE_N5 = {
         { szene: 'schnitt', pruefe: false, def: { kopf: '2 · „Nur ’ne blöde Umfrage.“', bild: TUER_KLASSE, t: 'Kopf hoch. Du gehst ganz normal rein.', ms: 4600 } }] },
     ] },
     ['du', '(denkt) Was war echt? Was hätte eine Kamera gesehen?'],
-    { gerd: [-25.4, 0.05, -21.2] },
+    { gerd: [-25.4, 0.12, -21.2] },
     { szene: 'suchbild', id: 'k5CheckTuer', pruefe: false,
       def: (m) => ({ wo: 'Saal 1.04 · 7:58', echt: zielDu5(m) ? 'Dein Name steht oben in einer Umfrage. Das ist nicht okay.' : 'Dein Name steht in einer Umfrage. Das ist nicht okay.',
         frage: 'Wer schaut dich wirklich an?', zeit: 16, finde: 2, foto: TUER_KLASSE, wackel: zielDu5(m), zahl: 2,
@@ -222,7 +222,7 @@ export const GESPRAECHE_N5 = {
           { id: 'yusuf', wer: 'yusuf', hoehe: 1.1, richtig: false, t: 'Yusuf redet mit Ayla.' },
           { id: 'lina', wer: 'lina', hoehe: 1.1, richtig: false, t: 'Lina schreibt.' },
           { id: 'noah', wer: 'noah', hoehe: 1.1, richtig: false, t: 'Noah schaut aus dem Fenster.' },
-          { id: 'gerd', wo: [-25.4, 0.2, -21.2], bonus: true, r: 0.1, kurz: 'Gerd. Im Klassenzimmer?!' },
+          { id: 'gerd', wo: [-25.4, 0.3, -21.2], bonus: true, r: 0.1, kurz: 'Gerd. Im Klassenzimmer?!' },
         ] }),
       ausgang: (r, m) => { m.k5TuerZahl = (r.gefunden || []).length; m.k5TuerGefunden = r.gefunden || []; m.k5CheckTuer = true; m.k5GerdDa = (m.k5GerdDa || 0) + 1; if ((r.bonus || []).length) m.k5GerdGesehen = (m.k5GerdGesehen || 0) + 1; return 'ja'; },
       folgen: { ja: { dann: [] } } },
@@ -325,8 +325,8 @@ export const GESPRAECHE_N5 = {
 
   // 6 · Mittwoch 13:30: die Abstimmung
   n5_abstimmung: [
-    ['erzaehler', 'Lesesaal. Freistunde. Ben schaut kurz zu dir rüber. Dann aufs Handy.'],
     { wenn: (m) => !!m.k5TuerUmfrage, dann: [['mila', '(setzt sich neben dich) Hier ist frei. Wie Montag.']] },
+    ['erzaehler', 'Lesesaal. Freistunde. Ben schaut kurz zu dir rüber. Dann aufs Handy.'],
     { tu: 'n5_benFrage' },
     ['erzaehler', 'Dann summen alle Handys gleichzeitig.'],
     { foto: 'k5Lesesaal', von: [14.0, 1.7, -56.4], auf: [12.0, 0.9, -60.6], fov: 60 },

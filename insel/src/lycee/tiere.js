@@ -97,6 +97,9 @@ export function createTiere({ scene, steuerung }) {
     kabelSync(liste = []) { for (const id of Object.keys(kabel)) kabel[id].visible = !liste.includes(id); },
     // Gerd landet gezielt (z. B. auf dem Kopf von jemandem, der schläft) und bleibt sitzen, bis gerdLos()
     gerdAuf(x, y, z) { const d = tauben.find((q) => q.gerd); if (!d) return; const nach = new THREE.Vector3(x, y, z); d.zustand = 'sitz'; d.sitz = { von: nach.clone().add(new THREE.Vector3(5, 3.5, 3)), nach, t: 0 }; },
+    gerdLanden() { const d = tauben.find((q) => q.gerd); if (d && d.zustand === 'sitz' && d.sitz && d.sitz.t < 1) { d.sitz.t = 1; d.g.position.copy(d.sitz.nach); } },
+    gerdGelandet() { const d = tauben.find((q) => q.gerd); return !d || d.zustand !== 'sitz' || !d.sitz || d.sitz.t >= 1; },
+    get gerdInfo() { const d = tauben.find((q) => q.gerd); return d ? { zustand: d.zustand, pos: d.g.position.toArray().map((v) => +v.toFixed(2)), sichtbar: d.g.visible, imSzene: !!d.g.parent } : null; },   // Test
     gerdLos() { const d = tauben.find((q) => q.gerd); if (d && d.zustand === 'sitz') { d.zustand = 'flug'; d.flugZeit = 0; d.v.set(1.5, 3.2, 1.2); } },
     alleAuf() { for (const d of tauben) if (!d.gerd) { d.zustand = 'flug'; d.flugZeit = 0; d.v.set((Math.random() - 0.5) * 4, 3.5 + Math.random(), (Math.random() - 0.5) * 4); } },
     update(dt, t, { night = 0, onGerd } = {}) {
