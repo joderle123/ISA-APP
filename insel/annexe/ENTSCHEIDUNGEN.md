@@ -701,3 +701,38 @@ Fehler bekommen eine faire Folge UND eine zweite Chance; überall, wo jemand blo
   - **Chronik:** „Von selbst geprüft“ zählt nur Freiwilliges. Die Gesprächsfrage ist kürzer und enthält Chiaras Satz.
   - **Fehler:** Systemzeilen im Chat zeigten „undefined“. Das Standbild an der Haltestelle war grau, weil die Kamera im Kopf der Figur stand.
 - **Winterkleidung (K4–K6):** Figuren mit Top, Shorts oder bauchfreiem Oberteil tragen im Schnee Teile aus einem langen Stil. Der Kopf bleibt gleich. Geprüft mit einer Galerie aller Stile (Männer: Beach, Casual-Shorts, Punk; Frauen: Adventurer, Formal, Punk). Getauscht wird nur, was es im Modell gibt. Winter- und Sommerteile sind eigene Netze, die sich umschalten lassen.
+- **K5 Runde 2 mit Fach- und Jugend-Panel** (Regel: was schwach ist, ganz streichen und durch Besseres ersetzen):
+  - **Gestrichen:** „Unter dem Tisch“ (das Notausgang-Suchbild in neuem Rahmen; es nahm K8 die Auflösung), das Screenshot-Quiz der Stillen Post (eine Quiz-Note statt einer Wahl),
+    „Hinter dem Beschlag“ samt Fenster-Foto (zweiter Rückblick ohne Wahl, dazu eine falsche Behauptung) und die Scham/Schuld-Einheit am Donnerstag (gehört nicht zu Heft #04).
+  - **Neu „Beweis für was?“:** Jo postet „beweis 👀“ und einen unscharfen Kopf. Kopf-Blase „Jetzt glauben’s alle.“ mit 📷. Mme Rantini kommt näher (Störung mit drei Wahlen).
+    „Beweis für was?“ kostet das Handy bis zur Pause; Lina merkt es sich, am Mittwoch drückt Yusuf deshalb Nein. „👀“ steht am Mittwoch im Chat: „sogar {name} hat 👀 gedrückt“.
+  - **Neu „Die Kette“:** Lina hat nur den Gang gesehen. Dann fragt Lou privat. Danach sieht man, wie deine Antwort über Pit und Jo bis in den Klassenchat wandert.
+  - **Neu „Erst hören?“:** Freitag im Bus eine echte Wahl. Wer Jo schreibt („Was soll das?“), bekommt von Dario: „jetzt weiß er’s.“ (Folge in K6). Danach für alle ein Wenn-dann („Wo kommt bei mir ein ‚alle‘?“).
+    Dieser Plan ist der Satz am Spiegel in K7 und „dein Satz vom Januar“ in K10.
+  - **Folgen immer sichtbar:** Wer im Chat Lous, Jos oder Linas Zeile verpasst hat, bekommt sie danach von Mila als Screenshot.
+  - **Eisbahn:** Die Kopf-Blase passt zum Ergebnis („Glück gehabt. Zählt nicht.“ · „Alle haben gelacht.“ · „Ich kann das nicht.“).
+  - **Kleines:** Tür-📷 zählt, Bens Katze ist zu sehen, Ben ist Kernzeile, Dario „schaut weg“ statt „zu schnell“, Kuedes „Ab hier kümmere ich mich.“, wenn es nicht um dich geht,
+    Antwort „Geht so.“, Abzeichen „Kennt alle“ nicht mitten in K5, drei Gesten in der Gesprächsfrage, keine Noten in der Lehrer-Ansicht.
+  - **Winter:** Auch kurze Ärmel waren im Januar falsch. Im Winter tragen jetzt alle lange Ärmel (Männer: Adventurer, Frauen: Suit). Opa Nik sitzt auf der Bank, nicht daneben.
+- **K6 neu gedacht (zweite Abstimmung gestrichen – die gibt es schon in K5):**
+  - **Montag:** Nach Jos Sprachnachricht das kleine 📷: „Jo hat den Screenshot gebaut.“ – man hört „bräuchte“, nicht „gebaut“.
+  - **Donnerstag:** Chiara schreibt Regeln für den Chat und fragt dich, was fehlt („Keine Videos ohne Ja.“ · „Keine Umfragen über Leute.“ – „Das war meine Umfrage.“).
+  - **Freitag „Das Video“:** Lucas Video von Mila (vom Mittwoch) geht herum. Neue Mechanik: 👁 zählt mit, oben sieht man, wohin es wandert (7P2 → Ecke → U14).
+    Teilen, melden, schreiben oder Mila privat fragen. Was früh gestoppt wird, sehen wenige. Wer Mila zuerst fragt, weiß, was hilft, und geht mit ihr zu Herrn Kuedes.
+    Herr Kuedes fragt zuerst Mila. „Es ist nicht sein Video. Es ist ihr Gesicht.“ Helfer im Chat hängen an früheren Entscheidungen; Chiaras Regel 2 löscht sofort.
+  - **Ende:** ein Stopp für dich selbst – Klassenchat stumm, verlassen oder alles lesen. K10 fragt nur dann „Darf ich dich wieder hinzufügen?“, wenn du gegangen bist,
+    und Chiara entschuldigt sich für das, was in K5 wirklich passiert ist.
+- **K5 Runde 3 (Fach- und Jugend-Panel):**
+  - **Fehler:** Handy-Karten, auf die direkt die nächste Karte folgte, waren sofort wieder weg (Darios Cliffhanger, Lou, Ben, Noah). Jetzt wartet das Spiel auf „Weiter“.
+    Textkarten ohne Foto zeigen kein leeres 📷 mehr. „Im Bus“, aber Dario stand daneben: Dario bleibt jetzt drüben stehen.
+  - **Gestrichen:** die Wenn-dann-Frage am Freitag (wirkte wie ein Arbeitsblatt), der Vortrag von Mme Tidderich nach dem Chat, Linas Satz als Lesekarte und die Kette als Lesekarte.
+  - **Neu „Noah auf der Bank“ (Freitag):** „Die ganze Klasse denkt, ich war’s.“ Was du in der Woche selbst geprüft hast, wird zum 📎 (Ayla war nicht dafür · 2 Ja, 8 gesehen ·
+    Yusuf hat Nein gedrückt) oder „Alle? Wer genau?“. Noah zählt die Ja-Namen ab: „Drei sind nicht alle.“ Dieser Satz klebt in K7 am Spiegel.
+  - **Neu: Störung im Chat.** Mme Tidderich in der Tür: „Handys auf den Tisch.“ – „📸 Screenshot. Dann hinlegen.“ (Chiara muss die Umfrage schließen) ·
+    „(Sofort hinlegen.)“ (später fliegt jemand raus) · „(Unterm Tisch weiter.)“ (Handy bis vier weg). Danach ein Satz: „Wer so was sieht: Screenshot, zu mir. Oder ins SePAS.“
+  - **Neu im CDI:** Lina sitzt selbst da: „nur auf dem Gang gesehen“ = 📎. Lous Frage kann man damit beantworten; im Chat steht dann „lina sagt nur gang“.
+    Die Kette kommt im Chat an: „↪ weitergeleitet ×3“.
+  - **Prüfen heißt nicht wegreden (Fach E1):** Spott im Chat über dich wird geprüft – „Stimmt. Und es ist nicht okay.“ – und geht an Herrn Kuedes.
+  - **Selbst prüfen (Fach E2):** Nach dem 📷 zählt bzw. benennt das Kind selbst („Wie viele haben reagiert?“ · „Was sieht die Kamera?“). Gefühl in den Tür-Schnitten (Bauch zu / Kiefer fest / Schultern locker).
+  - **Fair:** Mme Rantini nimmt das Handy bei „Beweis für was?“ und bei 👀. Eisbahn: „Noch nicht ohne Bande. Eine Runde ging.“ K7: kleines 📷 „Alle sind drin. Nur ich nicht.“
+  - **Lehrer-Ansicht:** chronologisch; „Beweis für was?“ und Noah als Kernzeilen; „Geht so.“, Bens Ja ohne Antwort, Manon dazu.

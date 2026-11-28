@@ -119,7 +119,7 @@ export function createUI({ root, input, speech }) {
     // h.chat: [{ wer, t, pin }] – Nachrichten statt Foto · h.zaehler: { start, wort, live } – Reaktionen, die mitlaufen
     const chat = Array.isArray(h.chat) && h.chat.length ? '<div class="ly-hk-chat">' + h.chat.map((c) => '<p' + (c.pin ? ' class="pin"' : c.ich ? ' class="ich"' : '') + '>' + (c.wer ? '<b>' + esc(c.wer) + '</b>' : '') + esc(c.t || '') + '</p>').join('') + '</div>' : '';
     handyKarte.innerHTML = '<div class="ly-hk-kopf"><b>' + esc(h.wer || '') + '</b><span>' + esc(h.wann || 'gerade eben') + '</span></div>' + chat +
-      (chat && !h.bild ? '' : h.bild ? (h.streifen || h.kreis || h.gruen ? '<span class="ly-hk-bildrahmen"><img alt="' + esc(h.alt || 'Foto') + '" src="' + h.bild + '">' + (h.streifen ? '<i class="ly-hk-streifen"></i>' : '') +
+      ((chat || (h.text && !h.fotoErwartet)) && !h.bild ? '' : h.bild ? (h.streifen || h.kreis || h.gruen ? '<span class="ly-hk-bildrahmen"><img alt="' + esc(h.alt || 'Foto') + '" src="' + h.bild + '">' + (h.streifen ? '<i class="ly-hk-streifen"></i>' : '') +
         (h.kreis ? '<i class="ly-hk-kreis" style="left:' + (+h.kreis.x || 50) + '%;top:' + (+h.kreis.y || 45) + '%;--r:' + (+h.kreis.r || 18) + '%"></i>' : '') + (h.gruen ? '<i class="ly-hk-gruen"></i>' : '') + '</span>' : '<img alt="' + esc(h.alt || 'Foto') + '" src="' + h.bild + '">') : '<div class="ly-hk-leer">📷</div>') +
       (h.text ? '<div class="ly-hk-text">' + esc(h.text) + '</div>' : '') +
       (zl ? '<div class="ly-hk-zaehler">' + (zl.live ? '<em>● live</em> ' : '') + '<b>' + (+zl.start || 0) + '</b> ' + esc(zl.wort || 'Reaktionen') + '</div>' : '') +

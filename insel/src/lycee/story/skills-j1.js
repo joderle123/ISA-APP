@@ -356,7 +356,7 @@ export const S5_GEDANKEN = {
         { text: '„Ich fühl mich so dumm.“', ziel: 'f', warum: 'Ein Gefühl. Echt – aber es wiegt nichts als Beweis.' },
         { text: '„Alle sagen, Noah ist komisch.“', ziel: 's', warum: 'Laut. Wer ist „alle“? Kein Beweis.' },
         { text: '„Drei Konten haben kommentiert.“', ziel: 'z', warum: 'Kann man zählen. Drei sind nicht alle.' },
-        { text: '„Alle halten mich für den Admin.“', ziel: 'f', warum: 'Fühlt sich an wie 100 Prozent. Gezählt hat keiner.' },
+        { text: '„Ich bin so peinlich.“', ziel: 'f', warum: 'Ein Gefühl. Fühlt sich an wie 100 Prozent – gemessen hat es keiner.' },
         { text: '„Lou hat gehört, dass Noah draußen war.“', ziel: 's', warum: 'Gehört ist nicht gesehen. Stille Post.' },
       ] },
     { art: 'unterscheiden', frage: 'Klein genug für diese Woche?', einleitung: 'Ein kleiner Schritt passiert wirklich. Ein zu großer bleibt ein Vorsatz.',

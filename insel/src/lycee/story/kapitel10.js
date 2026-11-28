@@ -58,7 +58,7 @@ const KURVE = (m) => ({
     { sy: '⭕', t: '8:34. Ein Kreis um deinen Kopf.', dein: m.k4FotoGezeigt ? 'Du hast gezeigt: Das Foto ist von draußen.' : m.k4LenningGeholt ? 'Du bist zu Mme Lenning gegangen.' : m.k4Ruhig ? 'Du bist stehen geblieben und hast geatmet.' : m.k4Explodiert ? 'Du bist explodiert.' : m.k4Brunnen || m.k4Gerannt ? 'Du bist weg, um runterzukommen.' : m.k4Wut ? 'Du hast zurückgeschlagen.' : 'Es hat geklingelt.' },
     { sy: '🖼️', t: 'Der Screenshot. „Hinten links“.', dein: m.k4Ruhig ? 'Du hast einen ruhigen Satz geschrieben.' : m.k4Wut || m.k4WutSpaet ? 'Du hast in Großbuchstaben geschrieben.' : 'Du hast nichts geschrieben.' },
     { sy: '✋', t: 'Luca filmt Mila.', dein: m.k6Eingegriffen ? 'Du hast etwas getan.' : 'Du hast weggeschaut.' },
-    { sy: '🗳️', t: 'Die Abstimmung.', dein: 'Danach war dein Handy still.' },
+    { sy: '📹', t: 'Milas Video.', dein: m.k6VMitMila || m.k6VGefragt || m.k6MilaGefragtSpaet ? 'Du hast Mila zuerst gefragt.' : m.k6VGeteilt ? 'Du hast es weitergeleitet. Um zu helfen.' : m.k6VKommentar || m.k6VChiara || m.k6VApp || m.k6VNoahGefragt ? 'Du hast etwas getan.' : 'Du hast zugesehen.' },
     { sy: '🧩', t: 'Die Tüte in der Kantine.', dein: m.k7Gesetzt ? 'Du hast dich zu Noah gesetzt.' : m.k7Gefilmt ? 'Du hast gefilmt.' : 'Du bist sitzen geblieben.' },
     { sy: '🤖', t: 'Das KI-Video von Mme Tidderich.', dein: m.k8Fake ? 'Du hast es entlarvt. Langsam.' : 'Es hat sich echt angefühlt.' },
     { sy: '🎒', t: 'Dario an der Haltestelle.', dein: m.k9Mitkommen ? 'Du bist mitgegangen.' : m.k9Versprochen ? 'Du hast es getragen. Drei Tage.' : 'Du hast nichts versprochen.' },
@@ -174,7 +174,7 @@ export const GESPRAECHE_N10 = {
   n10_bote: [
     ['erzaehler', 'Montag. 10:00. Alle reden über Freitag, 15:00.'],
     ['ben', 'Ich hab bei ALLEM abgestimmt. Bei allem.'],
-    ['erzaehler', 'Dann kommen sie. Die, die dich im Januar aus dem Chat gewählt haben.'],
+    ['erzaehler', 'Dann kommen sie. Die, die im Januar mitgemacht haben. Bei der Umfrage. Beim Video.'],
     { szene: 'druck', id: 'bote', def: BOTE, ausgang: (r) => (r.ja ? 'bote' : 'nein'),
       folgen: {
         bote: { herz: { dario: -2 }, merke: 'k10Bote', dann: [['erzaehler', 'Du gehst zu Dario. Du sagst es.'], ['dario', '(schaut dich lange an) Von dir hätte ich das nicht gedacht.']] },
@@ -201,9 +201,11 @@ export const GESPRAECHE_N10 = {
   ],
   // Mittwoch 12:10 – Entscheidung A: Wiedergutmachung
   n10_kantine: [
-    ['chiara', 'Darf ich dich wieder hinzufügen? Du musst nicht.'],
+    // Wer im Januar selbst gegangen ist, wird gefragt, ob er zurückwill. Wer geblieben ist: Chiara macht die Gruppe neu.
+    { wenn: (m) => !!m.k6Verlassen, dann: [['chiara', 'Darf ich dich wieder hinzufügen? Du musst nicht.']], sonst: [['chiara', 'Ich mach die Gruppe neu. Ohne Umfragen. Bist du dabei? Du musst nicht.']] },
     { fest: true, wahl: [
-      { t: '„Ja.“', herz: { chiara: 1 }, merke: 'k10GruppeJa', dann: [['erzaehler', '„Chiara hat dich hinzugefügt.“ Das Handy summt. Zum ersten Mal seit Januar.']] },
+      { t: '„Ja.“', herz: { chiara: 1 }, merke: 'k10GruppeJa', dann: [{ wenn: (m) => !!m.k6Verlassen, dann: [['erzaehler', '„Chiara hat dich hinzugefügt.“ Das Handy summt. Zum ersten Mal seit Januar.']],
+        sonst: [['erzaehler', '„Chiara hat dich hinzugefügt: 7P2 · neu.“ Regel 1 steht ganz oben.']] }] },
       { t: '„Noch nicht.“', merke: 'k10GruppeNochNicht', dann: [['chiara', 'Okay. Die Tür bleibt offen.']] },
       { t: '„Mach eine neue Gruppe. Mit Ayla.“', herz: { ayla: 1 }, merke: 'k10GruppeNeu', dann: [['chiara', '(überlegt) … Eine ohne Abstimmungen.'], ['ayla', '(vom Nebentisch) Ich bin dabei.']] },
     ] },
@@ -243,7 +245,9 @@ export const GESPRAECHE_N10 = {
     ['jo', 'Drei Fotos. Von mir. Und der Witz mit dem Fake.'],
     ['ben', 'Ich hab das erste weitergeleitet. An alle.'],
     ['erzaehler', 'Chiara faltet einen Zettel auf. Sie hat es aufgeschrieben.'],
-    ['chiara', 'Ich habe {name} aus der Gruppe entfernt. Das war falsch.'],
+    { wenn: (m) => m.k5Rausgeflogen === 'du', dann: [['chiara', 'Ich habe {name} aus der Gruppe entfernt. Das war falsch.']],
+      sonst: [{ wenn: (m) => m.k5Rausgeflogen === 'noah', dann: [['chiara', 'Ich habe Noah aus der Gruppe entfernt. Und ich hab die Umfrage gemacht. Das war falsch.']],
+        sonst: [{ wenn: (m) => !!m.k5ZielDu, dann: [['chiara', 'Ich hab die Umfrage über {name} gemacht. Das war falsch.']], sonst: [['chiara', 'Ich hab die Umfrage über Noah gemacht. Das war falsch.']] }] }] },
     { warum: true, wahl: [
       { t: '(Deinen Teil sagen.)', staerke: 'mut', merke: 'k10Teil', dann: [{ tu: 'n10_meinTeil' }] },
       { t: '(Nichts sagen.)', merke: 'k10Geschwiegen', dann: [['erzaehler', 'Du sagst nichts. Dein Teil bleibt bei dir. Für heute.']] },
@@ -442,7 +446,7 @@ export const tunN10 = (c) => ({
     const bank = m.k10NebenBank || (m.k10Rutschen && !m.k10NebenNein) ? 'Dario sitzt neben dir auf der Bank. Wie jeden Morgen. Nur ehrlicher.'
       : m.k10NebenNein ? 'Dario sitzt auf der Mauer. Er nickt dir zu. Mehr nicht. Noch nicht.'
       : m.k10HeuteNicht ? 'Dario sitzt auf der Mauer. Morgen vielleicht wieder auf der Bank.' : 'Dario sitzt am anderen Ende der Bank.';
-    const gruppe = m.k10GruppeJa ? 'Du bist wieder im Klassenchat. Er heißt jetzt anders.' : m.k10GruppeNeu ? 'Du bist in einer neuen Gruppe. Mit Ayla. Ohne Abstimmungen.' : 'Du bist noch in keiner Gruppe. Dein Handy ist still. Das ist okay.';
+    const gruppe = m.k10GruppeJa ? 'Du bist wieder im Klassenchat. Er heißt jetzt anders.' : m.k10GruppeNeu ? 'Du bist in einer neuen Gruppe. Mit Ayla. Ohne Abstimmungen.' : m.k6Verlassen ? 'Du bist noch in keiner Gruppe. Dein Handy ist still. Das ist okay.' : 'In der neuen Gruppe bist du noch nicht. Das ist okay.';
     const foto = m.k10Weggedreht ? 'Jo hat das Foto von Luca gemacht. Ob es online ist, weißt du nicht.' : 'Es gibt kein Foto von Luca am Zaun.';
     return [
       ...ENDEN[b](),

@@ -1,8 +1,9 @@
 // Storyline 7e „@annexe.cam“ (nach der Storyline von Fable) – Kapitel 6 „Die Sprachnachricht“, Januar, eine Woche später.
 // Verdecktes Thema: Kommunikation und Grenzen (Ich-Botschaften, Stopp sagen, Einverständnis bei Fotos und Berührung).
 // „War nur ein Witz“ und „Ist nur ein Video“ sind derselbe Satz. Ein Nein gilt, auch wenn jemand weiterfilmt.
-// Auch Helfen hat eine Grenze: Man fragt, bevor man jemanden anfasst. Und man kann höflich abstimmen und trotzdem
-// jemanden rauswerfen. Ende: Die Abstimmung geht immer gegen dich (zwischen 15:4 und 9:9). „Chiara hat {name} entfernt.“
+// Auch Helfen hat eine Grenze: Man fragt, bevor man jemanden anfasst – und bevor man für jemanden handelt.
+// Ende (neu, Runde 2 K5/K6): keine zweite Abstimmung. Freitag geht Lucas Video von Mila herum. 👁 zählt mit. Was früh
+// gestoppt wird, sehen wenige; was weitergeleitet ist, sehen alle. Danach ein Stopp für dich selbst: der Klassenchat.
 import { S6_SAGEN, S6_WUT_FAMILIE } from './skills-j1.js';
 const pult = (r, c, s) => [-24.25 + r * 2.1, -27.2 + c * 3.4 + s * 0.62, -Math.PI / 2, 'sitzt'];
 const KLASSE = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1), noah: pult(0, 1, 1), mila: pult(2, 2, 1) };
@@ -40,9 +41,9 @@ export const SCHRITTE_N6 = [
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n6_ende' } },
-  { id: 'k6_abstimmung', kap: 6, tag: 'Freitag', uhr: 12.0, titel: 'Abstimmung', ziel: 'Mittagspause. Noah sitzt auf der Bank am Hof.', marker: 'noah',
+  { id: 'k6_abstimmung', kap: 6, tag: 'Freitag', uhr: 12.0, titel: 'Das Video', ziel: 'Mittagspause. Noah sitzt auf der Bank am Hof.', marker: 'noah',
     start: { teleport: 'eingangHof' },
-    leute: { noah: [-20, 11.6, Math.PI, 'sitzt'] },
+    leute: { noah: [-20, 11.6, Math.PI, 'sitzt'], mila: [-16.4, 13.2, -2.3, 'handy'] },
     fertig: { reden: 'noah', gespraech: 'n6_abstimmung' } },
 ];
 
@@ -125,61 +126,50 @@ const MUT_LUCA = {
   ],
 };
 
-// ---------- Freitag 12:00: Chiaras Abstimmung ----------
-// Wer für dich stimmt, hängt an dem, was du vorher getan hast. Das Ergebnis geht immer gegen dich: zwischen 15:4 und 9:9.
-const stimmen = (m) => {
-  const wer = {
-    noah: !!(m.listeBeiNoah || m.k4NoahVerteidigt || m.manonListeFalsch || m.wahlNoah),
-    mila: !!(m.milaGesagt || m.k6Stopp || m.k6Komm || m.k6Linse),
-    ben: !!(m.k5BenGefragt || m.gegenlisteNein || m.gegenlisteFragen),
-    jo: !!((m.k6JoSelbst || m.k6JoVerstanden) && !m.k6DateiGepostet),
-    lina: !!(m.wahlLina || m.linaNachgegangen),
-    yusuf: !!(m.wahlYusuf || m.k3YusufGeschickt || m.k3Uhr),
-  };
-  let anon = 2 + (m.k4Ruhig ? 1 : 0) + (m.k5ChiaraGefragt ? 1 : 0) - (m.k4Wut || m.k4WutSpaet ? 1 : 0) - (m.k5Laut ? 1 : 0);
-  anon = Math.max(0, anon);
-  const s = Math.max(4, Math.min(9, Object.values(wer).filter(Boolean).length + anon + (m.k6Plus || 0)));
-  return { wer, s, gegen: s >= 9 ? 9 : 19 - s };
-};
-const ABSTIMMUNG = (m) => {
-  const { wer } = stimmen(m);
-  const satz = m.k5Satz ? m.k5Satz : m.k5SatzManche ? 'Manche glauben es. Nicht alle.' : m.k5SatzMittwoch ? 'Heute ist Freitag. Mehr weiß ich nicht.' : 'Ich weiß, was ich gemacht hab. Und was nicht.';
-  const n = [
-    { nach: 0.4, wer: 'Chiara', text: 'abstimmung. soll {name} in der gruppe bleiben, bis es geklärt ist?' },
-    { nach: 1.6, system: true, text: '🗳️ ja = bleiben · nein = raus' },
-    { nach: 2.8, wer: 'Chiara', text: 'ich will nur, dass es fair ist.' },
-    { nach: 4.2, wer: 'Jo', text: wer.jo ? 'ja' : 'nein' },
-    { nach: 5.6, wer: 'Ayla', text: 'ich stimm nicht über leute ab.' },
-    { nach: 6.4, system: true, text: 'Ayla hat die Gruppe verlassen.' },
-    { nach: 7.8, wer: 'Ben', text: wer.ben ? 'ja' : 'nein' },
-    { nach: 8.8, wer: 'tom_7p2', text: 'nein' },
-    { nach: 9.8, wer: 'sami.lu', text: 'nein' },
-  ];
-  let t = 11;
-  if (wer.noah) { n.push({ nach: t, wer: 'Noah', text: 'ja' }); t += 1.2; }
-  if (wer.mila) { n.push({ nach: t, wer: 'Mila', text: 'ja. fakten siehe oben.' }); t += 1.2; }
-  n.push({ nach: t, wer: 'unbekannt_09', text: 'nein' }); t += 1;
-  if (wer.lina) { n.push({ nach: t, wer: 'Lina', text: 'ja' }); t += 1.2; }
-  if (wer.yusuf) { n.push({ nach: t, wer: 'Yusuf', text: 'ja' }); t += 1.2; }
-  n.push({ nach: t, wer: 'unbekannt_11', text: 'nein' }, { nach: t + 1, wer: 'unbekannt_04', text: 'nein' }, { nach: t + 2.4, system: true, text: 'gesehen von 20' });
-  return {
-    titel: '7P2', mitglieder: 21, dauer: t + 10, nachrichten: n,
-    aktionen: [
-      { id: 'ruhig', t: '„' + satz + '“', symbol: '✍️', setzt: 'ruhig', ich: satz, folgen: [{ nach: 2.2, wer: 'unbekannt_12', text: 'ja' }] },
-      { id: 'fakten', t: '„Mila hat es geprüft. Der Screenshot ist gebaut.“', symbol: '📎', setzt: 'fakten', ich: 'mila hat es geprüft. der screenshot ist gebaut.',
-        folgen: (m.spurGebaut || m.spurKreis) ? [{ nach: 2.6, wer: 'unbekannt_14', text: 'ok. ja.' }] : [{ nach: 2, wer: 'tom_7p2', text: 'klar. die anwältin 😂' }] },
-      { id: 'wut', t: '„Ihr seid alle so feige.“', symbol: '😡', setzt: 'wut', ich: 'ihr seid alle so feige.', folgen: [{ nach: 1.4, wer: 'unbekannt_12', text: 'ok dann nein' }, { nach: 2.4, wer: 'unbekannt_14', text: 'nein' }] },
-      { id: 'verlassen', t: '(Selbst gehen. Wie Ayla.)', symbol: '🚪', setzt: 'verlassen', sys: '{name} hat die Gruppe verlassen.', ende: true },
-    ],
-  };
-};
-const ERGEBNIS = (m) => {
-  const { s, gegen } = stimmen(m);
-  const n = m.k6SelbstRaus ? [{ nach: 0.4, system: true, text: 'Später. Ben schickt dir ein Bild. Der Schluss der Abstimmung.' }] : [];
-  if (s >= 9) n.push({ nach: 1.2, wer: 'Chiara', text: '9 zu 9.' }, { nach: 2.6, wer: 'Chiara', text: 'ich bin admin. dann entscheide ich. nur vorübergehend. sorry.' });
-  else n.push({ nach: 1.2, wer: 'Chiara', text: gegen + ' zu ' + s + '. sorry. es ist die mehrheit.' });
-  if (!m.k6SelbstRaus) n.push({ nach: 4.2, system: true, text: 'Chiara hat {name} entfernt.' });
-  return { titel: '7P2', mitglieder: 20, dauer: 7, nachrichten: n, aktionen: [] };
+// ---------- Freitag 12:00: Das Video (statt Abstimmung – die gab es schon in Kapitel 5) ----------
+// Wer nach deinem Satz im Chat mitzieht, hängt an dem, was du vorher getan hast. Ayla zieht immer mit.
+const helferVon = (m) => [
+  (m.listeBeiNoah || m.k4NoahVerteidigt || m.manonListeFalsch || m.wahlNoah || m.k5NoahLasst || m.k5NoahDaneben || m.k5NoahGeholt) ? { id: 'noah', wer: 'Noah', text: 'ja. löscht das.' } : null,
+  { id: 'ayla', wer: 'Ayla', text: 'löschen. sofort.' },
+  (m.k5BenGefragt || m.gegenlisteNein || m.gegenlisteFragen) ? { id: 'ben', wer: 'Ben', text: 'tom. lösch.' } : null,
+  ((m.k6JoSelbst || m.k6JoVerstanden) && !m.k6DateiGepostet) ? { id: 'jo', wer: 'Jo', text: 'mach weg, tom.' } : null,
+  (m.wahlLina || m.linaNachgegangen || m.k5BeweisFrage) ? { id: 'lina', wer: 'Lina', text: 'löscht das.' } : null,
+  (m.wahlYusuf || m.k3YusufGeschickt || m.k3Uhr || m.k5YusufSorry) ? { id: 'yusuf', wer: 'Yusuf', text: '+1. weg damit.' } : null,
+].filter(Boolean);
+const VIDEO = (m) => ({
+  gruppe: '7P2 🏫', mitglieder: 21, dauer: 30, regel: !!m.k6RegelVideo, duDrin: !!m.k6Linse,
+  post: { wer: 'tom_7p2', laenge: m.k6Weggeschaut ? '0:40' : m.k6Eingegriffen ? '0:10' : '0:25',
+    bild: m.k6Linse ? 'Erst Mila. Dann nur noch du.' : 'Mila. Die Hand vor dem Gesicht.', text: m.k6Linse ? 'hinten links als bodyguard 😂' : 'anwältin dreht durch 😂' },
+  untertitel: m.k6Weggeschaut ? ['„Hör auf zu filmen.“', '„Ist doch nur ein Video.“', '„Ich hab Nein gesagt.“', '(Lachen.)', '„Ich hab Nein gesagt.“']
+    : ['„Hör auf zu filmen.“', '„Ich hab Nein gesagt.“', m.k6Linse ? '(Dann nur noch du. Ganz nah.)' : m.k6Stopp ? '„Stopp. Sie hat Nein gesagt.“' : '(Dann bricht es ab.)'],
+  gruppen: [{ id: '7p2', t: '7P2', n: 21 }, { id: 'ecke', t: 'Ecke 🔥', n: 40 }, { id: 'u14', t: '⚽ U14', n: 18 }],
+  helfer: helferVon(m),
+  mila: { antwort: ['dass es weg ist.', 'nicht kommentieren. bitte.', 'kommst du mit zu kuedes? jetzt?'] },
+  nachrichten: [
+    { nach: 3, wer: 'sami.lu', text: 'wtf 😂😂' },
+    { nach: 6.5, wer: 'unbekannt_09', text: 'schick das in die ecke', wennNicht: 'geloescht' },
+    ...(m.k6DateiGepostet ? [{ nach: 8.5, wer: 'tom_7p2', text: 'erst jo, jetzt mila. 7P2 liefert 😂', wennNicht: 'geloescht' }] : []),
+    { nach: 11, system: 'tom_7p2 hat das Video weitergeleitet: Ecke 🔥', gruppe: 'ecke', wennNicht: 'geloescht' },
+    { nach: 14, system: 'Mila ist online.', wennNicht: 'gefragt' },
+    { nach: 17.5, system: 'Mila ist offline.', wennNicht: 'gefragt' },
+    { nach: 20, system: 'Aus „Ecke 🔥“ weitergeleitet: ⚽ U14', gruppe: 'u14' },
+    { nach: 25, wer: 'sami.lu', text: 'wer ist das eigentlich', wennNicht: 'geloescht' },
+  ],
+});
+// Wie viele es am Ende gesehen haben: was früh gestoppt wird, bleibt klein. stopp: 'jetzt' | 'spaet' | 'app' | null
+const bisZuletzt = (m, stopp) => {
+  const V = m.k6Video || {}, G = V.gruppen || {}, jetzt = V.jetzt || 0;
+  if (stopp === 'jetzt') return jetzt + 2;
+  const order = ['7p2', 'ecke', 'u14'];
+  let summe = 0, davorLaeuft = true;
+  for (const id of order) {
+    const g = G[id] || { v: 0, n: 0, da: false, aktiv: true };
+    const laeuft = g.da ? g.aktiv : davorLaeuft;   // nicht angekommen: kommt noch an, solange die Gruppe davor läuft
+    const rest = Math.max(0, g.n - g.v), anteil = stopp === 'spaet' ? 0.4 : stopp === 'app' ? 0.8 : 1;
+    summe += g.v + (laeuft ? Math.round(rest * anteil) : 0);
+    davorLaeuft = laeuft;
+  }
+  return Math.max(jetzt, summe);
 };
 
 export const GESPRAECHE_N6 = {
@@ -189,6 +179,10 @@ export const GESPRAECHE_N6 = {
     ['erzaehler', 'Er drückt auf Play.'],
     ['jo', '(Sprachnachricht) Was, wenn’s Hinten links ist? Man bräuchte nur einen Screenshot. Haha.'],
     ['erzaehler', 'Hinten lachen ältere Stimmen. Sieben Sekunden. Dann ist es still.'],
+    { szene: 'blase', id: 'k6BlaseJo', pruefe: false, def: { t: 'Jo hat den Screenshot gebaut.', stufe: 'klein', zeit: 5 },
+      ausgang: (r, m) => { m.k6JoGeprueft = !!(r && r.geprueft); return m.k6JoGeprueft ? 'ja' : 'nein'; },
+      folgen: { ja: { dann: [['du', '(denkt) Echt: Jo sagt „man bräuchte“. Gebaut? Hört man nicht.']] }, nein: { dann: [] } } },
+    { wenn: (m) => !!m.k5HoerenJo, dann: [['dario', 'Jo hat mich am Wochenende dreimal angerufen. Weil du ihm geschrieben hast.']] },
     { wahl: [
       { t: '„Woher hast du die?“', dann: [['dario', 'Ecke-Gruppe. Da sind alle drin.']] },
       { t: '„Warum zeigst du mir das?“', dann: [['dario', 'Weil du es nicht warst.'], ['erzaehler', 'Er sagt es, als wüsste er es genau.']] },
@@ -220,10 +214,9 @@ export const GESPRAECHE_N6 = {
       ausgang: (r) => (r.flags.datei ? 'datei' : r.flags.joSelbst ? 'jo' : r.flags.kuedes ? 'kuedes' : r.flags.nurMila ? 'mila' : 'nichts'),
       folgen: {
         datei: { herz: { jo: -3 }, merke: 'k6DateiGepostet', dann: [
-          ['erzaehler', 'Sechzig Nachrichten in zwei Minuten. Alle über Jo.'],
-          ['erzaehler', 'Am anderen Tisch bleibt sein Tablett stehen. Jo ist weg.'],
-          ['erzaehler', 'Dein Name ist halb sauber. Unter allem steht: „vllt haben die zwei es zusammen gemacht“.'] ] },
-        jo: { herz: { jo: 2 }, merke: 'k6JoSelbst', dann: [['erzaehler', 'Ein Satz. Schwach. Aber seiner.'], ['erzaehler', 'Am anderen Tisch schaut Jo nicht hoch. Er isst weiter. Langsam.']] },
+          ['erzaehler', 'Sechzig Nachrichten in zwei Minuten. Alle über Jo. Am anderen Tisch bleibt sein Tablett stehen. Jo ist weg.'],
+          ['du', '(denkt) Halb sauber. Unter allem steht: „vllt haben die zwei es zusammen gemacht“.'] ] },
+        jo: { herz: { jo: 2 }, merke: 'k6JoSelbst', dann: [['erzaehler', 'Ein Satz. Schwach. Aber seiner. Am anderen Tisch schaut Jo nicht hoch. Er isst weiter. Langsam.']] },
         kuedes: { staerke: 'hilfe', herz: { kaya: 1 }, merke: 'k6KuedesDatei', dann: [['kaya', '(später, in seinem Büro) Ich red mit Jo. Heute noch.'], ['kaya', 'Und bevor ich etwas mache, sag ich es dir.']] },
         mila: { herz: { mila: 1 }, merke: 'k6NurMila', dann: [['erzaehler', 'Mila nickt dir über den Tisch zu. Einmal.']] },
         nichts: { merke: 'k6BeweisStill' },
@@ -231,14 +224,12 @@ export const GESPRAECHE_N6 = {
   ],
   // Mittwoch 13:20 (Fable, Schlüsselszene K6): Kenans Satz fällt nur, wenn vorher jemand etwas gesagt oder getan hat.
   n6_luca: [
-    ['erzaehler', 'Mittwoch. 13:20. Der Hof ist fast leer.'],
-    ['erzaehler', 'Luca hält sein Handy hoch. Die Linse zeigt auf Mila.'],
+    ['erzaehler', 'Mittwoch. 13:20. Der Hof ist fast leer. Luca hält sein Handy hoch. Die Linse zeigt auf Mila.'],
     ['luca', 'Sag’s noch mal. Dass der Screenshot fake ist.'],
     ['mila', 'Hör auf zu filmen.'],
     ['luca', 'Wieso? Ist doch nur ein Video.'],
     ['mila', 'Ich hab Nein gesagt.'],
-    ['erzaehler', 'Sie hält die Hand vors Gesicht. Der Würfel fällt.'],
-    ['erzaehler', 'Ein Stein springt heraus. Er rollt bis vor Kenans Schuh.'],
+    ['erzaehler', 'Sie hält die Hand vors Gesicht. Der Würfel fällt. Ein Stein springt heraus und rollt bis vor Kenans Schuh.'],
     ['luca', 'Lowkey lustig, wenn sie sauer ist.'],
     ['erzaehler', 'Kenan schaut auf den Stein. Nicht auf Luca.'],
     { szene: 'mut', id: 'mutLuca', def: MUT_LUCA, ausgang: (r) => r.key,
@@ -247,7 +238,7 @@ export const GESPRAECHE_N6 = {
         linse: { staerke: 'mut', herz: { mila: 2, kenan: 1 }, merke: ['k6Linse', 'k6Eingegriffen'], dann: [['erzaehler', 'Du stellst dich vor die Linse. Auf Lucas Display bist jetzt nur noch du.'], ['luca', 'Geh weg da.']] },
         kenan: { staerke: 'einbeziehen', herz: { kenan: 2 }, merke: ['k6Kenan', 'k6Eingegriffen'], dann: [['du', 'Kenan. Sag du was.']] },
         rantini: { staerke: 'hilfe', merke: ['k6Rantini', 'k6Eingegriffen'], dann: [['erzaehler', 'Du rennst zum Eingang. Mme Rantini kommt sofort mit.'], ['rantini', 'Luca. Handy weg. Jetzt.']] },
-        komm: { staerke: 'lesen', herz: { mila: 3 }, merke: ['k6Komm', 'k6Eingegriffen'], dann: [['du', 'Komm?'], ['erzaehler', 'Du hältst ihr die Hand hin. Du fasst sie nicht an.'], ['erzaehler', 'Mila schaut auf die Hand. Dann geht sie mit. Neben dir.']] },
+        komm: { staerke: 'lesen', herz: { mila: 3 }, merke: ['k6Komm', 'k6Eingegriffen'], dann: [['du', 'Komm?'], ['erzaehler', 'Du hältst ihr die Hand hin. Du fasst sie nicht an. Mila schaut auf die Hand. Dann geht sie mit.']] },
         arm: { herz: { mila: -1 }, merke: ['k6Arm', 'k6Eingegriffen'], dann: [['erzaehler', 'Du ziehst Mila am Arm weg. Sie zuckt zusammen.'], ['mila', '(leise) Nicht anfassen.'], ['erzaehler', 'Sie kommt trotzdem mit. Steif.']] },
         weg: { merke: 'k6Weggeschaut', dann: [['erzaehler', 'Du schaust auf dein Handy. Es ist nichts drauf. Du schaust trotzdem.']] },
       } },
@@ -267,26 +258,32 @@ export const GESPRAECHE_N6 = {
   n6_rede: [
     ['erzaehler', 'Donnerstag. 8:00. Mme Tidderich macht die Tür zu. Sie bleibt davor stehen.'],
     { tu: 'n6_tidderich' },
-    ['chiara', '(in der Pause, laut) Ich mach das jetzt ordentlich. Mit Abstimmung. Dann ist es fair.'],
-    { warum: true, wahl: [
-      { t: '„Über Menschen abstimmen ist nicht fair.“', staerke: 'klar', merke: 'k6ChiaraWiderspruch', dann: [['chiara', 'Mehrheit ist fair. So geht Demokratie.'], ['erzaehler', 'Sie sagt es freundlich. Das macht es schlimmer.']] },
-      { t: '(Nichts sagen. Sonst bist du die nächste Abstimmung.)', dann: [['erzaehler', 'Chiara schreibt etwas in ihr Handy. Mit Lineal-Gesicht.']] },
+    ['chiara', '(in der Pause) Ich schreib Regeln für den Chat. Damit es fair ist.'],
+    ['erzaehler', 'Auf ihrem Display: „Regel 1: Keine Fakes.“ Darunter ist Platz.'],
+    ['chiara', 'Was fehlt?'],
+    { wahl: [
+      { t: '„Keine Videos ohne Ja.“', staerke: 'klar', merke: 'k6RegelVideo', dann: [['chiara', '(tippt) Regel 2: Keine Fotos und Videos ohne Ja.'], ['chiara', 'Ohne Ja von der Person, die drauf ist. Okay.']] },
+      { t: '„Keine Umfragen über Leute.“', staerke: 'klar', merke: 'k6RegelUmfrage', dann: [['chiara', '(hört auf zu tippen) …'], ['chiara', 'Das war meine Umfrage. Letzte Woche.'], ['erzaehler', 'Sie tippt es trotzdem. Regel 2.']] },
+      { t: '„Regeln helfen da nicht.“', merke: 'k6RegelNein', dann: [['chiara', 'Ohne Regeln macht jeder, was er will.'], ['erzaehler', 'Sie schreibt weiter. Allein.']] },
+      { t: '(Nichts sagen.)', dann: [['chiara', 'Okay. Dann schreib ich’s allein.']] },
     ] },
   ],
   // Freitag 12:00: Die Stimmen laufen ein. Jede Nachricht kann eine Stimme kippen oder kosten.
   n6_abstimmung: [
     ['noah', '(schaut auf sein Display) Oh nein.'],
-    ['erzaehler', 'Freitag. 12:00. Alle Handys summen gleichzeitig.'],
-    { szene: 'chat', id: 'abstimmung', def: (m) => ABSTIMMUNG(m),
+    ['erzaehler', 'Freitag. 12:00. Alle Handys summen gleichzeitig. Mila steht drei Meter weiter. Ihr Handy auch.'],
+    { szene: 'video', id: 'video6', pruefe: false, def: (m) => VIDEO(m),
       ausgang: (r, m) => {
-        m.k6Plus = (r.flags.ruhig ? 1 : 0) + (r.flags.fakten && (m.spurGebaut || m.spurKreis) ? 1 : 0) - (r.flags.wut ? 2 : 0);
-        if (r.flags.verlassen) m.k6SelbstRaus = true;
-        return r.flags.wut ? 'wut' : (r.flags.ruhig || r.flags.fakten) ? 'geschrieben' : r.flags.verlassen ? 'verlassen' : 'still';
+        const f = r.flags || {};
+        m.k6Video = { jetzt: r.jetzt, gruppen: r.gruppen, wie: r.wie }; m.k6Helfer = r.helfer || [];
+        ['gefragt', 'kommentar', 'geteilt', 'anMila', 'chiara', 'app', 'beleg', 'noahGefragt', 'lucaDm', 'lucaBeleidigt', 'oeffentlichMila', 'angesehen', 'mitMila', 'milaWill', 'weg']
+          .forEach((k) => { if (f[k]) m['k6V' + k[0].toUpperCase() + k.slice(1)] = true; });
+        return f.mitMila ? 'mitMila' : (f.geteilt || f.anMila) ? 'geteilt' : (f.kommentar || f.chiara || f.app || f.noahGefragt || f.gefragt || f.beleg) ? 'getan' : 'still';
       },
-      folgen: { wut: { merke: 'k6ChatWut' }, geschrieben: { staerke: 'klar', merke: 'k6ChatRuhig' }, verlassen: { merke: 'k6ChatRaus' }, still: { merke: 'k6ChatStill' } } },
-    { szene: 'chat', id: 'ergebnis', def: (m) => ERGEBNIS(m), ausgang: () => 'standard', folgen: { standard: {} } },
+      folgen: { mitMila: { staerke: 'lesen', merke: 'k6VideoMitMila' }, geteilt: { merke: 'k6VideoGeteilt' }, getan: { staerke: 'klar', merke: 'k6VideoGetan' }, still: { merke: 'k6VideoStill' } } },
+    { tu: 'n6_nachVideo' },
     { tu: 'n6_fuer' },
-    ['erzaehler', 'Zum ersten Mal seit September ist dein Handy still.'],
+    { tu: 'n6_handy' },
     { tu: 'kapitelEnde' },
   ],
   n6_skills: [
@@ -321,7 +318,28 @@ export const GESPRAECHE_N6 = {
   ],
 };
 
-export const tunN6 = (c) => ({
+export const tunN6 = (c) => { const T6 = {
+  // Herr Kuedes fragt zuerst Mila. Er erklärt nicht lange: Es ist ihr Gesicht.
+  kuedes: (spaet) => {
+    const m = c.S.merke;
+    return [{ blende: 'Büro von Herrn Kuedes · ' + (spaet ? '12:35' : '12:24') },
+      ['kaya', 'Mila. Was möchtest du, dass jetzt passiert?'],
+      ['mila', 'Dass es weg ist. Überall.'],
+      ['kaya', 'Okay. Ich hol Luca. Und tom. Jetzt.'],
+      ...(m.k6VLucaDm ? [['du', 'Luca hat geschrieben: „ist mein video“.']] : []),
+      ['kaya', 'Es ist nicht sein Video. Es ist ihr Gesicht.'],
+      ...(m.k6Linse ? [['kaya', '(zu dir) Und du bist auch drauf. Dein Gesicht gehört auch dir.']] : []),
+      ...(m.k6VBeleg ? [['kaya', 'Dein Screenshot hilft. Da steht, wer und wann.']] : []),
+      ['kaya', 'Wenn es am Wochenende wieder auftaucht: Screenshot. Dann zu mir. Oder BEE SECURE: 8002 1234.'],
+      ...((m.k6VGefragt || m.k6MilaGefragtSpaet) ? [['kaya', '(zu dir) Du hast sie zuerst gefragt. Das machen nicht mal alle Erwachsenen.']] : [])];
+  },
+  zahl: (stopp, vorne = '') => {
+    const m = c.S.merke, n = bisZuletzt(m, stopp); m.k6Gesehen = n; m.k6GesehenStopp = stopp;
+    return [stopp === 'jetzt' ? ['erzaehler', vorne + '12:41. Das Video ist weg. Überall. 👁 ' + n + '. Dann war Schluss.']
+      : stopp === 'spaet' ? ['erzaehler', vorne + 'Am Nachmittag ist das Video weg. 👁 ' + n + ' bis dahin.']
+      : ['erzaehler', vorne + 'Die App löscht es nach vier Stunden. 👁 ' + n + ' bis dahin.']];
+  },
+}; return ({
   n6_joFolge: () => {
     const m = c.S.merke;
     if (m.k6JoZu) return [['erzaehler', 'Jo wirft weiter. Er trifft nicht mehr.']];
@@ -339,15 +357,52 @@ export const tunN6 = (c) => ({
     }
     return [['hoffmann', 'Irgendetwas stimmt hier nicht.'], ['hoffmann', 'Ich weiß nicht, was. Meine Tür ist offen.'], ['erzaehler', 'Sie sagt es ungelenk. Aber sie meint es.'], { blende: 'Donnerstag · Pause' }];
   },
-  n6_fuer: () => {
+  // Nach dem Video: mit Mila zu Herrn Kuedes – oder Mila auf der Mauer (zweite Chance: „Was brauchst du?“)
+  n6_nachVideo: () => {
     const m = c.S.merke;
-    const s = (() => { const wer = { noah: !!(m.listeBeiNoah || m.k4NoahVerteidigt || m.manonListeFalsch || m.wahlNoah), mila: !!(m.milaGesagt || m.k6Stopp || m.k6Komm || m.k6Linse), ben: !!(m.k5BenGefragt || m.gegenlisteNein || m.gegenlisteFragen), jo: !!((m.k6JoSelbst || m.k6JoVerstanden) && !m.k6DateiGepostet), lina: !!(m.wahlLina || m.linaNachgegangen), yusuf: !!(m.wahlYusuf || m.k3YusufGeschickt || m.k3Uhr) }; return Object.keys(wer).filter((k) => wer[k]); })();
-    m.k6Fuer = s;   // wer für dich gestimmt hat – kommt in Kapitel 7 (Montage) und Kapitel 10 zurück
+    if (m.k6VMitMila) return [...T6.kuedes(false), ...T6.zahl('jetzt')];
+    const z = [{ hin: { mila: [-16.0, 13.6, -2.6] } }, ['erzaehler', 'Mila sitzt auf der Mauer. Den Würfel in der Hand. Sie dreht ihn nicht.']];
+    if (m.k6VGeteilt) z.push(['mila', 'Du hast es weitergeleitet. In die Ecke.']);
+    else if (m.k6VAnMila) z.push(['mila', 'Du hast es mir geschickt. Ich hatte es schon.']);
+    else if (m.k6VOeffentlichMila) z.push(['mila', '„@Mila alles okay?“ Vor allen. Jetzt haben alle zu mir geschaut.']);
+    else if (m.k6VKommentar && !m.k6VGefragt) z.push(['mila', 'Danke für den Satz im Chat.'], ['mila', 'Nächstes Mal: frag mich kurz. Okay?']);
+    else if (m.k6VGefragt) z.push(['mila', 'Du hast gefragt. Das hat heute sonst keiner.']);
+    else if (m.k6VAngesehen) z.push(['mila', '(hält ihr Handy hoch) „Gesehen von: … und dir.“']);
+    else z.push(['mila', '(schaut dich an) Du hast es auch gesehen. Oder?']);
+    z.push({ wahl: [
+      { t: '„Was brauchst du?“', merke: 'k6MilaGefragtSpaet', staerke: 'lesen', herz: { mila: 2 }, dann: [['mila', '(atmet aus) Dass es weg ist. Kommst du mit? Zu Kuedes.'], { tu: 'n6_kuedesSpaet' }] },
+      ...(m.k6VGeteilt || m.k6VAnMila || m.k6VOeffentlichMila ? [{ t: '„Sorry. Ich wollte helfen.“', merke: 'k6MilaSorry', herz: { mila: 1 },
+        dann: [['mila', m.k6VGeteilt ? 'Ich weiß. Aber drauf bin ich. Nicht Luca.' : 'Ich weiß. Frag mich das nächste Mal. Kurz.'], { tu: 'n6_milaAllein' }] }] : []),
+      { t: '„Ist doch nicht so schlimm.“', merke: 'k6MilaKleingeredet', herz: { mila: -2 }, dann: [['mila', '(steht auf) Für dich nicht.'], { tu: 'n6_milaAllein' }] },
+      { t: '(Neben ihr sitzen.)', merke: 'k6MilaDaneben', herz: { mila: 1 }, dann: [['erzaehler', 'Ihr sitzt da. Nach einer Weile gibt sie dir den Würfel. Du hältst ihn nur.'], { tu: 'n6_milaAllein' }] },
+    ] });
+    return z;
+  },
+  n6_kuedesSpaet: () => [...T6.kuedes(true), ...T6.zahl('spaet')],
+  n6_milaAllein: () => [{ blende: 'Freitag · 13:10' }, ...T6.zahl(c.S.merke.k6VApp ? 'app' : 'spaet', 'Mila an der Tür von Herrn Kuedes. Allein. ')],
+  // Wer mit dir war (kommt in Kapitel 7 in der Montage und in Kapitel 10 zurück)
+  n6_fuer: () => {
+    const m = c.S.merke, s = new Set(m.k6Helfer || []);
+    if (m.k6VGefragt || m.k6MilaGefragtSpaet || m.k6Stopp || m.k6Komm || m.k6Linse) s.add('mila');
+    if (m.k6VNoahGefragt) s.add('noah');
+    s.delete('ayla');
+    m.k6Fuer = [...s];
     return [];
   },
+  // Freitag, 15:40: ein Stopp für dich selbst
+  n6_handy: () => [
+    { blende: 'Freitag · 15:40 · im Bus' },
+    { handy: { wer: '7P2 🏫', wann: '15:40', text: '38 neue Nachrichten' } },
+    { fest: true, wahl: [
+      { t: '🔕 Stumm bis Montag.', merke: 'k6Stumm', staerke: 'ruhig', dann: [{ handy: null }, ['erzaehler', 'Zum ersten Mal seit September ist dein Handy still. Weil du es so willst.']] },
+      { t: '🚪 Gruppe verlassen.', merke: 'k6Verlassen', dann: [{ handy: { wer: '7P2 🏫', wann: '15:41', chat: [{ wer: '7P2', t: '{name} hat die Gruppe verlassen.' }] } },
+        { handy: { wer: 'Ayla (privat)', wann: '15:43', text: 'gute entscheidung. bin auch raus. 🫶' } }, { handy: null }, ['erzaehler', 'Zum ersten Mal seit September ist dein Handy still.']] },
+      { t: '(Alles lesen.)', merke: 'k6AllesGelesen', dann: [{ handy: null }, ['erzaehler', 'Achtunddreißig Nachrichten. Über Mila. Über Luca. Drei über dich. Um elf Uhr nachts liest du immer noch.']] },
+    ] },
+  ],
   n6_schluss: () => [
     { szene: 'stempel', def: { modul: 'Modul 5 · Kommunikation und Grenzen', titel: 'Klar gesagt',
       gelernt: ['Worte, Stimme, Körper – und wem man glaubt', 'Jeder hat einen anderen Wohlfühl-Abstand', 'Ich-Botschaften statt Vorwürfe', 'Zuhören, das wirklich hilft', 'Grenzen setzen in vier Stufen – und ein Stopp annehmen'],
       mission: 'Sag diese Woche einmal deinen Stopp-Satz. Und wenn jemand dir Stopp sagt: „Okay.“ Ohne Diskussion.' }, folgen: {} },
   ],
-});
+}); };

@@ -73,6 +73,7 @@ import { createUI } from './ui.js';
 import { situationen } from './situation.js';
 import { mechaniken } from './mechanik.js';
 import { mechanikenK5 } from './mechanik5.js';
+import { mechanikenK6 } from './mechanik6.js';
 import { FACHLEHRER, PERSONAL } from './story/personal.js';
 import { FR_LEKTIONEN } from './story/fachstunden.js';
 if (!(LEKTIONEN.francais || []).length) LEKTIONEN.francais = FR_LEKTIONEN;   // Französisch fürs Spiel (handgeschrieben, story/fachstunden.js)
@@ -235,6 +236,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   situationen(ui, { name: () => 'Du', ersetze: (t) => ersetze(t), speech, ton: (a) => ton(a) });
   mechaniken(ui, { ersetze: (t) => ersetze(t), ton: (a) => ton(a) });
   mechanikenK5(ui, { ersetze: (t) => ersetze(t), ton: (a) => ton(a) });
+  mechanikenK6(ui, { ersetze: (t) => ersetze(t), ton: (a) => ton(a) });
   installSkillsRaum(ui, { vorlesen: (t) => { try { if (speech && speech.available) speech.speak(t, { interrupt: true }); } catch (e) { /* keine Stimme */ } }, ton: (a) => { try { audio.play(a === 'pling' ? 'chime' : 'click'); } catch (e) { /* Ton */ } } });
   // Ton und Vorlesen für alle Situations-Spiele an einer Stelle: Klick auf Karten, Sprechblasen, Stempel, neue Karten
   (() => {
@@ -366,8 +368,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Geprüft mit einer Galerie aller Stile (28.11.): Beach = Top, Shorts, barfuß · Casual (Männer) = Shorts · Punk = ärmellos ·
   // Frauen: Adventurer = Shorts, Formal = Top und Rock, Punk = bauchfrei.
   const WINTER_STIL = {
-    menschen: { Beach: { Body: 'Casual2', Legs: 'Casual2', Feet: 'Casual2' }, Casual: { Legs: 'Casual2' }, Punk: { Body: 'Casual2' } },
-    frauen: { Adventurer: { Legs: 'Casual' }, Formal: { Body: 'Suit', Legs: 'Suit', Feet: 'Suit' }, Punk: { Body: 'Casual' } },
+    // Runde 2 (Jugend- und Fach-Panel): auch kurze Ärmel sind im Januar falsch. Lange Ärmel haben nur Adventurer/Suit/Worker (Männer) und Suit/Worker (Frauen).
+    menschen: { Beach: { Body: 'Adventurer', Legs: 'Casual2', Feet: 'Casual2' }, Casual: { Body: 'Adventurer', Legs: 'Casual2' }, Casual2: { Body: 'Adventurer' }, Punk: { Body: 'Adventurer' } },
+    frauen: { Adventurer: { Body: 'Suit', Legs: 'Casual' }, Casual: { Body: 'Suit' }, Formal: { Body: 'Suit', Legs: 'Suit', Feet: 'Suit' }, Punk: { Body: 'Suit' } },
   };
   const mitWinter = (d) => {
     const st = typeof d.stil === 'string' ? d.stil : null, w = st && (WINTER_STIL[d.modell || 'menschen'] || {})[st];
@@ -1367,8 +1370,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   let gegenueber = null, sprichtJetzt = null;
   // Sprechende Figur gestikuliert (wie in Story-Spielen), danach zurück in ihre Haltung
   const haltungAnim = (x) => (x.haltung === 'redet' ? ['Interact', 0.35] : x.haltung === 'handy' ? ['Idle_Neutral', 1] : ['Idle', 1]);
+  // Eine Handy-Karte, auf die direkt die nächste Karte (oder { handy: null }) folgt, wäre sofort wieder weg (Jugend-Panel K5 R3):
+  // dann erst „Weiter“ abwarten. Gelesen gilt sie, sobald eine Zeile, eine Wahl oder eine Szene kommt.
+  let handyUngelesen = false;
   async function spiele(zeilen) {
     for (const z of zeilen) {
+      if (z && (Array.isArray(z) || z.wahl || z.szene)) handyUngelesen = false;
+      else if (z && 'handy' in z && handyUngelesen) { handyUngelesen = false; await ui.sprich({ text: '' }); }
       if (Array.isArray(z)) {
         const [wer, text] = z;
         if (LEUTE[wer] && S.herz[wer] == null) { S.herz[wer] = 1; freund(wer, 5, 'kennen'); }
@@ -1431,9 +1439,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       } else if ('pult' in z) {   // Steuerpult: { pult: { g, w } } setzen, { pult: { plus } } ändern, { pult: null } aus
         pultSetzen(z.pult);
       } else if ('handy' in z) {   // Handy, das jemand hinhält: { handy: { wer, foto: { von, auf, wer }, text, umfrage } } – { handy: null } weg
+        handyUngelesen = !!z.handy;
         if (!z.handy) ui.handyBild(null);
-        else if (typeof z.handy === 'function') { const h = z.handy(S.merke, S); ui.handyBild({ ...h, text: ersetze(h.text || ''), chat: (h.chat || []).map((c) => ({ ...c, t: ersetze(c.t || ''), wer: ersetze(c.wer || '') })), bild: h.fotoId ? fotoHolen(h.fotoId) : h.bild || '' }); }
-        else ui.handyBild({ ...z.handy, text: ersetze(z.handy.text || ''), chat: (z.handy.chat || []).map((c) => ({ ...c, t: ersetze(c.t || ''), wer: ersetze(c.wer || '') })), bild: z.handy.foto ? fotoAusWelt(z.handy.foto) : z.handy.fotoId ? fotoHolen(z.handy.fotoId) : z.handy.bild || '' });
+        else if (typeof z.handy === 'function') { const h = z.handy(S.merke, S); ui.handyBild({ ...h, fotoErwartet: !!(h.fotoId || h.bild || h.foto), text: ersetze(h.text || ''), chat: (h.chat || []).map((c) => ({ ...c, t: ersetze(c.t || ''), wer: ersetze(c.wer || '') })), bild: h.fotoId ? fotoHolen(h.fotoId) : h.bild || '' }); }
+        else ui.handyBild({ ...z.handy, fotoErwartet: !!(z.handy.foto || z.handy.fotoId || z.handy.bild), text: ersetze(z.handy.text || ''), chat: (z.handy.chat || []).map((c) => ({ ...c, t: ersetze(c.t || ''), wer: ersetze(c.wer || '') })), bild: z.handy.foto ? fotoAusWelt(z.handy.foto) : z.handy.fotoId ? fotoHolen(z.handy.fotoId) : z.handy.bild || '' });
       } else if (z.blick) {   // Hinschauen: unten die Leiste, die Kamera geht nah an die gewählte Person
         ui.dialogZu();
         const r = await ui.blickSzene(z.blick, { fokus: (w) => { const p = leute[w]; if (p) { steuerung.fokus = p.pos || p.f.group.position; steuerung.gegenSchuss = false; } },
@@ -2475,7 +2484,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       return url;
     } catch (e) { return ''; }
   }
-  const SZ_UI = { rutsche: 'rutsche', hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich', werkzeug: 'werkzeugKarte', werkbank: 'werkbank', steckbrief: 'steckbrief', weg: 'wegweiser', aufstellung: 'aufstellung', pass: 'passSpiel', schneeball: 'schneeball', voraus: 'vorausblende', suchbild: 'suchbild', orte: 'ortWahl', stoerung: 'stoerung', schnitt: 'schnitt', verdacht: 'verdachtWand', blase: 'kopfBlase', taube: 'taubeTest', eisrennen: 'eisRennen', fenster: 'busfenster' };
+  const SZ_UI = { rutsche: 'rutsche', hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich', werkzeug: 'werkzeugKarte', werkbank: 'werkbank', steckbrief: 'steckbrief', weg: 'wegweiser', aufstellung: 'aufstellung', pass: 'passSpiel', schneeball: 'schneeball', voraus: 'vorausblende', suchbild: 'suchbild', orte: 'ortWahl', stoerung: 'stoerung', schnitt: 'schnitt', verdacht: 'verdachtWand', blase: 'kopfBlase', taube: 'taubeTest', eisrennen: 'eisRennen', fenster: 'busfenster', video: 'videoTeilen' };
   // Prüfungen gegen Durchklicken (nur Skill-Szenen). Rückgabe null = gemacht; sonst { sy, t, tipp } für „Noch mal“.
   const PRUEF = {
     atem: (r) => (r.gut < 2 ? { sy: '🫁', t: 'Das war noch kein ruhiges Atmen.', tipp: 'Halte, bis der Kreis groß ist (zwei, drei Sekunden). Dann loslassen und lange ausatmen – länger als das Einatmen. Erst dann wieder halten.' } : null),
@@ -2490,6 +2499,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   };
   // „❓ Wie geht das?“ in jeder Szene: kurz, einfach, mit Vorlesen. Beim ersten Mal (je Szenen-Art) offen, später auf Tipp.
   const SZ_HILFE = {
+    video: 'Ein Video geht herum. 👁 zählt, wie oft es gesehen wird. Oben siehst du, in welche Gruppen es wandert. Du kannst schreiben, teilen, melden oder privat fragen. Oder das Handy weglegen.',
     suchbild: 'Ein Standbild. Oben steht die Frage. Tipp im Bild auf die richtige Person. Die Zeit läuft. Wer wild tippt, wird kurz gesperrt.',
     orte: 'Such dir einen Ort aus. Nur einen. Was an den anderen Orten passiert, verpasst du.',
     verdacht: 'An der Wand hängen die Spuren, die du gefunden hast. Wähl, wem du es zutraust – oder sag: Noch zu früh. Ein Verdacht ist kein Beweis.',
@@ -2622,7 +2632,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     9: 'Was lädt deinen Akku wirklich auf?', 10: 'Was nimmst du aus diesem Jahr mit?' };
   // Inhaltshinweise je Kapitel (wie in großen Spielen): kurz, sachlich, mit Weg nach draußen
   const INHALT = { 1: 'Ein Foto von dir wird gepostet und bewertet.', 2: 'Eine Ranking-Liste, Auslachen im Klassenchat.', 3: 'Jemand rastet aus. Schubsen. Ein fieses Foto im Chat.', 4: 'Test-Stress. Ein fieses Foto. Falscher Verdacht.',
-    5: 'Eine Umfrage im Klassenchat: Wer ist der Admin? Verdacht, Rauswurf aus dem Chat.', 6: 'Filmen ohne Erlaubnis, Rauswurf aus dem Klassenchat.', 7: 'Gruppendruck, Mobbing in der Kantine.',
+    5: 'Eine Umfrage im Klassenchat: Wer ist der Admin? Verdacht, Rauswurf aus dem Chat.', 6: 'Filmen ohne Erlaubnis. Ein Video von jemandem geht herum.', 7: 'Gruppendruck, Mobbing in der Kantine.',
     8: 'Ein KI-Fake-Video über eine Lehrerin.', 9: 'Schlafmangel, ein schweres Geheimnis, ein Freund in einer Krise.', 10: 'Geständnis, Entschuldigungen, Abschied.' };
   // Dauer-Anzeige einer Woche (Anspannung 0–100 in Kapitel 4, Akku in Kapitel 9): gilt bis zum Kapitelende
   function setzeAnzeige(art, wert, plus) {
@@ -4394,7 +4404,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const VORSPANN = {
     1: 'Neue Schule. Neue Leute. Und ein Account, der alles sieht.', 2: 'Eine Liste. Fünf Plätze. Und jemand, den du kennst, steht ganz oben.',
     3: 'Eine Neue. Ein Turnier. Und einer, der dauernd zur Uhr schaut.', 4: 'Frost. Die letzte Woche vor den Ferien. Ein Test. Und ein Foto von 8:34.',
-    5: 'Januar. Alle glauben, du bist der Account. Eine prüft das.', 6: 'Sieben Sekunden Sprachnachricht. Und eine Abstimmung über dich.',
+    5: 'Januar. Alle glauben, du bist der Account. Eine prüft das.', 6: 'Sieben Sekunden Sprachnachricht. Und ein Video, das nicht deins ist.',
     7: 'Juni. Fünf Monate später. Wer ist geblieben?', 8: 'Ein Video von Mme Tidderich. Ihre Stimme. Ihr Gesicht. Nicht echt.',
     9: 'Juli. 4:12 Uhr. Eine Nachricht von Dario. „bitte“.', 10: 'Letzte Woche. Sommerfest. Freitag, 15:00. Alle Namen.',
   };

@@ -130,12 +130,25 @@ export function mechaniken(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
 
   // ---------- Störung: mitten in etwas ----------
   // def: { bildUrl, t, hin, bleib, zeit } → { hin: bool, sek }
+  // def.optionen: [{ id, t }] (höchstens drei) statt hin/bleib – Rückgabe { wahl: id }; Zeit um = def.standard (sonst die letzte)
   ui.stoerung = (def) => new Promise((ok) => {
+    const O = def.optionen ? def.optionen.slice(0, 3) : null;
+    const knoepfe = O ? O.map((o, i) => '<button type="button" class="' + (i === 0 ? 'mv-s-hin' : 'mv-s-bleib') + '" data-o="' + i + '"><kbd>' + (i + 1) + '</kbd>' + esc(ersetze(o.t)) + '</button>').join('')
+      : '<button type="button" class="mv-s-hin" data-i="1"><kbd>1</kbd>' + esc(ersetze(def.hin || 'Hingehen')) + '</button><button type="button" class="mv-s-bleib" data-i="0"><kbd>2</kbd>' + esc(ersetze(def.bleib || 'Bleiben')) + '</button>';
     const k = ui.ebeneAuf('stoerung', '<div class="mv-stoer"><div class="mv-s-bild">' + (def.bildUrl ? '<img alt="' + esc(def.t) + '" src="' + def.bildUrl + '">' : '') + '<b>' + esc(ersetze(def.t)) + '</b></div>' +
-      '<div class="mv-zeit"><i></i></div><div class="mv-s-knoepfe"><button type="button" class="mv-s-hin" data-i="1"><kbd>1</kbd>' + esc(ersetze(def.hin || 'Hingehen')) + '</button><button type="button" class="mv-s-bleib" data-i="0"><kbd>2</kbd>' + esc(ersetze(def.bleib || 'Bleiben')) + '</button></div></div>');
+      '<div class="mv-zeit"><i></i></div><div class="mv-s-knoepfe' + (O && O.length > 2 ? ' drei' : '') + '">' + knoepfe + '</div></div>');
     ton('summen'); const t0 = performance.now();
-    let aus = false; const ende = (hin) => { if (aus) return; aus = true; zb.stopp(); loesche(); ui.ebeneZu(); ok({ hin, sek: Math.round((performance.now() - t0) / 100) / 10 }); };
-    const zb = zeitBalken(k.querySelector('.mv-zeit i'), (def.zeit || 6) * zeitFaktor(), () => ende(false));
+    let aus = false; const ende = (hin, wahl) => { if (aus) return; aus = true; zb.stopp(); loesche(); ui.ebeneZu(); ok({ hin, wahl, zeitUm: wahl === undefined && !!O, sek: Math.round((performance.now() - t0) / 100) / 10 }); };
+    const standard = O ? (def.standard || O[O.length - 1].id) : null;
+    const zb = zeitBalken(k.querySelector('.mv-zeit i'), (def.zeit || 6) * zeitFaktor(), () => (O ? ende(false, undefined) : ende(false)));
+    if (O) {
+      const w = (i) => ende(i === 0, O[i].id);
+      k.querySelectorAll('[data-o]').forEach((b) => { b.onclick = () => w(+b.dataset.o); });
+      O.forEach((_, i) => taste(['Digit' + (i + 1), 'Numpad' + (i + 1)], () => w(i)));
+      // Zeit um: die Standard-Wahl (meist „nichts tun“), aber als eigene Rückmeldung erkennbar
+      const alt = ok; ok = (r) => alt(r.wahl === undefined ? { ...r, wahl: standard } : r);
+      return;
+    }
     k.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => ende(b.dataset.i === '1'); });
     taste(['Digit1', 'Numpad1'], () => ende(true)); taste(['Digit2', 'Numpad2'], () => ende(false));
   });

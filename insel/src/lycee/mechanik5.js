@@ -4,7 +4,7 @@
 //   ui.zurueckspulen(def) – das Bild spult zurück (Rauschen, Ton rückwärts). Gleicher Moment, anderer Gedanke. → Promise
 //   ui.taubeTest(def)     – Clip vom Hallenturnier: Pässe der Blauen zählen. Gerd läuft mitten durchs Bild. → { zahl, richtig, gerd }
 //   ui.eisRennen(def)     – Eisbahn von oben: eine Runde gegen Yusuf. Schwung bleibt, Bande = hinfallen. → { gewonnen, gefallen, sek }
-//   ui.busfenster(def)    – beschlagenes Busfenster: den alten Satz wegwischen, den eigenen Beweis hinschreiben. → { satz, i }
+//   ui.busfenster(def)    – beschlagenes Busfenster: den alten Satz wegwischen, den eigenen Beweis hinschreiben. → { satz, i } (mit def.bilder: { gesehen, satz, id })
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const warte = (ms) => new Promise((ok) => setTimeout(ok, ms));
 const misch = (a) => { const b = a.slice(); for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
@@ -126,7 +126,7 @@ export function mechanikenK5(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
     const W = 600, H = 340, CX = W / 2, CY = H / 2, AX = 280, AY = 150, IX = 120, IY = 52;
     const g = def.gegner || { name: 'Yusuf', farbe: '#2e86de' };
     const k = ui.ebeneAuf('szene', '<div class="sz k5-eis"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Eisbahn · Marktplatz') + '</span><b>⛸️ Eine Runde gegen ' + esc(g.name) + '</b></div>' +
-      '<p class="sz-info">Finger halten, wohin du willst. Du rutschst. Zu schnell an die Bande: hingefallen.</p><canvas width="' + W + '" height="' + H + '"></canvas><div class="sz-stand k5-e-stand"></div><div class="sz-karten k5-e-knopf"></div></div>');
+      '<p class="sz-info">' + (def.vorsichtig ? 'Finger halten, wohin du willst. Du rutschst. Eine Hand an der Bande: Du fällst nicht.' : 'Finger halten, wohin du willst. Du rutschst. Zu schnell an die Bande: hingefallen.') + '</p><canvas width="' + W + '" height="' + H + '"></canvas><div class="sz-stand k5-e-stand"></div><div class="sz-karten k5-e-knopf"></div></div>');
     const cv = k.querySelector('canvas'), c = cv.getContext('2d'), stand = k.querySelector('.k5-e-stand'), knopf = k.querySelector('.k5-e-knopf');
     const ich = { x: CX, y: CY + (IY + AY) / 2, vx: 0, vy: 0, liegt: 0, w: 0, wAlt: Math.atan2((IY + AY) / 2, 0) };
     const er = { w: Math.PI / 2 + 0.12, liegt: 0 }, R = { x: (IX + AX) / 2 + 4, y: (IY + AY) / 2 };
@@ -162,7 +162,7 @@ export function mechanikenK5(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
       if (aus) return; aus = true; laeuft = false; document.removeEventListener('keyup', auf, true);
       const sek = Math.round(t * 10) / 10;
       ton(sieg ? 'pling' : 'klick');
-      stand.textContent = sieg ? '🏁 Erste:r! ' + sek + ' s' : '🏁 ' + g.name + ' war schneller.';
+      stand.textContent = sieg ? '🏁 Gewonnen! ' + sek + ' s' : '🏁 ' + g.name + ' war schneller.';
       knopf.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
       let zu = false; const fertig = () => { if (zu) return; zu = true; loesche(); ui.ebeneZu(); ok({ gewonnen: !!sieg, gefallen, sek }); };
       knopf.querySelector('[data-a="w"]').onclick = fertig; setTimeout(() => { if (!zu) taste(['KeyE', 'Enter'], fertig); }, 500);
@@ -250,13 +250,23 @@ export function mechanikenK5(ui, { ersetze = (t) => t, ton = () => {} } = {}) {
         nebelVoll(); malen(); await warte(350);
         for (let i = 0; i < B.length; i++) {
           const y = 50 + i * 52; n.globalCompositeOperation = 'destination-out'; n.font = kf; n.textAlign = 'left'; n.fillStyle = '#000';
-          n.fillText(B[i].da ? ersetze(B[i].t) : '·  ·  ·', 34, y); malen(); ton(B[i].da ? 'pling' : 'klick'); await warte(B[i].da ? 650 : 300);
+          n.fillText(B[i].da ? ersetze(B[i].t) : '·  ·  ·  ' + ersetze(B[i].ort || ''), 34, y); malen(); ton(B[i].da ? 'pling' : 'klick'); await warte(B[i].da ? 650 : 300);
         }
-        const zu1 = B.filter((b) => !b.da).length;
-        info.textContent = zu1 ? 'Beschlagen bleibt, was du nicht angeschaut hast (' + zu1 + ').' : 'Alles klar. Du hast hingeschaut.';
-        knopf.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
-        let zu = false; const fertig = () => { if (zu) return; zu = true; loesche(); ui.ebeneZu(); ok({ gewischt, gesehen: B.filter((b) => b.da).map((b) => b.id) }); };
-        knopf.querySelector('[data-a="w"]').onclick = fertig; setTimeout(() => { if (!zu) taste(['KeyE', 'Enter'], fertig); }, 400);
+        const zu1 = B.filter((b) => !b.da).length, klar = B.filter((b) => b.da);
+        const gesehen = klar.map((b) => b.id);
+        let zu = false; const fertig = (wahl) => { if (zu) return; zu = true; loesche(); ui.ebeneZu(); ok({ gewischt, gesehen, satz: wahl ? ersetze(wahl.satz || wahl.t) : null, id: wahl ? wahl.id : null }); };
+        const weiterKnopf = (wahl) => { knopf.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>'; knopf.querySelector('[data-a="w"]').onclick = () => fertig(wahl); setTimeout(() => { if (!zu) taste(['KeyE', 'Enter'], () => fertig(wahl)); }, 400); };
+        if (!klar.length) { info.textContent = 'Noch alles beschlagen. Der Ort steht dran: Da hättest du hinschauen können.'; weiterKnopf(null); return; }
+        // Eigener Beweis: eine klare Zeile antippen – die bleibt am Glas (und kommt in K7 und K10 als dein Satz zurück)
+        await warte(500);
+        info.textContent = (zu1 ? 'Beschlagen: ' + zu1 + '. Der Ort steht dran. ' : '') + 'Tipp eine klare Zeile. Die bleibt.';
+        knopf.innerHTML = klar.map((b, i) => '<button type="button" data-k="' + i + '"><kbd>' + (i + 1) + '</kbd><span>' + esc(ersetze(b.t)) + '</span></button>').join('');
+        taste(['Digit1', 'Digit2', 'Digit3', 'Digit4', 'Numpad1', 'Numpad2', 'Numpad3', 'Numpad4'], (cd) => { const x = knopf.querySelector('[data-k="' + (+cd.slice(-1) - 1) + '"]'); if (x) x.click(); });
+        knopf.querySelectorAll('[data-k]').forEach((x) => { x.onclick = async () => {
+          const wahl = klar[+x.dataset.k], satz = ersetze(wahl.satz || wahl.t); knopf.innerHTML = ''; loesche(); info.textContent = '';
+          for (let a = 0; a <= 1.0001; a += 0.04) { nebelVoll(); schreib(satz, 70, a); malen(); await warte(45); }
+          ton('pling'); info.textContent = 'Die bleibt.'; weiterKnopf(wahl);
+        }; });
         return;
       }
       info.textContent = 'Und jetzt? Was hast du wirklich gesehen?';

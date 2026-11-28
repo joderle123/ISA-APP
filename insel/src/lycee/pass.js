@@ -22,7 +22,7 @@ export const ABZEICHEN = [
   { id: 'winken', sy: '🙋', t: 'Winke-Welle', hinweis: 'Taste H auf dem Hof. Zehnmal winkt jemand zurück.', test: (S) => (m(S).gewunken || 0) >= 10 },
   { id: 'gruss', sy: '👋', t: 'Hallo an alle', hinweis: '10 Leute auf dem Schulgelände grüßen', test: (S) => (m(S).gegruesst || 0) >= 10 },
   { id: 'freund', sy: '🤝', t: 'Mehr als Kumpel', hinweis: 'Bei einer Person: Balken über 60.', test: (S) => Object.values(S.freund || {}).some((p) => p >= 60) },
-  { id: 'viele', sy: '💬', t: 'Kennt alle', hinweis: 'Mit 8 Leuten aus der Klasse reden', test: (S) => Object.keys(S.herz || {}).length >= 8 },
+  { id: 'viele', sy: '💬', t: 'Kennt alle', hinweis: 'Mit 8 Leuten aus der Klasse reden', test: (S) => Object.keys(S.herz || {}).length >= 8 && !/^k5_/.test(S.schrittId || '') },   // nicht mitten in Kapitel 5 („alle“) – Jugend-Panel
   { id: 'tt', sy: '🏓', t: 'Bis elf', hinweis: 'Ein Tischtennis-Spiel bis 11 gewinnen', test: (S) => (m(S).ttSiege || 0) >= 1 },
   { id: 'skate', sy: '🛹', t: 'Gold am Board', hinweis: 'Skate-Session mit 45 Punkten', test: (S) => (m(S).skateMedaille || 0) >= 3 },
   { id: 'handschlag', sy: '🤝', t: 'Unser Ding', hinweis: 'Einen eigenen Handschlag mit jemandem lernen', test: (S) => Object.values(S.handschlag || {}).some((h) => h.gelernt) },

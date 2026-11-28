@@ -22,7 +22,7 @@ export const SCHRITTE_N8 = [
     fertig: { reden: 'kaya', gespraech: 'n8_skills' } },
   { id: 'k8_cdi', kap: 8, tag: 'Montag', uhr: 12.5, titel: 'Langsam schauen', ziel: 'CDI. Mila hat ihr Handy auf den Tisch gelegt.', marker: 'mila',
     start: { teleport: 'cdi' },
-    leute: { mila: [-6.2, -21.6, 0.4, 'sitzt'] },
+    leute: { mila: [-8.0, -21.9, 0.4, 'sitzt'] },
     fertig: { reden: 'mila', gespraech: 'n8_cdi' } },
   { id: 'k8_glas', kap: 8, tag: 'Dienstag', uhr: 10.0, titel: 'Das Türglas', ziel: 'Flur vor eurem Saal. Mila wartet an der Tür.', marker: 'mila',
     start: { teleport: 'saal104Tuer' },
