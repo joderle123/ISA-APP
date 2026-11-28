@@ -110,6 +110,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     };
     const stimmen = (id) => (umf ? (umf.opts.find((o) => o.id === id) || { namen: [] }).namen.length : 0);
     let ersteDa = false;   // Knöpfe erst, wenn die erste Nachricht von jemandem da ist (sonst „Gelesen“ vor der Nachricht)
+    const mitUmfrage = def.nachrichten.some((n) => n.umfrage);   // Kapitel 5: dann erst mit der Umfrage (sonst ist die Szene vorbei, bevor sie anfängt)
     let t = 0, zu = false, endet = false, lacher = 0, letzt = performance.now(), wahlOffen = false, pause = false, wartBis = 0;
     // Lesetempo: die nächste Nachricht kommt frühestens, wenn man die vorige lesen konnte (langsame Leser mitgedacht)
     const lesedauer = (n) => (0.9 + String(ersetze(n.text || '')).split(/\s+/).filter(Boolean).length * 0.3 + (n.bild ? 1.2 : 0)) * (ui.ruhig ? 1.4 : 1) * (ui.einstellungen && ui.einstellungen().text !== 'normal' ? 1.2 : 1);
@@ -145,7 +146,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       const warUnten = unten() || ich;
       verlauf.insertAdjacentHTML('beforeend', html);
       if (warUnten) verlauf.scrollTop = verlauf.scrollHeight; else neuChip.hidden = false;
-      if (!n.system && !ich) { wartBis = t + lesedauer(n); if (!ersteDa) { ersteDa = true; leisteNeu(); } }
+      if (!n.system && !ich) { wartBis = t + lesedauer(n); if (!ersteDa && !mitUmfrage) { ersteDa = true; leisteNeu(); } }
       if (n.lacher) lach.push({ ...n.lacher, n: n.lacher.start, el: verlauf.querySelector('[data-l="' + (lach.length) + '"]') });
       if (n.setzt) { flags[n.setzt] = true; leisteNeu(); }
     };

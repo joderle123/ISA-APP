@@ -259,6 +259,7 @@ export const GESPRAECHE_N6 = {
   n6_rede: [
     { sicht: { wer: 'mila', auf: 'du', gedanken: ['Donnerstag, 7:50. Mein Handy summt.', 'Luca. Schon wieder.'] } },
     { tu: 'n6_milaHandy' },
+    ['erzaehler', 'Du bist jetzt Mila. Was schreibst du Luca?'],
     { fest: true, wahl: [
       { t: '„haha lass mal“', merke: 'k6MilaLassMal', dann: [{ handy: { wer: 'Luca → Mila', wann: '7:51', chat: [{ wer: 'Mila', t: 'haha lass mal' }, { wer: 'Luca', t: 'lol ok 😂' }] } }] },
       { t: '„Nein. Lösch es. Jetzt.“', merke: 'k6MilaNein', staerke: 'klar', dann: [{ handy: { wer: 'Luca → Mila', wann: '7:51', chat: [{ wer: 'Mila', t: 'Nein. Lösch es. Jetzt.' }, { wer: 'Luca', t: 'chill 🙄' }] } }] },

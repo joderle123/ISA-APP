@@ -2504,7 +2504,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     orte: 'Such dir einen Ort aus. Nur einen. Was an den anderen Orten passiert, verpasst du.',
     verdacht: 'An der Wand hängen die Spuren, die du gefunden hast. Wähl, wem du es zutraust – oder sag: Noch zu früh. Ein Verdacht ist kein Beweis.',
     spuren: 'Eine Karte nach der anderen. Frag dich: Zeigt das wirklich etwas? Oder fühlt es sich nur so an? 📌 heißt: das zählt. 🗑️ heißt: das beweist nichts. Am Ende ziehst du einen Schluss – nur einen, für den du Spuren hast.',
-    mut: 'Der Balken füllt sich, solange du hinschaust. Je länger du bleibst, desto mehr Wege gehen auf. Du kannst jederzeit wählen. Auch Weggehen ist eine Wahl.',
+    mut: 'Alle Wege sind sofort da. Der Balken ist die Aufnahme: Je länger keiner was tut, desto länger wird das Video. Auch Wegschauen ist eine Wahl.',
     druck: 'Mehrere reden auf dich ein. Oben siehst du zwei Balken: den Druck der Gruppe und dein Ich. Wähl deine Antwort, bevor die Zeit um ist. Einmal darfst du den Anker ⚓ werfen: dann hält die Zeit an.',
     atem: 'Halte den Knopf (oder die Leertaste) gedrückt: einatmen, zwei, drei Sekunden. Loslassen: lange ausatmen, länger als das Einatmen. Dann wieder halten. Nur ruhige Atemzüge zählen.',
     nachhaken: 'Du stellst Fragen. Fragen mit „Wie“, „Was“ oder „Warum“ öffnen ein Gespräch. Fragen mit Ja oder Nein machen es oft zu. Der Balken zeigt, wie viel die Person erzählt.',
